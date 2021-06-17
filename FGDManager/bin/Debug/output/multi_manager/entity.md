@@ -1,0 +1,3 @@
+---
+title: multi_manager
+---

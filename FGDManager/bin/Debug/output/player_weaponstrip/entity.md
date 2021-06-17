@@ -1,0 +1,3 @@
+---
+title: player_weaponstrip
+---

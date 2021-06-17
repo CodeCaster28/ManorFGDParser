@@ -1,0 +1,9 @@
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\bin\Debug\FGDManager.exe.config
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\bin\Debug\FGDManager.exe
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\bin\Debug\FGDManager.pdb
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.csprojAssemblyReference.cache
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.Properties.Resources.resources
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.csproj.GenerateResource.cache
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.exe
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.pdb
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.csproj.CoreCompileInputs.cache
