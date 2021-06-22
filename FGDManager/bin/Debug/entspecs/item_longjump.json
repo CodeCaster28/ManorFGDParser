@@ -1,5 +1,11 @@
 {
   "Classname": "item_longjump",
   "Description": "Entity_Description_here",
-  "KeyDescriptions": []
+  "KeyDescriptions": [],
+  "Notes": [
+    "Insert additional notes here"
+  ],
+  "Issues": [
+    "Insert known issues here"
+  ]
 }

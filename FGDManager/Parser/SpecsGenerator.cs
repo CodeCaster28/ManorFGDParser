@@ -39,6 +39,8 @@
 
                     emptySpec.AddKey(key.Name, "Keyvalue_Description_here", choices);
                 }
+                emptySpec.Notes.Add("Insert additional notes here");
+                emptySpec.Issues.Add("Insert known issues here");
                 var output = JsonConvert.SerializeObject(emptySpec, Formatting.Indented);
                 using (StreamWriter writer = new StreamWriter(fileName))
                 {

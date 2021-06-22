@@ -346,5 +346,11 @@
         }
       ]
     }
+  ],
+  "Notes": [
+    "Insert additional notes here"
+  ],
+  "Issues": [
+    "Insert known issues here"
   ]
 }

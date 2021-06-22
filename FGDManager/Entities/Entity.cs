@@ -15,7 +15,9 @@
         public List<KeyValue> KeyValues { get; } = new List<KeyValue>();
         public List<KeyValue> InheritedKeyValues { get; } = new List<KeyValue>();
         public List<SpawnFlag> SpawnFlags { get; private set; } = new List<SpawnFlag>();
-
+        public List<string> Notes { get; set; } = new List<string>();
+        public List<string> Issues { get; set; } = new List<string>();
+        
         public List<KeyValue> GetAllKeyValues()
         {
             var allKeyValues = new List<KeyValue>(InheritedKeyValues);

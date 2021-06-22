@@ -49,20 +49,33 @@
                     {
                         writer.WriteLine("###Keyvalues");
                         writer.WriteLine("<hr>");
-
+                        var accordionIndex = 1;
+                        
                         foreach (var key in allKeyValues)
                         {
-                            writer.WriteLine("<div class=\"entityentry\">");
+                            writer.WriteLine("<div class=\"entityentry\" markdown=\"1\">");
                             writer.WriteLine($"<span style=\"color:#9fc5e8;\"><b>{key.DocName}</b></span> <kbd  class=\"tooltip\" data-tooltip=\"{key.Type}\">{key.Name}</kbd> :");
                             writer.WriteLine(key.Description);
+                            
                             if (key.Choices.Count > 0)
                             {
+                                writer.WriteLine("<div class=\"accordion\">");
+                                writer.WriteLine($"<input type=\"checkbox\" id=\"accordion-{accordionIndex}\" name=\"accordion-checkbox\" hidden>");
+                                writer.WriteLine($"<label class=\"accordion-header\" for=\"accordion-{accordionIndex}\">");
+                                writer.WriteLine("<i class=\"icon icon-arrow-right mr-1\"></i>");
+                                writer.WriteLine("Choices:");
+                                writer.WriteLine("</label>");
+                                writer.WriteLine("<div class=\"accordion-body\">");
                                 writer.WriteLine("<ul>");
                                 foreach (var choice in key.Choices)
                                 {
-                                    writer.WriteLine($"<li><b>{choice.Value}</b></span> : {choice.DocName} : {choice.Description}</li>");
+                                    var description = string.IsNullOrEmpty(choice.Description) ? "" : $" : {choice.Description}";
+                                    writer.WriteLine($"<li><b>{choice.Value}</b></span> : {choice.DocName}{description}</li>");
                                 }
                                 writer.WriteLine("</ul>");
+                                writer.WriteLine("</div>");
+                                writer.WriteLine("</div>");
+                                accordionIndex++;
                             }
                             writer.WriteLine("</div>");
                         }
@@ -76,10 +89,21 @@
                         writer.WriteLine("<ul>");
                         foreach (var flag in entity.SpawnFlags)
                         {
-                            writer.WriteLine($"<li><b>{flag.Value}</b></span> : {flag.DocName} : {flag.Description}</li>");
+                            var description = string.IsNullOrEmpty(flag.Description) ? "" : $" : {flag.Description}";
+                            writer.WriteLine($"<li><b>{flag.Value}</b></span> : {flag.DocName}{description}</li>");
                         }
                         writer.WriteLine("</ul>");
                         writer.WriteLine("</div>");
+                    }
+
+                    foreach (var note in entity.Notes)
+                    {
+                        writer.WriteLine($"<div class=\"notices blue\">{note}</div>");
+                    }
+                    
+                    foreach (var issue in entity.Issues)
+                    {
+                        writer.WriteLine($"<div class=\"notices red\">{issue}</div>");
                     }
                 }
             }

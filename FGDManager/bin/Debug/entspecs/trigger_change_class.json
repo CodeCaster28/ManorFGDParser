@@ -1,5 +1,11 @@
 {
   "Classname": "trigger_change_class",
   "Description": "Entity_Description_here",
-  "KeyDescriptions": []
+  "KeyDescriptions": [],
+  "Notes": [
+    "Insert additional notes here"
+  ],
+  "Issues": [
+    "Insert known issues here"
+  ]
 }

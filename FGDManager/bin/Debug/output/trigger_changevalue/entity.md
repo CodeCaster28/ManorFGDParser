@@ -5,29 +5,36 @@ title: trigger_changevalue
 Entity_Description_here
 ###Keyvalues
 <hr>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Destination entity</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Destination key</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszValueName</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Source value</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszNewValue</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Action</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iszValueType</kbd> :
 Keyvalue_Description_here
+<div class="accordion">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
 <ul>
 <li><b>0 </b></span> : Replace (= source) : Choice_Description_here</li>
 <li><b>1 </b></span> : Add (= old + source) : Choice_Description_here</li>
@@ -53,19 +60,30 @@ Keyvalue_Description_here
 <li><b>24 </b></span> : Arccot (= arccot(source)) : Choice_Description_here</li>
 </ul>
 </div>
-<div class="entityentry">
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigonometric funcs. I/O</b></span> <kbd  class="tooltip" data-tooltip="choices">m_trigonometricBehaviour</kbd> :
 Keyvalue_Description_here
+<div class="accordion">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
 <ul>
 <li><b>0 </b></span> : Degrees in (out for arc.) : Choice_Description_here</li>
 <li><b>1 </b></span> : Radian measure in (out for arc.) : Choice_Description_here</li>
 </ul>
 </div>
-<div class="entityentry">
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Append spaces (for strings)</b></span> <kbd  class="tooltip" data-tooltip="integer">m_iAppendSpaces</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger after action</b></span> <kbd  class="tooltip" data-tooltip="target_destination">message</kbd> :
 Keyvalue_Description_here
 </div>
@@ -80,3 +98,5 @@ Keyvalue_Description_here
 <li><b>64 </b></span> : Invert source value : Choice_Description_here</li>
 </ul>
 </div>
+<div class="notices blue">Insert additional notes here</div>
+<div class="notices red">Insert known issues here</div>

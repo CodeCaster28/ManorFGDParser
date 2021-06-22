@@ -31,6 +31,8 @@
                         }
                     }
                     entity.RefreshFlagsDescriptions();
+                    entity.Issues = result.Issues;
+                    entity.Notes = result.Notes;
                 }
             }
         }

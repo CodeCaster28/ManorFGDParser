@@ -5,105 +5,157 @@ title: worldspawn
 Entity_Description_here
 ###Keyvalues
 <hr>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Map description / title</b></span> <kbd  class="tooltip" data-tooltip="string">message</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Environment map (cl_skyname)</b></span> <kbd  class="tooltip" data-tooltip="string">skyname</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>CD track to play</b></span> <kbd  class="tooltip" data-tooltip="integer">sounds</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Default light level</b></span> <kbd  class="tooltip" data-tooltip="integer">light</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Default wave height</b></span> <kbd  class="tooltip" data-tooltip="string">WaveHeight</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Max viewable distance</b></span> <kbd  class="tooltip" data-tooltip="string">MaxRange</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Chapter title message</b></span> <kbd  class="tooltip" data-tooltip="string">chaptertitle</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Level fade in</b></span> <kbd  class="tooltip" data-tooltip="choices">startdark</kbd> :
 Keyvalue_Description_here
+<div class="accordion">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
 <ul>
 <li><b>0 </b></span> : No : Choice_Description_here</li>
 <li><b>1 </b></span> : Yes : Choice_Description_here</li>
 </ul>
 </div>
-<div class="entityentry">
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Display game title</b></span> <kbd  class="tooltip" data-tooltip="choices">gametitle</kbd> :
 Keyvalue_Description_here
+<div class="accordion">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
 <ul>
 <li><b>0 </b></span> : No : Choice_Description_here</li>
 <li><b>1 </b></span> : Yes : Choice_Description_here</li>
 </ul>
 </div>
-<div class="entityentry">
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>New level unit</b></span> <kbd  class="tooltip" data-tooltip="choices">newunit</kbd> :
 Keyvalue_Description_here
+<div class="accordion">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
 <ul>
 <li><b>0 </b></span> : No, keep current : Choice_Description_here</li>
 <li><b>1 </b></span> : Yes, clear previous levels : Choice_Description_here</li>
 </ul>
 </div>
-<div class="entityentry">
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Map team List</b></span> <kbd  class="tooltip" data-tooltip="string">mapteams</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Default team</b></span> <kbd  class="tooltip" data-tooltip="choices">defaultteam</kbd> :
 Keyvalue_Description_here
+<div class="accordion">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
 <ul>
 <li><b>0 </b></span> : Fewest Players : Choice_Description_here</li>
 <li><b>1 </b></span> : First Team : Choice_Description_here</li>
 </ul>
 </div>
-<div class="entityentry">
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Roaming monsters (node graph)</b></span> <kbd  class="tooltip" data-tooltip="choices">freeroam</kbd> :
 Keyvalue_Description_here
+<div class="accordion">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
 <ul>
 <li><b>0 </b></span> : No : Choice_Description_here</li>
 <li><b>1 </b></span> : Yes : Choice_Description_here</li>
 </ul>
 </div>
-<div class="entityentry">
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Sentences File</b></span> <kbd  class="tooltip" data-tooltip="string">sentence_file</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Materials File</b></span> <kbd  class="tooltip" data-tooltip="string">materials_file</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">globalsoundlist</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Model Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">globalmodellist</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Force Player Models a;b;c etc</b></span> <kbd  class="tooltip" data-tooltip="string">forcepmodels</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum game version</b></span> <kbd  class="tooltip" data-tooltip="choices">scversion2</kbd> :
 Keyvalue_Description_here
+<div class="accordion">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
 <ul>
 <li><b>524 </b></span> : 5.24 Patch : Choice_Description_here</li>
 <li><b>523 </b></span> : 5.23 Patch : Choice_Description_here</li>
@@ -142,3 +194,7 @@ Keyvalue_Description_here
 <li><b>300 </b></span> : 3.0 (or earlier) : Choice_Description_here</li>
 </ul>
 </div>
+</div>
+</div>
+<div class="notices blue">Insert additional notes here</div>
+<div class="notices red">Insert known issues here</div>

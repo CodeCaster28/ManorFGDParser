@@ -23,7 +23,11 @@
         public string Description { get; set; }
 
         public List<KeyDescription> KeyDescriptions { get; set; } = new List<KeyDescription>();
+
+        public List<string> Notes { get; set; } = new List<string>();
         
+        public List<string> Issues { get; set; } = new List<string>();
+
         public void AddKey(string name, string description, List<ChoiceDescription> choices = null)
         {
             var key = new KeyDescription()

@@ -5,37 +5,44 @@ title: trigger_hurt_remote
 Entity_Description_here
 ###Keyvalues
 <hr>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target Class</b></span> <kbd  class="tooltip" data-tooltip="string">targetclass</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage</b></span> <kbd  class="tooltip" data-tooltip="integer">dmg</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Armor Damage</b></span> <kbd  class="tooltip" data-tooltip="integer">armordmg</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay (Only when Constant)</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
 Keyvalue_Description_here
 </div>
-<div class="entityentry">
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage Type</b></span> <kbd  class="tooltip" data-tooltip="choices">damagetype</kbd> :
 Keyvalue_Description_here
+<div class="accordion">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
 <ul>
 <li><b>0 </b></span> : GENERIC : Choice_Description_here</li>
 <li><b>1 </b></span> : CRUSH : Choice_Description_here</li>
@@ -60,6 +67,8 @@ Keyvalue_Description_here
 <li><b>4194304 </b></span> : SLOWFREEZE : Choice_Description_here</li>
 </ul>
 </div>
+</div>
+</div>
 ###Flags
 <hr>
 <div class="entityflags">
@@ -70,3 +79,5 @@ Keyvalue_Description_here
 <li><b>8 </b></span> : Do Armor : Choice_Description_here</li>
 </ul>
 </div>
+<div class="notices blue">Insert additional notes here</div>
+<div class="notices red">Insert known issues here</div>
