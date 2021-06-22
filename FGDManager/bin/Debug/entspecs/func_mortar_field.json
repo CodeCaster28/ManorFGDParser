@@ -1,0 +1,44 @@
+{
+  "Classname": "func_mortar_field",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "m_flSpread",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_iCount",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_fControl",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "m_iszXController",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_iszYController",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "Classname": "func_friction",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "modifier",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    }
+  ]
+}

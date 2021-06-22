@@ -33,6 +33,14 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c6752e45808247c2">
+          <HintPath>..\packages\JSON.1.0.1\lib\net40\Json.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+          <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Xml.Linq" />
@@ -46,9 +54,12 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Entities\Choice.cs" />
         <Compile Include="Entities\Entity.cs" />
         <Compile Include="Entities\EntityType.cs" />
         <Compile Include="Entities\KeyValue.cs" />
+        <Compile Include="Entities\SpawnFlag.cs" />
+        <Compile Include="Entities\SpecsData.cs" />
         <Compile Include="ExtensionMethods.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
@@ -59,9 +70,10 @@
         <Compile Include="GameDefinitionLoader.cs" />
         <Compile Include="Parser\FGDParser.cs" />
         <Compile Include="Parser\EntityParser.cs" />
+        <Compile Include="Parser\SpecsGenerator.cs" />
         <Compile Include="Parser\KeyValuesParser.cs" />
         <Compile Include="Parser\MDOutput.cs" />
-        <Compile Include="Parser\ParserMode.cs" />
+        <Compile Include="Parser\SpecsProvider.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <EmbeddedResource Include="Properties\Resources.resx">
@@ -73,6 +85,7 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <None Include="packages.config" />
         <None Include="Properties\Settings.settings">
             <Generator>SettingsSingleFileGenerator</Generator>
             <LastGenOutput>Settings.Designer.cs</LastGenOutput>

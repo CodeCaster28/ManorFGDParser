@@ -1,0 +1,95 @@
+{
+  "Classname": "env_xenmaker",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "monstertype",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_flBeamRadius",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_iBeamAlpha",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_iBeamCount",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_vBeamColor",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_flLightRadius",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_vLightColor",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_flStartSpriteFramerate",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_flStartSpriteScale",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_iStartSpriteAlpha",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_vStartSpriteColor",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_flEndSpriteFramerate",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_flEndSpriteScale",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_iEndSpriteAlpha",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_vEndSpriteColor",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Classname": "env_spritetrain",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "model",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "scale",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Classname": "func_guntarget",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "speed",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "message",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "health",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "_minlight",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    }
+  ]
+}

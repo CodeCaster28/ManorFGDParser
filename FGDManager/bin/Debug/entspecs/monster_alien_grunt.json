@@ -1,0 +1,43 @@
+{
+  "Classname": "monster_alien_grunt",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "weapons",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "10 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "netname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "32 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

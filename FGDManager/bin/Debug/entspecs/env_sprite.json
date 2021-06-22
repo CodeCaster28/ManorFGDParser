@@ -1,0 +1,69 @@
+{
+  "Classname": "env_sprite",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "framerate",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "model",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "scale",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "vp_type",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

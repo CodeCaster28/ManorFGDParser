@@ -1,0 +1,45 @@
+{
+  "Classname": "monster_torch_ally_repel",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "netname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "32 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "weapons",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "sequence",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "39 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

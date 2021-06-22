@@ -1,0 +1,35 @@
+{
+  "Classname": "cycler_wreckage",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "framerate",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "model",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "scale",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "32",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "64",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

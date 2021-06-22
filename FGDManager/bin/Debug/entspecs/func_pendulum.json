@@ -1,0 +1,57 @@
+{
+  "Classname": "func_pendulum",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "speed",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "distance",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "damp",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "dmg",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "64",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "128",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "_minlight",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    }
+  ]
+}

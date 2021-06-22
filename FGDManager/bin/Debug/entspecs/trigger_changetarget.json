@@ -1,0 +1,11 @@
+{
+  "Classname": "trigger_changetarget",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "m_iszNewTarget",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    }
+  ]
+}

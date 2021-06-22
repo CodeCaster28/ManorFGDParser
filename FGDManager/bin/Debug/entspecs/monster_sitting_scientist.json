@@ -1,0 +1,58 @@
+{
+  "Classname": "monster_sitting_scientist",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "body",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "-1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "sequence",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "71 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "72 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "73 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "74 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "75 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

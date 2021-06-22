@@ -1,0 +1,44 @@
+{
+  "Classname": "monster_bodyguard",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "weapons",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "Classname": "monster_zombie",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "sequence",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0  ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "19 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "20 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "21 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "22 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "23 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "24 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "25 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "26 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "27 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "28 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "29 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "30 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "31 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "32 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "33 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "34 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "35 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "36 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "37 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "38 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "39 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "40 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "41 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "42 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "43 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "44 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "45 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "48 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "46 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "47 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "49 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "50 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "51 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "52 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

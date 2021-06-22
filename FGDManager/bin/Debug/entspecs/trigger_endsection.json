@@ -1,0 +1,21 @@
+{
+  "Classname": "trigger_endsection",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "section",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

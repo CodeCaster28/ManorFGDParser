@@ -38,6 +38,49 @@
                     writer.WriteLine("---");
                     writer.WriteLine($"title: {entity.ClassName}");
                     writer.WriteLine("---");
+                    writer.WriteLine();
+                    writer.WriteLine(entity.Description);
+                    
+                    var allKeyValues = entity.GetAllKeyValues();
+                    allKeyValues.RemoveAll(a => a.Name == "spawnflags");
+                    
+                    
+                    if (allKeyValues.Count > 0)
+                    {
+                        writer.WriteLine("###Keyvalues");
+                        writer.WriteLine("<hr>");
+
+                        foreach (var key in allKeyValues)
+                        {
+                            writer.WriteLine("<div class=\"entityentry\">");
+                            writer.WriteLine($"<span style=\"color:#9fc5e8;\"><b>{key.DocName}</b></span> <kbd  class=\"tooltip\" data-tooltip=\"{key.Type}\">{key.Name}</kbd> :");
+                            writer.WriteLine(key.Description);
+                            if (key.Choices.Count > 0)
+                            {
+                                writer.WriteLine("<ul>");
+                                foreach (var choice in key.Choices)
+                                {
+                                    writer.WriteLine($"<li><b>{choice.Value}</b></span> : {choice.DocName} : {choice.Description}</li>");
+                                }
+                                writer.WriteLine("</ul>");
+                            }
+                            writer.WriteLine("</div>");
+                        }
+                    }
+
+                    if (entity.SpawnFlags.Count > 0)
+                    {
+                        writer.WriteLine("###Flags");
+                        writer.WriteLine("<hr>");
+                        writer.WriteLine("<div class=\"entityflags\">");
+                        writer.WriteLine("<ul>");
+                        foreach (var flag in entity.SpawnFlags)
+                        {
+                            writer.WriteLine($"<li><b>{flag.Value}</b></span> : {flag.DocName} : {flag.Description}</li>");
+                        }
+                        writer.WriteLine("</ul>");
+                        writer.WriteLine("</div>");
+                    }
                 }
             }
 

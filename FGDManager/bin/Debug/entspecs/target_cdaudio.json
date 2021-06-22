@@ -1,0 +1,136 @@
+{
+  "Classname": "target_cdaudio",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "health",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "-1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "9 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "10 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "11 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "12 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "13 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "14 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "15 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "17 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "18 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "19 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "20 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "21 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "22 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "23 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "24 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "25 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "26 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "27 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "28 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "29 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "30 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

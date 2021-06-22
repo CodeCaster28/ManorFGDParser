@@ -7,3 +7,8 @@ C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debu
 C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.exe
 C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.pdb
 C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.csproj.CoreCompileInputs.cache
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\bin\Debug\Json.dll
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\bin\Debug\Json.pdb
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\obj\Debug\FGDManager.csproj.CopyComplete
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\spell\Documents\SvenCoopManor\FGDManager\FGDManager\FGDManager\bin\Debug\Newtonsoft.Json.xml

@@ -1,0 +1,47 @@
+{
+  "Classname": "info_hullshape",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "targetname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "defaulthulls",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "disabled",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

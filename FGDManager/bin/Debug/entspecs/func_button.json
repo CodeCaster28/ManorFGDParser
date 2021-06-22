@@ -1,0 +1,143 @@
+{
+  "Classname": "func_button",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "speed",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "health",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "lip",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "master",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "sounds",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "9",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "10",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "11",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "14",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "noise",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "wait",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "32",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "64",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "256",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "_minlight",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "use_type",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

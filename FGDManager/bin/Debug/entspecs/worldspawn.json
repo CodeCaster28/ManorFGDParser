@@ -1,0 +1,287 @@
+{
+  "Classname": "worldspawn",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "message",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "skyname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "sounds",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "light",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "WaveHeight",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "MaxRange",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "chaptertitle",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "startdark",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "gametitle",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "newunit",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "mapteams",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "defaultteam",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "freeroam",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "sentence_file",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "materials_file",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "globalsoundlist",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "globalmodellist",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "forcepmodels",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "scversion2",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "524 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "523 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "522 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "521 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "520 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "519 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "518 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "517 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "516 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "515 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "514 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "513 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "512 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "511 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "510 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "509 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "508 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "507 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "506 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "505 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "504 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "503 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "502 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "501 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "500 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "480 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "470 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "460 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "450 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "407 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "406 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "405 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "401 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "400 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "300 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

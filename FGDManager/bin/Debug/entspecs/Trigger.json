@@ -1,0 +1,75 @@
+{
+  "Classname": "Trigger",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "netname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "master",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "sounds",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "message",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "tiny_monsters",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "32",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "Classname": "Door",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "speed",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "master",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "movesnd",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "9",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "10",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "movesnd_loop",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "stopsnd",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "noise1",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "noise2",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "wait",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "lip",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "dmg",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "message",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "health",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "_minlight",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "soundlist",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "m_iOpenFlags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "m_fIgnoreTargetname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "m_iObeyTriggerMode",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "32",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "256",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "512",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1024",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "breakable",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "fireonbreak",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "material",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "instantbreak",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "weapon",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "19",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "20",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "explosion",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "gibmodel",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "explodemagnitude",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "displayname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "onlytrigger",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "breakontrigger",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "repairable",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "showhudinfo",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "immunetoclients",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "explosivesonly",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

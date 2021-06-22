@@ -1,0 +1,25 @@
+{
+  "Classname": "env_spark",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "MaxDelay",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "32",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "64",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "Classname": "monster_human_grunt",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "32 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "netname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "weapons",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1  ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3  ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5  ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8  ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "10 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "64 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "66 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "128 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "130 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

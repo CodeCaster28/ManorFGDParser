@@ -1,0 +1,423 @@
+{
+  "Classname": "ambient_generic",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "message",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "health",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "playmode",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "preset",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "9",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "10",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "11",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "12",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "13",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "14",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "15",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "17",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "18",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "19",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "20",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "21",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "22",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "23",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "24",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "25",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "26",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "27",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "volstart",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "fadein",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "fadeout",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "pitch",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "pitchstart",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spinup",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spindown",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "lfotype",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "lforate",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "lfomodpitch",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "lfomodvol",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "cspinup",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "linearmin",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "9",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "10",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "11",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "12",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "13",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "14",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "15",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "linearmax",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "5",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "6",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "7",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "9",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "10",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "11",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "12",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "13",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "14",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "15",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "32 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "64 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

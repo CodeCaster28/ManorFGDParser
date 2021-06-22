@@ -1,0 +1,184 @@
+{
+  "Classname": "trigger_setcvar",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "m_iszCVarToChange",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "\"mp_allowmonsterinfo\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_banana\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_barnacle_paralyze\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_disablegaussjump\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_disable_autoclimb\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_disable_pcbalancing\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_disable_player_rappel\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_dropweapons\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_falldamage\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_flashlight\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_forcerespawn\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_fraglimit\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_grapple_mode\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_monsterpoints\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_noblastgibs\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_nomedkit\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_no_akimbo_uzis\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_npckill\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_pcbalancing_factorlist\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_respawndelay\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_timelimit\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_weaponstay\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_weapon_respawndelay\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_ammo_respawndelay\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"mp_item_respawndelay\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"npc_dropweapons\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"skill\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"sk_\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"sv_ai_enemy_detection_mode\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"sv_accelerate\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"sv_airaccelerate\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"sv_friction\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"sv_gravity\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"sv_maxspeed\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"sv_wateraccelerate\"",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "\"sv_waterfriction\"",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "message",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "netname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "SetType",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "Classname": "trigger_hurt",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "32",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "64",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "master",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "dmg",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "delay",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "damagetype",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "8 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "32 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "64 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "128 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "256 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "512 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1024 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "16384 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "32768 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "65536 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "131072 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "262144 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "524288 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1048576 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2097152 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4194304 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

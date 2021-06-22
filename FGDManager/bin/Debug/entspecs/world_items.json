@@ -1,0 +1,28 @@
+{
+  "Classname": "world_items",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "type",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "42 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "43 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "44 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "45 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

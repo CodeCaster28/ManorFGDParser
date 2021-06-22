@@ -1,0 +1,63 @@
+{
+  "Classname": "monster_otis_dead",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "pose",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "0 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "1 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "2 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "3 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "4 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "sequence",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "35 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "36 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "37 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "38 ",
+          "choiceDescription": "Choice_Description_here"
+        },
+        {
+          "choiceValue": "39 ",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    },
+    {
+      "keyName": "model",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    }
+  ]
+}

@@ -1,3 +1,35 @@
 ---
 title: trigger_createentity
 ---
+
+Entity_Description_here
+###Keyvalues
+<hr>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>Child Classname</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszCrtEntChildClass</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>Child Targetname</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszCrtEntChildName</kbd> :
+Keyvalue_Description_here
+</div>

@@ -1,12 +1,14 @@
 ﻿namespace FGDManager
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
     using System.Text.RegularExpressions;
 
     public class EntityParser
     {
-        public bool ParseEntity(string header, out Entity entity)
+        public void ParseEntity(string header, out Entity entity)
         {
             var pointer = 0;
             var entityType = GetType(header, ref pointer);
@@ -22,7 +24,7 @@
             {
                 Type = entityType,
                 ClassName = className,
-                DocName = docName,
+                DocName = docName
             };
             
             if (baseClasses != null)
@@ -30,11 +32,11 @@
                 entity.BaseClasses = baseClasses;
                 messagePrint = messagePrint + " (";
 
-                for (var i = 0; i < baseClasses.Length; i++)
+                for (var i = 0; i < baseClasses.Count; i++)
                 {
                     messagePrint = messagePrint + $"{baseClasses[i]}";
                     
-                    if (i < baseClasses.Length - 1)
+                    if (i < baseClasses.Count - 1)
                         messagePrint = messagePrint + "+";
                 }
                 
@@ -47,11 +49,7 @@
                 messagePrint = messagePrint + $" [{docName}]";
             }
 
-            if (!header.EndsWith("[]"))
-                GetEntitySettings();
-
             Console.WriteLine(messagePrint);
-            return true;
         }
 
         private EntityType GetType(string header, ref int pointer)
@@ -70,7 +68,7 @@
             }
         }
 
-        private string[] GetBaseClasses(string header)
+        private List<string> GetBaseClasses(string header)
         {
             var regex = new Regex(@"base\((.+?)\)");
             var match = regex.Match(header);
@@ -78,7 +76,7 @@
             {
                 var parameters = match.Groups[1].Value;
                 parameters = parameters.Replace(" ", string.Empty);
-                return parameters.Split(',');
+                return parameters.Split(',').ToList();
             }
 
             return null;
@@ -102,9 +100,61 @@
             return docName != string.Empty;
         }
 
-        private void GetEntitySettings()
+        public KeyValue ParseKeyValue(string keyValue, ref Entity entity)
         {
+            var key = new KeyValue(entity);
+            var regex = new Regex(@"^(.*?)\(");
+            var match = regex.Match(keyValue);
+            if (match.Success)
+            {
+                key.Name = match.Groups[1].Value;
+            }
+                
+            regex = new Regex(@"\((.+?)\)");
+            match = regex.Match(keyValue);
+            if (match.Success)
+            {
+                key.Type = match.Groups[1].Value;
+            }
             
+            regex = new Regex(":.*?\"(.*?)\"");
+            match = regex.Match(keyValue);
+            if (match.Success)
+            {
+                key.DocName = match.Groups[1].Value;
+            }
+
+            entity.KeyValues.Add(key);
+            Console.WriteLine($"    {key.Name}({key.Type})[{key.DocName}]");
+
+            return key;
+        }
+
+        public Choice ParseChoice(string line, ref KeyValue keyValue)
+        {
+            var choice = new Choice();
+            var regex = new Regex(":.*?\"(.*?)\"");
+            var match = regex.Match(line);
+            
+            if (match.Success)
+            {
+                choice.DocName = match.Groups[1].Value;
+            }
+            
+            regex = new Regex("^(.+?):");
+            match = regex.Match(line);
+            if (match.Success)
+            {
+                choice.Value = match.Groups[1].Value;
+            }
+                
+            keyValue.Choices.Add(choice);
+            
+            if (keyValue.Name == "spawnflags")
+            {
+                keyValue.ParentEntity.RegisterSpawnFlag(choice);
+            }
+            return choice;
         }
     }
 }

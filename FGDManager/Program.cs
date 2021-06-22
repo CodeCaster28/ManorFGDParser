@@ -19,9 +19,37 @@ namespace FGDManager
             //Application.Run(new Form1());
             
             GameDefinitionLoader fgdLoader = new GameDefinitionLoader();
-            fgdLoader.Run();
+            
+            var command = "";
+            while (command != "exit")
+            {
+                Console.WriteLine("==============================================================");
+                Console.WriteLine("Available commands:");
+                Console.WriteLine(" parse - parse and print results");
+                Console.WriteLine(" create - create MD's from FGD and Specs");
+                Console.WriteLine(" generatejsons - generate empty specs jsons for every entity");
+                Console.WriteLine(" exit - close program");
+                Console.WriteLine("==============================================================");
+                command = Console.ReadLine();
 
-            Console.ReadKey();
+                switch (command)
+                {
+                    case "parse":
+                        fgdLoader.Parse();
+                        break;
+                    case "create":
+                        fgdLoader.GenerateOutput();
+                        break;
+                    case "generatejsons":
+                        fgdLoader.GenerateJsons();
+                        break;
+                    case "exit":
+                        break;
+                    default:
+                        Console.WriteLine("Command not found");
+                        break;
+                }
+            }
         }
     }
 }

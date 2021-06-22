@@ -1,0 +1,21 @@
+{
+  "Classname": "monster_bigmomma",
+  "Description": "Entity_Description_here",
+  "KeyDescriptions": [
+    {
+      "keyName": "netname",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": []
+    },
+    {
+      "keyName": "spawnflags",
+      "keyDescription": "Keyvalue_Description_here",
+      "keyChoices": [
+        {
+          "choiceValue": "1024",
+          "choiceDescription": "Choice_Description_here"
+        }
+      ]
+    }
+  ]
+}

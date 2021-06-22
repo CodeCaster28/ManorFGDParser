@@ -1,3 +1,27 @@
 ---
 title: trigger_changemodel
 ---
+
+Entity_Description_here
+###Keyvalues
+<hr>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>New Model Name</b></span> <kbd  class="tooltip" data-tooltip="studio">model</kbd> :
+Keyvalue_Description_here
+</div>
+<div class="entityentry">
+<span style="color:#9fc5e8;"><b>Skin</b></span> <kbd  class="tooltip" data-tooltip="integer">skin</kbd> :
+Keyvalue_Description_here
+</div>
