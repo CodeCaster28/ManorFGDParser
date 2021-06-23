@@ -1,7 +1,7 @@
 ---
 title: monster_scientist
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,27 +33,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Slow Pulse : Choice_Description_here</li>
-<li><b>2</b></span> : Fast Pulse : Choice_Description_here</li>
-<li><b>3</b></span> : Slow Wide Pulse : Choice_Description_here</li>
-<li><b>4</b></span> : Fast Wide Pulse : Choice_Description_here</li>
-<li><b>9</b></span> : Slow Strobe : Choice_Description_here</li>
-<li><b>10</b></span> : Fast Strobe : Choice_Description_here</li>
-<li><b>11</b></span> : Faster Strobe : Choice_Description_here</li>
-<li><b>12</b></span> : Slow Flicker : Choice_Description_here</li>
-<li><b>13</b></span> : Fast Flicker : Choice_Description_here</li>
-<li><b>5</b></span> : Slow Fade Away : Choice_Description_here</li>
-<li><b>6</b></span> : Fast Fade Away : Choice_Description_here</li>
-<li><b>7</b></span> : Slow Become Solid : Choice_Description_here</li>
-<li><b>8</b></span> : Fast Become Solid : Choice_Description_here</li>
-<li><b>14</b></span> : Constant Glow : Choice_Description_here</li>
-<li><b>15</b></span> : Distort : Choice_Description_here</li>
-<li><b>16</b></span> : Hologram (Distort + fade) : Choice_Description_here</li>
-<li><b>17</b></span> : Dead Player (DONT USE!) : Choice_Description_here</li>
-<li><b>18</b></span> : Explode (Garg Like) : Choice_Description_here</li>
-<li><b>19</b></span> : Glow Shell : Choice_Description_here</li>
-<li><b>20</b></span> : ClampMinScale (Sprites) : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Slow Pulse : Choice_Description_here</li>
+<li><b>2</b> : Fast Pulse : Choice_Description_here</li>
+<li><b>3</b> : Slow Wide Pulse : Choice_Description_here</li>
+<li><b>4</b> : Fast Wide Pulse : Choice_Description_here</li>
+<li><b>9</b> : Slow Strobe : Choice_Description_here</li>
+<li><b>10</b> : Fast Strobe : Choice_Description_here</li>
+<li><b>11</b> : Faster Strobe : Choice_Description_here</li>
+<li><b>12</b> : Slow Flicker : Choice_Description_here</li>
+<li><b>13</b> : Fast Flicker : Choice_Description_here</li>
+<li><b>5</b> : Slow Fade Away : Choice_Description_here</li>
+<li><b>6</b> : Fast Fade Away : Choice_Description_here</li>
+<li><b>7</b> : Slow Become Solid : Choice_Description_here</li>
+<li><b>8</b> : Fast Become Solid : Choice_Description_here</li>
+<li><b>14</b> : Constant Glow : Choice_Description_here</li>
+<li><b>15</b> : Distort : Choice_Description_here</li>
+<li><b>16</b> : Hologram (Distort + fade) : Choice_Description_here</li>
+<li><b>17</b> : Dead Player (DONT USE!) : Choice_Description_here</li>
+<li><b>18</b> : Explode (Garg Like) : Choice_Description_here</li>
+<li><b>19</b> : Glow Shell : Choice_Description_here</li>
+<li><b>20</b> : ClampMinScale (Sprites) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -69,12 +69,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Color : Choice_Description_here</li>
-<li><b>2</b></span> : Texture : Choice_Description_here</li>
-<li><b>3</b></span> : Glow : Choice_Description_here</li>
-<li><b>4</b></span> : Solid : Choice_Description_here</li>
-<li><b>5</b></span> : Additive : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Color : Choice_Description_here</li>
+<li><b>2</b> : Texture : Choice_Description_here</li>
+<li><b>3</b> : Glow : Choice_Description_here</li>
+<li><b>4</b> : Solid : Choice_Description_here</li>
+<li><b>5</b> : Additive : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -93,7 +93,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Classification</b></span> <kbd  class="tooltip" data-tooltip="choices">classify</kbd> :
-Set the class of the spawned entity. Think of how even though zombies and human grunts, by default, both are the players' enemies, yet have a dislike for and attack each other as well. This relation is created through the respective classes of the two entity types. For a complete table of how different classes react to each other, see [monster class relation table](https://wiki.svencoop.com/Class_Relationship_Table).
+Set the class of the spawned {{ entname }}. Think of how even though zombies and human grunts, by default, both are the players' enemies, yet have a dislike for and attack each other as well. This relation is created through the respective classes of the two entity types. For a complete table of how different classes react to each other, see [monster class relation table](https://wiki.svencoop.com/Class_Relationship_Table).
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -102,27 +102,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1 </b></span> : None</li>
-<li><b>0 </b></span> : Object Default : Keep default classification.</li>
-<li><b>1 </b></span> : Machine</li>
-<li><b>2 </b></span> : Player</li>
-<li><b>3 </b></span> : Human Passive</li>
-<li><b>4 </b></span> : Human Military</li>
-<li><b>5 </b></span> : Alien Military</li>
-<li><b>6 </b></span> : Alien Passive</li>
-<li><b>7 </b></span> : Alien Monster</li>
-<li><b>8 </b></span> : Alien Prey</li>
-<li><b>9 </b></span> : Alien Predator</li>
-<li><b>10 </b></span> : Insect</li>
-<li><b>11 </b></span> : Player Ally</li>
-<li><b>12 </b></span> : Player Hornet/Snark</li>
-<li><b>13 </b></span> : Alien Hornet/Snark</li>
-<li><b>14 </b></span> : X-Race</li>
-<li><b>15 </b></span> : X-Race: Shocktrooper/Voltigore</li>
-<li><b>16 </b></span> : Team 1 : Use it to classify to custom team.</li>
-<li><b>17 </b></span> : Team 2 : Use it to classify to custom team.</li>
-<li><b>18 </b></span> : Team 3 : Use it to classify to custom team.</li>
-<li><b>19 </b></span> : Team 4 : Use it to classify to custom team.</li>
+<li><b>-1 </b> : None</li>
+<li><b>0 </b> : Object Default : Keep default classification.</li>
+<li><b>1 </b> : Machine</li>
+<li><b>2 </b> : Player</li>
+<li><b>3 </b> : Human Passive</li>
+<li><b>4 </b> : Human Military</li>
+<li><b>5 </b> : Alien Military</li>
+<li><b>6 </b> : Alien Passive</li>
+<li><b>7 </b> : Alien Monster</li>
+<li><b>8 </b> : Alien Prey</li>
+<li><b>9 </b> : Alien Predator</li>
+<li><b>10 </b> : Insect</li>
+<li><b>11 </b> : Player Ally</li>
+<li><b>12 </b> : Player Hornet/Snark</li>
+<li><b>13 </b> : Alien Hornet/Snark</li>
+<li><b>14 </b> : X-Race</li>
+<li><b>15 </b> : X-Race: Shocktrooper/Voltigore</li>
+<li><b>16 </b> : Team 1 : Use it to classify to custom team.</li>
+<li><b>17 </b> : Team 2 : Use it to classify to custom team.</li>
+<li><b>18 </b> : Team 3 : Use it to classify to custom team.</li>
+<li><b>19 </b> : Team 4 : Use it to classify to custom team.</li>
 </ul>
 </div>
 </div>
@@ -138,8 +138,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -155,16 +155,16 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No Trigger : Choice_Description_here</li>
-<li><b>1 </b></span> : See Player, Mad at Player : Choice_Description_here</li>
-<li><b>2 </b></span> : Take Damage : Choice_Description_here</li>
-<li><b>3 </b></span> : 50% Health Remaining : Choice_Description_here</li>
-<li><b>4 </b></span> : Death : Choice_Description_here</li>
-<li><b>7 </b></span> : Hear World : Choice_Description_here</li>
-<li><b>8 </b></span> : Hear Player : Choice_Description_here</li>
-<li><b>9 </b></span> : Hear Combat : Choice_Description_here</li>
-<li><b>10</b></span> : See Player Unconditional : Choice_Description_here</li>
-<li><b>11</b></span> : See Player, Not In Combat : Choice_Description_here</li>
+<li><b>0 </b> : No Trigger : Choice_Description_here</li>
+<li><b>1 </b> : See Player, Mad at Player : Choice_Description_here</li>
+<li><b>2 </b> : Take Damage : Choice_Description_here</li>
+<li><b>3 </b> : 50% Health Remaining : Choice_Description_here</li>
+<li><b>4 </b> : Death : Choice_Description_here</li>
+<li><b>7 </b> : Hear World : Choice_Description_here</li>
+<li><b>8 </b> : Hear Player : Choice_Description_here</li>
+<li><b>9 </b> : Hear Combat : Choice_Description_here</li>
+<li><b>10</b> : See Player Unconditional : Choice_Description_here</li>
+<li><b>11</b> : See Player, Not In Combat : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -184,7 +184,7 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : 0 : Choice_Description_here</li>
+<li><b>0 </b> : 0 : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -200,7 +200,7 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : 0 : Choice_Description_here</li>
+<li><b>0 </b> : 0 : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -216,8 +216,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (Default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (Default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -237,10 +237,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Monster Default : Choice_Description_here</li>
-<li><b>-1 </b></span> : No Blood : Choice_Description_here</li>
-<li><b>1 </b></span> : Red : Choice_Description_here</li>
-<li><b>2 </b></span> : Yellow : Choice_Description_here</li>
+<li><b>0 </b> : Monster Default : Choice_Description_here</li>
+<li><b>-1 </b> : No Blood : Choice_Description_here</li>
+<li><b>1 </b> : Red : Choice_Description_here</li>
+<li><b>2 </b> : Yellow : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -276,9 +276,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Map Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Never : Choice_Description_here</li>
-<li><b>2 </b></span> : Always : Choice_Description_here</li>
+<li><b>0 </b> : Map Default : Choice_Description_here</li>
+<li><b>1 </b> : Never : Choice_Description_here</li>
+<li><b>2 </b> : Always : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -310,8 +310,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Yes (Default) : Choice_Description_here</li>
-<li><b>1 </b></span> : No : Choice_Description_here</li>
+<li><b>0 </b> : Yes (Default) : Choice_Description_here</li>
+<li><b>1 </b> : No : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -327,11 +327,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1 </b></span> : Random : Choice_Description_here</li>
-<li><b>0 </b></span> : Glasses : Choice_Description_here</li>
-<li><b>1 </b></span> : Einstein : Choice_Description_here</li>
-<li><b>2 </b></span> : Luther : Choice_Description_here</li>
-<li><b>3 </b></span> : Slick : Choice_Description_here</li>
+<li><b>-1 </b> : Random : Choice_Description_here</li>
+<li><b>0 </b> : Glasses : Choice_Description_here</li>
+<li><b>1 </b> : Einstein : Choice_Description_here</li>
+<li><b>2 </b> : Luther : Choice_Description_here</li>
+<li><b>3 </b> : Slick : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -347,91 +347,91 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>13 </b></span> : idle1 : Choice_Description_here</li>
-<li><b>27 </b></span> : eye_wipe : Choice_Description_here</li>
-<li><b>28 </b></span> : pull_needle : Choice_Description_here</li>
-<li><b>29 </b></span> : return_needle : Choice_Description_here</li>
-<li><b>30 </b></span> : give_shot : Choice_Description_here</li>
-<li><b>37 </b></span> : lying_on_back : Choice_Description_here</li>
-<li><b>38 </b></span> : lying_on_stomach : Choice_Description_here</li>
-<li><b>39 </b></span> : dead_sitting : Choice_Description_here</li>
-<li><b>40 </b></span> : dead_table1 : Choice_Description_here</li>
-<li><b>41 </b></span> : dead_table2 : Choice_Description_here</li>
-<li><b>42 </b></span> : dead_table3 : Choice_Description_here</li>
-<li><b>47 </b></span> : console : Choice_Description_here</li>
-<li><b>48 </b></span> : checktie : Choice_Description_here</li>
-<li><b>49 </b></span> : dryhands : Choice_Description_here</li>
-<li><b>50 </b></span> : tieshoe : Choice_Description_here</li>
-<li><b>51 </b></span> : whiteboard : Choice_Description_here</li>
-<li><b>52 </b></span> : studycart : Choice_Description_here</li>
-<li><b>53 </b></span> : lean : Choice_Description_here</li>
-<li><b>54 </b></span> : pondering : Choice_Description_here</li>
-<li><b>55 </b></span> : pondering2 : Choice_Description_here</li>
-<li><b>56 </b></span> : pondering3 : Choice_Description_here</li>
-<li><b>57 </b></span> : buysoda : Choice_Description_here</li>
-<li><b>61 </b></span> : push_button : Choice_Description_here</li>
-<li><b>62 </b></span> : converse1 : Choice_Description_here</li>
-<li><b>63 </b></span> : converse2 : Choice_Description_here</li>
-<li><b>64 </b></span> : retina : Choice_Description_here</li>
-<li><b>65 </b></span> : talkleft : Choice_Description_here</li>
-<li><b>66 </b></span> : talkright : Choice_Description_here</li>
-<li><b>67 </b></span> : deskidle : Choice_Description_here</li>
-<li><b>68 </b></span> : coffee : Choice_Description_here</li>
-<li><b>69 </b></span> : franticbutton : Choice_Description_here</li>
-<li><b>71 </b></span> : sitlookleft : Choice_Description_here</li>
-<li><b>72 </b></span> : sitlookright : Choice_Description_here</li>
-<li><b>73 </b></span> : sitscared : Choice_Description_here</li>
-<li><b>74 </b></span> : sitting2 : Choice_Description_here</li>
-<li><b>75 </b></span> : sitting3 : Choice_Description_here</li>
-<li><b>76 </b></span> : cprscientist : Choice_Description_here</li>
-<li><b>77 </b></span> : cprscientistrevive : Choice_Description_here</li>
-<li><b>78 </b></span> : cowering_in_corner : Choice_Description_here</li>
-<li><b>79 </b></span> : sstruggleidle : Choice_Description_here</li>
-<li><b>80 </b></span> : sstruggle : Choice_Description_here</li>
-<li><b>81 </b></span> : headcrabbed : Choice_Description_here</li>
-<li><b>82 </b></span> : c1a0_catwalkidle : Choice_Description_here</li>
-<li><b>83 </b></span> : c1a0_catwalk : Choice_Description_here</li>
-<li><b>84 </b></span> : ceiling_dangle : Choice_Description_here</li>
-<li><b>85 </b></span> : ventpull1 : Choice_Description_here</li>
-<li><b>86 </b></span> : ventpull2 : Choice_Description_here</li>
-<li><b>87 </b></span> : ventpullidle1 : Choice_Description_here</li>
-<li><b>88 </b></span> : ventpullidle2 : Choice_Description_here</li>
-<li><b>89 </b></span> : sitidle : Choice_Description_here</li>
-<li><b>90 </b></span> : sitstand : Choice_Description_here</li>
-<li><b>91 </b></span> : keypad : Choice_Description_here</li>
-<li><b>93 </b></span> : lookwindow : Choice_Description_here</li>
-<li><b>94 </b></span> : wave : Choice_Description_here</li>
-<li><b>95 </b></span> : pulldoor : Choice_Description_here</li>
-<li><b>96 </b></span> : beatdoor : Choice_Description_here</li>
-<li><b>97 </b></span> : fallingloop : Choice_Description_here</li>
-<li><b>98 </b></span> : crawlwindow : Choice_Description_here</li>
-<li><b>99 </b></span> : divewindow : Choice_Description_here</li>
-<li><b>100 </b></span> : locked_door : Choice_Description_here</li>
-<li><b>101 </b></span> : push_button2 : Choice_Description_here</li>
-<li><b>102 </b></span> : unlock_door : Choice_Description_here</li>
-<li><b>104 </b></span> : handrailidle : Choice_Description_here</li>
-<li><b>105 </b></span> : handrail : Choice_Description_here</li>
-<li><b>106 </b></span> : hanging_idle : Choice_Description_here</li>
-<li><b>107 </b></span> : fall : Choice_Description_here</li>
-<li><b>108 </b></span> : scientist_get_pulled : Choice_Description_here</li>
-<li><b>109 </b></span> : hanging_idle2 : Choice_Description_here</li>
-<li><b>110 </b></span> : fall_elevator : Choice_Description_here</li>
-<li><b>111 </b></span> : scientist_idlewall : Choice_Description_here</li>
-<li><b>112 </b></span> : ickyjump_sci : Choice_Description_here</li>
-<li><b>113 </b></span> : haulscientist : Choice_Description_here</li>
-<li><b>114 </b></span> : c1a4_wounded_idle : Choice_Description_here</li>
-<li><b>115 </b></span> : c1a4_dying_speech : Choice_Description_here</li>
-<li><b>116 </b></span> : tentacle_grab : Choice_Description_here</li>
-<li><b>117 </b></span> : helicack : Choice_Description_here</li>
-<li><b>118 </b></span> : windive : Choice_Description_here</li>
-<li><b>119 </b></span> : scicrashidle : Choice_Description_here</li>
-<li><b>120 </b></span> : scicrash : Choice_Description_here</li>
-<li><b>121 </b></span> : onguard : Choice_Description_here</li>
-<li><b>122 </b></span> : seeya : Choice_Description_here</li>
-<li><b>123 </b></span> : rocketcrawl : Choice_Description_here</li>
-<li><b>124 </b></span> : portal : Choice_Description_here</li>
-<li><b>125 </b></span> : gluonshow : Choice_Description_here</li>
-<li><b>127 </b></span> : kneel : Choice_Description_here</li>
+<li><b>13 </b> : idle1 : Choice_Description_here</li>
+<li><b>27 </b> : eye_wipe : Choice_Description_here</li>
+<li><b>28 </b> : pull_needle : Choice_Description_here</li>
+<li><b>29 </b> : return_needle : Choice_Description_here</li>
+<li><b>30 </b> : give_shot : Choice_Description_here</li>
+<li><b>37 </b> : lying_on_back : Choice_Description_here</li>
+<li><b>38 </b> : lying_on_stomach : Choice_Description_here</li>
+<li><b>39 </b> : dead_sitting : Choice_Description_here</li>
+<li><b>40 </b> : dead_table1 : Choice_Description_here</li>
+<li><b>41 </b> : dead_table2 : Choice_Description_here</li>
+<li><b>42 </b> : dead_table3 : Choice_Description_here</li>
+<li><b>47 </b> : console : Choice_Description_here</li>
+<li><b>48 </b> : checktie : Choice_Description_here</li>
+<li><b>49 </b> : dryhands : Choice_Description_here</li>
+<li><b>50 </b> : tieshoe : Choice_Description_here</li>
+<li><b>51 </b> : whiteboard : Choice_Description_here</li>
+<li><b>52 </b> : studycart : Choice_Description_here</li>
+<li><b>53 </b> : lean : Choice_Description_here</li>
+<li><b>54 </b> : pondering : Choice_Description_here</li>
+<li><b>55 </b> : pondering2 : Choice_Description_here</li>
+<li><b>56 </b> : pondering3 : Choice_Description_here</li>
+<li><b>57 </b> : buysoda : Choice_Description_here</li>
+<li><b>61 </b> : push_button : Choice_Description_here</li>
+<li><b>62 </b> : converse1 : Choice_Description_here</li>
+<li><b>63 </b> : converse2 : Choice_Description_here</li>
+<li><b>64 </b> : retina : Choice_Description_here</li>
+<li><b>65 </b> : talkleft : Choice_Description_here</li>
+<li><b>66 </b> : talkright : Choice_Description_here</li>
+<li><b>67 </b> : deskidle : Choice_Description_here</li>
+<li><b>68 </b> : coffee : Choice_Description_here</li>
+<li><b>69 </b> : franticbutton : Choice_Description_here</li>
+<li><b>71 </b> : sitlookleft : Choice_Description_here</li>
+<li><b>72 </b> : sitlookright : Choice_Description_here</li>
+<li><b>73 </b> : sitscared : Choice_Description_here</li>
+<li><b>74 </b> : sitting2 : Choice_Description_here</li>
+<li><b>75 </b> : sitting3 : Choice_Description_here</li>
+<li><b>76 </b> : cprscientist : Choice_Description_here</li>
+<li><b>77 </b> : cprscientistrevive : Choice_Description_here</li>
+<li><b>78 </b> : cowering_in_corner : Choice_Description_here</li>
+<li><b>79 </b> : sstruggleidle : Choice_Description_here</li>
+<li><b>80 </b> : sstruggle : Choice_Description_here</li>
+<li><b>81 </b> : headcrabbed : Choice_Description_here</li>
+<li><b>82 </b> : c1a0_catwalkidle : Choice_Description_here</li>
+<li><b>83 </b> : c1a0_catwalk : Choice_Description_here</li>
+<li><b>84 </b> : ceiling_dangle : Choice_Description_here</li>
+<li><b>85 </b> : ventpull1 : Choice_Description_here</li>
+<li><b>86 </b> : ventpull2 : Choice_Description_here</li>
+<li><b>87 </b> : ventpullidle1 : Choice_Description_here</li>
+<li><b>88 </b> : ventpullidle2 : Choice_Description_here</li>
+<li><b>89 </b> : sitidle : Choice_Description_here</li>
+<li><b>90 </b> : sitstand : Choice_Description_here</li>
+<li><b>91 </b> : keypad : Choice_Description_here</li>
+<li><b>93 </b> : lookwindow : Choice_Description_here</li>
+<li><b>94 </b> : wave : Choice_Description_here</li>
+<li><b>95 </b> : pulldoor : Choice_Description_here</li>
+<li><b>96 </b> : beatdoor : Choice_Description_here</li>
+<li><b>97 </b> : fallingloop : Choice_Description_here</li>
+<li><b>98 </b> : crawlwindow : Choice_Description_here</li>
+<li><b>99 </b> : divewindow : Choice_Description_here</li>
+<li><b>100 </b> : locked_door : Choice_Description_here</li>
+<li><b>101 </b> : push_button2 : Choice_Description_here</li>
+<li><b>102 </b> : unlock_door : Choice_Description_here</li>
+<li><b>104 </b> : handrailidle : Choice_Description_here</li>
+<li><b>105 </b> : handrail : Choice_Description_here</li>
+<li><b>106 </b> : hanging_idle : Choice_Description_here</li>
+<li><b>107 </b> : fall : Choice_Description_here</li>
+<li><b>108 </b> : scientist_get_pulled : Choice_Description_here</li>
+<li><b>109 </b> : hanging_idle2 : Choice_Description_here</li>
+<li><b>110 </b> : fall_elevator : Choice_Description_here</li>
+<li><b>111 </b> : scientist_idlewall : Choice_Description_here</li>
+<li><b>112 </b> : ickyjump_sci : Choice_Description_here</li>
+<li><b>113 </b> : haulscientist : Choice_Description_here</li>
+<li><b>114 </b> : c1a4_wounded_idle : Choice_Description_here</li>
+<li><b>115 </b> : c1a4_dying_speech : Choice_Description_here</li>
+<li><b>116 </b> : tentacle_grab : Choice_Description_here</li>
+<li><b>117 </b> : helicack : Choice_Description_here</li>
+<li><b>118 </b> : windive : Choice_Description_here</li>
+<li><b>119 </b> : scicrashidle : Choice_Description_here</li>
+<li><b>120 </b> : scicrash : Choice_Description_here</li>
+<li><b>121 </b> : onguard : Choice_Description_here</li>
+<li><b>122 </b> : seeya : Choice_Description_here</li>
+<li><b>123 </b> : rocketcrawl : Choice_Description_here</li>
+<li><b>124 </b> : portal : Choice_Description_here</li>
+<li><b>125 </b> : gluonshow : Choice_Description_here</li>
+<li><b>127 </b> : kneel : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -440,15 +440,15 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : WaitTillSeen : Choice_Description_here</li>
-<li><b>2 </b></span> : Gag : Choice_Description_here</li>
-<li><b>4 </b></span> : MonsterClip : Choice_Description_here</li>
-<li><b>16</b></span> : Prisoner : Choice_Description_here</li>
-<li><b>128</b></span> : WaitForScript : Choice_Description_here</li>
-<li><b>256</b></span> : Pre-Disaster : Choice_Description_here</li>
-<li><b>512</b></span> : Don't Fade Corpse : Choice_Description_here</li>
-<li><b>2048 </b></span> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
-<li><b>16384</b></span> : No Dyn Collision : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : WaitTillSeen : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Gag : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : MonsterClip : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Prisoner : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : WaitForScript : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : Pre-Disaster : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512</b> : Don't Fade Corpse : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>16384</b> : No Dyn Collision : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

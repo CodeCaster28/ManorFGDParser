@@ -1,7 +1,7 @@
 ---
 title: trigger_entity_iterator
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -37,9 +37,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No Filter (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Only Living Entities : Choice_Description_here</li>
-<li><b>2 </b></span> : Only Dead Entities : Choice_Description_here</li>
+<li><b>0 </b> : No Filter (default) : Choice_Description_here</li>
+<li><b>1 </b> : Only Living Entities : Choice_Description_here</li>
+<li><b>2 </b> : Only Dead Entities : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -63,9 +63,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Off : Choice_Description_here</li>
-<li><b>1 </b></span> : On : Choice_Description_here</li>
-<li><b>2 </b></span> : Toggle : Choice_Description_here</li>
+<li><b>0 </b> : Off : Choice_Description_here</li>
+<li><b>1 </b> : On : Choice_Description_here</li>
+<li><b>2 </b> : Toggle : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -81,9 +81,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Run Once : Choice_Description_here</li>
-<li><b>1 </b></span> : Run Once; Multi-threaded : Choice_Description_here</li>
-<li><b>2 </b></span> : Toggle On/Off : Choice_Description_here</li>
+<li><b>0 </b> : Run Once : Choice_Description_here</li>
+<li><b>1 </b> : Run Once; Multi-threaded : Choice_Description_here</li>
+<li><b>2 </b> : Toggle On/Off : Choice_Description_here</li>
 </ul>
 </div>
 </div>

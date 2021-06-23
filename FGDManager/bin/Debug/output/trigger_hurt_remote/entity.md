@@ -1,7 +1,7 @@
 ---
 title: trigger_hurt_remote
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -49,27 +49,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : GENERIC : Choice_Description_here</li>
-<li><b>1 </b></span> : CRUSH : Choice_Description_here</li>
-<li><b>2 </b></span> : BULLET : Choice_Description_here</li>
-<li><b>4 </b></span> : SLASH : Choice_Description_here</li>
-<li><b>8 </b></span> : BURN : Choice_Description_here</li>
-<li><b>16 </b></span> : FREEZE : Choice_Description_here</li>
-<li><b>32 </b></span> : FALL : Choice_Description_here</li>
-<li><b>64 </b></span> : BLAST : Choice_Description_here</li>
-<li><b>128 </b></span> : CLUB : Choice_Description_here</li>
-<li><b>256 </b></span> : SHOCK : Choice_Description_here</li>
-<li><b>512 </b></span> : SONIC : Choice_Description_here</li>
-<li><b>1024 </b></span> : ENERGYBEAM : Choice_Description_here</li>
-<li><b>16384 </b></span> : DROWN : Choice_Description_here</li>
-<li><b>32768 </b></span> : PARALYSE : Choice_Description_here</li>
-<li><b>65536 </b></span> : NERVEGAS : Choice_Description_here</li>
-<li><b>131072 </b></span> : POISON : Choice_Description_here</li>
-<li><b>262144 </b></span> : RADIATION : Choice_Description_here</li>
-<li><b>524288 </b></span> : DROWNRECOVER : Choice_Description_here</li>
-<li><b>1048576 </b></span> : CHEMICAL : Choice_Description_here</li>
-<li><b>2097152 </b></span> : SLOWBURN : Choice_Description_here</li>
-<li><b>4194304 </b></span> : SLOWFREEZE : Choice_Description_here</li>
+<li><b>0 </b> : GENERIC : Choice_Description_here</li>
+<li><b>1 </b> : CRUSH : Choice_Description_here</li>
+<li><b>2 </b> : BULLET : Choice_Description_here</li>
+<li><b>4 </b> : SLASH : Choice_Description_here</li>
+<li><b>8 </b> : BURN : Choice_Description_here</li>
+<li><b>16 </b> : FREEZE : Choice_Description_here</li>
+<li><b>32 </b> : FALL : Choice_Description_here</li>
+<li><b>64 </b> : BLAST : Choice_Description_here</li>
+<li><b>128 </b> : CLUB : Choice_Description_here</li>
+<li><b>256 </b> : SHOCK : Choice_Description_here</li>
+<li><b>512 </b> : SONIC : Choice_Description_here</li>
+<li><b>1024 </b> : ENERGYBEAM : Choice_Description_here</li>
+<li><b>16384 </b> : DROWN : Choice_Description_here</li>
+<li><b>32768 </b> : PARALYSE : Choice_Description_here</li>
+<li><b>65536 </b> : NERVEGAS : Choice_Description_here</li>
+<li><b>131072 </b> : POISON : Choice_Description_here</li>
+<li><b>262144 </b> : RADIATION : Choice_Description_here</li>
+<li><b>524288 </b> : DROWNRECOVER : Choice_Description_here</li>
+<li><b>1048576 </b> : CHEMICAL : Choice_Description_here</li>
+<li><b>2097152 </b> : SLOWBURN : Choice_Description_here</li>
+<li><b>4194304 </b> : SLOWFREEZE : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -78,10 +78,10 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Instant Kill : Choice_Description_here</li>
-<li><b>2 </b></span> : Constant : Choice_Description_here</li>
-<li><b>4 </b></span> : Start On : Choice_Description_here</li>
-<li><b>8 </b></span> : Do Armor : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Instant Kill : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Constant : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Start On : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Do Armor : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

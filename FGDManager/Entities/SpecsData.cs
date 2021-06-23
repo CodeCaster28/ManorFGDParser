@@ -9,6 +9,7 @@
         {
             public string choiceValue { get; set; }
             public string choiceDescription { get; set; }
+            public string media { get; set; }
         }
         
         public class KeyDescription
@@ -16,6 +17,7 @@
             public string keyName { get; set; }
             public string keyDescription { get; set; }
             public List<ChoiceDescription> keyChoices { get; set; }
+            public string media { get; set; }
         }
         
         public string Classname  { get; set; }
@@ -50,6 +52,19 @@
             var key = KeyDescriptions.FirstOrDefault(a => a.keyName == keyName);
             var choice = key?.keyChoices.FirstOrDefault(a => a.choiceValue == choiceValue);
             return choice?.choiceDescription;
+        }
+        
+        public string GetKeyMedia(string keyName)
+        {
+            var key = KeyDescriptions.FirstOrDefault(a => a.keyName == keyName);
+            return key?.media;
+        }
+        
+        public string GetChoiceMedia(string keyName, string choiceValue)
+        {
+            var key = KeyDescriptions.FirstOrDefault(a => a.keyName == keyName);
+            var choice = key?.keyChoices.FirstOrDefault(a => a.choiceValue == choiceValue);
+            return choice?.media;
         }
     }
 }

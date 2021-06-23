@@ -1,7 +1,7 @@
 ---
 title: env_global
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,10 +33,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Off : Choice_Description_here</li>
-<li><b>1 </b></span> : On : Choice_Description_here</li>
-<li><b>2 </b></span> : Dead : Choice_Description_here</li>
-<li><b>3 </b></span> : Toggle : Choice_Description_here</li>
+<li><b>0 </b> : Off : Choice_Description_here</li>
+<li><b>1 </b> : On : Choice_Description_here</li>
+<li><b>2 </b> : Dead : Choice_Description_here</li>
+<li><b>3 </b> : Toggle : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -52,9 +52,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Off : Choice_Description_here</li>
-<li><b>1 </b></span> : On : Choice_Description_here</li>
-<li><b>2 </b></span> : Dead : Choice_Description_here</li>
+<li><b>0 </b> : Off : Choice_Description_here</li>
+<li><b>1 </b> : On : Choice_Description_here</li>
+<li><b>2 </b> : Dead : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -63,7 +63,7 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Set Initial State : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Set Initial State : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

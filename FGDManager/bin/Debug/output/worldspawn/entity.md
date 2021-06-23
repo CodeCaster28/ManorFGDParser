@@ -1,7 +1,7 @@
 ---
 title: worldspawn
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -53,8 +53,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -70,8 +70,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -87,8 +87,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No, keep current : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes, clear previous levels : Choice_Description_here</li>
+<li><b>0 </b> : No, keep current : Choice_Description_here</li>
+<li><b>1 </b> : Yes, clear previous levels : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -108,8 +108,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Fewest Players : Choice_Description_here</li>
-<li><b>1 </b></span> : First Team : Choice_Description_here</li>
+<li><b>0 </b> : Fewest Players : Choice_Description_here</li>
+<li><b>1 </b> : First Team : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -125,8 +125,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -162,41 +162,41 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>524 </b></span> : 5.24 Patch : Choice_Description_here</li>
-<li><b>523 </b></span> : 5.23 Patch : Choice_Description_here</li>
-<li><b>522 </b></span> : 5.22 Patch : Choice_Description_here</li>
-<li><b>521 </b></span> : 5.21 Patch : Choice_Description_here</li>
-<li><b>520 </b></span> : 5.20 Patch : Choice_Description_here</li>
-<li><b>519 </b></span> : 5.19 Patch : Choice_Description_here</li>
-<li><b>518 </b></span> : 5.18 Patch : Choice_Description_here</li>
-<li><b>517 </b></span> : 5.17 Patch : Choice_Description_here</li>
-<li><b>516 </b></span> : 5.16 Patch : Choice_Description_here</li>
-<li><b>515 </b></span> : 5.15 Patch : Choice_Description_here</li>
-<li><b>514 </b></span> : 5.14 Patch : Choice_Description_here</li>
-<li><b>513 </b></span> : 5.13 Patch : Choice_Description_here</li>
-<li><b>512 </b></span> : 5.12 Patch : Choice_Description_here</li>
-<li><b>511 </b></span> : 5.11 Patch : Choice_Description_here</li>
-<li><b>510 </b></span> : 5.10 Patch : Choice_Description_here</li>
-<li><b>509 </b></span> : 5.09 Patch : Choice_Description_here</li>
-<li><b>508 </b></span> : 5.08 Patch : Choice_Description_here</li>
-<li><b>507 </b></span> : 5.07 Patch : Choice_Description_here</li>
-<li><b>506 </b></span> : 5.06 Patch : Choice_Description_here</li>
-<li><b>505 </b></span> : 5.05 Patch : Choice_Description_here</li>
-<li><b>504 </b></span> : 5.04 Patch : Choice_Description_here</li>
-<li><b>503 </b></span> : 5.03 Patch : Choice_Description_here</li>
-<li><b>502 </b></span> : 5.02 Patch : Choice_Description_here</li>
-<li><b>501 </b></span> : 5.01 Patch : Choice_Description_here</li>
-<li><b>500 </b></span> : 5.0 Milestone : Choice_Description_here</li>
-<li><b>480 </b></span> : 4.8 Update : Choice_Description_here</li>
-<li><b>470 </b></span> : 4.7 Update : Choice_Description_here</li>
-<li><b>460 </b></span> : 4.6 Update : Choice_Description_here</li>
-<li><b>450 </b></span> : 4.5 Update : Choice_Description_here</li>
-<li><b>407 </b></span> : 4.07 Hotfix : Choice_Description_here</li>
-<li><b>406 </b></span> : 4.06 Hotfix : Choice_Description_here</li>
-<li><b>405 </b></span> : 4.05 Hotfix : Choice_Description_here</li>
-<li><b>401 </b></span> : 4.0b1 Milestone : Choice_Description_here</li>
-<li><b>400 </b></span> : 4.0 Internal : Choice_Description_here</li>
-<li><b>300 </b></span> : 3.0 (or earlier) : Choice_Description_here</li>
+<li><b>524 </b> : 5.24 Patch : Choice_Description_here</li>
+<li><b>523 </b> : 5.23 Patch : Choice_Description_here</li>
+<li><b>522 </b> : 5.22 Patch : Choice_Description_here</li>
+<li><b>521 </b> : 5.21 Patch : Choice_Description_here</li>
+<li><b>520 </b> : 5.20 Patch : Choice_Description_here</li>
+<li><b>519 </b> : 5.19 Patch : Choice_Description_here</li>
+<li><b>518 </b> : 5.18 Patch : Choice_Description_here</li>
+<li><b>517 </b> : 5.17 Patch : Choice_Description_here</li>
+<li><b>516 </b> : 5.16 Patch : Choice_Description_here</li>
+<li><b>515 </b> : 5.15 Patch : Choice_Description_here</li>
+<li><b>514 </b> : 5.14 Patch : Choice_Description_here</li>
+<li><b>513 </b> : 5.13 Patch : Choice_Description_here</li>
+<li><b>512 </b> : 5.12 Patch : Choice_Description_here</li>
+<li><b>511 </b> : 5.11 Patch : Choice_Description_here</li>
+<li><b>510 </b> : 5.10 Patch : Choice_Description_here</li>
+<li><b>509 </b> : 5.09 Patch : Choice_Description_here</li>
+<li><b>508 </b> : 5.08 Patch : Choice_Description_here</li>
+<li><b>507 </b> : 5.07 Patch : Choice_Description_here</li>
+<li><b>506 </b> : 5.06 Patch : Choice_Description_here</li>
+<li><b>505 </b> : 5.05 Patch : Choice_Description_here</li>
+<li><b>504 </b> : 5.04 Patch : Choice_Description_here</li>
+<li><b>503 </b> : 5.03 Patch : Choice_Description_here</li>
+<li><b>502 </b> : 5.02 Patch : Choice_Description_here</li>
+<li><b>501 </b> : 5.01 Patch : Choice_Description_here</li>
+<li><b>500 </b> : 5.0 Milestone : Choice_Description_here</li>
+<li><b>480 </b> : 4.8 Update : Choice_Description_here</li>
+<li><b>470 </b> : 4.7 Update : Choice_Description_here</li>
+<li><b>460 </b> : 4.6 Update : Choice_Description_here</li>
+<li><b>450 </b> : 4.5 Update : Choice_Description_here</li>
+<li><b>407 </b> : 4.07 Hotfix : Choice_Description_here</li>
+<li><b>406 </b> : 4.06 Hotfix : Choice_Description_here</li>
+<li><b>405 </b> : 4.05 Hotfix : Choice_Description_here</li>
+<li><b>401 </b> : 4.0b1 Milestone : Choice_Description_here</li>
+<li><b>400 </b> : 4.0 Internal : Choice_Description_here</li>
+<li><b>300 </b> : 3.0 (or earlier) : Choice_Description_here</li>
 </ul>
 </div>
 </div>

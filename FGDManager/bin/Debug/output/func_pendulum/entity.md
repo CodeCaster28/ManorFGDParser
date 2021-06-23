@@ -1,7 +1,7 @@
 ---
 title: func_pendulum
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,27 +33,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Slow Pulse : Choice_Description_here</li>
-<li><b>2</b></span> : Fast Pulse : Choice_Description_here</li>
-<li><b>3</b></span> : Slow Wide Pulse : Choice_Description_here</li>
-<li><b>4</b></span> : Fast Wide Pulse : Choice_Description_here</li>
-<li><b>9</b></span> : Slow Strobe : Choice_Description_here</li>
-<li><b>10</b></span> : Fast Strobe : Choice_Description_here</li>
-<li><b>11</b></span> : Faster Strobe : Choice_Description_here</li>
-<li><b>12</b></span> : Slow Flicker : Choice_Description_here</li>
-<li><b>13</b></span> : Fast Flicker : Choice_Description_here</li>
-<li><b>5</b></span> : Slow Fade Away : Choice_Description_here</li>
-<li><b>6</b></span> : Fast Fade Away : Choice_Description_here</li>
-<li><b>7</b></span> : Slow Become Solid : Choice_Description_here</li>
-<li><b>8</b></span> : Fast Become Solid : Choice_Description_here</li>
-<li><b>14</b></span> : Constant Glow : Choice_Description_here</li>
-<li><b>15</b></span> : Distort : Choice_Description_here</li>
-<li><b>16</b></span> : Hologram (Distort + fade) : Choice_Description_here</li>
-<li><b>17</b></span> : Dead Player (DONT USE!) : Choice_Description_here</li>
-<li><b>18</b></span> : Explode (Garg Like) : Choice_Description_here</li>
-<li><b>19</b></span> : Glow Shell : Choice_Description_here</li>
-<li><b>20</b></span> : ClampMinScale (Sprites) : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Slow Pulse : Choice_Description_here</li>
+<li><b>2</b> : Fast Pulse : Choice_Description_here</li>
+<li><b>3</b> : Slow Wide Pulse : Choice_Description_here</li>
+<li><b>4</b> : Fast Wide Pulse : Choice_Description_here</li>
+<li><b>9</b> : Slow Strobe : Choice_Description_here</li>
+<li><b>10</b> : Fast Strobe : Choice_Description_here</li>
+<li><b>11</b> : Faster Strobe : Choice_Description_here</li>
+<li><b>12</b> : Slow Flicker : Choice_Description_here</li>
+<li><b>13</b> : Fast Flicker : Choice_Description_here</li>
+<li><b>5</b> : Slow Fade Away : Choice_Description_here</li>
+<li><b>6</b> : Fast Fade Away : Choice_Description_here</li>
+<li><b>7</b> : Slow Become Solid : Choice_Description_here</li>
+<li><b>8</b> : Fast Become Solid : Choice_Description_here</li>
+<li><b>14</b> : Constant Glow : Choice_Description_here</li>
+<li><b>15</b> : Distort : Choice_Description_here</li>
+<li><b>16</b> : Hologram (Distort + fade) : Choice_Description_here</li>
+<li><b>17</b> : Dead Player (DONT USE!) : Choice_Description_here</li>
+<li><b>18</b> : Explode (Garg Like) : Choice_Description_here</li>
+<li><b>19</b> : Glow Shell : Choice_Description_here</li>
+<li><b>20</b> : ClampMinScale (Sprites) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -69,12 +69,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Color : Choice_Description_here</li>
-<li><b>2</b></span> : Texture : Choice_Description_here</li>
-<li><b>3</b></span> : Glow : Choice_Description_here</li>
-<li><b>4</b></span> : Solid : Choice_Description_here</li>
-<li><b>5</b></span> : Additive : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Color : Choice_Description_here</li>
+<li><b>2</b> : Texture : Choice_Description_here</li>
+<li><b>3</b> : Glow : Choice_Description_here</li>
+<li><b>4</b> : Solid : Choice_Description_here</li>
+<li><b>5</b> : Additive : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -110,8 +110,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Always non-solid : Choice_Description_here</li>
+<li><b>0 </b> : Default : Choice_Description_here</li>
+<li><b>1 </b> : Always non-solid : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -127,8 +127,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Visible (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Invisible : Choice_Description_here</li>
+<li><b>0 </b> : Visible (default) : Choice_Description_here</li>
+<li><b>1 </b> : Invisible : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -148,8 +148,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -169,11 +169,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Embedded Fix : Choice_Description_here</li>
-<li><b>2 </b></span> : Opaque (blocks light) : Choice_Description_here</li>
-<li><b>3 </b></span> : Opaque + Embedded fix : Choice_Description_here</li>
-<li><b>6 </b></span> : Opaque + Concave Fix : Choice_Description_here</li>
+<li><b>0 </b> : Default : Choice_Description_here</li>
+<li><b>1 </b> : Embedded Fix : Choice_Description_here</li>
+<li><b>2 </b> : Opaque (blocks light) : Choice_Description_here</li>
+<li><b>3 </b> : Opaque + Embedded fix : Choice_Description_here</li>
+<li><b>6 </b> : Opaque + Concave Fix : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -206,12 +206,12 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : Start ON : Choice_Description_here</li>
-<li><b>8</b></span> : Passable : Choice_Description_here</li>
-<li><b>16</b></span> : Auto-return : Choice_Description_here</li>
-<li><b>64</b></span> : X Axis : Choice_Description_here</li>
-<li><b>128</b></span> : Y Axis : Choice_Description_here</li>
-<li><b>2048 </b></span> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Start ON : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : Passable : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Auto-return : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : X Axis : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : Y Axis : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

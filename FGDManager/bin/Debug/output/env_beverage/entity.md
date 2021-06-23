@@ -1,7 +1,7 @@
 ---
 title: env_beverage
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -37,13 +37,13 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Coca-Cola : Choice_Description_here</li>
-<li><b>1 </b></span> : Sprite : Choice_Description_here</li>
-<li><b>2 </b></span> : Diet Coke : Choice_Description_here</li>
-<li><b>3 </b></span> : Orange : Choice_Description_here</li>
-<li><b>4 </b></span> : Surge : Choice_Description_here</li>
-<li><b>5 </b></span> : Moxie : Choice_Description_here</li>
-<li><b>6 </b></span> : Random : Choice_Description_here</li>
+<li><b>0 </b> : Coca-Cola : Choice_Description_here</li>
+<li><b>1 </b> : Sprite : Choice_Description_here</li>
+<li><b>2 </b> : Diet Coke : Choice_Description_here</li>
+<li><b>3 </b> : Orange : Choice_Description_here</li>
+<li><b>4 </b> : Surge : Choice_Description_here</li>
+<li><b>5 </b> : Moxie : Choice_Description_here</li>
+<li><b>6 </b> : Random : Choice_Description_here</li>
 </ul>
 </div>
 </div>

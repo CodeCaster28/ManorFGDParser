@@ -38,7 +38,7 @@
                     writer.WriteLine("---");
                     writer.WriteLine($"title: {entity.ClassName}");
                     writer.WriteLine("---");
-                    writer.WriteLine();
+                    writer.WriteLine("<div>{% set entname = page.title|raw %}</div>");
                     writer.WriteLine("<div class=\"container previewimg\">");
                     writer.WriteLine("<div class=\"columns\">");
                     writer.WriteLine("<div class=\"imagepadding column col-auto\" markdown=\"1\">![](preview.png)</div>");
@@ -60,8 +60,9 @@
                         {
                             writer.WriteLine("<div class=\"entityentry\" markdown=\"1\">");
                             writer.WriteLine($"<span style=\"color:#9fc5e8;\"><b>{key.DocName}</b></span> <kbd  class=\"tooltip\" data-tooltip=\"{key.Type}\">{key.Name}</kbd> :");
-                            writer.WriteLine(key.Description);
                             
+                            var keyMedia = string.IsNullOrEmpty(key.Media) ? "" : $"<div class=\"imagepadding\" markdown=\"1\">![{key.DocName}]({key.Media})</div>";
+                            writer.WriteLine($"{key.Description}{keyMedia}");
                             if (key.Choices.Count > 0)
                             {
                                 writer.WriteLine("<div class=\"accordion\">");
@@ -75,7 +76,8 @@
                                 foreach (var choice in key.Choices)
                                 {
                                     var description = string.IsNullOrEmpty(choice.Description) ? "" : $" : {choice.Description}";
-                                    writer.WriteLine($"<li><b>{choice.Value}</b></span> : {choice.DocName}{description}</li>");
+                                    var choiceMedia = string.IsNullOrEmpty(choice.Media) ? "" : $"<div class=\"imagepadding\" markdown=\"1\">![{choice.DocName}]({choice.Media})</div>";
+                                    writer.WriteLine($"<li><b>{choice.Value}</b> : {choice.DocName}{description}{choiceMedia}</li>");
                                 }
                                 writer.WriteLine("</ul>");
                                 writer.WriteLine("</div>");
@@ -95,7 +97,7 @@
                         foreach (var flag in entity.SpawnFlags)
                         {
                             var description = string.IsNullOrEmpty(flag.Description) ? "" : $" : {flag.Description}";
-                            writer.WriteLine($"<li><b>{flag.Value}</b></span> : {flag.DocName}{description}</li>");
+                            writer.WriteLine($"<li class=\"imagepadding\" markdown=\"1\"><b>{flag.Value}</b> : {flag.DocName}{description}</li>");
                         }
                         writer.WriteLine("</ul>");
                         writer.WriteLine("</div>");

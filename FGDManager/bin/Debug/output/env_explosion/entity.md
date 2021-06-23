@@ -1,7 +1,7 @@
 ---
 title: env_explosion
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -26,12 +26,12 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : No Damage : Choice_Description_here</li>
-<li><b>2</b></span> : Repeatable : Choice_Description_here</li>
-<li><b>4</b></span> : No Fireball : Choice_Description_here</li>
-<li><b>8</b></span> : No Smoke : Choice_Description_here</li>
-<li><b>16</b></span> : No Decal : Choice_Description_here</li>
-<li><b>32</b></span> : No Sparks : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : No Damage : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : Repeatable : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4</b> : No Fireball : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : No Smoke : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : No Decal : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : No Sparks : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

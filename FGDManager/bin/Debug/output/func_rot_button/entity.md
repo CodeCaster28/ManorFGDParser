@@ -1,7 +1,7 @@
 ---
 title: func_rot_button
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -61,8 +61,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -86,8 +86,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -111,8 +111,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -136,8 +136,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -157,27 +157,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Slow Pulse : Choice_Description_here</li>
-<li><b>2</b></span> : Fast Pulse : Choice_Description_here</li>
-<li><b>3</b></span> : Slow Wide Pulse : Choice_Description_here</li>
-<li><b>4</b></span> : Fast Wide Pulse : Choice_Description_here</li>
-<li><b>9</b></span> : Slow Strobe : Choice_Description_here</li>
-<li><b>10</b></span> : Fast Strobe : Choice_Description_here</li>
-<li><b>11</b></span> : Faster Strobe : Choice_Description_here</li>
-<li><b>12</b></span> : Slow Flicker : Choice_Description_here</li>
-<li><b>13</b></span> : Fast Flicker : Choice_Description_here</li>
-<li><b>5</b></span> : Slow Fade Away : Choice_Description_here</li>
-<li><b>6</b></span> : Fast Fade Away : Choice_Description_here</li>
-<li><b>7</b></span> : Slow Become Solid : Choice_Description_here</li>
-<li><b>8</b></span> : Fast Become Solid : Choice_Description_here</li>
-<li><b>14</b></span> : Constant Glow : Choice_Description_here</li>
-<li><b>15</b></span> : Distort : Choice_Description_here</li>
-<li><b>16</b></span> : Hologram (Distort + fade) : Choice_Description_here</li>
-<li><b>17</b></span> : Dead Player (DONT USE!) : Choice_Description_here</li>
-<li><b>18</b></span> : Explode (Garg Like) : Choice_Description_here</li>
-<li><b>19</b></span> : Glow Shell : Choice_Description_here</li>
-<li><b>20</b></span> : ClampMinScale (Sprites) : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Slow Pulse : Choice_Description_here</li>
+<li><b>2</b> : Fast Pulse : Choice_Description_here</li>
+<li><b>3</b> : Slow Wide Pulse : Choice_Description_here</li>
+<li><b>4</b> : Fast Wide Pulse : Choice_Description_here</li>
+<li><b>9</b> : Slow Strobe : Choice_Description_here</li>
+<li><b>10</b> : Fast Strobe : Choice_Description_here</li>
+<li><b>11</b> : Faster Strobe : Choice_Description_here</li>
+<li><b>12</b> : Slow Flicker : Choice_Description_here</li>
+<li><b>13</b> : Fast Flicker : Choice_Description_here</li>
+<li><b>5</b> : Slow Fade Away : Choice_Description_here</li>
+<li><b>6</b> : Fast Fade Away : Choice_Description_here</li>
+<li><b>7</b> : Slow Become Solid : Choice_Description_here</li>
+<li><b>8</b> : Fast Become Solid : Choice_Description_here</li>
+<li><b>14</b> : Constant Glow : Choice_Description_here</li>
+<li><b>15</b> : Distort : Choice_Description_here</li>
+<li><b>16</b> : Hologram (Distort + fade) : Choice_Description_here</li>
+<li><b>17</b> : Dead Player (DONT USE!) : Choice_Description_here</li>
+<li><b>18</b> : Explode (Garg Like) : Choice_Description_here</li>
+<li><b>19</b> : Glow Shell : Choice_Description_here</li>
+<li><b>20</b> : ClampMinScale (Sprites) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -193,12 +193,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Color : Choice_Description_here</li>
-<li><b>2</b></span> : Texture : Choice_Description_here</li>
-<li><b>3</b></span> : Glow : Choice_Description_here</li>
-<li><b>4</b></span> : Solid : Choice_Description_here</li>
-<li><b>5</b></span> : Additive : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Color : Choice_Description_here</li>
+<li><b>2</b> : Texture : Choice_Description_here</li>
+<li><b>3</b> : Glow : Choice_Description_here</li>
+<li><b>4</b> : Solid : Choice_Description_here</li>
+<li><b>5</b> : Additive : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -234,8 +234,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Always non-solid : Choice_Description_here</li>
+<li><b>0 </b> : Default : Choice_Description_here</li>
+<li><b>1 </b> : Always non-solid : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -251,8 +251,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Visible (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Invisible : Choice_Description_here</li>
+<li><b>0 </b> : Visible (default) : Choice_Description_here</li>
+<li><b>1 </b> : Invisible : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -272,8 +272,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -293,11 +293,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Embedded Fix : Choice_Description_here</li>
-<li><b>2 </b></span> : Opaque (blocks light) : Choice_Description_here</li>
-<li><b>3 </b></span> : Opaque + Embedded fix : Choice_Description_here</li>
-<li><b>6 </b></span> : Opaque + Concave Fix : Choice_Description_here</li>
+<li><b>0 </b> : Default : Choice_Description_here</li>
+<li><b>1 </b> : Embedded Fix : Choice_Description_here</li>
+<li><b>2 </b> : Opaque (blocks light) : Choice_Description_here</li>
+<li><b>3 </b> : Opaque + Embedded fix : Choice_Description_here</li>
+<li><b>6 </b> : Opaque + Concave Fix : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -308,7 +308,7 @@ Keyvalue_Description_here
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Locked Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">locked_sound</kbd> :
-Keyvalue_Description_here
+Sound to play when a player tries to use the {{ entname }} but it's locked because it has a targetname or uses a multisource entity.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -317,19 +317,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : None : Choice_Description_here</li>
-<li><b>2</b></span> : Access Denied : Choice_Description_here</li>
-<li><b>8</b></span> : Small zap : Choice_Description_here</li>
-<li><b>10</b></span> : Buzz : Choice_Description_here</li>
-<li><b>11</b></span> : Buzz Off : Choice_Description_here</li>
-<li><b>12</b></span> : Latch Locked : Choice_Description_here</li>
+<li><b>0</b> : None</li>
+<li><b>2</b> : Access Denied<div class="imagepadding" markdown="1">![Access Denied](../audio/access-denied.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>8</b> : Small zap<div class="imagepadding" markdown="1">![Small zap](../audio/small-zap.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>10</b> : Buzz<div class="imagepadding" markdown="1">![Buzz](../audio/buzz.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>11</b> : Buzz Off<div class="imagepadding" markdown="1">![Buzz Off](../audio/buzz-off.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>12</b> : Latch Locked<div class="imagepadding" markdown="1">![Latch Locked](../audio/latch-locked.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Unlocked Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">unlocked_sound</kbd> :
-Keyvalue_Description_here
+Sound to play if {{ entname }} is pressed/touched while not locked.
 <div class="accordion">
 <input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-12">
@@ -338,25 +338,25 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : None : Choice_Description_here</li>
-<li><b>1</b></span> : Big zap & Warmup : Choice_Description_here</li>
-<li><b>3</b></span> : Access Granted : Choice_Description_here</li>
-<li><b>4</b></span> : Quick Combolock : Choice_Description_here</li>
-<li><b>5</b></span> : Power Deadbolt 1 : Choice_Description_here</li>
-<li><b>6</b></span> : Power Deadbolt 2 : Choice_Description_here</li>
-<li><b>7</b></span> : Plunger : Choice_Description_here</li>
-<li><b>8</b></span> : Small zap : Choice_Description_here</li>
-<li><b>9</b></span> : Keycard Sound : Choice_Description_here</li>
-<li><b>10</b></span> : Buzz : Choice_Description_here</li>
-<li><b>13</b></span> : Latch Unlocked : Choice_Description_here</li>
-<li><b>14</b></span> : Lightswitch : Choice_Description_here</li>
+<li><b>0</b> : None</li>
+<li><b>1</b> : Big zap & Warmup<div class="imagepadding" markdown="1">![Big zap & Warmup](../audio/big-zap-warmup.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>3</b> : Access Granted<div class="imagepadding" markdown="1">![Access Granted](../audio/access-granted.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>4</b> : Quick Combolock<div class="imagepadding" markdown="1">![Quick Combolock](../audio/quick-combolock.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>5</b> : Power Deadbolt 1<div class="imagepadding" markdown="1">![Power Deadbolt 1](../audio/power-deadbolt-1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>6</b> : Power Deadbolt 2<div class="imagepadding" markdown="1">![Power Deadbolt 2](../audio/power-deadbolt-2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>7</b> : Plunger<div class="imagepadding" markdown="1">![Plunger](../audio/plunger.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>8</b> : Small zap<div class="imagepadding" markdown="1">![Small zap](../audio/small-zap.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>9</b> : Keycard Sound<div class="imagepadding" markdown="1">![Keycard Sound](../audio/keycard-sound.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>10</b> : Buzz<div class="imagepadding" markdown="1">![Buzz](../audio/buzz.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>13</b> : Latch Unlocked<div class="imagepadding" markdown="1">![Latch Unlocked](../audio/latch-unlocked.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>14</b> : Lightswitch<div class="imagepadding" markdown="1">![Lightswitch](../audio/lightswitch.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Locked Sentence</b></span> <kbd  class="tooltip" data-tooltip="choices">locked_sentence</kbd> :
-Keyvalue_Description_here
+Sentence to play when a player tries to use {{ entname }} but it's locked because it has a targetname or uses a multisource entity. Sentences are picked from sound/default_sentences.txt file.
 <div class="accordion">
 <input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-13">
@@ -365,23 +365,23 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : None : Choice_Description_here</li>
-<li><b>1</b></span> : Gen. Access Denied : Choice_Description_here</li>
-<li><b>2</b></span> : Security Lockout : Choice_Description_here</li>
-<li><b>3</b></span> : Blast Door : Choice_Description_here</li>
-<li><b>4</b></span> : Fire Door : Choice_Description_here</li>
-<li><b>5</b></span> : Chemical Door : Choice_Description_here</li>
-<li><b>6</b></span> : Radiation Door : Choice_Description_here</li>
-<li><b>7</b></span> : Gen. Containment : Choice_Description_here</li>
-<li><b>8</b></span> : Maintenance Door : Choice_Description_here</li>
-<li><b>9</b></span> : Broken Shut Door : Choice_Description_here</li>
+<li><b>0</b> : None</li>
+<li><b>1</b> : Gen. Access Denied : Play one out of 18(!) announcements subsequently. Check NA0-NA18 sentences from "default_sentences.txt" for detailed list.</li>
+<li><b>2</b> : Security Lockout : Play one of the following announcements subsequently: "security lock is engaged", "secure area, no entry", "security lockout, no entry", "secure door, no entry", "security system in force", "security system armed, no entry", "door is secured" and "illegal access, move away".</li>
+<li><b>3</b> : Blast Door : Play one of the following announcements subsequently: "emergency blast door activated", "emergency blast shield activated" and "the blast containment shield is down".</li>
+<li><b>4</b> : Fire Door : Play "fire containment door is down" announcement.</li>
+<li><b>5</b> : Chemical Door : Play "chemical leak containment door activated" announcement.</li>
+<li><b>6</b> : Radiation Door : Play "radiation containment door activated" announcement.</li>
+<li><b>7</b> : Gen. Containment : Play "emergency containment door engaged" announcement.</li>
+<li><b>8</b> : Maintenance Door : Play one of the following announcements subsequently: "no access, maintenance area" and "no personnel permitted in maintenance area".</li>
+<li><b>9</b> : Broken Shut Door : Play one of the following announcements subsequently: "sorry, this door is inoperative", "sorry, door out of service" and "door damage detected, please call service personnel".</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Unlocked Sentence</b></span> <kbd  class="tooltip" data-tooltip="choices">unlocked_sentence</kbd> :
-Keyvalue_Description_here
+Sentence to play when the door is opened. Plays only few times.
 <div class="accordion">
 <input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-14">
@@ -390,34 +390,34 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : None : Choice_Description_here</li>
-<li><b>1</b></span> : Gen. Access Granted : Choice_Description_here</li>
-<li><b>2</b></span> : Security Disengaged : Choice_Description_here</li>
-<li><b>3</b></span> : Blast Door : Choice_Description_here</li>
-<li><b>4</b></span> : Fire Door : Choice_Description_here</li>
-<li><b>5</b></span> : Chemical Door : Choice_Description_here</li>
-<li><b>6</b></span> : Radiation Door : Choice_Description_here</li>
-<li><b>7</b></span> : Gen. Containment : Choice_Description_here</li>
-<li><b>8</b></span> : Maintenance area : Choice_Description_here</li>
+<li><b>0</b> : None</li>
+<li><b>1</b> : Gen. Access Granted : Play one of the following announcements subsequently: "access granted", "access permitted", "entry granted", "entry permitted", "access authorized", "entry is permitted", "access authorized", "access to facility, granted" and "access granted".</li>
+<li><b>2</b> : Security Disengaged : Play one of the following announcements subsequently: "security lock disengaged", "security clear, proceed", "security lockout, released", "secure override accepted", "security access acknowledged", "security system disengaged" and "door security disengaged".</li>
+<li><b>3</b> : Blast Door : Play one of the following announcements subsequently: "emergency blast door, open", "emergency blast shield, deactivated" and "blast containment shield is, open".</li>
+<li><b>4</b> : Fire Door : Play "fire containment door, open" announcement.</li>
+<li><b>5</b> : Chemical Door : Play "chemical leak containment door, open" announcement.</li>
+<li><b>6</b> : Radiation Door : Play "radiation containment door, open" announcement.</li>
+<li><b>7</b> : Gen. Containment : Play "emergency containment door disengaged" announcement.</li>
+<li><b>8</b> : Maintenance area : Play one of the following announcements subsequently: "maintenance area access granted" and "maintenance area door open".</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Locked Sound Override</b></span> <kbd  class="tooltip" data-tooltip="sound">locked_sound_override</kbd> :
-Keyvalue_Description_here
+Sound file to use when attempting to open locked {{ entname }}. Useful when you don't want to use sound from default sound list. This overrides default "Locked Sound" sound.  Note that other sounds format (AIFF, ASF, DLS, FLAC, IT, M3U, MID, MOD, MP2, MP3, OGG, S3M, VAG, WMA, XM) can be used, even if editor sound browser allows to pick only WAV files.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Unlocked Sound Override</b></span> <kbd  class="tooltip" data-tooltip="sound">unlocked_sound_override</kbd> :
-Keyvalue_Description_here
+Sound file to use when {{ entname }} opens. Useful when you don't want to use sound from default sound list. This overrides default "Unlocked Sound" sound. Note that other sounds format (AIFF, ASF, DLS, FLAC, IT, M3U, MID, MOD, MP2, MP3, OGG, S3M, VAG, WMA, XM) can be used, even if editor sound browser allows to pick only WAV files.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Locked Sentence Override</b></span> <kbd  class="tooltip" data-tooltip="string">locked_sentence_override</kbd> :
-Keyvalue_Description_here
+Sentence from "default_sentences.txt" or custom sentences file (which can be added in map properties) to use when attempting to open locked {{ entname }}. Useful when you want to override locked sentence with your own sentence.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Unlocked Sentence Override</b></span> <kbd  class="tooltip" data-tooltip="string">unlocked_sentence_override</kbd> :
-Keyvalue_Description_here
+Sentence from "default_sentences.txt" or custom sentences file (which can be added in map properties) to use when {{ entname }} opens. Useful when you want to override locked sentence with your own sentence.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ChangeTarget Name</b></span> <kbd  class="tooltip" data-tooltip="target_destination">changetarget</kbd> :
@@ -446,11 +446,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>21</b></span> : Squeaky : Choice_Description_here</li>
-<li><b>22</b></span> : Squeaky Pneumatic : Choice_Description_here</li>
-<li><b>23</b></span> : Ratchet Groan : Choice_Description_here</li>
-<li><b>24</b></span> : Clean Ratchet : Choice_Description_here</li>
-<li><b>25</b></span> : Gas Clunk : Choice_Description_here</li>
+<li><b>21</b> : Squeaky : Choice_Description_here</li>
+<li><b>22</b> : Squeaky Pneumatic : Choice_Description_here</li>
+<li><b>23</b> : Ratchet Groan : Choice_Description_here</li>
+<li><b>24</b> : Clean Ratchet : Choice_Description_here</li>
+<li><b>25</b> : Gas Clunk : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -470,7 +470,7 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1</b></span> : Stays pressed : Choice_Description_here</li>
+<li><b>-1</b> : Stays pressed : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -498,10 +498,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Off : Choice_Description_here</li>
-<li><b>1</b></span> : On : Choice_Description_here</li>
-<li><b>2</b></span> : Set : Choice_Description_here</li>
-<li><b>3</b></span> : Toggle : Choice_Description_here</li>
+<li><b>0</b> : Off : Choice_Description_here</li>
+<li><b>1</b> : On : Choice_Description_here</li>
+<li><b>2</b> : Set : Choice_Description_here</li>
+<li><b>3</b> : Toggle : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -510,13 +510,13 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Not solid : Choice_Description_here</li>
-<li><b>2 </b></span> : Reverse Dir : Choice_Description_here</li>
-<li><b>32</b></span> : Toggle : Choice_Description_here</li>
-<li><b>64</b></span> : X Axis : Choice_Description_here</li>
-<li><b>128</b></span> : Y Axis : Choice_Description_here</li>
-<li><b>256</b></span> : Touch Activates : Choice_Description_here</li>
-<li><b>2048 </b></span> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Not solid : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Reverse Dir : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : Toggle : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : X Axis : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : Y Axis : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : Touch Activates : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

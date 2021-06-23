@@ -1,7 +1,7 @@
 ---
 title: game_player_equip
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -45,8 +45,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Give items : Choice_Description_here</li>
-<li><b>1</b></span> : Modify inventory : Choice_Description_here</li>
+<li><b>0</b> : Give items : Choice_Description_here</li>
+<li><b>1</b> : Modify inventory : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -62,12 +62,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Set items : Choice_Description_here</li>
-<li><b>1</b></span> : Add items : Choice_Description_here</li>
-<li><b>2</b></span> : Subtract items : Choice_Description_here</li>
-<li><b>3</b></span> : Remove items : Choice_Description_here</li>
-<li><b>4</b></span> : Restock items : Choice_Description_here</li>
-<li><b>5</b></span> : Limit items : Choice_Description_here</li>
+<li><b>0</b> : Set items : Choice_Description_here</li>
+<li><b>1</b> : Add items : Choice_Description_here</li>
+<li><b>2</b> : Subtract items : Choice_Description_here</li>
+<li><b>3</b> : Remove items : Choice_Description_here</li>
+<li><b>4</b> : Restock items : Choice_Description_here</li>
+<li><b>5</b> : Limit items : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -76,10 +76,10 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : USE Only : Choice_Description_here</li>
-<li><b>2</b></span> : Filter Playername : Choice_Description_here</li>
-<li><b>4</b></span> : Re-Equip on Use : Choice_Description_here</li>
-<li><b>8</b></span> : Append Map CFG : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : USE Only : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : Filter Playername : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4</b> : Re-Equip on Use : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : Append Map CFG : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

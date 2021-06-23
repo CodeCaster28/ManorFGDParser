@@ -1,7 +1,7 @@
 ---
 title: monster_babygarg
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,27 +33,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Slow Pulse : Choice_Description_here</li>
-<li><b>2</b></span> : Fast Pulse : Choice_Description_here</li>
-<li><b>3</b></span> : Slow Wide Pulse : Choice_Description_here</li>
-<li><b>4</b></span> : Fast Wide Pulse : Choice_Description_here</li>
-<li><b>9</b></span> : Slow Strobe : Choice_Description_here</li>
-<li><b>10</b></span> : Fast Strobe : Choice_Description_here</li>
-<li><b>11</b></span> : Faster Strobe : Choice_Description_here</li>
-<li><b>12</b></span> : Slow Flicker : Choice_Description_here</li>
-<li><b>13</b></span> : Fast Flicker : Choice_Description_here</li>
-<li><b>5</b></span> : Slow Fade Away : Choice_Description_here</li>
-<li><b>6</b></span> : Fast Fade Away : Choice_Description_here</li>
-<li><b>7</b></span> : Slow Become Solid : Choice_Description_here</li>
-<li><b>8</b></span> : Fast Become Solid : Choice_Description_here</li>
-<li><b>14</b></span> : Constant Glow : Choice_Description_here</li>
-<li><b>15</b></span> : Distort : Choice_Description_here</li>
-<li><b>16</b></span> : Hologram (Distort + fade) : Choice_Description_here</li>
-<li><b>17</b></span> : Dead Player (DONT USE!) : Choice_Description_here</li>
-<li><b>18</b></span> : Explode (Garg Like) : Choice_Description_here</li>
-<li><b>19</b></span> : Glow Shell : Choice_Description_here</li>
-<li><b>20</b></span> : ClampMinScale (Sprites) : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Slow Pulse : Choice_Description_here</li>
+<li><b>2</b> : Fast Pulse : Choice_Description_here</li>
+<li><b>3</b> : Slow Wide Pulse : Choice_Description_here</li>
+<li><b>4</b> : Fast Wide Pulse : Choice_Description_here</li>
+<li><b>9</b> : Slow Strobe : Choice_Description_here</li>
+<li><b>10</b> : Fast Strobe : Choice_Description_here</li>
+<li><b>11</b> : Faster Strobe : Choice_Description_here</li>
+<li><b>12</b> : Slow Flicker : Choice_Description_here</li>
+<li><b>13</b> : Fast Flicker : Choice_Description_here</li>
+<li><b>5</b> : Slow Fade Away : Choice_Description_here</li>
+<li><b>6</b> : Fast Fade Away : Choice_Description_here</li>
+<li><b>7</b> : Slow Become Solid : Choice_Description_here</li>
+<li><b>8</b> : Fast Become Solid : Choice_Description_here</li>
+<li><b>14</b> : Constant Glow : Choice_Description_here</li>
+<li><b>15</b> : Distort : Choice_Description_here</li>
+<li><b>16</b> : Hologram (Distort + fade) : Choice_Description_here</li>
+<li><b>17</b> : Dead Player (DONT USE!) : Choice_Description_here</li>
+<li><b>18</b> : Explode (Garg Like) : Choice_Description_here</li>
+<li><b>19</b> : Glow Shell : Choice_Description_here</li>
+<li><b>20</b> : ClampMinScale (Sprites) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -69,12 +69,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Color : Choice_Description_here</li>
-<li><b>2</b></span> : Texture : Choice_Description_here</li>
-<li><b>3</b></span> : Glow : Choice_Description_here</li>
-<li><b>4</b></span> : Solid : Choice_Description_here</li>
-<li><b>5</b></span> : Additive : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Color : Choice_Description_here</li>
+<li><b>2</b> : Texture : Choice_Description_here</li>
+<li><b>3</b> : Glow : Choice_Description_here</li>
+<li><b>4</b> : Solid : Choice_Description_here</li>
+<li><b>5</b> : Additive : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -93,7 +93,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Classification</b></span> <kbd  class="tooltip" data-tooltip="choices">classify</kbd> :
-Set the class of the spawned entity. Think of how even though zombies and human grunts, by default, both are the players' enemies, yet have a dislike for and attack each other as well. This relation is created through the respective classes of the two entity types. For a complete table of how different classes react to each other, see [monster class relation table](https://wiki.svencoop.com/Class_Relationship_Table).
+Set the class of the spawned {{ entname }}. Think of how even though zombies and human grunts, by default, both are the players' enemies, yet have a dislike for and attack each other as well. This relation is created through the respective classes of the two entity types. For a complete table of how different classes react to each other, see [monster class relation table](https://wiki.svencoop.com/Class_Relationship_Table).
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -102,27 +102,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1 </b></span> : None</li>
-<li><b>0 </b></span> : Object Default : Keep default classification.</li>
-<li><b>1 </b></span> : Machine</li>
-<li><b>2 </b></span> : Player</li>
-<li><b>3 </b></span> : Human Passive</li>
-<li><b>4 </b></span> : Human Military</li>
-<li><b>5 </b></span> : Alien Military</li>
-<li><b>6 </b></span> : Alien Passive</li>
-<li><b>7 </b></span> : Alien Monster</li>
-<li><b>8 </b></span> : Alien Prey</li>
-<li><b>9 </b></span> : Alien Predator</li>
-<li><b>10 </b></span> : Insect</li>
-<li><b>11 </b></span> : Player Ally</li>
-<li><b>12 </b></span> : Player Hornet/Snark</li>
-<li><b>13 </b></span> : Alien Hornet/Snark</li>
-<li><b>14 </b></span> : X-Race</li>
-<li><b>15 </b></span> : X-Race: Shocktrooper/Voltigore</li>
-<li><b>16 </b></span> : Team 1 : Use it to classify to custom team.</li>
-<li><b>17 </b></span> : Team 2 : Use it to classify to custom team.</li>
-<li><b>18 </b></span> : Team 3 : Use it to classify to custom team.</li>
-<li><b>19 </b></span> : Team 4 : Use it to classify to custom team.</li>
+<li><b>-1 </b> : None</li>
+<li><b>0 </b> : Object Default : Keep default classification.</li>
+<li><b>1 </b> : Machine</li>
+<li><b>2 </b> : Player</li>
+<li><b>3 </b> : Human Passive</li>
+<li><b>4 </b> : Human Military</li>
+<li><b>5 </b> : Alien Military</li>
+<li><b>6 </b> : Alien Passive</li>
+<li><b>7 </b> : Alien Monster</li>
+<li><b>8 </b> : Alien Prey</li>
+<li><b>9 </b> : Alien Predator</li>
+<li><b>10 </b> : Insect</li>
+<li><b>11 </b> : Player Ally</li>
+<li><b>12 </b> : Player Hornet/Snark</li>
+<li><b>13 </b> : Alien Hornet/Snark</li>
+<li><b>14 </b> : X-Race</li>
+<li><b>15 </b> : X-Race: Shocktrooper/Voltigore</li>
+<li><b>16 </b> : Team 1 : Use it to classify to custom team.</li>
+<li><b>17 </b> : Team 2 : Use it to classify to custom team.</li>
+<li><b>18 </b> : Team 3 : Use it to classify to custom team.</li>
+<li><b>19 </b> : Team 4 : Use it to classify to custom team.</li>
 </ul>
 </div>
 </div>
@@ -138,8 +138,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -155,16 +155,16 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No Trigger : Choice_Description_here</li>
-<li><b>1 </b></span> : See Player, Mad at Player : Choice_Description_here</li>
-<li><b>2 </b></span> : Take Damage : Choice_Description_here</li>
-<li><b>3 </b></span> : 50% Health Remaining : Choice_Description_here</li>
-<li><b>4 </b></span> : Death : Choice_Description_here</li>
-<li><b>7 </b></span> : Hear World : Choice_Description_here</li>
-<li><b>8 </b></span> : Hear Player : Choice_Description_here</li>
-<li><b>9 </b></span> : Hear Combat : Choice_Description_here</li>
-<li><b>10</b></span> : See Player Unconditional : Choice_Description_here</li>
-<li><b>11</b></span> : See Player, Not In Combat : Choice_Description_here</li>
+<li><b>0 </b> : No Trigger : Choice_Description_here</li>
+<li><b>1 </b> : See Player, Mad at Player : Choice_Description_here</li>
+<li><b>2 </b> : Take Damage : Choice_Description_here</li>
+<li><b>3 </b> : 50% Health Remaining : Choice_Description_here</li>
+<li><b>4 </b> : Death : Choice_Description_here</li>
+<li><b>7 </b> : Hear World : Choice_Description_here</li>
+<li><b>8 </b> : Hear Player : Choice_Description_here</li>
+<li><b>9 </b> : Hear Combat : Choice_Description_here</li>
+<li><b>10</b> : See Player Unconditional : Choice_Description_here</li>
+<li><b>11</b> : See Player, Not In Combat : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -184,7 +184,7 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : 0 : Choice_Description_here</li>
+<li><b>0 </b> : 0 : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -200,7 +200,7 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : 0 : Choice_Description_here</li>
+<li><b>0 </b> : 0 : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -216,8 +216,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (Default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (Default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -237,10 +237,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Monster Default : Choice_Description_here</li>
-<li><b>-1 </b></span> : No Blood : Choice_Description_here</li>
-<li><b>1 </b></span> : Red : Choice_Description_here</li>
-<li><b>2 </b></span> : Yellow : Choice_Description_here</li>
+<li><b>0 </b> : Monster Default : Choice_Description_here</li>
+<li><b>-1 </b> : No Blood : Choice_Description_here</li>
+<li><b>1 </b> : Red : Choice_Description_here</li>
+<li><b>2 </b> : Yellow : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -276,9 +276,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Map Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Never : Choice_Description_here</li>
-<li><b>2 </b></span> : Always : Choice_Description_here</li>
+<li><b>0 </b> : Map Default : Choice_Description_here</li>
+<li><b>1 </b> : Never : Choice_Description_here</li>
+<li><b>2 </b> : Always : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -295,15 +295,15 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : WaitTillSeen : Choice_Description_here</li>
-<li><b>2 </b></span> : Gag : Choice_Description_here</li>
-<li><b>4 </b></span> : MonsterClip : Choice_Description_here</li>
-<li><b>16</b></span> : Prisoner : Choice_Description_here</li>
-<li><b>128</b></span> : WaitForScript : Choice_Description_here</li>
-<li><b>256</b></span> : Pre-Disaster : Choice_Description_here</li>
-<li><b>512</b></span> : Don't Fade Corpse : Choice_Description_here</li>
-<li><b>2048 </b></span> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
-<li><b>16384</b></span> : No Dyn Collision : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : WaitTillSeen : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Gag : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : MonsterClip : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Prisoner : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : WaitForScript : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : Pre-Disaster : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512</b> : Don't Fade Corpse : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>16384</b> : No Dyn Collision : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

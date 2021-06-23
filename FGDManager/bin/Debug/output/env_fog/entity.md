@@ -1,7 +1,7 @@
 ---
 title: env_fog
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -34,7 +34,7 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : Start Off : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Start Off : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

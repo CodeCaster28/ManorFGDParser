@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
+    using System.Net.Sockets;
     using Json;
     using Newtonsoft.Json;
 
@@ -23,11 +24,13 @@
                     foreach (var key in entity.KeyValues)
                     {
                         key.Description = result.GetKeyDescription(key.Name);
-
+                        key.Media = result.GetKeyMedia(key.Name);
                         foreach (var choice in key.Choices)
                         {
                             var description = result.GetChoiceDescription(key.Name, choice.Value);
+                            var media = result.GetChoiceMedia(key.Name, choice.Value);
                             choice.Description = description;
+                            choice.Media = media;
                         }
                     }
                     entity.RefreshFlagsDescriptions();

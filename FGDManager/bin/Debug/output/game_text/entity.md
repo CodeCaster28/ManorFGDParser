@@ -1,7 +1,7 @@
 ---
 title: game_text
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -53,9 +53,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Fade In/Out : Choice_Description_here</li>
-<li><b>1 </b></span> : Credits : Choice_Description_here</li>
-<li><b>2 </b></span> : Scan Out : Choice_Description_here</li>
+<li><b>0 </b> : Fade In/Out : Choice_Description_here</li>
+<li><b>1 </b> : Credits : Choice_Description_here</li>
+<li><b>2 </b> : Scan Out : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -95,10 +95,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>1 </b></span> : Channel 1 : Choice_Description_here</li>
-<li><b>2 </b></span> : Channel 2 : Choice_Description_here</li>
-<li><b>3 </b></span> : Channel 3 : Choice_Description_here</li>
-<li><b>4 </b></span> : Channel 4 : Choice_Description_here</li>
+<li><b>1 </b> : Channel 1 : Choice_Description_here</li>
+<li><b>2 </b> : Channel 2 : Choice_Description_here</li>
+<li><b>3 </b> : Channel 3 : Choice_Description_here</li>
+<li><b>4 </b> : Channel 4 : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -111,8 +111,8 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : All Players : Choice_Description_here</li>
-<li><b>2</b></span> : No console echo : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : All Players : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : No console echo : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

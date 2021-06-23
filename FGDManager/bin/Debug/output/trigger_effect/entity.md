@@ -1,7 +1,7 @@
 ---
 title: trigger_effect
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,9 +33,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -55,9 +55,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -73,9 +73,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -91,9 +91,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -109,9 +109,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -127,9 +127,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -149,9 +149,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -171,9 +171,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -193,9 +193,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -215,9 +215,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No change : Choice_Description_here</li>
-<li><b>1 </b></span> : Add : Choice_Description_here</li>
-<li><b>2 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : No change : Choice_Description_here</li>
+<li><b>1 </b> : Add : Choice_Description_here</li>
+<li><b>2 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 title: item_inventory
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,24 +33,24 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Slow Pulse : Choice_Description_here</li>
-<li><b>2</b></span> : Fast Pulse : Choice_Description_here</li>
-<li><b>3</b></span> : Slow Wide Pulse : Choice_Description_here</li>
-<li><b>4</b></span> : Fast Wide Pulse : Choice_Description_here</li>
-<li><b>9</b></span> : Slow Strobe : Choice_Description_here</li>
-<li><b>10</b></span> : Fast Strobe : Choice_Description_here</li>
-<li><b>11</b></span> : Faster Strobe : Choice_Description_here</li>
-<li><b>12</b></span> : Slow Flicker : Choice_Description_here</li>
-<li><b>13</b></span> : Fast Flicker : Choice_Description_here</li>
-<li><b>5</b></span> : Slow Fade Away : Choice_Description_here</li>
-<li><b>6</b></span> : Fast Fade Away : Choice_Description_here</li>
-<li><b>7</b></span> : Slow Become Solid : Choice_Description_here</li>
-<li><b>8</b></span> : Fast Become Solid : Choice_Description_here</li>
-<li><b>14</b></span> : Constant Glow : Choice_Description_here</li>
-<li><b>15</b></span> : Distort : Choice_Description_here</li>
-<li><b>16</b></span> : Hologram (Distort + fade) : Choice_Description_here</li>
-<li><b>19</b></span> : Glow Shell : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Slow Pulse : Choice_Description_here</li>
+<li><b>2</b> : Fast Pulse : Choice_Description_here</li>
+<li><b>3</b> : Slow Wide Pulse : Choice_Description_here</li>
+<li><b>4</b> : Fast Wide Pulse : Choice_Description_here</li>
+<li><b>9</b> : Slow Strobe : Choice_Description_here</li>
+<li><b>10</b> : Fast Strobe : Choice_Description_here</li>
+<li><b>11</b> : Faster Strobe : Choice_Description_here</li>
+<li><b>12</b> : Slow Flicker : Choice_Description_here</li>
+<li><b>13</b> : Fast Flicker : Choice_Description_here</li>
+<li><b>5</b> : Slow Fade Away : Choice_Description_here</li>
+<li><b>6</b> : Fast Fade Away : Choice_Description_here</li>
+<li><b>7</b> : Slow Become Solid : Choice_Description_here</li>
+<li><b>8</b> : Fast Become Solid : Choice_Description_here</li>
+<li><b>14</b> : Constant Glow : Choice_Description_here</li>
+<li><b>15</b> : Distort : Choice_Description_here</li>
+<li><b>16</b> : Hologram (Distort + fade) : Choice_Description_here</li>
+<li><b>19</b> : Glow Shell : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -66,12 +66,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Color : Choice_Description_here</li>
-<li><b>2</b></span> : Texture : Choice_Description_here</li>
-<li><b>3</b></span> : Glow : Choice_Description_here</li>
-<li><b>4</b></span> : Solid : Choice_Description_here</li>
-<li><b>5</b></span> : Additive : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Color : Choice_Description_here</li>
+<li><b>2</b> : Texture : Choice_Description_here</li>
+<li><b>3</b> : Glow : Choice_Description_here</li>
+<li><b>4</b> : Solid : Choice_Description_here</li>
+<li><b>5</b> : Additive : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -95,10 +95,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1</b></span> : Unmoveable : Choice_Description_here</li>
-<li><b>0</b></span> : Fall to the ground (default) : Choice_Description_here</li>
-<li><b>5</b></span> : Hover in the air : Choice_Description_here</li>
-<li><b>8</b></span> : Hover in the air, ignore brush collision : Choice_Description_here</li>
+<li><b>-1</b> : Unmoveable : Choice_Description_here</li>
+<li><b>0</b> : Fall to the ground (default) : Choice_Description_here</li>
+<li><b>5</b> : Hover in the air : Choice_Description_here</li>
+<li><b>8</b> : Hover in the air, ignore brush collision : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -114,9 +114,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1</b></span> : Hollow : Choice_Description_here</li>
-<li><b>0</b></span> : Touch on edge, non-blocking (default) : Choice_Description_here</li>
-<li><b>2</b></span> : Touch on edge, blocking (requires hull sizes!) : Choice_Description_here</li>
+<li><b>-1</b> : Hollow : Choice_Description_here</li>
+<li><b>0</b> : Touch on edge, non-blocking (default) : Choice_Description_here</li>
+<li><b>2</b> : Touch on edge, blocking (requires hull sizes!) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -224,27 +224,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No filter : Choice_Description_here</li>
-<li><b>-1 </b></span> : None : Choice_Description_here</li>
-<li><b>1 </b></span> : Machine : Choice_Description_here</li>
-<li><b>2 </b></span> : Player : Choice_Description_here</li>
-<li><b>3 </b></span> : Human Passive : Choice_Description_here</li>
-<li><b>4 </b></span> : Human Military : Choice_Description_here</li>
-<li><b>5 </b></span> : Alien Military : Choice_Description_here</li>
-<li><b>6 </b></span> : Alien Passive : Choice_Description_here</li>
-<li><b>7 </b></span> : Alien Monster : Choice_Description_here</li>
-<li><b>8 </b></span> : Alien Prey : Choice_Description_here</li>
-<li><b>9 </b></span> : Alien Predator : Choice_Description_here</li>
-<li><b>10 </b></span> : Insect : Choice_Description_here</li>
-<li><b>11 </b></span> : Player Ally : Choice_Description_here</li>
-<li><b>12 </b></span> : Player Hornet/Snark : Choice_Description_here</li>
-<li><b>13 </b></span> : Alien Hornet/Snark : Choice_Description_here</li>
-<li><b>14 </b></span> : X-Race : Choice_Description_here</li>
-<li><b>15 </b></span> : X-Race: Shocktrooper/Voltigore : Choice_Description_here</li>
-<li><b>16 </b></span> : Team 1 : Choice_Description_here</li>
-<li><b>17 </b></span> : Team 2 : Choice_Description_here</li>
-<li><b>18 </b></span> : Team 3 : Choice_Description_here</li>
-<li><b>19 </b></span> : Team 4 : Choice_Description_here</li>
+<li><b>0 </b> : No filter : Choice_Description_here</li>
+<li><b>-1 </b> : None : Choice_Description_here</li>
+<li><b>1 </b> : Machine : Choice_Description_here</li>
+<li><b>2 </b> : Player : Choice_Description_here</li>
+<li><b>3 </b> : Human Passive : Choice_Description_here</li>
+<li><b>4 </b> : Human Military : Choice_Description_here</li>
+<li><b>5 </b> : Alien Military : Choice_Description_here</li>
+<li><b>6 </b> : Alien Passive : Choice_Description_here</li>
+<li><b>7 </b> : Alien Monster : Choice_Description_here</li>
+<li><b>8 </b> : Alien Prey : Choice_Description_here</li>
+<li><b>9 </b> : Alien Predator : Choice_Description_here</li>
+<li><b>10 </b> : Insect : Choice_Description_here</li>
+<li><b>11 </b> : Player Ally : Choice_Description_here</li>
+<li><b>12 </b> : Player Hornet/Snark : Choice_Description_here</li>
+<li><b>13 </b> : Alien Hornet/Snark : Choice_Description_here</li>
+<li><b>14 </b> : X-Race : Choice_Description_here</li>
+<li><b>15 </b> : X-Race: Shocktrooper/Voltigore : Choice_Description_here</li>
+<li><b>16 </b> : Team 1 : Choice_Description_here</li>
+<li><b>17 </b> : Team 2 : Choice_Description_here</li>
+<li><b>18 </b> : Team 3 : Choice_Description_here</li>
+<li><b>19 </b> : Team 4 : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -292,8 +292,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -329,8 +329,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -358,8 +358,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -375,8 +375,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -392,8 +392,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -409,8 +409,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -426,8 +426,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -559,8 +559,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -576,8 +576,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -597,8 +597,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -614,8 +614,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -631,8 +631,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -648,8 +648,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -678,11 +678,11 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>128 </b></span> : TOUCH Only : Choice_Description_here</li>
-<li><b>256 </b></span> : USE Only : Choice_Description_here</li>
-<li><b>512 </b></span> : Can Use w/o LoS : Choice_Description_here</li>
-<li><b>1024</b></span> : Disable Respawn : Choice_Description_here</li>
-<li><b>2048 </b></span> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>128 </b> : TOUCH Only : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256 </b> : USE Only : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512 </b> : Can Use w/o LoS : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : Disable Respawn : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

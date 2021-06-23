@@ -1,7 +1,7 @@
 ---
 title: player_weaponstrip
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -29,9 +29,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Activator only (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : All players : Choice_Description_here</li>
-<li><b>2 </b></span> : All players except activator : Choice_Description_here</li>
+<li><b>0 </b> : Activator only (default) : Choice_Description_here</li>
+<li><b>1 </b> : All players : Choice_Description_here</li>
+<li><b>2 </b> : All players except activator : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -40,7 +40,7 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Strip suit, too : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Strip suit, too : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

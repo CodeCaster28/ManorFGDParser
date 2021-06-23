@@ -1,7 +1,7 @@
 ---
 title: info_compile_parameters
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -21,9 +21,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -39,9 +39,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -57,9 +57,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -75,14 +75,14 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : None : Choice_Description_here</li>
-<li><b>1 </b></span> : Error : Choice_Description_here</li>
-<li><b>2 </b></span> : Warning : Choice_Description_here</li>
-<li><b>3 </b></span> : Info : Choice_Description_here</li>
-<li><b>4 </b></span> : Fluff : Choice_Description_here</li>
-<li><b>5 </b></span> : Spam : Choice_Description_here</li>
-<li><b>6 </b></span> : Mega spam : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : None : Choice_Description_here</li>
+<li><b>1 </b> : Error : Choice_Description_here</li>
+<li><b>2 </b> : Warning : Choice_Description_here</li>
+<li><b>3 </b> : Info : Choice_Description_here</li>
+<li><b>4 </b> : Fluff : Choice_Description_here</li>
+<li><b>5 </b> : Spam : Choice_Description_here</li>
+<li><b>6 </b> : Mega spam : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -98,9 +98,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -116,9 +116,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -138,10 +138,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>1 </b></span> : Low : Choice_Description_here</li>
-<li><b>2 </b></span> : Normal : Choice_Description_here</li>
-<li><b>3 </b></span> : High : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>1 </b> : Low : Choice_Description_here</li>
+<li><b>2 </b> : Normal : Choice_Description_here</li>
+<li><b>3 </b> : High : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -165,10 +165,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
-<li><b>2 </b></span> : Yes, entity updates only mode : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>2 </b> : Yes, entity updates only mode : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -184,9 +184,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -202,9 +202,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -220,9 +220,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -238,12 +238,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : Smallest : Choice_Description_here</li>
-<li><b>1 </b></span> : Normalized : Choice_Description_here</li>
-<li><b>2 </b></span> : Simple (most compact) : Choice_Description_here</li>
-<li><b>3 </b></span> : Precise (recommended) : Choice_Description_here</li>
-<li><b>4 </b></span> : Legacy : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : Smallest : Choice_Description_here</li>
+<li><b>1 </b> : Normalized : Choice_Description_here</li>
+<li><b>2 </b> : Simple (most compact) : Choice_Description_here</li>
+<li><b>3 </b> : Precise (recommended) : Choice_Description_here</li>
+<li><b>4 </b> : Legacy : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -263,9 +263,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -301,9 +301,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -319,9 +319,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -337,9 +337,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -355,9 +355,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -373,9 +373,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -395,10 +395,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
-<li><b>2 </b></span> : Yes, leak only mode : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>2 </b> : Yes, leak only mode : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -422,9 +422,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes (not recommended) : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes (not recommended) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -440,9 +440,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes (not recommended) : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes (not recommended) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -458,9 +458,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes (not recommended) : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes (not recommended) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -476,9 +476,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes (not recommended) : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes (not recommended) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -494,9 +494,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -512,9 +512,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes (not recommended) : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes (not recommended) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -530,9 +530,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes (not recommended) : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes (not recommended) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -548,9 +548,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes (not recommended) : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes (not recommended) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -566,9 +566,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -584,9 +584,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -602,11 +602,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
-<li><b>2 </b></span> : Yes, fast mode : Choice_Description_here</li>
-<li><b>3 </b></span> : Yes, full mode : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>2 </b> : Yes, fast mode : Choice_Description_here</li>
+<li><b>3 </b> : Yes, full mode : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -622,11 +622,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
-<li><b>2 </b></span> : Yes, fast mode : Choice_Description_here</li>
-<li><b>3 </b></span> : Yes, extra mode : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>2 </b> : Yes, fast mode : Choice_Description_here</li>
+<li><b>3 </b> : Yes, extra mode : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -646,10 +646,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : Normal (65,536 patch limit) : Choice_Description_here</li>
-<li><b>1 </b></span> : Sparse : Choice_Description_here</li>
-<li><b>2 </b></span> : None (slowest but most accurate lighting) : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : Normal (65,536 patch limit) : Choice_Description_here</li>
+<li><b>1 </b> : Sparse : Choice_Description_here</li>
+<li><b>2 </b> : None (slowest but most accurate lighting) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -677,9 +677,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -695,9 +695,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -713,9 +713,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -747,9 +747,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>1 </b></span> : No : Choice_Description_here</li>
-<li><b>-1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>1 </b> : No : Choice_Description_here</li>
+<li><b>-1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -765,9 +765,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -795,9 +795,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -845,9 +845,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -863,9 +863,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -881,9 +881,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -907,9 +907,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -925,9 +925,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -947,10 +947,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : 32-bit : Choice_Description_here</li>
-<li><b>1 </b></span> : 16-bit : Choice_Description_here</li>
-<li><b>2 </b></span> : 8-bit : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : 32-bit : Choice_Description_here</li>
+<li><b>1 </b> : 16-bit : Choice_Description_here</li>
+<li><b>2 </b> : 8-bit : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -966,11 +966,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : 96-bit : Choice_Description_here</li>
-<li><b>1 </b></span> : 48-bit : Choice_Description_here</li>
-<li><b>2 </b></span> : 32-bit : Choice_Description_here</li>
-<li><b>3 </b></span> : 24-bit : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : 96-bit : Choice_Description_here</li>
+<li><b>1 </b> : 48-bit : Choice_Description_here</li>
+<li><b>2 </b> : 32-bit : Choice_Description_here</li>
+<li><b>3 </b> : 24-bit : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -986,9 +986,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -1008,9 +1008,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -1026,9 +1026,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -1056,9 +1056,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -1074,9 +1074,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
+<li><b>-1 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -1085,11 +1085,11 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Ignore shared settings : Choice_Description_here</li>
-<li><b>2 </b></span> : Ignore CSG settings : Choice_Description_here</li>
-<li><b>4 </b></span> : Ignore BSP settings : Choice_Description_here</li>
-<li><b>8 </b></span> : Ignore VIS settings : Choice_Description_here</li>
-<li><b>16 </b></span> : Ignore RAD settings : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Ignore shared settings : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Ignore CSG settings : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Ignore BSP settings : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Ignore VIS settings : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : Ignore RAD settings : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

@@ -1,7 +1,7 @@
 ---
 title: env_spark
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -30,8 +30,8 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>32</b></span> : Toggle : Choice_Description_here</li>
-<li><b>64</b></span> : Start ON : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : Toggle : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : Start ON : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

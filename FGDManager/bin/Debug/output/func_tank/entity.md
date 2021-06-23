@@ -1,7 +1,7 @@
 ---
 title: func_tank
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,27 +33,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Slow Pulse : Choice_Description_here</li>
-<li><b>2</b></span> : Fast Pulse : Choice_Description_here</li>
-<li><b>3</b></span> : Slow Wide Pulse : Choice_Description_here</li>
-<li><b>4</b></span> : Fast Wide Pulse : Choice_Description_here</li>
-<li><b>9</b></span> : Slow Strobe : Choice_Description_here</li>
-<li><b>10</b></span> : Fast Strobe : Choice_Description_here</li>
-<li><b>11</b></span> : Faster Strobe : Choice_Description_here</li>
-<li><b>12</b></span> : Slow Flicker : Choice_Description_here</li>
-<li><b>13</b></span> : Fast Flicker : Choice_Description_here</li>
-<li><b>5</b></span> : Slow Fade Away : Choice_Description_here</li>
-<li><b>6</b></span> : Fast Fade Away : Choice_Description_here</li>
-<li><b>7</b></span> : Slow Become Solid : Choice_Description_here</li>
-<li><b>8</b></span> : Fast Become Solid : Choice_Description_here</li>
-<li><b>14</b></span> : Constant Glow : Choice_Description_here</li>
-<li><b>15</b></span> : Distort : Choice_Description_here</li>
-<li><b>16</b></span> : Hologram (Distort + fade) : Choice_Description_here</li>
-<li><b>17</b></span> : Dead Player (DONT USE!) : Choice_Description_here</li>
-<li><b>18</b></span> : Explode (Garg Like) : Choice_Description_here</li>
-<li><b>19</b></span> : Glow Shell : Choice_Description_here</li>
-<li><b>20</b></span> : ClampMinScale (Sprites) : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Slow Pulse : Choice_Description_here</li>
+<li><b>2</b> : Fast Pulse : Choice_Description_here</li>
+<li><b>3</b> : Slow Wide Pulse : Choice_Description_here</li>
+<li><b>4</b> : Fast Wide Pulse : Choice_Description_here</li>
+<li><b>9</b> : Slow Strobe : Choice_Description_here</li>
+<li><b>10</b> : Fast Strobe : Choice_Description_here</li>
+<li><b>11</b> : Faster Strobe : Choice_Description_here</li>
+<li><b>12</b> : Slow Flicker : Choice_Description_here</li>
+<li><b>13</b> : Fast Flicker : Choice_Description_here</li>
+<li><b>5</b> : Slow Fade Away : Choice_Description_here</li>
+<li><b>6</b> : Fast Fade Away : Choice_Description_here</li>
+<li><b>7</b> : Slow Become Solid : Choice_Description_here</li>
+<li><b>8</b> : Fast Become Solid : Choice_Description_here</li>
+<li><b>14</b> : Constant Glow : Choice_Description_here</li>
+<li><b>15</b> : Distort : Choice_Description_here</li>
+<li><b>16</b> : Hologram (Distort + fade) : Choice_Description_here</li>
+<li><b>17</b> : Dead Player (DONT USE!) : Choice_Description_here</li>
+<li><b>18</b> : Explode (Garg Like) : Choice_Description_here</li>
+<li><b>19</b> : Glow Shell : Choice_Description_here</li>
+<li><b>20</b> : ClampMinScale (Sprites) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -69,12 +69,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Normal : Choice_Description_here</li>
-<li><b>1</b></span> : Color : Choice_Description_here</li>
-<li><b>2</b></span> : Texture : Choice_Description_here</li>
-<li><b>3</b></span> : Glow : Choice_Description_here</li>
-<li><b>4</b></span> : Solid : Choice_Description_here</li>
-<li><b>5</b></span> : Additive : Choice_Description_here</li>
+<li><b>0</b> : Normal : Choice_Description_here</li>
+<li><b>1</b> : Color : Choice_Description_here</li>
+<li><b>2</b> : Texture : Choice_Description_here</li>
+<li><b>3</b> : Glow : Choice_Description_here</li>
+<li><b>4</b> : Solid : Choice_Description_here</li>
+<li><b>5</b> : Additive : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -97,75 +97,75 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>(Team) Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Keyvalue_Description_here
+Currently unsupported.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Yaw Rate</b></span> <kbd  class="tooltip" data-tooltip="string">yawrate</kbd> :
-Keyvalue_Description_here
+How fast the barrel rotates horizontally, in degrees per seconds.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Yaw Range</b></span> <kbd  class="tooltip" data-tooltip="string">yawrange</kbd> :
-Keyvalue_Description_here
+The range, in degrees, of the barrel horizontal rotation in each side- left and right. This value is doubled for the whole barrel range e.g. when it's set to 90, the barrel can rotate left by 90 degrees and right by 90 degrees, what gives the total of 180.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Yaw Tolerance</b></span> <kbd  class="tooltip" data-tooltip="string">yawtolerance</kbd> :
-Keyvalue_Description_here
+Additional left-right range. If the gun tries to turn beyond yaw range + yaw tolerance, the gun will snap back to the maximum yaw range.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Rate</b></span> <kbd  class="tooltip" data-tooltip="string">pitchrate</kbd> :
-Keyvalue_Description_here
+Vertical barrel rotating speed, in degrees per seconds.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Range</b></span> <kbd  class="tooltip" data-tooltip="string">pitchrange</kbd> :
-Keyvalue_Description_here
+Vertical range of the barrel rotation, up and down. This value is doubled for the whole barrel range e.g. when it's set to 10, the barrel can rotate up by 10 degrees and down by 10 degrees, what gives the total of 20.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Tolerance</b></span> <kbd  class="tooltip" data-tooltip="string">pitchtolerance</kbd> :
-Keyvalue_Description_here
+Additional up-down range. If the gun tries to turn beyond pitch range + pitch tolerance, the gun will snap back to the maximum pitch range.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Barrel Length</b></span> <kbd  class="tooltip" data-tooltip="string">barrel</kbd> :
-Keyvalue_Description_here
+Determines where bullets comes from. Distance is counted from origin brush to barrel end.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Barrel Horizontal</b></span> <kbd  class="tooltip" data-tooltip="string">barrely</kbd> :
-Keyvalue_Description_here
+How wide the barrel is, horizontaly (x axis).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Barrel Vertical</b></span> <kbd  class="tooltip" data-tooltip="string">barrelz</kbd> :
-Keyvalue_Description_here
+How wide the barrel is, veticaly (z axis).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Smoke Sprite</b></span> <kbd  class="tooltip" data-tooltip="string">spritesmoke</kbd> :
-Keyvalue_Description_here
+Name of the sprite to show whenever bullet is shoot. Starts with 'sprites/' folder.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Flash Sprite</b></span> <kbd  class="tooltip" data-tooltip="string">spriteflash</kbd> :
-Keyvalue_Description_here
+Name of the sprite to show as a muzzle flash of the barrel. Starts with 'sprites/' folder.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Scale</b></span> <kbd  class="tooltip" data-tooltip="string">spritescale</kbd> :
-Keyvalue_Description_here
+Scale of smoke and flash sprites.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Rotate Sound</b></span> <kbd  class="tooltip" data-tooltip="sound">rotatesound</kbd> :
-Keyvalue_Description_here
+Sound file to play in a loop while barrel is rotating.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Rate of Fire</b></span> <kbd  class="tooltip" data-tooltip="string">firerate</kbd> :
-Keyvalue_Description_here
+Number of bullets per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage Per Bullet</b></span> <kbd  class="tooltip" data-tooltip="string">bullet_damage</kbd> :
-Keyvalue_Description_here
+Damage to deal each shot.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Firing Persistence</b></span> <kbd  class="tooltip" data-tooltip="string">persistence</kbd> :
-Keyvalue_Description_here
+How many seconds this entity will continue shooting after losing player from field of view. Works only for automatic turrets.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Bullet Accuracy</b></span> <kbd  class="tooltip" data-tooltip="choices">firespread</kbd> :
-Keyvalue_Description_here
+Allows to customize bullet spreading, from perfect shot to Star Wars Stormtrooper accuracy.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -174,30 +174,30 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Perfect Shot : Choice_Description_here</li>
-<li><b>1</b></span> : Small cone : Choice_Description_here</li>
-<li><b>2</b></span> : Medium cone : Choice_Description_here</li>
-<li><b>3</b></span> : Large cone : Choice_Description_here</li>
-<li><b>4</b></span> : Extra-large cone : Choice_Description_here</li>
+<li><b>0</b> : Perfect Shot</li>
+<li><b>1</b> : Small cone</li>
+<li><b>2</b> : Medium cone</li>
+<li><b>3</b> : Large cone</li>
+<li><b>4</b> : Extra-large cone</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minmum target range</b></span> <kbd  class="tooltip" data-tooltip="string">minRange</kbd> :
-Keyvalue_Description_here
+Minimum view distance to shoot target, used for automatic turrets only.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Maximum target range</b></span> <kbd  class="tooltip" data-tooltip="string">maxRange</kbd> :
-Keyvalue_Description_here
+Maximum view distance to shoot target, used for automatic turrets only. Values above 2048 doesn't work.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Player</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_player</kbd> :
-Keyvalue_Description_here
+Set relationship towards player.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">
@@ -206,19 +206,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Unknown</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_none</kbd> :
-Keyvalue_Description_here
+Set relationship towards entities classificated as "unknown".
 <div class="accordion">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">
@@ -227,19 +227,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Machine</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_machine</kbd> :
-Keyvalue_Description_here
+Set relationship towards machines.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -248,19 +248,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Human Passive</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_human_passive</kbd> :
-Keyvalue_Description_here
+Set relationship towards humans (passive).
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -269,19 +269,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Human Military</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_human_militar</kbd> :
-Keyvalue_Description_here
+Set relationship towards military humans.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -290,19 +290,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Alien Military</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_militar</kbd> :
-Keyvalue_Description_here
+Set relationship towards military aliens.
 <div class="accordion">
 <input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-9">
@@ -311,19 +311,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Alien Passive</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_passive</kbd> :
-Keyvalue_Description_here
+Set relationship towards passive aliens.
 <div class="accordion">
 <input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-10">
@@ -332,19 +332,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Alien Monster</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_monster</kbd> :
-Keyvalue_Description_here
+Set relationship towards alien monsters.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -353,19 +353,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Alien Prey</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_prey</kbd> :
-Keyvalue_Description_here
+Set relationship towards alien preys.
 <div class="accordion">
 <input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-12">
@@ -374,19 +374,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Alien Predator</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_predator</kbd> :
-Keyvalue_Description_here
+Set relationship towards alien predators.
 <div class="accordion">
 <input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-13">
@@ -395,19 +395,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Insect</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_insect</kbd> :
-Keyvalue_Description_here
+Set relationship towards insect.
 <div class="accordion">
 <input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-14">
@@ -416,19 +416,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Player Ally</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_player_ally</kbd> :
-Keyvalue_Description_here
+Set relationship towards player allies.
 <div class="accordion">
 <input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-15">
@@ -437,19 +437,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Player BioWeapon</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_player_bioweapon</kbd> :
-Keyvalue_Description_here
+Set relationship towards player's bioweapon (e.g. snarks thrown by player).
 <div class="accordion">
 <input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-16">
@@ -458,19 +458,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Monster BioWeapon</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_monster_bioweapon</kbd> :
-Keyvalue_Description_here
+Set relationship towards monster's bioweapons (e.g. shockroach dropped by shocktroopers).
 <div class="accordion">
 <input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-17">
@@ -479,19 +479,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Machine</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_machine</kbd> :
-Keyvalue_Description_here
+Set relationship towards machines.
 <div class="accordion">
 <input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-18">
@@ -500,12 +500,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-2</b></span> : Ally : Choice_Description_here</li>
-<li><b>-1</b></span> : Friend : Choice_Description_here</li>
-<li><b>0</b></span> : No Relation : Choice_Description_here</li>
-<li><b>1</b></span> : Dislike : Choice_Description_here</li>
-<li><b>2</b></span> : Hate : Choice_Description_here</li>
-<li><b>3</b></span> : Nemesis : Choice_Description_here</li>
+<li><b>-2</b> : Ally</li>
+<li><b>-1</b> : Friend</li>
+<li><b>0</b> : No Relation</li>
+<li><b>1</b> : Dislike</li>
+<li><b>2</b> : Hate</li>
+<li><b>3</b> : Nemesis</li>
 </ul>
 </div>
 </div>
@@ -529,8 +529,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Always non-solid : Choice_Description_here</li>
+<li><b>0 </b> : Default : Choice_Description_here</li>
+<li><b>1 </b> : Always non-solid : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -546,8 +546,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Visible (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Invisible : Choice_Description_here</li>
+<li><b>0 </b> : Visible (default) : Choice_Description_here</li>
+<li><b>1 </b> : Invisible : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -567,8 +567,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -588,11 +588,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Embedded Fix : Choice_Description_here</li>
-<li><b>2 </b></span> : Opaque (blocks light) : Choice_Description_here</li>
-<li><b>3 </b></span> : Opaque + Embedded fix : Choice_Description_here</li>
-<li><b>6 </b></span> : Opaque + Concave Fix : Choice_Description_here</li>
+<li><b>0 </b> : Default : Choice_Description_here</li>
+<li><b>1 </b> : Embedded Fix : Choice_Description_here</li>
+<li><b>2 </b> : Opaque (blocks light) : Choice_Description_here</li>
+<li><b>3 </b> : Opaque + Embedded fix : Choice_Description_here</li>
+<li><b>6 </b> : Opaque + Concave Fix : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -612,10 +612,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : None : Choice_Description_here</li>
-<li><b>1</b></span> : 9mm : Choice_Description_here</li>
-<li><b>2</b></span> : MP5 : Choice_Description_here</li>
-<li><b>3</b></span> : 12mm : Choice_Description_here</li>
+<li><b>0</b> : None : Choice_Description_here</li>
+<li><b>1</b> : 9mm : Choice_Description_here</li>
+<li><b>2</b> : MP5 : Choice_Description_here</li>
+<li><b>3</b> : 12mm : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -624,12 +624,12 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Active : Choice_Description_here</li>
-<li><b>16</b></span> : Only Direct : Choice_Description_here</li>
-<li><b>32</b></span> : Controllable : Choice_Description_here</li>
-<li><b>512</b></span> : Use Relations : Choice_Description_here</li>
-<li><b>1024</b></span> : Player can't fire : Choice_Description_here</li>
-<li><b>2048 </b></span> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Active : Makes this {{ entname }} active on start, which means it will try to kill every enemies in it's view distance.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Only Direct : If selected, the automatic {{ entname }} will fire it's target only when they are in it's line of sight.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : Controllable : If selected, player can control this turret. Keep in mind that [func_tankcontrols](../func_tankcontrols) is required for this.</li>
+<li class="imagepadding" markdown="1"><b>512</b> : Use Relations : Enables usage of relation keyvalues (may be glitched).</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : Player can't fire : Prevent player from shooting (player might still mount the tank).</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

@@ -1,7 +1,7 @@
 ---
 title: trigger_changemaxammo
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,23 +33,23 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>"9mm" </b></span> : 9mm Rounds : Choice_Description_here</li>
-<li><b>"bolts" </b></span> : Crossbow Bolts : Choice_Description_here</li>
-<li><b>"357" </b></span> : .357 Rounds : Choice_Description_here</li>
-<li><b>"uranium" </b></span> : Uranium Ammo : Choice_Description_here</li>
-<li><b>"Hand Grenade" </b></span> : Hand Grenades : Choice_Description_here</li>
-<li><b>"Hornets" </b></span> : Hornets : Choice_Description_here</li>
-<li><b>"556" </b></span> : 5.56 Rounds : Choice_Description_here</li>
-<li><b>"ARgrenades" </b></span> : AR Grenades : Choice_Description_here</li>
-<li><b>"health" </b></span> : Health (Medkit Ammo) : Choice_Description_here</li>
-<li><b>"rockets" </b></span> : Rockets : Choice_Description_here</li>
-<li><b>"Satchel Charge" </b></span> : Satchel Charges : Choice_Description_here</li>
-<li><b>"shock charges" </b></span> : Shock Rifle Ammo : Choice_Description_here</li>
-<li><b>"buckshot" </b></span> : Shotgun Ammo : Choice_Description_here</li>
-<li><b>"m40a1" </b></span> : Sniper Rifle Ammo : Choice_Description_here</li>
-<li><b>"sporeclip" </b></span> : Spore Launcher Ammo : Choice_Description_here</li>
-<li><b>"Snarks" </b></span> : Snarks : Choice_Description_here</li>
-<li><b>"Trip Mine" </b></span> : Trip Mines : Choice_Description_here</li>
+<li><b>"9mm" </b> : 9mm Rounds : Choice_Description_here</li>
+<li><b>"bolts" </b> : Crossbow Bolts : Choice_Description_here</li>
+<li><b>"357" </b> : .357 Rounds : Choice_Description_here</li>
+<li><b>"uranium" </b> : Uranium Ammo : Choice_Description_here</li>
+<li><b>"Hand Grenade" </b> : Hand Grenades : Choice_Description_here</li>
+<li><b>"Hornets" </b> : Hornets : Choice_Description_here</li>
+<li><b>"556" </b> : 5.56 Rounds : Choice_Description_here</li>
+<li><b>"ARgrenades" </b> : AR Grenades : Choice_Description_here</li>
+<li><b>"health" </b> : Health (Medkit Ammo) : Choice_Description_here</li>
+<li><b>"rockets" </b> : Rockets : Choice_Description_here</li>
+<li><b>"Satchel Charge" </b> : Satchel Charges : Choice_Description_here</li>
+<li><b>"shock charges" </b> : Shock Rifle Ammo : Choice_Description_here</li>
+<li><b>"buckshot" </b> : Shotgun Ammo : Choice_Description_here</li>
+<li><b>"m40a1" </b> : Sniper Rifle Ammo : Choice_Description_here</li>
+<li><b>"sporeclip" </b> : Spore Launcher Ammo : Choice_Description_here</li>
+<li><b>"Snarks" </b> : Snarks : Choice_Description_here</li>
+<li><b>"Trip Mine" </b> : Trip Mines : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -69,10 +69,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Set : Choice_Description_here</li>
-<li><b>1 </b></span> : Reset : Choice_Description_here</li>
-<li><b>2 </b></span> : Add : Choice_Description_here</li>
-<li><b>3 </b></span> : Subtract : Choice_Description_here</li>
+<li><b>0 </b> : Set : Choice_Description_here</li>
+<li><b>1 </b> : Reset : Choice_Description_here</li>
+<li><b>2 </b> : Add : Choice_Description_here</li>
+<li><b>3 </b> : Subtract : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -81,9 +81,9 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : All players : Choice_Description_here</li>
-<li><b>2 </b></span> : Remove excess ammo : Choice_Description_here</li>
-<li><b>4 </b></span> : Set ammo to new max : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : All players : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Remove excess ammo : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Set ammo to new max : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

@@ -1,7 +1,7 @@
 ---
 title: info_overview_point
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -21,8 +21,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : No : Choice_Description_here</li>
-<li><b>1</b></span> : Yes : Choice_Description_here</li>
+<li><b>0</b> : No : Choice_Description_here</li>
+<li><b>1</b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>

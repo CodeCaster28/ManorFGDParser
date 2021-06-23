@@ -1,7 +1,7 @@
 ---
 title: trigger_setorigin
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -45,8 +45,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -62,8 +62,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -79,8 +79,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -89,16 +89,16 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : Constant : Choice_Description_here</li>
-<li><b>4</b></span> : Set Once : Choice_Description_here</li>
-<li><b>8</b></span> : Lock Offsets : Choice_Description_here</li>
-<li><b>16</b></span> : Copy X Angle : Choice_Description_here</li>
-<li><b>32</b></span> : Copy Y Angle : Choice_Description_here</li>
-<li><b>64</b></span> : Copy Z Angle : Choice_Description_here</li>
-<li><b>128</b></span> : Copy X Axis : Choice_Description_here</li>
-<li><b>256</b></span> : Copy Y Axis : Choice_Description_here</li>
-<li><b>512</b></span> : Copy Z Axis : Choice_Description_here</li>
-<li><b>1024</b></span> : Skip Initial Set : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Constant : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4</b> : Set Once : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : Lock Offsets : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Copy X Angle : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : Copy Y Angle : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : Copy Z Angle : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : Copy X Axis : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : Copy Y Axis : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512</b> : Copy Z Axis : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : Skip Initial Set : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

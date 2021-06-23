@@ -1,7 +1,7 @@
 ---
 title: light_surface
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -65,10 +65,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>""</b></span> : Default (no gap) : Choice_Description_here</li>
-<li><b>"0.0"</b></span> : 0.0 - no gap : Choice_Description_here</li>
-<li><b>"3.0"</b></span> : 3.0 - small gap : Choice_Description_here</li>
-<li><b>"12.0"</b></span> : 12.0 - large gap : Choice_Description_here</li>
+<li><b>""</b> : Default (no gap) : Choice_Description_here</li>
+<li><b>"0.0"</b> : 0.0 - no gap : Choice_Description_here</li>
+<li><b>"3.0"</b> : 3.0 - small gap : Choice_Description_here</li>
+<li><b>"12.0"</b> : 12.0 - large gap : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -84,9 +84,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>""</b></span> : Auto : Choice_Description_here</li>
-<li><b>1</b></span> : Yes : Choice_Description_here</li>
-<li><b>2</b></span> : No : Choice_Description_here</li>
+<li><b>""</b> : Auto : Choice_Description_here</li>
+<li><b>1</b> : Yes : Choice_Description_here</li>
+<li><b>2</b> : No : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -102,8 +102,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>"light" </b></span> : light : Choice_Description_here</li>
-<li><b>"light_spot" </b></span> : light_spot : Choice_Description_here</li>
+<li><b>"light" </b> : light : Choice_Description_here</li>
+<li><b>"light_spot" </b> : light_spot : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -123,19 +123,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>"" </b></span> : Normal : Choice_Description_here</li>
-<li><b>10</b></span> : Fluorescent flicker : Choice_Description_here</li>
-<li><b>2 </b></span> : Slow, strong pulse : Choice_Description_here</li>
-<li><b>11</b></span> : Slow pulse, no black : Choice_Description_here</li>
-<li><b>5 </b></span> : Gentle pulse : Choice_Description_here</li>
-<li><b>1 </b></span> : Flicker A : Choice_Description_here</li>
-<li><b>6 </b></span> : Flicker B : Choice_Description_here</li>
-<li><b>3 </b></span> : Candle A : Choice_Description_here</li>
-<li><b>7 </b></span> : Candle B : Choice_Description_here</li>
-<li><b>8 </b></span> : Candle C : Choice_Description_here</li>
-<li><b>4 </b></span> : Fast strobe : Choice_Description_here</li>
-<li><b>9 </b></span> : Slow strobe : Choice_Description_here</li>
-<li><b>12 </b></span> : Underwater mutation : Choice_Description_here</li>
+<li><b>"" </b> : Normal : Choice_Description_here</li>
+<li><b>10</b> : Fluorescent flicker : Choice_Description_here</li>
+<li><b>2 </b> : Slow, strong pulse : Choice_Description_here</li>
+<li><b>11</b> : Slow pulse, no black : Choice_Description_here</li>
+<li><b>5 </b> : Gentle pulse : Choice_Description_here</li>
+<li><b>1 </b> : Flicker A : Choice_Description_here</li>
+<li><b>6 </b> : Flicker B : Choice_Description_here</li>
+<li><b>3 </b> : Candle A : Choice_Description_here</li>
+<li><b>7 </b> : Candle B : Choice_Description_here</li>
+<li><b>8 </b> : Candle C : Choice_Description_here</li>
+<li><b>4 </b> : Fast strobe : Choice_Description_here</li>
+<li><b>9 </b> : Slow strobe : Choice_Description_here</li>
+<li><b>12 </b> : Underwater mutation : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -148,8 +148,8 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Initially dark : Choice_Description_here</li>
-<li><b>2048 </b></span> : Not in Deathmatch : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Initially dark : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

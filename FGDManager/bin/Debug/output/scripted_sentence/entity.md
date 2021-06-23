@@ -1,7 +1,7 @@
 ---
 title: scripted_sentence
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -69,10 +69,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Small Radius : Choice_Description_here</li>
-<li><b>1 </b></span> : Medium Radius : Choice_Description_here</li>
-<li><b>2 </b></span> : Large  Radius : Choice_Description_here</li>
-<li><b>3 </b></span> : Play Everywhere : Choice_Description_here</li>
+<li><b>0 </b> : Small Radius : Choice_Description_here</li>
+<li><b>1 </b> : Medium Radius : Choice_Description_here</li>
+<li><b>2 </b> : Large  Radius : Choice_Description_here</li>
+<li><b>3 </b> : Play Everywhere : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -81,10 +81,10 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Fire Once : Choice_Description_here</li>
-<li><b>2 </b></span> : Followers Only : Choice_Description_here</li>
-<li><b>4 </b></span> : Interrupt Speech : Choice_Description_here</li>
-<li><b>8 </b></span> : Concurrent : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Fire Once : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Followers Only : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Interrupt Speech : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Concurrent : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

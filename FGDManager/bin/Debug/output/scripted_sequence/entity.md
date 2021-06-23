@@ -1,7 +1,7 @@
 ---
 title: scripted_sequence
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -65,11 +65,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Walk : Choice_Description_here</li>
-<li><b>2 </b></span> : Run : Choice_Description_here</li>
-<li><b>4 </b></span> : Instantaneous : Choice_Description_here</li>
-<li><b>5 </b></span> : No - Turn to Face : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Walk : Choice_Description_here</li>
+<li><b>2 </b> : Run : Choice_Description_here</li>
+<li><b>4 </b> : Instantaneous : Choice_Description_here</li>
+<li><b>5 </b> : No - Turn to Face : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -82,12 +82,12 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>4 </b></span> : Repeatable : Choice_Description_here</li>
-<li><b>8 </b></span> : Leave Corpse : Choice_Description_here</li>
-<li><b>32</b></span> : No Interruptions : Choice_Description_here</li>
-<li><b>64</b></span> : Override AI : Choice_Description_here</li>
-<li><b>128</b></span> : No Script Movement : Choice_Description_here</li>
-<li><b>256</b></span> : No Reset Entity : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Repeatable : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Leave Corpse : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : No Interruptions : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : Override AI : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : No Script Movement : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : No Reset Entity : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

@@ -1,7 +1,7 @@
 ---
 title: env_sound
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,35 +33,35 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Normal (off) : Choice_Description_here</li>
-<li><b>1 </b></span> : Generic : Choice_Description_here</li>
-<li><b>2 </b></span> : Metal Small : Choice_Description_here</li>
-<li><b>3 </b></span> : Metal Medium : Choice_Description_here</li>
-<li><b>4 </b></span> : Metal Large : Choice_Description_here</li>
-<li><b>5 </b></span> : Tunnel Small : Choice_Description_here</li>
-<li><b>6 </b></span> : Tunnel Medium : Choice_Description_here</li>
-<li><b>7 </b></span> : Tunnel Large : Choice_Description_here</li>
-<li><b>8 </b></span> : Chamber Small : Choice_Description_here</li>
-<li><b>9 </b></span> : Chamber Medium : Choice_Description_here</li>
-<li><b>10</b></span> : Chamber Large : Choice_Description_here</li>
-<li><b>11</b></span> : Bright Small : Choice_Description_here</li>
-<li><b>12</b></span> : Bright Medium : Choice_Description_here</li>
-<li><b>13</b></span> : Bright Large : Choice_Description_here</li>
-<li><b>14</b></span> : Water Small : Choice_Description_here</li>
-<li><b>15</b></span> : Water Medium : Choice_Description_here</li>
-<li><b>16</b></span> : Water Large : Choice_Description_here</li>
-<li><b>17</b></span> : Concrete Small : Choice_Description_here</li>
-<li><b>18</b></span> : Concrete Medium : Choice_Description_here</li>
-<li><b>19</b></span> : Concrete Large : Choice_Description_here</li>
-<li><b>20</b></span> : Big Room : Choice_Description_here</li>
-<li><b>21</b></span> : Bigger Room : Choice_Description_here</li>
-<li><b>22</b></span> : Biggest Room : Choice_Description_here</li>
-<li><b>23</b></span> : Cavern Small : Choice_Description_here</li>
-<li><b>24</b></span> : Cavern Medium : Choice_Description_here</li>
-<li><b>25</b></span> : Cavern Large : Choice_Description_here</li>
-<li><b>26</b></span> : Weirdo - Drugged : Choice_Description_here</li>
-<li><b>27</b></span> : Weirdo - Dizzy : Choice_Description_here</li>
-<li><b>28</b></span> : Weirdo - Psychotic : Choice_Description_here</li>
+<li><b>0 </b> : Normal (off) : Choice_Description_here</li>
+<li><b>1 </b> : Generic : Choice_Description_here</li>
+<li><b>2 </b> : Metal Small : Choice_Description_here</li>
+<li><b>3 </b> : Metal Medium : Choice_Description_here</li>
+<li><b>4 </b> : Metal Large : Choice_Description_here</li>
+<li><b>5 </b> : Tunnel Small : Choice_Description_here</li>
+<li><b>6 </b> : Tunnel Medium : Choice_Description_here</li>
+<li><b>7 </b> : Tunnel Large : Choice_Description_here</li>
+<li><b>8 </b> : Chamber Small : Choice_Description_here</li>
+<li><b>9 </b> : Chamber Medium : Choice_Description_here</li>
+<li><b>10</b> : Chamber Large : Choice_Description_here</li>
+<li><b>11</b> : Bright Small : Choice_Description_here</li>
+<li><b>12</b> : Bright Medium : Choice_Description_here</li>
+<li><b>13</b> : Bright Large : Choice_Description_here</li>
+<li><b>14</b> : Water Small : Choice_Description_here</li>
+<li><b>15</b> : Water Medium : Choice_Description_here</li>
+<li><b>16</b> : Water Large : Choice_Description_here</li>
+<li><b>17</b> : Concrete Small : Choice_Description_here</li>
+<li><b>18</b> : Concrete Medium : Choice_Description_here</li>
+<li><b>19</b> : Concrete Large : Choice_Description_here</li>
+<li><b>20</b> : Big Room : Choice_Description_here</li>
+<li><b>21</b> : Bigger Room : Choice_Description_here</li>
+<li><b>22</b> : Biggest Room : Choice_Description_here</li>
+<li><b>23</b> : Cavern Small : Choice_Description_here</li>
+<li><b>24</b> : Cavern Medium : Choice_Description_here</li>
+<li><b>25</b> : Cavern Large : Choice_Description_here</li>
+<li><b>26</b> : Weirdo - Drugged : Choice_Description_here</li>
+<li><b>27</b> : Weirdo - Dizzy : Choice_Description_here</li>
+<li><b>28</b> : Weirdo - Psychotic : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -70,7 +70,7 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : USE Only : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : USE Only : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

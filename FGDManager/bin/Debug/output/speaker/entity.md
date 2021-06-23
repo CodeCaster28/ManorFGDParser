@@ -1,7 +1,7 @@
 ---
 title: speaker
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -29,17 +29,17 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : None : Choice_Description_here</li>
-<li><b>1</b></span> : C1A0 Announcer : Choice_Description_here</li>
-<li><b>2</b></span> : C1A1 Announcer : Choice_Description_here</li>
-<li><b>3</b></span> : C1A2 Announcer : Choice_Description_here</li>
-<li><b>4</b></span> : C1A3 Announcer : Choice_Description_here</li>
-<li><b>5</b></span> : C1A4 Announcer : Choice_Description_here</li>
-<li><b>6</b></span> : C2A1 Announcer : Choice_Description_here</li>
-<li><b>7</b></span> : C2A2 Announcer : Choice_Description_here</li>
-<li><b>9</b></span> : C2A4 Announcer : Choice_Description_here</li>
-<li><b>11</b></span> : C3A1 Announcer : Choice_Description_here</li>
-<li><b>12</b></span> : C3A2 Announcer : Choice_Description_here</li>
+<li><b>0</b> : None : Choice_Description_here</li>
+<li><b>1</b> : C1A0 Announcer : Choice_Description_here</li>
+<li><b>2</b> : C1A1 Announcer : Choice_Description_here</li>
+<li><b>3</b> : C1A2 Announcer : Choice_Description_here</li>
+<li><b>4</b> : C1A3 Announcer : Choice_Description_here</li>
+<li><b>5</b> : C1A4 Announcer : Choice_Description_here</li>
+<li><b>6</b> : C2A1 Announcer : Choice_Description_here</li>
+<li><b>7</b> : C2A2 Announcer : Choice_Description_here</li>
+<li><b>9</b> : C2A4 Announcer : Choice_Description_here</li>
+<li><b>11</b> : C3A1 Announcer : Choice_Description_here</li>
+<li><b>12</b> : C3A2 Announcer : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -56,7 +56,7 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : Start Silent : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Start Silent : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

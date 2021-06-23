@@ -1,7 +1,7 @@
 ---
 title: func_detail
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -41,8 +41,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Always non-solid : Choice_Description_here</li>
+<li><b>0 </b> : Default : Choice_Description_here</li>
+<li><b>1 </b> : Always non-solid : Choice_Description_here</li>
 </ul>
 </div>
 </div>

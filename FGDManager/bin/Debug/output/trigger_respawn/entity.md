@@ -1,7 +1,7 @@
 ---
 title: trigger_respawn
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -26,9 +26,9 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Respawn Target : Choice_Description_here</li>
-<li><b>2 </b></span> : Respawn dead players : Choice_Description_here</li>
-<li><b>4 </b></span> : Don't move living players : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Respawn Target : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Respawn dead players : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Don't move living players : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

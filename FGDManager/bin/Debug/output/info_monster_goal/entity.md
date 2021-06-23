@@ -1,7 +1,7 @@
 ---
 title: info_monster_goal
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,12 +33,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No enemy : Choice_Description_here</li>
-<li><b>1 </b></span> : No enemy/Enemy occluded : Choice_Description_here</li>
-<li><b>2 </b></span> : Ignore enemy : Choice_Description_here</li>
-<li><b>3 </b></span> : Goal closer than enemy : Choice_Description_here</li>
-<li><b>4 </b></span> : G.C.T.E./Enemy occluded : Choice_Description_here</li>
-<li><b>5 </b></span> : Stop only if can attack : Choice_Description_here</li>
+<li><b>0 </b> : No enemy : Choice_Description_here</li>
+<li><b>1 </b> : No enemy/Enemy occluded : Choice_Description_here</li>
+<li><b>2 </b> : Ignore enemy : Choice_Description_here</li>
+<li><b>3 </b> : Goal closer than enemy : Choice_Description_here</li>
+<li><b>4 </b> : G.C.T.E./Enemy occluded : Choice_Description_here</li>
+<li><b>5 </b> : Stop only if can attack : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -54,8 +54,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Walk : Choice_Description_here</li>
-<li><b>1 </b></span> : Run : Choice_Description_here</li>
+<li><b>0 </b> : Walk : Choice_Description_here</li>
+<li><b>1 </b> : Run : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -92,9 +92,9 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>8  </b></span> : Start Off : Choice_Description_here</li>
-<li><b>16 </b></span> : Multithreaded : Choice_Description_here</li>
-<li><b>32 </b></span> : Toggle On Reach : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8  </b> : Start Off : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : Multithreaded : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : Toggle On Reach : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

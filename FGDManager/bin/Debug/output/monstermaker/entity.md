@@ -1,7 +1,7 @@
 ---
 title: monstermaker
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -49,8 +49,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default (0) : Choice_Description_here</li>
-<li><b>1 </b></span> : Opposite (1) : Choice_Description_here</li>
+<li><b>0 </b> : Default (0) : Choice_Description_here</li>
+<li><b>1 </b> : Opposite (1) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -75,10 +75,10 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Start ON : Choice_Description_here</li>
-<li><b>4 </b></span> : Cyclic : Choice_Description_here</li>
-<li><b>8 </b></span> : MonsterClip : Choice_Description_here</li>
-<li><b>1024 </b></span> : No Respawn (Collectible) : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Start ON : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Cyclic : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : MonsterClip : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1024 </b> : No Respawn (Collectible) : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

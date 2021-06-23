@@ -1,7 +1,7 @@
 ---
 title: func_clip
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -41,8 +41,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Always non-solid : Choice_Description_here</li>
+<li><b>0 </b> : Default : Choice_Description_here</li>
+<li><b>1 </b> : Always non-solid : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -58,8 +58,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Visible (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Invisible : Choice_Description_here</li>
+<li><b>0 </b> : Visible (default) : Choice_Description_here</li>
+<li><b>1 </b> : Invisible : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -79,8 +79,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -97,13 +97,13 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Start Off : Choice_Description_here</li>
-<li><b>2 </b></span> : Directional (Angles) : Choice_Description_here</li>
-<li><b>4 </b></span> : No Clients : Choice_Description_here</li>
-<li><b>8 </b></span> : Monsters : Choice_Description_here</li>
-<li><b>16 </b></span> : Pushables : Choice_Description_here</li>
-<li><b>32 </b></span> : Everything else : Choice_Description_here</li>
-<li><b>64 </b></span> : item_inv (thrown) : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Start Off : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Directional (Angles) : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : No Clients : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Monsters : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : Pushables : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : Everything else : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : item_inv (thrown) : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

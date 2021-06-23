@@ -1,7 +1,7 @@
 ---
 title: func_op4mortarcontroller
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,8 +33,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Default : Choice_Description_here</li>
-<li><b>1 </b></span> : Always non-solid : Choice_Description_here</li>
+<li><b>0 </b> : Default : Choice_Description_here</li>
+<li><b>1 </b> : Always non-solid : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -50,8 +50,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Visible (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Invisible : Choice_Description_here</li>
+<li><b>0 </b> : Visible (default) : Choice_Description_here</li>
+<li><b>1 </b> : Invisible : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -71,8 +71,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -92,8 +92,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Vertical : Choice_Description_here</li>
-<li><b>1 </b></span> : Horizontal : Choice_Description_here</li>
+<li><b>0 </b> : Vertical : Choice_Description_here</li>
+<li><b>1 </b> : Horizontal : Choice_Description_here</li>
 </ul>
 </div>
 </div>

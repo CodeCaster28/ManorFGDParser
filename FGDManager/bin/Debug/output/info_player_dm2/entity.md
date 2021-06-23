@@ -1,7 +1,7 @@
 ---
 title: info_player_dm2
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -53,9 +53,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : Off : Choice_Description_here</li>
-<li><b>1</b></span> : On : Choice_Description_here</li>
-<li><b>2</b></span> : Toggle : Choice_Description_here</li>
+<li><b>0</b> : Off : Choice_Description_here</li>
+<li><b>1</b> : On : Choice_Description_here</li>
+<li><b>2</b> : Toggle : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -64,12 +64,12 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>2 </b></span> : Start Off : Choice_Description_here</li>
-<li><b>4 </b></span> : Repel Spawn : Choice_Description_here</li>
-<li><b>8 </b></span> : Filter player targetname : Choice_Description_here</li>
-<li><b>16 </b></span> : Invert Filter : Choice_Description_here</li>
-<li><b>32 </b></span> : Trigger on spawn : Choice_Description_here</li>
-<li><b>2048 </b></span> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Start Off : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Repel Spawn : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Filter player targetname : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : Invert Filter : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : Trigger on spawn : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

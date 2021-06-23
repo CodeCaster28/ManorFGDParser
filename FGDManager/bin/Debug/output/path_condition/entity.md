@@ -1,7 +1,7 @@
 ---
 title: path_condition
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -53,10 +53,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : None (Default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Ignore Following : Choice_Description_here</li>
-<li><b>2 </b></span> : Ignore Following and Guarding : Choice_Description_here</li>
-<li><b>3 </b></span> : Ignore Following, Guarding, and Scripts : Choice_Description_here</li>
+<li><b>0 </b> : None (Default) : Choice_Description_here</li>
+<li><b>1 </b> : Ignore Following : Choice_Description_here</li>
+<li><b>2 </b> : Ignore Following and Guarding : Choice_Description_here</li>
+<li><b>3 </b> : Ignore Following, Guarding, and Scripts : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -72,16 +72,16 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : None (Default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Use This Origin : Choice_Description_here</li>
-<li><b>2 </b></span> : Enemy : Choice_Description_here</li>
-<li><b>3 </b></span> : Dead Enemy : Choice_Description_here</li>
-<li><b>4 </b></span> : Sound : Choice_Description_here</li>
-<li><b>5 </b></span> : Scent : Choice_Description_here</li>
-<li><b>6 </b></span> : Near Hiding Spot : Choice_Description_here</li>
-<li><b>7 </b></span> : Far Hiding Spot : Choice_Description_here</li>
-<li><b>8 </b></span> : Named Entity : Choice_Description_here</li>
-<li><b>9 </b></span> : Entity by Key:Value : Choice_Description_here</li>
+<li><b>0 </b> : None (Default) : Choice_Description_here</li>
+<li><b>1 </b> : Use This Origin : Choice_Description_here</li>
+<li><b>2 </b> : Enemy : Choice_Description_here</li>
+<li><b>3 </b> : Dead Enemy : Choice_Description_here</li>
+<li><b>4 </b> : Sound : Choice_Description_here</li>
+<li><b>5 </b> : Scent : Choice_Description_here</li>
+<li><b>6 </b> : Near Hiding Spot : Choice_Description_here</li>
+<li><b>7 </b> : Far Hiding Spot : Choice_Description_here</li>
+<li><b>8 </b> : Named Entity : Choice_Description_here</li>
+<li><b>9 </b> : Entity by Key:Value : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -101,9 +101,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Start Waypoint : Choice_Description_here</li>
-<li><b>1 </b></span> : Nearest Waypoint to NPC : Choice_Description_here</li>
-<li><b>2 </b></span> : Random Waypoint : Choice_Description_here</li>
+<li><b>0 </b> : Start Waypoint : Choice_Description_here</li>
+<li><b>1 </b> : Nearest Waypoint to NPC : Choice_Description_here</li>
+<li><b>2 </b> : Random Waypoint : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -136,7 +136,7 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Start Off : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Start Off : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

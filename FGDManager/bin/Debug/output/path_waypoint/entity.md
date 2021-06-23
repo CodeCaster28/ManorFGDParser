@@ -1,7 +1,7 @@
 ---
 title: path_waypoint
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -37,11 +37,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Walk : Choice_Description_here</li>
-<li><b>1 </b></span> : Run : Choice_Description_here</li>
-<li><b>2 </b></span> : Teleport : Choice_Description_here</li>
-<li><b>3 </b></span> : Turn to Face : Choice_Description_here</li>
-<li><b>4 </b></span> : Don't Move : Choice_Description_here</li>
+<li><b>0 </b> : Walk : Choice_Description_here</li>
+<li><b>1 </b> : Run : Choice_Description_here</li>
+<li><b>2 </b> : Teleport : Choice_Description_here</li>
+<li><b>3 </b> : Turn to Face : Choice_Description_here</li>
+<li><b>4 </b> : Don't Move : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -61,8 +61,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -90,10 +90,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Play Wait Animation (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Look around : Choice_Description_here</li>
-<li><b>2 </b></span> : Investigate Area : Choice_Description_here</li>
-<li><b>3 </b></span> : Use AI : Choice_Description_here</li>
+<li><b>0 </b> : Play Wait Animation (default) : Choice_Description_here</li>
+<li><b>1 </b> : Look around : Choice_Description_here</li>
+<li><b>2 </b> : Investigate Area : Choice_Description_here</li>
+<li><b>3 </b> : Use AI : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -121,8 +121,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -158,8 +158,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No (default) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No (default) : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>

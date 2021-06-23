@@ -1,7 +1,7 @@
 ---
 title: trigger_condition
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -49,13 +49,13 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : == (Equal) : Choice_Description_here</li>
-<li><b>1 </b></span> : != (Not equal) : Choice_Description_here</li>
-<li><b>2 </b></span> : < (Less) : Choice_Description_here</li>
-<li><b>3 </b></span> : > (Greater) : Choice_Description_here</li>
-<li><b>4 </b></span> : <= (Less or equal) : Choice_Description_here</li>
-<li><b>5 </b></span> : >= (Greater or equal) : Choice_Description_here</li>
-<li><b>6 </b></span> : & (Logical AND) : Choice_Description_here</li>
+<li><b>0 </b> : == (Equal) : Choice_Description_here</li>
+<li><b>1 </b> : != (Not equal) : Choice_Description_here</li>
+<li><b>2 </b> : < (Less) : Choice_Description_here</li>
+<li><b>3 </b> : > (Greater) : Choice_Description_here</li>
+<li><b>4 </b> : <= (Less or equal) : Choice_Description_here</li>
+<li><b>5 </b> : >= (Greater or equal) : Choice_Description_here</li>
+<li><b>6 </b> : & (Logical AND) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -79,10 +79,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Fire true/false alternatingly : Choice_Description_here</li>
-<li><b>1 </b></span> : Only wait after false : Choice_Description_here</li>
-<li><b>2 </b></span> : Only wait after true : Choice_Description_here</li>
-<li><b>3 </b></span> : Always fire for both : Choice_Description_here</li>
+<li><b>0 </b> : Fire true/false alternatingly : Choice_Description_here</li>
+<li><b>1 </b> : Only wait after false : Choice_Description_here</li>
+<li><b>2 </b> : Only wait after true : Choice_Description_here</li>
+<li><b>3 </b> : Always fire for both : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -95,14 +95,14 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Start Off : Choice_Description_here</li>
-<li><b>2 </b></span> : Don't use X (R) : Choice_Description_here</li>
-<li><b>4 </b></span> : Don't use Y (G) : Choice_Description_here</li>
-<li><b>8 </b></span> : Don't use Z (B) : Choice_Description_here</li>
-<li><b>16 </b></span> : Don't use W (A) : Choice_Description_here</li>
-<li><b>32 </b></span> : Cyclic; no toggle : Choice_Description_here</li>
-<li><b>64 </b></span> : Keep '!activator' : Choice_Description_here</li>
-<li><b>128 </b></span> : Ignore initial result : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Start Off : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Don't use X (R) : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Don't use Y (G) : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Don't use Z (B) : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : Don't use W (A) : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : Cyclic; no toggle : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : Keep '!activator' : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128 </b> : Ignore initial result : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

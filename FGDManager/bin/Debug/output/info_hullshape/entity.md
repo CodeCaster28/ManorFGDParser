@@ -1,7 +1,7 @@
 ---
 title: info_hullshape
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -25,10 +25,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : No : Choice_Description_here</li>
-<li><b>2</b></span> : Hull 1 : Choice_Description_here</li>
-<li><b>4</b></span> : Hull 2 : Choice_Description_here</li>
-<li><b>8</b></span> : Hull 3 : Choice_Description_here</li>
+<li><b>0</b> : No : Choice_Description_here</li>
+<li><b>2</b> : Hull 1 : Choice_Description_here</li>
+<li><b>4</b> : Hull 2 : Choice_Description_here</li>
+<li><b>8</b> : Hull 3 : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -44,8 +44,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b></span> : No : Choice_Description_here</li>
-<li><b>1</b></span> : Yes : Choice_Description_here</li>
+<li><b>0</b> : No : Choice_Description_here</li>
+<li><b>1</b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>

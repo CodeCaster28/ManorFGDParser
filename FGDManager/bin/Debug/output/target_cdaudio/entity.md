@@ -1,7 +1,7 @@
 ---
 title: target_cdaudio
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -29,37 +29,37 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1 </b></span> : Stop : Choice_Description_here</li>
-<li><b>1 </b></span> : Track 1 : Choice_Description_here</li>
-<li><b>2 </b></span> : Track 2 : Choice_Description_here</li>
-<li><b>3 </b></span> : Track 3 : Choice_Description_here</li>
-<li><b>4 </b></span> : Track 4 : Choice_Description_here</li>
-<li><b>5 </b></span> : Track 5 : Choice_Description_here</li>
-<li><b>6 </b></span> : Track 6 : Choice_Description_here</li>
-<li><b>7 </b></span> : Track 7 : Choice_Description_here</li>
-<li><b>8 </b></span> : Track 8 : Choice_Description_here</li>
-<li><b>9 </b></span> : Track 9 : Choice_Description_here</li>
-<li><b>10 </b></span> : Track 10 : Choice_Description_here</li>
-<li><b>11 </b></span> : Track 11 : Choice_Description_here</li>
-<li><b>12 </b></span> : Track 12 : Choice_Description_here</li>
-<li><b>13 </b></span> : Track 13 : Choice_Description_here</li>
-<li><b>14 </b></span> : Track 14 : Choice_Description_here</li>
-<li><b>15 </b></span> : Track 15 : Choice_Description_here</li>
-<li><b>16 </b></span> : Track 16 : Choice_Description_here</li>
-<li><b>17 </b></span> : Track 17 : Choice_Description_here</li>
-<li><b>18 </b></span> : Track 18 : Choice_Description_here</li>
-<li><b>19 </b></span> : Track 19 : Choice_Description_here</li>
-<li><b>20 </b></span> : Track 20 : Choice_Description_here</li>
-<li><b>21 </b></span> : Track 21 : Choice_Description_here</li>
-<li><b>22 </b></span> : Track 22 : Choice_Description_here</li>
-<li><b>23 </b></span> : Track 23 : Choice_Description_here</li>
-<li><b>24 </b></span> : Track 24 : Choice_Description_here</li>
-<li><b>25 </b></span> : Track 25 : Choice_Description_here</li>
-<li><b>26 </b></span> : Track 26 : Choice_Description_here</li>
-<li><b>27 </b></span> : Track 27 : Choice_Description_here</li>
-<li><b>28 </b></span> : Track 28 : Choice_Description_here</li>
-<li><b>29 </b></span> : Track 29 : Choice_Description_here</li>
-<li><b>30 </b></span> : Track 30 : Choice_Description_here</li>
+<li><b>-1 </b> : Stop : Choice_Description_here</li>
+<li><b>1 </b> : Track 1 : Choice_Description_here</li>
+<li><b>2 </b> : Track 2 : Choice_Description_here</li>
+<li><b>3 </b> : Track 3 : Choice_Description_here</li>
+<li><b>4 </b> : Track 4 : Choice_Description_here</li>
+<li><b>5 </b> : Track 5 : Choice_Description_here</li>
+<li><b>6 </b> : Track 6 : Choice_Description_here</li>
+<li><b>7 </b> : Track 7 : Choice_Description_here</li>
+<li><b>8 </b> : Track 8 : Choice_Description_here</li>
+<li><b>9 </b> : Track 9 : Choice_Description_here</li>
+<li><b>10 </b> : Track 10 : Choice_Description_here</li>
+<li><b>11 </b> : Track 11 : Choice_Description_here</li>
+<li><b>12 </b> : Track 12 : Choice_Description_here</li>
+<li><b>13 </b> : Track 13 : Choice_Description_here</li>
+<li><b>14 </b> : Track 14 : Choice_Description_here</li>
+<li><b>15 </b> : Track 15 : Choice_Description_here</li>
+<li><b>16 </b> : Track 16 : Choice_Description_here</li>
+<li><b>17 </b> : Track 17 : Choice_Description_here</li>
+<li><b>18 </b> : Track 18 : Choice_Description_here</li>
+<li><b>19 </b> : Track 19 : Choice_Description_here</li>
+<li><b>20 </b> : Track 20 : Choice_Description_here</li>
+<li><b>21 </b> : Track 21 : Choice_Description_here</li>
+<li><b>22 </b> : Track 22 : Choice_Description_here</li>
+<li><b>23 </b> : Track 23 : Choice_Description_here</li>
+<li><b>24 </b> : Track 24 : Choice_Description_here</li>
+<li><b>25 </b> : Track 25 : Choice_Description_here</li>
+<li><b>26 </b> : Track 26 : Choice_Description_here</li>
+<li><b>27 </b> : Track 27 : Choice_Description_here</li>
+<li><b>28 </b> : Track 28 : Choice_Description_here</li>
+<li><b>29 </b> : Track 29 : Choice_Description_here</li>
+<li><b>30 </b> : Track 30 : Choice_Description_here</li>
 </ul>
 </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 title: func_monitor
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -53,9 +53,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0  </b></span> : { Textures : Choice_Description_here</li>
-<li><b>1  </b></span> : All Textures : Choice_Description_here</li>
-<li><b>2  </b></span> : Named Texture : Choice_Description_here</li>
+<li><b>0  </b> : { Textures : Choice_Description_here</li>
+<li><b>1  </b> : All Textures : Choice_Description_here</li>
+<li><b>2  </b> : Named Texture : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -76,9 +76,9 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : Solid : Choice_Description_here</li>
-<li><b>2</b></span> : Start Disabled : Choice_Description_here</li>
-<li><b>16</b></span> : Render only every 2nd frame : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Solid : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : Start Disabled : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Render only every 2nd frame : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

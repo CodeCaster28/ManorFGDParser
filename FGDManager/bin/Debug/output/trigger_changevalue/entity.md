@@ -1,7 +1,7 @@
 ---
 title: trigger_changevalue
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -41,28 +41,28 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Replace (= source) : Choice_Description_here</li>
-<li><b>1 </b></span> : Add (= old + source) : Choice_Description_here</li>
-<li><b>2 </b></span> : Mul (= old * source) : Choice_Description_here</li>
-<li><b>3 </b></span> : Sub (= old - source) : Choice_Description_here</li>
-<li><b>4 </b></span> : Div (= old / source) : Choice_Description_here</li>
-<li><b>16 </b></span> : Pow (= old ^ source) : Choice_Description_here</li>
-<li><b>12 </b></span> : Mod (= old % source) : Choice_Description_here</li>
-<li><b>5 </b></span> : AND (= old & source) : Choice_Description_here</li>
-<li><b>6 </b></span> : OR (= old | source) : Choice_Description_here</li>
-<li><b>13 </b></span> : XOR (= old ^ source) : Choice_Description_here</li>
-<li><b>7 </b></span> : NAND (= !(old & source)) : Choice_Description_here</li>
-<li><b>8 </b></span> : NOR (= !(old | source)) : Choice_Description_here</li>
-<li><b>14 </b></span> : NXOR (= !(old ^ source)) : Choice_Description_here</li>
-<li><b>11 </b></span> : Append (String concatenation) : Choice_Description_here</li>
-<li><b>17 </b></span> : Sin (= sin(source)) : Choice_Description_here</li>
-<li><b>18 </b></span> : Cos (= cos(source)) : Choice_Description_here</li>
-<li><b>19 </b></span> : Tan (= tan(source)) : Choice_Description_here</li>
-<li><b>23 </b></span> : Cot (= cot(source)) : Choice_Description_here</li>
-<li><b>20 </b></span> : Arcsin (= arcsin(source)) : Choice_Description_here</li>
-<li><b>21 </b></span> : Arccos (= arccos(source)) : Choice_Description_here</li>
-<li><b>22 </b></span> : Arctan (= arctan(source)) : Choice_Description_here</li>
-<li><b>24 </b></span> : Arccot (= arccot(source)) : Choice_Description_here</li>
+<li><b>0 </b> : Replace (= source) : Choice_Description_here</li>
+<li><b>1 </b> : Add (= old + source) : Choice_Description_here</li>
+<li><b>2 </b> : Mul (= old * source) : Choice_Description_here</li>
+<li><b>3 </b> : Sub (= old - source) : Choice_Description_here</li>
+<li><b>4 </b> : Div (= old / source) : Choice_Description_here</li>
+<li><b>16 </b> : Pow (= old ^ source) : Choice_Description_here</li>
+<li><b>12 </b> : Mod (= old % source) : Choice_Description_here</li>
+<li><b>5 </b> : AND (= old & source) : Choice_Description_here</li>
+<li><b>6 </b> : OR (= old | source) : Choice_Description_here</li>
+<li><b>13 </b> : XOR (= old ^ source) : Choice_Description_here</li>
+<li><b>7 </b> : NAND (= !(old & source)) : Choice_Description_here</li>
+<li><b>8 </b> : NOR (= !(old | source)) : Choice_Description_here</li>
+<li><b>14 </b> : NXOR (= !(old ^ source)) : Choice_Description_here</li>
+<li><b>11 </b> : Append (String concatenation) : Choice_Description_here</li>
+<li><b>17 </b> : Sin (= sin(source)) : Choice_Description_here</li>
+<li><b>18 </b> : Cos (= cos(source)) : Choice_Description_here</li>
+<li><b>19 </b> : Tan (= tan(source)) : Choice_Description_here</li>
+<li><b>23 </b> : Cot (= cot(source)) : Choice_Description_here</li>
+<li><b>20 </b> : Arcsin (= arcsin(source)) : Choice_Description_here</li>
+<li><b>21 </b> : Arccos (= arccos(source)) : Choice_Description_here</li>
+<li><b>22 </b> : Arctan (= arctan(source)) : Choice_Description_here</li>
+<li><b>24 </b> : Arccot (= arccot(source)) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -78,8 +78,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Degrees in (out for arc.) : Choice_Description_here</li>
-<li><b>1 </b></span> : Radian measure in (out for arc.) : Choice_Description_here</li>
+<li><b>0 </b> : Degrees in (out for arc.) : Choice_Description_here</li>
+<li><b>1 </b> : Radian measure in (out for arc.) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -96,11 +96,11 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Don't use X : Choice_Description_here</li>
-<li><b>2 </b></span> : Don't use Y : Choice_Description_here</li>
-<li><b>4 </b></span> : Don't use Z : Choice_Description_here</li>
-<li><b>32 </b></span> : Invert target value : Choice_Description_here</li>
-<li><b>64 </b></span> : Invert source value : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Don't use X : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Don't use Y : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Don't use Z : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : Invert target value : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : Invert source value : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

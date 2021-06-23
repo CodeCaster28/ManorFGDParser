@@ -1,7 +1,7 @@
 ---
 title: trigger_camera
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -69,19 +69,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No Action : Choice_Description_here</li>
-<li><b>1 </b></span> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b></span> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b></span> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b></span> : Remove : Choice_Description_here</li>
-<li><b>5 </b></span> : Hurt : Choice_Description_here</li>
-<li><b>6 </b></span> : Heal : Choice_Description_here</li>
-<li><b>7 </b></span> : Spawn : Choice_Description_here</li>
-<li><b>8 </b></span> : Teleport : Choice_Description_here</li>
-<li><b>9 </b></span> : Teleport Away : Choice_Description_here</li>
-<li><b>10 </b></span> : Create Explosion : Choice_Description_here</li>
-<li><b>11 </b></span> : Drag : Choice_Description_here</li>
-<li><b>255 </b></span> : Exit Camera (Non-forced only) : Choice_Description_here</li>
+<li><b>0 </b> : No Action : Choice_Description_here</li>
+<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
+<li><b>2 </b> : Trigger On : Choice_Description_here</li>
+<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
+<li><b>4 </b> : Remove : Choice_Description_here</li>
+<li><b>5 </b> : Hurt : Choice_Description_here</li>
+<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>7 </b> : Spawn : Choice_Description_here</li>
+<li><b>8 </b> : Teleport : Choice_Description_here</li>
+<li><b>9 </b> : Teleport Away : Choice_Description_here</li>
+<li><b>10 </b> : Create Explosion : Choice_Description_here</li>
+<li><b>11 </b> : Drag : Choice_Description_here</li>
+<li><b>255 </b> : Exit Camera (Non-forced only) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -101,8 +101,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -118,19 +118,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No Action : Choice_Description_here</li>
-<li><b>1 </b></span> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b></span> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b></span> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b></span> : Remove : Choice_Description_here</li>
-<li><b>5 </b></span> : Hurt : Choice_Description_here</li>
-<li><b>6 </b></span> : Heal : Choice_Description_here</li>
-<li><b>7 </b></span> : Spawn : Choice_Description_here</li>
-<li><b>8 </b></span> : Teleport : Choice_Description_here</li>
-<li><b>9 </b></span> : Teleport Away : Choice_Description_here</li>
-<li><b>10 </b></span> : Create Explosion : Choice_Description_here</li>
-<li><b>11 </b></span> : Drag : Choice_Description_here</li>
-<li><b>255 </b></span> : Exit Camera (Non-forced only) : Choice_Description_here</li>
+<li><b>0 </b> : No Action : Choice_Description_here</li>
+<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
+<li><b>2 </b> : Trigger On : Choice_Description_here</li>
+<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
+<li><b>4 </b> : Remove : Choice_Description_here</li>
+<li><b>5 </b> : Hurt : Choice_Description_here</li>
+<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>7 </b> : Spawn : Choice_Description_here</li>
+<li><b>8 </b> : Teleport : Choice_Description_here</li>
+<li><b>9 </b> : Teleport Away : Choice_Description_here</li>
+<li><b>10 </b> : Create Explosion : Choice_Description_here</li>
+<li><b>11 </b> : Drag : Choice_Description_here</li>
+<li><b>255 </b> : Exit Camera (Non-forced only) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -150,8 +150,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -167,19 +167,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No Action : Choice_Description_here</li>
-<li><b>1 </b></span> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b></span> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b></span> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b></span> : Remove : Choice_Description_here</li>
-<li><b>5 </b></span> : Hurt : Choice_Description_here</li>
-<li><b>6 </b></span> : Heal : Choice_Description_here</li>
-<li><b>7 </b></span> : Spawn : Choice_Description_here</li>
-<li><b>8 </b></span> : Teleport : Choice_Description_here</li>
-<li><b>9 </b></span> : Teleport Away : Choice_Description_here</li>
-<li><b>10 </b></span> : Create Explosion : Choice_Description_here</li>
-<li><b>11 </b></span> : Drag : Choice_Description_here</li>
-<li><b>255 </b></span> : Exit Camera (Non-forced only) : Choice_Description_here</li>
+<li><b>0 </b> : No Action : Choice_Description_here</li>
+<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
+<li><b>2 </b> : Trigger On : Choice_Description_here</li>
+<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
+<li><b>4 </b> : Remove : Choice_Description_here</li>
+<li><b>5 </b> : Hurt : Choice_Description_here</li>
+<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>7 </b> : Spawn : Choice_Description_here</li>
+<li><b>8 </b> : Teleport : Choice_Description_here</li>
+<li><b>9 </b> : Teleport Away : Choice_Description_here</li>
+<li><b>10 </b> : Create Explosion : Choice_Description_here</li>
+<li><b>11 </b> : Drag : Choice_Description_here</li>
+<li><b>255 </b> : Exit Camera (Non-forced only) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -199,8 +199,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -216,19 +216,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No Action : Choice_Description_here</li>
-<li><b>1 </b></span> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b></span> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b></span> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b></span> : Remove : Choice_Description_here</li>
-<li><b>5 </b></span> : Hurt : Choice_Description_here</li>
-<li><b>6 </b></span> : Heal : Choice_Description_here</li>
-<li><b>7 </b></span> : Spawn : Choice_Description_here</li>
-<li><b>8 </b></span> : Teleport : Choice_Description_here</li>
-<li><b>9 </b></span> : Teleport Away : Choice_Description_here</li>
-<li><b>10 </b></span> : Create Explosion : Choice_Description_here</li>
-<li><b>11 </b></span> : Drag : Choice_Description_here</li>
-<li><b>255 </b></span> : Exit Camera (Non-forced only) : Choice_Description_here</li>
+<li><b>0 </b> : No Action : Choice_Description_here</li>
+<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
+<li><b>2 </b> : Trigger On : Choice_Description_here</li>
+<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
+<li><b>4 </b> : Remove : Choice_Description_here</li>
+<li><b>5 </b> : Hurt : Choice_Description_here</li>
+<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>7 </b> : Spawn : Choice_Description_here</li>
+<li><b>8 </b> : Teleport : Choice_Description_here</li>
+<li><b>9 </b> : Teleport Away : Choice_Description_here</li>
+<li><b>10 </b> : Create Explosion : Choice_Description_here</li>
+<li><b>11 </b> : Drag : Choice_Description_here</li>
+<li><b>255 </b> : Exit Camera (Non-forced only) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -248,8 +248,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -265,19 +265,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No Action : Choice_Description_here</li>
-<li><b>1 </b></span> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b></span> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b></span> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b></span> : Remove : Choice_Description_here</li>
-<li><b>5 </b></span> : Hurt : Choice_Description_here</li>
-<li><b>6 </b></span> : Heal : Choice_Description_here</li>
-<li><b>7 </b></span> : Spawn : Choice_Description_here</li>
-<li><b>8 </b></span> : Teleport : Choice_Description_here</li>
-<li><b>9 </b></span> : Teleport Away : Choice_Description_here</li>
-<li><b>10 </b></span> : Create Explosion : Choice_Description_here</li>
-<li><b>11 </b></span> : Drag : Choice_Description_here</li>
-<li><b>255 </b></span> : Exit Camera (Non-forced only) : Choice_Description_here</li>
+<li><b>0 </b> : No Action : Choice_Description_here</li>
+<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
+<li><b>2 </b> : Trigger On : Choice_Description_here</li>
+<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
+<li><b>4 </b> : Remove : Choice_Description_here</li>
+<li><b>5 </b> : Hurt : Choice_Description_here</li>
+<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>7 </b> : Spawn : Choice_Description_here</li>
+<li><b>8 </b> : Teleport : Choice_Description_here</li>
+<li><b>9 </b> : Teleport Away : Choice_Description_here</li>
+<li><b>10 </b> : Create Explosion : Choice_Description_here</li>
+<li><b>11 </b> : Drag : Choice_Description_here</li>
+<li><b>255 </b> : Exit Camera (Non-forced only) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -297,8 +297,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -314,19 +314,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No Action : Choice_Description_here</li>
-<li><b>1 </b></span> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b></span> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b></span> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b></span> : Remove : Choice_Description_here</li>
-<li><b>5 </b></span> : Hurt : Choice_Description_here</li>
-<li><b>6 </b></span> : Heal : Choice_Description_here</li>
-<li><b>7 </b></span> : Spawn : Choice_Description_here</li>
-<li><b>8 </b></span> : Teleport : Choice_Description_here</li>
-<li><b>9 </b></span> : Teleport Away : Choice_Description_here</li>
-<li><b>10 </b></span> : Create Explosion : Choice_Description_here</li>
-<li><b>11 </b></span> : Drag : Choice_Description_here</li>
-<li><b>255 </b></span> : Exit Camera (Non-forced only) : Choice_Description_here</li>
+<li><b>0 </b> : No Action : Choice_Description_here</li>
+<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
+<li><b>2 </b> : Trigger On : Choice_Description_here</li>
+<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
+<li><b>4 </b> : Remove : Choice_Description_here</li>
+<li><b>5 </b> : Hurt : Choice_Description_here</li>
+<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>7 </b> : Spawn : Choice_Description_here</li>
+<li><b>8 </b> : Teleport : Choice_Description_here</li>
+<li><b>9 </b> : Teleport Away : Choice_Description_here</li>
+<li><b>10 </b> : Create Explosion : Choice_Description_here</li>
+<li><b>11 </b> : Drag : Choice_Description_here</li>
+<li><b>255 </b> : Exit Camera (Non-forced only) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -346,8 +346,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : No : Choice_Description_here</li>
-<li><b>1 </b></span> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : Choice_Description_here</li>
+<li><b>1 </b> : Yes : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -399,8 +399,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Show Health and Battery : Choice_Description_here</li>
-<li><b>1 </b></span> : Hide Health and Battery : Choice_Description_here</li>
+<li><b>0 </b> : Show Health and Battery : Choice_Description_here</li>
+<li><b>1 </b> : Hide Health and Battery : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -416,8 +416,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Show Flashlight : Choice_Description_here</li>
-<li><b>1 </b></span> : Hide Flashlight : Choice_Description_here</li>
+<li><b>0 </b> : Show Flashlight : Choice_Description_here</li>
+<li><b>1 </b> : Hide Flashlight : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -433,8 +433,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Show Weapons : Choice_Description_here</li>
-<li><b>1 </b></span> : Hide Weapons : Choice_Description_here</li>
+<li><b>0 </b> : Show Weapons : Choice_Description_here</li>
+<li><b>1 </b> : Hide Weapons : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -447,16 +447,16 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : Start At Player : Choice_Description_here</li>
-<li><b>2</b></span> : Follow Player : Choice_Description_here</li>
-<li><b>4</b></span> : Freeze Player : Choice_Description_here</li>
-<li><b>8</b></span> : All Players : Choice_Description_here</li>
-<li><b>16</b></span> : Force View : Choice_Description_here</li>
-<li><b>32</b></span> : No Instant Turn : Choice_Description_here</li>
-<li><b>64</b></span> : Instant Move : Choice_Description_here</li>
-<li><b>128</b></span> : Mouse Cursor : Choice_Description_here</li>
-<li><b>256</b></span> : Player Invulnerable : Choice_Description_here</li>
-<li><b>512</b></span> : Ignore Hold Time : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Start At Player : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : Follow Player : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4</b> : Freeze Player : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : All Players : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Force View : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : No Instant Turn : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : Instant Move : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : Mouse Cursor : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : Player Invulnerable : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512</b> : Ignore Hold Time : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

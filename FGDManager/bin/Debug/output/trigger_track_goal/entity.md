@@ -1,7 +1,7 @@
 ---
 title: trigger_track_goal
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -34,8 +34,8 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1 </b></span> : Stopped Only : Choice_Description_here</li>
-<li><b>2 </b></span> : Don't move if no path available : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Stopped Only : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Don't move if no path available : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

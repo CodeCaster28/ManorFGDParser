@@ -1,7 +1,7 @@
 ---
 title: env_blood
 ---
-
+<div>{% set entname = page.title|raw %}</div>
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
@@ -33,8 +33,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b></span> : Red (Human) : Choice_Description_here</li>
-<li><b>1 </b></span> : Yellow (Alien) : Choice_Description_here</li>
+<li><b>0 </b> : Red (Human) : Choice_Description_here</li>
+<li><b>1 </b> : Yellow (Alien) : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -47,10 +47,10 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li><b>1</b></span> : Random Direction : Choice_Description_here</li>
-<li><b>2</b></span> : Blood Stream : Choice_Description_here</li>
-<li><b>4</b></span> : On Player : Choice_Description_here</li>
-<li><b>8</b></span> : Spray decals : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Random Direction : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : Blood Stream : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4</b> : On Player : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : Spray decals : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>
