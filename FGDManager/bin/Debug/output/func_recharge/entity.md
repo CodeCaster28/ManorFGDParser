@@ -2,9 +2,14 @@
 title: func_recharge
 ---
 
-The func_recharge is a visible, solid entity which can be used just as a func_button can and will refill 15 armor points per second while using it. Multiple players can use it at the same time, but the AP restored per second is distributed equally among them. Armorchargers refill themselves 15 seconds after being emptied.
+<div class="container previewimg">
+<div class="columns">
+<div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
+<div class="column">The func_recharge is a visible, solid entity which can be used just as a func_button can and will refill 15 armor points per second while using it. Multiple players can use it at the same time, but the AP restored per second is distributed equally among them. Armorchargers refill themselves 15 seconds after being emptied.
 > sk_suitcharger # (Default: 100, 100, 100): Sets how many armor points suit chargers store.
-
+</div>
+</div>
+</div>
 ###Keyvalues
 <hr>
 <div class="entityentry" markdown="1">

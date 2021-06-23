@@ -39,7 +39,12 @@
                     writer.WriteLine($"title: {entity.ClassName}");
                     writer.WriteLine("---");
                     writer.WriteLine();
-                    writer.WriteLine(entity.Description);
+                    writer.WriteLine("<div class=\"container previewimg\">");
+                    writer.WriteLine("<div class=\"columns\">");
+                    writer.WriteLine("<div class=\"imagepadding column col-auto\" markdown=\"1\">![](preview.png)</div>");
+                    writer.WriteLine($"<div class=\"column\">{entity.Description}</div>");
+                    writer.WriteLine("</div>");
+                    writer.WriteLine("</div>");
                     
                     var allKeyValues = entity.GetAllKeyValues();
                     allKeyValues.RemoveAll(a => a.Name == "spawnflags");
