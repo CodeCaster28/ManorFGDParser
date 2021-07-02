@@ -490,27 +490,6 @@ Choices:
 </div>
 </div>
 <div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>R Machine</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_machine</kbd> :
-Set relationship towards machines.
-<div class="accordion">
-<input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-18">
-<i class="icon icon-arrow-right mr-1"></i>
-Choices:
-</label>
-<div class="accordion-body">
-<ul>
-<li><b>-2</b> : Ally</li>
-<li><b>-1</b> : Friend</li>
-<li><b>0</b> : No Relation</li>
-<li><b>1</b> : Dislike</li>
-<li><b>2</b> : Hate</li>
-<li><b>3</b> : Nemesis</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
 For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by "copying" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it.
 For model-based point entities: copy display model of specified entity, to use it's model instead. Using "Custom model" is more appropriate in most cases, however, when it's not possible, use "ZHLT Copy Lighting From Target".
@@ -524,8 +503,8 @@ For model-based point entities: if model lightning does not satisfy you (e.g. it
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
 Enable or disable collision of entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-19" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-19">
+<input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-18">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -541,8 +520,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>ZHLT Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_invisible</kbd> :
 Brush entities only. Determines if entity should be visible.
 <div class="accordion">
-<input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-20">
+<input type="checkbox" id="accordion-19" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-19">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -562,8 +541,8 @@ Opaque brush entities only. If "ZHLT Ligth Flags" of this entity uses any of the
 <span style="color:#9fc5e8;"><b>ZHLT Embed Light Map (when translucent)</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_embedlightmap</kbd> :
 Transparent brush entities only. Set it to 'Yes' and this transparent entity will take a light from environment making it looks much more natural. Use it when entities (e.g. glass represented by func_wall) omits lightning from surrounding. Note that this is expensive so shouldn't be used too often, but resolution of those lightmaps can be controlled by keyvalue explained below.
 <div class="accordion">
-<input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-21">
+<input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-20">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -583,8 +562,8 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 <span style="color:#9fc5e8;"><b>ZHLT Light Flags</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_lightflags</kbd> :
 Brush entities only. Changes light casting or receiving setting.
 <div class="accordion">
-<input type="checkbox" id="accordion-22" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-22">
+<input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-21">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>

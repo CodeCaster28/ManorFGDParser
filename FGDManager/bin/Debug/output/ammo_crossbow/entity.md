@@ -5,7 +5,7 @@ title: ammo_crossbow
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column">Provides 5 bolts for weapon_crossbow (Crossbow). Maximum in supply: 50</div>
 </div>
 </div>
 ###Keyvalues
@@ -134,5 +134,6 @@ Same as target, except that this supposedly causes the specified entity/entities
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>
+<div class="notices blue">Ammo already loaded into weapon doesn't count to maximum ammo in supply (e.g. 6 in Revolver and 36 in supply gives total amount of 42 ammo).</div>
+<div class="notices blue">If '"Touch only" and "Use only" flags are selected, the ammo can only be collected by trigger. When those flags are not selected, the ammo also can be collected by trigger, but only if player is the !activator.</div>

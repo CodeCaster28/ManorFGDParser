@@ -43,7 +43,7 @@ Keyvalue_Description_here
 Keyvalue_Description_here
 </div>
 <div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Priority Override</b></span> <kbd  class="tooltip" data-tooltip="Choices">selecttype</kbd> :
+<span style="color:#9fc5e8;"><b>Waypoint Selection</b></span> <kbd  class="tooltip" data-tooltip="Choices">selecttype</kbd> :
 Keyvalue_Description_here
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
@@ -53,10 +53,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : None (Default) : Choice_Description_here</li>
-<li><b>1 </b> : Ignore Following : Choice_Description_here</li>
-<li><b>2 </b> : Ignore Following and Guarding : Choice_Description_here</li>
-<li><b>3 </b> : Ignore Following, Guarding, and Scripts : Choice_Description_here</li>
+<li><b>0 </b> : Start Waypoint : Choice_Description_here</li>
+<li><b>1 </b> : Nearest Waypoint to NPC : Choice_Description_here</li>
+<li><b>2 </b> : Random Waypoint : Choice_Description_here</li>
 </ul>
 </div>
 </div>
@@ -89,24 +88,6 @@ Choices:
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pre-Waypoint Parameters</b></span> <kbd  class="tooltip" data-tooltip="string">pre_location_values</kbd> :
 Keyvalue_Description_here
-</div>
-<div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Waypoint Selection</b></span> <kbd  class="tooltip" data-tooltip="Choices">selecttype</kbd> :
-Keyvalue_Description_here
-<div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
-<i class="icon icon-arrow-right mr-1"></i>
-Choices:
-</label>
-<div class="accordion-body">
-<ul>
-<li><b>0 </b> : Start Waypoint : Choice_Description_here</li>
-<li><b>1 </b> : Nearest Waypoint to NPC : Choice_Description_here</li>
-<li><b>2 </b> : Random Waypoint : Choice_Description_here</li>
-</ul>
-</div>
-</div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Start Waypoint</b></span> <kbd  class="tooltip" data-tooltip="string">path_start</kbd> :

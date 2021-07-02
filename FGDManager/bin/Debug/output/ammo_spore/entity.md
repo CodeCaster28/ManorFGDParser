@@ -86,7 +86,7 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Gravity Setting</b></span> <kbd  class="tooltip" data-tooltip="choices">movetype</kbd> :
-Determines how items behave after spawn. Set 'Hover in the air' so . You can also set 'Hover in the air, ignore brush collision' so .
+Duplicate?
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -95,10 +95,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1</b> : Unmoveable : Make item completely unmovable by any external influence, unless changed at runtime by e.g. trigger_changevalue.</li>
-<li><b>0</b> : Fall to the ground (default) : Entity fall to first brush beneath it. Note that not all entities with collision may block items to fall through them.</li>
-<li><b>5</b> : Hover in the air : Items won't fall from it's starting position.</li>
-<li><b>8</b> : Hover in the air, ignore brush collision : Items won't fall from it's starting position and won't be affected by brush collision.</li>
+<li><b>-1</b> : Unmoveable</li>
+<li><b>0</b> : Fall to the ground (OP4 maps only)</li>
+<li><b>5</b> : Hover in the air</li>
+<li><b>8</b> : Hover in the air, ignore brush collision</li>
 </ul>
 </div>
 </div>
@@ -123,25 +123,6 @@ Delay before trigger entity specified in "Target".
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
 Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
 </div>
-<div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Gravity Setting</b></span> <kbd  class="tooltip" data-tooltip="choices">movetype</kbd> :
-Keyvalue_Description_here
-<div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
-<i class="icon icon-arrow-right mr-1"></i>
-Choices:
-</label>
-<div class="accordion-body">
-<ul>
-<li><b>-1</b> : Unmoveable : Choice_Description_here</li>
-<li><b>0</b> : Fall to the ground (OP4 maps only) : Choice_Description_here</li>
-<li><b>5</b> : Hover in the air : Choice_Description_here</li>
-<li><b>8</b> : Hover in the air, ignore brush collision : Choice_Description_here</li>
-</ul>
-</div>
-</div>
-</div>
 ###Flags
 <hr>
 <div class="entityflags">
@@ -153,5 +134,6 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>
+<div class="notices blue">Ammo already loaded into weapon doesn't count to maximum ammo in supply (e.g. 6 in Revolver. and 36 in supply gives total amount of 42 ammo).</div>
+<div class="notices blue">If '"Touch only" and "Use only" flags are selected, the ammo can only be collected by trigger. When those flags are not selected, the ammo also can be collected by trigger, but only if player is the !activator.</div>

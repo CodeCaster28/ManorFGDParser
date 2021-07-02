@@ -5,7 +5,7 @@ title: aiscripted_sequence
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column">Same as [scripted_sequence](../scripted_sequence), except that this always overrides the AI and never allows any interruptions.</div>
 </div>
 </div>
 ###Keyvalues
@@ -36,23 +36,23 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target Monster</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszEntity</kbd> :
-Keyvalue_Description_here
+Name of the monster which shall do the sequence. When referencing multiple monsters, only one will react. If you want to make use of the search radius, you can also set a monster classname here.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Action Animation</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszPlay</kbd> :
-Keyvalue_Description_here
+Name of the animation to play when the monster arrives at the {{ entname }}'s location. Animation names and animations vary between monsters. A model viewer like Jed's Half-Life Model Viewer allows you to look at the animations of a Half-Life model file. The action animation is optional.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Search Radius</b></span> <kbd  class="tooltip" data-tooltip="integer">m_flRadius</kbd> :
-Keyvalue_Description_here
+Radius, in units, in which to search for a valid target monster. This will only work if you specified a monster classname for 'Target monster'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Repeat Rate ms</b></span> <kbd  class="tooltip" data-tooltip="integer">m_flRepeat</kbd> :
-Keyvalue_Description_here
+Delay, in milliseconds, between checks for whether a valid target monster is within search radius or not. Set this to a large value if not used, as the game even does the check when the 'Search radius' is zero. Setting zero here means that it will check every server frame.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Move to Position</b></span> <kbd  class="tooltip" data-tooltip="Choices">m_fMoveTo</kbd> :
-Keyvalue_Description_here
+Here, you can set in which manner the monster will move to the {{ entname }}, or to not have it move there at all.
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -61,22 +61,22 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Walk : Choice_Description_here</li>
-<li><b>2 </b> : Run : Choice_Description_here</li>
-<li><b>4 </b> : Instantaneous : Choice_Description_here</li>
-<li><b>5 </b> : No - Turn to Face : Choice_Description_here</li>
+<li><b>0 </b> : No : Don't move.</li>
+<li><b>1 </b> : Walk : Walk to position. Requires move animation in monster model.</li>
+<li><b>2 </b> : Run : Run to position. Requires run animation in monster model.</li>
+<li><b>4 </b> : Instantaneous : The monster will be teleported to the {{ entname }}'s position instantly.</li>
+<li><b>5 </b> : No - Turn to Face : Monster will end the sequence with looking in the same direction as the {{ entname }}</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Move to Radius</b></span> <kbd  class="tooltip" data-tooltip="integer">moveto_radius</kbd> :
-Keyvalue_Description_here
+When the monster hits the supplied radius around the script, it'll stop moving and start its sequence. Useful when the area around the {{ entname }} is hard to navigate or you want your monster to stop in a distance from the {{ entname }} no matter from which direction the monster comes.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>AI Schedule when done</b></span> <kbd  class="tooltip" data-tooltip="Choices">m_iFinishSchedule</kbd> :
-Keyvalue_Description_here
+Allows you to have the monster's AI schedule change when the sequence is done.
 <div class="accordion">
 <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-2">
@@ -85,8 +85,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : Default AI : Choice_Description_here</li>
-<li><b>1 </b> : Ambush : Choice_Description_here</li>
+<li><b>0 </b> : Default AI : Nothign changes.</li>
+<li><b>1 </b> : Ambush : Monster will be in an attentive state and encounter enemies more actively.</li>
 </ul>
 </div>
 </div>
@@ -95,9 +95,8 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>4 </b> : Repeatable : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Leave Corpse : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Repeatable : The {{ entname }} won't be removed after finishing, allowing to use it again.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Leave Corpse : If the action animation is a death animation, causing the monster to die, the corpse will not fade out.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices red">If 'Move to position' is set to 'Instantaneous' and you have an action animation set, the monster may freeze up and no longer react.</div>

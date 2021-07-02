@@ -5,7 +5,7 @@ title: ambient_music
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column">Entity that allows to play sounds, designed to play music clips which volume can be adjusted in option menu (with 'Music Volume' slider), separately from normal game audio effects. Audio played with this entity are not affected by it's position.</div>
 </div>
 </div>
 ###Keyvalues
@@ -20,20 +20,19 @@ This always means an identifier for the entity in question so other entities can
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound File</b></span> <kbd  class="tooltip" data-tooltip="sound">message</kbd> :
-Keyvalue_Description_here
+Name of the sound file to play. Supported formats are: AIFF, ASF, DLS, FLAC, IT, M3U, MID, MOD, MP2, MP3, OGG, S3M, VAG, WAV, WMA, XM. Hammer will only let you select WAV-files, but other formats do work as they are fully supported by the game's sound engine. Type the path in manually in that case. File Path starts in the 'sound'-folder, example: 'mymap/soundfile.ogg'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Volume (10 = loudest)</b></span> <kbd  class="tooltip" data-tooltip="integer">volume</kbd> :
-Keyvalue_Description_here
+Set how loud the sound shall be in a range from 0 (not audible) to 10 (normal).
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start Silent : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Loop : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Activator Only : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Start Silent : Entity need to be triggered to start playing music.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Loop : The sound will play looped when triggered.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Activator Only : Music will be heard only by player who is an activator of script (e.g. he pressed a button that triggers this entity).</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Music will be playing even for players who just connected to the server, it will start playing on appropriate offset.</div>

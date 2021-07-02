@@ -1,10 +1,21 @@
 {
   "Classname": "ammo_crossbow",
   "Description": "Provides 5 bolts for weapon_crossbow (Crossbow). Maximum in supply: 50",
-  "KeyDescriptions": [],
+  "KeyDescriptions": [
+	{
+      "keyName": "target",
+      "keyDescription": "Non functional in {{ entname }}.",
+      "keyChoices": []
+    },
+	{
+      "keyName": "killtarget",
+      "keyDescription": "Non functional in {{ entname }}.",
+      "keyChoices": []
+    }
+  ],
   "Notes": [
 	"As all weapon-, ammo- and item- entities, this respawns after 15 seconds.",
-	"Ammo already loaded into weapon doesn't count to maximum ammo in supply (e.g. 6 in Revolver. and 36 in supply gives total amount of 42 ammo).",
+	"Ammo already loaded into weapon doesn't count to maximum ammo in supply (e.g. 6 in Revolver and 36 in supply gives total amount of 42 ammo).",
 	"If '\"Touch only\" and \"Use only\" flags are selected, the ammo can only be collected by trigger. When those flags are not selected, the ammo also can be collected by trigger, but only if player is the !activator."
   ]
 }

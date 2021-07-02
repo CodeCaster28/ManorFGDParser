@@ -22,8 +22,7 @@
         {
             var allKeyValues = new List<KeyValue>(InheritedKeyValues);
             allKeyValues.AddRange(KeyValues);
-
-            return allKeyValues;
+            return RemoveDuplicatedKeyvalues(allKeyValues);
         }
 
         public void RegisterSpawnFlag(Choice source)
@@ -54,6 +53,29 @@
             }
 
             SpawnFlags.Sort();
+        }
+
+        private List<KeyValue> RemoveDuplicatedKeyvalues(List<KeyValue> keyvalues)
+        {
+            var outputList = new List<KeyValue>();
+            for (var i = 0; i < keyvalues.Count; i++)
+            {
+                var alreadyAdded = outputList.Any(a => a.Name == keyvalues[i].Name);
+                if (!alreadyAdded || keyvalues[i].Name == "spawnflags")
+                {
+                    outputList.Add(keyvalues[i]);
+                }
+                else
+                {
+                    // Replace
+                    var index = outputList.IndexOf(outputList.First(a => a.Name == keyvalues[i].Name));
+                    outputList[index] = keyvalues[i];
+                    Console.WriteLine(ClassName + " keyvalue already present: " + keyvalues[i].Name);
+                }
+            }
+
+            //outputList.Reverse();
+            return outputList;
         }
     }
 }

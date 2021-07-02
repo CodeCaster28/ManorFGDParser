@@ -216,8 +216,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No (Default) : Keep game defaults.</li>
-<li><b>1 </b> : Yes : Invert relationship (e.g. monster_barney becames enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c.</li>
+<li><b>0 </b> : Yes (Default) : Keep game defaults.</li>
+<li><b>1 </b> : No : Invert relationship (e.g. monster_barney becames enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c.</li>
 </ul>
 </div>
 </div>
@@ -301,28 +301,11 @@ Name of audio or sentence to play when {{ entname }} is used by player to follow
 Name of audio or sentence to play when {{ entname }} is used by player to stop following. Doesn't work when "Pre-Disaster" flag is selected. Use sentence name from "default_sentences.txt" or custom sentences file (which can be added in map properties). Sound file of sentence name from default_sentences.txt. To use sound file write '+' symbol and then filename with path (e.g. if you want to set file located in "svencoop/sound/mymap/bell1.wav", type '+mymap/bell1.wav'. Remember that you need to precache this sound! To do this, place [custom_precache](../custom_precache), and in the any "sound" keyvalue write 'mymap/bell1.wav'.
 </div>
 <div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Is Player Ally?</b></span> <kbd  class="tooltip" data-tooltip="Choices">is_player_ally</kbd> :
-Set whether the spawned monster is an ally or a foe of the players. Note that keyvalue name is misleading.
-<div class="accordion">
-<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-11">
-<i class="icon icon-arrow-right mr-1"></i>
-Choices:
-</label>
-<div class="accordion-body">
-<ul>
-<li><b>0 </b> : Yes (Default) : Keep game defaults.</li>
-<li><b>1 </b> : No : Invert relationship (e.g. monster_barney becames enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c.</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>bodystate</b></span> <kbd  class="tooltip" data-tooltip="Choices">bodystate</kbd> :
 Keyvalue_Description_here
 <div class="accordion">
-<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-12">
+<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-11">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -340,8 +323,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>head</b></span> <kbd  class="tooltip" data-tooltip="Choices">head</kbd> :
 Keyvalue_Description_here
 <div class="accordion">
-<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-13">
+<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-12">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -358,8 +341,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Animation Sequence (editor)</b></span> <kbd  class="tooltip" data-tooltip="Choices">sequence</kbd> :
 Keyvalue_Description_here
 <div class="accordion">
-<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-14">
+<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-13">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>

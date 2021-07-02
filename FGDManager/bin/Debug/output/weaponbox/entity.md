@@ -144,10 +144,6 @@ If set, this will overwrite the monster's default maximum hullsize. Minimum and 
 Set the path to a sound replacement file for the item. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a custom_precache point entity.
 </div>
 <div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Custom respawn time</b></span> <kbd  class="tooltip" data-tooltip="string">m_flCustomRespawnTime</kbd> :
-Customize pickup respawn delay in seconds.
-</div>
-<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed 9mm rounds</b></span> <kbd  class="tooltip" data-tooltip="integer">bullet9mm</kbd> :
 Keyvalue_Description_here
 </div>
