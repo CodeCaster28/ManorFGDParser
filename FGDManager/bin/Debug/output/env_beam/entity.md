@@ -12,11 +12,11 @@ title: env_beam
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
-Keyvalue_Description_here
+Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Keyvalue_Description_here
+This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Start Entity</b></span> <kbd  class="tooltip" data-tooltip="target_destination">LightningStart</kbd> :
@@ -28,7 +28,7 @@ Entity at which the beam ends. If this is not set, the env_beam entity will cast
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Keyvalue_Description_here
+Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -37,27 +37,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : Normal : Choice_Description_here</li>
-<li><b>1</b> : Slow Pulse : Choice_Description_here</li>
-<li><b>2</b> : Fast Pulse : Choice_Description_here</li>
-<li><b>3</b> : Slow Wide Pulse : Choice_Description_here</li>
-<li><b>4</b> : Fast Wide Pulse : Choice_Description_here</li>
-<li><b>9</b> : Slow Strobe : Choice_Description_here</li>
-<li><b>10</b> : Fast Strobe : Choice_Description_here</li>
-<li><b>11</b> : Faster Strobe : Choice_Description_here</li>
-<li><b>12</b> : Slow Flicker : Choice_Description_here</li>
-<li><b>13</b> : Fast Flicker : Choice_Description_here</li>
-<li><b>5</b> : Slow Fade Away : Choice_Description_here</li>
-<li><b>6</b> : Fast Fade Away : Choice_Description_here</li>
-<li><b>7</b> : Slow Become Solid : Choice_Description_here</li>
-<li><b>8</b> : Fast Become Solid : Choice_Description_here</li>
-<li><b>14</b> : Constant Glow : Choice_Description_here</li>
-<li><b>15</b> : Distort : Choice_Description_here</li>
-<li><b>16</b> : Hologram (Distort + fade) : Choice_Description_here</li>
-<li><b>17</b> : Dead Player (DONT USE!) : Choice_Description_here</li>
-<li><b>18</b> : Explode (Garg Like) : Choice_Description_here</li>
-<li><b>19</b> : Glow Shell : Choice_Description_here</li>
-<li><b>20</b> : ClampMinScale (Sprites) : Choice_Description_here</li>
+<li><b>0</b> : Normal : Default rendering.</li>
+<li><b>1</b> : Slow Pulse : Transparency slow fading in and out in a loop.</li>
+<li><b>2</b> : Fast Pulse : Transparency fast fading in and out in a loop.</li>
+<li><b>3</b> : Slow Wide Pulse : Transparency slow fading in and out widely in a loop.</li>
+<li><b>4</b> : Fast Wide Pulse : Transparency fast fading in and out widely in a loop.</li>
+<li><b>9</b> : Slow Strobe : Regular slow appearing/dissapearing.</li>
+<li><b>10</b> : Fast Strobe : Regular fast appearing/dissapearing.</li>
+<li><b>11</b> : Faster Strobe : Regular very fast appearing/dissapearing.</li>
+<li><b>12</b> : Slow Flicker : Random slow appearing/dissapearing.</li>
+<li><b>13</b> : Fast Flicker : Random fast appearing/dissapearing.</li>
+<li><b>5</b> : Slow Fade Away : Not working. Fading out slowly until reaching invisibility. Works once when entity spawns or have changed it's "Render FX" at a runtime (e.g. through env_render). Requires high "FX Amount"</li>
+<li><b>6</b> : Fast Fade Away : Not working. Fading out quickly until reaching invisibility. Works once when entity spawns or have changed it's "Render FX" at a runtime (e.g. through env_render). Requires high "FX Amount"</li>
+<li><b>7</b> : Slow Become Solid : Not working. Fading in slowly from invisible to fully visible. Works once when entity spawns or have changed it's "Render FX" at a runtime (e.g. through env_render). Requires low or zero "FX Amount"</li>
+<li><b>8</b> : Fast Become Solid : Not working. Fading in quickly from invisible to fully visible. Works once when entity spawns or have changed it's "Render FX" at a runtime (e.g. through env_render). Requires low or zero "FX Amount"</li>
+<li><b>14</b> : Constant Glow : Sprites with 'Glow' render mode only. Disables sprite resizing.</li>
+<li><b>15</b> : Distort : Random distortion, looped.</li>
+<li><b>16</b> : Hologram (Distort + fade) : 'Random distortion' + 'Pulse' applied, looped.</li>
+<li><b>17</b> : Dead Player (DONT USE!)</li>
+<li><b>18</b> : Explode (Garg Like)</li>
+<li><b>19</b> : Glow Shell : Applies nice animated glowing shell on model. Color can be applied. "FX Amount" manipulates glow shell size.</li>
+<li><b>20</b> : ClampMinScale (Sprites)</li>
 </ul>
 </div>
 </div>

@@ -12,11 +12,11 @@ title: gibshooter
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
-Keyvalue_Description_here
+Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Keyvalue_Description_here
+This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -24,29 +24,29 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Number of Gibs</b></span> <kbd  class="tooltip" data-tooltip="integer">m_iGibs</kbd> :
-Keyvalue_Description_here
+Set the amount of gibs to be shot when triggered.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay between shots</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
-Keyvalue_Description_here
+Set a delay between the individual gibs to be fired, in seconds.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Gib Velocity</b></span> <kbd  class="tooltip" data-tooltip="integer">m_flVelocity</kbd> :
-Keyvalue_Description_here
+Firing-velocity of the gibs shot, in units per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Course Variance</b></span> <kbd  class="tooltip" data-tooltip="string">m_flVariance</kbd> :
-Keyvalue_Description_here
+This is multiplied with 3 random numbers from -1 to 1 to form a vector to be added to the normalized direction-vector of the gib-direction, per gib. A great value like 100 would make the gib-direction almost entirely random. You can think of this as a value between 0 and 1 resulting in a course-cone from 0 to 180 degrees size, though that's not exactly what it is, just an approximation.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Gib Life</b></span> <kbd  class="tooltip" data-tooltip="string">m_flGibLife</kbd> :
-Keyvalue_Description_here
+Time, in seconds, the gib will be visible till fading out of world and getting removed. This is actually randomly altered for every individual by minus to plus 5 per-cent.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Repeatable : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Repeatable : If set, the {{ entname }} can be used more than once.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

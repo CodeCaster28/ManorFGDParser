@@ -4,232 +4,250 @@
   "KeyDescriptions": [
     {
       "keyName": "speed",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Movement speed in units per second.",
       "keyChoices": []
     },
     {
       "keyName": "master",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the multisource entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and will play locked sounds and sentences. When multisource entity is triggered/beign triggering by all possible inputs, the {{ entname }} will be unlocked. When multisource lost at least one input signal, the entities becomes locked again.",
       "keyChoices": []
     },
     {
       "keyName": "movesnd",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sound that is played while the {{ entname }} is moving.",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/servo-sliding.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/pneumatic-sliding.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/pneumatic-rolling.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/vacuum.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/power-hydraulic.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "6",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/large-rollers.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "7",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/track-door.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "8",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/snappy-metal-door.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "9",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/squeaky-1.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "10",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/squeaky-2.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         }
       ]
     },
     {
       "keyName": "movesnd_loop",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sets if \"Move Sound\" should be looped during movement until it stops.",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "stopsnd",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sound which is played once as the {{ entname }} stops moving.",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/servo-sliding-stop.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/pneumatic-sliding-stop.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/pneumatic-rolling-stop.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/vacuum-stop.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/power-hydraulic-stop.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "6",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/large-rollers-stop.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "7",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/track-door-stop.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "8",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+		  "media": "../audio/snappy-metal-door-stop.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         }
       ]
     },
     {
       "keyName": "noise1",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sound file to use when the {{ entname }} is moving. Useful when you don't want to use sound from default sound list. This overrides default \"Move Sound\" sound. Note that other sounds format (AIFF, ASF, DLS, FLAC, IT, M3U, MID, MOD, MP2, MP3, OGG, S3M, VAG, WMA, XM) can be used, even if editor sound browser allows to pick only WAV files.",
       "keyChoices": []
     },
     {
       "keyName": "noise2",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sound file to use when the {{ entname }} is stop moving. Useful when you don't want to use sound from default sound list. This overrides default \"Stop Sound\" sound. Note that other sounds format (AIFF, ASF, DLS, FLAC, IT, M3U, MID, MOD, MP2, MP3, OGG, S3M, VAG, WMA, XM) can be used, even if editor sound browser allows to pick only WAV files.",
       "keyChoices": []
     },
     {
       "keyName": "wait",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Delay till the {{ entname }} will automatically close after having opened. Setting this to -1 makes it never close again. When the \"Toggle\" flag is selected, this is obsolete.",
       "keyChoices": []
     },
     {
       "keyName": "lip",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Length in units to subtract from the precomputed movement-distance of the {{ entname }}. Negative values increase the movement-distance.",
       "keyChoices": []
     },
     {
       "keyName": "dmg",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Damage to apply to entity that attempts to blocks the {{ entname }}.",
       "keyChoices": []
     },
     {
       "keyName": "message",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Not functional.",
       "keyChoices": []
     },
     {
       "keyName": "health",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set how many hit points this entity has if \"Breakable\" is set to 'Yes'",
       "keyChoices": []
     },
     {
       "keyName": "_minlight",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.",
       "keyChoices": []
     },
     {
       "keyName": "soundlist",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Allows you to setup a sound replacement file for the {{ entname }} sounds. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a custom_precache point entity.",
       "keyChoices": []
     },
     {
       "keyName": "m_iOpenFlags",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Specify who can open this {{ entname }} by touching/using it (if it has no targetname, or targetname is set to be ignored with \"Ignore Targetname\")). If set to something other than default, this will cause the old spawnflags which are usually used to keep track of this to be ignored and causes the {{ entname }} to only orient using this setting instead.",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "func_pushable and player can open this {{ entname }}"
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Player, func_pushable and everything else can't open this (probably enemies still can)."
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Player can't open this but func_pushable can."
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Everything else (e.g. enemy) and player can open this."
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Basically everything can open this {{ entname }}."
         },
         {
           "choiceValue": "6",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "func_pushable and player can't open this but everything else can."
         },
         {
           "choiceValue": "7",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Player can't open but func_pushable and everything else can."
         }
       ]
     },
     {
       "keyName": "m_fIgnoreTargetname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set whether the {{ entname }} should ignore its targetname or not. This is useful when you need to reference the {{ entname }} in another entity but still want it to open on touch.",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If \"Name\" is set then this {{ entname }} can be opened by triggering it."
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "{{ entname }} can be still opened by touching it and \"Name\" will be used for something else than opening/closing it."
         }
       ]
     },
     {
       "keyName": "m_iObeyTriggerMode",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Controls how to interpret use-types 'Off' and 'On' incoming from entity that triggers the {{ entname }}.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "'Off' and 'On' works as 'Toggle' so it will open the {{ entname }} when it's closed and close it when it's open."
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "'Off' only closes and 'On' only opens the {{ entname }}."
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Same as above but it will also work even when {{ ent_name }} is currently opening/closing."
         }
       ]
     },
@@ -239,245 +257,239 @@
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the {{ entname }} will treat its predetermined open- and close-position as swapped, meaning it will start in its open position, but treat it as its closed position. This is useful when you want your {{ entname }} to start open and still receive proper lighting, or the node-graph to generate properly before closing the {{ entname }} manually (if \"Toggle\" flag is selected)."
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this {{ entname }} won't synchronize its movement with identically named {{ entname }}. This is useful when triggering many {{ entname }} with different speeds or different movement-lengths by the same name. If not set, the {{ entname }} entities with the same name will adjust their individual speeds to open/close simultaneously, orienting at how the first related {{ entname }} the game engine finds would behave timing-wise."
         },
         {
           "choiceValue": "8",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the {{ entname }} is entirely non-solid. It also cannot be triggered on-touch anymore then. Much more optimal way to do this is to set \"ZHLT Disable Clipping\" to 'Always non-solid' unless you don't want to have bullets blocked by {{ entname }}."
         },
         {
           "choiceValue": "32",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this {{ entname }} ignores its \"delay before close\" keyvalue; nonetheless, it must not be 0 then for some reason."
         },
         {
           "choiceValue": "256",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this {{ entname }} can be triggered by using it but not by touching it anymore. This does not outrule activation by triggering, though."
         },
         {
           "choiceValue": "512",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, monsters cannot cause this {{ entname }} to move. They can, otherwise, even if it is a use-only- or trigger-only-door, so don't forget to set this when you need it!"
         },
         {
           "choiceValue": "1024",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the {{ entname }} won't check for another {{ entname }} to link with, causing this one to not be considered for link-orientation by the game engine; it can still be caused to be linked by other {{ entname }}."
         }
       ]
     },
     {
       "keyName": "breakable",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If set to 'Yes', the {{ entname }} gets functionality of [func_breakable](../func_breakable) entity. All breakable keyvalues are functional when this key is set to 'Yes'.",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "fireonbreak",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If \"Breakable\" is set to 'Yes' then this is target entity to fire when {{ entname }} breaks.",
       "keyChoices": []
     },
     {
       "keyName": "material",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If \"Breakable\" is set to 'Yes' then this is material which matches what your {{ entname }} is supposed to be the most. The material type affects the {{ entname }}'s sounds emitted when it takes damage, as well as which gibs are created when it is destroyed. If the material is set to 'Unbreakable glass', the {{ entname }} is, regardless of how funny that is, in fact, unbreakable..",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "6",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "7",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "8",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "instantbreak",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If \"Breakable\" is set to 'Yes' then this let you enable instant break of {{ entname }} if hit with a \"Instant break weapon\" specified below. Note that this still can be damaged by other sources normally.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "weapon",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If \"Breakable\" is set to 'Yes' this allows you to specify an instant-break weapon when \"Instant break\" is set to 'Yes'.",
       "keyChoices": [
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "19",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "20",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "explosion",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If \"Breakable\" is set to 'Yes' you can choose whether the gibs fly relative to where the attack came from, damage received and material (e.g. concrete gibs fly with less velocity) or randomly. This has no effect on the {{ entname }} destroyed via a trigger. Note: Blowing up stuff is much more fun when shit goes flying instead of just falling to the ground as if nothing happened.",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "gibmodel",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If \"Breakable\" is set to 'Yes' you can choose custom model of broken entity parts. Models with multiple 'Submodels' uses all of sub-models for gibs. If \"Material Type\" is set to 'Glass' then spawned gibs are transparent.",
       "keyChoices": []
     },
     {
       "keyName": "explodemagnitude",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Requires \"Breakable\" set to 'Yes'. If greater than zero, the {{ entname }} will cause an explosion at its position when it breaks. The greater the magnitude, the more damage the explosion will cause. Note that explosion damage values above 200 are know to cause explosion damage to even go through walls.",
       "keyChoices": []
     },
     {
       "keyName": "displayname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Requires \"Breakable\" set to 'Yes'. If \"Show HUD Info\" is set to 'Yes', this is a name to display on-screen when player is looking at this {{ entname }}.",
       "keyChoices": []
     },
     {
       "keyName": "onlytrigger",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Requires \"Breakable\" set to 'Yes'. Make the {{ entname}} breakable only via triggering it.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Can still be broken by normal damage."
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Can only break by triggering it."
         }
       ]
     },
     {
       "keyName": "breakontrigger",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Requires \"Breakable\" set to 'Yes'. You can allow the {{ entname }} to breakable via trigger. It is not a duplicate of keyvalue above.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Can't be triggered to break."
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Can be triggered to break."
         }
       ]
     },
     {
       "keyName": "repairable",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "With \"Breakable\" set to 'Yes' this allows to specify if the {{ entname }} can be repaired by using weapon_pipewrench on it.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "showhudinfo",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "With \"Breakable\" set to 'Yes' you can also enable HUD info when looking at this {{ entname }} (name, health e.t.c.).",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "immunetoclients",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Requires \"Breakable\" set to 'Yes'. While breakable {{ entname }} can be damaged by anyone or everything, you can disable if player should belong to this privileged group.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Players can break this {{entname}}."
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Players can't break this {{entname}}."
         }
       ]
     },
     {
       "keyName": "explosivesonly",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Requires \"Breakable\" set to 'Yes'. With this setting you can set the {{ entname }} react only to explosion damage.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Everything can damage this {{ entname }}."
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Only explosions can damage this {{ entname }}."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

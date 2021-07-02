@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "ondestroyfn",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.",
       "keyChoices": []
     }
   ],

@@ -14,7 +14,7 @@
     },
     {
       "keyName": "m_iObeyTriggerMode",
-      "keyDescription": "Controls how to interpret use-types 'Off' and 'On' incoming from entity that triggers the {{ entname }}",
+      "keyDescription": "Controls how to interpret use-types 'Off' and 'On' incoming from entity that triggers the {{ entname }}.",
       "keyChoices": [
         {
           "choiceValue": "0 ",

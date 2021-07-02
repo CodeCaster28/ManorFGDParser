@@ -4,31 +4,30 @@
   "KeyDescriptions": [
     {
       "keyName": "movetype",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Duplicate?",
       "keyChoices": [
         {
           "choiceValue": "-1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "8",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
   ],
   "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
+	"As all weapon-, ammo- and item- entities, this respawns after 15 seconds.",
+	"Ammo already loaded into weapon doesn't count to maximum ammo in supply (e.g. 6 in Revolver. and 36 in supply gives total amount of 42 ammo).",
+	"If '\"Touch only\" and \"Use only\" flags are selected, the ammo can only be collected by trigger. When those flags are not selected, the ammo also can be collected by trigger, but only if player is the !activator."
   ]
 }

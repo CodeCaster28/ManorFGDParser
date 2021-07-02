@@ -12,15 +12,15 @@ title: func_portal
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
-Keyvalue_Description_here
+Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Keyvalue_Description_here
+This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Keyvalue_Description_here
+Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -28,23 +28,23 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Zoom</b></span> <kbd  class="tooltip" data-tooltip="integer">zoom</kbd> :
-Keyvalue_Description_here
+Scales image the {{ entname }} is displaying.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Max FPS</b></span> <kbd  class="tooltip" data-tooltip="integer">fps</kbd> :
-Keyvalue_Description_here
+Target frames per second rendered by this {{ entname }}. Decreasing improves performance.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Min Render Distance</b></span> <kbd  class="tooltip" data-tooltip="integer">mindist</kbd> :
-Keyvalue_Description_here
+Minimum render distance in which {{ entname }} is rendering. Leave empty or set to 0 for no minimum distance threshold.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Max Render Distance</b></span> <kbd  class="tooltip" data-tooltip="integer">maxdist</kbd> :
-Keyvalue_Description_here
+Maximum render distance in which {{ entname }} is rendering. Leave empty or set to 0 for infinite.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Texture Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">textureMode</kbd> :
-Keyvalue_Description_here
+Set which textures on this brush are replaced by display.
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -53,26 +53,26 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0  </b> : { Textures : Choice_Description_here</li>
-<li><b>1  </b> : All Textures : Choice_Description_here</li>
-<li><b>2  </b> : Named Texture : Choice_Description_here</li>
+<li><b>0  </b> : { Textures : Apply display on every surface.</li>
+<li><b>1  </b> : All Textures : All transparent textures, those which names starts with '{' character.</li>
+<li><b>2  </b> : Named Texture : Textures with name specified in "Texture Name" keyvalue below.</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Texture Name</b></span> <kbd  class="tooltip" data-tooltip="string">textureName</kbd> :
-Keyvalue_Description_here
+Name of the texture to apply display on. Works only when "Texture Mode" is set to 'Named Texture'.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Solid : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Start Disabled : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Solid : Enables collision.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : Start Disabled : If selected, {{ entname }} need to be enabled.</li>
 <li class="imagepadding" markdown="1"><b>4</b> : Teleport : Choice_Description_here</li>
 <li class="imagepadding" markdown="1"><b>8</b> : No GL ClipPlanes : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Render only every 2nd frame : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Render only every 2nd frame : Update display only every two frames instead of every frame, this improves performance.</li>
 <li class="imagepadding" markdown="1"><b>32</b> : Shoot through : Choice_Description_here</li>
 </ul>
 </div>
