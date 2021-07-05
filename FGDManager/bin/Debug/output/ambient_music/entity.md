@@ -5,7 +5,7 @@ title: ambient_music
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity that allows to play sounds, designed to play music clips which volume can be adjusted in option menu (with 'Music Volume' slider), separately from normal game audio effects. Audio played with this entity are not affected by it's position.</div>
+<div class="column entityentry" markdown="1">Entity that allows to play sounds, designed to play music clips which volume can be adjusted in option menu (with 'Music Volume' slider), separately from normal game audio effects. Audio played with this entity are not affected by it's position.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to play music. Depending on received signal: 'Off'- stop the music, 'Toggle'- play/stop music interchangeably, 'On'- start the music. Kill-targetting this entity will stop music from playing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound File</b></span> <kbd  class="tooltip" data-tooltip="sound">message</kbd> :

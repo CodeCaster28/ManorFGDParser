@@ -5,7 +5,7 @@ title: env_shake
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Causes nearby players' screens to shake. Used for simulating earthquakes.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,30 +16,29 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to apply a screen shake. Multiple triggering will override previous shake. Can be killtargeted but shake won't stop playing until finished.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Amplitude (degrees; 0-16)</b></span> <kbd  class="tooltip" data-tooltip="string">amplitude</kbd> :
-Keyvalue_Description_here
+Ranging from 0.0 to 16.0, this sets the amplitude in degrees.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effect radius (if not global)</b></span> <kbd  class="tooltip" data-tooltip="string">radius</kbd> :
-Keyvalue_Description_here
+Radius around the entity in which the rumble affects players. Becomes less noticeable towards the outside of the radius.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Duration (seconds; fades out)</b></span> <kbd  class="tooltip" data-tooltip="string">duration</kbd> :
-Keyvalue_Description_here
+The duration, in seconds, which the rumble lasts. This includes a linear fade-out: The rumble starts with the set amplitude, which becomes less towards the duration time running out.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Frequency (Hz; 0-255)</b></span> <kbd  class="tooltip" data-tooltip="string">frequency</kbd> :
-Keyvalue_Description_here
+The frequency of the rumble. A value of 10 would mean that your screen will shake up and down ten times per second.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Global Shake : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Global Shake : The env_shake will affect the whole map equally, instead of a radius around it.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Env_shakes can safely be triggered while a rumble is still in progress, causing the new rumble to overwrite the old one entirely.</div>

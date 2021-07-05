@@ -1,10 +1,15 @@
 {
   "Classname": "env_explosion",
-  "Description": "Entity_Description_here",
+  "Description": "Point entity which, when triggered, creates an explosion which damages everything damageable around it.",
   "KeyDescriptions": [
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to create explosion. Any trigger signal type accepted. Can be killtargeted.",
+      "keyChoices": []
+    },
+    {
       "keyName": "iMagnitude",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Explosion magnitude. Greater values mean bigger explosion size and damage. Note that explosion damage values above 200 are known to cause damage even through walls.",
       "keyChoices": []
     },
     {
@@ -13,35 +18,29 @@
       "keyChoices": [
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the explosion deals no damage."
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the env_explosion entity won't be removed after being triggered, so you can use it again."
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the explosion shows no fireball."
         },
         {
           "choiceValue": "8",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the explosion shows no smoke."
         },
         {
           "choiceValue": "16",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the explosion causes no decal."
         },
         {
           "choiceValue": "32",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the explosion creates no sparks."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

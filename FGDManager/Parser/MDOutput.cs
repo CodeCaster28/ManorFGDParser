@@ -42,7 +42,7 @@
                     writer.WriteLine("<div class=\"container previewimg\">");
                     writer.WriteLine("<div class=\"columns\">");
                     writer.WriteLine("<div class=\"imagepadding column col-auto\" markdown=\"1\">![](preview.png)</div>");
-                    writer.WriteLine($"<div class=\"column\">{entity.Description}</div>");
+                    writer.WriteLine($"<div class=\"column entityentry\" markdown=\"1\">{entity.Description}</div>");
                     writer.WriteLine("</div>");
                     writer.WriteLine("</div>");
                     
@@ -62,7 +62,7 @@
                             writer.WriteLine($"<span style=\"color:#9fc5e8;\"><b>{key.DocName}</b></span> <kbd  class=\"tooltip\" data-tooltip=\"{key.Type}\">{key.Name}</kbd> :");
                             
                             var keyMedia = string.IsNullOrEmpty(key.Media) ? "" : $"<div class=\"imagepadding\" markdown=\"1\">![{key.DocName}]({key.Media})</div>";
-                            writer.WriteLine($"{key.Description}{keyMedia}");
+                            writer.WriteLine($"{entity.GetDescriptionForKey(key)}{keyMedia}");
                             if (key.Choices.Count > 0)
                             {
                                 writer.WriteLine("<div class=\"accordion\">");

@@ -5,7 +5,7 @@ title: env_sprite
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The env_sprite entity allows you to render sprites, which are common 2D-graphics which will appear aligned to face you at all times, unless specified otherwise.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to enable or disable sprite. Trigger signals are handled as follow: 'On' to show sprite, 'Off' to hide sprite, 'Toggle' to toggle sprite. Can be killtargeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -93,15 +93,15 @@ Keyvalue_Description_here
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Name</b></span> <kbd  class="tooltip" data-tooltip="sprite">model</kbd> :
-Keyvalue_Description_here
+Set a sprite to be displayed. Path start in modification's folder.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Scale</b></span> <kbd  class="tooltip" data-tooltip="string">scale</kbd> :
-Keyvalue_Description_here
+Set the scale of the sprite effect. This defaults to 0.25 if not set.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Draw Type / Orientation</b></span> <kbd  class="tooltip" data-tooltip="choices">vp_type</kbd> :
-Keyvalue_Description_here
+Feature that allows to override view port of the sprite.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -110,12 +110,12 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : Default : Choice_Description_here</li>
-<li><b>3</b> : Parallel : Choice_Description_here</li>
-<li><b>1</b> : Parallel Upright : Choice_Description_here</li>
-<li><b>5</b> : Parallel Orientated : Choice_Description_here</li>
-<li><b>2</b> : Facing Upright : Choice_Description_here</li>
-<li><b>4</b> : Orientated : Choice_Description_here</li>
+<li><b>0</b> : Default : Default setting.</li>
+<li><b>3</b> : Parallel : Parallel: Always face the player.</li>
+<li><b>1</b> : Parallel Upright : Parallel Upright: Sprites rotates around vertical axis to always face player, but it's fixed to this axis.</li>
+<li><b>5</b> : Parallel Orientated : Parallel Orientated: Rotate sprite to env_sprite angles.</li>
+<li><b>2</b> : Facing Upright : Facing Upright: Not supported/unused.</li>
+<li><b>4</b> : Orientated : Orientated: Sprite is oriented to the worlds, uses it's angles and it's not rotating.</li>
 </ul>
 </div>
 </div>
@@ -124,11 +124,12 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Start on : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Play Once : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4</b> : Once + Remove : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Start on : Causes the env_sprite effect to be visible from map-load onwards. Useful when the env_sprite has a targetname. Makes little to no sense in combination with "Play Once".</li>
+<li class="imagepadding" markdown="1"><b>2</b> : Play Once : If set, the sprite animation won't loop and end after cycling through all of its frames once. If the sprite is not animated, only the first frame will show for a moment.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : Once + Remove : If set along with "Play once", causes the env_sprite entity to be removed from the game after having played. Useful for saving some entities.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">To make sprite work properly use "Render Mode" with optional "FX Amount". Most sprites can make use of 'Glow' or 'Additive' render modes (most sprites are in 'additive' format), however sprites with 'alphatest' works best with 'Texture' mode (backgroundgets removed, image is opaque), while 'indexalpha' sprites are rendered properly only in 'Solid' and 'Texture', in any other mode they appearance is invalid. You can use third party tools like Sprite Explorer to check format of sprite if you are not sure, or check this Sprite List to check format type each sprite.</div>
+<div class="notices blue">Sprite alignment can also be set through the sprite itself. To do this, edit byte at offset 8 (meaning the 9th byte) in the sprite file using a HEX editor: 00: Sprite fixed on vertical axis- SPR_VP_PARALLEL_UPRIGHT; 01: Not supported- SPR_FACING_UPRIGHT; 02: Normal behaviour, sprite always faces you- SPR_VP_PARALLEL; 03: Sprite is fixed in space and can be rotated using angles- SPR_ORIENTED; 04: As SPR_VP_PARALLEL, but sprite can be rotated relatively to perspective using angles- SPR_VP_PARALLEL_ORIENTED.</div>
+<div class="notices blue">Oriented mode sprites tend to have problems with angle co-ordinates in hammer so its best to set them manually starting from [180,180,180] instead of [0,0,0]. In addition don't use negative numbers; instead subtract from 360. Also use 360 instead of 0 and carefully watch the use of hammer transforms as it will likely give you numbers that might look fine in hammer but will not work in-game. If you are still having troubles with angles not appearing in map I have an example RMF included in the example file download at the bottom (called "oriented_angles.rmf"). Taken from: [http://www.the303.org/tutorials/gold_sprite.htm](http://www.the303.org/tutorials/gold_sprite.htm).</div>

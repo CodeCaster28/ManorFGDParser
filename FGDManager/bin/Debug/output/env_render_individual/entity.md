@@ -5,7 +5,7 @@ title: env_render_individual
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Entity that acts like [env_render](../env_render) but applied render settings will be seen only by certain players. This allows you to make entities be seen by players differently (e.g. visible only for some players).</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to apply render mode. Trigger signals 'On' and 'Toggle' applies render settins while 'Off' reverts them. Can be killtargeted and already applied render settings are reverted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -85,30 +85,28 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Entity to affect</b></span> <kbd  class="tooltip" data-tooltip="string">target</kbd> :
-Keyvalue_Description_here
+Entity to change appearance of.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Player to affect</b></span> <kbd  class="tooltip" data-tooltip="string">netname</kbd> :
-Keyvalue_Description_here
+Player's targetname that will see the effect of this entity.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Entity to copy from</b></span> <kbd  class="tooltip" data-tooltip="string">message</kbd> :
-Keyvalue_Description_here
+Entity to copy render values which will be applied to target entity. 'Use Entity to copy from' flag must be selected for this to take effect.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : No Renderfx : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : No Renderamt : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4</b> : No Rendermode : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : No Rendercolor : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Auto Apply : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Start On : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64 </b> : Affect Activator (ignore netname) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128 </b> : Use Entity to copy from : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : No Renderfx : If set, the env_render won't change its targets render-fx.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : No Renderamt : If set, the env_render won't change its targets render-amt.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : No Rendermode : If set, the env_render won't change its targets render-mode.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : No Rendercolor : If set, the env_render won't change its targets render-color.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Auto Apply : Does not work.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : Start On : Apply settings at the map start.</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : Affect Activator (ignore netname) : Instead of affecting players with targetnames specified in 'target' field, affect the player who activated the script (e.g. through button or trigger).</li>
+<li class="imagepadding" markdown="1"><b>128 </b> : Use Entity to copy from : Make use of 'Entity to copy from' keyvalue, ignoring manually typed render values.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

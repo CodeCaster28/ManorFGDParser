@@ -14,6 +14,7 @@
         public string Description { get; set; }
         public List<KeyValue> KeyValues { get; } = new List<KeyValue>();
         public List<KeyValue> InheritedKeyValues { get; } = new List<KeyValue>();
+        public Dictionary<string, string> KeysDescriptionsOverride { get; } = new Dictionary<string, string>();
         public List<SpawnFlag> SpawnFlags { get; private set; } = new List<SpawnFlag>();
         public List<string> Notes { get; set; } = new List<string>();
         public List<string> Issues { get; set; } = new List<string>();
@@ -76,6 +77,11 @@
 
             //outputList.Reverse();
             return outputList;
+        }
+
+        public string GetDescriptionForKey(KeyValue key)
+        {
+            return KeysDescriptionsOverride.ContainsKey(key.Name) ? KeysDescriptionsOverride[key.Name] : key.Description;
         }
     }
 }

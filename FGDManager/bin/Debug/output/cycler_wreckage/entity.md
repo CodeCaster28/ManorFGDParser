@@ -5,7 +5,7 @@ title: cycler_wreckage
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The cycler_wreckage entity emits smoke and shows a custom sprite.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can refer to it. Can't be triggered but can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -89,24 +89,23 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Framerate</b></span> <kbd  class="tooltip" data-tooltip="string">framerate</kbd> :
-Keyvalue_Description_here
+Set the sprite's framerate in Hertz. Only makes sense for animated sprites.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Name</b></span> <kbd  class="tooltip" data-tooltip="sprite">model</kbd> :
-Keyvalue_Description_here
+Specify a valid sprite-file to display here. Path starts from within the modification's folder e.g.'models/cleansuit_scientist.mdl'
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Scale</b></span> <kbd  class="tooltip" data-tooltip="string">scale</kbd> :
-Keyvalue_Description_here
+Set the sprite's y- and x-scale.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>32</b> : Toggle : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Start ON : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : Toggle : Non-functional in {{ entname }}.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : Start ON : Non-functional in {{ entname }}.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Sprites are barely visible under emitted smoke.</div>

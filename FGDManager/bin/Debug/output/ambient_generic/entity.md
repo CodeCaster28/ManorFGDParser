@@ -5,7 +5,7 @@ title: ambient_generic
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">This entity is used to play sound-files. They can be looping or not. You can use this to play music as well but [ambient_music](../ambient_music) would fit more for this purpouse.</div>
+<div class="column entityentry" markdown="1">This entity is used to play sound-files. They can be looping or not. You can use this to play music as well but [ambient_music](../ambient_music) fits more for this purpouse.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to play sound. Depending on received signal: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targetting this entity will stop sound from playing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound File</b></span> <kbd  class="tooltip" data-tooltip="sound">message</kbd> :
@@ -224,7 +224,7 @@ Choices:
 <li class="imagepadding" markdown="1"><b>1 </b> : Play Everywhere : The sound will play everywhere.</li>
 <li class="imagepadding" markdown="1"><b>2 </b> : Small Radius (~384) : Non-linear big sound radius.</li>
 <li class="imagepadding" markdown="1"><b>4 </b> : Medium Radius (~768) : Non-linear huge sound radius.</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Large Radius (~1536) : Non-linear extra-huge sound radius (if </li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Large Radius (~1536) : Non-linear extra-huge sound radius.</li>
 <li class="imagepadding" markdown="1"><b>16 </b> : Start Silent : If set, this sound will start off. Only makes sense for looped sounds. This is usually left unchecked for ambient looping sounds, however only with other than default play mode. See notes for more info.</li>
 <li class="imagepadding" markdown="1"><b>32 </b> : Un-looped|Cyclic : The sound will play once when triggered. If triggered while playing, the sound will stop and restart immediately.</li>
 <li class="imagepadding" markdown="1"><b>64 </b> : User Only (+origin) : The sound will be ADDITIONALLY played for activator (only for him and at specified volume regardless of player and entity position). See notes.</li>

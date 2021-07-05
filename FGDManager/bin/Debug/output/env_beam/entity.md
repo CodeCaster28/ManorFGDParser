@@ -5,7 +5,7 @@ title: env_beam
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The env_beam entity is used to create a bolt between two entities.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to enable/disable beam. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle beam. Can be killtargeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Start Entity</b></span> <kbd  class="tooltip" data-tooltip="target_destination">LightningStart</kbd> :
@@ -64,66 +64,78 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Brightness (1 - 255)</b></span> <kbd  class="tooltip" data-tooltip="integer">renderamt</kbd> :
-Keyvalue_Description_here
+Set how bright/visible/transparent the beam shall be on a scale from '0' (invisible) to '255' (very bright).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Beam Color (R G B)</b></span> <kbd  class="tooltip" data-tooltip="color255">rendercolor</kbd> :
-Keyvalue_Description_here
+Set the beam's color. Note that, because of bolts being rendered additively, darker colors mean greater transparency.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Radius</b></span> <kbd  class="tooltip" data-tooltip="integer">Radius</kbd> :
-Keyvalue_Description_here
+Maximum distance from the start entity or {{ entname }}, depending on how you have set it up, to the destination of a random strike. Note that this kind of random strike has nothing to do with the flag 'Random strike', which only affects the timing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Life (seconds 0 = infinite)</b></span> <kbd  class="tooltip" data-tooltip="string">life</kbd> :
-Keyvalue_Description_here
+Time, in seconds, the beam/bolt will be visible after being triggered. A value of '0' makes it last forever.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Width of beam (pixels*0.1 0-255)</b></span> <kbd  class="tooltip" data-tooltip="integer">BoltWidth</kbd> :
-Keyvalue_Description_here
+Set the width of the bolt-/beam-texture in inches * 0.25. Note that one unit in Valve Hammer Editor equals one inch and the beam texture you are using possibly has entirely transparent sides, so the beam may appear a bit thinner than expected.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Amount of noise (0-255)</b></span> <kbd  class="tooltip" data-tooltip="integer">NoiseAmplitude</kbd> :
-Keyvalue_Description_here
+Set how much the bolt shivers on a scale from 0 (not at all) to 255 (very much).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Name</b></span> <kbd  class="tooltip" data-tooltip="sprite">texture</kbd> :
-Keyvalue_Description_here
+Set the sprite to use to display the bolt. Path starts in modification's folder.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Texture Scroll Rate (0-100)</b></span> <kbd  class="tooltip" data-tooltip="integer">TextureScroll</kbd> :
-Keyvalue_Description_here
+The texture of the beam is not supposed to be displayed statically. Setting a texture scroll rate gives a visual effect of an actual, moving electric current. The value you set here specifies how often the texture will scroll for the length of its own height per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Frames per 10 seconds</b></span> <kbd  class="tooltip" data-tooltip="integer">framerate</kbd> :
-Keyvalue_Description_here
+Set how often the bolt texture should be updated within ten seconds. Now correctly supported.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Starting Frame</b></span> <kbd  class="tooltip" data-tooltip="integer">framestart</kbd> :
-Keyvalue_Description_here
+Set the number of the frame of the sprite to start animating at. This is rarely ever useful, e.g. when you have two identical beams next to each other and need them to look slightly different. Setting '0' here is safe.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Strike again time (secs)</b></span> <kbd  class="tooltip" data-tooltip="string">StrikeTime</kbd> :
-Keyvalue_Description_here
+Time, in seconds, the env_beam entity will be idle after a bolt has run out, before creating the next one, when the 'Toggle'-flag is set. Negative values allow you to have the next beam fire before the current one runs out. However, setting a negative value that causes the next beam to be created the instant a beam is created causes an infinite amount of beams to be created, eventually causing overflows.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage / second</b></span> <kbd  class="tooltip" data-tooltip="string">damage</kbd> :
-Keyvalue_Description_here
+Average damage per second for beams with infinite lifetime. Damage in the moment of creation for temporary beams.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start On : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Toggle : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Random Strike : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Ring : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : StartSparks : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : EndSparks : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Decal End : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : Shade Start : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : Shade End : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Start On : Causes the beam to be activated from map load onwards. Only makes sense in combination with the 'Toggle'-flag below.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Toggle : Causes the env_beam entity to be toggleable instead of causing just one temporary beam when triggered.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Random Strike :  If the 'Toggle'-flag is set along with this, this causes the env_beam's delay till striking again to be a random number between zero and the 'Strike again time'-value you specified.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Ring : Set it to form a circled beam which uses start and end point as the ring's intersection points, with the ring's center being in the middle between them. This requires start and end entity to be brush entities. Use of two func_trains with origin brushes is encouraged, as that is seen in the Half-Life single player! The ring always aligns itself to lie on the horizon of either of the two points looking at the other in respect to the z-axis.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : StartSparks : If set, sparks will be emitted at the start entity.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : EndSparks : If set, sparks will be emitted at the end entity.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : Decal End : If set, a bullethole decal will be created whenever the beam hits a surface.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : Shade Start : If set, the beam will fade invisible towards the start point.</li>
+<li class="imagepadding" markdown="1"><b>256</b> : Shade End : If set, the beam will fade invisible towards the end point.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">In case multiple entities match the name specified under start- and/or end-entity, the env_beam entity will pick one randomly each for every beam created.</div>
+<div class="notices blue">Of the 'Shade start'- and 'Shade end'-flag, you may select one or neither. Using both makes only one function.</div>
+<div class="notices blue">Ring-beams cannot have 'Shade start' nor 'Shade end' by design.</div>
+<div class="notices blue">Contrary to what you may have read elsewhere, it is not possible to alter how fine a beam will be, as in, of how many segments it will consist.</div>
+<div class="notices blue">The noise-value does not affect the area in which damage will be applied. The damage area only depends on startpoint, endpoint and beam-width.</div>
+<div class="notices blue">When turning off a toggleable env_beam entity, its bolts will remain active until they run out of the specified lifetime, unless they are infinite. When reactivated, the next new beam will be created immediately, regardless of when the last one was created.</div>
+<div class="notices blue">Setting "Sprite name" to 'sprite_01.spr' with moderate "Amount of Noise" makes it look like magical (but not too pretty) fairy.</div>
+<div class="notices red">Ring-beams with infinite lifetime do not react to getting triggered off.</div>
+<div class="notices red">If the 'Ring'-flag is set, damage will be applied as if the beam still was linear. (Only on a line between start and end point)</div>
+<div class="notices red">Non-moving ring-beams with infinite lifetime ocassionally disappear for specific clients completely. Set a lifetime of e.g. one second and a 'Strike again time'-value of '0' to encounter this issue.</div>
+<div class="notices red">Ring-beams always apply damage as if they were temporary beams. (In moment of creation)</div>
+<div class="notices red">Beams with limited lifetime cannot have 'Shade start' nor 'Shade end'.</div>
+<div class="notices red">Non-toggleable env_beams act as toggleable env_beams do, except that they can never be turned off again.</div>
+<div class="notices red">Setting a Render FX makes no change whatsoever.</div>

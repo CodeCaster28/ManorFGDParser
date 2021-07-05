@@ -5,7 +5,7 @@ title: func_water
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">This entity is used to create water. In game, every flat surface of the brushes of this entity will be waving up and down a specified distance. The brushes which are part of this must be cuboids, ideally snapped to 64-units-grid. It requires liquid ('!') texture for waving. Func_water is also a door type, it can be triggered to be opened and closed. Func_water should be touching the floor whenever it's closed or open or it may produce strange errors or become invisible. Func_water have breakable functionality (if enabled) just like other door types, however it cannot be destroyed by direct attack (bullet/melee), you can still destroy func_water by explosions or area of effect attacks(e.g. weapon_egon).</div>
+<div class="column entityentry" markdown="1">This entity is used to create water. In game, every flat surface of the brushes of this entity will be waving up and down a specified distance. The brushes which are part of this must be cuboids, ideally snapped to 64-units-grid. It requires liquid ('!') texture for waving. Func_water is also a door type, it can be triggered to be opened and closed. Func_water should be touching the floor whenever it's closed or open or it may produce strange errors or become invisible. Func_water have breakable functionality (if enabled) just like other door types, however it cannot be destroyed by direct attack (bullet/melee), you can still destroy func_water by explosions or area of effect attacks(e.g. weapon_egon).</div>
 </div>
 </div>
 ###Keyvalues
@@ -20,7 +20,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :

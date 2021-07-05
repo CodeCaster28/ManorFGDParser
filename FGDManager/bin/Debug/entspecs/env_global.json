@@ -1,49 +1,54 @@
 {
   "Classname": "env_global",
-  "Description": "Entity_Description_here",
+  "Description": "The env_global entity provides the decisive functionality for allowing entity-interaction between maps. More accurately, it allows you to create/set a global variable by a name of your choice. Global variables are set to a use-type of 'On' or 'Off', which can then be used by some entities as their state. E.g. the multisource entity can be set to read its state from a global variable at map load, unless you are having triggers targeting it. This could, for example, be used to make a key for some door collected in one map allow a specific door to be opened in another map.",
   "KeyDescriptions": [
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to set global state. Any trigger signal type accepted. Can be killtargeted.",
+      "keyChoices": []
+    },
+    {
       "keyName": "globalstate",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the global state to set. If it does not exist, it will be created.",
       "keyChoices": []
     },
     {
       "keyName": "triggermode",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "How to set the global state. Shall it be set to 'On', 'Off', or shall its current state be toggled? If you specify 'Dead', that will delete the global state if it exists.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "initialstate",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If the 'Set initial state'-flag is set, the given global state will be set to the state specified here. 'Dead' removes the global state in case it exists and should act before any entities can read its global state and won't read anything at all, resulting in default behaviour. For some reason, 'Toggle' is not an option here, possibly because of the undefined case of a non-existing/'uninitialized' global state being told to toggle.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
@@ -53,15 +58,9 @@
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the given global state will be set to the given initial state on map load."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

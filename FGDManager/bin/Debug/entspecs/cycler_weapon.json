@@ -1,11 +1,5 @@
 {
   "Classname": "cycler_weapon",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "The cycler_weapon entity appears to be an unfinished/debug entity originally by Valve. It appears to be made specifically for displaying weapon models, but provides no special features.",
+  "KeyDescriptions": []
 }

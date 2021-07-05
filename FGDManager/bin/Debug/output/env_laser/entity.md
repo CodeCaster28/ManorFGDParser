@@ -5,7 +5,7 @@ title: env_laser
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A less advanced version of [env_beam](../env_beam). Creates a toggleable laser between itself and its target.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to enable/disable laser. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle laser. Can be killtargeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -60,53 +60,56 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target of Laser</b></span> <kbd  class="tooltip" data-tooltip="target_destination">LaserTarget</kbd> :
-Keyvalue_Description_here
+Entity at which the beam ends.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Brightness (1 - 255)</b></span> <kbd  class="tooltip" data-tooltip="integer">renderamt</kbd> :
-Keyvalue_Description_here
+Set how bright/visible/transparent the beam shall be on a scale from '0' (invisible) to '255' (very bright).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Beam Color (R G B)</b></span> <kbd  class="tooltip" data-tooltip="color255">rendercolor</kbd> :
-Keyvalue_Description_here
+Set the beam's color. Note that, because of bolts being rendered additively, darker colors mean greater transparency.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Width of beam (pixels*0.1 0-255)</b></span> <kbd  class="tooltip" data-tooltip="integer">width</kbd> :
-Keyvalue_Description_here
+Set the width of the bolt-/beam-texture in inches * 0.25. Note that one unit in Valve Hammer Editor equals one inch and the beam texture you are using possibly has entirely transparent sides, so the beam may appear a bit thinner than expected.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Amount of noise (0-255)</b></span> <kbd  class="tooltip" data-tooltip="integer">NoiseAmplitude</kbd> :
-Keyvalue_Description_here
+Set how much the bolt shivers on a scale from 0 (not at all) to 255 (very much).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Name</b></span> <kbd  class="tooltip" data-tooltip="sprite">texture</kbd> :
-Keyvalue_Description_here
+Set the sprite to use to display the bolt. Path starts in mod-folder.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>End Sprite</b></span> <kbd  class="tooltip" data-tooltip="sprite">EndSprite</kbd> :
-Keyvalue_Description_here
+This sprite is placed where the laser beam ends.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Texture Scroll Rate (0-100)</b></span> <kbd  class="tooltip" data-tooltip="integer">TextureScroll</kbd> :
-Keyvalue_Description_here
+The texture of the laser is not supposed to be displayed statically. Setting a texture scroll rate gives a visual effect of an actual, moving electric current. The value you set here specifies how often the texture will scroll for the length of its own height per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Starting Frame</b></span> <kbd  class="tooltip" data-tooltip="integer">framestart</kbd> :
-Keyvalue_Description_here
+Set the number of the frame of the sprite to start animating at. This is rarely ever useful, e.g. when you have two identical beams next to each other and need them to look slightly different. Setting '0' here is safe.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage / second</b></span> <kbd  class="tooltip" data-tooltip="string">damage</kbd> :
-Keyvalue_Description_here
+Average damage per second for the laser.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start On : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : StartSparks : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : EndSparks : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Decal End : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Start On : Causes the laser to be activated from map load onwards.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : StartSparks : If set, sparks will be emitted at the env_laser.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : EndSparks : If set, sparks will be emitted at the target of the laser.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : Decal End : If set, a bullethole decal will be created whenever the beam hits a surface.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">The only thing this entity has that the env_beam doesn't is "End Sprite". Unless you need this, it's probably best to use env_beam instead.</div>
+<div class="notices blue">In case multiple entities match the name specified under "Target of Laser", the env_laser entity will pick one randomly.</div>
+<div class="notices blue">Contrary to what you may have read elsewhere, it is not possible to alter how fine a laser will be, as in, of how many segments it will consist.</div>
+<div class="notices blue">The noise-value does not affect the area in which damage will be applied. The damage area only depends on starting point, ending point and the laser's width.</div>
+<div class="notices red">Setting a "Render FX" makes no change whatsoever.</div>

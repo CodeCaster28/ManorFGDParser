@@ -5,7 +5,7 @@ title: env_spritetrain
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The env_spritetrain entity resembles an [env_sprite](../env_sprite) which can move along [path_corner](../path_corner) entities as a [func_train](../func_train) can. Ever wanted to make a flame travel along a fuse to a bomb? This entity is for you.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to start or stop sprite movement. Trigger signals are handled as follow: 'On' to start movement, 'Off' to stop movement, 'Toggle' to toggle movement. Can be killtargeted but sprite is not removed, only the 'train' part.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
@@ -200,11 +200,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Name</b></span> <kbd  class="tooltip" data-tooltip="sprite">model</kbd> :
-Keyvalue_Description_here
+Set a sprite here. Path starts in modification's folder.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Scale</b></span> <kbd  class="tooltip" data-tooltip="string">scale</kbd> :
-Keyvalue_Description_here
+Scaling factor for the sprite. Defaults to 0.25 if not set.
 </div>
 ###Flags
 <hr>
@@ -213,5 +213,4 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Spritetrains are not efficient on the network-code. You should use them as little as possible and only temporarily.</div>

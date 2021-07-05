@@ -1,7 +1,12 @@
 {
   "Classname": "ambient_generic",
-  "Description": "This entity is used to play sound-files. They can be looping or not. You can use this to play music as well but [ambient_music](../ambient_music) would fit more for this purpouse.",
+  "Description": "This entity is used to play sound-files. They can be looping or not. You can use this to play music as well but [ambient_music](../ambient_music) fits more for this purpouse.",
   "KeyDescriptions": [
+  	{
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play sound. Depending on received signal: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targetting this entity will stop sound from playing.",
+      "keyChoices": []
+    },
     {
       "keyName": "message",
       "keyDescription": "Name of the sound file to play. Supported formats are: AIFF, ASF, DLS, FLAC, IT, M3U, MID, MOD, MP2, MP3, OGG, S3M, VAG, WAV, WMA, XM. Hammer will only let you select WAV-files, but other formats do work as they are fully supported by the game's sound engine. Type the path in manually in that case. File Path starts in the 'sound'-folder, example: 'mymap/soundfile.ogg'.",
@@ -403,7 +408,7 @@
         },
         {
           "choiceValue": "8 ",
-          "choiceDescription": "Non-linear extra-huge sound radius (if "
+          "choiceDescription": "Non-linear extra-huge sound radius."
         },
         {
           "choiceValue": "16 ",

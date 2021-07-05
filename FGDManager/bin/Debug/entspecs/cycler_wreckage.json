@@ -1,20 +1,25 @@
 {
   "Classname": "cycler_wreckage",
-  "Description": "Entity_Description_here",
+  "Description": "The cycler_wreckage entity emits smoke and shows a custom sprite.",
   "KeyDescriptions": [
     {
       "keyName": "framerate",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set the sprite's framerate in Hertz. Only makes sense for animated sprites.",
+      "keyChoices": []
+    },
+	{
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can refer to it. Can't be triggered but can be kill-targeted.",
       "keyChoices": []
     },
     {
       "keyName": "model",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Specify a valid sprite-file to display here. Path starts from within the modification's folder e.g.'models/cleansuit_scientist.mdl'",
       "keyChoices": []
     },
     {
       "keyName": "scale",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set the sprite's y- and x-scale.",
       "keyChoices": []
     },
     {
@@ -23,19 +28,16 @@
       "keyChoices": [
         {
           "choiceValue": "32",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Non-functional in {{ entname }}."
         },
         {
           "choiceValue": "64",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Non-functional in {{ entname }}."
         }
       ]
     }
   ],
   "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
+    "Sprites are barely visible under emitted smoke."
   ]
 }

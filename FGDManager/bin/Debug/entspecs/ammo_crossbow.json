@@ -4,12 +4,19 @@
   "KeyDescriptions": [
 	{
       "keyName": "target",
-      "keyDescription": "Non functional in {{ entname }}.",
-      "keyChoices": []
+      "keyDescription": "Non-functional in {{ entname }}."
     },
 	{
       "keyName": "killtarget",
-      "keyDescription": "Non functional in {{ entname }}.",
+      "keyDescription": "Non-functional in {{ entname }}."
+    },
+	{
+      "keyName": "delay",
+      "keyDescription": "Non-functional in {{ entname }}."
+    },
+	{
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' signals are accepted which makes item be picked up by player '!activator'. Kill-targetting this entity will remove {{ entname }} and stop it from respawning.",
       "keyChoices": []
     }
   ],

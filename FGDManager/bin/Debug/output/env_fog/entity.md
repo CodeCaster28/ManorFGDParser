@@ -5,7 +5,7 @@ title: env_fog
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Entity which creates a fog effect within a specific area around it. Fog, unfortunately, will only show to players who have it enabled in their options.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,26 +16,26 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to control fog. Accepted signals: 'On' to enable fog, 'Off' to disable fog, 'Toggle' to toggle fog. Can be killtargeted which removes fog effect as well.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fog Color (RGB)</b></span> <kbd  class="tooltip" data-tooltip="color255">rendercolor</kbd> :
-Keyvalue_Description_here
+The color of the fog.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Start Distance</b></span> <kbd  class="tooltip" data-tooltip="integer">iuser2</kbd> :
-Keyvalue_Description_here
+Distance, in units, at which the fog starts to be visible. This needs to be greater than zero.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>End Distance</b></span> <kbd  class="tooltip" data-tooltip="integer">iuser3</kbd> :
-Keyvalue_Description_here
+Distance, in units, at which the fog appears opaque. This needs to be greater than the start distance.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Start Off : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Start Off : The env_fog entity will start disabled and needs to be triggered in order for fog to show.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices red">Fog works only for OpenGL graphics mode.</div>
+<div class="notices red">Entities with 'Render mode' set to other than 'Normal' (including sprites) are not affected by env_fog.</div>

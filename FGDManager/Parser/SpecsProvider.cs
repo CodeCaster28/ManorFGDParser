@@ -33,6 +33,39 @@
                             choice.Media = media;
                         }
                     }
+
+                    if (entity.Type != EntityType.Base)
+                    {
+                        foreach (var key in entity.InheritedKeyValues)
+                        {
+                            if (key.Name == "spawnflags")
+                                continue;
+                            
+                            var overridenDesc = result.GetKeyDescription(key.Name);
+                            if (!string.IsNullOrEmpty(overridenDesc))
+                            {
+                                /*if (entity.KeysDescriptionsOverride.ContainsKey(key.Name))
+                                {
+                                    Console.WriteLine("Entity " + entity.ClassName + " key exists -> " + key.Name);
+                                    entity.KeysDescriptionsOverride[key.Name] = overridenDesc;
+                                }
+                                else
+                                {*/
+                                    entity.KeysDescriptionsOverride.Add(key.Name, overridenDesc);
+                                //}
+                            }
+                            // No time to check other overrides as it won't be used anyway
+                            //key.Media = result.GetKeyMedia(key.Name);
+                            /*foreach (var choice in key.Choices)
+                            {
+                                var description = result.GetChoiceDescription(key.Name, choice.Value);
+                                var media = result.GetChoiceMedia(key.Name, choice.Value);
+                                choice.Description = description;
+                                choice.Media = media;
+                            }*/
+                        }
+                    }
+                    
                     entity.RefreshFlagsDescriptions();
                     entity.Issues = result.Issues;
                     entity.Notes = result.Notes;
@@ -44,6 +77,7 @@
         {
             foreach (var entity in entNames)
             {
+                Console.WriteLine("Getting SpecsData for " + entity);
                 var data = LoadData(entity);
                 if (data == null)
                 {

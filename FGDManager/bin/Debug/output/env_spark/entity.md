@@ -5,7 +5,7 @@ title: env_spark
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The env_spark entity is used for emitting the visuals and sounds of a spark, often used for implying cut electric cables, broken buttons and malfunctioning machinery.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to toggle sparks if 'Toggle' flag is used. All signal types are accepted, all of them toggles env_spark. Can be killtargeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -24,15 +24,13 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Max Delay</b></span> <kbd  class="tooltip" data-tooltip="string">MaxDelay</kbd> :
-Keyvalue_Description_here
+Set the maximum delay, in seconds, between sparks, when the 'Toggle'-flag is set. Otherwise, this is redundant.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>32</b> : Toggle : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Start ON : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : Toggle : Instead of emitting one spark whenever it is fired, the env_spark will automatically emit multiple sparks consecutively, with a delay between them, while activated.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : Start ON : If set, the env_spark entity will start enabled. Makes sense only in combination with the 'Toggle'-flag above.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

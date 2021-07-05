@@ -5,7 +5,7 @@ title: env_shooter
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The env_shooter entity allows to emit a model or sprite of your choice and shoot it into a certain direction (Pitch Yaw Roll), at a certain velocity. Sprites aren't specifically supported, though.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to start shooting sprites or models. Can't be triggered when model/sprite shooting is in progress. Can be killtargeted but gibs stay.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -109,11 +109,11 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Model or Sprite name</b></span> <kbd  class="tooltip" data-tooltip="studio">shootmodel</kbd> :
-Keyvalue_Description_here
+Set a model or sprite to shoot, preferably model. Path starts at modification's directory e.g. 'models/gib_skull.mdl' for models or 'sprites/glow03.spr' for sprites. Sprites path must be specified by hand or copied from elsewhere e.g. env_sprite.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Material Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">shootsounds</kbd> :
-Keyvalue_Description_here
+Sound-set to be used for when gibs collide with stuff.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -122,23 +122,23 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1</b> : None : Choice_Description_here</li>
-<li><b>0</b> : Glass : Choice_Description_here</li>
-<li><b>1</b> : Wood : Choice_Description_here</li>
-<li><b>2</b> : Metal : Choice_Description_here</li>
-<li><b>3</b> : Flesh : Choice_Description_here</li>
-<li><b>4</b> : Concrete : Choice_Description_here</li>
+<li><b>-1</b> : None</li>
+<li><b>0</b> : Glass</li>
+<li><b>1</b> : Wood</li>
+<li><b>2</b> : Metal</li>
+<li><b>3</b> : Flesh</li>
+<li><b>4</b> : Concrete</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Gib Scale</b></span> <kbd  class="tooltip" data-tooltip="string">scale</kbd> :
-Keyvalue_Description_here
+Scaling-factor for the models and sprites shot.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Gib Skin</b></span> <kbd  class="tooltip" data-tooltip="integer">skin</kbd> :
-Keyvalue_Description_here
+Model sub-skin to be used. Leave at 0 if there are none.
 </div>
 ###Flags
 <hr>
@@ -148,5 +148,9 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">If your delay between shots is 0, the game will increase it notably; 0.01 works, though.</div>
+<div class="notices blue">The gibs also bounce off players.</div>
+<div class="notices blue">Gibs do not get stuck in each other.</div>
+<div class="notices blue">Render-modes and -amount can be used to be applied to the gibs.</div>
+<div class="notices red">When shooting sprites, they often appear at the origin of the world.</div>
+<div class="notices red">Animated sprites won't animate. Model animations don't play, either.</div>

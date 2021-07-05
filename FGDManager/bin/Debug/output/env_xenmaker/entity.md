@@ -5,7 +5,7 @@ title: env_xenmaker
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The env_xenmaker allows to spawn monsters with teleportation and beam effects. It can be set to act as a spawn-effect-data-template for squadmakers, in case you want to pair this spawn-effect with the customizability-features of the [squadmaker](../squadmaker) entity.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to spawn monster (if place avaiable). Any trigger signal type accepted. Can be killtargeted. Monster in queue (those who couldn't spawn because there was no room for them) won't spawn.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
@@ -28,71 +28,73 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Monster Type</b></span> <kbd  class="tooltip" data-tooltip="string">monstertype</kbd> :
-Keyvalue_Description_here
+Entity classname of the monster type to spawn here. This must be set even if 'No Spawn' flag is set otherwise it will crash the game with "Spawned a NULL entity!" error message.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Beam Radius (max)</b></span> <kbd  class="tooltip" data-tooltip="integer">m_flBeamRadius</kbd> :
-Keyvalue_Description_here
+Maximum beam strike radius.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Beam Alpha</b></span> <kbd  class="tooltip" data-tooltip="integer">m_iBeamAlpha</kbd> :
-Keyvalue_Description_here
+Alpha of the beam. 255 for full opaque beam.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Beam Count</b></span> <kbd  class="tooltip" data-tooltip="integer">m_iBeamCount</kbd> :
-Keyvalue_Description_here
+Number of single beam instances.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Beam Color</b></span> <kbd  class="tooltip" data-tooltip="color255">m_vBeamColor</kbd> :
-Keyvalue_Description_here
+Set the beam's color. Note that, because of bolts being rendered additively, darker colors mean greater transparency.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Light Radius</b></span> <kbd  class="tooltip" data-tooltip="integer">m_flLightRadius</kbd> :
-Keyvalue_Description_here
+Radius of the light that appears while spawning monster.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Light Color</b></span> <kbd  class="tooltip" data-tooltip="color255">m_vLightColor</kbd> :
-Keyvalue_Description_here
+Color of the light that appears while spawning monster.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite1 Framerate</b></span> <kbd  class="tooltip" data-tooltip="integer">m_flStartSpriteFramerate</kbd> :
-Keyvalue_Description_here
+Frame display rate of the first animated sprite.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite1 Scale</b></span> <kbd  class="tooltip" data-tooltip="string">m_flStartSpriteScale</kbd> :
-Keyvalue_Description_here
+Scale of the first sprite.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite1 Alpha</b></span> <kbd  class="tooltip" data-tooltip="integer">m_iStartSpriteAlpha</kbd> :
-Keyvalue_Description_here
+Alpha of the first sprite, 255 for full opaque sprite.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite1 Color</b></span> <kbd  class="tooltip" data-tooltip="color255">m_vStartSpriteColor</kbd> :
-Keyvalue_Description_here
+First prite Color override.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite2 Framerate</b></span> <kbd  class="tooltip" data-tooltip="integer">m_flEndSpriteFramerate</kbd> :
-Keyvalue_Description_here
+Frame display rate of the second animated sprite.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite2 Scale</b></span> <kbd  class="tooltip" data-tooltip="string">m_flEndSpriteScale</kbd> :
-Keyvalue_Description_here
+Scale of the second sprite.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite2 Alpha</b></span> <kbd  class="tooltip" data-tooltip="integer">m_iEndSpriteAlpha</kbd> :
-Keyvalue_Description_here
+Alpha of the second sprite, 255 for full opaque sprite.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite2 Color</b></span> <kbd  class="tooltip" data-tooltip="color255">m_vEndSpriteColor</kbd> :
-Keyvalue_Description_here
+Second sprite Color override.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Try Once : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : No Spawn : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Try Once : If set, the env_xenmaker will attempt to spawn only once when triggered, instead of waiting till the spawn-zone is unobscured.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : No Spawn : If set, nothing will spawn at this env_xenmaker. Use this when you only want the visual and audible effect. You still must specify monster to spawn in 'Monster Type' keyvalue, otherwise it will crash the game.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
 <div class="notices red">Insert known issues here</div>
+<div class="notices red">Using multiple env_xenmaker at one time sums up emitted sounds, what makes them very loud. It's not really a bug but it's very unpleasant effect.</div>
+<div class="notices red">When using an env_xenmaker as an effect-template for squadmakers, you may have to ensure its position in the entity list to be after its according squadmaker(s) in order to avoid a crash on map-load. To achieve that, follow these steps: Select all env_xenmakers in your map and group them. Perform a copy-paste-special or clone-drag (hold shift), leaving the copy in the exact same position as its original. Hide the copy. Delete the original group. Unhide the copy and ungroup it. Save your map.</div>
+<div class="notices red">Sprites doesn't work.</div>

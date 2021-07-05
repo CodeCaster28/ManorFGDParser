@@ -5,7 +5,7 @@ title: env_render
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Point entity which allows you to change render-mode, -fx, -amount and -color of another entity. This entity supports use of !activator and !caller.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.
+Set name of {{ entname }} so other entities can trigger it to apply render mode. Can be killtargeted but already applied render settings stays.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
@@ -89,19 +89,17 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>radius (0 disables)</b></span> <kbd  class="tooltip" data-tooltip="string">armorvalue</kbd> :
-Keyvalue_Description_here
+Set the radius, in units, in which to search for the env_render's targets. Set this to 0 if you do not require the targets to be in a specific radius, but anywhere on the map.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : No Renderfx : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : No Renderamt : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4</b> : No Rendermode : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : No Rendercolor : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Auto Apply : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : No Renderfx : If set, the env_render won't change its targets render-fx.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : No Renderamt : If set, the env_render won't change its targets render-amt.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : No Rendermode : If set, the env_render won't change its targets render-mode.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : No Rendercolor : If set, the env_render won't change its targets render-color.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : Auto Apply : If set, the env_render will search for its target within the provided radius and apply the changes to every valid entity found, whenever it is found, regularly instead of only when triggered.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

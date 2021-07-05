@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "This always means an identifier for the entity in question so other entities can trigger or refer to it. Many entities need no name, or behave differently depending on whether they have one or not.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it.",
       "keyChoices": []
     }
   ]

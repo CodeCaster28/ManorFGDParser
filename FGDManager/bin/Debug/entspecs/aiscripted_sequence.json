@@ -67,6 +67,19 @@
         }
       ]
     },
+	{
+      "keyName": "killtarget",
+      "keyDescription": "Non-functional in {{ entname }}."
+    },
+	{
+      "keyName": "target",
+      "keyDescription": "Entities to trigger when animation ends. Sends 'Toggle' signal."
+    },
+	{
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play animation. Kill-targetting this entity will remove entity from map but won't stop animation.",
+      "keyChoices": []
+    },
     {
       "keyName": "spawnflags",
       "keyDescription": "Keyvalue_Description_here",

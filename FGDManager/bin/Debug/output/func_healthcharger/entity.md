@@ -5,7 +5,7 @@ title: func_healthcharger
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column">The func_healthcharger is a visible, solid entity which can be used just as a func_button can, and will refill 15 health points per second while using it. Multiple players can use it at the same time, but the HP restored per second is distributed equally among them. Healthchargers refill themselves 30 seconds after being emptied.
+<div class="column entityentry" markdown="1">The func_healthcharger is a visible, solid entity which can be used just as a func_button can, and will refill 15 health points per second while using it. Multiple players can use it at the same time, but the HP restored per second is distributed equally among them. Healthchargers refill themselves 30 seconds after being emptied.
 > sk_healthcharger # (Default: 80, 80, 80): Sets how many health points health chargers store.
 </div>
 </div>
