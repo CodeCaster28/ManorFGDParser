@@ -5,7 +5,7 @@ title: gibshooter
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Similar to [env_shooter](../env_shooter), except that this can only fire human gibs.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to start shooting gibs. Can't be triggered when gibs shooting is in progress. Can be kill-targeted but gibs stay.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -49,5 +49,6 @@ Time, in seconds, the gib will be visible till fading out of world and getting r
 <li class="imagepadding" markdown="1"><b>1 </b> : Repeatable : If set, the {{ entname }} can be used more than once.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">If your delay between shots is 0, the game may increase it notably; 0.01 works, though.</div>
+<div class="notices blue">The gibs also bounce off players.</div>
+<div class="notices blue">Gibs do not get stuck in each other.</div>

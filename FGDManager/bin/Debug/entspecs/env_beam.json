@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable/disable beam. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle beam. Can be killtargeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable/disable beam. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle beam. Can be kill-targeted.",
       "keyChoices": []
     },
     {
@@ -97,7 +97,7 @@
         },
         {
           "choiceValue": "64",
-          "choiceDescription": "If set, a bullethole decal will be created whenever the beam hits a surface."
+          "choiceDescription": "If set, a bullet hole decal will be created whenever the beam hits a surface."
         },
         {
           "choiceValue": "128",
@@ -122,7 +122,7 @@
   "Issues": [
     "Ring-beams with infinite lifetime do not react to getting triggered off.",
     "If the 'Ring'-flag is set, damage will be applied as if the beam still was linear. (Only on a line between start and end point)",
-    "Non-moving ring-beams with infinite lifetime ocassionally disappear for specific clients completely. Set a lifetime of e.g. one second and a 'Strike again time'-value of '0' to encounter this issue.",
+    "Non-moving ring-beams with infinite lifetime occasionally disappear for specific clients completely. Set a lifetime of e.g. one second and a 'Strike again time'-value of '0' to encounter this issue.",
     "Ring-beams always apply damage as if they were temporary beams. (In moment of creation)",
     "Beams with limited lifetime cannot have 'Shade start' nor 'Shade end'.",
     "Non-toggleable env_beams act as toggleable env_beams do, except that they can never be turned off again.",

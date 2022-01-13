@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to create funnel effect. Any trigger signal type accepted. Triggering fade that is in progress restarts fade. Can be killtargeted but funnel will emmit it's end.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to create funnel effect. Any trigger signal type accepted. Triggering fade that is in progress restarts fade. Can be kill-targeted but funnel will emmit it's end.",
       "keyChoices": []
     },
     {

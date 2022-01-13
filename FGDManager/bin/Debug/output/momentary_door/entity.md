@@ -36,7 +36,7 @@ Same as target, except that this supposedly causes the specified entity/entities
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">tinfilter</kbd> :
-Semicolon-seperated list of targetnames to either be forbidden or required (specified in "Name In Filter Type") on the caller-entity. Can also specify only one.
+Semicolon-separated list of targetnames to either be forbidden or required (specified in "Name In Filter Type") on the caller-entity. Can also specify only one.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name In Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">tinfiltertype</kbd> :
@@ -57,7 +57,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Class In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">cinfilter</kbd> :
-Semicolon-seperated list of classnames to either be forbidden or required (specified in "Class In Filter Type") on the caller-entity. Can also specify only one.
+Semicolon-separated list of classnames to either be forbidden or required (specified in "Class In Filter Type") on the caller-entity. Can also specify only one.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Class In Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">cinfiltertype</kbd> :
@@ -78,7 +78,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name Out Filter</b></span> <kbd  class="tooltip" data-tooltip="string">toutfilter</kbd> :
-Semicolon-seperated list of targetnames to either be forbidden or required (specified in "Name Out Filter Type") on targeted entities. Can also specify only one.
+Semicolon-separated list of targetnames to either be forbidden or required (specified in "Name Out Filter Type") on targeted entities. Can also specify only one.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name Out Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">toutfiltertype</kbd> :
@@ -236,7 +236,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: Inventory rules failed</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_fail</kbd> :
-Entity to trigger whenever test result is negative.
+Entity or entities to trigger whenever test result is negative.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Classification</b></span> <kbd  class="tooltip" data-tooltip="choices">classify</kbd> :
@@ -345,8 +345,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
-For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by "copying" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it.
-For model-based point entities: copy display model of specified entity, to use it's model instead. Using "Custom model" is more appropriate in most cases, however, when it's not possible, use "ZHLT Copy Lighting From Target".
+For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by "copying" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it. For model-based point entities: copy display model of specified entity, to use it's model instead. Using "Custom model" is more appropriate in most cases, however, when it's not possible, use "ZHLT Copy Lighting From Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Copy Lighting From Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_copylight</kbd> :
@@ -434,11 +433,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Light Origin Target</b></span> <kbd  class="tooltip" data-tooltip="string">light_origin</kbd> :
-Set it to the name of [info_target](../info_target), this entity will receive lights from specified info_taget position instead of it's own position. As a lot of entites can moves and lightning is not updated dynamically you can choose how your entity will be lit in game (e.g. elevators, pushables e.t.c.). Now you don't need to put the whole entity in the well-lit room at map start to make them look desirable.
+Set it to the name of [info_target](../info_target), this entity will receive lights from specified [info_taget](../info_taget) position instead of it's own position. As a lot of entites can moves and lightning is not updated dynamically you can choose how your entity will be lit in game (e.g. elevators, pushables e.t.c.). Now you don't need to put the whole entity in the well-lit room at map start to make them look desirable.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Locked Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">locked_sound</kbd> :
-Sound to play when a player tries to use the {{ entname }} but it's locked because it has a targetname or uses a multisource entity.
+Sound to play when a player tries to use the {{ entname }} but it's locked because it has a targetname or uses a [multisource](../multisource) entity.
 <div class="accordion">
 <input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-16">
@@ -486,7 +485,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Locked Sentence</b></span> <kbd  class="tooltip" data-tooltip="choices">locked_sentence</kbd> :
-Sentence to play when a player tries to use {{ entname }} but it's locked because it has a targetname or uses a multisource entity. Sentences are picked from sound/default_sentences.txt file.
+Sentence to play when a player tries to use {{ entname }} but it's locked because it has a targetname or uses a [multisource](../multisource) entity. Sentences are picked from sound/default_sentences.txt file.
 <div class="accordion">
 <input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-18">
@@ -551,7 +550,7 @@ Sentence from "default_sentences.txt" or custom sentences file (which can be add
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
-Entity to trigger when {{ entname }} starts opening.
+Entity or entities to trigger when {{ entname }} starts opening.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopening_triggerstate</kbd> :
@@ -573,7 +572,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosing</kbd> :
-Entity to trigger when door starts closing.
+Entity or entities to trigger when door starts closing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosing_triggerstate</kbd> :
@@ -595,7 +594,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopened</kbd> :
-Entity to trigger when door ends opening.
+Entity or entities to trigger when door ends opening.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopened_triggerstate</kbd> :
@@ -617,7 +616,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosed</kbd> :
-Entity to trigger when door end closing.
+Entity or entities to trigger when door end closing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosed_triggerstate</kbd> :
@@ -643,7 +642,7 @@ Movement speed in units per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Name of the multisource entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and will play locked sounds and sentences. When multisource entity is triggered/beign triggering by all possible inputs, the {{ entname }} will be unlocked. When multisource lost at least one input signal, the entities becomes locked again.
+Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and will play locked sounds and sentences. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Move Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">movesnd</kbd> :

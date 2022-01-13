@@ -38,7 +38,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' signals are accepted which makes item be picked up by player '!activator'. Kill-targetting this entity will remove {{ entname }} and stop it from respawning.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' signals are accepted which makes item be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning.",
       "keyChoices": []
     }
   ],

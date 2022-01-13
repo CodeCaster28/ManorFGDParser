@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to play animation. Kill-targetting this entity will remove entity from map but won't stop animation.
+Set name of {{ entname }} so other entities can trigger it to play animation. Kill-targeting this entity will remove entity from map but won't stop animation.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
@@ -85,7 +85,7 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : Default AI : Nothign changes.</li>
+<li><b>0 </b> : Default AI : Nothing changes.</li>
 <li><b>1 </b> : Ambush : Monster will be in an attentive state and encounter enemies more actively.</li>
 </ul>
 </div>

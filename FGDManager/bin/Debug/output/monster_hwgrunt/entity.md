@@ -217,14 +217,14 @@ Choices:
 <div class="accordion-body">
 <ul>
 <li><b>0 </b> : No (Default) : Keep game defaults.</li>
-<li><b>1 </b> : Yes : Invert relationship (e.g. monster_barney becames enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c.</li>
+<li><b>1 </b> : Yes : Invert relationship (e.g. monster_barney becomes enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c.</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>In-game Name</b></span> <kbd  class="tooltip" data-tooltip="string">displayname</kbd> :
-If set, this will overwrite the monster's default in-game name, which appears in the HUD monsterinfo, which can be enabled/disabled using the CVar 'mp_allowmonsterinfo'. You can use '
+If set, this will overwrite the monster's default in-game name, which appears in the HUD monster info, which can be enabled/disabled using the CVar 'mp_allowmonsterinfo'. You can use '
 ' here to perform a line-break.
 </div>
 <div class="entityentry" markdown="1">
@@ -268,7 +268,7 @@ Set the path to a sound replacement file for the spawned monsters. The path begi
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Monster Roaming (nodes)</b></span> <kbd  class="tooltip" data-tooltip="Choices">freeroam</kbd> :
-Set whether monsters spawned by this squadmaker use nodes to freeroam and find their way or don't use nodes at all.
+Set whether monsters spawned by this squadmaker use nodes to free roam and find their way or don't use nodes at all.
 <div class="accordion">
 <input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-10">
@@ -338,7 +338,7 @@ Choices:
 <ul>
 <li class="imagepadding" markdown="1"><b>1 </b> : WaitTillSeen : Monster will have it's AI disabled until it sees player (even if something starts attacking monster).</li>
 <li class="imagepadding" markdown="1"><b>2 </b> : Gag : Monster's idle sounds are muted at map start (until woken up).</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : MonsterClip : Monster is affected by func_monsterclip.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : MonsterClip : Monster is affected by [func_monsterclip](../func_monsterclip).</li>
 <li class="imagepadding" markdown="1"><b>16</b> : Prisoner : Causes the spawned monster to be an enemy regardless of the ally setting, but it won't attack or harm you in any way.</li>
 <li class="imagepadding" markdown="1"><b>32 </b> : SquadLeader : Choice_Description_here</li>
 <li class="imagepadding" markdown="1"><b>128</b> : WaitForScript : If set, monster won't react to anything after being spawned until it enters a scripted sequence.</li>

@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to start fade effect. Any trigger signal type accepted. Triggering fade that is in progress restarts fade. Can be killtargeted but fade effect will play to it's end.
+Set name of {{ entname }} so other entities can trigger it to start fade effect. Any trigger signal type accepted. Triggering fade that is in progress restarts fade. Can be kill-targeted but fade effect will play to it's end.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Duration (seconds)</b></span> <kbd  class="tooltip" data-tooltip="string">duration</kbd> :

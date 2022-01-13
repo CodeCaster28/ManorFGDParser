@@ -1,10 +1,10 @@
 {
   "Classname": "env_global",
-  "Description": "The env_global entity provides the decisive functionality for allowing entity-interaction between maps. More accurately, it allows you to create/set a global variable by a name of your choice. Global variables are set to a use-type of 'On' or 'Off', which can then be used by some entities as their state. E.g. the multisource entity can be set to read its state from a global variable at map load, unless you are having triggers targeting it. This could, for example, be used to make a key for some door collected in one map allow a specific door to be opened in another map.",
+  "Description": "The env_global entity provides the decisive functionality for allowing entity-interaction between maps. More accurately, it allows you to create/set a global variable by a name of your choice. Global variables are set to a use-type of 'On' or 'Off', which can then be used by some entities as their state. E.g. the [multisource](../multisource) entity can be set to read its state from a global variable at map load, unless you are having triggers targeting it. This could, for example, be used to make a key for some door collected in one map allow a specific door to be opened in another map.",
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to set global state. Any trigger signal type accepted. Can be killtargeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to set global state. Any trigger signal type accepted. Can be kill-targeted.",
       "keyChoices": []
     },
     {

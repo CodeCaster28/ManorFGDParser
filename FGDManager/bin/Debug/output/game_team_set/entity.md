@@ -5,7 +5,7 @@ title: game_team_set
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Originally created by Valve, doesn't work in Sven Co-op, where there is only one team. You can still make teams by using [trigger_changevalue](../trigger_changevalue) and change !activator's "classify" key.</div>
 </div>
 </div>
 ###Keyvalues
@@ -32,14 +32,12 @@ Same as target, except that this supposedly causes the specified entity/entities
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Keyvalue_Description_here
+
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Remove On fire : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : Remove On fire</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

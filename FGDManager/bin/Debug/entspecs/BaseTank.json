@@ -70,12 +70,12 @@
     },
     {
       "keyName": "barrely",
-      "keyDescription": "How wide the barrel is, horizontaly (x axis).",
+      "keyDescription": "How wide the barrel is, horizontally (x axis).",
       "keyChoices": []
     },
     {
       "keyName": "barrelz",
-      "keyDescription": "How wide the barrel is, veticaly (z axis).",
+      "keyDescription": "How wide the barrel is, vetically (z axis).",
       "keyChoices": []
     },
     {
@@ -186,7 +186,7 @@
     },
     {
       "keyName": "relation_none",
-      "keyDescription": "Set relationship towards entities classificated as \"unknown\".",
+      "keyDescription": "Set relationship towards entities classified as \"unknown\".",
       "keyChoices": [
         {
           "choiceValue": "-2",

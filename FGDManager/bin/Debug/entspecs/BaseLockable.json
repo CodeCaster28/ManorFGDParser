@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "locked_sound",
-      "keyDescription": "Sound to play when a player tries to use the {{ entname }} but it's locked because it has a targetname or uses a multisource entity.",
+      "keyDescription": "Sound to play when a player tries to use the {{ entname }} but it's locked because it has a targetname or uses a [multisource](../multisource) entity.",
       "keyChoices": [
         {
           "choiceValue": "0",
@@ -104,7 +104,7 @@
     },
     {
       "keyName": "locked_sentence",
-      "keyDescription": "Sentence to play when a player tries to use {{ entname }} but it's locked because it has a targetname or uses a multisource entity. Sentences are picked from sound/default_sentences.txt file.",
+      "keyDescription": "Sentence to play when a player tries to use {{ entname }} but it's locked because it has a targetname or uses a [multisource](../multisource) entity. Sentences are picked from sound/default_sentences.txt file.",
       "keyChoices": [
         {
           "choiceValue": "0",

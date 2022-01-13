@@ -5,14 +5,14 @@ title: info_overview_point
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">You can make all visleafs be visible from vis leaf where this entity is created. Also you can make a specified leaf visible from all other visleafs. Just place entity in a place where you want overview point. If reversed, place it at the center of a model/entity enclosed in a hollowed area (that are not always visible despite to player's position in the world) you wish to be visible from within the whole map.</div>
 </div>
 </div>
 ###Keyvalues
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Reversed</b></span> <kbd  class="tooltip" data-tooltip="choices">reverse</kbd> :
-Keyvalue_Description_here
+If set to yes, instead of making this leaf an overview point for all other leafs, make this leaf visible from every place of the map.
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -21,11 +21,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : No : Choice_Description_here</li>
-<li><b>1</b> : Yes : Choice_Description_here</li>
+<li><b>0</b> : No</li>
+<li><b>1</b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

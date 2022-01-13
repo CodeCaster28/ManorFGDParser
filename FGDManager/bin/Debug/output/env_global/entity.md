@@ -5,7 +5,7 @@ title: env_global
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">The env_global entity provides the decisive functionality for allowing entity-interaction between maps. More accurately, it allows you to create/set a global variable by a name of your choice. Global variables are set to a use-type of 'On' or 'Off', which can then be used by some entities as their state. E.g. the multisource entity can be set to read its state from a global variable at map load, unless you are having triggers targeting it. This could, for example, be used to make a key for some door collected in one map allow a specific door to be opened in another map.</div>
+<div class="column entityentry" markdown="1">The env_global entity provides the decisive functionality for allowing entity-interaction between maps. More accurately, it allows you to create/set a global variable by a name of your choice. Global variables are set to a use-type of 'On' or 'Off', which can then be used by some entities as their state. E.g. the [multisource](../multisource) entity can be set to read its state from a global variable at map load, unless you are having triggers targeting it. This could, for example, be used to make a key for some door collected in one map allow a specific door to be opened in another map.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to set global state. Any trigger signal type accepted. Can be killtargeted.
+Set name of {{ entname }} so other entities can trigger it to set global state. Any trigger signal type accepted. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global State to Set</b></span> <kbd  class="tooltip" data-tooltip="string">globalstate</kbd> :

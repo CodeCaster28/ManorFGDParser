@@ -32,7 +32,7 @@ Set name of {{ entname }} so other entities can trigger it.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">tinfilter</kbd> :
-Semicolon-seperated list of targetnames to either be forbidden or required (specified in "Name In Filter Type") on the caller-entity. Can also specify only one.
+Semicolon-separated list of targetnames to either be forbidden or required (specified in "Name In Filter Type") on the caller-entity. Can also specify only one.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name In Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">tinfiltertype</kbd> :
@@ -53,7 +53,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Class In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">cinfilter</kbd> :
-Semicolon-seperated list of classnames to either be forbidden or required (specified in "Class In Filter Type") on the caller-entity. Can also specify only one.
+Semicolon-separated list of classnames to either be forbidden or required (specified in "Class In Filter Type") on the caller-entity. Can also specify only one.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Class In Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">cinfiltertype</kbd> :
@@ -74,7 +74,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name Out Filter</b></span> <kbd  class="tooltip" data-tooltip="string">toutfilter</kbd> :
-Semicolon-seperated list of targetnames to either be forbidden or required (specified in "Name Out Filter Type") on targeted entities. Can also specify only one.
+Semicolon-separated list of targetnames to either be forbidden or required (specified in "Name Out Filter Type") on targeted entities. Can also specify only one.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name Out Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">toutfiltertype</kbd> :
@@ -232,12 +232,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: Inventory rules failed</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_fail</kbd> :
-Entity to trigger whenever test result is negative.
+Entity or entities to trigger whenever test result is negative.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
-For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by "copying" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it.
-For model-based point entities: copy display model of specified entity, to use it's model instead. Using "Custom model" is more appropriate in most cases, however, when it's not possible, use "ZHLT Copy Lighting From Target".
+For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by "copying" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it. For model-based point entities: copy display model of specified entity, to use it's model instead. Using "Custom model" is more appropriate in most cases, however, when it's not possible, use "ZHLT Copy Lighting From Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Copy Lighting From Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_copylight</kbd> :

@@ -5,7 +5,7 @@ title: custom_precache
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Allows you to set 9 custom models, 9 custom sounds and 9 custom skies to be precached. Note that model and sound replacements done through model and/or sound replacement file are already precached automatically. In case 9 of either sort do not suffice for your case, create another custom_precache entity. Model path starts in Sven Co-op's directory. You should put your models into the 'models'-folder. Sound path starts in the 'sound'-folder. Creating subfolders by your map's name is adviced. As for skies, it allows to additional envmaps in cause you use trigger_changevalue or trigger_copyvalue towards trigger_changesky (as default target sky in trigger_changesky is precached automatically)</div>
+<div class="column entityentry" markdown="1">Allows you to set 9 custom models, 9 custom sounds and 9 custom skies to be precached. Note that model and sound replacements done through model and/or sound replacement file are already precached automatically. In case 9 of either sort do not suffice for your case, create another custom_precache entity. Model path starts in Sven Co-op's directory. You should put your models into the 'models'-folder. Sound path starts in the 'sound'-folder. Creating subfolders by your map's name is advised. As for skies, it allows to additional envmaps in cause you use trigger_changevalue or trigger_copyvalue towards trigger_changesky (as default target sky in trigger_changesky is precached automatically)</div>
 </div>
 </div>
 ###Keyvalues

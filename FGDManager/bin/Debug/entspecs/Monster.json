@@ -16,7 +16,7 @@
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Monster is affected by func_monsterclip."
+          "choiceDescription": "Monster is affected by [func_monsterclip](../func_monsterclip)."
         },
         {
           "choiceValue": "16",
@@ -121,13 +121,13 @@
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Invert relationship (e.g. monster_barney becames enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c."
+          "choiceDescription": "Invert relationship (e.g. monster_barney becomes enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c."
         }
       ]
     },
     {
       "keyName": "displayname",
-      "keyDescription": "If set, this will overwrite the monster's default in-game name, which appears in the HUD monsterinfo, which can be enabled/disabled using the CVar 'mp_allowmonsterinfo'. You can use '\n' here to perform a line-break.",
+      "keyDescription": "If set, this will overwrite the monster's default in-game name, which appears in the HUD monster info, which can be enabled/disabled using the CVar 'mp_allowmonsterinfo'. You can use '\n' here to perform a line-break.",
       "keyChoices": []
     },
     {
@@ -179,7 +179,7 @@
     },
     {
       "keyName": "freeroam",
-      "keyDescription": "Set whether monsters spawned by this squadmaker use nodes to freeroam and find their way or don't use nodes at all.",
+      "keyDescription": "Set whether monsters spawned by this squadmaker use nodes to free roam and find their way or don't use nodes at all.",
       "keyChoices": [
         {
           "choiceValue": "0 ",

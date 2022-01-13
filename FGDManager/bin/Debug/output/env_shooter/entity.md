@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to start shooting sprites or models. Can't be triggered when model/sprite shooting is in progress. Can be killtargeted but gibs stay.
+Set name of {{ entname }} so other entities can trigger it to start shooting sprites or models. Can't be triggered when model/sprite shooting is in progress. Can be kill-targeted but gibs stay.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :

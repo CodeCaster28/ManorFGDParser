@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "health",
-      "keyDescription": "Set how many hitpoints the {{ entname }} has.",
+      "keyDescription": "Set how many hit points the {{ entname }} has.",
       "keyChoices": []
     },
     {

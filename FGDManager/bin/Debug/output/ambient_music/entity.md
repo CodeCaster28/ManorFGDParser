@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to play music. Depending on received signal: 'Off'- stop the music, 'Toggle'- play/stop music interchangeably, 'On'- start the music. Kill-targetting this entity will stop music from playing.
+Set name of {{ entname }} so other entities can trigger it to play music. Depending on received signal: 'Off'- stop the music, 'Toggle'- play/stop music interchangeably, 'On'- start the music. Kill-targeting this entity will stop music from playing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound File</b></span> <kbd  class="tooltip" data-tooltip="sound">message</kbd> :

@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "toutfilter",
-      "keyDescription": "Semicolon-seperated list of targetnames to either be forbidden or required (specified in \"Name Out Filter Type\") on targeted entities. Can also specify only one.",
+      "keyDescription": "Semicolon-separated list of targetnames to either be forbidden or required (specified in \"Name Out Filter Type\") on targeted entities. Can also specify only one.",
       "keyChoices": []
     },
     {

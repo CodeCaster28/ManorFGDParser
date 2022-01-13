@@ -5,7 +5,7 @@ title: game_zone_player
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This brush entity, when triggered, allows to trigger different entities for players, depending on whether they are inside or outside of this entity and to set the value of two different [game_counter](../game_counter) entities to the amount of players within this zone and to the amount of players outside of this zone. All targets receive same trigger state as game_zone_player received, and passes players as an '!activator'.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,12 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to check players presence and trigger the targets. All signal types are accepted. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
-For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by "copying" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it.
-For model-based point entities: copy display model of specified entity, to use it's model instead. Using "Custom model" is more appropriate in most cases, however, when it's not possible, use "ZHLT Copy Lighting From Target".
+For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by "copying" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it. For model-based point entities: copy display model of specified entity, to use it's model instead. Using "Custom model" is more appropriate in most cases, however, when it's not possible, use "ZHLT Copy Lighting From Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Copy Lighting From Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_copylight</kbd> :
@@ -89,26 +88,25 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target for IN players</b></span> <kbd  class="tooltip" data-tooltip="target_destination">intarget</kbd> :
-Keyvalue_Description_here
+Target to trigger for every player who is within the game_zone_player entity when triggered, individually. Sends same trigger state signal as received and passes all players inside {{ entname }}'s volume as !activator's.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target for OUT players</b></span> <kbd  class="tooltip" data-tooltip="target_destination">outtarget</kbd> :
-Keyvalue_Description_here
+Target to trigger for every player who is outside of the game_zone_player entity when triggered, individually. Sends same trigger state signal as received and passes all players outside {{ entname }}'s volume as !activator's.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Counter for IN players</b></span> <kbd  class="tooltip" data-tooltip="target_destination">incount</kbd> :
-Keyvalue_Description_here
+Name of one or more [game_counter](../game_counter) entities whose count values are to be set to the amount of players within the zone.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Counter for OUT players</b></span> <kbd  class="tooltip" data-tooltip="target_destination">outcount</kbd> :
-Keyvalue_Description_here
+Name of one or more [game_counter](../game_counter) entities whose count values are to be set to the amount of players outside of the zone.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Ignore Dead Players : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Ignore Dead Players : If set, dead players are skipped entirely, as if they weren't on the server in the first place.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices red">Gibbed players are always being ignored.</div>

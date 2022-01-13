@@ -16,15 +16,15 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to apply sound effect to entities in radius- only when 'Use only' and 'Radius' are used. Can be killtargeted but already applied effects persist.
+Set name of {{ entname }} so other entities can trigger it to apply sound effect to entities in radius- only when 'Use only' and 'Radius' are used. Can be kill-targeted but already applied effects persist.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Radius</b></span> <kbd  class="tooltip" data-tooltip="integer">radius</kbd> :
-Radius, in units, in which a player has to be for the ambiental effect to change for him. The ambiental effect will stay after leaving the radius, until another env_sound is entered. If set to 0, the radius won't be used, this is useful when entity is "Use only".
+Radius, in units, in which a player has to be for the ambient effect to change for him. The ambient effect will stay after leaving the radius, until another env_sound is entered. If set to 0, the radius won't be used, this is useful when entity is "Use only".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Room Type</b></span> <kbd  class="tooltip" data-tooltip="Choices">roomtype</kbd> :
-Pick the ambiental effect here. There are 29 options.
+Pick the ambient effect here. There are 29 options.
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

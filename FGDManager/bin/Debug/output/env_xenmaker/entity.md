@@ -5,7 +5,7 @@ title: env_xenmaker
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">The env_xenmaker allows to spawn monsters with teleportation and beam effects. It can be set to act as a spawn-effect-data-template for squadmakers, in case you want to pair this spawn-effect with the customizability-features of the [squadmaker](../squadmaker) entity.</div>
+<div class="column entityentry" markdown="1">The env_xenmaker allows to spawn monsters with teleportation and beam effects. It can be set to act as a spawn-effect-data-template for [squadmakers](../squadmaker), in case you want to pair this spawn-effect with the customizability-features of the [squadmaker](../squadmaker) entity.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to spawn monster (if place avaiable). Any trigger signal type accepted. Can be killtargeted. Monster in queue (those who couldn't spawn because there was no room for them) won't spawn.
+Set name of {{ entname }} so other entities can trigger it to spawn monster (if place available). Any trigger signal type accepted. Can be kill-targeted. Monster in queue (those who couldn't spawn because there was no room for them) won't spawn.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :

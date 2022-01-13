@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "target",
-      "keyDescription": "The name of the first [path_corner](../path_corner) (where the train starts). The {{ entname }} is teleported to this position on map start, no matter whereit's placed.",
+      "keyDescription": "The name of the first [path_corner](../path_corner) (where the train starts). The {{ entname }} is teleported to this position on map start, no matter where it's placed.",
       "keyChoices": []
     },
     {

@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to start or stop sprite movement. Trigger signals are handled as follow: 'On' to start movement, 'Off' to stop movement, 'Toggle' to toggle movement. Can be killtargeted but sprite is not removed, only the 'train' part.
+Set name of {{ entname }} so other entities can trigger it to start or stop sprite movement. Trigger signals are handled as follow: 'On' to start movement, 'Off' to stop movement, 'Toggle' to toggle movement. Can be kill-targeted but sprite is not removed, only the 'train' part.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
@@ -175,7 +175,7 @@ Allows you to setup a sound replacement file for the {{ entname }} sounds. The p
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>First stop target</b></span> <kbd  class="tooltip" data-tooltip="target_source">target</kbd> :
-The name of the first [path_corner](../path_corner) (where the train starts). The {{ entname }} is teleported to this position on map start, no matter whereit's placed.
+The name of the first [path_corner](../path_corner) (where the train starts). The {{ entname }} is teleported to this position on map start, no matter where it's placed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed (units per second)</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :

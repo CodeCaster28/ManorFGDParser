@@ -5,7 +5,7 @@ title: env_weather
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Doesn't work. The idea was to create entity that have weather effects but that was too unoptimised to be added to game.</div>
 </div>
 </div>
 ###Keyvalues
@@ -89,8 +89,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
-For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by "copying" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it.
-For model-based point entities: copy display model of specified entity, to use it's model instead. Using "Custom model" is more appropriate in most cases, however, when it's not possible, use "ZHLT Copy Lighting From Target".
+For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by "copying" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it. For model-based point entities: copy display model of specified entity, to use it's model instead. Using "Custom model" is more appropriate in most cases, however, when it's not possible, use "ZHLT Copy Lighting From Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Copy Lighting From Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_copylight</kbd> :
@@ -158,15 +157,15 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite (or Model) name</b></span> <kbd  class="tooltip" data-tooltip="string">drop_model</kbd> :
-Keyvalue_Description_here
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Scale</b></span> <kbd  class="tooltip" data-tooltip="string">drop_scale</kbd> :
-Keyvalue_Description_here
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Draw Type / Orientation</b></span> <kbd  class="tooltip" data-tooltip="choices">drop_vp_type</kbd> :
-Keyvalue_Description_here
+
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -175,27 +174,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : Default : Choice_Description_here</li>
-<li><b>3</b> : Parallel : Choice_Description_here</li>
-<li><b>1</b> : Parallel Upright : Choice_Description_here</li>
-<li><b>5</b> : Parallel Orientated : Choice_Description_here</li>
-<li><b>2</b> : Facing Upright : Choice_Description_here</li>
-<li><b>4</b> : Orientated : Choice_Description_here</li>
+<li><b>0</b> : Default</li>
+<li><b>3</b> : Parallel</li>
+<li><b>1</b> : Parallel Upright</li>
+<li><b>5</b> : Parallel Orientated</li>
+<li><b>2</b> : Facing Upright</li>
+<li><b>4</b> : Orientated</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Splash Sprite (or Model) name</b></span> <kbd  class="tooltip" data-tooltip="string">splash_model</kbd> :
-Keyvalue_Description_here
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Splash Sprite Scale</b></span> <kbd  class="tooltip" data-tooltip="string">splash_scale</kbd> :
-Keyvalue_Description_here
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Splash Sprite Draw Type / Orientation</b></span> <kbd  class="tooltip" data-tooltip="choices">splash_vp_type</kbd> :
-Keyvalue_Description_here
+
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -204,39 +203,37 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : Default : Choice_Description_here</li>
-<li><b>3</b> : Parallel : Choice_Description_here</li>
-<li><b>1</b> : Parallel Upright : Choice_Description_here</li>
-<li><b>5</b> : Parallel Orientated : Choice_Description_here</li>
-<li><b>2</b> : Facing Upright : Choice_Description_here</li>
-<li><b>4</b> : Orientated : Choice_Description_here</li>
+<li><b>0</b> : Default</li>
+<li><b>3</b> : Parallel</li>
+<li><b>1</b> : Parallel Upright</li>
+<li><b>5</b> : Parallel Orientated</li>
+<li><b>2</b> : Facing Upright</li>
+<li><b>4</b> : Orientated</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Density</b></span> <kbd  class="tooltip" data-tooltip="integer">density</kbd> :
-Keyvalue_Description_here
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Angle Variance</b></span> <kbd  class="tooltip" data-tooltip="integer">angle_variance</kbd> :
-Keyvalue_Description_here
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed Variance</b></span> <kbd  class="tooltip" data-tooltip="integer">speed_variance</kbd> :
-Keyvalue_Description_here
+
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start On : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Start On</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

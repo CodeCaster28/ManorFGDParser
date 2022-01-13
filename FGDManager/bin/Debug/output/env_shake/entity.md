@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to apply a screen shake. Multiple triggering will override previous shake. Can be killtargeted but shake won't stop playing until finished.
+Set name of {{ entname }} so other entities can trigger it to apply a screen shake. Multiple triggering will override previous shake. Can be kill-targeted but shake won't stop playing until finished.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Amplitude (degrees; 0-16)</b></span> <kbd  class="tooltip" data-tooltip="string">amplitude</kbd> :

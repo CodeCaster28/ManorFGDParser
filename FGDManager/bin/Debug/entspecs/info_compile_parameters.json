@@ -1,6 +1,6 @@
 {
   "Classname": "info_compile_parameters",
-  "Description": "Entity_Description_here",
+  "Description": "Set various map compile parameters without need of using batch file for advanced compilation settings. Makes compile settings inseparable from map, very useful when multiple mappers are involved in creation process. No extra actions are needed- place entity anywhere, tweak desired keyvalues and during compile process all parameters will be applied automatically. Each keyvalue sets parameter for compilers, in spawnflags all parameters for each compilers (CSG, BSP, VIS, RAD) can be disabled- with separated option for parameters shared bewteen compilers. See official ZHLT parameters documentation: [ZHLT Command Reference](http://zhlt.info/command-reference.html). You can also check my advanced lightning tutorial that covers basics of compile process and explains most important parameters: Advanced Compilation.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,1085 +8,1085 @@
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Ignore parameters shared between compilers."
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Ignore CSG parameters."
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Ignore BSP parameters."
         },
         {
           "choiceValue": "8 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Ignore VIS parameters."
         },
         {
           "choiceValue": "16 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Ignore RAD parameters."
         }
       ]
     },
     {
       "keyName": "verbose",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Compile with verbose messages.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "noinfo",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Do not show tool configuration information.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "nolog",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Don't generate the compile logfiles.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "dev",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Compile with developer message.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "5 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "6 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "estimate",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Display estimated time during compile.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "chart",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Display bsp statitics.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "threads",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Manually specify the number of threads to run.",
       "keyChoices": []
     },
     {
       "keyName": "priority",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Run program an altered priority level.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "texdata",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Alter maximum texture memory limit (in KB).",
       "keyChoices": []
     },
     {
       "keyName": "lightdata",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set custom lightdata maximum (MB).",
       "keyChoices": []
     },
     {
       "keyName": "csg",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set to compile CSG.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_nowadtextures",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Include all used textures into bsp.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_noclip",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Don't process the clipping hull (not for final runs).",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_clipeconomy",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disables redundant clipnode stripping.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_cliptype",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Select the clip hull generation method.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_hullfile",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Load a custom hullfile.",
       "keyChoices": []
     },
     {
       "keyName": "csg_noskyclip",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disable automatic clipping of SKY brushes.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_tiny",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Minimum brush face surface area before it is discarded.",
       "keyChoices": []
     },
     {
       "keyName": "csg_brushunion",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Threshold to warn about overlapping brushes.",
       "keyChoices": []
     },
     {
       "keyName": "csg_nullfile",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Specify a file containing a list of entities to retexture with the NULL texture.",
       "keyChoices": []
     },
     {
       "keyName": "csg_wadcfgfile",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Manually specifies the path to the wad.cfg file.",
       "keyChoices": []
     },
     {
       "keyName": "csg_wadcfgname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Use a custom wad configuration in the wad.cfg custom wad configuration file.",
       "keyChoices": []
     },
     {
       "keyName": "csg_wadautodetect",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Enable automatic wad detection.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_nonulltex",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disables NULL texture stripping.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_nullifytrigger",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set all trigger textures to NULL.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_nolightopt",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Remove light duplicates to save memory.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_notextconvert",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "csg_scale",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "bsp",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set to compile CSG.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_subdivide",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sets the face subdivide size.",
       "keyChoices": []
     },
     {
       "keyName": "bsp_maxnodesize",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sets the maximum portal node size.",
       "keyChoices": []
     },
     {
       "keyName": "bsp_notjunc",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Don't break edges on t-junctions (not for final runs).",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_nobrink",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disables feature that fixes brinks error. You need to have strong reasons for disabling it.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_noclip",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Don't process the clipping hull (not for final runs).",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_nofill",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Don't fill outside- will mask LEAKs (not for final runs).",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_noinsidefill",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disable automatic empty areas filling.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_noopt",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Skip plane optimization on output.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_noclipnodemerge",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "When used, disables clipnode merging, which increased clipnodes memory.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_nonulltex",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disables NULL texture stripping.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_nohull2",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "This one is mystery for me.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "bsp_viewportal",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "vis",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set to compile VIS.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set to compile RAD.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_waddir",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Directory to search for WAD. Leave so it pick the same WADs as map file.",
       "keyChoices": []
     },
     {
       "keyName": "rad_vismatrix",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Usage of vismatrix.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_bounce",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set number of radiosity bounces.",
       "keyChoices": []
     },
     {
       "keyName": "rad_ambient",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set ambient world light (0.0 to 1.0, r g b).",
       "keyChoices": []
     },
     {
       "keyName": "rad_limiter",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "rad_circus",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Enable 'circus' mode for locating unlit lightmaps.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_nospread",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_nopaque",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disable all entities using zhlt_lightflags 2 to block light.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_smooth",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set smoothing threshold for blending (in degrees).",
       "keyChoices": []
     },
     {
       "keyName": "rad_smooth2",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "rad_chop",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set radiosity patch size for normal textures.",
       "keyChoices": []
     },
     {
       "keyName": "rad_texchop",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set radiosity patch size for texture light faces.",
       "keyChoices": []
     },
     {
       "keyName": "rad_notexscale",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Do not scale radiosity patches with texture scale.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_subdivide",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sets the face subdivide size.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_coring",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set lighting threshold before blackness.",
       "keyChoices": []
     },
     {
       "keyName": "rad_dlight",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set direct lighting threshold.",
       "keyChoices": []
     },
     {
       "keyName": "rad_dscale",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set direct lighting scale.",
       "keyChoices": []
     },
     {
       "keyName": "rad_nolerp",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disable three multi-point interpolation for radiosity patch blending, use nearest point sample instead.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_fade",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set global fade (larger values = shorter lights).",
       "keyChoices": []
     },
     {
       "keyName": "rad_texlightgap",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Pushes light from texture lights by specified units value, what removes \"light bleeding\" problem.",
       "keyChoices": []
     },
     {
       "keyName": "rad_scale",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set global light scaling value.",
       "keyChoices": []
     },
     {
       "keyName": "rad_colourscale",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sets different lightscale values for r, g ,b.",
       "keyChoices": []
     },
     {
       "keyName": "rad_gamma",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set global gamma value.",
       "keyChoices": []
     },
     {
       "keyName": "rad_colourgamma",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sets different gamma values for r, g, b.",
       "keyChoices": []
     },
     {
       "keyName": "rad_sky",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set ambient sunlight contribution in the shade outside.",
       "keyChoices": []
     },
     {
       "keyName": "rad_lights",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Manually specify a lights.rad file to use.",
       "keyChoices": []
     },
     {
       "keyName": "rad_noskyfix",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disable light_environment being global.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_incremental",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Use or create an incremental transfer list file.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_dump",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Dumps light patches to a file for RAD debugging info.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_colourjitter",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Adds noise, monochromatic, for dithering.",
       "keyChoices": []
     },
     {
       "keyName": "rad_jitter",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Adds noise, independent colours, for dithering.",
       "keyChoices": []
     },
     {
       "keyName": "rad_customshadowwithbounce",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Enable custom shadows for bounced light.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_rgbtransfers",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Enables RGB Transfers (for custom shadows).",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_minlight",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Use to determine minimal lightning level for this map, in a range from 0 to 255.",
       "keyChoices": []
     },
     {
       "keyName": "rad_compresstransfers",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_compressrgbtransfers",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_softsky",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Makes better light_environment diffusion.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
@@ -1104,101 +1104,95 @@
     },
     {
       "keyName": "rad_depth",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Controls thickness tolerance of the walls whose are affected by info_translucent entity.",
       "keyChoices": []
     },
     {
       "keyName": "rad_blockopaque",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Disabling it stop preventing black areas on opaque entities from leaking out.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_notextures",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_texreflectgamma",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Normally, the surface hit by bounced light has gamma value dependent on that light. It is set to 1.76 by default, and can be customized by this command.",
       "keyChoices": []
     },
     {
       "keyName": "rad_texreflectscale",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Normally, the bounced light brightness depends on texture of the surface from which this light is bouncing. It's set to 0.7 by default, and it's fully customizable by parameter of this command.",
       "keyChoices": []
     },
     {
       "keyName": "rad_blur",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Controls shadow sharpness. The higher value is, the more blurred and less blocky shadows are.",
       "keyChoices": []
     },
     {
       "keyName": "rad_noemitterrange",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "rad_nobleedfix",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

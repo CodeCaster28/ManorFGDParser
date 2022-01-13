@@ -59,7 +59,7 @@
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Nothign changes."
+          "choiceDescription": "Nothing changes."
         },
         {
           "choiceValue": "1 ",
@@ -77,7 +77,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play animation. Kill-targetting this entity will remove entity from map but won't stop animation.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play animation. Kill-targeting this entity will remove entity from map but won't stop animation.",
       "keyChoices": []
     },
     {

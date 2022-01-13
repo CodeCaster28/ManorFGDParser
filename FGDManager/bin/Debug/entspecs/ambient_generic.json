@@ -1,10 +1,10 @@
 {
   "Classname": "ambient_generic",
-  "Description": "This entity is used to play sound-files. They can be looping or not. You can use this to play music as well but [ambient_music](../ambient_music) fits more for this purpouse.",
+  "Description": "This entity is used to play sound-files. They can be looping or not. You can use this to play music as well but [ambient_music](../ambient_music) fits more for this purpose.",
   "KeyDescriptions": [
   	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play sound. Depending on received signal: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targetting this entity will stop sound from playing.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play sound. Depending on received signal: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targeting this entity will stop sound from playing.",
       "keyChoices": []
     },
     {

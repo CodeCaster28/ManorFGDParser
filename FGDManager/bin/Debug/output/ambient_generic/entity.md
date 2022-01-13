@@ -5,7 +5,7 @@ title: ambient_generic
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This entity is used to play sound-files. They can be looping or not. You can use this to play music as well but [ambient_music](../ambient_music) fits more for this purpouse.</div>
+<div class="column entityentry" markdown="1">This entity is used to play sound-files. They can be looping or not. You can use this to play music as well but [ambient_music](../ambient_music) fits more for this purpose.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to play sound. Depending on received signal: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targetting this entity will stop sound from playing.
+Set name of {{ entname }} so other entities can trigger it to play sound. Depending on received signal: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targeting this entity will stop sound from playing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound File</b></span> <kbd  class="tooltip" data-tooltip="sound">message</kbd> :

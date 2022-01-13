@@ -1,10 +1,10 @@
 {
   "Classname": "game_player_hurt",
-  "Description": "Entity_Description_here",
+  "Description": "Point entity which will apply damage to its activator. For a more feature-rich version see [trigger_hurt_remote](../trigger_hurt_remote).",
   "KeyDescriptions": [
     {
       "keyName": "dmg",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set how much damage to apply. Can kill the activator. Can be negative, but won't heal above 100, except when 'starthealth' is greater than that.",
       "keyChoices": []
     },
     {
@@ -13,20 +13,31 @@
       "keyChoices": [
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "The game_player_hurt is removed from the game after being used once."
         }
       ]
     },
     {
       "keyName": "master",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and it will not deal damage to player. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.",
       "keyChoices": []
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Entity or entities to trigger when damage is dealt. It sends same trigger state signal as it has received.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply damage to activator. All signal types are accepted. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "killtarget",
+      "keyDescription": "Entity or entities to destroy when damage is dealt."
     }
   ],
   "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
+    "Unlike other entities, game_player_hurt sends the same output type as received, instead of 'Toggle'."
   ]
 }

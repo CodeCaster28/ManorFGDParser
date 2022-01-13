@@ -1,6 +1,6 @@
 {
   "Classname": "game_counter_set",
-  "Description": "Entity_Description_here",
+  "Description": "Allows you to set the value of a [game_counter](../game_counter) and have it trigger if the set value matches the game_counter's target value.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,25 +8,29 @@
       "keyChoices": [
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "The game_counter_set will be removed from the game after firing."
         }
       ]
     },
     {
       "keyName": "master",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and won't work. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will work again and can set game_counter value. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.",
       "keyChoices": []
     },
     {
       "keyName": "frags",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Value to set the game_counter's value to. Note that if the targeted game_counter is set to fire if over the value, it will fire as well.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to set it's target game_counter value. All signal types are accepted. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Name of game_counter to set the value.",
       "keyChoices": []
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

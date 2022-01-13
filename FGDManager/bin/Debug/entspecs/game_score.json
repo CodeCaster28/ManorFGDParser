@@ -1,6 +1,6 @@
 {
   "Classname": "game_score",
-  "Description": "Entity_Description_here",
+  "Description": "Gives score points to the triggering player, as can be seen on the multiplayer scoreboard.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,29 +8,40 @@
       "keyChoices": [
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "When reducing score as a means of penalty, this allows the score to go below zero."
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "All players receive the specified amount of points, instead of only the triggering player."
         }
       ]
     },
     {
       "keyName": "points",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of points to add to the score. Can be negative.",
       "keyChoices": []
     },
     {
       "keyName": "master",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and it will not give points to activating player. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.",
       "keyChoices": []
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to give points to player (he must be an !activator of triggering chain). All signal types are accepted. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Non-functional in {{ entname }}."
+    },
+    {
+      "keyName": "killtarget",
+      "keyDescription": "Non-functional in {{ entname }}."
+    },
+    {
+      "keyName": "delay",
+      "keyDescription": "Non-functional in {{ entname }}."
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

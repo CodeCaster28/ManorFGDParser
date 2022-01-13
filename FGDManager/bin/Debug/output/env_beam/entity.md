@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to enable/disable beam. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle beam. Can be killtargeted.
+Set name of {{ entname }} so other entities can trigger it to enable/disable beam. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle beam. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Start Entity</b></span> <kbd  class="tooltip" data-tooltip="target_destination">LightningStart</kbd> :
@@ -120,7 +120,7 @@ Average damage per second for beams with infinite lifetime. Damage in the moment
 <li class="imagepadding" markdown="1"><b>8 </b> : Ring : Set it to form a circled beam which uses start and end point as the ring's intersection points, with the ring's center being in the middle between them. This requires start and end entity to be brush entities. Use of two func_trains with origin brushes is encouraged, as that is seen in the Half-Life single player! The ring always aligns itself to lie on the horizon of either of the two points looking at the other in respect to the z-axis.</li>
 <li class="imagepadding" markdown="1"><b>16</b> : StartSparks : If set, sparks will be emitted at the start entity.</li>
 <li class="imagepadding" markdown="1"><b>32</b> : EndSparks : If set, sparks will be emitted at the end entity.</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Decal End : If set, a bullethole decal will be created whenever the beam hits a surface.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : Decal End : If set, a bullet hole decal will be created whenever the beam hits a surface.</li>
 <li class="imagepadding" markdown="1"><b>128</b> : Shade Start : If set, the beam will fade invisible towards the start point.</li>
 <li class="imagepadding" markdown="1"><b>256</b> : Shade End : If set, the beam will fade invisible towards the end point.</li>
 </ul>
@@ -134,7 +134,7 @@ Average damage per second for beams with infinite lifetime. Damage in the moment
 <div class="notices blue">Setting "Sprite name" to 'sprite_01.spr' with moderate "Amount of Noise" makes it look like magical (but not too pretty) fairy.</div>
 <div class="notices red">Ring-beams with infinite lifetime do not react to getting triggered off.</div>
 <div class="notices red">If the 'Ring'-flag is set, damage will be applied as if the beam still was linear. (Only on a line between start and end point)</div>
-<div class="notices red">Non-moving ring-beams with infinite lifetime ocassionally disappear for specific clients completely. Set a lifetime of e.g. one second and a 'Strike again time'-value of '0' to encounter this issue.</div>
+<div class="notices red">Non-moving ring-beams with infinite lifetime occasionally disappear for specific clients completely. Set a lifetime of e.g. one second and a 'Strike again time'-value of '0' to encounter this issue.</div>
 <div class="notices red">Ring-beams always apply damage as if they were temporary beams. (In moment of creation)</div>
 <div class="notices red">Beams with limited lifetime cannot have 'Shade start' nor 'Shade end'.</div>
 <div class="notices red">Non-toggleable env_beams act as toggleable env_beams do, except that they can never be turned off again.</div>

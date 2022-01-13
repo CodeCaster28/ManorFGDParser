@@ -460,6 +460,7 @@
       <Content Include="bin\Debug\entspecs\ZHLTbmodel.json" />
       <Content Include="bin\Debug\entspecs\ZHLTpoint.json" />
       <Content Include="bin\Debug\sven-coop.fgd" />
+      <Content Include="TODO.txt" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

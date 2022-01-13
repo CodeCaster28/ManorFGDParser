@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start or stop sprite movement. Trigger signals are handled as follow: 'On' to start movement, 'Off' to stop movement, 'Toggle' to toggle movement. Can be killtargeted but sprite is not removed, only the 'train' part.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start or stop sprite movement. Trigger signals are handled as follow: 'On' to start movement, 'Off' to stop movement, 'Toggle' to toggle movement. Can be kill-targeted but sprite is not removed, only the 'train' part.",
       "keyChoices": []
     },
 	{

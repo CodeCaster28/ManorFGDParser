@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "tinfilter",
-      "keyDescription": "Semicolon-seperated list of targetnames to either be forbidden or required (specified in \"Name In Filter Type\") on the caller-entity. Can also specify only one.",
+      "keyDescription": "Semicolon-separated list of targetnames to either be forbidden or required (specified in \"Name In Filter Type\") on the caller-entity. Can also specify only one.",
       "keyChoices": []
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "keyName": "cinfilter",
-      "keyDescription": "Semicolon-seperated list of classnames to either be forbidden or required (specified in \"Class In Filter Type\") on the caller-entity. Can also specify only one.",
+      "keyDescription": "Semicolon-separated list of classnames to either be forbidden or required (specified in \"Class In Filter Type\") on the caller-entity. Can also specify only one.",
       "keyChoices": []
     },
     {

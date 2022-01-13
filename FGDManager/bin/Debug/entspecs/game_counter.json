@@ -1,6 +1,6 @@
 {
   "Classname": "game_counter",
-  "Description": "Entity_Description_here",
+  "Description": "This is a logic entity which will fire its target after being triggered a specified amount of times. Toggle-trigger and on-trigger will cause it to count up by 1. Off-trigger will cause it to count down by 1. An equivalent of this entity can be created through the usage of [trigger_condition](../trigger_condition) and [trigger_changevalue](../trigger_condition).",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,38 +8,45 @@
       "keyChoices": [
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Remove entity after firing."
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Reset entity Initial value after fired."
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Fire a target when initial value is higher than limit value."
         }
       ]
     },
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to increase or decrease counter. Trigger state signals: 'On' and 'Off' increases counter by one, 'Off' decreases it by one. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Entities to trigger when counter hits it's limit value, or goes above this limit when 'Fire if over limit' flag is selected. Sends 'Toggle' signal.",
+      "keyChoices": []
+    },
+    {
       "keyName": "master",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and it will not count up/down when triggered. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.",
       "keyChoices": []
     },
     {
       "keyName": "frags",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Starting value of entity. It's also current value when accessing it through other entities like [trigger_copyvalue](../trigger_copyvalue).",
       "keyChoices": []
     },
     {
       "keyName": "health",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Required value to trigger target.",
       "keyChoices": []
     }
   ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
   "Issues": [
-    "Insert known issues here"
+    "When target is set to ambient_generic, the game_counter need to receive twice more inputs than normal, unless \"Fire if over limit\" spawnflag is selected."
   ]
 }

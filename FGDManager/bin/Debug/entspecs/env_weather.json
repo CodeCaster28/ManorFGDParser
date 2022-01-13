@@ -1,6 +1,6 @@
 {
   "Classname": "env_weather",
-  "Description": "Entity_Description_here",
+  "Description": "Doesn't work. The idea was to create entity that have weather effects but that was too unoptimised to be added to game.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,115 +8,109 @@
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "drop_model",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "drop_scale",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "drop_vp_type",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "splash_model",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "splash_scale",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "splash_vp_type",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "speed",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "density",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "angle_variance",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "speed_variance",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

@@ -29,7 +29,7 @@
     },
     {
       "keyName": "TriggerOnRecharged",
-      "keyDescription": "Entity to fire when {{ entname }} recharge itself after deplenishing and waiting \"Custom Recharge Time\".",
+      "keyDescription": "Entity to fire when {{ entname }} recharge itself after depleting and waiting \"Custom Recharge Time\".",
       "keyChoices": []
     },
     {

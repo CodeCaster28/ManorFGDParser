@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to control fog. Accepted signals: 'On' to enable fog, 'Off' to disable fog, 'Toggle' to toggle fog. Can be killtargeted which removes fog effect as well.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to control fog. Accepted signals: 'On' to enable fog, 'Off' to disable fog, 'Toggle' to toggle fog. Can be kill-targeted which removes fog effect as well.",
       "keyChoices": []
     },
     {

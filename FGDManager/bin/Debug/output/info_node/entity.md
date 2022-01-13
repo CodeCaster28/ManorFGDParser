@@ -5,7 +5,7 @@ title: info_node
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Nodes are required in order for monsters to navigate around the map properly. It is advised to have nodes origins hover slightly over the ground by 1 to 4 units, in order to prevent nodes from being ignored in nodegraph calculation due to them falsely being identified as being stuck in the floor. The nodegraph is created about 3 seconds after a map has loaded, if the current nodegraph appears to be outdated (Map's 'Create date' later than nodegraph's) or does not exist. The nodegraph-file is maps/graphs/mapname.nod. The *.nrp-file which is also produced is a log file containing rather difficult-to-use information. There is no distance limitation for two nodes to connect. Try to place them in as little quantity as possible and as great quantity as required. Nodes are also used when a monster is ordered to move somewhere by a scripted_sequence, unless the monster is set to not use them. Without nodes, monsters can only walk to their target if it is in direct line of sight with no obstacles blocking the path. Also note: The nodegraph will never change in the middle of play. If a path between which two nodes are connected is being blocked sometime after nodegraph-generation, monsters will understand this. However, if a path is blocked while the nodegraph is being calculated, but opened afterwards, monsters won't grasp this. This can happen when you have a door which starts closed. To fix this, you will have to make the door start open and close it about 5 seconds after the map has loaded, when the nodegraph is generated, using a trigger_auto.</div>
 </div>
 </div>
 ###Keyvalues
@@ -123,5 +123,3 @@ Choices:
 </div>
 </div>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

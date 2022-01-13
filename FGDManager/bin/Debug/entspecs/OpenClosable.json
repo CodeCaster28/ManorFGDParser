@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "fireonopening",
-      "keyDescription": "Entity to trigger when {{ entname }} starts opening.",
+      "keyDescription": "Entity or entities to trigger when {{ entname }} starts opening.",
       "keyChoices": []
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "keyName": "fireonclosing",
-      "keyDescription": "Entity to trigger when door starts closing.",
+      "keyDescription": "Entity or entities to trigger when door starts closing.",
       "keyChoices": []
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "keyName": "fireonopened",
-      "keyDescription": "Entity to trigger when door ends opening.",
+      "keyDescription": "Entity or entities to trigger when door ends opening.",
       "keyChoices": []
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "keyName": "fireonclosed",
-      "keyDescription": "Entity to trigger when door end closing.",
+      "keyDescription": "Entity or entities to trigger when door end closing.",
       "keyChoices": []
     },
     {

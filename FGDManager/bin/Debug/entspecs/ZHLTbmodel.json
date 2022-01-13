@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "zhlt_usemodel",
-      "keyDescription": "For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by \"copying\" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it.\nFor model-based point entities: copy display model of specified entity, to use it's model instead. Using \"Custom model\" is more appropriate in most cases, however, when it's not possible, use \"ZHLT Copy Lighting From Target\".",
+      "keyDescription": "For Brush entities: sets brush model template of this entity. Set it to the name of other brush entity (now called a template) and it's brush model will be used instead. Templates might save server resources by \"copying\" single brush entity (template identified by name) and using it in multiple places (can be used for entities like tables, columns, barrels, cars e.t.c.). Also one template occupies only one entity slot when compiling a map, no matter how many entities refers to it. For model-based point entities: copy display model of specified entity, to use it's model instead. Using \"Custom model\" is more appropriate in most cases, however, when it's not possible, use \"ZHLT Copy Lighting From Target\".",
       "keyChoices": []
     },
     {

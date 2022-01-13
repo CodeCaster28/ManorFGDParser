@@ -12,7 +12,7 @@ title: env_sentence
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entity to trigger on sentence start. It sends same trigger state signal as it has received.
+Entity or entities to trigger on sentence start. It sends same trigger state signal as it has received.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
@@ -20,7 +20,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to play a sentence. Multiple triggering will overlap sentences. Can be killtargeted but sentence won't stop playing until finished.
+Set name of {{ entname }} so other entities can trigger it to play a sentence. Multiple triggering will overlap sentences. Can be kill-targeted but sentence won't stop playing until finished.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sentence</b></span> <kbd  class="tooltip" data-tooltip="string">_text</kbd> :

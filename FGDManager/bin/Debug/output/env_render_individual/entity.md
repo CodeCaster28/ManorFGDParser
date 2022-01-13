@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to apply render mode. Trigger signals 'On' and 'Toggle' applies render settins while 'Off' reverts them. Can be killtargeted and already applied render settings are reverted.
+Set name of {{ entname }} so other entities can trigger it to apply render mode. Trigger signals 'On' and 'Toggle' applies render settins while 'Off' reverts them. Can be kill-targeted and already applied render settings are reverted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :

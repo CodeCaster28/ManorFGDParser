@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "height",
-      "keyDescription": "Travel distance, from top to bottom. If \"Start at Bottom\" flag is selected, the travel distance won't change from bottom to top, it only makes platform start at bottom and awaits for func_tracktrain to arrive.",
+      "keyDescription": "Travel distance, from top to bottom. If \"Start at Bottom\" flag is selected, the travel distance won't change from bottom to top, it only makes platform start at bottom and awaits for [func_tracktrain](../func_tracktrain) to arrive.",
       "keyChoices": []
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "keyName": "train",
-      "keyDescription": "Name of the func_tracktrain this platform will transport to top/bottom track.",
+      "keyDescription": "Name of the [func_tracktrain](../func_tracktrain) this platform will transport to top/bottom track.",
       "keyChoices": []
     },
     {

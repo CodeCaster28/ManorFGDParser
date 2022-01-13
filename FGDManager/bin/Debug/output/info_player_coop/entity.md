@@ -5,7 +5,7 @@ title: info_player_coop
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Obsolete entity that is used to determine a spawnpoint for players. You might want to use [info_player_deathmatch](../info_player_deathmatch) entity for this. This entity is still functional though, it's used when there is no info_player start nor info_player_dm on map, along with info_player_start. Note that temporary disabled spawnpoint are counted as disabled- so if all info_player_deathmatch are disabled, and info_player_coop available, the players will be spawned on that info_player_coop entity. When there is no active or not obstructed spawnpoints, the players are forced to wait until at least one of the spawnpoint become available again.</div>
 </div>
 </div>
 ###Keyvalues
@@ -33,5 +33,3 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

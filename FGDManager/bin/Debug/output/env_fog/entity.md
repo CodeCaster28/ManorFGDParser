@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to control fog. Accepted signals: 'On' to enable fog, 'Off' to disable fog, 'Toggle' to toggle fog. Can be killtargeted which removes fog effect as well.
+Set name of {{ entname }} so other entities can trigger it to control fog. Accepted signals: 'On' to enable fog, 'Off' to disable fog, 'Toggle' to toggle fog. Can be kill-targeted which removes fog effect as well.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fog Color (RGB)</b></span> <kbd  class="tooltip" data-tooltip="color255">rendercolor</kbd> :
