@@ -71,7 +71,6 @@
         <Compile Include="Parser\FGDParser.cs" />
         <Compile Include="Parser\EntityParser.cs" />
         <Compile Include="Parser\SpecsGenerator.cs" />
-        <Compile Include="Parser\KeyValuesParser.cs" />
         <Compile Include="Parser\MDOutput.cs" />
         <Compile Include="Parser\SpecsProvider.cs" />
         <Compile Include="Program.cs" />
