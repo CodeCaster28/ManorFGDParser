@@ -1,5 +1,6 @@
 ﻿namespace FGDManager
 {
+    [System.Serializable]
     public class Choice
     {
         public string Value { get; set; }

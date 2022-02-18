@@ -12,63 +12,92 @@
     {
         private List<SpecsData> Specs { get; set; } = new List<SpecsData>();
 
-        public void Provide(ref List<Entity> entities)
+        private List<Entity> allEntities; 
+        
+        public void Provide(ref List<Entity> entities) 
         {
+            allEntities = entities;
             LoadSpecs(entities.Select(a => a.ClassName).ToList());
-            foreach (var entity in entities)
+            foreach (var entity in entities) 
             {
-                var result = Specs.FirstOrDefault(a => a.Classname == entity.ClassName);
-                if (result != null)
+                if (entity.Type == EntityType.Base)
+                    continue;
+                
+                entity.CreateFinalKeyValues();
+                
+                var doc = GetDocumentation(entity);
+                entity.Description = doc.Description;
+                
+                foreach (var key in entity.FinalKeyValues)
                 {
-                    entity.Description = result.Description;
-                    foreach (var key in entity.KeyValues)
+                    key.Description = doc.GetKeyDescription(key.Name);
+                    key.Media = doc.GetKeyMedia(key.Name);
+                    foreach (var choice in key.Choices)
                     {
-                        key.Description = result.GetKeyDescription(key.Name);
-                        key.Media = result.GetKeyMedia(key.Name);
-                        foreach (var choice in key.Choices)
-                        {
-                            var description = result.GetChoiceDescription(key.Name, choice.Value);
-                            var media = result.GetChoiceMedia(key.Name, choice.Value);
-                            choice.Description = description;
-                            choice.Media = media;
-                        }
+                        var description = doc.GetChoiceDescription(key.Name, choice.Value);
+                        var media = doc.GetChoiceMedia(key.Name, choice.Value);
+                        choice.Description = description;
+                        choice.Media = media;
                     }
+                }
 
-                    if (entity.Type != EntityType.Base)
-                    {
-                        foreach (var key in entity.InheritedKeyValues)
-                        {
-                            if (key.Name == "spawnflags")
-                                continue;
-                            
-                            var overridenDesc = result.GetKeyDescription(key.Name);
-                            if (!string.IsNullOrEmpty(overridenDesc))
-                            {
-                                /*if (entity.KeysDescriptionsOverride.ContainsKey(key.Name))
-                                {
-                                    Console.WriteLine("Entity " + entity.ClassName + " key exists -> " + key.Name);
-                                    entity.KeysDescriptionsOverride[key.Name] = overridenDesc;
-                                }
-                                else
-                                {*/
-                                    entity.KeysDescriptionsOverride.Add(key.Name, overridenDesc);
-                                //}
-                            }
-                            // No time to check other overrides as it won't be used anyway
-                            //key.Media = result.GetKeyMedia(key.Name);
-                            /*foreach (var choice in key.Choices)
-                            {
-                                var description = result.GetChoiceDescription(key.Name, choice.Value);
-                                var media = result.GetChoiceMedia(key.Name, choice.Value);
-                                choice.Description = description;
-                                choice.Media = media;
-                            }*/
+                entity.RefreshFlagsDescriptions();
+                entity.Issues = doc.Issues;
+                entity.Notes = doc.Notes;
+            }
+        }
+
+        private SpecsData GetDocumentation(Entity entity) 
+        {
+            var original = Specs.FirstOrDefault(a => a.Classname == entity.ClassName);
+                
+            var document = new SpecsData();
+            
+            // Get from original
+            document.Classname = original.Classname;
+            document.Description = original.Description;
+            document.Issues = original.Issues;
+            document.Notes = original.Notes;
+            document.KeyDescriptions = new List<SpecsData.KeyDescription>();
+            document.KeyDescriptions.AddRange(original.KeyDescriptions);
+
+            var spawnFlags = entity.KeyValues.Where(a => a.Name == "spawnflags").ToList();
+            foreach (var spawnFlag in spawnFlags) {
+                foreach (var choice in spawnFlag.Choices) {
+                    choice.Description = original.GetChoiceDescription ("spawnflags", choice.Value);
+                }
+            }
+            
+            CollectKeyDescriptionsFromBaseClasses(entity, document);
+            return document;
+        }
+
+        private void CollectKeyDescriptionsFromBaseClasses(Entity entity, SpecsData document) 
+        {
+            if (entity.BaseClasses == null || entity.BaseClasses.Count <= 0)
+                return;
+            
+            foreach (var baseClass in entity.BaseClasses)
+            {
+                // Add missing entries
+                var specs = Specs.FirstOrDefault(a => a.Classname == baseClass);
+                if (specs != null)
+                {
+                    document.KeyDescriptions.AddUnique(specs.KeyDescriptions);
+                }
+
+                // Recursive check for base classes of base classes
+                var baseEntity = allEntities.FirstOrDefault(a => a.ClassName == baseClass);
+                if (baseEntity != null) 
+                {
+                    var spawnFlags = baseEntity.KeyValues.Where(a => a.Name == "spawnflags").ToList();
+                    foreach (var spawnFlag in spawnFlags) {
+                        foreach (var choice in spawnFlag.Choices) {
+                            if (string.IsNullOrEmpty(choice.Description))
+                                choice.Description = specs.GetChoiceDescription ("spawnflags", choice.Value);
                         }
                     }
-                    
-                    entity.RefreshFlagsDescriptions();
-                    entity.Issues = result.Issues;
-                    entity.Notes = result.Notes;
+                    CollectKeyDescriptionsFromBaseClasses (baseEntity, document);
                 }
             }
         }

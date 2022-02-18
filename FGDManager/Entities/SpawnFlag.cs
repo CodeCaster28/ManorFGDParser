@@ -2,6 +2,7 @@
 {
     using System;
 
+    [System.Serializable]
     public class SpawnFlag : IComparable<SpawnFlag>
     {
         public Choice Source { get; set; }

@@ -46,7 +46,7 @@
                     writer.WriteLine("</div>");
                     writer.WriteLine("</div>");
                     
-                    var allKeyValues = entity.GetAllKeyValues();
+                    var allKeyValues = entity.FinalKeyValues;
                     allKeyValues.RemoveAll(a => a.Name == "spawnflags");
                     
                     

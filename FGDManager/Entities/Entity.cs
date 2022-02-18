@@ -5,6 +5,7 @@
     using System.Linq;
     using Properties; 
 
+    [System.Serializable]
     public class Entity
     {
         public EntityType Type { get; set; }
@@ -14,16 +15,18 @@
         public string Description { get; set; }
         public List<KeyValue> KeyValues { get; } = new List<KeyValue>();
         public List<KeyValue> InheritedKeyValues { get; } = new List<KeyValue>();
+        public List<KeyValue> FinalKeyValues { private set; get; } = new List<KeyValue>();
         public Dictionary<string, string> KeysDescriptionsOverride { get; } = new Dictionary<string, string>();
         public List<SpawnFlag> SpawnFlags { get; private set; } = new List<SpawnFlag>();
         public List<string> Notes { get; set; } = new List<string>();
         public List<string> Issues { get; set; } = new List<string>();
         
-        public List<KeyValue> GetAllKeyValues()
+        public void CreateFinalKeyValues() 
         {
-            var allKeyValues = new List<KeyValue>(InheritedKeyValues);
-            allKeyValues.AddRange(KeyValues);
-            return RemoveDuplicatedKeyvalues(allKeyValues);
+            FinalKeyValues = new List<KeyValue>(InheritedKeyValues);
+            FinalKeyValues.AddRange(KeyValues);
+            FinalKeyValues = RemoveDuplicatedKeyvalues(FinalKeyValues);
+            FinalKeyValues = FinalKeyValues.DeepClone();
         }
 
         public void RegisterSpawnFlag(Choice source)
@@ -71,7 +74,7 @@
                     // Replace
                     var index = outputList.IndexOf(outputList.First(a => a.Name == keyvalues[i].Name));
                     outputList[index] = keyvalues[i];
-                    Console.WriteLine(ClassName + " keyvalue already present: " + keyvalues[i].Name);
+                    //Console.WriteLine(ClassName + " keyvalue already present: " + keyvalues[i].Name);
                 }
             }
 
