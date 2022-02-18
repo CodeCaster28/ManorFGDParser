@@ -5,7 +5,7 @@ title: monster_satchel
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Pushable Satchel that explodes after triggered.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to detonate. All signal types are accepted. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -89,7 +89,7 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Gravity Setting</b></span> <kbd  class="tooltip" data-tooltip="choices">movetype</kbd> :
-Determines how items behave after spawn. Set 'Hover in the air' so . You can also set 'Hover in the air, ignore brush collision' so .
+Determines how items behave after spawn.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -170,9 +170,7 @@ Same as target, except that this supposedly causes the specified entity/entities
 <li class="imagepadding" markdown="1"><b>128 </b> : TOUCH Only : Pick this item up only by touching it.</li>
 <li class="imagepadding" markdown="1"><b>256 </b> : USE Only : Pick this item up only by using it ('USE' key).</li>
 <li class="imagepadding" markdown="1"><b>512 </b> : Can Use w/o LoS : Player can pick up this item even when it's not within his line of sight.</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : Disable Respawn : Disables default weapon respawning.</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : Disable Respawn : Disables default item respawning.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

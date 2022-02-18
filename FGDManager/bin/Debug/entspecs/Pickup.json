@@ -20,7 +20,7 @@
         },
         {
           "choiceValue": "1024",
-          "choiceDescription": "Disables default weapon respawning."
+          "choiceDescription": "Disables default item respawning."
         }
       ]
     },
@@ -144,7 +144,7 @@
     },
     {
       "keyName": "movetype",
-      "keyDescription": "Determines how items behave after spawn. Set 'Hover in the air' so . You can also set 'Hover in the air, ignore brush collision' so .",
+      "keyDescription": "Determines how items behave after spawn.",
       "keyChoices": [
         {
           "choiceValue": "-1",

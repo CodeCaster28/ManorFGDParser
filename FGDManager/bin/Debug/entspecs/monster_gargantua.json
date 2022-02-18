@@ -1,11 +1,5 @@
 {
   "Classname": "monster_gargantua",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Invulnerable to bullets large creature that uses flame attacks and flame stomps. He may eat enemies when they stays too close to him.<br>Class: Alien Monster.",
+  "KeyDescriptions": []
 }

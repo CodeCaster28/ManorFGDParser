@@ -1,10 +1,10 @@
 {
   "Classname": "monster_generic",
-  "Description": "Entity_Description_here",
+  "Description": "Used to create custom monsters that can be controlled by [scripted_sequences](../scripted_sequences).<br>Class: Player Ally.",
   "KeyDescriptions": [
     {
       "keyName": "sequence",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Change model display sequence in editor by specifying it's number.",
       "keyChoices": []
     },
     {
@@ -13,33 +13,27 @@
       "keyChoices": [
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Disable collision."
         },
         {
           "choiceValue": "8 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Make use of head controller of this model."
         }
       ]
     },
     {
       "keyName": "disableai",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set if {{ entname }} should have it's AI disabled.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

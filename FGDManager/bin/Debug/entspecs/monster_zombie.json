@@ -1,158 +1,152 @@
 {
   "Classname": "monster_zombie",
-  "Description": "Entity_Description_here",
+  "Description": "Scientist possessed by headcrab. Slow but dangerous in close combat.<br>Alien Monster.",
   "KeyDescriptions": [
     {
       "keyName": "sequence",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Change model display sequence in editor by specifying it's number.",
       "keyChoices": [
         {
           "choiceValue": "0  ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "19 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "20 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "21 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "22 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "23 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "24 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "25 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "26 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "27 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "28 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "29 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "30 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "31 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "32 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "33 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "34 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "35 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "36 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "37 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "38 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "39 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "40 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "41 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "42 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "43 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "44 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "45 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "48 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "46 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "47 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "49 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "50 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "51 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "52 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

@@ -1,11 +1,5 @@
 {
   "Classname": "monster_bloater",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Does not work. Unfinished placeholder for Flocking Floater.",
+  "KeyDescriptions": []
 }

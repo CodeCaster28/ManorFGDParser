@@ -1,162 +1,156 @@
 {
   "Classname": "monster_otis",
-  "Description": "Entity_Description_here",
+  "Description": "Part of Black Mesa Security Team. Uses desert eagle for defense.<br>Class: Player Ally or Human Military when relationship is inverted.",
   "KeyDescriptions": [
     {
       "keyName": "bodystate",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Otis body state, holstered weapon, drawn weapon or... donut!",
       "keyChoices": [
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "head",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "This will set which head to use. Heads are different submodels/appearances in model files. Not all models do have multiple heads. '-1' means random.",
       "keyChoices": [
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "sequence",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Change model display sequence in editor by specifying it's number.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "19 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "21 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "22 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "23 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "24 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "41 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "42 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "43 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "44 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "45 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "46 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "47 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "48 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "49 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "50 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "51 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "52 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "53 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "54 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "55 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "56 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "57 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "58 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "59 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "60 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

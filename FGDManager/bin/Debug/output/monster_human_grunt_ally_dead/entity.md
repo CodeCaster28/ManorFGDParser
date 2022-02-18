@@ -5,7 +5,7 @@ title: monster_human_grunt_ally_dead
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Non-solid corpse of [Ally Grunt](../monster_human_grunt_ally).</div>
 </div>
 </div>
 ###Keyvalues
@@ -89,7 +89,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pose</b></span> <kbd  class="tooltip" data-tooltip="Choices">pose</kbd> :
-Keyvalue_Description_here
+Pose to use in game.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -98,19 +98,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : On stomach : Choice_Description_here</li>
-<li><b>1 </b> : On side : Choice_Description_here</li>
-<li><b>2 </b> : Seated : Choice_Description_here</li>
-<li><b>3 </b> : Dead On Back : Choice_Description_here</li>
-<li><b>4 </b> : Dead On Stomach : Choice_Description_here</li>
-<li><b>5 </b> : Head Crabbed : Choice_Description_here</li>
+<li><b>0 </b> : On stomach</li>
+<li><b>1 </b> : On side</li>
+<li><b>2 </b> : Seated</li>
+<li><b>3 </b> : Dead On Back</li>
+<li><b>4 </b> : Dead On Stomach</li>
+<li><b>5 </b> : Head Crabbed</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Animation Sequence (editor)</b></span> <kbd  class="tooltip" data-tooltip="Choices">sequence</kbd> :
-Keyvalue_Description_here
+Change model display sequence in editor by specifying it's number.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">
@@ -119,16 +119,16 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>44 </b> : On stomach : Choice_Description_here</li>
-<li><b>45 </b> : On side : Choice_Description_here</li>
-<li><b>46 </b> : Seated : Choice_Description_here</li>
+<li><b>44 </b> : On stomach</li>
+<li><b>45 </b> : On side</li>
+<li><b>46 </b> : Seated</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Weapons</b></span> <kbd  class="tooltip" data-tooltip="Choices">weapons</kbd> :
-Keyvalue_Description_here
+You can choose which weapon the monster holds in hand.
 <div class="accordion">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">
@@ -137,17 +137,17 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : None : Choice_Description_here</li>
-<li><b>1 </b> : M16 : Choice_Description_here</li>
-<li><b>8 </b> : Shotgun : Choice_Description_here</li>
-<li><b>16 </b> : Saw : Choice_Description_here</li>
+<li><b>0 </b> : None</li>
+<li><b>1 </b> : M16</li>
+<li><b>8 </b> : Shotgun</li>
+<li><b>16 </b> : Saw</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Heads</b></span> <kbd  class="tooltip" data-tooltip="Choices">head</kbd> :
-Keyvalue_Description_here
+This will set which head to use. Heads are different submodels/appearances in model files. Not all models do have multiple heads. '-1' means random.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -156,19 +156,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : Gas Mask : Choice_Description_here</li>
-<li><b>1 </b> : Beret : Choice_Description_here</li>
-<li><b>2 </b> : Ops Mask : Choice_Description_here</li>
-<li><b>3 </b> : Bandana White : Choice_Description_here</li>
-<li><b>4 </b> : Bandana Black : Choice_Description_here</li>
-<li><b>5 </b> : MP : Choice_Description_here</li>
+<li><b>0 </b> : Gas Mask</li>
+<li><b>1 </b> : Beret</li>
+<li><b>2 </b> : Ops Mask</li>
+<li><b>3 </b> : Bandana White</li>
+<li><b>4 </b> : Bandana Black</li>
+<li><b>5 </b> : MP</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Model</b></span> <kbd  class="tooltip" data-tooltip="studio">model</kbd> :
-Keyvalue_Description_here
+If set, this will overwrite the monster's default model. This needs to be precached using a [custom_precache](../custom_precache) entity.
 </div>
 ###Flags
 <hr>
@@ -177,5 +177,3 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

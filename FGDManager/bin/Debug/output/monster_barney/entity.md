@@ -5,7 +5,7 @@ title: monster_barney
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Part of Black Mesa Security Team. Uses 9mm pistols for defense.<br>Class: Player Ally or Human Military when relationship is inverted.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with "Start Inactive" flag. Works with 'On' (enable monster), 'Off' (disable monster) and 'Toggle' (toggles monster) trigger state signals. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Some monsters can have [path_corner](../path_corner) specified as a target. On map start they will try to reach path_corner with walk animation.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -286,7 +286,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Path Name</b></span> <kbd  class="tooltip" data-tooltip="string">path_name</kbd> :
-Name of first "path_waypoint" to go to.
+Name of first [path_waypoint](../path_waypoint) to go to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Entity to Guard</b></span> <kbd  class="tooltip" data-tooltip="string">guard_ent</kbd> :
@@ -302,7 +302,7 @@ Name of audio or sentence to play when {{ entname }} is used by player to stop f
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Animation Sequence (editor)</b></span> <kbd  class="tooltip" data-tooltip="Choices">sequence</kbd> :
-Keyvalue_Description_here
+Change model display sequence in editor by specifying it's number.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -311,44 +311,44 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : idle1 : Choice_Description_here</li>
-<li><b>19 </b> : locked_door : Choice_Description_here</li>
-<li><b>21 </b> : barn_Wave : Choice_Description_here</li>
-<li><b>22 </b> : beat_grunt : Choice_Description_here</li>
-<li><b>23 </b> : beat_gruntidle : Choice_Description_here</li>
-<li><b>24 </b> : flashlight : Choice_Description_here</li>
-<li><b>38 </b> : stuffed_in_vent : Choice_Description_here</li>
-<li><b>40 </b> : cprbarney : Choice_Description_here</li>
-<li><b>41 </b> : cprbarneyrevive : Choice_Description_here</li>
-<li><b>42 </b> : barney_dragvent : Choice_Description_here</li>
-<li><b>43 </b> : dying_barney : Choice_Description_here</li>
-<li><b>44 </b> : dying_barneyidle : Choice_Description_here</li>
-<li><b>45 </b> : dying_friend : Choice_Description_here</li>
-<li><b>46 </b> : dying_friendidle : Choice_Description_here</li>
-<li><b>47 </b> : c1a3_bidle : Choice_Description_here</li>
-<li><b>48 </b> : c1a3_ventb : Choice_Description_here</li>
-<li><b>49 </b> : c1a3_emergeidle : Choice_Description_here</li>
-<li><b>50 </b> : c1a3_emerge : Choice_Description_here</li>
-<li><b>51 </b> : haulbarney : Choice_Description_here</li>
-<li><b>52 </b> : intropush : Choice_Description_here</li>
-<li><b>53 </b> : fence : Choice_Description_here</li>
-<li><b>54 </b> : sit1 : Choice_Description_here</li>
-<li><b>55 </b> : almostidle : Choice_Description_here</li>
-<li><b>56 </b> : almost : Choice_Description_here</li>
-<li><b>57 </b> : laseridle : Choice_Description_here</li>
-<li><b>58 </b> : laser_top : Choice_Description_here</li>
-<li><b>59 </b> : laser_bottom : Choice_Description_here</li>
-<li><b>60 </b> : barneyfallidle : Choice_Description_here</li>
-<li><b>61 </b> : barneyfall : Choice_Description_here</li>
-<li><b>62 </b> : c3a2_draw : Choice_Description_here</li>
-<li><b>63 </b> : unlatch : Choice_Description_here</li>
-<li><b>64 </b> : retina : Choice_Description_here</li>
-<li><b>65 </b> : relaxstand : Choice_Description_here</li>
-<li><b>66 </b> : assassinated : Choice_Description_here</li>
-<li><b>67 </b> : trackswitch : Choice_Description_here</li>
-<li><b>68 </b> : pepsiswing : Choice_Description_here</li>
-<li><b>69 </b> : pepsipush : Choice_Description_here</li>
-<li><b>70 </b> : buttonpush : Choice_Description_here</li>
+<li><b>0 </b> : idle1</li>
+<li><b>19 </b> : locked_door</li>
+<li><b>21 </b> : barn_Wave</li>
+<li><b>22 </b> : beat_grunt</li>
+<li><b>23 </b> : beat_gruntidle</li>
+<li><b>24 </b> : flashlight</li>
+<li><b>38 </b> : stuffed_in_vent</li>
+<li><b>40 </b> : cprbarney</li>
+<li><b>41 </b> : cprbarneyrevive</li>
+<li><b>42 </b> : barney_dragvent</li>
+<li><b>43 </b> : dying_barney</li>
+<li><b>44 </b> : dying_barneyidle</li>
+<li><b>45 </b> : dying_friend</li>
+<li><b>46 </b> : dying_friendidle</li>
+<li><b>47 </b> : c1a3_bidle</li>
+<li><b>48 </b> : c1a3_ventb</li>
+<li><b>49 </b> : c1a3_emergeidle</li>
+<li><b>50 </b> : c1a3_emerge</li>
+<li><b>51 </b> : haulbarney</li>
+<li><b>52 </b> : intropush</li>
+<li><b>53 </b> : fence</li>
+<li><b>54 </b> : sit1</li>
+<li><b>55 </b> : almostidle</li>
+<li><b>56 </b> : almost</li>
+<li><b>57 </b> : laseridle</li>
+<li><b>58 </b> : laser_top</li>
+<li><b>59 </b> : laser_bottom</li>
+<li><b>60 </b> : barneyfallidle</li>
+<li><b>61 </b> : barneyfall</li>
+<li><b>62 </b> : c3a2_draw</li>
+<li><b>63 </b> : unlatch</li>
+<li><b>64 </b> : retina</li>
+<li><b>65 </b> : relaxstand</li>
+<li><b>66 </b> : assassinated</li>
+<li><b>67 </b> : trackswitch</li>
+<li><b>68 </b> : pepsiswing</li>
+<li><b>69 </b> : pepsipush</li>
+<li><b>70 </b> : buttonpush</li>
 </ul>
 </div>
 </div>
@@ -368,5 +368,3 @@ Choices:
 <li class="imagepadding" markdown="1"><b>16384</b> : No Dyn Collision : Set whether the spawned monsters will appear solid to each other and the players or not.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

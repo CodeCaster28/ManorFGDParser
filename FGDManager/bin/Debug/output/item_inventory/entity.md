@@ -5,7 +5,20 @@ title: item_inventory
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Highly customizable item that can be stored in player inventory based on visual interface, and applies bunch of optional effects on players. Item_inventory contains a lot of trigger conditions. It's possible to make other entities require specific item, abort to have an item, force to drop item e.t.c. You can also make this item usable at player's will from inventory menu (self-activation). This is how you can implement gas masks, invincibility, speed boots, healing potions, keys to locked doors, remote controllers, capture the flag, air tanks and many more! Those entities are fully integrated with item_inventory, each including inventory related keyvalues: 
+1. [func_button](../func_button)
+2. [func_door](../func_door)
+3. [func_door_rotating](../func_door_rotating)
+4. [func_rot_button](../func_rot_button)
+5. [func_tankcontrols](../func_tankcontrols)
+6. [func_traincontrols](../func_traincontrols)
+7. [momentary_door](../momentary_door)
+8. [trigger_changelevel](../trigger_changelevel)
+9. [trigger_hurt](../trigger_hurt)
+10. [trigger_multiple](../trigger_multiple)
+11. [trigger_once](../trigger_once)
+12. [trigger_teleport](../trigger_teleport)
+13. [func_water](../func_water)</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +29,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' signals are accepted which makes item be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning, also removing from inventory.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -86,7 +99,7 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Gravity Setting</b></span> <kbd  class="tooltip" data-tooltip="choices">movetype</kbd> :
-Determines how items behave after spawn. Set 'Hover in the air' so . You can also set 'Hover in the air, ignore brush collision' so .
+Determines how items behave after spawn.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -159,7 +172,7 @@ Set the path to a sound replacement file for the item. The path begins in 'svenc
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger when item is picked up. Sends 'Toggle' trigger state signal.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -171,51 +184,51 @@ Same as target, except that this supposedly causes the specified entity/entities
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Item name</b></span> <kbd  class="tooltip" data-tooltip="string">item_name</kbd> :
-Keyvalue_Description_here
+Name of the item to refer to. This is not a "targetname". You can trigger this item by a "targetname" and you can refer to this item by it's "Item name".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Item group name</b></span> <kbd  class="tooltip" data-tooltip="string">item_group</kbd> :
-Keyvalue_Description_here
+You can assign this item to group. You can refer to item group from other item-related keyvalues as well.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Display name (HUD)</b></span> <kbd  class="tooltip" data-tooltip="string">display_name</kbd> :
-Keyvalue_Description_here
+It's a display name of item that show up at the inventory menu window.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Description (HUD)</b></span> <kbd  class="tooltip" data-tooltip="string">description</kbd> :
-Keyvalue_Description_here
+It's a description of the item player can read at the the inventory menu window.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Item icon (HUD)</b></span> <kbd  class="tooltip" data-tooltip="string">item_icon</kbd> :
-Keyvalue_Description_here
+Name of the sprite file to use as item hud icon. Provide the full file name and path relative to the 'sprites' directory.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Self-activation limit (0 = infinite)</b></span> <kbd  class="tooltip" data-tooltip="integer">activate_limit</kbd> :
-Keyvalue_Description_here
+If "Holder:Allowed to self-activate" is set to 'Yes', this is a number of times player can activate this item.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collection limit (0 = infinite)</b></span> <kbd  class="tooltip" data-tooltip="integer">collect_limit</kbd> :
-Keyvalue_Description_here
+How many item duplicates player can hold in his inventory. '0' for no limit.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Item weight (0-100)</b></span> <kbd  class="tooltip" data-tooltip="string">weight</kbd> :
-Keyvalue_Description_here
+Item weight. The limit for all items in inventory is '100', Over that value player cannot pick up more items.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: Entity target names</b></span> <kbd  class="tooltip" data-tooltip="string">filter_targetnames</kbd> :
-Keyvalue_Description_here
+Only enitites with given name(s) can pick up this item.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: Entity class names</b></span> <kbd  class="tooltip" data-tooltip="string">filter_classnames</kbd> :
-Keyvalue_Description_here
+Optional filter. Only entities with given class(es) can pick up this item.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: Teams</b></span> <kbd  class="tooltip" data-tooltip="string">filter_teams</kbd> :
-Keyvalue_Description_here
+Optional filter. Only players that are part of given team(s) name can pick up this item.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: NPC classifications</b></span> <kbd  class="tooltip" data-tooltip="choices">filter_npc_classifications</kbd> :
-Keyvalue_Description_here
+Optional filter. Only Monsters with given class(es) are able to pick up this item.
 <div class="accordion">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">
@@ -224,66 +237,66 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No filter : Choice_Description_here</li>
-<li><b>-1 </b> : None : Choice_Description_here</li>
-<li><b>1 </b> : Machine : Choice_Description_here</li>
-<li><b>2 </b> : Player : Choice_Description_here</li>
-<li><b>3 </b> : Human Passive : Choice_Description_here</li>
-<li><b>4 </b> : Human Military : Choice_Description_here</li>
-<li><b>5 </b> : Alien Military : Choice_Description_here</li>
-<li><b>6 </b> : Alien Passive : Choice_Description_here</li>
-<li><b>7 </b> : Alien Monster : Choice_Description_here</li>
-<li><b>8 </b> : Alien Prey : Choice_Description_here</li>
-<li><b>9 </b> : Alien Predator : Choice_Description_here</li>
-<li><b>10 </b> : Insect : Choice_Description_here</li>
-<li><b>11 </b> : Player Ally : Choice_Description_here</li>
-<li><b>12 </b> : Player Hornet/Snark : Choice_Description_here</li>
-<li><b>13 </b> : Alien Hornet/Snark : Choice_Description_here</li>
-<li><b>14 </b> : X-Race : Choice_Description_here</li>
-<li><b>15 </b> : X-Race: Shocktrooper/Voltigore : Choice_Description_here</li>
-<li><b>16 </b> : Team 1 : Choice_Description_here</li>
-<li><b>17 </b> : Team 2 : Choice_Description_here</li>
-<li><b>18 </b> : Team 3 : Choice_Description_here</li>
-<li><b>19 </b> : Team 4 : Choice_Description_here</li>
+<li><b>0 </b> : No filter : Keep default.</li>
+<li><b>-1 </b> : None</li>
+<li><b>1 </b> : Machine</li>
+<li><b>2 </b> : Player</li>
+<li><b>3 </b> : Human Passive</li>
+<li><b>4 </b> : Human Military</li>
+<li><b>5 </b> : Alien Military</li>
+<li><b>6 </b> : Alien Passive</li>
+<li><b>7 </b> : Alien Monster</li>
+<li><b>8 </b> : Alien Prey</li>
+<li><b>9 </b> : Alien Predator</li>
+<li><b>10 </b> : Insect</li>
+<li><b>11 </b> : Player Ally</li>
+<li><b>12 </b> : Player Hornet/Snark</li>
+<li><b>13 </b> : Alien Hornet/Snark</li>
+<li><b>14 </b> : X-Race</li>
+<li><b>15 </b> : X-Race: Shocktrooper/Voltigore</li>
+<li><b>16 </b> : Team 1 : Use it to classify to custom team.</li>
+<li><b>17 </b> : Team 2 : Use it to classify to custom team.</li>
+<li><b>18 </b> : Team 3 : Use it to classify to custom team.</li>
+<li><b>19 </b> : Team 4 : Use it to classify to custom team.</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: Need item(s)</b></span> <kbd  class="tooltip" data-tooltip="string">item_name_required</kbd> :
-Keyvalue_Description_here
+Name of required item(s) (held in inventory) to pick up this item.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: Need item(s) from group(s)</b></span> <kbd  class="tooltip" data-tooltip="string">item_group_required</kbd> :
-Keyvalue_Description_here
+Name of group(s) (in which item(s) from player inventory belongs) required to pick up this item.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: Item count in group need have (0 = all)</b></span> <kbd  class="tooltip" data-tooltip="integer">item_group_required_num</kbd> :
-Keyvalue_Description_here
+Total number of items that are part of specified group(s) required to pick up this item. Specify a group names in keyvalue above.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: Item(s) moved</b></span> <kbd  class="tooltip" data-tooltip="string">item_name_moved</kbd> :
-Keyvalue_Description_here
+Allow to pick up this item only when specified item_inventory wasn't relocated yet (and is not in someone's inventory).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: CAN'T have item</b></span> <kbd  class="tooltip" data-tooltip="string">item_name_canthave</kbd> :
-Keyvalue_Description_here
+Name of item(s) in player inventory that prevents from picking up this item off the ground.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: CAN'T have item from group</b></span> <kbd  class="tooltip" data-tooltip="string">item_group_canthave</kbd> :
-Keyvalue_Description_here
+Name of group(s) (in which item(s) from player inventory belongs) that prevents from picking up this item off the ground.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: Item count in group CAN'T have (0 = all)</b></span> <kbd  class="tooltip" data-tooltip="integer">item_group_canthave_num</kbd> :
-Keyvalue_Description_here
+Total number of items that are part of specified group(s) that prevents from picking up this item from a ground. Specify a group names in keyvalue above.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Collect: Item(s) NOT moved</b></span> <kbd  class="tooltip" data-tooltip="string">item_name_not_moved</kbd> :
-Keyvalue_Description_here
+Allow to pick up this item only when specified entities (of item_inventory class) has been moved from it's starting position.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Carried: Hide item (3rd person)</b></span> <kbd  class="tooltip" data-tooltip="choices">carried_hidden</kbd> :
-Keyvalue_Description_here
+Hide item from 3rd person view. When 'No' is selected, the item model is floating above player head when equipped.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -292,35 +305,35 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Carried: Skin</b></span> <kbd  class="tooltip" data-tooltip="integer">carried_skin</kbd> :
-Keyvalue_Description_here
+Change models' skin of carried item (only when it's not hidden).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Carried: Body</b></span> <kbd  class="tooltip" data-tooltip="integer">carried_body</kbd> :
-Keyvalue_Description_here
+Change models' body of carried item (only when it's not hidden).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Carried: Sequence Name</b></span> <kbd  class="tooltip" data-tooltip="string">carried_sequencename</kbd> :
-Keyvalue_Description_here
+Change models' sequence of carried item (only when it's not hidden).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Carried: Sequence Number (overrides name)</b></span> <kbd  class="tooltip" data-tooltip="integer">carried_sequence</kbd> :
-Keyvalue_Description_here
+Change models' sequence by specifying it's number.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Return: Wait (-1 = never)</b></span> <kbd  class="tooltip" data-tooltip="string">return_timelimit</kbd> :
-Keyvalue_Description_here
+After this amount of time the item returns to it's starting position (when dropped somewhere else).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Return: Delay respawn (materialisation)</b></span> <kbd  class="tooltip" data-tooltip="choices">return_delay_respawn</kbd> :
-Keyvalue_Description_here
+Allows to specify if item_inventory will wait for respawn after returning to it's default position.
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -329,27 +342,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Hold time limit (0 = never)</b></span> <kbd  class="tooltip" data-tooltip="string">holder_timelimit</kbd> :
-Keyvalue_Description_here
+Maximum time the item can be held on for, then it's returning if possible.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Delay between self-activations (0 = none)</b></span> <kbd  class="tooltip" data-tooltip="string">holder_time_activate_wait</kbd> :
-Keyvalue_Description_here
+If 'Holder:Allowed to self-activate' is set to 'Yes', this is a delay between which player can activate this item.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Wearing out trigger time (0 = none)</b></span> <kbd  class="tooltip" data-tooltip="string">holder_time_wearout</kbd> :
-Keyvalue_Description_here
+Time before "Holder: Hold time limit" reach it's limit to trigger target specified in "Target: On wearing out" keyvalue. If you set it to e.g. 4, it will fire a target 4 seconds before this item's "Holder: Hold time limit" ends. It's useful if you want to trigger a sound or a [game_text](../game_text) informing player that item will be worn out soon. Example: player picked up power-up which have "Holder: Hold time limit" set to 10, and "Holder: Wearing out trigger time" to 3, so 3 seconds before item is removed from player (in other words, before "Holder: Hold time limit" ends) game_text specified in "Target: On wearing out" is fired with message "Warning! 3 seconds for buff to end!".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Allowed to self-activate</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_can_activate</kbd> :
-Keyvalue_Description_here
+Set it to 'Yes' allows players to activate this item by themselves from inventory menu.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -358,15 +371,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Hold time limit doesn't start until item activated</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_timelimit_wait_until_activated</kbd> :
-Keyvalue_Description_here
+If set to 'Yes', hold time limit doesn't start until item is activated by player through inventory menu.
 <div class="accordion">
 <input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-9">
@@ -375,15 +388,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Allowed to drop</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_can_drop</kbd> :
-Keyvalue_Description_here
+Determines whenever item can be dropped manually by player from within inventory menu.
 <div class="accordion">
 <input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-10">
@@ -392,15 +405,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Keep item on death</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_keep_on_death</kbd> :
-Keyvalue_Description_here
+Self-explanatory. Note that player will lost this item after respawn if keyvalue below isn't set to 'Yes'.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -409,15 +422,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Keep item on respawn</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_keep_on_respawn</kbd> :
-Keyvalue_Description_here
+Self-explanatory. Remember that player can also lose his item on death, if "Keep item on death" is set to 'No', the player won't keep this item.
 <div class="accordion">
 <input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-12">
@@ -426,131 +439,131 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On collect (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_collect</kbd> :
-Keyvalue_Description_here
+Fire specified target(s) when item is successfully collected (uses 'Toggle' trigger state). Player who collected it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On collect (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_collect_team</kbd> :
-Keyvalue_Description_here
+Same as above, but passes whole team (in which player belongs, including this player) as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On collect (others)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_collect_other</kbd> :
-Keyvalue_Description_here
+Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't collect (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_collect</kbd> :
-Keyvalue_Description_here
+Fire specified target(s) when item collecting attempt failed (uses 'Toggle' trigger state). Player who failed to collect item is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't collect (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_collect_team</kbd> :
-Keyvalue_Description_here
+Same as above, but passes whole team (in which player belongs, including this player) as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't collect (others)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_collect_other</kbd> :
-Keyvalue_Description_here
+Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On drop (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_drop</kbd> :
-Keyvalue_Description_here
+Fire specified target(s) when item is dropped (uses 'Toggle' trigger state). Player who dropped it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On drop (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_drop_team</kbd> :
-Keyvalue_Description_here
+Same as above, but passes whole team (in which player belongs, including this player) as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On drop (others)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_drop_other</kbd> :
-Keyvalue_Description_here
+Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't drop (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_drop</kbd> :
-Keyvalue_Description_here
+Fire specified target(s) when item is drop failed (uses 'Toggle' trigger state). Player who failed dropping item it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't drop (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_drop_team</kbd> :
-Keyvalue_Description_here
+Same as above, but passes whole team (in which player belongs, including this player) as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't drop (others)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_drop_other</kbd> :
-Keyvalue_Description_here
+Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On self-activate (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_activate</kbd> :
-Keyvalue_Description_here
+Fire specified target(s) when player activate item from inventory menu, only if "Allowed to self-activate" is set to 'Yes' (uses 'Toggle' trigger state). Player who activated it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On self-activate (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_activate_team</kbd> :
-Keyvalue_Description_here
+Same as above, but passes whole team (in which player belongs, including this player) as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On self-activate (others)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_activate_other</kbd> :
-Keyvalue_Description_here
+Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't self-activate (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_activate</kbd> :
-Keyvalue_Description_here
+If "Allowed to self-activate" is set to 'Yes' and item activation limit hit 0, this is a target to fire when player attempts to activate it again (uses 'Toggle' trigger state). Player who failed it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't self-activate (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_activate_team</kbd> :
-Keyvalue_Description_here
+Same as above, but passes whole team (in which player belongs, including this player) as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't self-activate (others)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_activate_other</kbd> :
-Keyvalue_Description_here
+Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On use by trigger (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_use</kbd> :
-Keyvalue_Description_here
+Fire specified target(s) when item is used by trigger (uses 'Toggle' trigger state). Player is passed as the 'activator!'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On use by trigger (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_use_team</kbd> :
-Keyvalue_Description_here
+Same as above, but passes whole team (in which player belongs, including this player) as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On use by trigger (others)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_use_other</kbd> :
-Keyvalue_Description_here
+Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On wearing out (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_wearing_out</kbd> :
-Keyvalue_Description_here
+Fire specified target(s) when item's "Wearing out trigger time" ends (which must be greater than 0 but less than "Holder: Hold time limit" value), see "Holder: Wearing out trigger time" above for more info (uses 'Toggle' trigger state). Player who owns this item is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On wearing out (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_wearing_out_team</kbd> :
-Keyvalue_Description_here
+Same as above, but passes whole team (in which player belongs, including this player) as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On wearing out (others)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_wearing_out_other</kbd> :
-Keyvalue_Description_here
+Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On return (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_return</kbd> :
-Keyvalue_Description_here
+Fire specified target(s) when item returns to it's starting position (uses 'Toggle' trigger state).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On return (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_return_team</kbd> :
-Keyvalue_Description_here
+Same as above, but passes whole team (in which player belongs, including this player) as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On return (other)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_return_other</kbd> :
-Keyvalue_Description_here
+Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On materialise after return</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_materialise</kbd> :
-Keyvalue_Description_here
+Fire specified target when item gets materialised after a drop or return (uses 'Toggle' trigger state).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On destroy</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_destroy</kbd> :
-Keyvalue_Description_here
+Fire specified target when item gets destroyed by environment (uses 'Toggle' trigger state).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Wait until item is self-activated?</b></span> <kbd  class="tooltip" data-tooltip="choices">effects_wait_until_activated</kbd> :
-Keyvalue_Description_here
+If "Allowed to self-activate" is set to 'Yes', this will determine if effects should be applied only when player activate an item from inventory menu.
 <div class="accordion">
 <input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-13">
@@ -559,15 +572,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Permanent? (Until respawn)</b></span> <kbd  class="tooltip" data-tooltip="choices">effects_permanent</kbd> :
-Keyvalue_Description_here
+Specify if effects below effect applied on player are permanent ('Yes') or temporary ('No'). If option 'No' is chosen, the effects ends after "Holder: Hold Time Limit" is hit, and if 'Yes' is selected, effect ends after respawn.
 <div class="accordion">
 <input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-14">
@@ -576,19 +589,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Glow shell color (R G B)</b></span> <kbd  class="tooltip" data-tooltip="color255">effect_glow</kbd> :
-Keyvalue_Description_here
+Color of glow shell effect to apply. '0 0 0' for none.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Block weapons</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_block_weapons</kbd> :
-Keyvalue_Description_here
+Prevent player from using weapons ('Yes'/'No').
 <div class="accordion">
 <input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-15">
@@ -597,15 +610,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Invulnerable</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_invulnerable</kbd> :
-Keyvalue_Description_here
+Makes player invulnerable ('Yes'/'No').
 <div class="accordion">
 <input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-16">
@@ -614,15 +627,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_invisible</kbd> :
-Keyvalue_Description_here
+Makes player invisible (for enemies) ('Yes'/'No').
 <div class="accordion">
 <input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-17">
@@ -631,15 +644,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Non-solid</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_nonsolid</kbd> :
-Keyvalue_Description_here
+Makes player not-solid for different dynamic objects ('Yes'/'No').
 <div class="accordion">
 <input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-18">
@@ -648,31 +661,31 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Time before drown (seconds)</b></span> <kbd  class="tooltip" data-tooltip="string">effect_respiration</kbd> :
-Keyvalue_Description_here
+Additional amount of time before drown (can be negative!).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Friction modifier (%)</b></span> <kbd  class="tooltip" data-tooltip="string">effect_friction</kbd> :
-Keyvalue_Description_here
+Percent of friction to change on player.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Gravity modifier (%)</b></span> <kbd  class="tooltip" data-tooltip="string">effect_gravity</kbd> :
-Keyvalue_Description_here
+Percent of gravity to change on player.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Speed modifier (%)</b></span> <kbd  class="tooltip" data-tooltip="string">effect_speed</kbd> :
-Keyvalue_Description_here
+Percent of speed to change on player. Weapon_minigun does not affect this value.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Damage modifier (%)</b></span> <kbd  class="tooltip" data-tooltip="string">effect_damage</kbd> :
-Keyvalue_Description_here
+Player damage modifier in percent.
 </div>
 ###Flags
 <hr>
@@ -681,9 +694,11 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>128 </b> : TOUCH Only : Pick this item up only by touching it.</li>
 <li class="imagepadding" markdown="1"><b>256 </b> : USE Only : Pick this item up only by using it ('USE' key).</li>
 <li class="imagepadding" markdown="1"><b>512 </b> : Can Use w/o LoS : Player can pick up this item even when it's not within his line of sight.</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : Disable Respawn : Disables default weapon respawning.</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : Disable Respawn : Disables default item respawning.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Use semicolon ';' to separate multiple item/target/group names in filters and conditions.</div>
+<div class="notices blue">If both 'TOUCH only' and 'USE only' flags are selected, the item can only be collected by trigger, but only if player is the !activator.</div>
+<div class="notices blue">Item can be collected on trigger, touch and use when none of flags above are selected.</div>
+<div class="notices blue">You can specify a group of affected players in all trigger fields making it possible to have different action for different players.</div>

@@ -5,7 +5,7 @@ title: monster_generic
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Used to create custom monsters that can be controlled by [scripted_sequences](../scripted_sequences).<br>Class: Player Ally.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with "Start Inactive" flag. Works with 'On' (enable monster), 'Off' (disable monster) and 'Toggle' (toggles monster) trigger state signals. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Some monsters can have [path_corner](../path_corner) specified as a target. On map start they will try to reach path_corner with walk animation.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -286,7 +286,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Path Name</b></span> <kbd  class="tooltip" data-tooltip="string">path_name</kbd> :
-Name of first "path_waypoint" to go to.
+Name of first [path_waypoint](../path_waypoint) to go to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Entity to Guard</b></span> <kbd  class="tooltip" data-tooltip="string">guard_ent</kbd> :
@@ -294,11 +294,11 @@ If set, the monster will try to follow and protect (attack its attackers) the gi
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Animation Sequence (Number)</b></span> <kbd  class="tooltip" data-tooltip="string">sequence</kbd> :
-Keyvalue_Description_here
+Change model display sequence in editor by specifying it's number.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Disable AI</b></span> <kbd  class="tooltip" data-tooltip="choices">disableai</kbd> :
-Keyvalue_Description_here
+Set if {{ entname }} should have it's AI disabled.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -307,8 +307,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
@@ -319,8 +319,8 @@ Choices:
 <ul>
 <li class="imagepadding" markdown="1"><b>1 </b> : WaitTillSeen : Monster will have it's AI disabled until it sees player (even if something starts attacking monster).</li>
 <li class="imagepadding" markdown="1"><b>2 </b> : Gag : Monster's idle sounds are muted at map start (until woken up).</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Not solid : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Head Controller : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Not solid : Disable collision.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : Head Controller : Make use of head controller of this model.</li>
 <li class="imagepadding" markdown="1"><b>16</b> : Prisoner : Causes the spawned monster to be an enemy regardless of the ally setting, but it won't attack or harm you in any way.</li>
 <li class="imagepadding" markdown="1"><b>128</b> : WaitForScript : If set, monster won't react to anything after being spawned until it enters a scripted sequence.</li>
 <li class="imagepadding" markdown="1"><b>256</b> : Pre-Disaster : Used for monster_scientist, monster_barneys e.t.c. Prevents player from using monster as his follower.</li>
@@ -329,5 +329,3 @@ Choices:
 <li class="imagepadding" markdown="1"><b>16384</b> : No Dyn Collision : Set whether the spawned monsters will appear solid to each other and the players or not.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

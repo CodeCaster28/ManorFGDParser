@@ -1,11 +1,11 @@
 {
   "Classname": "monster_satchel",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
+  "Description": "Pushable Satchel that explodes after triggered.",
+  "KeyDescriptions": [
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to detonate. All signal types are accepted. Can be kill-targeted.",
+      "keyChoices": []
+    }
   ]
 }

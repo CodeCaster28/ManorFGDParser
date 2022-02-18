@@ -5,7 +5,7 @@ title: info_teleport_destination
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This is the correct entity to use as the teleport destination entity of a [trigger_teleport](../trigger_teleport). Although other entities such as [info_target](../info_target) can be used as a target as well, only info_teleport_destination allows features such as triggering something on teleport. Setting entity name to displacer_global_target allows for weapon_displacer secondary fire to have players teleport to this info_teleport_destination, if the displacer does not have "Teleport Destination" (m_iszTeleportDestination).</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of info_teleport_destination so [trigger_teleport](../trigger_teleport) can target it.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger when player is teleported to this point, requires "Trigger on Arrival" flag enabled. Sends 'Toggle' signal.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -28,15 +28,13 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Teleport Cooldown Delay</b></span> <kbd  class="tooltip" data-tooltip="string">teleport_cooldown</kbd> :
-Keyvalue_Description_here
+Delay before this destination can be used again after someone landed here.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>32 </b> : Trigger on arrival : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : Trigger on arrival : If ticked, info_teleport_destination will trigger it's target whenever an entity is teleported here. The entity is passed as !activator to the info_teleport_destination's target.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

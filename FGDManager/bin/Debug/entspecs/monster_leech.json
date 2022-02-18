@@ -1,11 +1,5 @@
 {
   "Classname": "monster_leech",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Small underwater leech.<br>Class: Alien Monster.",
+  "KeyDescriptions": []
 }

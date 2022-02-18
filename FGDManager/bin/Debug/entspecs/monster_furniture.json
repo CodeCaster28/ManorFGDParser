@@ -1,11 +1,5 @@
 {
   "Classname": "monster_furniture",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Monster_furniture works in the same way as a [monster_generic](../monster_generic) does, but it has some features cut.",
+  "KeyDescriptions": []
 }

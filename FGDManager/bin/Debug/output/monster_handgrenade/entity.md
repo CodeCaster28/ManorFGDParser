@@ -5,7 +5,7 @@ title: monster_handgrenade
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Grenade that will explode after a set amount of time after spawned.</div>
 </div>
 </div>
 ###Keyvalues
@@ -81,11 +81,11 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay before explosion</b></span> <kbd  class="tooltip" data-tooltip="integer">health</kbd> :
-Keyvalue_Description_here
+Delay in seconds before grenade explodes after spawn.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Model</b></span> <kbd  class="tooltip" data-tooltip="studio">new_model</kbd> :
-Keyvalue_Description_here
+Custom grenade model.
 </div>
 ###Flags
 <hr>
@@ -94,5 +94,3 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

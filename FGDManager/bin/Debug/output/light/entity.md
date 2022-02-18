@@ -5,14 +5,14 @@ title: light
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A point light source.</div>
 </div>
 </div>
 ###Keyvalues
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Non-functional in {{ entname }}, yet need to be left empty in order to make {{ entname }} toggleable.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
@@ -20,15 +20,15 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to turn light on and off. Works with 'On' (turns light on), 'Off' (turns light off) and 'Toggle' (toggles light) trigger state signals. Kill-targeting this entity will remove {{ entname }} but won't remove lightstyles (you might want to just turn it off instead).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Brightness</b></span> <kbd  class="tooltip" data-tooltip="color255">_light</kbd> :
-
+Red, green and blue amounts of the light color, from 0 to 255, followed by the brightness, which can have pretty much any value greater than 0. It is not limited to 200 or 255 and can be a decimal, although that level of precision is rarely required.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Appearance</b></span> <kbd  class="tooltip" data-tooltip="Choices">style</kbd> :
-
+Allows you to select a light style. This will only work when a targetname is NOT set. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -55,7 +55,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Appearance</b></span> <kbd  class="tooltip" data-tooltip="string">pattern</kbd> :
-
+Allows you to set up a custom appearance of unnamed light. To do this, you will have to enter 1 to 64 chars from the alphabet ('a' to 'z'), whereas 'a' stands for being dark and 'z' for very bright. Normal lights' appearances uses 'm'. The program [Custom Lightstyle Generator](https://twhl.info/wiki/page/VERC%3A_Custom_Lightstyle_Generator_v1.0) by Craig "CRAZG" McLaren might help you here. Whatever sequence you enter is stepped through at about 8 Hertz. This will only work when a targetname is set. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Light Fade</b></span> <kbd  class="tooltip" data-tooltip="string">_fade</kbd> :
@@ -84,6 +84,7 @@ Choices:
 <div class="entityflags">
 <ul>
 <li class="imagepadding" markdown="1"><b>1 </b> : Initially dark : If set, the light will be turned off at map start. This will only work when a targetname is set. This counts as an additional lightstyle. If you have multiple lights by the same name, they will count as one additional lightstyle, even if some of the lights are initially dark while others are not. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Remove Entity : This flag is obsolete.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : Remove Entity</li>
 </ul>
 </div>
+<div class="notices blue">The use of texlights is always more encouraged, as they usually produce more realistic lighting.</div>

@@ -5,7 +5,7 @@ title: monster_alien_grunt
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Fast grunts that uses Hornetgun at the distance, and limb to punch enemies with extreme power. Drops snark nests. <br>Class: Alien Military.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with "Start Inactive" flag. Works with 'On' (enable monster), 'Off' (disable monster) and 'Toggle' (toggles monster) trigger state signals. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Some monsters can have [path_corner](../path_corner) specified as a target. On map start they will try to reach path_corner with walk animation.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -286,7 +286,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Path Name</b></span> <kbd  class="tooltip" data-tooltip="string">path_name</kbd> :
-Name of first "path_waypoint" to go to.
+Name of first [path_waypoint](../path_waypoint) to go to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Entity to Guard</b></span> <kbd  class="tooltip" data-tooltip="string">guard_ent</kbd> :
@@ -294,7 +294,7 @@ If set, the monster will try to follow and protect (attack its attackers) the gi
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Weapons</b></span> <kbd  class="tooltip" data-tooltip="Choices">weapons</kbd> :
-Keyvalue_Description_here
+You can choose which weapon the monster uses. Set to 0 for default weapons.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -303,17 +303,17 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>1 </b> : Hivehand Only : Choice_Description_here</li>
-<li><b>3 </b> : Hivehand + Snarks : Choice_Description_here</li>
-<li><b>8 </b> : Melee-Only : Choice_Description_here</li>
-<li><b>10 </b> : Melee-Only + Snarks : Choice_Description_here</li>
+<li><b>1 </b> : Hivehand Only</li>
+<li><b>3 </b> : Hivehand + Snarks</li>
+<li><b>8 </b> : Melee-Only</li>
+<li><b>10 </b> : Melee-Only + Snarks</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Squad Name</b></span> <kbd  class="tooltip" data-tooltip="string">netname</kbd> :
-Keyvalue_Description_here
+Name of a squad for this monster to be part of. Monsters which share the same squad name are in the same squad, will attempt to stay together and follow their squad's leader (monster with "SquadLeader" flag).
 </div>
 ###Flags
 <hr>
@@ -323,7 +323,7 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2 </b> : Gag : Monster's idle sounds are muted at map start (until woken up).</li>
 <li class="imagepadding" markdown="1"><b>4 </b> : MonsterClip : Monster is affected by [func_monsterclip](../func_monsterclip).</li>
 <li class="imagepadding" markdown="1"><b>16</b> : Prisoner : Causes the spawned monster to be an enemy regardless of the ally setting, but it won't attack or harm you in any way.</li>
-<li class="imagepadding" markdown="1"><b>32 </b> : SquadLeader : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : SquadLeader : Select this flag if you want this monster to become a leader of squad typed in "Squad name".</li>
 <li class="imagepadding" markdown="1"><b>128</b> : WaitForScript : If set, monster won't react to anything after being spawned until it enters a scripted sequence.</li>
 <li class="imagepadding" markdown="1"><b>256</b> : Pre-Disaster : Used for monster_scientist, monster_barneys e.t.c. Prevents player from using monster as his follower.</li>
 <li class="imagepadding" markdown="1"><b>512</b> : Don't Fade Corpse : Prevents corpse from disappearing. Useful when we have essential (mostly friendly) NPC whose death would make map impossible to finish. If corpse never fades players can revive dead monster.</li>
@@ -331,5 +331,3 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>16384</b> : No Dyn Collision : Set whether the spawned monsters will appear solid to each other and the players or not.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

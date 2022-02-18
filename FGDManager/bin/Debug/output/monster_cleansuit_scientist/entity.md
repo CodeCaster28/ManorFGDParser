@@ -5,7 +5,7 @@ title: monster_cleansuit_scientist
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Scientist, but in laboratory suit.<br>Class: Human Passive.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with "Start Inactive" flag. Works with 'On' (enable monster), 'Off' (disable monster) and 'Toggle' (toggles monster) trigger state signals. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Some monsters can have [path_corner](../path_corner) specified as a target. On map start they will try to reach path_corner with walk animation.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -175,7 +175,7 @@ Entity to fire when the above condition becomes true.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Body</b></span> <kbd  class="tooltip" data-tooltip="Choices">body</kbd> :
-Keyvalue_Description_here
+This will set which body to use. Body's are different submodels/appearances in model files. Think of the different scientists. Not all models do have multiple body's. '-1' means random.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -184,11 +184,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1 </b> : Random : Choice_Description_here</li>
-<li><b>0 </b> : Glasses : Choice_Description_here</li>
-<li><b>1 </b> : Einstein : Choice_Description_here</li>
-<li><b>2 </b> : Luther : Choice_Description_here</li>
-<li><b>3 </b> : Slick : Choice_Description_here</li>
+<li><b>-1 </b> : Random</li>
+<li><b>0 </b> : Glasses</li>
+<li><b>1 </b> : Einstein</li>
+<li><b>2 </b> : Luther</li>
+<li><b>3 </b> : Slick</li>
 </ul>
 </div>
 </div>
@@ -290,7 +290,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Path Name</b></span> <kbd  class="tooltip" data-tooltip="string">path_name</kbd> :
-Name of first "path_waypoint" to go to.
+Name of first [path_waypoint](../path_waypoint) to go to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Entity to Guard</b></span> <kbd  class="tooltip" data-tooltip="string">guard_ent</kbd> :
@@ -306,7 +306,7 @@ Name of audio or sentence to play when {{ entname }} is used by player to stop f
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Animation Sequence (editor)</b></span> <kbd  class="tooltip" data-tooltip="Choices">sequence</kbd> :
-Keyvalue_Description_here
+Change model display sequence in editor by specifying it's number.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -315,90 +315,90 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>13 </b> : idle1 : Choice_Description_here</li>
-<li><b>27 </b> : eye_wipe : Choice_Description_here</li>
-<li><b>28 </b> : pull_needle : Choice_Description_here</li>
-<li><b>29 </b> : return_needle : Choice_Description_here</li>
-<li><b>30 </b> : give_shot : Choice_Description_here</li>
-<li><b>41 </b> : germandeath : Choice_Description_here</li>
-<li><b>48 </b> : console : Choice_Description_here</li>
-<li><b>49 </b> : dryhands : Choice_Description_here</li>
-<li><b>50 </b> : tieshoe : Choice_Description_here</li>
-<li><b>51 </b> : whiteboard : Choice_Description_here</li>
-<li><b>52 </b> : studycart : Choice_Description_here</li>
-<li><b>53 </b> : lean : Choice_Description_here</li>
-<li><b>54 </b> : pondering : Choice_Description_here</li>
-<li><b>55 </b> : pondering2 : Choice_Description_here</li>
-<li><b>56 </b> : pondering3 : Choice_Description_here</li>
-<li><b>57 </b> : buysoda : Choice_Description_here</li>
-<li><b>61 </b> : push_button : Choice_Description_here</li>
-<li><b>62 </b> : converse1 : Choice_Description_here</li>
-<li><b>63 </b> : converse2 : Choice_Description_here</li>
-<li><b>64 </b> : retina : Choice_Description_here</li>
-<li><b>65 </b> : talkleft : Choice_Description_here</li>
-<li><b>66 </b> : talkright : Choice_Description_here</li>
-<li><b>67 </b> : deskidle : Choice_Description_here</li>
-<li><b>68 </b> : coffee : Choice_Description_here</li>
-<li><b>69 </b> : franticbutton : Choice_Description_here</li>
-<li><b>71 </b> : scientist_throwna : Choice_Description_here</li>
-<li><b>72 </b> : scientist_thrownb : Choice_Description_here</li>
-<li><b>73 </b> : scientist_beatwindow : Choice_Description_here</li>
-<li><b>75 </b> : scientist_zombiefear : Choice_Description_here</li>
-<li><b>77 </b> : teleport_fidget : Choice_Description_here</li>
-<li><b>79 </b> : sitlookleft : Choice_Description_here</li>
-<li><b>80 </b> : sitlookright : Choice_Description_here</li>
-<li><b>81 </b> : sitscared : Choice_Description_here</li>
-<li><b>82 </b> : sitting2 : Choice_Description_here</li>
-<li><b>83 </b> : sitting3 : Choice_Description_here</li>
-<li><b>84 </b> : cprscientist : Choice_Description_here</li>
-<li><b>85 </b> : cprscientistrevive : Choice_Description_here</li>
-<li><b>86 </b> : cowering_in_corner : Choice_Description_here</li>
-<li><b>87 </b> : sstruggleidle : Choice_Description_here</li>
-<li><b>88 </b> : sstruggle : Choice_Description_here</li>
-<li><b>89 </b> : headcrabbed : Choice_Description_here</li>
-<li><b>90 </b> : c1a0_catwalkidle : Choice_Description_here</li>
-<li><b>91 </b> : c1a0_catwalk : Choice_Description_here</li>
-<li><b>92 </b> : ceiling_dangle : Choice_Description_here</li>
-<li><b>93 </b> : ventpull1 : Choice_Description_here</li>
-<li><b>94 </b> : ventpull2 : Choice_Description_here</li>
-<li><b>95 </b> : ventpullidle1 : Choice_Description_here</li>
-<li><b>96 </b> : ventpullidle2 : Choice_Description_here</li>
-<li><b>97 </b> : sitidle : Choice_Description_here</li>
-<li><b>98 </b> : sitstand : Choice_Description_here</li>
-<li><b>99 </b> : keypad : Choice_Description_here</li>
-<li><b>101 </b> : lookwindow : Choice_Description_here</li>
-<li><b>102 </b> : wave : Choice_Description_here</li>
-<li><b>103 </b> : pulldoor : Choice_Description_here</li>
-<li><b>104 </b> : beatdoor : Choice_Description_here</li>
-<li><b>105 </b> : fallingloop : Choice_Description_here</li>
-<li><b>106 </b> : crawlwindow : Choice_Description_here</li>
-<li><b>107 </b> : divewindow : Choice_Description_here</li>
-<li><b>108 </b> : locked_door : Choice_Description_here</li>
-<li><b>109 </b> : push_button2 : Choice_Description_here</li>
-<li><b>110 </b> : unlock_door : Choice_Description_here</li>
-<li><b>112 </b> : handrailidle : Choice_Description_here</li>
-<li><b>113 </b> : handrail : Choice_Description_here</li>
-<li><b>114 </b> : hanging_idle : Choice_Description_here</li>
-<li><b>115 </b> : fall : Choice_Description_here</li>
-<li><b>116 </b> : scientist_get_pulled : Choice_Description_here</li>
-<li><b>117 </b> : hanging_idle2 : Choice_Description_here</li>
-<li><b>118 </b> : fall_elevator : Choice_Description_here</li>
-<li><b>119 </b> : scientist_idlewall : Choice_Description_here</li>
-<li><b>120 </b> : ickyjump_sci : Choice_Description_here</li>
-<li><b>121 </b> : haulscientist : Choice_Description_here</li>
-<li><b>122 </b> : c1a4_wounded_idle : Choice_Description_here</li>
-<li><b>123 </b> : c1a4_dying_speech : Choice_Description_here</li>
-<li><b>124 </b> : tentacle_grab : Choice_Description_here</li>
-<li><b>125 </b> : helicack : Choice_Description_here</li>
-<li><b>126 </b> : windive : Choice_Description_here</li>
-<li><b>127 </b> : scicrashidle : Choice_Description_here</li>
-<li><b>128 </b> : scicrash : Choice_Description_here</li>
-<li><b>129 </b> : onguard : Choice_Description_here</li>
-<li><b>130 </b> : seeya : Choice_Description_here</li>
-<li><b>131 </b> : rocketcrawl : Choice_Description_here</li>
-<li><b>132 </b> : portal : Choice_Description_here</li>
-<li><b>133 </b> : gluonshow : Choice_Description_here</li>
-<li><b>135 </b> : kneel : Choice_Description_here</li>
+<li><b>13 </b> : idle1</li>
+<li><b>27 </b> : eye_wipe</li>
+<li><b>28 </b> : pull_needle</li>
+<li><b>29 </b> : return_needle</li>
+<li><b>30 </b> : give_shot</li>
+<li><b>41 </b> : germandeath</li>
+<li><b>48 </b> : console</li>
+<li><b>49 </b> : dryhands</li>
+<li><b>50 </b> : tieshoe</li>
+<li><b>51 </b> : whiteboard</li>
+<li><b>52 </b> : studycart</li>
+<li><b>53 </b> : lean</li>
+<li><b>54 </b> : pondering</li>
+<li><b>55 </b> : pondering2</li>
+<li><b>56 </b> : pondering3</li>
+<li><b>57 </b> : buysoda</li>
+<li><b>61 </b> : push_button</li>
+<li><b>62 </b> : converse1</li>
+<li><b>63 </b> : converse2</li>
+<li><b>64 </b> : retina</li>
+<li><b>65 </b> : talkleft</li>
+<li><b>66 </b> : talkright</li>
+<li><b>67 </b> : deskidle</li>
+<li><b>68 </b> : coffee</li>
+<li><b>69 </b> : franticbutton</li>
+<li><b>71 </b> : scientist_throwna</li>
+<li><b>72 </b> : scientist_thrownb</li>
+<li><b>73 </b> : scientist_beatwindow</li>
+<li><b>75 </b> : scientist_zombiefear</li>
+<li><b>77 </b> : teleport_fidget</li>
+<li><b>79 </b> : sitlookleft</li>
+<li><b>80 </b> : sitlookright</li>
+<li><b>81 </b> : sitscared</li>
+<li><b>82 </b> : sitting2</li>
+<li><b>83 </b> : sitting3</li>
+<li><b>84 </b> : cprscientist</li>
+<li><b>85 </b> : cprscientistrevive</li>
+<li><b>86 </b> : cowering_in_corner</li>
+<li><b>87 </b> : sstruggleidle</li>
+<li><b>88 </b> : sstruggle</li>
+<li><b>89 </b> : headcrabbed</li>
+<li><b>90 </b> : c1a0_catwalkidle</li>
+<li><b>91 </b> : c1a0_catwalk</li>
+<li><b>92 </b> : ceiling_dangle</li>
+<li><b>93 </b> : ventpull1</li>
+<li><b>94 </b> : ventpull2</li>
+<li><b>95 </b> : ventpullidle1</li>
+<li><b>96 </b> : ventpullidle2</li>
+<li><b>97 </b> : sitidle</li>
+<li><b>98 </b> : sitstand</li>
+<li><b>99 </b> : keypad</li>
+<li><b>101 </b> : lookwindow</li>
+<li><b>102 </b> : wave</li>
+<li><b>103 </b> : pulldoor</li>
+<li><b>104 </b> : beatdoor</li>
+<li><b>105 </b> : fallingloop</li>
+<li><b>106 </b> : crawlwindow</li>
+<li><b>107 </b> : divewindow</li>
+<li><b>108 </b> : locked_door</li>
+<li><b>109 </b> : push_button2</li>
+<li><b>110 </b> : unlock_door</li>
+<li><b>112 </b> : handrailidle</li>
+<li><b>113 </b> : handrail</li>
+<li><b>114 </b> : hanging_idle</li>
+<li><b>115 </b> : fall</li>
+<li><b>116 </b> : scientist_get_pulled</li>
+<li><b>117 </b> : hanging_idle2</li>
+<li><b>118 </b> : fall_elevator</li>
+<li><b>119 </b> : scientist_idlewall</li>
+<li><b>120 </b> : ickyjump_sci</li>
+<li><b>121 </b> : haulscientist</li>
+<li><b>122 </b> : c1a4_wounded_idle</li>
+<li><b>123 </b> : c1a4_dying_speech</li>
+<li><b>124 </b> : tentacle_grab</li>
+<li><b>125 </b> : helicack</li>
+<li><b>126 </b> : windive</li>
+<li><b>127 </b> : scicrashidle</li>
+<li><b>128 </b> : scicrash</li>
+<li><b>129 </b> : onguard</li>
+<li><b>130 </b> : seeya</li>
+<li><b>131 </b> : rocketcrawl</li>
+<li><b>132 </b> : portal</li>
+<li><b>133 </b> : gluonshow</li>
+<li><b>135 </b> : kneel</li>
 </ul>
 </div>
 </div>
@@ -418,5 +418,3 @@ Choices:
 <li class="imagepadding" markdown="1"><b>16384</b> : No Dyn Collision : Set whether the spawned monsters will appear solid to each other and the players or not.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

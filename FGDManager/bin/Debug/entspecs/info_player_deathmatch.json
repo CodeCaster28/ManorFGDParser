@@ -9,7 +9,7 @@
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity to trigger when player is spawned at this point. Sends trigger state signal defined at \"Trigger State\" keyvalue.",
+      "keyDescription": "Entity to trigger when player is spawned at this point, requires \"Trigger on spawn\" flag enabled. Sends trigger state signal defined at \"Trigger State\" keyvalue.",
       "keyChoices": []
     }
   ],

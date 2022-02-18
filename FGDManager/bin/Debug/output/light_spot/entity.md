@@ -5,7 +5,7 @@ title: light_spot
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This works as [light](../light) does, except that the emitted light will be limited to a cone. You can customize cone size and brightness. Perfect for searchlight, car lights, streetlights etc. It's more atmospheric than point light, however areas inside of the cone won't be illuminated enough (higher '-bounce' hlrad compile parameter values may increase brightness outside the light_spot a bit).</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to turn light on and off. Works with 'On' (turns light on), 'Off' (turns light off) and 'Toggle' (toggles light) trigger state signals. Kill-targeting this entity will remove {{ entname }} but won't remove lightstyles (you might want to just turn it off instead).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+The name of an entity in the map that the spotlight will point at (preferably [info_null](../info_null)). This will override the spotlight's angles.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -50,23 +50,23 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Inner (bright) angle</b></span> <kbd  class="tooltip" data-tooltip="integer">_cone</kbd> :
-Keyvalue_Description_here
+The angle, in inches, in which cone is full-lit. It works separately from outer angle, so you can use either both or one of those keyvalues.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Outer (fading) angle</b></span> <kbd  class="tooltip" data-tooltip="integer">_cone2</kbd> :
-Keyvalue_Description_here
+The angle, in inches, in which cone is fading out (outside of inner angle). It works separately from inner angle, so you can use either both or one of those keyvalues.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch</b></span> <kbd  class="tooltip" data-tooltip="integer">pitch</kbd> :
-Keyvalue_Description_here
+Pitch determines direction of the light, '0' is horizontal, '90' is vertical from top, '-90' is vertical from bottom. You can use info_target as a light target instead.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Brightness</b></span> <kbd  class="tooltip" data-tooltip="color255">_light</kbd> :
-Keyvalue_Description_here
+Red, green and blue amounts of the light color, from 0 to 255, followed by the brightness, which can have pretty much any value greater than 0. It is not limited to 200 or 255 and can be a decimal, although that level of precision is rarely required.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Is Sky</b></span> <kbd  class="tooltip" data-tooltip="Choices">_sky</kbd> :
-Keyvalue_Description_here
+Makes light_spot simulates [light_environment](../light_environment), it will emit light from all sky textures. It's useful for dark maps, models will be displayed correctly within light and light_spot entities, in normal light_environment all model lightning are generated from sky, and point/spot lights are ignored.
 <div class="accordion">
 <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-2">
@@ -75,15 +75,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Appearance</b></span> <kbd  class="tooltip" data-tooltip="Choices">style</kbd> :
-Keyvalue_Description_here
+Allows you to select a light style. This will only work when a targetname is NOT set. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -92,32 +92,30 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : Normal : Choice_Description_here</li>
-<li><b>10</b> : Fluorescent flicker : Choice_Description_here</li>
-<li><b>2 </b> : Slow, strong pulse : Choice_Description_here</li>
-<li><b>11</b> : Slow pulse, noblack : Choice_Description_here</li>
-<li><b>5 </b> : Gentle pulse : Choice_Description_here</li>
-<li><b>1 </b> : Flicker A : Choice_Description_here</li>
-<li><b>6 </b> : Flicker B : Choice_Description_here</li>
-<li><b>3 </b> : Candle A : Choice_Description_here</li>
-<li><b>7 </b> : Candle B : Choice_Description_here</li>
-<li><b>8 </b> : Candle C : Choice_Description_here</li>
-<li><b>4 </b> : Fast strobe : Choice_Description_here</li>
-<li><b>9 </b> : Slow strobe : Choice_Description_here</li>
+<li><b>0 </b> : Normal</li>
+<li><b>10</b> : Fluorescent flicker</li>
+<li><b>2 </b> : Slow, strong pulse</li>
+<li><b>11</b> : Slow pulse, noblack</li>
+<li><b>5 </b> : Gentle pulse</li>
+<li><b>1 </b> : Flicker A</li>
+<li><b>6 </b> : Flicker B</li>
+<li><b>3 </b> : Candle A</li>
+<li><b>7 </b> : Candle B</li>
+<li><b>8 </b> : Candle C</li>
+<li><b>4 </b> : Fast strobe</li>
+<li><b>9 </b> : Slow strobe</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Appearance</b></span> <kbd  class="tooltip" data-tooltip="string">pattern</kbd> :
-Keyvalue_Description_here
+Allows you to set up a custom appearance of unnamed light. To do this, you will have to enter 1 to 64 chars from the alphabet ('a' to 'z'), whereas 'a' stands for being dark and 'z' for very bright. Normal lights' appearances uses 'm'. The program [Custom Lightstyle Generator](https://twhl.info/wiki/page/VERC%3A_Custom_Lightstyle_Generator_v1.0) by Craig "CRAZG" McLaren might help you here. Whatever sequence you enter is stepped through at about 8 Hertz. This will only work when a targetname is set. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Initially dark : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Initially dark : If set, the light will be turned off at map start. This will only work when a targetname is set. This counts as an additional lightstyle. If you have multiple lights by the same name, they will count as one additional lightstyle, even if some of the lights are initially dark while others are not. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

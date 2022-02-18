@@ -3,6 +3,16 @@
   "Description": "Entity_Description_here",
   "KeyDescriptions": [
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with \"Start Inactive\" flag. Works with 'On' (enable monster), 'Off' (disable monster) and 'Toggle' (toggles monster) trigger state signals. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Some monsters can have [path_corner](../path_corner) specified as a target. On map start they will try to reach path_corner with walk animation.",
+      "keyChoices": []
+    },
+    {
       "keyName": "spawnflags",
       "keyDescription": "Keyvalue_Description_here",
       "keyChoices": [
@@ -197,7 +207,7 @@
     },
     {
       "keyName": "path_name",
-      "keyDescription": "Name of first \"path_waypoint\" to go to.",
+      "keyDescription": "Name of first [path_waypoint](../path_waypoint) to go to.",
       "keyChoices": []
     },
     {

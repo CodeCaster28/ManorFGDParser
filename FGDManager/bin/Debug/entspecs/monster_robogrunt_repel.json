@@ -1,48 +1,47 @@
 {
   "Classname": "monster_robogrunt_repel",
-  "Description": "Entity_Description_here",
+  "Description": "Robot that will appear rappelling down when triggered.<br>Class: Machine.",
   "KeyDescriptions": [
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start rappelling. All signal types are accepted. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
       "keyName": "weapons",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "You can choose which weapon the monster uses (HG = Hand Grenade, GL= M16 Grenade Launcher e.t.c.).",
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "5 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "8 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "10 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "sequence",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Change model display sequence in editor by specifying it's number.",
       "keyChoices": [
         {
           "choiceValue": "48 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

@@ -1,10 +1,10 @@
 {
   "Classname": "monster_human_grunt_ally",
-  "Description": "Entity_Description_here",
+  "Description": "Ally grunts.<br>Class: Player Ally.",
   "KeyDescriptions": [
     {
       "keyName": "netname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of a squad for this monster to be part of. Monsters which share the same squad name are in the same squad, will attempt to stay together and follow their squad's leader (monster with \"SquadLeader\" flag).",
       "keyChoices": []
     },
     {
@@ -13,95 +13,89 @@
       "keyChoices": [
         {
           "choiceValue": "32 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Select this flag if you want this monster to become a leader of squad typed in \"Squad name\"."
         }
       ]
     },
     {
       "keyName": "weapons",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "You can choose which weapon the monster uses (HG = Hand Grenade, GL= M16 Grenade Launcher e.t.c.).",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "5 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "8 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "10 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "16 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "32 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "head",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "This will set which head to use. Heads are different submodels/appearances in model files. Not all models do have multiple heads. '-1' means random.",
       "keyChoices": [
         {
           "choiceValue": "-1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "5 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "6 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "7 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

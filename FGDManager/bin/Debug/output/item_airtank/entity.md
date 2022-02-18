@@ -5,14 +5,14 @@ title: item_airtank
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The Air Tank is a non-collectible item which provides any player touching it with an additional 12 seconds worth of air when swimming underwater. It recharges 30 seconds after use and is destructible. It has 20 health points. Causes an explosion when destroyed and never respawns.</div>
 </div>
 </div>
 ###Keyvalues
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger when player touched it or air tank has been recharged (after 30 seconds cooldown). Sends 'Toggle' trigger state signal in both cases.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -28,7 +28,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it. Can only be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -98,7 +98,7 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Gravity Setting</b></span> <kbd  class="tooltip" data-tooltip="choices">movetype</kbd> :
-Determines how items behave after spawn. Set 'Hover in the air' so . You can also set 'Hover in the air, ignore brush collision' so .
+Determines how items behave after spawn.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -162,9 +162,8 @@ Set the path to a sound replacement file for the item. The path begins in 'svenc
 <li class="imagepadding" markdown="1"><b>128 </b> : TOUCH Only : Pick this item up only by touching it.</li>
 <li class="imagepadding" markdown="1"><b>256 </b> : USE Only : Pick this item up only by using it ('USE' key).</li>
 <li class="imagepadding" markdown="1"><b>512 </b> : Can Use w/o LoS : Player can pick up this item even when it's not within his line of sight.</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : Disable Respawn : Disables default weapon respawning.</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : Disable Respawn : Disables default item respawning.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">As opposed to other items entities, this cannot be triggered to collect/use.</div>

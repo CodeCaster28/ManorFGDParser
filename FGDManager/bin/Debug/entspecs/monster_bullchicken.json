@@ -1,11 +1,5 @@
 {
   "Classname": "monster_bullchicken",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Bullsquid. Aggressive predator that split acid at his foes and using powerful tail attacks.<br>Class: Alien Predator.",
+  "KeyDescriptions": []
 }

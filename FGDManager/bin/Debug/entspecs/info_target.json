@@ -1,11 +1,11 @@
 {
   "Classname": "info_target",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
+  "Description": "Similar to [info_null](../info_null) but serves as a target for [trigger_camera](../trigger_camera) or [env_laser](../env_laser).",
+  "KeyDescriptions": [
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set the name so other entity can point to this entity as a target, like [trigger_camera](../trigger_camera) or [env_laser](../env_laser).",
+      "keyChoices": []
+    }
   ]
 }

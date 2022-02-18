@@ -5,7 +5,7 @@ title: monster_sitting_scientist
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Scientist that is set to be sitting.<br>Class: Human Passive.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with "Start Inactive" flag. Works with 'On' (enable monster), 'Off' (disable monster) and 'Toggle' (toggles monster) trigger state signals. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Some monsters can have [path_corner](../path_corner) specified as a target. On map start they will try to reach path_corner with walk animation.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -175,7 +175,7 @@ Entity to fire when the above condition becomes true.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Body</b></span> <kbd  class="tooltip" data-tooltip="Choices">body</kbd> :
-Keyvalue_Description_here
+This will set which body to use. Body's are different submodels/appearances in model files. Think of the different scientists. Not all models do have multiple body's. '-1' means random.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -184,11 +184,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1 </b> : Random : Choice_Description_here</li>
-<li><b>0 </b> : Glasses : Choice_Description_here</li>
-<li><b>1 </b> : Einstein : Choice_Description_here</li>
-<li><b>2 </b> : Luther : Choice_Description_here</li>
-<li><b>3 </b> : Slick : Choice_Description_here</li>
+<li><b>-1 </b> : Random</li>
+<li><b>0 </b> : Glasses</li>
+<li><b>1 </b> : Einstein</li>
+<li><b>2 </b> : Luther</li>
+<li><b>3 </b> : Slick</li>
 </ul>
 </div>
 </div>
@@ -290,7 +290,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Path Name</b></span> <kbd  class="tooltip" data-tooltip="string">path_name</kbd> :
-Name of first "path_waypoint" to go to.
+Name of first [path_waypoint](../path_waypoint) to go to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Entity to Guard</b></span> <kbd  class="tooltip" data-tooltip="string">guard_ent</kbd> :
@@ -306,7 +306,7 @@ Name of audio or sentence to play when {{ entname }} is used by player to stop f
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Animation Sequence (editor)</b></span> <kbd  class="tooltip" data-tooltip="Choices">sequence</kbd> :
-Keyvalue_Description_here
+Change model display sequence in editor by specifying it's number.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -315,11 +315,11 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>71 </b> : sitlookleft : Choice_Description_here</li>
-<li><b>72 </b> : sitlookright : Choice_Description_here</li>
-<li><b>73 </b> : sitscared : Choice_Description_here</li>
-<li><b>74 </b> : sitting2 : Choice_Description_here</li>
-<li><b>75 </b> : sitting3 : Choice_Description_here</li>
+<li><b>71 </b> : sitlookleft</li>
+<li><b>72 </b> : sitlookright</li>
+<li><b>73 </b> : sitscared</li>
+<li><b>74 </b> : sitting2</li>
+<li><b>75 </b> : sitting3</li>
 </ul>
 </div>
 </div>
@@ -339,5 +339,3 @@ Choices:
 <li class="imagepadding" markdown="1"><b>16384</b> : No Dyn Collision : Set whether the spawned monsters will appear solid to each other and the players or not.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

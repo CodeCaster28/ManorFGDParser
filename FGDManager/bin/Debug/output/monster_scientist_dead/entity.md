@@ -5,7 +5,7 @@ title: monster_scientist_dead
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Non-solid corpse of [Scientist](../monster_scientist).</div>
 </div>
 </div>
 ###Keyvalues
@@ -81,7 +81,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Body</b></span> <kbd  class="tooltip" data-tooltip="Choices">body</kbd> :
-Keyvalue_Description_here
+This will set which body to use. Body's are different submodels/appearances in model files. Think of the different scientists. Not all models do have multiple body's. '-1' means random.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -90,18 +90,18 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1 </b> : Random : Choice_Description_here</li>
-<li><b>0 </b> : Glasses : Choice_Description_here</li>
-<li><b>1 </b> : Einstein : Choice_Description_here</li>
-<li><b>2 </b> : Luther : Choice_Description_here</li>
-<li><b>3 </b> : Slick : Choice_Description_here</li>
+<li><b>-1 </b> : Random</li>
+<li><b>0 </b> : Glasses</li>
+<li><b>1 </b> : Einstein</li>
+<li><b>2 </b> : Luther</li>
+<li><b>3 </b> : Slick</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pose</b></span> <kbd  class="tooltip" data-tooltip="Choices">pose</kbd> :
-Keyvalue_Description_here
+Pose to use in game.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">
@@ -110,20 +110,20 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : On back : Choice_Description_here</li>
-<li><b>1 </b> : On Stomach : Choice_Description_here</li>
-<li><b>2 </b> : Sitting : Choice_Description_here</li>
-<li><b>3 </b> : Hanging : Choice_Description_here</li>
-<li><b>4 </b> : Table1 : Choice_Description_here</li>
-<li><b>5 </b> : Table2 : Choice_Description_here</li>
-<li><b>6 </b> : Table3 : Choice_Description_here</li>
+<li><b>0 </b> : On back</li>
+<li><b>1 </b> : On Stomach</li>
+<li><b>2 </b> : Sitting</li>
+<li><b>3 </b> : Hanging</li>
+<li><b>4 </b> : Table1</li>
+<li><b>5 </b> : Table2</li>
+<li><b>6 </b> : Table3</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Animation Sequence (editor)</b></span> <kbd  class="tooltip" data-tooltip="Choices">sequence</kbd> :
-Keyvalue_Description_here
+Change model display sequence in editor by specifying it's number.
 <div class="accordion">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">
@@ -132,19 +132,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>37 </b> : lying_on_back : Choice_Description_here</li>
-<li><b>38 </b> : lying_on_stomach : Choice_Description_here</li>
-<li><b>39 </b> : dead_sitting : Choice_Description_here</li>
-<li><b>40 </b> : dead_table1 : Choice_Description_here</li>
-<li><b>41 </b> : dead_table2 : Choice_Description_here</li>
-<li><b>42 </b> : dead_table3 : Choice_Description_here</li>
+<li><b>37 </b> : lying_on_back</li>
+<li><b>38 </b> : lying_on_stomach</li>
+<li><b>39 </b> : dead_sitting</li>
+<li><b>40 </b> : dead_table1</li>
+<li><b>41 </b> : dead_table2</li>
+<li><b>42 </b> : dead_table3</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Model</b></span> <kbd  class="tooltip" data-tooltip="studio">model</kbd> :
-Keyvalue_Description_here
+If set, this will overwrite the monster's default model. This needs to be precached using a [custom_precache](../custom_precache) entity.
 </div>
 ###Flags
 <hr>
@@ -153,5 +153,3 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

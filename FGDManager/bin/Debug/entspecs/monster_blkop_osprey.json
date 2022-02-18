@@ -1,6 +1,6 @@
 {
   "Classname": "monster_blkop_osprey",
-  "Description": "Entity_Description_here",
+  "Description": "Black osprey delivers human assassins. Shoot it's rotor to destroy it. Also care for explosion he made after destroyed.<br>Class: Machine.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,15 +8,9 @@
       "keyChoices": [
         {
           "choiceValue": "64 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Start disabled, ignore environment until triggered."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

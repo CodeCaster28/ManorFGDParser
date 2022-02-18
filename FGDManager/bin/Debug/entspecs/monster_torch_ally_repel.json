@@ -1,10 +1,15 @@
 {
   "Classname": "monster_torch_ally_repel",
-  "Description": "Entity_Description_here",
+  "Description": "Ally engineer that will appear rappelling down when triggered.<br>Class: Player Ally.",
   "KeyDescriptions": [
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start rappelling. All signal types are accepted. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
       "keyName": "netname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of a squad for this monster to be part of. Monsters which share the same squad name are in the same squad, will attempt to stay together and follow their squad's leader (monster with \"SquadLeader\" flag).",
       "keyChoices": []
     },
     {
@@ -13,39 +18,33 @@
       "keyChoices": [
         {
           "choiceValue": "32 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Select this flag if you want this monster to become a leader of squad typed in \"Squad name\"."
         }
       ]
     },
     {
       "keyName": "weapons",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "You can choose which weapon the monster uses.",
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "sequence",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Change model display sequence in editor by specifying it's number.",
       "keyChoices": [
         {
           "choiceValue": "39 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

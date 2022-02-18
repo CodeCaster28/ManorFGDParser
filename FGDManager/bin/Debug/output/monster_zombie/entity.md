@@ -5,7 +5,7 @@ title: monster_zombie
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Scientist possessed by headcrab. Slow but dangerous in close combat.<br>Alien Monster.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with "Start Inactive" flag. Works with 'On' (enable monster), 'Off' (disable monster) and 'Toggle' (toggles monster) trigger state signals. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Some monsters can have [path_corner](../path_corner) specified as a target. On map start they will try to reach path_corner with walk animation.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -286,7 +286,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Path Name</b></span> <kbd  class="tooltip" data-tooltip="string">path_name</kbd> :
-Name of first "path_waypoint" to go to.
+Name of first [path_waypoint](../path_waypoint) to go to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Entity to Guard</b></span> <kbd  class="tooltip" data-tooltip="string">guard_ent</kbd> :
@@ -294,7 +294,7 @@ If set, the monster will try to follow and protect (attack its attackers) the gi
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Animation Sequence (editor)</b></span> <kbd  class="tooltip" data-tooltip="Choices">sequence</kbd> :
-Keyvalue_Description_here
+Change model display sequence in editor by specifying it's number.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -303,41 +303,41 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0  </b> : idle1 : Choice_Description_here</li>
-<li><b>19 </b> : getup : Choice_Description_here</li>
-<li><b>20 </b> : pause : Choice_Description_here</li>
-<li><b>21 </b> : busting_through_wall : Choice_Description_here</li>
-<li><b>22 </b> : kick_punch_wall : Choice_Description_here</li>
-<li><b>23 </b> : bust_window : Choice_Description_here</li>
-<li><b>24 </b> : soda : Choice_Description_here</li>
-<li><b>25 </b> : slideidle : Choice_Description_here</li>
-<li><b>26 </b> : slidewall : Choice_Description_here</li>
-<li><b>27 </b> : ventclimbidle : Choice_Description_here</li>
-<li><b>28 </b> : ventclimb : Choice_Description_here</li>
-<li><b>29 </b> : deadidle : Choice_Description_here</li>
-<li><b>30 </b> : deadwall : Choice_Description_here</li>
-<li><b>31 </b> : freakdie : Choice_Description_here</li>
-<li><b>32 </b> : freak : Choice_Description_here</li>
-<li><b>33 </b> : eatbodytable : Choice_Description_here</li>
-<li><b>34 </b> : eatbody : Choice_Description_here</li>
-<li><b>35 </b> : eatbodystand : Choice_Description_here</li>
-<li><b>36 </b> : ripdoor : Choice_Description_here</li>
-<li><b>37 </b> : zombie_pull_scientist : Choice_Description_here</li>
-<li><b>38 </b> : zombie_eating : Choice_Description_here</li>
-<li><b>39 </b> : eat_to_stand : Choice_Description_here</li>
-<li><b>40 </b> : vent_zidle : Choice_Description_here</li>
-<li><b>41 </b> : vent_c1a3 : Choice_Description_here</li>
-<li><b>42 </b> : haulzombie : Choice_Description_here</li>
-<li><b>43 </b> : c2a3_snack_getup : Choice_Description_here</li>
-<li><b>44 </b> : zombie_fight : Choice_Description_here</li>
-<li><b>45 </b> : crush : Choice_Description_here</li>
-<li><b>48 </b> : crushed : Choice_Description_here</li>
-<li><b>46 </b> : spazhard : Choice_Description_here</li>
-<li><b>47 </b> : spaz : Choice_Description_here</li>
-<li><b>49 </b> : compthrow_idle : Choice_Description_here</li>
-<li><b>50 </b> : compthrow : Choice_Description_here</li>
-<li><b>51 </b> : iceslip : Choice_Description_here</li>
-<li><b>52 </b> : get_run_over : Choice_Description_here</li>
+<li><b>0  </b> : idle1</li>
+<li><b>19 </b> : getup</li>
+<li><b>20 </b> : pause</li>
+<li><b>21 </b> : busting_through_wall</li>
+<li><b>22 </b> : kick_punch_wall</li>
+<li><b>23 </b> : bust_window</li>
+<li><b>24 </b> : soda</li>
+<li><b>25 </b> : slideidle</li>
+<li><b>26 </b> : slidewall</li>
+<li><b>27 </b> : ventclimbidle</li>
+<li><b>28 </b> : ventclimb</li>
+<li><b>29 </b> : deadidle</li>
+<li><b>30 </b> : deadwall</li>
+<li><b>31 </b> : freakdie</li>
+<li><b>32 </b> : freak</li>
+<li><b>33 </b> : eatbodytable</li>
+<li><b>34 </b> : eatbody</li>
+<li><b>35 </b> : eatbodystand</li>
+<li><b>36 </b> : ripdoor</li>
+<li><b>37 </b> : zombie_pull_scientist</li>
+<li><b>38 </b> : zombie_eating</li>
+<li><b>39 </b> : eat_to_stand</li>
+<li><b>40 </b> : vent_zidle</li>
+<li><b>41 </b> : vent_c1a3</li>
+<li><b>42 </b> : haulzombie</li>
+<li><b>43 </b> : c2a3_snack_getup</li>
+<li><b>44 </b> : zombie_fight</li>
+<li><b>45 </b> : crush</li>
+<li><b>48 </b> : crushed</li>
+<li><b>46 </b> : spazhard</li>
+<li><b>47 </b> : spaz</li>
+<li><b>49 </b> : compthrow_idle</li>
+<li><b>50 </b> : compthrow</li>
+<li><b>51 </b> : iceslip</li>
+<li><b>52 </b> : get_run_over</li>
 </ul>
 </div>
 </div>
@@ -357,5 +357,3 @@ Choices:
 <li class="imagepadding" markdown="1"><b>16384</b> : No Dyn Collision : Set whether the spawned monsters will appear solid to each other and the players or not.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

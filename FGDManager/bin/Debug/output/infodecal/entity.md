@@ -5,7 +5,7 @@ title: infodecal
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This entity is used to place decals onto level geometry, e.g. cracks in walls, supposedly caused by explosions. It can only utilize textures from the decals.wad wad-file located in the svencoop directory. Using decals tool is more efficient and faster.</div>
 </div>
 </div>
 ###Keyvalues
@@ -20,7 +20,7 @@ Set name of {{ entname }} so other entities can trigger it.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b></b></span> <kbd  class="tooltip" data-tooltip="decal">texture</kbd> :
-Keyvalue_Description_here
+Name of the texture to use. Only textures with '{' prefix and white background are supported.
 </div>
 ###Flags
 <hr>
@@ -29,5 +29,3 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

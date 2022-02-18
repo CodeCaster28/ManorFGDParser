@@ -1,10 +1,10 @@
 {
   "Classname": "monster_alien_slave",
-  "Description": "Entity_Description_here",
+  "Description": "Enslaved Vortigaunts that serves military aliens in their battle. Uses lighting bolts to hurt opponents and to revive other fallen vortigaunts.<br>Class: Alien Monster.",
   "KeyDescriptions": [
     {
       "keyName": "netname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of a squad for this monster to be part of. Monsters which share the same squad name are in the same squad, will attempt to stay together and follow their squad's leader (monster with \"SquadLeader\" flag).",
       "keyChoices": []
     },
     {
@@ -13,19 +13,13 @@
       "keyChoices": [
         {
           "choiceValue": "32 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Select this flag if you want this monster to become a leader of squad typed in \"Squad name\"."
         },
         {
           "choiceValue": "64 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Ignore players presence."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

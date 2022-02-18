@@ -1,53 +1,47 @@
 {
   "Classname": "monster_barney_dead",
-  "Description": "Entity_Description_here",
+  "Description": "Non-solid corpse of [Barney](../monster_barney).",
   "KeyDescriptions": [
     {
       "keyName": "pose",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Pose to use in game.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "sequence",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Change model display sequence in editor by specifying it's number.",
       "keyChoices": [
         {
           "choiceValue": "35 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "36 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "37 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "model",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If set, this will overwrite the monster's default model. This needs to be precached using a [custom_precache](../custom_precache) entity.",
       "keyChoices": []
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

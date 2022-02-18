@@ -1,11 +1,5 @@
 {
   "Classname": "monster_nihilanth",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Xen most powerful creature. Wield power that is beyond human imagination.<br>Class: Alien Military.",
+  "KeyDescriptions": []
 }

@@ -1,10 +1,10 @@
 {
   "Classname": "monster_alien_tor",
-  "Description": "Entity_Description_here",
+  "Description": "Xen Overlord. One of the most Powerful opponents that summons Alien Grunts and have insane damage output, uses sonic wave that critically damage everyone around him, he can use his staff which shoots projectiles with deadly accuracy to send his foes high up the air so they fall to the ground for death.<br>Class: Alien Military.",
   "KeyDescriptions": [
     {
       "keyName": "netname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of a squad for this monster to be part of. Monsters which share the same squad name are in the same squad, will attempt to stay together and follow their squad's leader (monster with \"SquadLeader\" flag).",
       "keyChoices": []
     },
     {
@@ -13,15 +13,9 @@
       "keyChoices": [
         {
           "choiceValue": "32 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Select this flag if you want this monster to become a leader of squad typed in \"Squad name\"."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

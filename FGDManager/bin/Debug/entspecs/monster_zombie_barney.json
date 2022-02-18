@@ -1,11 +1,5 @@
 {
   "Classname": "monster_zombie_barney",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Barney possessed by headcrab. Slow but dangerous in close combat. Stronger than regular zombie.<br>Alien Monster.",
+  "KeyDescriptions": []
 }

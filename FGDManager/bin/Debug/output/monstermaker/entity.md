@@ -5,7 +5,7 @@ title: monstermaker
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Used to spawn monsters (works with other stuff too e.g. items!). Very limited. Use [squadmaker](../squadmaker) instead for better results and more control. You must specify monster type, otherwise it will crash the game with "Spawned a NULL entity!" error message.</div>
 </div>
 </div>
 ###Keyvalues
@@ -24,23 +24,23 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target On Release</b></span> <kbd  class="tooltip" data-tooltip="string">target</kbd> :
-Keyvalue_Description_here
+Entity or entities to trigger whenever a monster is spawned. It sends 'Toggle' trigger state signal.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Monster Type</b></span> <kbd  class="tooltip" data-tooltip="string">monstertype</kbd> :
-Keyvalue_Description_here
+Set the classname of the monster, weapon, item, ammunition or whatever else may be spawned by {{ entname }} without working incorrectly here. You must specify monster type, otherwise it will crash the game with "Spawned a NULL entity!" error message.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Childrens' Name</b></span> <kbd  class="tooltip" data-tooltip="string">netname</kbd> :
-Keyvalue_Description_here
+If set, everything that is spawned by this {{ entname }} will receive this as it's targetname.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Monster count </b></span> <kbd  class="tooltip" data-tooltip="integer">monstercount</kbd> :
-Keyvalue_Description_here
+Total amount of monsters which can be spawned by this {{ entname }}. If this value runs, the {{ entname }} won't spawn anything anymore. Setting this to '-1' means an endless supply.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Make Player Allys</b></span> <kbd  class="tooltip" data-tooltip="choices">respawn_as_playerally</kbd> :
-Keyvalue_Description_here
+Set whether the spawned monster is an ally or a foe of the players.
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -49,37 +49,35 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : Default (0) : Choice_Description_here</li>
-<li><b>1 </b> : Opposite (1) : Choice_Description_here</li>
+<li><b>0 </b> : Default (0)</li>
+<li><b>1 </b> : Opposite (1)</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Frequency</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
-Keyvalue_Description_here
+Delay, in seconds, between spawns.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Max live children</b></span> <kbd  class="tooltip" data-tooltip="integer">m_imaxlivechildren</kbd> :
-Keyvalue_Description_here
+Maximum amount of spawns by this {{ entname }} which may exist at a time. Note that for monsters, they will be counted as a live child till their corpse has faded out.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Health</b></span> <kbd  class="tooltip" data-tooltip="integer">health</kbd> :
-Keyvalue_Description_here
+If set, this will overwrite the monster's default health value managed by the skill configuration.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Path Name</b></span> <kbd  class="tooltip" data-tooltip="string">path_name</kbd> :
-Keyvalue_Description_here
+Name of first [path_waypoint](../path_waypoint) to go to.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start ON : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Cyclic : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : MonsterClip : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>1024 </b> : No Respawn (Collectible) : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : Start ON : The {{ entname }} will start on and start spawning as soon as the map loads.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : Cyclic : Changes the {{ entname }} toggle-behaviour to a single-fire-behaviour. With this flag set, the entity will spawn one time every time it is fired.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : MonsterClip : Monsters spawned by a {{ entname }} with this flag set will be blocked by the [func_monsterclip](../func_monsterclip) brush entity.</li>
+<li class="imagepadding" markdown="1"><b>1024 </b> : No Respawn (Collectible) : If the spawned entity is a weapon, an item or ammunition, it won't respawn after being collected when this flag is set.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

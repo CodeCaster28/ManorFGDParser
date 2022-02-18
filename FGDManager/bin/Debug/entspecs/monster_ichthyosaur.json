@@ -1,11 +1,5 @@
 {
   "Classname": "monster_ichthyosaur",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Aquatic monster very easy to annoy. Use pistol, crossbow or hornet gun to take him down underwater.<br>Class: Alien Monster.",
+  "KeyDescriptions": []
 }

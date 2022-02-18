@@ -1,11 +1,5 @@
 {
   "Classname": "monster_cockroach",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Do not afraid, it's just a roach! Smashed when someone steps by on it.<br>Class: Insect.",
+  "KeyDescriptions": []
 }

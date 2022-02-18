@@ -1,6 +1,6 @@
 {
   "Classname": "monster_sentry",
-  "Description": "Entity_Description_here",
+  "Description": "Stationary turret that explodes after destroyed.<br>Class: Machine.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,24 +8,18 @@
       "keyChoices": [
         {
           "choiceValue": "32 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If selected, turrets can auto-activate themselfes when enemy is in their LoS."
         },
         {
           "choiceValue": "64 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Start disabled, ignore environment until triggered."
         }
       ]
     },
     {
       "keyName": "attackrange",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Range of firing. Note that too high values may not be supported.",
       "keyChoices": []
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

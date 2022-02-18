@@ -1,11 +1,5 @@
 {
   "Classname": "monster_barnacle",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Stationary monster that hangs down from ceiling and use his tongue to pull up preys into it's month.<br>Class: Alien Predator.",
+  "KeyDescriptions": []
 }

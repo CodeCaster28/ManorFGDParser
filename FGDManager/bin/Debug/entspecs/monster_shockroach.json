@@ -1,11 +1,5 @@
 {
   "Classname": "monster_shockroach",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Pickable insect that dies after a set amount of time when no one pick him up and use as a weapon. It's dropped by [Shock Trooper](../monster_shocktrooper).<br>Class: Alien Prey.",
+  "KeyDescriptions": []
 }

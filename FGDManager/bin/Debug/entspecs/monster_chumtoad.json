@@ -1,11 +1,5 @@
 {
   "Classname": "monster_chumtoad",
-  "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
-  ]
+  "Description": "Cute but dangerous toad that produces poisonous cloud when in danger.<br>Class: Alien Monster.",
+  "KeyDescriptions": []
 }
