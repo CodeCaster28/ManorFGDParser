@@ -1,6 +1,8 @@
 ﻿namespace FGDManager
 {
     using System.Collections.Generic;
+    using System.IO;
+    using System.Runtime.Serialization.Formatters.Binary;
     using System.Text;
     using static System.Console;
     
@@ -84,6 +86,26 @@
             }
 
             return startIndex == -1 ? string.Empty : value.SubstringByIndexes(startIndex, endIndex - 1);
+        }
+        
+        public static void AddUnique<T>( this IList<T> self, IEnumerable<T> items )
+        {
+            foreach(var item in items)
+                if(!self.Contains(item))
+                    self.Add(item);
+        }
+        
+        public static T DeepClone<T>(this T obj)
+        {
+            T objResult;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                bf.Serialize(ms, obj);
+                ms.Position = 0;
+                objResult = (T)bf.Deserialize(ms);
+            }
+            return objResult;
         }
     }
 }
