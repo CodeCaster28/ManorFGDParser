@@ -97,7 +97,7 @@
                         foreach (var flag in entity.SpawnFlags)
                         {
                             var description = string.IsNullOrEmpty(flag.Description) ? "" : $" : {flag.Description}";
-                            writer.WriteLine($"<li class=\"imagepadding\" markdown=\"1\"><b>{flag.Value}</b> : {flag.DocName}{description}</li>");
+                            writer.WriteLine($"<li class=\"imagepadding\" markdown=\"1\"><b>{flag.Value}</b> : <span style=\"color:#9fc5e8;\">{flag.DocName}</span>{description}</li>");
                         }
                         writer.WriteLine("</ul>");
                         writer.WriteLine("</div>");
