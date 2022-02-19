@@ -9,7 +9,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can refer to it. Can't be triggered but can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can kill-target it (can't be triggered).",
       "keyChoices": []
     },
     {

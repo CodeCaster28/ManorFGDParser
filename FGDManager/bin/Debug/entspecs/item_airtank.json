@@ -4,12 +4,12 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it. Can only be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can kill-target it (can't be triggered).",
       "keyChoices": []
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity to trigger when player touched it or air tank has been recharged (after 30 seconds cooldown). Sends 'Toggle' trigger state signal in both cases.",
+      "keyDescription": "Entity to trigger when player touched it or air tank has been recharged (after 30 seconds cooldown). Trigger use-type is 'Toggle'.",
       "keyChoices": []
     }
   ],

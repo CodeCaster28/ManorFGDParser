@@ -4,12 +4,12 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' signals are accepted which makes item be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning, also removing from inventory.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' trigger use-types are accepted which makes item be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning, also removing from inventory.",
       "keyChoices": []
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity to trigger when item is picked up. Sends 'Toggle' trigger state signal.",
+      "keyDescription": "Entity to trigger when item is picked up. Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {

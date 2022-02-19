@@ -73,11 +73,11 @@
     },
 	{
       "keyName": "target",
-      "keyDescription": "Entities to trigger when animation ends. Sends 'Toggle' signal."
+      "keyDescription": "Entity to trigger when animation ends. Trigger use-type is 'Toggle'."
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play animation. Kill-targeting this entity will remove entity from map but won't stop animation.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play animation. Every trigger use-type works uniformly. Kill-targeting this entity will remove it from map but won't stop animation.",
       "keyChoices": []
     },
     {

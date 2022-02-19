@@ -4,7 +4,7 @@
   "KeyDescriptions": [
   	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play sound. Depending on received signal: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targeting this entity will stop sound from playing.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play sound. Depending on trigger use-type: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targeting this entity will stop sound from playing.",
       "keyChoices": []
     },
     {

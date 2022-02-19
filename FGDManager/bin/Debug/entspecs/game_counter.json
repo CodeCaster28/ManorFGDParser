@@ -22,12 +22,12 @@
     },
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to increase or decrease counter. Trigger state signals: 'On' and 'Off' increases counter by one, 'Off' decreases it by one. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to increase or decrease counter. Depending on trigger use-type: 'On' or 'Toggle'- increase counter by one, 'Off'- decrease counter by one. Can be kill-targeted.",
       "keyChoices": []
     },
     {
       "keyName": "target",
-      "keyDescription": "Entities to trigger when counter hits it's limit value, or goes above this limit when 'Fire if over limit' flag is selected. Sends 'Toggle' signal.",
+      "keyDescription": "Entity to trigger when counter hits it's limit value, or goes above this limit when 'Fire if over limit' flag is selected. Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {

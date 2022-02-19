@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable/disable laser. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle laser. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable/disable laser. Depending on trigger use-type: 'On'- enable laser, 'Off'- disable laser, 'Toggle'- toggle laser. Can be kill-targeted.",
       "keyChoices": []
     },
     {

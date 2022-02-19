@@ -24,12 +24,12 @@
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity or entities to trigger when damage is dealt. It sends same trigger state signal as it has received.",
+      "keyDescription": "Entity to trigger when damage is dealt. Trigger use-type is the same as received.",
       "keyChoices": []
     },
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply damage to activator. All signal types are accepted. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply damage to activator. Every trigger use-type works uniformly. Can be kill-targeted.",
       "keyChoices": []
     },
     {

@@ -42,7 +42,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply render mode. Trigger signals 'On' and 'Toggle' applies render settins while 'Off' reverts them. Can be kill-targeted and already applied render settings are reverted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply render mode. Depending on trigger use-type: 'On' or 'Toggle'- apply render settings, 'Off'- revert render settings. Can be kill-targeted and already applied render settings are reverted.",
       "keyChoices": []
     },
     {

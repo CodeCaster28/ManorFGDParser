@@ -24,7 +24,7 @@
     },
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to set it's target game_counter value. All signal types are accepted. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to set it's target game_counter value. Every trigger use-type works uniformly. Can be kill-targeted.",
       "keyChoices": []
     },
     {

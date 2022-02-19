@@ -9,12 +9,12 @@
     },
     {
       "keyName": "target",
-      "keyDescription": "Name of light entity or entities to turn on or off depending on received trigger state signal so 'Toggle' to toggle lights, 'Off' to turn off and 'On' to turn on.",
+      "keyDescription": "Name of light entity or entities to turn on or off depending on received trigger type: 'Off'- turn light off, 'On'- turn light on, 'Toggle'- toggle light.",
       "keyChoices": []
     },
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to do both: toggle lights specified in \"Target'\" field AND apply custom appearance to all lights on map with custom appearance set to 'Normal'. All signal types are accepted. Signal type is interpreted by lights specified in \"Target\". Can be multiple triggered for \"Target\" lights but globally applied light styles will be applied once and cannot be reverted (you need another {{ entname }} with normal style to reset this). Can be kill-targeted but effects done by this entity are not reverted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to do both: toggle lights specified in \"Target'\" field AND apply custom appearance to all lights on map with custom appearance set to 'Normal'. Every trigger use-type works uniformly. Signal type is interpreted by lights specified in \"Target\". Can be multiple triggered for \"Target\" lights but globally applied light styles will be applied once and cannot be reverted (you need another {{ entname }} with normal style to reset this). Can be kill-targeted but effects done by this entity are not reverted.",
       "keyChoices": []
     }
   ],

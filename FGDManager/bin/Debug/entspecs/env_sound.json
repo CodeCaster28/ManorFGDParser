@@ -14,7 +14,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply sound effect to entities in radius- only when 'Use only' and 'Radius' are used. Can be kill-targeted but already applied effects persist.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply sound effect to entities in radius- only when 'Use only' and 'Radius' are used. Every trigger use-type works uniformly. Can be kill-targeted but already applied effects persist.",
       "keyChoices": []
     },
     {

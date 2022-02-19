@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to spawn monster (if place available). Any trigger signal type accepted. Can be kill-targeted. Monster in queue (those who couldn't spawn because there was no room for them) won't spawn.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to spawn monster (if place available). Every trigger use-type works uniformly. Can be kill-targeted. Monster in queue (those who couldn't spawn because there was no room for them) won't spawn.",
       "keyChoices": []
     },
     {

@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to set global state. Any trigger signal type accepted. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to set global state. Every trigger use-type works uniformly. Can be kill-targeted.",
       "keyChoices": []
     },
     {

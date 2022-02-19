@@ -9,7 +9,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to pause/unpause model. Paused model can't be hit to cycle through animations, some current animation frames are skipped instead.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to pause/unpause model. Every trigger use-type works uniformly. Paused model can't be hit to cycle through animations, some current animation frames are skipped instead.",
       "keyChoices": []
     },
     {

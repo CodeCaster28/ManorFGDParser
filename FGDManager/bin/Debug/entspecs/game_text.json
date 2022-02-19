@@ -108,12 +108,12 @@
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity or entities to trigger when text is displayed. It sends 'Toggle' trigger state signal.",
+      "keyDescription": "Entity to trigger when text is displayed. Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to display text. All signal types are accepted. Firing on already displaying text resets it. Can be kill-targeted but already displayed text stays.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to display text. Every trigger use-type works uniformly. Firing on already displaying text resets it. Can be kill-targeted but already displayed text stays.",
       "keyChoices": []
     },
     {

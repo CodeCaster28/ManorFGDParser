@@ -9,7 +9,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start shooting sprites or models. Can't be triggered when model/sprite shooting is in progress. Can be kill-targeted but gibs stay.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start shooting sprites or models. Every trigger use-type works uniformly. Can't be triggered when model/sprite shooting is in progress. Can be kill-targeted but gibs stay.",
       "keyChoices": []
     },
     {

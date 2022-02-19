@@ -4,7 +4,12 @@
   "KeyDescriptions": [
     {
       "keyName": "target",
-      "keyDescription": "Entity or entities to trigger whenever a monster is spawned. It sends 'Toggle' trigger state signal.",
+      "keyDescription": "Entities to trigger whenever a monster is spawned. Trigger use-type is 'Toggle'.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to spawn monsters. With 'Cyclic' flag disabled the behaviour is based on trigger use-type: 'On'- turn spawner on, 'Off'- turn spawner off, 'Toggle'- toggle spawner. With 'Cyclic' flag enabled every trigger use-type works uniformly to spawn a single monster. Can be kill-targeted but monsters already spawned are not removed.",
       "keyChoices": []
     },
     {
@@ -78,5 +83,8 @@
       "keyDescription": "Name of first [path_waypoint](../path_waypoint) to go to.",
       "keyChoices": []
     }
+  ],
+  "Issues": [
+    "You must specify monster type, otherwise it will crash the game with \"Spawned a NULL entity!\" error message."
   ]
 }

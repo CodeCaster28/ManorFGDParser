@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable/disable beam. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle beam. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable/disable beam. Depending on trigger use-type: 'On'- enable beam, 'Off'- disable beam, 'Toggle'- toggle beam. Can be kill-targeted.",
       "keyChoices": []
     },
     {

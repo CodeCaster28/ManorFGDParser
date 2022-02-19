@@ -4,12 +4,12 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable/disable this spawn point. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle spawn point. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable/disable this spawn point. Depending on trigger use-type: 'On'- enable spawn point, 'Off'- disable spawn point, 'Toggle'- toggle spawn point. Can be kill-targeted.",
       "keyChoices": []
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity to trigger when player is spawned at this point. Sends trigger state signal defined at \"Trigger State\" keyvalue.",
+      "keyDescription": "Entity to trigger when player is spawned at this point. Trigger use-type is defined at \"Trigger State\" keyvalue.",
       "keyChoices": []
     }
   ],

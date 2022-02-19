@@ -4,7 +4,7 @@
   "KeyDescriptions": [
   	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable or disable sprite. Trigger signals are handled as follow: 'On' to show sprite, 'Off' to hide sprite, 'Toggle' to toggle sprite. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable or disable sprite. Depending on trigger use-type: 'On'- show sprite, 'Off'- hide sprite, 'Toggle'- toggle sprite. Can be kill-targeted.",
       "keyChoices": []
     },
     {

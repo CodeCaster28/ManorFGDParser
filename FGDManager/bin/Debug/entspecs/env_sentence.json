@@ -14,12 +14,12 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play a sentence. Multiple triggering will overlap sentences. Can be kill-targeted but sentence won't stop playing until finished.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to play a sentence. Every trigger use-type works uniformly. Multiple triggering will overlap sentences. Can be kill-targeted but sentence won't stop playing until finished.",
       "keyChoices": []
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity or entities to trigger on sentence start. It sends same trigger state signal as it has received.",
+      "keyDescription": "Entity to trigger on sentence start. Trigger use-type is the same as received.",
       "keyChoices": []
     },
     {

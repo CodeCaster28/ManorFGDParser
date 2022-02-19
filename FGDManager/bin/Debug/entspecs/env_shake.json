@@ -14,7 +14,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply a screen shake. Multiple triggering will override previous shake. Can be kill-targeted but shake won't stop playing until finished.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply a screen shake. Every trigger use-type works uniformly. Multiple triggering will override previous shake. Can be kill-targeted but shake won't stop playing until finished.",
       "keyChoices": []
     },
     {

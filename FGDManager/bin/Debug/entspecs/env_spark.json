@@ -9,7 +9,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to toggle sparks if 'Toggle' flag is used. All signal types are accepted, all of them toggles env_spark. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to make a spark or toggle sparks if 'Toggle' flag is used. Every trigger use-type works uniformly. Can be kill-targeted.",
       "keyChoices": []
     },
     {

@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start shooting gibs. Can't be triggered when gibs shooting is in progress. Can be kill-targeted but gibs stay.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start shooting gibs. Every trigger use-type works uniformly. Can't be triggered when gibs shooting is in progress. Can be kill-targeted but gibs stay.",
       "keyChoices": []
     }
   ],

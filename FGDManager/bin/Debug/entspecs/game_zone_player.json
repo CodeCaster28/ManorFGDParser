@@ -14,7 +14,7 @@
     },
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to check players presence and trigger the targets. All signal types are accepted. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to check players presence and trigger the targets. Every trigger use-type works uniformly. Can be kill-targeted.",
       "keyChoices": []
     },
     {

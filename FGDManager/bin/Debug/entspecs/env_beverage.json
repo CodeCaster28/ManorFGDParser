@@ -4,7 +4,7 @@
   "KeyDescriptions": [
      {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to spawn beverage (if no other is spawned at the moment). Any trigger signal type accepted. Can be kill-targeted, already spawned models are not removed.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to spawn beverage (if no other is spawned at the moment). Every trigger use-type works uniformly. Can be kill-targeted, already spawned models are not removed.",
       "keyChoices": []
     },
     {

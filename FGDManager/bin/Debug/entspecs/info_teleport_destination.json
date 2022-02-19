@@ -4,12 +4,12 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of info_teleport_destination so [trigger_teleport](../trigger_teleport) can target it.",
+      "keyDescription": "Set name of info_teleport_destination so [trigger_teleport](../trigger_teleport) can set it as it's target.",
       "keyChoices": []
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity to trigger when player is teleported to this point, requires \"Trigger on Arrival\" flag enabled. Sends 'Toggle' signal.",
+      "keyDescription": "Entity to trigger when player is teleported to this point, requires \"Trigger on Arrival\" flag enabled. Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {

@@ -14,7 +14,7 @@
     },
     {
       "keyName": "target",
-      "keyDescription": "Target to trigger when \"Min Value\" is reached. Sends 'On' trigger state signal.",
+      "keyDescription": "Entity to trigger when \"Min Value\" is reached. Trigger use-type is 'On'",
       "keyChoices": []
     },
     {

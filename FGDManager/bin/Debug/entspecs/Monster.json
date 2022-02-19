@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with \"Start Inactive\" flag. Works with 'On' (enable monster), 'Off' (disable monster) and 'Toggle' (toggles monster) trigger state signals. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with \"Start Inactive\" flag. Depending on trigger use-type: 'On'- enable monster, 'Off'- disable monster, 'Toggle'- toggles monster. Can be kill-targeted.",
       "keyChoices": []
     },
     {

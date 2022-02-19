@@ -30,7 +30,7 @@
     },
 	{
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply render mode. Can be kill-targeted but already applied render settings stays.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to apply render mode. Every trigger use-type works uniformly. Can be kill-targeted but already applied render settings stays.",
       "keyChoices": []
     },
     {

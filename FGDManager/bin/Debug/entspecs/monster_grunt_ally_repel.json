@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start rappelling. All signal types are accepted. Can be kill-targeted.",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to start rappelling. Every trigger use-type works uniformly. Can be kill-targeted.",
       "keyChoices": []
     },
     {
