@@ -12,7 +12,7 @@ title: global_light_control
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of light entity or entities to turn on or off depending on received trigger state signal so 'Toggle' to toggle lights, 'Off' to turn off and 'On' to turn on.
+Name of light entity or entities to turn on or off depending on received trigger type: 'Off'- turn light off, 'On'- turn light on, 'Toggle'- toggle light.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
@@ -20,7 +20,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to do both: toggle lights specified in "Target'" field AND apply custom appearance to all lights on map with custom appearance set to 'Normal'. All signal types are accepted. Signal type is interpreted by lights specified in "Target". Can be multiple triggered for "Target" lights but globally applied light styles will be applied once and cannot be reverted (you need another {{ entname }} with normal style to reset this). Can be kill-targeted but effects done by this entity are not reverted.
+Set name of {{ entname }} so other entities can trigger it to do both: toggle lights specified in "Target'" field AND apply custom appearance to all lights on map with custom appearance set to 'Normal'. Every trigger use-type works uniformly. Signal type is interpreted by lights specified in "Target". Can be multiple triggered for "Target" lights but globally applied light styles will be applied once and cannot be reverted (you need another {{ entname }} with normal style to reset this). Can be kill-targeted but effects done by this entity are not reverted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Appearance</b></span> <kbd  class="tooltip" data-tooltip="string">pattern</kbd> :

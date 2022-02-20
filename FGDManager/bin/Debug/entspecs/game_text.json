@@ -118,11 +118,11 @@
     },
     {
       "keyName": "killtarget",
-      "keyDescription": "Entity or entities to destroy when text is displayed."
+      "keyDescription": "Entity to remove when text is displayed."
     }
   ],
   "Notes": [
-    "The game_text's target will be fired when the game_text entity is triggered. This is very useful when you want to use a single notification sound consistently on all your game_text entities.",
+    "The game_text's target will be triggered when the game_text entity is triggered. This is very useful when you want to use a single notification sound consistently on all your game_text entities.",
     "Sven Co-op features a HUD monster-/player-info, which uses HUD message channel 3. Avoid using that channel for important messages. Even if you disable monster-info by setting the CVar 'mp_allowmonsterinfo' to '0', player-info will still display on that channel."
   ],
   "Issues": [

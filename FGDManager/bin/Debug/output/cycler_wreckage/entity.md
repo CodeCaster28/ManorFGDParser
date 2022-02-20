@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can refer to it. Can't be triggered but can be kill-targeted.
+Set name of {{ entname }} so other entities can kill-target it (can't be triggered).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -103,9 +103,9 @@ Set the sprite's y- and x-scale.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>32</b> : Toggle : Non-functional in {{ entname }}.</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Start ON : Non-functional in {{ entname }}.</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Toggle</span> : Non-functional in {{ entname }}.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Start ON</span> : Non-functional in {{ entname }}.</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Sprites are barely visible under emitted smoke.</div>

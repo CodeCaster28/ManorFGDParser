@@ -34,7 +34,7 @@
     },
     {
       "keyName": "killtarget",
-      "keyDescription": "Entity or entities to destroy when damage is dealt."
+      "keyDescription": "Entity to remove when damage is dealt."
     }
   ],
   "Notes": [

@@ -406,18 +406,18 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Monsters :  If set, monsters can trigger this but only works when monster is moving within trigger.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : No Clients : If set, players won't be able to trigger this.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : Pushables : If set, [func_pushable](../func_pushable) entities can trigger this.</li>
-<li class="imagepadding" markdown="1"><b>8</b> : Everything else :  If set, everything other than monsters, clients and pushables can trigger this. Does not exclude the above.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Fire On Enter : Not applicable on {{ entname }}- it's already get triggered on enter!</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Fire On Exit :  If set, {{ entname }} will fire as soon as something that entered it left it, instead of the instant something enters it.</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Random Destination : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : Relative Teleport : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : Keep Angles : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : Keep velocity : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : Rotate (Dest Angles) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Monsters</span> :  If set, monsters can trigger this but only works when monster is moving within trigger.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No Clients</span> : If set, players won't be able to trigger this.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Pushables</span> : If set, [func_pushable](../func_pushable) entities can trigger this.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Everything else</span> :  If set, everything other than monsters, clients and pushables can trigger this. Does not exclude the above.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Fire On Enter</span> : Not applicable on {{ entname }}- it's already get triggered on enter!</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Fire On Exit</span> :  If set, {{ entname }} will fire as soon as something that entered it left it, instead of the instant something enters it.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Random Destination</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Relative Teleport</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Keep Angles</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Keep velocity</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Rotate (Dest Angles)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

@@ -56,8 +56,8 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Remove On fire : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64 </b> : Keep '!activator' : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Remove On fire</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">Keep '!activator'</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

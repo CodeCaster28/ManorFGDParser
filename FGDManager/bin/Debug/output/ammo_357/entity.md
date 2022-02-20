@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' signals are accepted which makes item be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning.
+Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' trigger use-types are accepted which makes item be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -127,11 +127,11 @@ Non-functional in {{ entname }}.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>128 </b> : TOUCH Only : Pick this item up only by touching it.</li>
-<li class="imagepadding" markdown="1"><b>256 </b> : USE Only : Pick this item up only by using it ('USE' key).</li>
-<li class="imagepadding" markdown="1"><b>512 </b> : Can Use w/o LoS : Player can pick up this item even when it's not within his line of sight.</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : Disable Respawn : Disables default item respawning.</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>128 </b> : <span style="color:#9fc5e8;">TOUCH Only</span> : Pick this item up only by touching it.</li>
+<li class="imagepadding" markdown="1"><b>256 </b> : <span style="color:#9fc5e8;">USE Only</span> : Pick this item up only by using it ('USE' key).</li>
+<li class="imagepadding" markdown="1"><b>512 </b> : <span style="color:#9fc5e8;">Can Use w/o LoS</span> : Player can pick up this item even when it's not within his line of sight.</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Disable Respawn</span> : Disables default item respawning.</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>

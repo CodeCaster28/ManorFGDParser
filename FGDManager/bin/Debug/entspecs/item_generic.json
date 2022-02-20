@@ -11,6 +11,10 @@
       "keyName": "target",
       "keyDescription": "Non-functional in {{ entname }}.",
       "keyChoices": []
+    },
+    {
+      "keyName": "killtarget",
+      "keyDescription": "Non-functional in {{ entname }}."
     }
   ]
 }

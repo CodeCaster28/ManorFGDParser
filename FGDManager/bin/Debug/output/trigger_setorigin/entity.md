@@ -89,16 +89,16 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Constant : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4</b> : Set Once : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : Lock Offsets : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Copy X Angle : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Copy Y Angle : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Copy Z Angle : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : Copy X Axis : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : Copy Y Axis : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : Copy Z Axis : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : Skip Initial Set : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Constant</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Set Once</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Lock Offsets</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Copy X Angle</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Copy Y Angle</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Copy Z Angle</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Copy X Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Copy Y Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Copy Z Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Skip Initial Set</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

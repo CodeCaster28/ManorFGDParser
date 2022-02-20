@@ -29,7 +29,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' signals are accepted which makes item be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning, also removing from inventory.
+Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' trigger use-types are accepted which makes item be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning, also removing from inventory.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -168,11 +168,11 @@ If set, this will overwrite the monster's default maximum hullsize. Minimum and 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
-Set the path to a sound replacement file for the item. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are seperated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a custom_precache point entity.
+Set the path to a sound replacement file for the item. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are seperated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a [custom_precache](../custom_precache) point entity.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entity to trigger when item is picked up. Sends 'Toggle' trigger state signal.
+Entity to trigger when item is picked up. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -691,11 +691,11 @@ Player damage modifier in percent.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>128 </b> : TOUCH Only : Pick this item up only by touching it.</li>
-<li class="imagepadding" markdown="1"><b>256 </b> : USE Only : Pick this item up only by using it ('USE' key).</li>
-<li class="imagepadding" markdown="1"><b>512 </b> : Can Use w/o LoS : Player can pick up this item even when it's not within his line of sight.</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : Disable Respawn : Disables default item respawning.</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>128 </b> : <span style="color:#9fc5e8;">TOUCH Only</span> : Pick this item up only by touching it.</li>
+<li class="imagepadding" markdown="1"><b>256 </b> : <span style="color:#9fc5e8;">USE Only</span> : Pick this item up only by using it ('USE' key).</li>
+<li class="imagepadding" markdown="1"><b>512 </b> : <span style="color:#9fc5e8;">Can Use w/o LoS</span> : Player can pick up this item even when it's not within his line of sight.</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Disable Respawn</span> : Disables default item respawning.</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Use semicolon ';' to separate multiple item/target/group names in filters and conditions.</div>

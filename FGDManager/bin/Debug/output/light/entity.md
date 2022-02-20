@@ -20,7 +20,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to turn light on and off. Works with 'On' (turns light on), 'Off' (turns light off) and 'Toggle' (toggles light) trigger state signals. Kill-targeting this entity will remove {{ entname }} but won't remove lightstyles (you might want to just turn it off instead).
+Set name of {{ entname }} so other entities can trigger it to turn light on and off. Depending on trigger use-type: 'On'- turn light on, 'Off'- turn light off, 'Toggle'- toggle light. Kill-targeting this entity will remove {{ entname }} but won't remove lightstyles (you might just want to turn it off instead).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Brightness</b></span> <kbd  class="tooltip" data-tooltip="color255">_light</kbd> :
@@ -83,8 +83,8 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Initially dark : If set, the light will be turned off at map start. This will only work when a targetname is set. This counts as an additional lightstyle. If you have multiple lights by the same name, they will count as one additional lightstyle, even if some of the lights are initially dark while others are not. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Remove Entity</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Initially dark</span> : If set, the light will be turned off at map start. This will only work when a targetname is set. This counts as an additional lightstyle. If you have multiple lights by the same name, they will count as one additional lightstyle, even if some of the lights are initially dark while others are not. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Remove Entity</span></li>
 </ul>
 </div>
 <div class="notices blue">The use of texlights is always more encouraged, as they usually produce more realistic lighting.</div>

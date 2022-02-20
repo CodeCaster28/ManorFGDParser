@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to apply render mode. Trigger signals 'On' and 'Toggle' applies render settins while 'Off' reverts them. Can be kill-targeted and already applied render settings are reverted.
+Set name of {{ entname }} so other entities can trigger it to apply render mode. Depending on trigger use-type: 'On' or 'Toggle'- apply render settings, 'Off'- revert render settings. Can be kill-targeted and already applied render settings are reverted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -99,14 +99,14 @@ Entity to copy render values which will be applied to target entity. 'Use Entity
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : No Renderfx : If set, the env_render won't change its targets render-fx.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : No Renderamt : If set, the env_render won't change its targets render-amt.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : No Rendermode : If set, the env_render won't change its targets render-mode.</li>
-<li class="imagepadding" markdown="1"><b>8</b> : No Rendercolor : If set, the env_render won't change its targets render-color.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Auto Apply : Does not work.</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Start On : Apply settings at the map start.</li>
-<li class="imagepadding" markdown="1"><b>64 </b> : Affect Activator (ignore netname) : Instead of affecting players with targetnames specified in 'target' field, affect the player who activated the script (e.g. through button or trigger).</li>
-<li class="imagepadding" markdown="1"><b>128 </b> : Use Entity to copy from : Make use of 'Entity to copy from' keyvalue, ignoring manually typed render values.</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">No Renderfx</span> : If set, the env_render won't change its targets render-fx.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No Renderamt</span> : If set, the env_render won't change its targets render-amt.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">No Rendermode</span> : If set, the env_render won't change its targets render-mode.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No Rendercolor</span> : If set, the env_render won't change its targets render-color.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Auto Apply</span> : Does not work.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Start On</span> : Apply settings at the map start.</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">Affect Activator (ignore netname)</span> : Instead of affecting players with targetnames specified in 'target' field, affect the player who activated the script (e.g. through button or trigger).</li>
+<li class="imagepadding" markdown="1"><b>128 </b> : <span style="color:#9fc5e8;">Use Entity to copy from</span> : Make use of 'Entity to copy from' keyvalue, ignoring manually typed render values.</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>

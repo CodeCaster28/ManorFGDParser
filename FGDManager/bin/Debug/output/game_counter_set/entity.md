@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to set it's target game_counter value. All signal types are accepted. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to set it's target game_counter value. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
@@ -28,7 +28,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Entity to remove when value is set.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
@@ -42,6 +42,6 @@ Value to set the game_counter's value to. Note that if the targeted game_counter
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Remove On fire : The game_counter_set will be removed from the game after firing.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Remove On fire</span> : The game_counter_set will be removed from the game after firing.</li>
 </ul>
 </div>

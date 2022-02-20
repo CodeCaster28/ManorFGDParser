@@ -21,6 +21,10 @@
       "keyName": "target",
       "keyDescription": "Entity to trigger when item is picked up. Trigger use-type is 'Toggle'.",
       "keyChoices": []
+    },
+    {
+      "keyName": "killtarget",
+      "keyDescription": "Non-functional in {{ entname }}."
     }
   ],
   "Notes": [

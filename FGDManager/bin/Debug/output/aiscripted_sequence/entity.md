@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to play animation. Kill-targeting this entity will remove entity from map but won't stop animation.
+Set name of {{ entname }} so other entities can trigger it to play animation. Every trigger use-type works uniformly. Kill-targeting this entity will remove it from map but won't stop animation.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entities to trigger when animation ends. Sends 'Toggle' signal.
+Entity to trigger when animation ends. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -95,8 +95,8 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>4 </b> : Repeatable : The {{ entname }} won't be removed after finishing, allowing to use it again.</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Leave Corpse : If the action animation is a death animation, causing the monster to die, the corpse will not fade out.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Repeatable</span> : The {{ entname }} won't be removed after finishing, allowing to use it again.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Leave Corpse</span> : If the action animation is a death animation, causing the monster to die, the corpse will not fade out.</li>
 </ul>
 </div>
 <div class="notices red">If 'Move to position' is set to 'Instantaneous' and you have an action animation set, the monster may freeze up and no longer react.</div>

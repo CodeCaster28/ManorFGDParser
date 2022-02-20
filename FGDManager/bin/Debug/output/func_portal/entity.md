@@ -68,12 +68,12 @@ Name of the texture to apply display on. Works only when "Texture Mode" is set t
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Solid : Enables collision.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Start Disabled : If selected, {{ entname }} need to be enabled.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : Teleport : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : No GL ClipPlanes : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Render only every 2nd frame : Update display only every two frames instead of every frame, this improves performance.</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Shoot through : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Solid</span> : Enables collision.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Disabled</span> : If selected, {{ entname }} need to be enabled.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Teleport</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No GL ClipPlanes</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Render only every 2nd frame</span> : Update display only every two frames instead of every frame, this improves performance.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Shoot through</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

@@ -13,6 +13,10 @@
       "keyChoices": []
     },
     {
+      "keyName": "killtarget",
+      "keyDescription": "Non-functional in {{ entname }}."
+    },
+    {
       "keyName": "spawnflags",
       "keyDescription": "Keyvalue_Description_here",
       "keyChoices": [

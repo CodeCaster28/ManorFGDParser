@@ -92,8 +92,8 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>8  </b> : Start Off</li>
-<li class="imagepadding" markdown="1"><b>16 </b> : Multithreaded</li>
-<li class="imagepadding" markdown="1"><b>32 </b> : Toggle On Reach</li>
+<li class="imagepadding" markdown="1"><b>8  </b> : <span style="color:#9fc5e8;">Start Off</span></li>
+<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Multithreaded</span></li>
+<li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Toggle On Reach</span></li>
 </ul>
 </div>

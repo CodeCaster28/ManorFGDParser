@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to display text. All signal types are accepted. Firing on already displaying text resets it. Can be kill-targeted but already displayed text stays.
+Set name of {{ entname }} so other entities can trigger it to display text. Every trigger use-type works uniformly. Firing on already displaying text resets it. Can be kill-targeted but already displayed text stays.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entity or entities to trigger when text is displayed. It sends 'Toggle' trigger state signal.
+Entity to trigger when text is displayed. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -28,7 +28,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Entity or entities to destroy when text is displayed.
+Entity to remove when text is displayed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Message Text</b></span> <kbd  class="tooltip" data-tooltip="string">message</kbd> :
@@ -124,8 +124,8 @@ Name of the [multisource](../multisource) entity that (temporary) locks this {{ 
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : All Players : If set, the game_text's message will be displayed to all players instead of just the activator.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : No console echo : If set, players will not receive a duplicate of the message in their console. Set this for messages that can be reread or are sent often to prevent console-spam and reduce network-bandwidth-usage.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">All Players</span> : If set, the game_text's message will be displayed to all players instead of just the activator.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No console echo</span> : If set, players will not receive a duplicate of the message in their console. Set this for messages that can be reread or are sent often to prevent console-spam and reduce network-bandwidth-usage.</li>
 </ul>
 </div>
 <div class="notices blue">The game_text's target will be fired when the game_text entity is triggered. This is very useful when you want to use a single notification sound consistently on all your game_text entities.</div>

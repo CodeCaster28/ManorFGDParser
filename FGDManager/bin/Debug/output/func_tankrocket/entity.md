@@ -585,12 +585,12 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Active : Makes this {{ entname }} active on start, which means it will try to kill every enemies in it's view distance.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Only Direct : If selected, the automatic {{ entname }} will fire it's target only when they are in it's line of sight.</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Controllable : If selected, player can control this turret. Keep in mind that [func_tankcontrols](../func_tankcontrols) is required for this.</li>
-<li class="imagepadding" markdown="1"><b>512</b> : Use Relations : Enables usage of relation keyvalues (may be glitched).</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : Player can't fire : Prevent player from shooting (player might still mount the tank).</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Active</span> : Makes this {{ entname }} active on start, which means it will try to kill every enemies in it's view distance.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Only Direct</span> : If selected, the automatic {{ entname }} will fire it's target only when they are in it's line of sight.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Controllable</span> : If selected, player can control this turret. Keep in mind that [func_tankcontrols](../func_tankcontrols) is required for this.</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Use Relations</span> : Enables usage of relation keyvalues (may be glitched).</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Player can't fire</span> : Prevent player from shooting (player might still mount the tank).</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

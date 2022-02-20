@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of info_teleport_destination so [trigger_teleport](../trigger_teleport) can target it.
+Set name of info_teleport_destination so [trigger_teleport](../trigger_teleport) can set it as it's target.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entity to trigger when player is teleported to this point, requires "Trigger on Arrival" flag enabled. Sends 'Toggle' signal.
+Entity to trigger when player is teleported to this point, requires "Trigger on Arrival" flag enabled. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -34,7 +34,7 @@ Delay before this destination can be used again after someone landed here.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>32 </b> : Trigger on arrival : If ticked, info_teleport_destination will trigger it's target whenever an entity is teleported here. The entity is passed as !activator to the info_teleport_destination's target.</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Trigger on arrival</span> : If ticked, info_teleport_destination will trigger it's target whenever an entity is teleported here. The entity is passed as !activator to the info_teleport_destination's target.</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>

@@ -359,14 +359,14 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Once Only : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Start Off : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4</b> : Pushables : If set, [func_pushable](../func_pushable) entities can trigger this.</li>
-<li class="imagepadding" markdown="1"><b>8</b> : No Clients : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : No Monsters : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Fire On Exit :  If set, {{ entname }} will fire as soon as something that entered it left it, instead of the instant something enters it.</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Force push : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Once Only</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Off</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Pushables</span> : If set, [func_pushable](../func_pushable) entities can trigger this.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No Clients</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">No Monsters</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Fire On Exit</span> :  If set, {{ entname }} will fire as soon as something that entered it left it, instead of the instant something enters it.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Force push</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

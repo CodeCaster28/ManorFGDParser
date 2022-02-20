@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to set global state. Any trigger signal type accepted. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to set global state. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global State to Set</b></span> <kbd  class="tooltip" data-tooltip="string">globalstate</kbd> :
@@ -63,6 +63,6 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Set Initial State : If set, the given global state will be set to the given initial state on map load.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Set Initial State</span> : If set, the given global state will be set to the given initial state on map load.</li>
 </ul>
 </div>

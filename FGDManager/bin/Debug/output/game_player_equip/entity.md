@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to apply inventory changes. All signal types are accepted. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to apply inventory changes. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
@@ -28,7 +28,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Entity or entities to destroy when equipment is applied.
+Entity to remove when equipment is applied.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Team Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
@@ -76,9 +76,9 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : USE Only : If set, the game_player_equip entity will not equip respawning players, but only react to direct triggering, equipping its activator. This makes its master obsolete.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Filter Playername : If selected, this game_player_equip will only equip players with a targetname 'Player targetname' (see below).</li>
-<li class="imagepadding" markdown="1"><b>4</b> : Re-Equip on Use : If set, the game_player_equip entity will strip all weapons/ammo from the triggering player and then re-equip him. This is useful for preventing the aforementioned overflow.</li>
-<li class="imagepadding" markdown="1"><b>8</b> : Append Map CFG : If selected, also give weapons specified in this map configuration file (mapname.cfg) instead of ignoring it.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">USE Only</span> : If set, the game_player_equip entity will not equip respawning players, but only react to direct triggering, equipping its activator. This makes its master obsolete.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Filter Playername</span> : If selected, this game_player_equip will only equip players with a targetname 'Player targetname' (see below).</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Re-Equip on Use</span> : If set, the game_player_equip entity will strip all weapons/ammo from the triggering player and then re-equip him. This is useful for preventing the aforementioned overflow.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Append Map CFG</span> : If selected, also give weapons specified in this map configuration file (mapname.cfg) instead of ignoring it.</li>
 </ul>
 </div>

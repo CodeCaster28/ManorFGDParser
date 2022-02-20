@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to give points to player (he must be an !activator of triggering chain). All signal types are accepted. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to give points to player (he must be an !activator of triggering chain). Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
@@ -42,7 +42,7 @@ Name of the [multisource](../multisource) entity that (temporary) locks this {{ 
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Allow Negative : When reducing score as a means of penalty, this allows the score to go below zero.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Team Points : All players receive the specified amount of points, instead of only the triggering player.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Allow Negative</span> : When reducing score as a means of penalty, this allows the score to go below zero.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Team Points</span> : All players receive the specified amount of points, instead of only the triggering player.</li>
 </ul>
 </div>

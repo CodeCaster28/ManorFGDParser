@@ -11,6 +11,10 @@
       "keyName": "target",
       "keyDescription": "Entity to trigger when player touched it or air tank has been recharged (after 30 seconds cooldown). Trigger use-type is 'Toggle'.",
       "keyChoices": []
+    },
+    {
+      "keyName": "killtarget",
+      "keyDescription": "Entity to remove when air tank is touched by player."
     }
   ],
   "Notes": [

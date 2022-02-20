@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to apply damage to activator. All signal types are accepted. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to apply damage to activator. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entity or entities to trigger when damage is dealt. It sends same trigger state signal as it has received.
+Entity to trigger when damage is dealt. Trigger use-type is the same as received.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -28,7 +28,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Entity or entities to destroy when damage is dealt.
+Entity to remove when damage is dealt.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage To Apply</b></span> <kbd  class="tooltip" data-tooltip="string">dmg</kbd> :
@@ -42,7 +42,7 @@ Name of the [multisource](../multisource) entity that (temporary) locks this {{ 
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Remove On fire : The game_player_hurt is removed from the game after being used once.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Remove On fire</span> : The game_player_hurt is removed from the game after being used once.</li>
 </ul>
 </div>
 <div class="notices blue">Unlike other entities, game_player_hurt sends the same output type as received, instead of 'Toggle'.</div>

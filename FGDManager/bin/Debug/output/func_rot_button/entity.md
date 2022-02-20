@@ -511,13 +511,13 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Not solid : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Reverse Dir : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Toggle : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : X Axis : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : Y Axis : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : Touch Activates : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Not solid</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Reverse Dir</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Toggle</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Touch Activates</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

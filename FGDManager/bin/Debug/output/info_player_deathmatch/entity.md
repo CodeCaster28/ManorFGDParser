@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to enable/disable this spawn point. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle spawn point. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to enable/disable this spawn point. Depending on trigger use-type: 'On'- enable spawn point, 'Off'- disable spawn point, 'Toggle'- toggle spawn point. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entity to trigger when player is spawned at this point, requires "Trigger on spawn" flag enabled. Sends trigger state signal defined at "Trigger State" keyvalue.
+Entity to trigger when player is spawned at this point, requires "Trigger on spawn" flag enabled. Trigger use-type is defined at "Trigger State" keyvalue.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -64,12 +64,12 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>2 </b> : Start Off : If set, {{ entname }} will be disabled on map load. Players cannot spawn here until the {{ entname }} is triggered by another entity targetting it.</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Repel Spawn : Player will spawn rappeling down using a rope (like rappeling soldiers) until arriving at the ground.</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Filter player targetname : If set, only players having their targetname match the "Filter player targetname" can spawn here.</li>
-<li class="imagepadding" markdown="1"><b>16 </b> : Invert Filter : If set along with "Filter player targetname", only players having a different targetname than set by "Filter player targetname" can spawn here.</li>
-<li class="imagepadding" markdown="1"><b>32 </b> : Trigger on spawn : If set, the {{ entname }} will trigger its target whenever a player respawns at its position.</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Start Off</span> : If set, {{ entname }} will be disabled on map load. Players cannot spawn here until the {{ entname }} is triggered by another entity targetting it.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Repel Spawn</span> : Player will spawn rappeling down using a rope (like rappeling soldiers) until arriving at the ground.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Filter player targetname</span> : If set, only players having their targetname match the "Filter player targetname" can spawn here.</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Invert Filter</span> : If set along with "Filter player targetname", only players having a different targetname than set by "Filter player targetname" can spawn here.</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Trigger on spawn</span> : If set, the {{ entname }} will trigger its target whenever a player respawns at its position.</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">When there is no active or not obstructed spawnpoints, the players are forced to wait until at least one of the spawnpoints become available again- the message will be displayed: "No respawn points available. Please wait...".</div>

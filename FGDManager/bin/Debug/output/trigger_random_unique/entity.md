@@ -90,7 +90,7 @@ Target no. 16 that can be fired when picking random target.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Re-usable : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Re-usable</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

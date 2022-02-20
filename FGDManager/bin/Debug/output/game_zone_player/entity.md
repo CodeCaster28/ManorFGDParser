@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to check players presence and trigger the targets. All signal types are accepted. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to check players presence and trigger the targets. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
@@ -106,7 +106,7 @@ Name of one or more [game_counter](../game_counter) entities whose count values 
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Ignore Dead Players : If set, dead players are skipped entirely, as if they weren't on the server in the first place.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Ignore Dead Players</span> : If set, dead players are skipped entirely, as if they weren't on the server in the first place.</li>
 </ul>
 </div>
 <div class="notices red">Gibbed players are always being ignored.</div>

@@ -253,17 +253,17 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start ON : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Reverse Direction : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : X Axis : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Y Axis : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Acc/Dcc : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Fan Pain : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Not Solid : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : Small Radius : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : Medium Radius : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : Large Radius : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start ON</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Reverse Direction</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">X Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Y Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Acc/Dcc</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Fan Pain</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Not Solid</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Small Radius</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Medium Radius</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Large Radius</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

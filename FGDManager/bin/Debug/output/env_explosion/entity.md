@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to create explosion. Any trigger signal type accepted. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to create explosion. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Magnitude</b></span> <kbd  class="tooltip" data-tooltip="Integer">iMagnitude</kbd> :
@@ -26,11 +26,11 @@ Explosion magnitude. Greater values mean bigger explosion size and damage. Note 
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : No Damage : If set, the explosion deals no damage.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Repeatable : If set, the env_explosion entity won't be removed after being triggered, so you can use it again.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : No Fireball : If set, the explosion shows no fireball.</li>
-<li class="imagepadding" markdown="1"><b>8</b> : No Smoke : If set, the explosion shows no smoke.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : No Decal : If set, the explosion causes no decal.</li>
-<li class="imagepadding" markdown="1"><b>32</b> : No Sparks : If set, the explosion creates no sparks.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">No Damage</span> : If set, the explosion deals no damage.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Repeatable</span> : If set, the env_explosion entity won't be removed after being triggered, so you can use it again.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">No Fireball</span> : If set, the explosion shows no fireball.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No Smoke</span> : If set, the explosion shows no smoke.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">No Decal</span> : If set, the explosion causes no decal.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">No Sparks</span> : If set, the explosion creates no sparks.</li>
 </ul>
 </div>

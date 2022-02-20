@@ -95,14 +95,14 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start Off : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Don't use X (R) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Don't use Y (G) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Don't use Z (B) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16 </b> : Don't use W (A) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32 </b> : Cyclic; no toggle : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64 </b> : Keep '!activator' : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128 </b> : Ignore initial result : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start Off</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Don't use X (R)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Don't use Y (G)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Don't use Z (B)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Don't use W (A)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Cyclic; no toggle</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">Keep '!activator'</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128 </b> : <span style="color:#9fc5e8;">Ignore initial result</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

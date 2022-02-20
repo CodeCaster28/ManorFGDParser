@@ -260,12 +260,12 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Door Hack : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Not useable : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Auto Return : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : X Axis : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : Y Axis : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Door Hack</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Not useable</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Auto Return</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

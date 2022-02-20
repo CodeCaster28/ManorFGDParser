@@ -98,11 +98,11 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start On (Timed only) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Trigger Once (Timed only) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Reusable (Unique only) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Timed : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16 </b> : Unique : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start On (Timed only)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Trigger Once (Timed only)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Reusable (Unique only)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Timed</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Unique</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

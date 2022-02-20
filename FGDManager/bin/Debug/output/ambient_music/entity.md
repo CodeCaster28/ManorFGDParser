@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to play music. Depending on received signal: 'Off'- stop the music, 'Toggle'- play/stop music interchangeably, 'On'- start the music. Kill-targeting this entity will stop music from playing.
+Set name of {{ entname }} so other entities can trigger it to play music. Depending on trigger use-type: 'Off'- stop the music, 'Toggle'- play/stop music interchangeably, 'On'- start the music. Kill-targeting this entity will stop music from playing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound File</b></span> <kbd  class="tooltip" data-tooltip="sound">message</kbd> :
@@ -30,9 +30,9 @@ Set how loud the sound shall be in a range from 0 (not audible) to 10 (normal).
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start Silent : Entity need to be triggered to start playing music.</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Loop : The sound will play looped when triggered.</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Activator Only : Music will be heard only by player who is an activator of script (e.g. he pressed a button that triggers this entity).</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start Silent</span> : Entity need to be triggered to start playing music.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Loop</span> : The sound will play looped when triggered.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Activator Only</span> : Music will be heard only by player who is an activator of script (e.g. he pressed a button that triggers this entity).</li>
 </ul>
 </div>
 <div class="notices blue">Music will be playing even for players who just connected to the server, it will start playing on appropriate offset.</div>

@@ -36,7 +36,7 @@
     },
     {
       "keyName": "killtarget",
-      "keyDescription": "Entity or entities to destroy when equipment is applied."
+      "keyDescription": "Entity to remove when equipment is applied."
     },
     {
       "keyName": "master",

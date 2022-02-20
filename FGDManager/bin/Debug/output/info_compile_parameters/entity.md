@@ -1085,10 +1085,10 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Ignore shared settings : Ignore parameters shared between compilers.</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Ignore CSG settings : Ignore CSG parameters.</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Ignore BSP settings : Ignore BSP parameters.</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Ignore VIS settings : Ignore VIS parameters.</li>
-<li class="imagepadding" markdown="1"><b>16 </b> : Ignore RAD settings : Ignore RAD parameters.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Ignore shared settings</span> : Ignore parameters shared between compilers.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Ignore CSG settings</span> : Ignore CSG parameters.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Ignore BSP settings</span> : Ignore BSP parameters.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Ignore VIS settings</span> : Ignore VIS parameters.</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Ignore RAD settings</span> : Ignore RAD parameters.</li>
 </ul>
 </div>

@@ -38,10 +38,10 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start On : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Cyclic : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Ignore leading zeroes : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Zero as leading : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start On</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Cyclic</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Ignore leading zeroes</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Zero as leading</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

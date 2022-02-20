@@ -262,7 +262,7 @@
     },
     {
       "keyName": "holder_time_wearout",
-      "keyDescription": "Time before \"Holder: Hold time limit\" reach it's limit to trigger target specified in \"Target: On wearing out\" keyvalue. If you set it to e.g. 4, it will fire a target 4 seconds before this item's \"Holder: Hold time limit\" ends. It's useful if you want to trigger a sound or a [game_text](../game_text) informing player that item will be worn out soon. Example: player picked up power-up which have \"Holder: Hold time limit\" set to 10, and \"Holder: Wearing out trigger time\" to 3, so 3 seconds before item is removed from player (in other words, before \"Holder: Hold time limit\" ends) game_text specified in \"Target: On wearing out\" is fired with message \"Warning! 3 seconds for buff to end!\".",
+      "keyDescription": "Time before \"Holder: Hold time limit\" reach it's limit to trigger target specified in \"Target: On wearing out\" keyvalue. If you set it to e.g. 4, it will trigger a target 4 seconds before this item's \"Holder: Hold time limit\" ends. It's useful if you want to trigger a sound or a [game_text](../game_text) informing player that item will be worn out soon. Example: player picked up power-up which have \"Holder: Hold time limit\" set to 10, and \"Holder: Wearing out trigger time\" to 3, so 3 seconds before item is removed from player (in other words, before \"Holder: Hold time limit\" ends) game_text specified in \"Target: On wearing out\" is triggered with message \"Warning! 3 seconds for buff to end!\".",
       "keyChoices": []
     },
     {
@@ -337,7 +337,7 @@
     },
     {
       "keyName": "target_on_collect",
-      "keyDescription": "Fire specified target(s) when item is successfully collected (uses 'Toggle' trigger state). Player who collected it is passed as the '!activator'.",
+      "keyDescription": "Trigger specified target(s) when item is successfully collected (uses 'Toggle' trigger state). Player who collected it is passed as the '!activator'.",
       "keyChoices": []
     },
     {
@@ -352,7 +352,7 @@
     },
     {
       "keyName": "target_cant_collect",
-      "keyDescription": "Fire specified target(s) when item collecting attempt failed (uses 'Toggle' trigger state). Player who failed to collect item is passed as the '!activator'.",
+      "keyDescription": "Trigger specified target(s) when item collecting attempt failed (uses 'Toggle' trigger state). Player who failed to collect item is passed as the '!activator'.",
       "keyChoices": []
     },
     {
@@ -367,7 +367,7 @@
     },
     {
       "keyName": "target_on_drop",
-      "keyDescription": "Fire specified target(s) when item is dropped (uses 'Toggle' trigger state). Player who dropped it is passed as the '!activator'.",
+      "keyDescription": "Trigger specified target(s) when item is dropped (uses 'Toggle' trigger state). Player who dropped it is passed as the '!activator'.",
       "keyChoices": []
     },
     {
@@ -382,7 +382,7 @@
     },
     {
       "keyName": "target_cant_drop",
-      "keyDescription": "Fire specified target(s) when item is drop failed (uses 'Toggle' trigger state). Player who failed dropping item it is passed as the '!activator'.",
+      "keyDescription": "Trigger specified target(s) when item is drop failed (uses 'Toggle' trigger state). Player who failed dropping item it is passed as the '!activator'.",
       "keyChoices": []
     },
     {
@@ -397,7 +397,7 @@
     },
     {
       "keyName": "target_on_activate",
-      "keyDescription": "Fire specified target(s) when player activate item from inventory menu, only if \"Allowed to self-activate\" is set to 'Yes' (uses 'Toggle' trigger state). Player who activated it is passed as the '!activator'.",
+      "keyDescription": "Trigger specified target(s) when player activate item from inventory menu, only if \"Allowed to self-activate\" is set to 'Yes' (uses 'Toggle' trigger state). Player who activated it is passed as the '!activator'.",
       "keyChoices": []
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "keyName": "target_cant_activate",
-      "keyDescription": "If \"Allowed to self-activate\" is set to 'Yes' and item activation limit hit 0, this is a target to fire when player attempts to activate it again (uses 'Toggle' trigger state). Player who failed it is passed as the '!activator'.",
+      "keyDescription": "If \"Allowed to self-activate\" is set to 'Yes' and item activation limit hit 0, this is a target to trigger when player attempts to activate it again (uses 'Toggle' trigger state). Player who failed it is passed as the '!activator'.",
       "keyChoices": []
     },
     {
@@ -427,7 +427,7 @@
     },
     {
       "keyName": "target_on_use",
-      "keyDescription": "Fire specified target(s) when item is used by trigger (uses 'Toggle' trigger state). Player is passed as the 'activator!'.",
+      "keyDescription": "Trigger specified target(s) when item is used by trigger (uses 'Toggle' trigger state). Player is passed as the 'activator!'.",
       "keyChoices": []
     },
     {
@@ -442,7 +442,7 @@
     },
     {
       "keyName": "target_on_wearing_out",
-      "keyDescription": "Fire specified target(s) when item's \"Wearing out trigger time\" ends (which must be greater than 0 but less than \"Holder: Hold time limit\" value), see \"Holder: Wearing out trigger time\" above for more info (uses 'Toggle' trigger state). Player who owns this item is passed as the '!activator'.",
+      "keyDescription": "Trigger specified target(s) when item's \"Wearing out trigger time\" ends (which must be greater than 0 but less than \"Holder: Hold time limit\" value), see \"Holder: Wearing out trigger time\" above for more info (uses 'Toggle' trigger state). Player who owns this item is passed as the '!activator'.",
       "keyChoices": []
     },
     {
@@ -457,7 +457,7 @@
     },
     {
       "keyName": "target_on_return",
-      "keyDescription": "Fire specified target(s) when item returns to it's starting position (uses 'Toggle' trigger state).",
+      "keyDescription": "Trigger specified target(s) when item returns to it's starting position (uses 'Toggle' trigger state).",
       "keyChoices": []
     },
     {
@@ -472,12 +472,12 @@
     },
     {
       "keyName": "target_on_materialise",
-      "keyDescription": "Fire specified target when item gets materialised after a drop or return (uses 'Toggle' trigger state).",
+      "keyDescription": "Trigger specified target when item gets materialised after a drop or return (uses 'Toggle' trigger state).",
       "keyChoices": []
     },
     {
       "keyName": "target_on_destroy",
-      "keyDescription": "Fire specified target when item gets destroyed by environment (uses 'Toggle' trigger state).",
+      "keyDescription": "Trigger specified target when item gets destroyed by environment (uses 'Toggle' trigger state).",
       "keyChoices": []
     },
     {

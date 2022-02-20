@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to apply sound effect to entities in radius- only when 'Use only' and 'Radius' are used. Can be kill-targeted but already applied effects persist.
+Set name of {{ entname }} so other entities can trigger it to apply sound effect to entities in radius- only when 'Use only' and 'Radius' are used. Every trigger use-type works uniformly. Can be kill-targeted but already applied effects persist.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Radius</b></span> <kbd  class="tooltip" data-tooltip="integer">radius</kbd> :
@@ -70,7 +70,7 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : USE Only : If selected, the env_sound apply sound effect directly (if radius is 0), or will check for players inside that radius single time whenever it is triggered.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">USE Only</span> : If selected, the env_sound apply sound effect directly (if radius is 0), or will check for players inside that radius single time whenever it is triggered.</li>
 </ul>
 </div>
 <div class="notices red">When a player spawns within the radius of an env_sound, he won't be affected.</div>

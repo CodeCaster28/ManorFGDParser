@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to enable or disable sprite. Trigger signals are handled as follow: 'On' to show sprite, 'Off' to hide sprite, 'Toggle' to toggle sprite. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to enable or disable sprite. Depending on trigger use-type: 'On'- show sprite, 'Off'- hide sprite, 'Toggle'- toggle sprite. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -124,10 +124,10 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Start on : Causes the env_sprite effect to be visible from map-load onwards. Useful when the env_sprite has a targetname. Makes little to no sense in combination with "Play Once".</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Play Once : If set, the sprite animation won't loop and end after cycling through all of its frames once. If the sprite is not animated, only the first frame will show for a moment.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : Once + Remove : If set along with "Play once", causes the env_sprite entity to be removed from the game after having played. Useful for saving some entities.</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Start on</span> : Causes the env_sprite effect to be visible from map-load onwards. Useful when the env_sprite has a targetname. Makes little to no sense in combination with "Play Once".</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Play Once</span> : If set, the sprite animation won't loop and end after cycling through all of its frames once. If the sprite is not animated, only the first frame will show for a moment.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Once + Remove</span> : If set along with "Play once", causes the env_sprite entity to be removed from the game after having played. Useful for saving some entities.</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">To make sprite work properly use "Render Mode" with optional "FX Amount". Most sprites can make use of 'Glow' or 'Additive' render modes (most sprites are in 'additive' format), however sprites with 'alphatest' works best with 'Texture' mode (background gets removed, image is opaque), while 'indexalpha' sprites are rendered properly only in 'Solid' and 'Texture', in any other mode they appearance is invalid. You can use third party tools like Sprite Explorer to check format of sprite if you are not sure, or check this Sprite List to check format type each sprite.</div>

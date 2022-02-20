@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to start shooting gibs. Can't be triggered when gibs shooting is in progress. Can be kill-targeted but gibs stay.
+Set name of {{ entname }} so other entities can trigger it to start shooting gibs. Every trigger use-type works uniformly. Can't be triggered when gibs shooting is in progress. Can be kill-targeted but gibs stay.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -46,7 +46,7 @@ Time, in seconds, the gib will be visible till fading out of world and getting r
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Repeatable : If set, the {{ entname }} can be used more than once.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Repeatable</span> : If set, the {{ entname }} can be used more than once.</li>
 </ul>
 </div>
 <div class="notices blue">If your delay between shots is 0, the game may increase it notably; 0.01 works, though.</div>

@@ -447,16 +447,16 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Start At Player : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Follow Player : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4</b> : Freeze Player : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : All Players : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Force View : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : No Instant Turn : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Instant Move : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : Mouse Cursor : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : Player Invulnerable : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : Ignore Hold Time : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Start At Player</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Follow Player</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Freeze Player</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">All Players</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Force View</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">No Instant Turn</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Instant Move</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Mouse Cursor</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Player Invulnerable</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Ignore Hold Time</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

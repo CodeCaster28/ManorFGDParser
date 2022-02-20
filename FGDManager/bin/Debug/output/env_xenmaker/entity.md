@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to spawn monster (if place available). Any trigger signal type accepted. Can be kill-targeted. Monster in queue (those who couldn't spawn because there was no room for them) won't spawn.
+Set name of {{ entname }} so other entities can trigger it to spawn monster (if place available). Every trigger use-type works uniformly. Can be kill-targeted. Monster in queue (those who couldn't spawn because there was no room for them) won't spawn.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
@@ -90,8 +90,8 @@ Second sprite Color override.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Try Once : If set, the env_xenmaker will attempt to spawn only once when triggered, instead of waiting till the spawn-zone is unobscured.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : No Spawn : If set, nothing will spawn at this env_xenmaker. Use this when you only want the visual and audible effect. You still must specify monster to spawn in 'Monster Type' keyvalue, otherwise it will crash the game.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Try Once</span> : If set, the env_xenmaker will attempt to spawn only once when triggered, instead of waiting till the spawn-zone is unobscured.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No Spawn</span> : If set, nothing will spawn at this env_xenmaker. Use this when you only want the visual and audible effect. You still must specify monster to spawn in 'Monster Type' keyvalue, otherwise it will crash the game.</li>
 </ul>
 </div>
 <div class="notices red">Insert known issues here</div>

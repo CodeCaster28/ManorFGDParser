@@ -52,7 +52,7 @@
     },
     {
       "keyName": "TriggerCondition",
-      "keyDescription": "Choose trigger condition for this monster. When condition is met, the \"Trigger Condition Target\" is fired.",
+      "keyDescription": "Choose trigger condition for this monster. When condition is met, the entity specified in \"Trigger Condition Target\" is triggered.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
@@ -80,7 +80,7 @@
         },
         {
           "choiceValue": "8 ",
-          "choiceDescription": "When monster hear a player for the first time, his footsteps or weapons. Note that crouching makes player harder to hear, just like some quiter weapons are harder to heard by monsters. Allies might ignore hearing player when they are moving behind monster's back, but still this trigger will fire when monster saw player."
+          "choiceDescription": "When monster hear a player for the first time, his footsteps or weapons. Note that crouching makes player harder to hear, just like some quieter weapons are harder to heard by monsters. Allies might ignore hearing player when they are moving behind monster's back, but still this trigger will fire when monster saw player."
         },
         {
           "choiceValue": "9 ",
@@ -98,7 +98,7 @@
     },
     {
       "keyName": "TriggerTarget",
-      "keyDescription": "Entity to fire when the above condition becomes true.",
+      "keyDescription": "Entity to trigger when condition in \"Trigger Condition Target\" is met. Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {
@@ -184,7 +184,7 @@
     },
     {
       "keyName": "soundlist",
-      "keyDescription": "Set the path to a sound replacement file for the spawned monsters. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a custom_precache point entity.",
+      "keyDescription": "Set the path to a sound replacement file for the spawned monsters. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a [custom_precache](../custom_precache) point entity.",
       "keyChoices": []
     },
     {

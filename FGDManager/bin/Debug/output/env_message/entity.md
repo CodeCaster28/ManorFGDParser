@@ -57,7 +57,7 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Play Once : The message can show up only once.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : All Clients : Everyone will see the message, instead of only the !activator.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Play Once</span> : The message can show up only once.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">All Clients</span> : Everyone will see the message, instead of only the !activator.</li>
 </ul>
 </div>

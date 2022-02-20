@@ -36,7 +36,7 @@ Entity or entities to destroy when this node is reached.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire on approach</b></span> <kbd  class="tooltip" data-tooltip="target_destination">reachtarget</kbd> :
-Target to fire on reaching this point.
+Entity to trigger when Gonarch reach this point. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sequence on approach</b></span> <kbd  class="tooltip" data-tooltip="string">reachsequence</kbd> :
@@ -54,7 +54,7 @@ Name of monster_bigmomma sequence to play before it reaching this point.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Run To Node : Run to this node instead of walking.</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Wait Indefinitely : Disable monster AI at this point. Useful when waiting for player to change level.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Run To Node</span> : Run to this node instead of walking.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Wait Indefinitely</span> : Disable monster AI at this point. Useful when waiting for player to change level.</li>
 </ul>
 </div>

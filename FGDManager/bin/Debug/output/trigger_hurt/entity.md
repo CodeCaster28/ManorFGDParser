@@ -262,12 +262,12 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Target Once : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Start Off : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : No clients : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : FireClientOnly : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : TouchClientOnly : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Affect non-moving NPC's : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Target Once</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Off</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No clients</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">FireClientOnly</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">TouchClientOnly</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Affect non-moving NPC's</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

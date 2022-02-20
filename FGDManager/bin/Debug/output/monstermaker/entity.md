@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to spawn monsters. With 'Cyclic' flag disabled the behaviour is based on trigger use-type: 'On'- turn spawner on, 'Off'- turn spawner off, 'Toggle'- toggle spawner. With 'Cyclic' flag enabled every trigger use-type works uniformly to spawn a single monster. Can be kill-targeted but monsters already spawned are not removed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target On Release</b></span> <kbd  class="tooltip" data-tooltip="string">target</kbd> :
-Entity or entities to trigger whenever a monster is spawned. It sends 'Toggle' trigger state signal.
+Entities to trigger whenever a monster is spawned. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Monster Type</b></span> <kbd  class="tooltip" data-tooltip="string">monstertype</kbd> :
@@ -75,9 +75,10 @@ Name of first [path_waypoint](../path_waypoint) to go to.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start ON : The {{ entname }} will start on and start spawning as soon as the map loads.</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Cyclic : Changes the {{ entname }} toggle-behaviour to a single-fire-behaviour. With this flag set, the entity will spawn one time every time it is fired.</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : MonsterClip : Monsters spawned by a {{ entname }} with this flag set will be blocked by the [func_monsterclip](../func_monsterclip) brush entity.</li>
-<li class="imagepadding" markdown="1"><b>1024 </b> : No Respawn (Collectible) : If the spawned entity is a weapon, an item or ammunition, it won't respawn after being collected when this flag is set.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start ON</span> : The {{ entname }} will start on and start spawning as soon as the map loads.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Cyclic</span> : Changes the {{ entname }} toggle-behaviour to a single-fire-behaviour. With this flag set, the entity will spawn one time every time it is fired.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">MonsterClip</span> : Monsters spawned by a {{ entname }} with this flag set will be blocked by the [func_monsterclip](../func_monsterclip) brush entity.</li>
+<li class="imagepadding" markdown="1"><b>1024 </b> : <span style="color:#9fc5e8;">No Respawn (Collectible)</span> : If the spawned entity is a weapon, an item or ammunition, it won't respawn after being collected when this flag is set.</li>
 </ul>
 </div>
+<div class="notices red">You must specify monster type, otherwise it will crash the game with "Spawned a NULL entity!" error message.</div>

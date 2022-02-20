@@ -1,65 +1,70 @@
 {
   "Classname": "speaker",
-  "Description": "Entity_Description_here",
+  "Description": "A black mesa announcer doing random announcements.",
   "KeyDescriptions": [
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to enable announcements. Depending on trigger use-type: 'On'- enable announcement, 'Off'- disable announcement, 'Toggle'- toggle announcement. Can be kill-targeted but sound already played won't be removed.",
+      "keyChoices": []
+    },
+    {
       "keyName": "preset",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of announcement group to play. Found in default_senteces.txt, look for grouped \"intercom\" labeled entries.",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "6",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "7",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "9",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "11",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "12",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "message",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Better use presets to choose announcement group.",
       "keyChoices": []
     },
     {
       "keyName": "health",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Announcement volume.",
       "keyChoices": []
     },
     {
@@ -68,15 +73,9 @@
       "keyChoices": [
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Speaker need to be triggered in order to be enabled."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

@@ -98,13 +98,13 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start Off : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Directional (Angles) : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : No Clients : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Monsters : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16 </b> : Pushables : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32 </b> : Everything else : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64 </b> : item_inv (thrown) : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start Off</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Directional (Angles)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">No Clients</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Monsters</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Pushables</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Everything else</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">item_inv (thrown)</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

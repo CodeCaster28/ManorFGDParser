@@ -43,7 +43,7 @@
     },
     {
       "keyName": "reachtarget",
-      "keyDescription": "Target to fire on reaching this point.",
+      "keyDescription": "Entity to trigger when Gonarch reach this point. Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {

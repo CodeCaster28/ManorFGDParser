@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to enable/disable laser. Signals: 'On' to enable, 'Off' to disable and 'Toggle' to toggle laser. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to enable/disable laser. Depending on trigger use-type: 'On'- enable laser, 'Off'- disable laser, 'Toggle'- toggle laser. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -102,10 +102,10 @@ Average damage per second for the laser.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start On : Causes the laser to be activated from map load onwards.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : StartSparks : If set, sparks will be emitted at the env_laser.</li>
-<li class="imagepadding" markdown="1"><b>32</b> : EndSparks : If set, sparks will be emitted at the target of the laser.</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Decal End : If set, a bullethole decal will be created whenever the beam hits a surface.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start On</span> : Causes the laser to be activated from map load onwards.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">StartSparks</span> : If set, sparks will be emitted at the env_laser.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">EndSparks</span> : If set, sparks will be emitted at the target of the laser.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Decal End</span> : If set, a bullethole decal will be created whenever the beam hits a surface.</li>
 </ul>
 </div>
 <div class="notices blue">The only thing this entity has that the env_beam doesn't is "End Sprite". Unless you need this, it's probably best to use env_beam instead.</div>

@@ -96,11 +96,11 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Don't use X : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Don't use Y : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Don't use Z : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32 </b> : Invert target value : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64 </b> : Invert source value : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Don't use X</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Don't use Y</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Don't use Z</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Invert target value</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">Invert source value</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

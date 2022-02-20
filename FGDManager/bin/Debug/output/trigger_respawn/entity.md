@@ -26,9 +26,9 @@ Name of entity to fire (trigger). Which function relates to it depends on the re
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Respawn Target : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Respawn dead players : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Don't move living players : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Respawn Target</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Respawn dead players</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Don't move living players</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

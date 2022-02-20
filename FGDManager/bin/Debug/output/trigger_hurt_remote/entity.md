@@ -78,10 +78,10 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Instant Kill : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Constant : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Start On : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Do Armor : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Instant Kill</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Constant</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Start On</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Do Armor</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

@@ -355,7 +355,7 @@ If greater than zero, the {{ entname }} will cause an explosion at its position 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
-Allows you to setup a sound replacement file for the {{ entname }} sounds. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a custom_precache point entity.
+Allows you to setup a sound replacement file for the {{ entname }} sounds. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a [custom_precache](../custom_precache) point entity.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>HUD Info name</b></span> <kbd  class="tooltip" data-tooltip="string">displayname</kbd> :
@@ -369,15 +369,15 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Only Trigger : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Touch : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Pressure : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : Repairable : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : Show HUD Info : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Immune To Clients : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : Instant Break : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : Explosives Only : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Only Trigger</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Touch</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Pressure</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Repairable</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Show HUD Info</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Immune To Clients</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Instant Break</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Explosives Only</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

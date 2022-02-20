@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to apply a screen shake. Multiple triggering will override previous shake. Can be kill-targeted but shake won't stop playing until finished.
+Set name of {{ entname }} so other entities can trigger it to apply a screen shake. Every trigger use-type works uniformly. Multiple triggering will override previous shake. Can be kill-targeted but shake won't stop playing until finished.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Amplitude (degrees; 0-16)</b></span> <kbd  class="tooltip" data-tooltip="string">amplitude</kbd> :
@@ -38,7 +38,7 @@ The frequency of the rumble. A value of 10 would mean that your screen will shak
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Global Shake : The env_shake will affect the whole map equally, instead of a radius around it.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Global Shake</span> : The env_shake will affect the whole map equally, instead of a radius around it.</li>
 </ul>
 </div>
 <div class="notices blue">Env_shakes can safely be triggered while a rumble is still in progress, causing the new rumble to overwrite the old one entirely.</div>

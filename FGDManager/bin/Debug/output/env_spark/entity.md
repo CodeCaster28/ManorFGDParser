@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to toggle sparks if 'Toggle' flag is used. All signal types are accepted, all of them toggles env_spark. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to make a spark or toggle sparks if 'Toggle' flag is used. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -30,7 +30,7 @@ Set the maximum delay, in seconds, between sparks, when the 'Toggle'-flag is set
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>32</b> : Toggle : Instead of emitting one spark whenever it is fired, the env_spark will automatically emit multiple sparks consecutively, with a delay between them, while activated.</li>
-<li class="imagepadding" markdown="1"><b>64</b> : Start ON : If set, the env_spark entity will start enabled. Makes sense only in combination with the 'Toggle'-flag above.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Toggle</span> : Instead of emitting one spark whenever it is fired, the env_spark will automatically emit multiple sparks consecutively, with a delay between them, while activated.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Start ON</span> : If set, the env_spark entity will start enabled. Makes sense only in combination with the 'Toggle'-flag above.</li>
 </ul>
 </div>

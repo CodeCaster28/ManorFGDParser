@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with "Start Inactive" flag. Works with 'On' (enable monster), 'Off' (disable monster) and 'Toggle' (toggles monster) trigger state signals. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to activate or deactivate it. Works only with "Start Inactive" flag. Depending on trigger use-type: 'On'- enable monster, 'Off'- disable monster, 'Toggle'- toggles monster. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
@@ -161,7 +161,7 @@ Choices:
 <li><b>3 </b> : 50% Health Remaining : When monster health drops to 50% or below.</li>
 <li><b>4 </b> : Death : When monster dies.</li>
 <li><b>7 </b> : Hear World : When monster hear environmental sounds like door opening/closing or glass breaking.</li>
-<li><b>8 </b> : Hear Player : When monster hear a player for the first time, his footsteps or weapons. Note that crouching makes player harder to hear, just like some quiter weapons are harder to heard by monsters. Allies might ignore hearing player when they are moving behind monster's back, but still this trigger will fire when monster saw player.</li>
+<li><b>8 </b> : Hear Player : When monster hear a player for the first time, his footsteps or weapons. Note that crouching makes player harder to hear, just like some quieter weapons are harder to heard by monsters. Allies might ignore hearing player when they are moving behind monster's back, but still this trigger will fire when monster saw player.</li>
 <li><b>9 </b> : Hear Combat : When monster hear combat sounds like weapon shooting or explosions.</li>
 <li><b>10</b> : See Player Unconditional : When monster see a player for the first time.</li>
 <li><b>11</b> : See Player, Not In Combat : When monster see a player for the first time, but it's not in combat of any kind. When player attack a monster before monster even saw him, the trigger will fire.</li>
@@ -171,7 +171,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger Condition Target</b></span> <kbd  class="tooltip" data-tooltip="String">TriggerTarget</kbd> :
-Entity to fire when the above condition becomes true.
+Entity to trigger when condition in "Trigger Condition Target" is met. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Body</b></span> <kbd  class="tooltip" data-tooltip="choices">body</kbd> :
@@ -264,7 +264,7 @@ If set, this will overwrite the monster's default maximum hullsize. Minimum and 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
-Set the path to a sound replacement file for the spawned monsters. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a custom_precache point entity.
+Set the path to a sound replacement file for the spawned monsters. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a [custom_precache](../custom_precache) point entity.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Monster Roaming (nodes)</b></span> <kbd  class="tooltip" data-tooltip="Choices">freeroam</kbd> :
@@ -317,15 +317,15 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : WaitTillSeen : Monster will have it's AI disabled until it sees player (even if something starts attacking monster).</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Gag : Monster's idle sounds are muted at map start (until woken up).</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Not solid : Disable collision.</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Head Controller : Make use of head controller of this model.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Prisoner : Causes the spawned monster to be an enemy regardless of the ally setting, but it won't attack or harm you in any way.</li>
-<li class="imagepadding" markdown="1"><b>128</b> : WaitForScript : If set, monster won't react to anything after being spawned until it enters a scripted sequence.</li>
-<li class="imagepadding" markdown="1"><b>256</b> : Pre-Disaster : Used for monster_scientist, monster_barneys e.t.c. Prevents player from using monster as his follower.</li>
-<li class="imagepadding" markdown="1"><b>512</b> : Don't Fade Corpse : Prevents corpse from disappearing. Useful when we have essential (mostly friendly) NPC whose death would make map impossible to finish. If corpse never fades players can revive dead monster.</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
-<li class="imagepadding" markdown="1"><b>16384</b> : No Dyn Collision : Set whether the spawned monsters will appear solid to each other and the players or not.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">WaitTillSeen</span> : Monster will have it's AI disabled until it sees player (even if something starts attacking monster).</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Gag</span> : Monster's idle sounds are muted at map start (until woken up).</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Not solid</span> : Disable collision.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Head Controller</span> : Make use of head controller of this model.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Prisoner</span> : Causes the spawned monster to be an enemy regardless of the ally setting, but it won't attack or harm you in any way.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">WaitForScript</span> : If set, monster won't react to anything after being spawned until it enters a scripted sequence.</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Pre-Disaster</span> : Used for monster_scientist, monster_barneys e.t.c. Prevents player from using monster as his follower.</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Don't Fade Corpse</span> : Prevents corpse from disappearing. Useful when we have essential (mostly friendly) NPC whose death would make map impossible to finish. If corpse never fades players can revive dead monster.</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>16384</b> : <span style="color:#9fc5e8;">No Dyn Collision</span> : Set whether the spawned monsters will appear solid to each other and the players or not.</li>
 </ul>
 </div>

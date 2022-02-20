@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to apply render mode. Can be kill-targeted but already applied render settings stays.
+Set name of {{ entname }} so other entities can trigger it to apply render mode. Every trigger use-type works uniformly. Can be kill-targeted but already applied render settings stays.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
@@ -95,11 +95,11 @@ Set the radius, in units, in which to search for the env_render's targets. Set t
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : No Renderfx : If set, the env_render won't change its targets render-fx.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : No Renderamt : If set, the env_render won't change its targets render-amt.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : No Rendermode : If set, the env_render won't change its targets render-mode.</li>
-<li class="imagepadding" markdown="1"><b>8</b> : No Rendercolor : If set, the env_render won't change its targets render-color.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Auto Apply : If set, the env_render will search for its target within the provided radius and apply the changes to every valid entity found, whenever it is found, regularly instead of only when triggered.</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">No Renderfx</span> : If set, the env_render won't change its targets render-fx.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No Renderamt</span> : If set, the env_render won't change its targets render-amt.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">No Rendermode</span> : If set, the env_render won't change its targets render-mode.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No Rendercolor</span> : If set, the env_render won't change its targets render-color.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Auto Apply</span> : If set, the env_render will search for its target within the provided radius and apply the changes to every valid entity found, whenever it is found, regularly instead of only when triggered.</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>

@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to spawn beverage (if no other is spawned at the moment). Any trigger signal type accepted. Can be kill-targeted, already spawned models are not removed.
+Set name of {{ entname }} so other entities can trigger it to spawn beverage (if no other is spawned at the moment). Every trigger use-type works uniformly. Can be kill-targeted, already spawned models are not removed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :

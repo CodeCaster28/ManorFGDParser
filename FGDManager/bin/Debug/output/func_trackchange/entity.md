@@ -171,7 +171,7 @@ Move and stop sound volume.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
-Allows you to setup a sound replacement file for the {{ entname }} sounds. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a custom_precache point entity.
+Allows you to setup a sound replacement file for the {{ entname }} sounds. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a [custom_precache](../custom_precache) point entity.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
@@ -393,13 +393,13 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Auto Activate train : If selected, train isn't paused at the top/bottom of the path after {{ entname }} finish it's movement. Instead, it's continue moving forward.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Relink track : The functionality of this flag is unknown. However, this entity seems to work fine whenever this flag is selected or not.</li>
-<li class="imagepadding" markdown="1"><b>8</b> : Start at Bottom : Platform starts at the bottom instead at the top path_track if this flag is ticked.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Rotate Only : If selected, the platform only rotates in place of it's origin without travelling specified altitude. The top and the bottom path_tracks should have their origin positioned in the same coordinates.</li>
-<li class="imagepadding" markdown="1"><b>64</b> : X Axis : Train rotates around X axis instead of Z axis. Can be combined with "Y Axis".</li>
-<li class="imagepadding" markdown="1"><b>128</b> : Y Axis : Train rotates around Y axis instead of Z axis. Can be combined with "X Axis".</li>
-<li class="imagepadding" markdown="1"><b>2048 </b> : Not in Deathmatch : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Auto Activate train</span> : If selected, train isn't paused at the top/bottom of the path after {{ entname }} finish it's movement. Instead, it's continue moving forward.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Relink track</span> : The functionality of this flag is unknown. However, this entity seems to work fine whenever this flag is selected or not.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Start at Bottom</span> : Platform starts at the bottom instead at the top path_track if this flag is ticked.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Rotate Only</span> : If selected, the platform only rotates in place of it's origin without travelling specified altitude. The top and the bottom path_tracks should have their origin positioned in the same coordinates.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : Train rotates around X axis instead of Z axis. Can be combined with "Y Axis".</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : Train rotates around Y axis instead of Z axis. Can be combined with "X Axis".</li>
+<li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

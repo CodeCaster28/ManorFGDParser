@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to emit blood (if place available). Any trigger signal type accepted. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to emit blood (if place available). Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -47,10 +47,10 @@ Greater amount causes the decal to be more likely to appear, more blood to appea
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Random Direction : If set, instead of the direction set by the env_blood's angles, a random direction will be used into which the blood splash will splatter.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Blood Stream : Instead of a mere blood splash, a blood stream from multiple particles will fly through the air. Basically, this means more blood.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : On Player : If set, the blood splash will be created somewhere at the activating player's head.</li>
-<li class="imagepadding" markdown="1"><b>8</b> : Spray decals : If set, blood will appear on a nearby wall, ceiling or floor.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Random Direction</span> : If set, instead of the direction set by the env_blood's angles, a random direction will be used into which the blood splash will splatter.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Blood Stream</span> : Instead of a mere blood splash, a blood stream from multiple particles will fly through the air. Basically, this means more blood.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">On Player</span> : If set, the blood splash will be created somewhere at the activating player's head.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Spray decals</span> : If set, blood will appear on a nearby wall, ceiling or floor.</li>
 </ul>
 </div>
 <div class="notices blue">If 'Move to position' is set to 'Instantaneous' and you have an action animation set, the monster may freeze up and no longer react.</div>

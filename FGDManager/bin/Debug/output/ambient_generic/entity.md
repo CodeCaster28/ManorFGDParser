@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to play sound. Depending on received signal: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targeting this entity will stop sound from playing.
+Set name of {{ entname }} so other entities can trigger it to play sound. Depending on trigger use-type: 'Off'- stop the sound, 'Toggle'- play/stop sound interchangeably, 'On'- start the sound but it's working only when any other signal was received previously. Kill-targeting this entity will stop sound from playing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound File</b></span> <kbd  class="tooltip" data-tooltip="sound">message</kbd> :
@@ -221,13 +221,13 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Play Everywhere : The sound will play everywhere.</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Small Radius (~384) : Non-linear big sound radius.</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Medium Radius (~768) : Non-linear huge sound radius.</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : Large Radius (~1536) : Non-linear extra-huge sound radius.</li>
-<li class="imagepadding" markdown="1"><b>16 </b> : Start Silent : If set, this sound will start off. Only makes sense for looped sounds. This is usually left unchecked for ambient looping sounds, however only with other than default play mode. See notes for more info.</li>
-<li class="imagepadding" markdown="1"><b>32 </b> : Un-looped|Cyclic : The sound will play once when triggered. If triggered while playing, the sound will stop and restart immediately.</li>
-<li class="imagepadding" markdown="1"><b>64 </b> : User Only (+origin) : The sound will be ADDITIONALLY played for activator (only for him and at specified volume regardless of player and entity position). See notes.</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Play Everywhere</span> : The sound will play everywhere.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Small Radius (~384)</span> : Non-linear big sound radius.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Medium Radius (~768)</span> : Non-linear huge sound radius.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Large Radius (~1536)</span> : Non-linear extra-huge sound radius.</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Start Silent</span> : If set, this sound will start off. Only makes sense for looped sounds. This is usually left unchecked for ambient looping sounds, however only with other than default play mode. See notes for more info.</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Un-looped|Cyclic</span> : The sound will play once when triggered. If triggered while playing, the sound will stop and restart immediately.</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">User Only (+origin)</span> : The sound will be ADDITIONALLY played for activator (only for him and at specified volume regardless of player and entity position). See notes.</li>
 </ul>
 </div>
 <div class="notices blue">Looped sounds that starts enabled ("Start silent" flag unchecked) should use other than default play mode (preferably Linear/Looped) or they need to be triggered by trigger_auto after short delay (e.g. one second) with "Start silent" flag selected. This is because ambient_generics with default play mode are not correctly processed at map start, and works only after triggered.</div>

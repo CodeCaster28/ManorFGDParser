@@ -67,7 +67,7 @@
         },
         {
           "choiceValue": "32",
-          "choiceDescription": " If set, {{ entname }} will fire as soon as something that entered it left it, instead of the instant something enters it."
+          "choiceDescription": " If set, {{ entname }} will trigger as soon as something that entered it left it, instead of the instant something enters it."
         }
       ]
     }

@@ -76,9 +76,9 @@ Keyvalue_Description_here
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Solid : Enables collision.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Start Disabled : If selected, {{ entname }} need to be enabled.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : Render only every 2nd frame : Update display only every two frames instead of every frame, this improves performance.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Solid</span> : Enables collision.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Disabled</span> : If selected, {{ entname }} need to be enabled.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Render only every 2nd frame</span> : Update display only every two frames instead of every frame, this improves performance.</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

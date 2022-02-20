@@ -50,7 +50,7 @@
     },
     {
       "keyName": "triggerstate",
-      "keyDescription": "Set the use-type with which the entity specified in \"Target\" will be fired (after someone spawns here).",
+      "keyDescription": "Set the use-type with which the entity specified in \"Target\" will be triggered (after someone spawns here).",
       "keyChoices": [
         {
           "choiceValue": "0",

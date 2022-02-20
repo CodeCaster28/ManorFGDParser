@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it to increase or decrease counter. Trigger state signals: 'On' and 'Off' increases counter by one, 'Off' decreases it by one. Can be kill-targeted.
+Set name of {{ entname }} so other entities can trigger it to increase or decrease counter. Depending on trigger use-type: 'On' or 'Toggle'- increase counter by one, 'Off'- decrease counter by one. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entities to trigger when counter hits it's limit value, or goes above this limit when 'Fire if over limit' flag is selected. Sends 'Toggle' signal.
+Entity to trigger when counter hits it's limit value, or goes above this limit when 'Fire if over limit' flag is selected. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -28,7 +28,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Entity to remove when counter hits it's limit value.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
@@ -46,9 +46,9 @@ Required value to trigger target.
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : Remove On fire : Remove entity after firing.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : Reset On fire : Reset entity Initial value after fired.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : Fire if over limit : Fire a target when initial value is higher than limit value.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Remove On fire</span> : Remove entity after firing.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Reset On fire</span> : Reset entity Initial value after fired.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Fire if over limit</span> : Fire a target when initial value is higher than limit value.</li>
 </ul>
 </div>
 <div class="notices red">When target is set to ambient_generic, the game_counter need to receive twice more inputs than normal, unless "Fire if over limit" spawnflag is selected.</div>

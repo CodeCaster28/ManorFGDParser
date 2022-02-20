@@ -81,9 +81,9 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : All players : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : Remove excess ammo : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : Set ammo to new max : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">All players</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Remove excess ammo</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Set ammo to new max</span> : Choice_Description_here</li>
 </ul>
 </div>
 <div class="notices blue">Insert additional notes here</div>

@@ -12,7 +12,7 @@
         },
         {
           "choiceValue": "16",
-          "choiceDescription": "If selected, the automatic {{ entname }} will fire it's target only when they are in it's line of sight."
+          "choiceDescription": "If selected, the automatic {{ entname }} will trigger it's target only when they are in it's line of sight."
         },
         {
           "choiceValue": "32",

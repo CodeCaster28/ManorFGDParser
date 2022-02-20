@@ -5,7 +5,7 @@ title: path_condition_controller
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Path_condition_controller is non-functional entity that awaits future implementation.</div>
 </div>
 </div>
 ###Keyvalues
@@ -33,9 +33,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : First Found (Default) : Choice_Description_here</li>
-<li><b>1 </b> : Random : Choice_Description_here</li>
-<li><b>2 </b> : Nearest to NPC : Choice_Description_here</li>
+<li><b>0 </b> : First Found (Default)</li>
+<li><b>1 </b> : Random</li>
+<li><b>2 </b> : Nearest to NPC</li>
 </ul>
 </div>
 </div>
@@ -44,8 +44,6 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : Start Off : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start Off</span> : If selected, this entity is disabled at map start, which means it need to be triggered in order to be enabled.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

@@ -20,11 +20,11 @@ Player-count required to fire "Max Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Min Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Target to trigger when "Min Value" is reached. Sends 'On' trigger state signal.
+Entity to trigger when "Min Value" is reached. Trigger use-type is 'On'
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Max Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">netname</kbd> :
-Target to trigger when "Max Value" is reached. Sends 'On' trigger state signal.
+Target to trigger when "Max Value" is reached. Trigger use-type is 'On'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Filter Player Targetname</b></span> <kbd  class="tooltip" data-tooltip="String">message</kbd> :
