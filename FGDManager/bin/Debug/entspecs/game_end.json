@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "master",
-      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and won't work. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will work again and can end the game when triggered. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.",
+      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master is specified the {{ entname }} will be disabled and won't work. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will work again and can end the game when triggered. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.",
       "keyChoices": []
     },
     {

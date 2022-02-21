@@ -1,37 +1,42 @@
 {
   "Classname": "trigger_load",
-  "Description": "Entity_Description_here",
+  "Description": "Trigger_load allows to read external map-data into an entity keyvalue from mapname.save in the \"maps\"-folder, which is stored on the server running the map. Its counterpart is [trigger_save](../trigger_save). Supports custom keyvalues.",
   "KeyDescriptions": [
     {
       "keyName": "m_iszLevelName",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Need more info.",
       "keyChoices": []
     },
     {
       "keyName": "netname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "A label under which data is stored.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to load keyvalue data into entity.",
       "keyChoices": []
     },
     {
       "keyName": "target",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Entity to write value to.",
       "keyChoices": []
     },
     {
       "keyName": "message",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the keyvalue of the destination entity to write loaded value to.",
       "keyChoices": []
     },
     {
       "keyName": "m_iszTrigger",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Entity to trigger after the load-operation, even if nothing was loaded.",
       "keyChoices": []
     }
   ],
   "Notes": [
-    "Insert additional notes here"
+    "If the requested data was not found or no save-file for the map has been created, yet, the target keyvalue won't be touched."
   ],
   "Issues": [
-    "Insert known issues here"
+    "This will only set the keyvalue of the first destination entity found."
   ]
 }

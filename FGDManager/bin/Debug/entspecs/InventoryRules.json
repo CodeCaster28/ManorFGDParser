@@ -120,7 +120,7 @@
     },
     {
       "keyName": "target_on_fail",
-      "keyDescription": "Entity or entities to trigger whenever test result is negative.",
+      "keyDescription": "Entity to trigger whenever test result is negative.",
       "keyChoices": []
     }
   ]

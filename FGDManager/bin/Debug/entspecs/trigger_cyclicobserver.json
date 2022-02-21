@@ -1,30 +1,35 @@
 {
   "Classname": "trigger_cyclicobserver",
-  "Description": "Entity_Description_here",
+  "Description": "Changes cyclic observer mode at runtime.",
   "KeyDescriptions": [
     {
       "keyName": "m_Mode",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Normally all players enters observer mode when no respawn points are available. When enabling this entity, players won't respawn on available spawn point until [trigger_respawn](../trigger_respawn) is used (that let mapper control player respawns or disabling them).",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Entity to trigger whenever {{ entname }} is triggered. Trigger use-type is 'Toggle'.",
+      "keyChoices": []
+    },
+
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to change cyclic observer mode. Every trigger use-type works uniformly. Can be kill-targeted.",
+      "keyChoices": []
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

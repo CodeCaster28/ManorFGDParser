@@ -1,6 +1,6 @@
 {
   "Classname": "trigger_lookat",
-  "Description": "Entity_Description_here",
+  "Description": "Intended to force one entity to face another entity, once or constantly. It's should set it's angle relative to other's entity position. Changing player's angle is unsupported. This entity is bugged and not 100% usable at the moment.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,29 +8,31 @@
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Causes trigger_lookat to start enabled."
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Trigger_lookat will only set the angles once instead of constantly."
         }
       ]
     },
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to make target look at specified entity.",
+      "keyChoices": []
+    },
+    {
       "keyName": "target",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the entity which's angles shall be adjusted.",
       "keyChoices": []
     },
     {
       "keyName": "message",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the entity which's angles shall be adjusted.",
       "keyChoices": []
     }
   ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
   "Issues": [
-    "Insert known issues here"
+    "Entity has problems to work in general. High update delays and non-functional once targetting makes this entity unusable."
   ]
 }

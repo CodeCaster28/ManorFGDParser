@@ -1,6 +1,6 @@
 {
   "Classname": "trigger_random_unique",
-  "Description": "Entity_Description_here",
+  "Description": "Obsolete, use [trigger_random](../trigger_random) with \"Unique\" flag. Trigger which will pick one of its targets, which has not been triggered by it before, randomly and fire it when triggered.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,15 +8,14 @@
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the trigger_random_unique can be used again after having fired its targets, handling all of them as if not triggered before again."
         }
       ]
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to pick random target.",
+      "keyChoices": []
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

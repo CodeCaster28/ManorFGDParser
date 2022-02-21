@@ -1,15 +1,20 @@
 {
   "Classname": "trigger_changesky",
-  "Description": "Entity_Description_here",
+  "Description": "Allows to change map sky and sky color at runtime.",
   "KeyDescriptions": [
     {
       "keyName": "skyname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the sky to set when this entity is triggered.",
       "keyChoices": []
     },
     {
       "keyName": "color",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sky color to set.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to change sky. Every trigger use-type works uniformly. Can be kill-targeted.",
       "keyChoices": []
     },
     {
@@ -18,23 +23,17 @@
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Make map sky change visible to all players on server."
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Do not affect clients."
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Affect server."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

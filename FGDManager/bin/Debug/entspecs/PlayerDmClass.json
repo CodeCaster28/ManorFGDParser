@@ -40,7 +40,7 @@
     },
     {
       "keyName": "master",
-      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master specified the {{ entname }} won't spawn anyone here. When multisource entity is triggered/beign triggering by all possible inputs, the {{ entname }} will be enabled and ready to spawn players here. When multisource lost at least one input signal, the entities becomes disabled again.",
+      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't spawn anyone here. When multisource entity is triggered/beign triggering by all possible inputs, the {{ entname }} will be enabled and ready to spawn players here. When multisource lost at least one input signal, the entities becomes disabled again.",
       "keyChoices": []
     },
     {

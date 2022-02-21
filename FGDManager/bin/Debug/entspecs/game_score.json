@@ -23,7 +23,7 @@
     },
     {
       "keyName": "master",
-      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and it will not give points to activating player. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.",
+      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master is specified the {{ entname }} will be disabled and it will not give points to activating player. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.",
       "keyChoices": []
     },
     {

@@ -1,22 +1,26 @@
 {
   "Classname": "trigger_changemodel",
-  "Description": "Entity_Description_here",
+  "Description": "Allows you to change the model and/or skin of anything at runtime. Its intended use is to change skins/models of monsters, players or props. Models are precached automatically.",
   "KeyDescriptions": [
     {
+      "keyName": "target",
+      "keyDescription": "Entity to change model.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to change model of entity specified in \"Target\". Every trigger use-type works uniformly. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
       "keyName": "model",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Path to the new model. Is precached automatically. Path starts in \"svencoop\" directory.",
       "keyChoices": []
     },
     {
       "keyName": "skin",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Skin to use on target model.",
       "keyChoices": []
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

@@ -42,7 +42,7 @@
     },
     {
       "keyName": "target",
-      "keyDescription": "Entities to trigger whenever a monster is spawned. Trigger use-type is 'Toggle'.",
+      "keyDescription": "Entity to trigger whenever a monster is spawned. Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {
