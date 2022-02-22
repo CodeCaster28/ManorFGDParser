@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_grapple",
-  "Description": "Entity_Description_here",
+  "Description": "A barnacle you can use to climb to places or safely rappel down any abyss without the danger of falling damage. Change between pull- and rappel-mode with secondary fire. Can be used as a melee weapon against enemies. Can only be used to pull towards surfaces whichs' texturenames start with 'xeno_grapple' (case sensitive) and other players. No ammo. CVars:<ul><li>mp_grapple_mode 1/0 (Default: 0): If set to 1, weapon_grapple can also be used to pull yourself towards monsters. Small monsters like headcrabs will be pulled to you instead.</li><li>mp_disable_player_rappel 1/0 (Default: 0): If set to 1, weapon_grapple cannot be used to pull yourself towards other players.</li><li>sk_plr_grapple# (Default: 25, 25, 50): Grapple damage per bite.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",

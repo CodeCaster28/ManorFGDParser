@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_pipewrench",
-  "Description": "Entity_Description_here",
+  "Description": "A melee weapon. Primary fire is a normal slash. Secondary fire makes the player reach back his arm to strike with more force. You can charge for about three seconds for 85 bonus damage. Can be used to repair friendly mechanical units or reprogram enemy turrets to be allied ones after destroying them. CVars:<ul><li>sk_plr_wrench# (Default: 22, 22, 45): Wrench primary and secondary attack damage. Secondary attack damage is increased by bonus damage, which cannot be customized.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",

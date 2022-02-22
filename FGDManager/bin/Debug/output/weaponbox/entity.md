@@ -5,7 +5,7 @@ title: weaponbox
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The weaponbox originates from Half-Life, where it would be dropped by dead players, containing the weapon they held in the moment of their deaths as well as all their ammunition. In Sven Co-op, the weaponbox can only be explicitly placed into the map by the mapper.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }}. Can't be triggered. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -145,59 +145,59 @@ Set the path to a sound replacement file for the item. The path begins in 'svenc
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed 9mm rounds</b></span> <kbd  class="tooltip" data-tooltip="integer">bullet9mm</kbd> :
-Keyvalue_Description_here
+Amount of 9mm ammo.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed 357 rounds</b></span> <kbd  class="tooltip" data-tooltip="integer">bullet357</kbd> :
-Keyvalue_Description_here
+Amount of 357 ammo.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed shotgun shells</b></span> <kbd  class="tooltip" data-tooltip="integer">buckshot</kbd> :
-Keyvalue_Description_here
+Amount of buckshot ammo
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed crossbow bolts</b></span> <kbd  class="tooltip" data-tooltip="integer">bolts</kbd> :
-Keyvalue_Description_here
+Amount of crossbow bolts ammo.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed 5.56mm rounds</b></span> <kbd  class="tooltip" data-tooltip="integer">bullet556</kbd> :
-Keyvalue_Description_here
+Amount of 556 ammo.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed assault rifle grenades</b></span> <kbd  class="tooltip" data-tooltip="integer">ARgrenades</kbd> :
-Keyvalue_Description_here
+Amount of grenades for 9mmAR.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed rockets</b></span> <kbd  class="tooltip" data-tooltip="integer">rockets</kbd> :
-Keyvalue_Description_here
+Amount of RPG rockets.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed gauss charges</b></span> <kbd  class="tooltip" data-tooltip="integer">uranium</kbd> :
-Keyvalue_Description_here
+Amount of gaussclip ammp.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed hand grenades</b></span> <kbd  class="tooltip" data-tooltip="integer">handgrenade</kbd> :
-Keyvalue_Description_here
+Amount of hand grenades.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed satchels</b></span> <kbd  class="tooltip" data-tooltip="integer">satchelcharge</kbd> :
-Keyvalue_Description_here
+Amount of satchels.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed trip mines</b></span> <kbd  class="tooltip" data-tooltip="integer">tripmine</kbd> :
-Keyvalue_Description_here
+Amount of tripmines.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed snarks</b></span> <kbd  class="tooltip" data-tooltip="integer">Snarks</kbd> :
-Keyvalue_Description_here
+Amount of snarks.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed 7.62mm rounds</b></span> <kbd  class="tooltip" data-tooltip="integer">m40a1</kbd> :
-Keyvalue_Description_here
+Amount of 762 ammo.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Packed spores</b></span> <kbd  class="tooltip" data-tooltip="integer">sporeclip</kbd> :
-Keyvalue_Description_here
+Amount of spores.
 </div>
 ###Flags
 <hr>
@@ -210,5 +210,5 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">If either 'TOUCH only' and 'USE only' flags are selected, the item can only be collected via trigger, but only if player is the !activator.</div>
+<div class="notices blue">Item can be collected on trigger, touch and use when none of flags above are selected.</div>

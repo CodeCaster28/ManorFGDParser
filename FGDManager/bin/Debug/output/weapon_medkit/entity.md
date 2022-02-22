@@ -5,7 +5,7 @@ title: weapon_medkit
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A Medkit which can be used to heal players and allied NPCs. Can store 100 ammunition. By default, heals 10 health points per use. Secondary fire can revive allied players and NPCs, if you have 50 ammunition. Cannot be used to heal yourself. Recharges slowly. CVars:<ul><li>sk_plr_HpMedic# (Default: 10, 10, 20): Medkit health points per use.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_medkit",
-  "Description": "Entity_Description_here",
+  "Description": "A Medkit which can be used to heal players and allied NPCs. Can store 100 ammunition. By default, heals 10 health points per use. Secondary fire can revive allied players and NPCs, if you have 50 ammunition. Cannot be used to heal yourself. Recharges slowly. CVars:<ul><li>sk_plr_HpMedic# (Default: 10, 10, 20): Medkit health points per use.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",

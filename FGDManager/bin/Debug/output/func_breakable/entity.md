@@ -5,7 +5,7 @@ title: func_breakable
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A brush entity, which receives damage from all normal damage sources, such as weapon fire, and can, eventually, break from it, spilling some debris/gibs in its place.</div>
 </div>
 </div>
 ###Keyvalues
@@ -72,7 +72,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-2">
@@ -359,26 +359,24 @@ Allows you to setup a sound replacement file for the {{ entname }} sounds. The p
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>HUD Info name</b></span> <kbd  class="tooltip" data-tooltip="string">displayname</kbd> :
-Keyvalue_Description_here
+Name to display when player is looking at this func_breakable. Requires "Show HUD Info" flag selected
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Only Trigger</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Touch</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Pressure</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Repairable</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Show HUD Info</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Immune To Clients</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Instant Break</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Explosives Only</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Only Trigger</span> : If set, this func_breakable will only break when triggered, even if its health value is set to '1'.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Touch</span> : If set, this func_breakable will break as soon as a player touches it. If a delay before fire is set, the func_breakable will wait for that to run out before breaking after a touch.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Pressure</span> : If set, the func_breakable can be destroyed from pressure, as is e.g. inflicted by a func_train, regardless of the train's damage.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Repairable</span> : If set, this func_breakable can be repaired, as in, have its health restored, by a player 'attacking' it with [weapon_pipewrenches'](../weapon_pipewrenche) primary attack, for the amount of that weapon's primary damage value.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Show HUD Info</span> : If set, the func_breakable will show HUD info for players looking at it. This is not affected by CVar 'mp_allowmonsterinfo'.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Immune To Clients</span> : If set, the func_breakable will be immune to player attacks.</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Instant Break</span> : If set, this func_breakable will break instantly if hit with a crowbar.</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Explosives Only</span> : If set, this func_breakable can be damaged by explosives only.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

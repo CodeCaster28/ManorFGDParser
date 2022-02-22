@@ -5,7 +5,7 @@ title: weapon_minigun
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The minigun consumes ammunition directly. Uses [ammo_556](../ammo_556)/[ammo_556clip](../ammo_556clip). Primary fire winds up the minigun barrel and starts fire shortly after. Secondary fire only winds it up. It is a heavy weapon which reduces the carrying player's speed and disables his ability to jump. It will only be picked up when the player issues his 'Use'-command on it. While holding the weapon, no other weapon can be selected. The minigun has to be dropped first. CVars:<ul><li>sk_556_bullet# (Default: 15, 15, 25): Minigun damage per bullet.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

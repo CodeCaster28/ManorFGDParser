@@ -5,7 +5,7 @@ title: weapon_9mmhandgun
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A Glock which can store 17 bullets. You can carry 250 bullets as backpack ammo. Uses [ammo_9mmAR](../ammo_9mmAR)/[ammo_9mmbox](../ammo_9mmbox)/[ammo_9mmclip](../ammo_9mmclip)/[ammo_uziclip](../ammo_uziclip). CVars:<ul><li>weaponmode_9mmhandgun 1/0 (Default: 0): If set to 1, secondary fire will attach/detach a silencer. This does require a compatible view model with body-groups and animations. Monsters will recognize silenced glock fire as just as much as a gunfire sound as if no silencer was attached, rendering this a visual/audible feature only.</li><li>sk_plr_9mm_bullet# (Default: 12, 12, 19): Glock direct hit damage.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

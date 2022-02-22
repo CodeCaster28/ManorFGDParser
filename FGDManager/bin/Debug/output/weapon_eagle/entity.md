@@ -5,7 +5,7 @@ title: weapon_eagle
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A Desert Eagle with 7 bullets per clip. You can carry 36 bullets as backpack ammo. Uses [ammo_357](../ammo_357). Secondary fire to turn laser pointer on and highly increase accuracy. CVars:<ul><li>sk_plr_357_bullet# (Default: 66, 66, 120): Desert Eagle direct hit damage.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

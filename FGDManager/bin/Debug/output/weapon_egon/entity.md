@@ -5,7 +5,7 @@ title: weapon_egon
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The Egon uses radioactive ammunition to gib your enemies. It consumes the radioactive ammunition, of which you can hold 100 rounds at a time, directly. No clip. No reload. Uses [ammo_gaussclip](../ammo_gaussclip). CVars:<ul><li>sk_plr_egon_wide# (Default: 12, 12, 24): Egon damage per consumed round at its impact zone.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

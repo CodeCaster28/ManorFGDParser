@@ -5,7 +5,7 @@ title: weapon_displacer
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Displacer uses gaussclip, no reload. Uses [ammo_gaussclip](../ammo_gaussclip). You can carry 100 rounds at a time. Primary fire consumes 20 rounds and secondary fire (teleporter) 60 rounds. Tertiary mode is available for this weapon (crowbar throw key) that shoot even more powerful and faster projectiles but consumes 50 rounds. CVars:<ul><li>sk_plr_displacer_other# (Default: 250, 250, 250): Portal projectile damage.</li><li>sk_plr_displacer_radius# (Default: 300, 300, 300): Teleportation radius damage.</li><li>weaponmode_displacer# (Default: 0): Determines if tertiary mode is enabled.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

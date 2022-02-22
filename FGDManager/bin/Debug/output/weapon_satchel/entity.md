@@ -5,7 +5,7 @@ title: weapon_satchel
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A remote-triggered explosive. You can carry 5 of them at a time. While you have at least one placed somewhere in the map, you cannot pick up new ones. This is in order to prevent spamming which might eventually crash the server when all of them are triggered at once. Secondary fire throws a satchel. Primary fire detonates all of your placed satchels. You can pick up thrown satchels again by using them. Thrown satchels can be kicked around by players by walking over them, which, however, is unwanted in most cases. Bounces off of targets without detonating, dealing no damage. CVars:<ul><li>sk_plr_satchel# (Default: 160, 160, 225): Satchel explosion damage. Explosion damage values greater than 200 are known to occasionally cause damage to apply even through walls.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

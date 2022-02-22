@@ -5,7 +5,7 @@ title: xen_spore_large
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Large spore model.</div>
 </div>
 </div>
 ###Keyvalues
@@ -20,7 +20,7 @@ Set name of {{ entname }} so other entities can trigger it.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -91,11 +91,9 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Drop To Ground</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Face Randomly</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Non Solid</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Drop To Ground</span> : Self explanatory.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Face Randomly</span> : Spawn facing random direction.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Non Solid</span> : Disables collision box of entity.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

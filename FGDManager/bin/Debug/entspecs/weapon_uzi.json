@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_uzi",
-  "Description": "Entity_Description_here",
+  "Description": "An uzi, which can store 32 bullets in its clip. You can carry 250 bullets as backpack ammo. Uses [ammo_9mmAR](../ammo_9mmAR)/[ammo_9mmbox](../ammo_9mmbox)/[ammo_9mmclip](../ammo_9mmclip)/[ammo_uziclip](../ammo_uziclip). Some donors and Sven Co-op staff members have the golden uzi in place of the normal uzi, which causes double damage but has less accuracy. Regardless of the CVar 'mp_weaponstay', you can pickup a second uzi from a weapon_uzi 15 seconds after picking up the first, unless someone else picks up from it in the meantime, resetting the delay. CVars:<ul><li>sk_plr_uzi# (Default: 10, 10, 16): Uzi bullet hit damage.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",

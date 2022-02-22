@@ -5,7 +5,7 @@ title: world_items
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The world_items entity is the old way of adding items to your map. It's development has been discontinued. Please add items to your map directly. Also, this only supports the creation of only four different items.</div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -162,7 +162,7 @@ Same as target, except that this supposedly causes the specified entity/entities
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Type</b></span> <kbd  class="tooltip" data-tooltip="choices">type</kbd> :
-Keyvalue_Description_here
+Which item to spawn here. Only four of listed items are available, you can't specify an item classname here.
 <div class="accordion">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">
@@ -171,10 +171,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>42 </b> : Antidote : Choice_Description_here</li>
-<li><b>43 </b> : Security Card : Choice_Description_here</li>
-<li><b>44 </b> : Battery : Choice_Description_here</li>
-<li><b>45 </b> : Suit : Choice_Description_here</li>
+<li><b>42 </b> : Antidote</li>
+<li><b>43 </b> : Security Card</li>
+<li><b>44 </b> : Battery</li>
+<li><b>45 </b> : Suit</li>
 </ul>
 </div>
 </div>
@@ -190,5 +190,3 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

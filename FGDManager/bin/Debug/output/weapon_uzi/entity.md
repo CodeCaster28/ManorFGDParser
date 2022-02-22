@@ -5,7 +5,7 @@ title: weapon_uzi
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">An uzi, which can store 32 bullets in its clip. You can carry 250 bullets as backpack ammo. Uses [ammo_9mmAR](../ammo_9mmAR)/[ammo_9mmbox](../ammo_9mmbox)/[ammo_9mmclip](../ammo_9mmclip)/[ammo_uziclip](../ammo_uziclip). Some donors and Sven Co-op staff members have the golden uzi in place of the normal uzi, which causes double damage but has less accuracy. Regardless of the CVar 'mp_weaponstay', you can pickup a second uzi from a weapon_uzi 15 seconds after picking up the first, unless someone else picks up from it in the meantime, resetting the delay. CVars:<ul><li>sk_plr_uzi# (Default: 10, 10, 16): Uzi bullet hit damage.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

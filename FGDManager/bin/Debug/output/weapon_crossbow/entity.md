@@ -5,7 +5,7 @@ title: weapon_crossbow
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A Crossbow that can hold 5 bolts in its clip, you can carry a total of 50 bolts as backpack ammo. Uses [ammo_crossbow](../ammo_crossbow). By default, if not zooming with this weapon, bolts fly slower and explode on hit. When zoomed, bolts never explode and arrive instantly, as bullets do. CVars:<ul><li>weaponmode_crossbow 1/0 (Default: 0): Set to 1 and bolts won't be explosive.</li><li>sk_plr_xbow_bolt_monster# (Default: 65, 65, 120): Crossbow direct hit damage.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

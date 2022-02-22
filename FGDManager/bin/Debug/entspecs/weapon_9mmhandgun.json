@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_9mmhandgun",
-  "Description": "Entity_Description_here",
+  "Description": "A Glock which can store 17 bullets. You can carry 250 bullets as backpack ammo. Uses [ammo_9mmAR](../ammo_9mmAR)/[ammo_9mmbox](../ammo_9mmbox)/[ammo_9mmclip](../ammo_9mmclip)/[ammo_uziclip](../ammo_uziclip). CVars:<ul><li>weaponmode_9mmhandgun 1/0 (Default: 0): If set to 1, secondary fire will attach/detach a silencer. This does require a compatible view model with body-groups and animations. Monsters will recognize silenced glock fire as just as much as a gunfire sound as if no silencer was attached, rendering this a visual/audible feature only.</li><li>sk_plr_9mm_bullet# (Default: 12, 12, 19): Glock direct hit damage.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",

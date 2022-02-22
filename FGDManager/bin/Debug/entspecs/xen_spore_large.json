@@ -1,6 +1,6 @@
 {
   "Classname": "xen_spore_large",
-  "Description": "Entity_Description_here",
+  "Description": "Large spore model.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,23 +8,17 @@
       "keyChoices": [
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Self explanatory."
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Spawn facing random direction."
         },
         {
           "choiceValue": "8 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Disables collision box of entity."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

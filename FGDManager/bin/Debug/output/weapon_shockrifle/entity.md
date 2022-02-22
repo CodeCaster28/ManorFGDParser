@@ -5,7 +5,7 @@ title: weapon_shockrifle
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The shockrifle (called also Shock Roach) consumes ammunition directly. Primary fire shot a swift laser that deal moderate amount of damage. Secondary fire produces unstable triple lightning bolt in front of player that may damage multiple enemies. It will only be picked up when the player issues his 'Use'-command on shock roach (dropped by Shock Troopers) before it dies. While holding the weapon, no other weapon can be selected. The Shockrifle has to be dropped first. Shockroach explodes when it's almost out of charge. Dropping it will damage nearby enemies- it act like a electric grenade. Dropped too late or not dropped at all will deal massive amount of damage to carrier. Shock rifle is not rechargeable. CVars:<ul><li>sk_shockroach_dmg_xpl_touch# (Default: 350): Damage dealt to carrier on overcharge.</li><li>sk_shockroach_dmg_xpl_splash_bullet# (Default: 150): Explosion damage.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

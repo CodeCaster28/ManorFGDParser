@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "renderfx",
-      "keyDescription": "Set custom render FX effect. Only works when \"Render Mode\" is set to different 'Normal'",
+      "keyDescription": "Set custom render FX effect. Only works when \"Render Mode\" is set to different than 'Normal'",
       "keyChoices": [
         {
           "choiceValue": "0",

@@ -5,7 +5,7 @@ title: weapon_9mmAR
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">An MP5 which can store 30 bullets in its clip. You can carry 250 bullets as backpack ammo. Uses [ammo_9mmAR](../ammo_9mmAR)/[ammo_9mmbox](../ammo_9mmbox)/[ammo_9mmclip](../ammo_9mmclip)/[ammo_uziclip](../ammo_uziclip). This weapon can zoom. CVars:<ul><li>weaponmode_mp5 1/0 (Default: 0): If set to 1, you cannot zoom with this weapon.</li><li>sk_plr_9mmAR_bullet# (Default: 8, 8, 15): MP5 direct hit damage.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

@@ -5,7 +5,7 @@ title: weapon_rpg
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A Rocket-Propelled Grenade (RPG) launcher. Uses [ammo_rpgclip](../ammo_rpgclip). Primary fire fires a rocket, of which only one can be loaded at a time. Secondary fire toggles rocket laser guide on/off. You can carry 5 rockets as backpack ammunition. Underwater, the rocket will lose speed until, standing still. Rocket can fly into water without detonating, but not out of it. CVars:<ul><li>sk_plr_rpg# (Default: 150, 150, 180): Rocket explosion damage. Explosion damage values greater than 200 are known to occasionally cause damage to apply even through walls.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

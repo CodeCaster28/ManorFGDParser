@@ -5,7 +5,7 @@ title: weapon_grapple
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A barnacle you can use to climb to places or safely rappel down any abyss without the danger of falling damage. Change between pull- and rappel-mode with secondary fire. Can be used as a melee weapon against enemies. Can only be used to pull towards surfaces whichs' texturenames start with 'xeno_grapple' (case sensitive) and other players. No ammo. CVars:<ul><li>mp_grapple_mode 1/0 (Default: 0): If set to 1, weapon_grapple can also be used to pull yourself towards monsters. Small monsters like headcrabs will be pulled to you instead.</li><li>mp_disable_player_rappel 1/0 (Default: 0): If set to 1, weapon_grapple cannot be used to pull yourself towards other players.</li><li>sk_plr_grapple# (Default: 25, 25, 50): Grapple damage per bite.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

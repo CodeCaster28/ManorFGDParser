@@ -5,7 +5,7 @@ title: weapon_tripmine
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Gives one tripmine, of which you can carry 5 at a time. The tripmine can be placed on any solid, non-moving surface and will deploy 3 seconds after placement. When deployed, anything crossing its laser will cause it to detonate. It is best placed in narrow hallways to ensure the enemy triggering it is actually affected by the explosion. Unfortunately, tripmines are affected by the CVar 'mp_npckill', rendering them useless in most cases. CVars:<ul><li>sk_plr_tripmine# (Default: 150, 150, 225): Tripmine explosion damage. Explosion damage values greater than 200 are known to ocassionally cause damage to apply even through walls.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

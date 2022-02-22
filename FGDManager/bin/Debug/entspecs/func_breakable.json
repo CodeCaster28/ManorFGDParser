@@ -1,6 +1,6 @@
 {
   "Classname": "func_breakable",
-  "Description": "Entity_Description_here",
+  "Description": "A brush entity, which receives damage from all normal damage sources, such as weapon fire, and can, eventually, break from it, spilling some debris/gibs in its place.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -8,53 +8,47 @@
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this func_breakable will only break when triggered, even if its health value is set to '1'."
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this func_breakable will break as soon as a player touches it. If a delay before fire is set, the func_breakable will wait for that to run out before breaking after a touch."
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the func_breakable can be destroyed from pressure, as is e.g. inflicted by a func_train, regardless of the train's damage."
         },
         {
           "choiceValue": "8",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this func_breakable can be repaired, as in, have its health restored, by a player 'attacking' it with [weapon_pipewrenches'](../weapon_pipewrench) primary attack, for the amount of that weapon's primary damage value."
         },
         {
           "choiceValue": "32",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the func_breakable will show HUD info for players looking at it. This is not affected by CVar 'mp_allowmonsterinfo'."
         },
         {
           "choiceValue": "64",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, the func_breakable will be immune to player attacks."
         },
         {
           "choiceValue": "256",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this func_breakable will break instantly if hit with a crowbar."
         },
         {
           "choiceValue": "512",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this func_breakable can be damaged by explosives only."
         }
       ]
     },
     {
       "keyName": "displayname",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name to display when player is looking at this func_breakable. Requires \"Show HUD Info\" flag selected",
       "keyChoices": []
     },
     {
       "keyName": "_minlight",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.",
       "keyChoices": []
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

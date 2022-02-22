@@ -5,7 +5,7 @@ title: weapon_snark
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A nest of 5 snark. You can carry 15. Primary fire throws a snark, which will attack enemies and explode after some time. Donors and Sven Co-op staff can throw a chubby when carrying at least 10 snarks, using secondary fire. Chubby attacks enemies with poisonous gas clouds, dealing massive damage. It is a very strong donor feature. CVars:<ul><li>sk_snark_health# (Default: 2, 2, 2): Snark health.</li><li>sk_snark_dmg_bite# (Default: 10, 12, 24): Snark bite damage.</li><li>sk_snark_dmg_pop# (Default: 5, 6, 15): Snark explosion damage. Explosion damage values greater than 200 are known to occasionally cause damage to apply even through walls.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

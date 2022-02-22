@@ -1,82 +1,85 @@
 {
   "Classname": "weaponbox",
-  "Description": "Entity_Description_here",
+  "Description": "The weaponbox originates from Half-Life, where it would be dropped by dead players, containing the weapon they held in the moment of their deaths as well as all their ammunition. In Sven Co-op, the weaponbox can only be explicitly placed into the map by the mapper.",
   "KeyDescriptions": [
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }}. Can't be triggered. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
       "keyName": "bullet9mm",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of 9mm ammo.",
       "keyChoices": []
     },
     {
       "keyName": "bullet357",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of 357 ammo.",
       "keyChoices": []
     },
     {
       "keyName": "buckshot",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of buckshot ammo",
       "keyChoices": []
     },
     {
       "keyName": "bolts",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of crossbow bolts ammo.",
       "keyChoices": []
     },
     {
       "keyName": "bullet556",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of 556 ammo.",
       "keyChoices": []
     },
     {
       "keyName": "ARgrenades",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of grenades for 9mmAR.",
       "keyChoices": []
     },
     {
       "keyName": "rockets",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of RPG rockets.",
       "keyChoices": []
     },
     {
       "keyName": "uranium",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of gaussclip ammp.",
       "keyChoices": []
     },
     {
       "keyName": "handgrenade",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of hand grenades.",
       "keyChoices": []
     },
     {
       "keyName": "satchelcharge",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of satchels.",
       "keyChoices": []
     },
     {
       "keyName": "tripmine",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of tripmines.",
       "keyChoices": []
     },
     {
       "keyName": "Snarks",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of snarks.",
       "keyChoices": []
     },
     {
       "keyName": "m40a1",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of 762 ammo.",
       "keyChoices": []
     },
     {
       "keyName": "sporeclip",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Amount of spores.",
       "keyChoices": []
     }
   ],
   "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
+    "If either 'TOUCH only' and 'USE only' flags are selected, the item can only be collected via trigger, but only if player is the !activator.",
+    "Item can be collected on trigger, touch and use when none of flags above are selected."
   ]
 }

@@ -36,7 +36,7 @@ Targetname required on the player to spawn here, or targetname not allowed to sp
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't spawn anyone here. When multisource entity is triggered/beign triggering by all possible inputs, the {{ entname }} will be enabled and ready to spawn players here. When multisource lost at least one input signal, the entities becomes disabled again.
+Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't spawn anyone here. When multisource entity is triggered/being triggering by all possible inputs, the {{ entname }} will be enabled and ready to spawn players here. When multisource lost at least one input signal, the entities becomes disabled again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Repel Speed</b></span> <kbd  class="tooltip" data-tooltip="string">frags</kbd> :

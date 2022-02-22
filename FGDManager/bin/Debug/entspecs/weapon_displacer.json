@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_displacer",
-  "Description": "Entity_Description_here",
+  "Description": "Displacer uses gaussclip, no reload. Uses [ammo_gaussclip](../ammo_gaussclip). You can carry 100 rounds at a time. Primary fire consumes 20 rounds and secondary fire (teleporter) 60 rounds. Tertiary mode is available for this weapon (crowbar throw key) that shoot even more powerful and faster projectiles but consumes 50 rounds. CVars:<ul><li>sk_plr_displacer_other# (Default: 250, 250, 250): Portal projectile damage.</li><li>sk_plr_displacer_radius# (Default: 300, 300, 300): Teleportation radius damage.</li><li>weaponmode_displacer# (Default: 0): Determines if tertiary mode is enabled.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",

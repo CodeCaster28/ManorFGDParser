@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_hornetgun",
-  "Description": "Entity_Description_here",
+  "Description": "Also known as the Hivehand, the Hornetgun stores 100 angry hornets to fire at your enemies, making it a fearsome weapon. Primary fire launches slow, homing hornets and has a long cooldown. Secondary fire shoots fast hornets in a straight line and has a short cooldown. Ammunition recharges while not firing. CVars:<ul><li>sk_hornet_pdmg# (Default: 10, 10, 20): Hornet damage.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",

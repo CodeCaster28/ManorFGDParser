@@ -1,30 +1,29 @@
 {
   "Classname": "xen_hair",
-  "Description": "Entity_Description_here",
+  "Description": "Waving black hair. Use \"Sync Movement\" flag to make it waving synchronously with other xen_hairs (with this flag also selected).",
   "KeyDescriptions": [
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }}. Can't be triggered. Can be kill-targeted.",
+      "keyChoices": []
+    },
     {
       "keyName": "spawnflags",
       "keyDescription": "Keyvalue_Description_here",
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Sync movement with others xen_hair entities that have this flag selected."
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Self explanatory."
         },
         {
           "choiceValue": "4 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Spawn facing random direction."
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

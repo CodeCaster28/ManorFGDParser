@@ -5,7 +5,7 @@ title: env_bubbles
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A brush entity which creates bubbles at random positions inside it, which float up regardless of whether being in water or air and only are removed when hitting a water surface or solid wall. The bubbles sizes and rising-speed will vary slightly randomly.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to enable or disable bubbles. Depending on trigger use-type: 'On'- enable/reset bubbles, 'Toggle'- toggle bubbles, 'Off'- disable bubbles. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
@@ -88,22 +88,20 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Bubble density</b></span> <kbd  class="tooltip" data-tooltip="integer">density</kbd> :
-Keyvalue_Description_here
+The amount of bubbles to create per interval.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Bubble frequency</b></span> <kbd  class="tooltip" data-tooltip="integer">frequency</kbd> :
-Keyvalue_Description_here
+How often the amount of bubbles set by "Bubble Density" shall be created per second. Maximum is 20.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed of Current</b></span> <kbd  class="tooltip" data-tooltip="integer">current</kbd> :
-Keyvalue_Description_here
+Sets the horizontal movement speed of the bubbles, to simulate them being in a current. The direction is set by the env_bubble's yaw. You cannot make the bubbles move downwards by trying to rotate the entity upside down.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start Off</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start Off</span> : The env_bubbles entity will start off.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

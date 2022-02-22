@@ -5,7 +5,7 @@ title: weapon_hornetgun
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Also known as the Hivehand, the Hornetgun stores 100 angry hornets to fire at your enemies, making it a fearsome weapon. Primary fire launches slow, homing hornets and has a long cooldown. Secondary fire shoots fast hornets in a straight line and has a short cooldown. Ammunition recharges while not firing. CVars:<ul><li>sk_hornet_pdmg# (Default: 10, 10, 20): Hornet damage.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

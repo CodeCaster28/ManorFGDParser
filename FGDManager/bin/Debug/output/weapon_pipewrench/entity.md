@@ -5,7 +5,7 @@ title: weapon_pipewrench
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A melee weapon. Primary fire is a normal slash. Secondary fire makes the player reach back his arm to strike with more force. You can charge for about three seconds for 85 bonus damage. Can be used to repair friendly mechanical units or reprogram enemy turrets to be allied ones after destroying them. CVars:<ul><li>sk_plr_wrench# (Default: 22, 22, 45): Wrench primary and secondary attack damage. Secondary attack damage is increased by bonus damage, which cannot be customized.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

@@ -5,7 +5,7 @@ title: weapon_handgrenade
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A pack of 5 hand grenades, although visually only 1 is seen. You can carry 10. After activation, it will explode in 5 seconds. Bounces off of walls, enemies and allies without detonating, dealing 1 damage if the target is an enemy. You can throw banana bomb with secondary fire when 10 grenades are in backpack. CVars:<ul><li>mp_banana 1/0 (Default: 1): If set to 1, the player can use 10 grenades with secondary fire mode to throw a banana cluster bomb. Will also cause a familiar sound to play and print "BANANA ATTACK!" on the screen.</li><li>sk_plr_hand_grenade# (Default: 110, 120, 165): grenade explosion damage. Explosion damage values greater than 200 are known to occasionally cause damage to apply even through walls.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -24,7 +24,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
-Set custom render FX effect. Only works when "Render Mode" is set to different 'Normal'
+Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

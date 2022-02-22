@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_crowbar",
-  "Description": "Entity_Description_here",
+  "Description": "A melee weapon. Donators and Sven Co-op staff can electrify their crowbar with secondary fire, causing the crowbar to deal double damage, but consume HEV-suit armor. If you create a game in LAN, everyone can use the electric crowbar. CVars:<ul><li>sk_plr_crowbar# (Default: 15, 15, 28): Crowbar hit damage.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",

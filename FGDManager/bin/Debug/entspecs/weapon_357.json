@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_357",
-  "Description": "Entity_Description_here",
+  "Description": "A typical Revolver which can have 6 bullets loaded at a time. You can carry a total of 36 bullets as backpack ammo. Uses [ammo_357](../ammo_357). CVars:<ul><li>weaponmode_357 1/0 (Default: 1): If set to 0, you can zoom with this weapon.</li><li>sk_plr_357_bullet# (Default: 66, 66, 120): 357 direct hit damage.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",

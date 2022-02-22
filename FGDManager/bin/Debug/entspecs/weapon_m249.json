@@ -1,6 +1,6 @@
 {
   "Classname": "weapon_m249",
-  "Description": "Entity_Description_here",
+  "Description": "The M249 Squad Automatic Weapon ('SAW') can store 200 bullets in its clip and you can carry 600 bullets as backpack ammo. Uses [ammo_556](../ammo_556)/[ammo_556clip](../ammo_556clip). CVars:<ul><li>sk_556_bullet# (Default: 15, 15, 25): CVar for M249 SAW damage per bullet.</li></ul>",
   "KeyDescriptions": [
     {
       "keyName": "targetname",
