@@ -77,7 +77,14 @@
                                 {
                                     var description = string.IsNullOrEmpty(choice.Description) ? "" : $" : {choice.Description}";
                                     var choiceMedia = string.IsNullOrEmpty(choice.Media) ? "" : $"<div class=\"imagepadding\" markdown=\"1\">![{choice.DocName}]({choice.Media})</div>";
-                                    writer.WriteLine($"<li><b>{choice.Value}</b> : {choice.DocName}{description}{choiceMedia}</li>");
+                                    if (choice.Value == $"\"{choice.DocName}\"") 
+                                    {
+                                        writer.WriteLine($"<li><b>{choice.Value}</b> {description}{choiceMedia}</li>");
+                                    }
+                                    else 
+                                    {
+                                        writer.WriteLine($"<li><b>{choice.Value}</b> : {choice.DocName}{description}{choiceMedia}</li>");
+                                    }
                                 }
                                 writer.WriteLine("</ul>");
                                 writer.WriteLine("</div>");
