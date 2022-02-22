@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' trigger use-types are accepted which makes weapon be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -150,7 +150,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger when weapon is picked up. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -158,11 +158,11 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Entity to remove when weapon is picked up.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Exclusive Hold</b></span> <kbd  class="tooltip" data-tooltip="choices">exclusivehold</kbd> :
-If "Yes" is selected, the weapon must be picked up and cannot be switched to another weapon until dropped. This behaviour is invariably enabled for weapon_minigun and weapon_shockrifle.
+If "Yes" is selected, the weapon must be picked up and cannot be switched to another weapon until dropped. This behaviour is invariably enabled for [weapon_minigun](../weapon_minigun) and [weapon_shockrifle](../weapon_shockrifle).
 <div class="accordion">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">
@@ -179,7 +179,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Tertiary fire mode</b></span> <kbd  class="tooltip" data-tooltip="choices">m_TertiaryMode</kbd> :
-Keyvalue_Description_here
+Deteremines if tertiary mode can be used on that weapon, or if map setting should be used.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -188,52 +188,49 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : Default (weaponmode_displacer) : Choice_Description_here</li>
-<li><b>1 </b> : Disable : Choice_Description_here</li>
-<li><b>2 </b> : Enable : Choice_Description_here</li>
+<li><b>0 </b> : Default (weaponmode_displacer)</li>
+<li><b>1 </b> : Disable</li>
+<li><b>2 </b> : Enable</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Portal Speed</b></span> <kbd  class="tooltip" data-tooltip="string">m_flPortalSpeed</kbd> :
-Keyvalue_Description_here
+Overrides default portal projectile speed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Portal Radius</b></span> <kbd  class="tooltip" data-tooltip="string">m_flPortalRadius</kbd> :
-Keyvalue_Description_here
+Overrides default portal Area of Effect radius.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Teleport destination</b></span> <kbd  class="tooltip" data-tooltip="target_destination">m_iszTeleportDestination</kbd> :
-Keyvalue_Description_here
+Name of teleport destination of secondary fire mode ([info_teleport_destination](../info_teleport_destination)).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Ammo needed/used to fire primary</b></span> <kbd  class="tooltip" data-tooltip="string">m_flPrimaryAmmoNeeded</kbd> :
-Keyvalue_Description_here
+Ammo cost of primary fire.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Ammo needed/used to fire secondary</b></span> <kbd  class="tooltip" data-tooltip="string">m_flSecondaryAmmoNeeded</kbd> :
-Keyvalue_Description_here
+Ammo cost of secondary (teleportation) fire.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Ammo needed/used to fire tertiary</b></span> <kbd  class="tooltip" data-tooltip="string">m_flTertiaryAmmoNeeded</kbd> :
-Keyvalue_Description_here
+Ammo cost of tertiary fire.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Random Destination</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128 </b> : <span style="color:#9fc5e8;">TOUCH Only</span> : Pick this item up only by touching it.</li>
-<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Rotate (Dest Angles)</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256 </b> : <span style="color:#9fc5e8;">USE Only</span> : Pick this item up only by using it ('USE' key).</li>
-<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Keep Angles</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512 </b> : <span style="color:#9fc5e8;">Can Use w/o LoS</span> : Player can pick up this item even when it's not within his line of sight.</li>
-<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Keep velocity</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Random Destination</span> : If multiple destinations are set, one will be chosen randomly.</li>
+<li class="imagepadding" markdown="1"><b>128 </b> : <span style="color:#9fc5e8;">Rotate (Dest Angles)</span> : Add the angles of the trigger_teleport's destination onto the player's angles.</li>
+<li class="imagepadding" markdown="1"><b>256 </b> : <span style="color:#9fc5e8;">Keep Angles</span> : Instead of copying the destination entity's angles onto the player as part of the teleportation, let the player keep his angles as they are.</li>
+<li class="imagepadding" markdown="1"><b>512 </b> : <span style="color:#9fc5e8;">Keep velocity</span> : Do not set the players velocity to 0 as he uses secondary mode, and keep his current velocity instead.</li>
 <li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Disable Respawn</span> : Disables default item respawning.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
-<li class="imagepadding" markdown="1"><b>4096 </b> : <span style="color:#9fc5e8;">Ignore delay</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4096 </b> : <span style="color:#9fc5e8;">Ignore delay</span> : If selected, all teleport delays will be removed.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>
+<div class="notices blue">If "TOUCH only" and "USE only" flags are selected, the weapon can only be collected by trigger. When those flags are not selected, the weapon also can be collected by trigger, but only if player is the !activator.</div>

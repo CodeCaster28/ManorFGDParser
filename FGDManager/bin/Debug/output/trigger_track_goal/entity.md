@@ -5,7 +5,7 @@ title: trigger_track_goal
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Allows calling a [func_tracktrain](../func_tracktrain) to a specific [path_track](../path_track). The func_train and path_corner entities are not supported and will cause the game to crash if used in combination with this anyway.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,27 +16,26 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to send a func_tracktrain to specified path. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Name of a func_tracktrain to send towards a path_track.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Path Name</b></span> <kbd  class="tooltip" data-tooltip="string">path_name</kbd> :
-Keyvalue_Description_here
+Name of a path_track entity which the targeted func_tracktrain can reach.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound to play if no path is available</b></span> <kbd  class="tooltip" data-tooltip="sound">m_iszSoundNoPath</kbd> :
-Keyvalue_Description_here
+If there is no another path_track this train can be direct to, this is the sound to play when it happens.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Stopped Only</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Don't move if no path available</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Stopped Only</span> :  If set, trigger_track_goal will only allow the train to be called when it is currently not moving.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Don't move if no path available</span> : Prevents the train from moving backward if it can't find another path for func_tracktrain.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices red">Causing the train to move backwards on its path only works in looped tracks.</div>

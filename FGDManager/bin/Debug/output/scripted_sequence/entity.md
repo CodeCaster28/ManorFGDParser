@@ -5,7 +5,7 @@ title: scripted_sequence
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A point entity, which allows you to order a monster to walk or run to a specific location and, if wanted, play an animation. Furthermore, you may set up an idle animation which will play for the targeted monster till the scripted_sequence entity is triggered or have a specific monster or monster class use the scripted_sequence when entering its radius.</div>
 </div>
 </div>
 ###Keyvalues

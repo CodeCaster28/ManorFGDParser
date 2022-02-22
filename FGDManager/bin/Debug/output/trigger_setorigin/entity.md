@@ -5,7 +5,7 @@ title: trigger_setorigin
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Copies the position and orientation of one entity to another, providing several additional options for angles and relative rotation. Entities moved with this won't shove away any objects blocking them, but pass through them, blocking said objects instead. (This entity does set the origin, it does not perform movement of an entity) This entity has several inconsistencies in its design. Most of the time you are better off assembling the operation you require using a few [trigger_copyvalue](../trigger_copyvalue).</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,27 +16,27 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to set origin (or start constant origin copier with "Constant" flag checked). With "Constant" flag enabled the behaviour is based on trigger use-type: 'On','Toggle'- start constant origin set, 'Off'- stop constant origin set. With "Constant" flag disabled only 'On' and 'Toggle' use-types are accepted which sets origin once. Can be kill-targeted and constantly positioned entities are dropped.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Name of the entity to attach to or move to the copy-pointer entity.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Copy Pointer</b></span> <kbd  class="tooltip" data-tooltip="string">copypointer</kbd> :
-Keyvalue_Description_here
+The entity to copy coordinates/angles from.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Position Offset (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">offset</kbd> :
-Keyvalue_Description_here
+Offset the target entity by this vector when "Offset Difference" is set.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Angle Offset (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angleoffset</kbd> :
-Keyvalue_Description_here
+Offsets the target entity's angles by this value when trigger_setorigin is first activated. Will only touch angles set to be copied as per spawnflags.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Invert X Angle</b></span> <kbd  class="tooltip" data-tooltip="choices">invert_x</kbd> :
-Keyvalue_Description_here
+Use inverted pitch for the target entity's orientation.
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -45,15 +45,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Invert Y Angle</b></span> <kbd  class="tooltip" data-tooltip="choices">invert_y</kbd> :
-Keyvalue_Description_here
+Use inverted yaw for the target entity's orientation.
 <div class="accordion">
 <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-2">
@@ -62,15 +62,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Invert Z Angle</b></span> <kbd  class="tooltip" data-tooltip="choices">invert_z</kbd> :
-Keyvalue_Description_here
+Use inverted roll for the target entity's orientation.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -79,8 +79,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
@@ -89,17 +89,16 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Constant</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Set Once</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Lock Offsets</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Copy X Angle</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Copy Y Angle</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Copy Z Angle</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Copy X Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Copy Y Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Copy Z Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Skip Initial Set</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Constant</span> : Always update the target's position and orientation.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Set Once</span> : Only update the target once and remove the trigger_setorigin from the game afterwards.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Lock Offsets</span> : Use the vector between the target and the copypointer plus the "Offset"-keyvalue as the offset vector.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Copy X Angle</span> : Copy the X angle of the copypointer.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Copy Y Angle</span> : Copy the Y angle of the copypointer.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Copy Z Angle</span> : Copy the Z angle of the copypointer.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Copy X Axis</span> : Copy the X axis of the copypointer.</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Copy Y Axis</span> : Copy the Y axis of the copypointer.</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Copy Z Axis</span> : Copy the Z axis of the copypointer.</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Skip Initial Set</span> : If set, the target entity will not be moved to the copypointer's origin before doing the offset difference calculation (set this unless you want the target entity stuck to the center of the copypointer).</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">If you are copying the origin/angles from or to a brush based entity, then that entity must have an origin brush attached to it. The center of that origin brush will be used as the origin of the entire brush entity.</div>
