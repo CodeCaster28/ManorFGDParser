@@ -5,7 +5,7 @@ title: trigger_save
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Trigger_save allows to save an entity's keyvalue to external map-data stored in mapname.save in the "maps"-folder, which is stored on the server running the map. Its counterpart is [trigger_load](../trigger_load). Supports custom keyvalues.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,23 +16,23 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to save keyvalue data.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Label to store in</b></span> <kbd  class="tooltip" data-tooltip="string">netname</kbd> :
-Keyvalue_Description_here
+A label under which data is to be stored.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Source Entity</b></span> <kbd  class="tooltip" data-tooltip="string">target</kbd> :
-Keyvalue_Description_here
+Entity to read value from.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Source Keyvalue</b></span> <kbd  class="tooltip" data-tooltip="string">message</kbd> :
-Keyvalue_Description_here
+Name of the keyvalue of the source entity to read value from.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger after saving</b></span> <kbd  class="tooltip" data-tooltip="String">m_iszTrigger</kbd> :
-Keyvalue_Description_here
+Entity to trigger after the save-operation, even if nothing was loaded.
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">If the entity to read from is not found, the save-file won't be touched.</div>
+<div class="notices red">Trying to write strings containing line breaks (this does e.g. apply to game_text message-keyvalues containing the "\n"-character sequence) or colons will corrupt the save-file. This is because of how the feature was implemented and is simply not supported.</div>

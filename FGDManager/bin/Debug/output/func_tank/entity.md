@@ -20,7 +20,7 @@ Set name of {{ entname }} so other entities can trigger it.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -605,7 +605,7 @@ Choices:
 <div class="entityflags">
 <ul>
 <li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Active</span> : Makes this {{ entname }} active on start, which means it will try to kill every enemies in it's view distance.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Only Direct</span> : If selected, the automatic {{ entname }} will fire it's target only when they are in it's line of sight.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Only Direct</span> : If selected, the automatic {{ entname }} will trigger it's target only when they are in it's line of sight.</li>
 <li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Controllable</span> : If selected, player can control this turret. Keep in mind that [func_tankcontrols](../func_tankcontrols) is required for this.</li>
 <li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Use Relations</span> : Enables usage of relation keyvalues (may be glitched).</li>
 <li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Player can't fire</span> : Prevent player from shooting (player might still mount the tank).</li>

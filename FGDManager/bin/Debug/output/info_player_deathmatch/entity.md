@@ -36,7 +36,7 @@ Targetname required on the player to spawn here, or targetname not allowed to sp
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master specified the {{ entname }} won't spawn anyone here. When multisource entity is triggered/beign triggering by all possible inputs, the {{ entname }} will be enabled and ready to spawn players here. When multisource lost at least one input signal, the entities becomes disabled again.
+Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't spawn anyone here. When multisource entity is triggered/beign triggering by all possible inputs, the {{ entname }} will be enabled and ready to spawn players here. When multisource lost at least one input signal, the entities becomes disabled again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Repel Speed</b></span> <kbd  class="tooltip" data-tooltip="string">frags</kbd> :
@@ -44,7 +44,7 @@ Speed, in units per second, with which the player will rappel down, if that is e
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">triggerstate</kbd> :
-Set the use-type with which the entity specified in "Target" will be fired (after someone spawns here).
+Set the use-type with which the entity specified in "Target" will be triggered (after someone spawns here).
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">

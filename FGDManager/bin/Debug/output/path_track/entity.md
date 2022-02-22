@@ -55,7 +55,7 @@ Overrides train speed after reaching this point. Legacy, works only for non-cont
 <div class="entityflags">
 <ul>
 <li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Disabled</span> : Start disabled. Trigger path to enable it. Branch Path cannot be used with this flag, even with selected Branch Reverse.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Fire once</span> : Entity fire it's "Fire on Pass" target once.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Fire once</span> : Entity triggers it's "Fire on Pass" target once.</li>
 <li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Branch Reverse</span> : Swap the branch path and next target on start.</li>
 <li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Disable train</span> : When selected, disables func_tracktrain controlling when reaching this point.</li>
 </ul>

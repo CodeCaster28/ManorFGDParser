@@ -32,11 +32,11 @@ Entity to remove when value is set.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and won't work. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will work again and can set game_counter value. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
+Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master is specified the {{ entname }} will be disabled and won't work. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will work again and can set game_counter value. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>New Value</b></span> <kbd  class="tooltip" data-tooltip="integer">frags</kbd> :
-Value to set the game_counter's value to. Note that if the targeted game_counter is set to fire if over the value, it will fire as well.
+Value to set the game_counter's value to. Note that if the targeted game_counter is set to fire if over the value, it will trigger as well.
 </div>
 ###Flags
 <hr>

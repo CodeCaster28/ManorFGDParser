@@ -5,18 +5,18 @@ title: game_player_counter
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This entity keeps track of the total number of players currently on or connecting to the server. It will fire its "Min Target" when "Min Value" is reach and its "Max Target" when "Max Value" is reached. You don't need to use minimum and maximum value and target. In fact they are completely unrelated and are named like that only to imply the intended use of toggling something in the map based on a player count threshold. You can use "dmg" key to get current number of players e.g. by using [trigger_copyvalue](../trigger_copyvalue) or [trigger_condition](../trigger_condition).</div>
+<div class="column entityentry" markdown="1">This entity keeps track of the total number of players currently on or connecting to the server. It will trigger its "Min Target" when "Min Value" is reach and its "Max Target" when "Max Value" is reached. You don't need to use minimum and maximum value and target. In fact they are completely unrelated and are named like that only to imply the intended use of toggling something in the map based on a player count threshold. You can use "dmg" key to get current number of players e.g. by using [trigger_copyvalue](../trigger_copyvalue) or [trigger_condition](../trigger_condition).</div>
 </div>
 </div>
 ###Keyvalues
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Min Value</b></span> <kbd  class="tooltip" data-tooltip="integer">frags</kbd> :
-Player-count required to fire "Min Target".
+Player-count required to trigger "Min Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Max Value</b></span> <kbd  class="tooltip" data-tooltip="integer">health</kbd> :
-Player-count required to fire "Max Target".
+Player-count required to trigger "Max Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Min Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :

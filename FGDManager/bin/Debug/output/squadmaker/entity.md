@@ -142,7 +142,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target On Release</b></span> <kbd  class="tooltip" data-tooltip="string">target</kbd> :
-Entities to trigger whenever a monster is spawned. Trigger use-type is 'Toggle'.
+Entity to trigger whenever a monster is spawned. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Monster Type</b></span> <kbd  class="tooltip" data-tooltip="string">monstertype</kbd> :
@@ -192,7 +192,7 @@ Entity to trigger when condition in "Trigger Condition" is met. Trigger use-type
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger Condition</b></span> <kbd  class="tooltip" data-tooltip="Choices">trigger_condition</kbd> :
-Choose trigger condition for spawned monster. When condition is met, the "TriggerTarget" is fired.
+Choose trigger condition for spawned monster. When condition is met, the entity specified in "TriggerTarget" is triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -255,7 +255,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Xenmaker Template Name</b></span> <kbd  class="tooltip" data-tooltip="String">xenmaker</kbd> :
-If you set the name of an [env_xenmaker](..env_xenmaker/) here, its effects will appear every time the squadmaker spawns something.
+If you set the name of an [env_xenmaker](../env_xenmaker) here, its effects will appear every time the squadmaker spawns something.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Not Solid</b></span> <kbd  class="tooltip" data-tooltip="Choices">notsolid</kbd> :

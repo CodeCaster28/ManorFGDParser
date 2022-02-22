@@ -191,11 +191,11 @@ Time, in seconds, for {{ entname }} to replenish it's charges. '0' for default.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger On Empty</b></span> <kbd  class="tooltip" data-tooltip="target_destination">TriggerOnEmpty</kbd> :
-Entity to fire when charges are fully consumed.
+Entity to trigger when charges are fully consumed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger on Recharged</b></span> <kbd  class="tooltip" data-tooltip="target_destination">TriggerOnRecharged</kbd> :
-Entity to fire when {{ entname }} recharge itself after depleting and waiting "Custom Recharge Time".
+Entity to trigger when {{ entname }} recharge itself after depleting and waiting "Custom Recharge Time".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Denied Sound</b></span> <kbd  class="tooltip" data-tooltip="sound">CustomDeniedSound</kbd> :

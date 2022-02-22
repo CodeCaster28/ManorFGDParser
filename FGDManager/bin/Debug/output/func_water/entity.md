@@ -24,7 +24,7 @@ Set name of {{ entname }} so other entities can trigger it.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -144,7 +144,7 @@ Minimal number of items in player inventory, which belong to specified group, th
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on use triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_use_triggers</kbd> :
-If set to 'Yes' item's trigger targets from 'Target: On use (by trigger)' will not be fired when item is used by this entity.
+If set to 'Yes' item's trigger targets from 'Target: On use (by trigger)' will not be triggered when item is used by this entity.
 <div class="accordion">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">
@@ -169,7 +169,7 @@ Items to force-drop, that belong to specified group, when the test result is pos
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on drop triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_drop_triggers</kbd> :
-If set to 'Yes' item's trigger targets from "Target: On drop" will not be fired when item is dropped by this entity with "Drop items(s)" events above.
+If set to 'Yes' item's trigger targets from "Target: On drop" will not be triggered when item is dropped by this entity with "Drop items(s)" events above.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -194,7 +194,7 @@ Items, that belong to specified group, to return to their starting positions whe
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on return triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_return_triggers</kbd> :
-If set to 'Yes' item's trigger targets from "Target: On return" will not be fired when item is returned by this entity with "Return items(s)" events above.
+If set to 'Yes' item's trigger targets from "Target: On return" will not be triggered when item is returned by this entity with "Return items(s)" events above.
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -219,7 +219,7 @@ Items, that belong to specified group, to remove when test result is positive. A
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on destroy triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_destroy_triggers</kbd> :
-If set to 'Yes' item's trigger targets from "Target: On Destroy" will not be fired when item is destroyed by this entity with "Destroy items(s)" events above.
+If set to 'Yes' item's trigger targets from "Target: On Destroy" will not be triggered when item is destroyed by this entity with "Destroy items(s)" events above.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -236,7 +236,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: Inventory rules failed</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_fail</kbd> :
-Entity or entities to trigger whenever test result is negative.
+Entity to trigger whenever test result is negative.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Classification</b></span> <kbd  class="tooltip" data-tooltip="choices">classify</kbd> :
@@ -550,7 +550,7 @@ Sentence from "default_sentences.txt" or custom sentences file (which can be add
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
-Entity or entities to trigger when {{ entname }} starts opening.
+Entity to trigger when {{ entname }} starts opening.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopening_triggerstate</kbd> :
@@ -572,7 +572,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosing</kbd> :
-Entity or entities to trigger when door starts closing.
+Entity to trigger when door starts closing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosing_triggerstate</kbd> :
@@ -594,7 +594,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopened</kbd> :
-Entity or entities to trigger when door ends opening.
+Entity to trigger when door ends opening.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopened_triggerstate</kbd> :
@@ -616,7 +616,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosed</kbd> :
-Entity or entities to trigger when door end closing.
+Entity to trigger when door end closing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosed_triggerstate</kbd> :
@@ -642,7 +642,7 @@ Movement speed in units per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and will play locked sounds and sentences. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
+Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master is specified the {{ entname }} will be disabled and will play locked sounds and sentences. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Move Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">movesnd</kbd> :
@@ -824,7 +824,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire on break</b></span> <kbd  class="tooltip" data-tooltip="target_destination">fireonbreak</kbd> :
-If "Breakable" is set to 'Yes' then this is target entity to fire when {{ entname }} breaks.
+If "Breakable" is set to 'Yes' then this is target entity to trigger when {{ entname }} breaks.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Material type</b></span> <kbd  class="tooltip" data-tooltip="choices">material</kbd> :

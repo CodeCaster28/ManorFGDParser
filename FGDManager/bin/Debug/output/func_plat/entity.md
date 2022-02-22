@@ -175,7 +175,7 @@ Allows you to setup a sound replacement file for the {{ entname }} sounds. The p
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
-Entity or entities to trigger when {{ entname }} starts opening.
+Entity to trigger when {{ entname }} starts opening.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopening_triggerstate</kbd> :
@@ -197,7 +197,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosing</kbd> :
-Entity or entities to trigger when door starts closing.
+Entity to trigger when door starts closing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosing_triggerstate</kbd> :
@@ -219,7 +219,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopened</kbd> :
-Entity or entities to trigger when door ends opening.
+Entity to trigger when door ends opening.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopened_triggerstate</kbd> :
@@ -241,7 +241,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosed</kbd> :
-Entity or entities to trigger when door end closing.
+Entity to trigger when door end closing.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosed_triggerstate</kbd> :

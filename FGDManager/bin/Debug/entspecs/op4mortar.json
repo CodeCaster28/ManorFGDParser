@@ -56,6 +56,11 @@
       "keyChoices": []
     },
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to shoot. Only 'On' trigger use-type is accepted. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
       "keyName": "is_player_ally",
       "keyDescription": "If this op4mortar is set to fire automatically with \"Active\" flag enabled, this defines whether it will handle players as enemies or not. Furthermore, this defines whether players can be damaged by the projectile's explosion in the first place. The firing player can always get hurt.",
       "keyChoices": [

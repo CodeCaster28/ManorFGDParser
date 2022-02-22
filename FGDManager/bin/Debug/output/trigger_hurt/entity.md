@@ -20,7 +20,7 @@ Set name of {{ entname }} so other entities can trigger it.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to fire (trigger). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Inventory: Need item(s)</b></span> <kbd  class="tooltip" data-tooltip="string">item_name_required</kbd> :
@@ -48,7 +48,7 @@ Minimal number of items in player inventory, which belong to specified group, th
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on use triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_use_triggers</kbd> :
-If set to 'Yes' item's trigger targets from 'Target: On use (by trigger)' will not be fired when item is used by this entity.
+If set to 'Yes' item's trigger targets from 'Target: On use (by trigger)' will not be triggered when item is used by this entity.
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
@@ -73,7 +73,7 @@ Items to force-drop, that belong to specified group, when the test result is pos
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on drop triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_drop_triggers</kbd> :
-If set to 'Yes' item's trigger targets from "Target: On drop" will not be fired when item is dropped by this entity with "Drop items(s)" events above.
+If set to 'Yes' item's trigger targets from "Target: On drop" will not be triggered when item is dropped by this entity with "Drop items(s)" events above.
 <div class="accordion">
 <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-2">
@@ -98,7 +98,7 @@ Items, that belong to specified group, to return to their starting positions whe
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on return triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_return_triggers</kbd> :
-If set to 'Yes' item's trigger targets from "Target: On return" will not be fired when item is returned by this entity with "Return items(s)" events above.
+If set to 'Yes' item's trigger targets from "Target: On return" will not be triggered when item is returned by this entity with "Return items(s)" events above.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -123,7 +123,7 @@ Items, that belong to specified group, to remove when test result is positive. A
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on destroy triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_destroy_triggers</kbd> :
-If set to 'Yes' item's trigger targets from "Target: On Destroy" will not be fired when item is destroyed by this entity with "Destroy items(s)" events above.
+If set to 'Yes' item's trigger targets from "Target: On Destroy" will not be triggered when item is destroyed by this entity with "Destroy items(s)" events above.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">
@@ -140,7 +140,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: Inventory rules failed</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_fail</kbd> :
-Entity or entities to trigger whenever test result is negative.
+Entity to trigger whenever test result is negative.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :

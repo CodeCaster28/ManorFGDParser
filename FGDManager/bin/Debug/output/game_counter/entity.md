@@ -5,7 +5,7 @@ title: game_counter
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This is a logic entity which will fire its target after being triggered a specified amount of times. Toggle-trigger and on-trigger will cause it to count up by 1. Off-trigger will cause it to count down by 1. An equivalent of this entity can be created through the usage of [trigger_condition](../trigger_condition) and [trigger_changevalue](../trigger_condition).</div>
+<div class="column entityentry" markdown="1">This is a logic entity which will trigger its target after being triggered a specified amount of times. Toggle-trigger and on-trigger will cause it to count up by 1. Off-trigger will cause it to count down by 1. An equivalent of this entity can be created through the usage of [trigger_condition](../trigger_condition) and [trigger_changevalue](../trigger_condition).</div>
 </div>
 </div>
 ###Keyvalues
@@ -32,7 +32,7 @@ Entity to remove when counter hits it's limit value.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and it will not count up/down when triggered. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
+Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master is specified the {{ entname }} will be disabled and it will not count up/down when triggered. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Initial Value</b></span> <kbd  class="tooltip" data-tooltip="integer">frags</kbd> :
@@ -47,8 +47,8 @@ Required value to trigger target.
 <div class="entityflags">
 <ul>
 <li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Remove On fire</span> : Remove entity after firing.</li>
-<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Reset On fire</span> : Reset entity Initial value after fired.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Fire if over limit</span> : Fire a target when initial value is higher than limit value.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Reset On fire</span> : Reset entity Initial value after triggered.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Fire if over limit</span> : Trigger a target when initial value is higher than limit value.</li>
 </ul>
 </div>
 <div class="notices red">When target is set to ambient_generic, the game_counter need to receive twice more inputs than normal, unless "Fire if over limit" spawnflag is selected.</div>

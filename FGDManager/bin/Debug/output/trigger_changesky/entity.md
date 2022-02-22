@@ -5,7 +5,7 @@ title: trigger_changesky
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Allows to change map sky and sky color at runtime.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,24 +16,22 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to change sky. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sky Name</b></span> <kbd  class="tooltip" data-tooltip="string">skyname</kbd> :
-Keyvalue_Description_here
+Name of the sky to set when this entity is triggered.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Color</b></span> <kbd  class="tooltip" data-tooltip="color255">color</kbd> :
-Keyvalue_Description_here
+Sky color to set.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">All players</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">No clients</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Update server</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">All players</span> : Make map sky change visible to all players on server.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">No clients</span> : Do not affect clients.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Update server</span> : Affect server.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

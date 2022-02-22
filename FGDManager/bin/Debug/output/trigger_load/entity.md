@@ -5,7 +5,7 @@ title: trigger_load
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Trigger_load allows to read external map-data into an entity keyvalue from mapname.save in the "maps"-folder, which is stored on the server running the map. Its counterpart is [trigger_save](../trigger_save). Supports custom keyvalues.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,27 +16,27 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to load keyvalue data into entity.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Alternate Level Save File</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszLevelName</kbd> :
-Keyvalue_Description_here
+Need more info.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Label to read from</b></span> <kbd  class="tooltip" data-tooltip="string">netname</kbd> :
-Keyvalue_Description_here
+A label under which data is stored.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Destination Entity</b></span> <kbd  class="tooltip" data-tooltip="string">target</kbd> :
-Keyvalue_Description_here
+Entity to write value to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Destination Keyvalue</b></span> <kbd  class="tooltip" data-tooltip="string">message</kbd> :
-Keyvalue_Description_here
+Name of the keyvalue of the destination entity to write loaded value to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger after loading</b></span> <kbd  class="tooltip" data-tooltip="String">m_iszTrigger</kbd> :
-Keyvalue_Description_here
+Entity to trigger after the load-operation, even if nothing was loaded.
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">If the requested data was not found or no save-file for the map has been created, yet, the target keyvalue won't be touched.</div>
+<div class="notices red">This will only set the keyvalue of the first destination entity found.</div>

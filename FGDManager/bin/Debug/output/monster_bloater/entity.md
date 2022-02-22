@@ -146,7 +146,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger Condition</b></span> <kbd  class="tooltip" data-tooltip="Choices">TriggerCondition</kbd> :
-Choose trigger condition for this monster. When condition is met, the "Trigger Condition Target" is fired.
+Choose trigger condition for this monster. When condition is met, the entity specified in "Trigger Condition Target" is triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">

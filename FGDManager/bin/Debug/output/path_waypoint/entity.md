@@ -77,7 +77,7 @@ Animation to play on arrival.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger after Arrival Animation</b></span> <kbd  class="tooltip" data-tooltip="target_destination">trigger_after_arrival</kbd> :
-Entity to trigger upon completing the arrival animation. If no arrival animation, fired after Trigger on Arrival is fired.
+Entity to trigger upon completing the arrival animation. If no arrival animation, trigger after Trigger on Arrival is triggered.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Wait Activity</b></span> <kbd  class="tooltip" data-tooltip="Choices">wait_activity</kbd> :
@@ -104,7 +104,7 @@ Animation to play when waiting at this waypoint. (Looped) If animation is blank,
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Wait Time</b></span> <kbd  class="tooltip" data-tooltip="integer">wait_time</kbd> :
-After the position is reached, the monster must wait this long before moving to the next waypoint, and before any targets are fired.
+After the position is reached, the monster must wait this long before moving to the next waypoint, and before any targets are triggered.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Wait Master</b></span> <kbd  class="tooltip" data-tooltip="string">wait_master</kbd> :
@@ -129,11 +129,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Departure Animation</b></span> <kbd  class="tooltip" data-tooltip="string">departure_animation</kbd> :
-Animation to play before leaving waypoint. "Target On Departure" is fired after animation completes if animation is present.
+Animation to play before leaving waypoint. "Target On Departure" is triggered after animation completes if animation is present.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger on Departure</b></span> <kbd  class="tooltip" data-tooltip="target_destination">trigger_on_departure</kbd> :
-Target to fire when monster finishes the Departure Animation. If no Departure Animation, fired immediately after waiting.
+Target to trigger when monster finishes the Departure Animation. If no Departure Animation, trigger immediately after waiting.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Occupant Radius</b></span> <kbd  class="tooltip" data-tooltip="integer">occupant_radius_check</kbd> :

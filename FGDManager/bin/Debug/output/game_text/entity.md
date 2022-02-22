@@ -118,7 +118,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master specified the {{ entname }} will be disabled and it will not show text. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
+Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master is specified the {{ entname }} will be disabled and it will not show text. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
 </div>
 ###Flags
 <hr>
@@ -128,7 +128,7 @@ Name of the [multisource](../multisource) entity that (temporary) locks this {{ 
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No console echo</span> : If set, players will not receive a duplicate of the message in their console. Set this for messages that can be reread or are sent often to prevent console-spam and reduce network-bandwidth-usage.</li>
 </ul>
 </div>
-<div class="notices blue">The game_text's target will be fired when the game_text entity is triggered. This is very useful when you want to use a single notification sound consistently on all your game_text entities.</div>
+<div class="notices blue">The game_text's target will be triggered when the game_text entity is triggered. This is very useful when you want to use a single notification sound consistently on all your game_text entities.</div>
 <div class="notices blue">Sven Co-op features a HUD monster-/player-info, which uses HUD message channel 3. Avoid using that channel for important messages. Even if you disable monster-info by setting the CVar 'mp_allowmonsterinfo' to '0', player-info will still display on that channel.</div>
 <div class="notices red">If a text message is replaced by another one because it is set to use the same channel, the time-values won't be updated, causing the new message to expire earlier than desired. Furthermore, only one text message can exist at a specific screen coordinate at a time, even if two different channels are provided.</div>
 <div class="notices red">If one line of the message is too long to fit on a player's screen, it will crash the game.</div>

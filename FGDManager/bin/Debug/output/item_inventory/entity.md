@@ -358,7 +358,7 @@ If 'Holder:Allowed to self-activate' is set to 'Yes', this is a delay between wh
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Wearing out trigger time (0 = none)</b></span> <kbd  class="tooltip" data-tooltip="string">holder_time_wearout</kbd> :
-Time before "Holder: Hold time limit" reach it's limit to trigger target specified in "Target: On wearing out" keyvalue. If you set it to e.g. 4, it will fire a target 4 seconds before this item's "Holder: Hold time limit" ends. It's useful if you want to trigger a sound or a [game_text](../game_text) informing player that item will be worn out soon. Example: player picked up power-up which have "Holder: Hold time limit" set to 10, and "Holder: Wearing out trigger time" to 3, so 3 seconds before item is removed from player (in other words, before "Holder: Hold time limit" ends) game_text specified in "Target: On wearing out" is fired with message "Warning! 3 seconds for buff to end!".
+Time before "Holder: Hold time limit" reach it's limit to trigger target specified in "Target: On wearing out" keyvalue. If you set it to e.g. 4, it will trigger a target 4 seconds before this item's "Holder: Hold time limit" ends. It's useful if you want to trigger a sound or a [game_text](../game_text) informing player that item will be worn out soon. Example: player picked up power-up which have "Holder: Hold time limit" set to 10, and "Holder: Wearing out trigger time" to 3, so 3 seconds before item is removed from player (in other words, before "Holder: Hold time limit" ends) game_text specified in "Target: On wearing out" is triggered with message "Warning! 3 seconds for buff to end!".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Holder: Allowed to self-activate</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_can_activate</kbd> :
@@ -447,7 +447,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On collect (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_collect</kbd> :
-Fire specified target(s) when item is successfully collected (uses 'Toggle' trigger state). Player who collected it is passed as the '!activator'.
+Trigger specified target(s) when item is successfully collected (uses 'Toggle' trigger state). Player who collected it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On collect (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_collect_team</kbd> :
@@ -459,7 +459,7 @@ Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't collect (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_collect</kbd> :
-Fire specified target(s) when item collecting attempt failed (uses 'Toggle' trigger state). Player who failed to collect item is passed as the '!activator'.
+Trigger specified target(s) when item collecting attempt failed (uses 'Toggle' trigger state). Player who failed to collect item is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't collect (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_collect_team</kbd> :
@@ -471,7 +471,7 @@ Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On drop (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_drop</kbd> :
-Fire specified target(s) when item is dropped (uses 'Toggle' trigger state). Player who dropped it is passed as the '!activator'.
+Trigger specified target(s) when item is dropped (uses 'Toggle' trigger state). Player who dropped it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On drop (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_drop_team</kbd> :
@@ -483,7 +483,7 @@ Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't drop (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_drop</kbd> :
-Fire specified target(s) when item is drop failed (uses 'Toggle' trigger state). Player who failed dropping item it is passed as the '!activator'.
+Trigger specified target(s) when item is drop failed (uses 'Toggle' trigger state). Player who failed dropping item it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't drop (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_drop_team</kbd> :
@@ -495,7 +495,7 @@ Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On self-activate (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_activate</kbd> :
-Fire specified target(s) when player activate item from inventory menu, only if "Allowed to self-activate" is set to 'Yes' (uses 'Toggle' trigger state). Player who activated it is passed as the '!activator'.
+Trigger specified target(s) when player activate item from inventory menu, only if "Allowed to self-activate" is set to 'Yes' (uses 'Toggle' trigger state). Player who activated it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On self-activate (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_activate_team</kbd> :
@@ -507,7 +507,7 @@ Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't self-activate (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_activate</kbd> :
-If "Allowed to self-activate" is set to 'Yes' and item activation limit hit 0, this is a target to fire when player attempts to activate it again (uses 'Toggle' trigger state). Player who failed it is passed as the '!activator'.
+If "Allowed to self-activate" is set to 'Yes' and item activation limit hit 0, this is a target to trigger when player attempts to activate it again (uses 'Toggle' trigger state). Player who failed it is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On can't self-activate (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_cant_activate_team</kbd> :
@@ -519,7 +519,7 @@ Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On use by trigger (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_use</kbd> :
-Fire specified target(s) when item is used by trigger (uses 'Toggle' trigger state). Player is passed as the 'activator!'.
+Trigger specified target(s) when item is used by trigger (uses 'Toggle' trigger state). Player is passed as the 'activator!'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On use by trigger (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_use_team</kbd> :
@@ -531,7 +531,7 @@ Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On wearing out (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_wearing_out</kbd> :
-Fire specified target(s) when item's "Wearing out trigger time" ends (which must be greater than 0 but less than "Holder: Hold time limit" value), see "Holder: Wearing out trigger time" above for more info (uses 'Toggle' trigger state). Player who owns this item is passed as the '!activator'.
+Trigger specified target(s) when item's "Wearing out trigger time" ends (which must be greater than 0 but less than "Holder: Hold time limit" value), see "Holder: Wearing out trigger time" above for more info (uses 'Toggle' trigger state). Player who owns this item is passed as the '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On wearing out (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_wearing_out_team</kbd> :
@@ -543,7 +543,7 @@ Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On return (self)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_return</kbd> :
-Fire specified target(s) when item returns to it's starting position (uses 'Toggle' trigger state).
+Trigger specified target(s) when item returns to it's starting position (uses 'Toggle' trigger state).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On return (team)</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_return_team</kbd> :
@@ -555,11 +555,11 @@ Same as above, but passes everyone else but player as '!activator'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On materialise after return</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_materialise</kbd> :
-Fire specified target when item gets materialised after a drop or return (uses 'Toggle' trigger state).
+Trigger specified target when item gets materialised after a drop or return (uses 'Toggle' trigger state).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target: On destroy</b></span> <kbd  class="tooltip" data-tooltip="string">target_on_destroy</kbd> :
-Fire specified target when item gets destroyed by environment (uses 'Toggle' trigger state).
+Trigger specified target when item gets destroyed by environment (uses 'Toggle' trigger state).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Wait until item is self-activated?</b></span> <kbd  class="tooltip" data-tooltip="choices">effects_wait_until_activated</kbd> :

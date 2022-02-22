@@ -5,7 +5,7 @@ title: game_slot_counter
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This entity suppose to count the total number of player slots on the server on map load and triggers its target on the first server frame if the amount of slots equals a value you specify. However I couldn't get it to work. Contact me if you managed to make it working. It won't fire if the amount of slots is greater or smaller than the specified value. This entity will remove itself from the game right afterwards.</div>
+<div class="column entityentry" markdown="1">This entity suppose to count the total number of player slots on the server on map load and triggers its target on the first server frame if the amount of slots equals a value you specify. However I couldn't get it to work. Contact me if you managed to make it working. It won't trigger if the amount of slots is greater or smaller than the specified value. This entity will remove itself from the game right afterwards.</div>
 </div>
 </div>
 ###Keyvalues
