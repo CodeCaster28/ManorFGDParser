@@ -31,7 +31,7 @@
 
         public void RegisterSpawnFlag(Choice source)
         {
-            var flag = SpawnFlags.FirstOrDefault(x => x.Value == source.Value);
+            var flag = SpawnFlags.FirstOrDefault(x => x.Value.Replace(" ", string.Empty) == source.Value.Replace(" ", string.Empty));
             if (flag == null)
             {
                 var newSpawnFlag = new SpawnFlag()
