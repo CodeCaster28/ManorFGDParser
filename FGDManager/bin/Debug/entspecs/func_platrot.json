@@ -37,7 +37,7 @@
     },
     {
       "keyName": "_minlight",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.",
       "keyChoices": []
     }
   ],

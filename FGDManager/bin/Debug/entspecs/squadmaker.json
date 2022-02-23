@@ -164,7 +164,7 @@
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Invert relationship (e.g. monster_barney becomes enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c."
+          "choiceDescription": "Invert relationship, e.g. monster_barney becomes enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c."
         }
       ]
     },

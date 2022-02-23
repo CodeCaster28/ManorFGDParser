@@ -9,7 +9,7 @@
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity to trigger when player is spawned at this point. Trigger use-type is defined at \"Trigger State\" keyvalue.",
+      "keyDescription": "Entity to trigger when player is spawned at this point. Trigger use-type is defined in \"Trigger State\" keyvalue.",
       "keyChoices": []
     }
   ],

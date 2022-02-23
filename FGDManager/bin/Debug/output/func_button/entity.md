@@ -5,7 +5,7 @@ title: func_button
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A brush entity, which can be triggered by the player by issuing his 'Use'-command on it while standing next to it and looking at it. The func_button then triggers its target. This is the most common entity for players interacting with other map entities or entity systems.</div>
 </div>
 </div>
 ###Keyvalues
@@ -466,23 +466,23 @@ Sentence from "default_sentences.txt" or custom sentences file (which can be add
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+Speed at which the button moves when pressed, unless "Don't move" keyvalue is set. The button moves for its width in the move direction, specified by "Pitch Yaw Roll".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Health (shootable if > 0)</b></span> <kbd  class="tooltip" data-tooltip="integer">health</kbd> :
-Keyvalue_Description_here
+If you enter here value higher than 0 the button becomes shootable only and can be activated when it's out of health.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Lip</b></span> <kbd  class="tooltip" data-tooltip="integer">lip</kbd> :
-Keyvalue_Description_here
+This value will be deducted from the buttons move distance. Negative values are allowed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Keyvalue_Description_here
+Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't work. When multisource entity is triggered/being triggering by all possible inputs, the {{ entname }} will be enabled and ready to be pressed. When multisource lost at least one input signal, the entities becomes disabled again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sounds</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
-Keyvalue_Description_here
+Set the sound to be played when the button is pressed. It will play when the button is locked, too.
 <div class="accordion">
 <input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-16">
@@ -491,38 +491,38 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : None : Choice_Description_here</li>
-<li><b>1</b> : Big zap & Warmup : Choice_Description_here</li>
-<li><b>2</b> : Access Denied : Choice_Description_here</li>
-<li><b>3</b> : Access Granted : Choice_Description_here</li>
-<li><b>4</b> : Quick Combolock : Choice_Description_here</li>
-<li><b>5</b> : Power Deadbolt 1 : Choice_Description_here</li>
-<li><b>6</b> : Power Deadbolt 2 : Choice_Description_here</li>
-<li><b>7</b> : Plunger : Choice_Description_here</li>
-<li><b>8</b> : Small zap : Choice_Description_here</li>
-<li><b>9</b> : Keycard Sound : Choice_Description_here</li>
-<li><b>10</b> : Buzz : Choice_Description_here</li>
-<li><b>11</b> : Buzz Off : Choice_Description_here</li>
-<li><b>14</b> : Lightswitch : Choice_Description_here</li>
+<li><b>0</b> : None : Choice_Description_here<div class="imagepadding" markdown="1">![None](../audio/button1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>1</b> : Big zap & Warmup : Choice_Description_here<div class="imagepadding" markdown="1">![Big zap & Warmup](../audio/button2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>2</b> : Access Denied : Choice_Description_here<div class="imagepadding" markdown="1">![Access Denied](../audio/button3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>3</b> : Access Granted : Choice_Description_here<div class="imagepadding" markdown="1">![Access Granted](../audio/button4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>4</b> : Quick Combolock : Choice_Description_here<div class="imagepadding" markdown="1">![Quick Combolock](../audio/button5.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>5</b> : Power Deadbolt 1 : Choice_Description_here<div class="imagepadding" markdown="1">![Power Deadbolt 1](../audio/button6.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>6</b> : Power Deadbolt 2 : Choice_Description_here<div class="imagepadding" markdown="1">![Power Deadbolt 2](../audio/button7.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>7</b> : Plunger : Choice_Description_here<div class="imagepadding" markdown="1">![Plunger](../audio/button8.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>8</b> : Small zap : Choice_Description_here<div class="imagepadding" markdown="1">![Small zap](../audio/button9.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>9</b> : Keycard Sound : Choice_Description_here<div class="imagepadding" markdown="1">![Keycard Sound](../audio/button10.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>10</b> : Buzz : Choice_Description_here<div class="imagepadding" markdown="1">![Buzz](../audio/button11.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>11</b> : Buzz Off : Choice_Description_here<div class="imagepadding" markdown="1">![Buzz Off](../audio/button1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>14</b> : Lightswitch : Choice_Description_here<div class="imagepadding" markdown="1">![Lightswitch](../audio/lightswitch2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Override</b></span> <kbd  class="tooltip" data-tooltip="sound">noise</kbd> :
-Keyvalue_Description_here
+Custom sound, that overrides default sound from "Sounds" list to play when the button is pressed. It will play when the button is locked, too.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>delay before reset (-1 stay)</b></span> <kbd  class="tooltip" data-tooltip="integer">wait</kbd> :
-Keyvalue_Description_here
+When the button is pressed, it will remain in its pressed state for this amount of time. This also affects any toggleable textures on it. If set to '-1', the button can be pressed only once, and will then remain in its pressed state forever. If a multisource entity is among the func_button's targets, that multisource entity will recognize the button's input to be active only for this amount of time.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Use Type</b></span> <kbd  class="tooltip" data-tooltip="choices">use_type</kbd> :
-Keyvalue_Description_here
+Set the use-type with which the button will trigger its targets. Default is 'Toggle'.
 <div class="accordion">
 <input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-17">
@@ -531,10 +531,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : Off : Choice_Description_here</li>
-<li><b>1</b> : On : Choice_Description_here</li>
-<li><b>2</b> : Set : Choice_Description_here</li>
-<li><b>3</b> : Toggle : Choice_Description_here</li>
+<li><b>0</b> : Off</li>
+<li><b>1</b> : On</li>
+<li><b>2</b> : Set</li>
+<li><b>3</b> : Toggle</li>
 </ul>
 </div>
 </div>
@@ -543,12 +543,10 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Don't move</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Toggle</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Sparks</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Touch Activates</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Don't move</span> : If set, this func_button won't move when pressed and be activated instantly instead.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Toggle</span> : If set, this func_button will ignore its delay before reset and be toggleable instead, switching between the texture states whenever pressed, if such a texture is assigned on one of its faces. The delay before reset still needs to be greater than zero in order for this to work, though.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Sparks</span> : If set, the func_breakable occasionally emits sparks. You can use this for easily creating buttons which appear to be broken.</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Touch Activates</span> : If set, this func_button can be activated by touching it. This disables activating per use-key.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

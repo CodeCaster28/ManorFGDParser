@@ -173,7 +173,7 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Use Type</b></span> <kbd  class="tooltip" data-tooltip="choices">use_type</kbd> :
-Set the use-type with which the button will fire its targets. Default is 'Toggle'.
+Set the use-type with which the button will trigger its targets. Default is 'Toggle'.
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">

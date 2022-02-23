@@ -4,12 +4,12 @@
   "KeyDescriptions": [
     {
       "keyName": "fireonopening",
-      "keyDescription": "Entity to trigger when {{ entname }} starts opening.",
+      "keyDescription": "Entity to trigger when {{ entname }} starts opening. Trigger use-type can be specified below.",
       "keyChoices": []
     },
     {
       "keyName": "fireonopening_triggerstate",
-      "keyDescription": "Set the use-type with which the entity specified above will be fired.",
+      "keyDescription": "Set the use-type with which the entity specified above will be triggered.",
       "keyChoices": [
         {
           "choiceValue": "0",
@@ -27,12 +27,12 @@
     },
     {
       "keyName": "fireonclosing",
-      "keyDescription": "Entity to trigger when door starts closing.",
+      "keyDescription": "Entity to trigger when door starts closing. Trigger use-type can be specified below.",
       "keyChoices": []
     },
     {
       "keyName": "fireonclosing_triggerstate",
-      "keyDescription": "Set the use-type with which the entity specified above will be fired.",
+      "keyDescription": "Set the use-type with which the entity specified above will be triggered.",
       "keyChoices": [
         {
           "choiceValue": "0",
@@ -50,12 +50,12 @@
     },
     {
       "keyName": "fireonopened",
-      "keyDescription": "Entity to trigger when door ends opening.",
+      "keyDescription": "Entity to trigger when door ends opening. Trigger use-type can be specified below.",
       "keyChoices": []
     },
     {
       "keyName": "fireonopened_triggerstate",
-      "keyDescription": "Set the use-type with which the entity specified above will be fired.",
+      "keyDescription": "Set the use-type with which the entity specified above will be triggered.",
       "keyChoices": [
         {
           "choiceValue": "0",
@@ -73,12 +73,12 @@
     },
     {
       "keyName": "fireonclosed",
-      "keyDescription": "Entity to trigger when door end closing.",
+      "keyDescription": "Entity to trigger when door end closing. Trigger use-type can be specified below.",
       "keyChoices": []
     },
     {
       "keyName": "fireonclosed_triggerstate",
-      "keyDescription": "Set the use-type with which the entity specified above will be fired.",
+      "keyDescription": "Set the use-type with which the entity specified above will be triggered.",
       "keyChoices": [
         {
           "choiceValue": "0",

@@ -1,6 +1,6 @@
 {
   "Classname": "monster_generic",
-  "Description": "Used to create custom monsters that can be controlled by [scripted_sequences](../scripted_sequences).<br>Class: Player Ally.",
+  "Description": "Used to create custom monsters that can be controlled by [scripted_sequences](../scripted_sequence).<br>Class: Player Ally.",
   "KeyDescriptions": [
     {
       "keyName": "sequence",

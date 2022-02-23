@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to break it. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger when func_breakable breaks. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -28,7 +28,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Entity to remove when func_breakable breaks.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
@@ -372,7 +372,7 @@ Sets the minimum light level. Useful for when textures should always appear brig
 <li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Only Trigger</span> : If set, this func_breakable will only break when triggered, even if its health value is set to '1'.</li>
 <li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Touch</span> : If set, this func_breakable will break as soon as a player touches it. If a delay before fire is set, the func_breakable will wait for that to run out before breaking after a touch.</li>
 <li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Pressure</span> : If set, the func_breakable can be destroyed from pressure, as is e.g. inflicted by a func_train, regardless of the train's damage.</li>
-<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Repairable</span> : If set, this func_breakable can be repaired, as in, have its health restored, by a player 'attacking' it with [weapon_pipewrenches'](../weapon_pipewrenche) primary attack, for the amount of that weapon's primary damage value.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Repairable</span> : If set, this func_breakable can be repaired, as in, have its health restored, by a player 'attacking' it with [weapon_pipewrenches'](../weapon_pipewrench) primary attack, for the amount of that weapon's primary damage value.</li>
 <li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Show HUD Info</span> : If set, the func_breakable will show HUD info for players looking at it. This is not affected by CVar 'mp_allowmonsterinfo'.</li>
 <li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Immune To Clients</span> : If set, the func_breakable will be immune to player attacks.</li>
 <li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Instant Break</span> : If set, this func_breakable will break instantly if hit with a crowbar.</li>

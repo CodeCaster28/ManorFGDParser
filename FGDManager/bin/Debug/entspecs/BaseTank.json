@@ -151,7 +151,7 @@
     },
     {
       "keyName": "_minlight",
-      "keyDescription": "Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.",
+      "keyDescription": "Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.",
       "keyChoices": []
     },
     {

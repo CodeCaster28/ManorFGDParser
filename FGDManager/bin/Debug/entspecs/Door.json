@@ -173,7 +173,7 @@
     },
     {
       "keyName": "_minlight",
-      "keyDescription": "Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.",
+      "keyDescription": "Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.",
       "keyChoices": []
     },
     {
@@ -235,19 +235,19 @@
     },
     {
       "keyName": "m_iObeyTriggerMode",
-      "keyDescription": "Controls how to interpret use-types 'Off' and 'On' incoming from entity that triggers the {{ entname }}.",
+      "keyDescription": "Controls how {{ entname }} behave when triggered with different use-types.",
       "keyChoices": [
         {
           "choiceValue": "0 ",
-          "choiceDescription": "'Off' and 'On' works as 'Toggle' so it will open the {{ entname }} when it's closed and close it when it's open."
+          "choiceDescription": "\"Toggle\" flag disabled- 'Off', 'On' and 'Toggle' all opens {{ entname }} if it's closed. \"Toggle\" flag enabled- 'On', 'Off' and 'Toggle' all opens {{ entname }} when it's closed and close it when it's open."
         },
         {
           "choiceValue": "1 ",
-          "choiceDescription": "'Off' only closes and 'On' only opens the {{ entname }}."
+          "choiceDescription": "\"Toggle\" flag disabled- only 'On' and 'Toggle' opens {{ entname }} if it's closed, 'Off' do nothing. \"Toggle\" flag enabled: 'On' only opens when it's closed, 'Off' only closes when it's open and 'Toggle' opens when it's closed and close it when it's open."
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Same as above but it will also work even when {{ ent_name }} is currently opening/closing."
+          "choiceDescription": "\"Toggle\" flag disabled- only 'On' and 'Toggle' opens {{ entname }} if it's closed, 'Off' do nothing. \"Toggle\" flag enabled: 'On' opens even when currently closing, 'Off' closes even when currently opening and 'Toggle' opens when it's closed and close it when it's open."
         }
       ]
     },
@@ -301,7 +301,7 @@
     },
     {
       "keyName": "fireonbreak",
-      "keyDescription": "If \"Breakable\" is set to 'Yes' then this is target entity to trigger when {{ entname }} breaks.",
+      "keyDescription": "If \"Breakable\" is set to 'Yes' then this is entity to trigger when {{ entname }} breaks. Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {

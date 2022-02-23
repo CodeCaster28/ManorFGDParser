@@ -1,11 +1,29 @@
 {
   "Classname": "func_door",
   "Description": "Entity_Description_here",
-  "KeyDescriptions": [],
-  "Notes": [
-    "Insert additional notes here"
+  "KeyDescriptions": [
+    {
+      "keyName": "message",
+      "keyDescription": "Non-functional in {{ entname }}.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Entity to trigger whenever door completely opens or closes. Trigger use-type is 'Toggle'.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to open or close it. Behaviour, when triggered, depends on \"Obey Trigger Mode\" value. See \"Obey Trigger Mode\" for more details on how door behaves depending on selected mode. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "killtarget",
+      "keyDescription": "Entity to remove when door opens.",
+      "keyChoices": []
+    }
   ],
-  "Issues": [
-    "Insert known issues here"
+  "Notes": [
+    "If the func_door kills something which blocked it, it will proceed instead of returning (behavior was changed to this in SC 4.5)."
   ]
 }

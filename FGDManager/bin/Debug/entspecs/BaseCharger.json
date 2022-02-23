@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "_minlight",
-      "keyDescription": "Sets the minimum light level. Useful for when textures should always appear bright e.g. computer screens or holograms. Default is 0, max 1.",
+      "keyDescription": "Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.",
       "keyChoices": []
     },
     {
@@ -24,12 +24,12 @@
     },
     {
       "keyName": "TriggerOnEmpty",
-      "keyDescription": "Entity to trigger when charges are fully consumed.",
+      "keyDescription": "Entity to trigger when charges are fully consumed. Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {
       "keyName": "TriggerOnRecharged",
-      "keyDescription": "Entity to trigger when {{ entname }} recharge itself after depleting and waiting \"Custom Recharge Time\".",
+      "keyDescription": "Entity to trigger when {{ entname }} recharge itself after depleting and waiting \"Custom Recharge Time\". Trigger use-type is 'Toggle'.",
       "keyChoices": []
     },
     {

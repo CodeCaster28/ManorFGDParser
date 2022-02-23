@@ -1,6 +1,6 @@
 {
   "Classname": "button_target",
-  "Description": "A brush entity, which, in its essence, acts like a [func_button](../func_button), except that it has been designed specifically for triggering only when damaged unless set up otherwise. The damage it receives does not matter. You can add targetname manually to this entity. When triggered, it's behaviour depends on use-type: 'On'- press button on, 'Off'- press button off, 'Toggle'- toggle button. Can also be kill-targeted.",
+  "Description": "A brush entity, which, in its essence, acts like a [func_button](../func_button), except that it has been designed specifically for triggering only when damaged unless set up otherwise. The damage it receives does not matter.",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -23,7 +23,7 @@
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity to trigger whenever a button is pressed. Trigger use-type is defined at \"Use Type\" keyvalue.",
+      "keyDescription": "Entity to trigger whenever a button is pressed. Trigger use-type is defined in \"Use Type\" keyvalue.",
       "keyChoices": []
     },
     {
@@ -146,7 +146,7 @@
     },
     {
       "keyName": "use_type",
-      "keyDescription": "Set the use-type with which the button will fire its targets. Default is 'Toggle'.",
+      "keyDescription": "Set the use-type with which the button will trigger its targets. Default is 'Toggle'.",
       "keyChoices": [
         {
           "choiceValue": "0",
@@ -166,5 +166,8 @@
         }
       ]
     }
+  ],  
+  "Notes": [
+    "Button_target supports to have a name (even if it is not listed in object properties). You can set it by adding \"targetname\" key with SmartEdit mode disabled. Now entity can be killed and when triggered, it's behaviour depends on use-type: 'On'- press button on, 'Off'- press button off, 'Toggle'- toggle button."
   ]
 }

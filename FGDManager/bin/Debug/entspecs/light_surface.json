@@ -118,7 +118,7 @@
     },
     {
       "keyName": "style",
-      "keyDescription": "Allows you to select a light style. This will only work when a targetname is NOT set. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.",
+      "keyDescription": "Allows you to select a light style.",
       "keyChoices": [
         {
           "choiceValue": "\"\" ",
