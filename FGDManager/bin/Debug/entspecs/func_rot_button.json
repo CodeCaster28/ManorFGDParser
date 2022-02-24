@@ -1,76 +1,91 @@
 {
   "Classname": "func_rot_button",
-  "Description": "Entity_Description_here",
+  "Description": "A brush entity, which can be triggered by the player by issuing his 'Use'-command on it while standing next to it and looking at it. This is a rotating variant of the [func_button](../func_button) which can be used to create rotating interactable objects like levers or valves. The origin brush is required for this entity, around which func_rot_button rotates.",
   "KeyDescriptions": [
     {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to press/toggle it. Every trigger use-type works uniformly. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Entity to trigger when {{ entname }} gets pressed. Trigger use-type is defined in \"Use Type\" keyvalue.",
+      "keyChoices": []
+    },
+    {
       "keyName": "changetarget",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Non-functional keyvalue. If specified, it supposed to change this func_rot_button's target's \"Target\" field to the name specified in \"ChangeTarget Name\" of this func_rot_button.",
       "keyChoices": []
     },
     {
       "keyName": "master",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't work. When multisource entity is triggered/being triggering by all possible inputs, the {{ entname }} will be enabled and ready to be pressed. When multisource lost at least one input signal, the entities becomes disabled again.",
       "keyChoices": []
     },
     {
       "keyName": "speed",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Speed at which the button rotates (around z axis by default) when pressed.",
       "keyChoices": []
     },
     {
       "keyName": "health",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "If you enter here value higher than 0, the button becomes shootable only, and can be activated when it's out of health.",
       "keyChoices": []
     },
     {
       "keyName": "sounds",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set the sound to be played when the button is pressed. It will play when the button is locked, too.",
       "keyChoices": [
         {
           "choiceValue": "21",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+          "media": "../audio/lever1.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "22",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+          "media": "../audio/lever2.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "23",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+          "media": "../audio/lever3.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "24",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+          "media": "../audio/lever4.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "25",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "",
+          "media": "../audio/lever5.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         }
       ]
     },
     {
       "keyName": "noise",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Custom sound, that overrides default sound from \"Sounds\" list to play when the button is pressed. It will play when the button is locked, too.",
       "keyChoices": []
     },
     {
       "keyName": "wait",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "When the button is pressed, it will remain in its pressed state for this amount of time. This also affects any toggleable textures on it. If set to '-1', the button can be pressed only once, and will then remain in its pressed state forever. If a multisource entity is among the func_rot_button's targets, that multisource entity will recognize the button's input to be active only for this amount of time.",
       "keyChoices": [
         {
           "choiceValue": "-1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     },
     {
       "keyName": "delay",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Delay before triggering entity specified in \"Target\".",
       "keyChoices": []
     },
     {
       "keyName": "distance",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "How many degrees the button rotates around it's origin axis (z axis by default). Can be negative.",
       "keyChoices": []
     },
     {
@@ -79,27 +94,27 @@
       "keyChoices": [
         {
           "choiceValue": "1 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Turns solidity of this entity off."
         },
         {
           "choiceValue": "2 ",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "Reverses the direction of rotation. The same effect is given by making \"Distance\" value negative."
         },
         {
           "choiceValue": "32",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this func_rot_button will ignore its delay before reset and be toggleable instead, switching between the texture states whenever pressed, if such a texture is assigned on one of its faces. The delay before reset still needs to be greater than zero in order for this to work, though."
         },
         {
           "choiceValue": "64",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this will rotate around the x-axis."
         },
         {
           "choiceValue": "128",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this will rotate around the y-axis."
         },
         {
           "choiceValue": "256",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": "If set, this func_rot_button can be activated by touching it. This disables activating per use-key."
         }
       ]
     },
@@ -110,31 +125,25 @@
     },
     {
       "keyName": "use_type",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Set the use-type with which the button will trigger its targets. Default is 'Toggle'.",
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

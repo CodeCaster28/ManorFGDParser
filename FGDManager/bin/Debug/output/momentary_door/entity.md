@@ -550,11 +550,11 @@ Sentence from "default_sentences.txt" or custom sentences file (which can be add
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
-Entity to trigger when {{ entname }} starts opening.
+Entity to trigger when {{ entname }} starts opening. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopening_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-20">
@@ -572,11 +572,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosing</kbd> :
-Entity to trigger when door starts closing.
+Entity to trigger when door starts closing. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosing_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-21">
@@ -594,11 +594,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopened</kbd> :
-Entity to trigger when door ends opening.
+Entity to trigger when door ends opening. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopened_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-22" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-22">
@@ -616,11 +616,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosed</kbd> :
-Entity to trigger when door end closing.
+Entity to trigger when door end closing. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosed_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-23" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-23">
@@ -741,7 +741,7 @@ Set how many hit points this entity has if "Breakable" is set to 'Yes'
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
@@ -789,7 +789,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Obey Trigger Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iObeyTriggerMode</kbd> :
-Controls how to interpret use-types 'Off' and 'On' incoming from entity that triggers the {{ entname }}.
+Controls how {{ entname }} behave when triggered with different use-types.
 <div class="accordion">
 <input type="checkbox" id="accordion-29" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-29">
@@ -798,9 +798,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : 'Off' and 'On' works as 'Toggle' so it will open the {{ entname }} when it's closed and close it when it's open.</li>
-<li><b>1 </b> : Yes : 'Off' only closes and 'On' only opens the {{ entname }}.</li>
-<li><b>2 </b> : Yes, even when currently moving : Same as above but it will also work even when {{ ent_name }} is currently opening/closing.</li>
+<li><b>0 </b> : No : "Toggle" flag disabled- 'Off', 'On' and 'Toggle' all opens {{ entname }} if it's closed. "Toggle" flag enabled- 'On', 'Off' and 'Toggle' all opens {{ entname }} when it's closed and close it when it's open.</li>
+<li><b>1 </b> : Yes : "Toggle" flag disabled- only 'On' and 'Toggle' opens {{ entname }} if it's closed, 'Off' do nothing. "Toggle" flag enabled: 'On' only opens when it's closed, 'Off' only closes when it's open and 'Toggle' opens when it's closed and close it when it's open.</li>
+<li><b>2 </b> : Yes, even when currently moving : "Toggle" flag disabled- only 'On' and 'Toggle' opens {{ entname }} if it's closed, 'Off' do nothing. "Toggle" flag enabled: 'On' opens even when currently closing, 'Off' closes even when currently opening and 'Toggle' opens when it's closed and close it when it's open.</li>
 </ul>
 </div>
 </div>
@@ -824,7 +824,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire on break</b></span> <kbd  class="tooltip" data-tooltip="target_destination">fireonbreak</kbd> :
-If "Breakable" is set to 'Yes' then this is target entity to trigger when {{ entname }} breaks.
+If "Breakable" is set to 'Yes' then this is entity to trigger when {{ entname }} breaks. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Material type</b></span> <kbd  class="tooltip" data-tooltip="choices">material</kbd> :

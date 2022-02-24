@@ -5,7 +5,7 @@ title: func_traincontrols
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This entity represents an invisible, non-solid button which gives a player control over a [func_tracktrain](../func_tracktrain) when used. This entity automatically moves and rotates with its associated func_tracktrain. When uses it, the player can choose between speed levels.</div>
 </div>
 </div>
 ###Keyvalues
@@ -200,7 +200,5 @@ Entity to trigger whenever test result is negative.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Train Name</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Keyvalue_Description_here
+Name of assigned func_tracktrain.
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

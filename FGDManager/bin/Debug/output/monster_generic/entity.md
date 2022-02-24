@@ -5,7 +5,7 @@ title: monster_generic
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Used to create custom monsters that can be controlled by [scripted_sequences](../scripted_sequences).<br>Class: Player Ally.</div>
+<div class="column entityentry" markdown="1">Used to create custom monsters that can be controlled by [scripted_sequences](../scripted_sequence).<br>Class: Player Ally.</div>
 </div>
 </div>
 ###Keyvalues
@@ -217,7 +217,7 @@ Choices:
 <div class="accordion-body">
 <ul>
 <li><b>0 </b> : No (Default) : Keep game defaults.</li>
-<li><b>1 </b> : Yes : Invert relationship (e.g. monster_barney becomes enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c.</li>
+<li><b>1 </b> : Yes : Invert relationship, e.g. monster_barney becomes enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c.</li>
 </ul>
 </div>
 </div>

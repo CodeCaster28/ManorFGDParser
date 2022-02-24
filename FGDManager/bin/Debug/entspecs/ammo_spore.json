@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_spore",
-  "Description": "Entity_Description_here",
+  "Description": "An organic mechanism to place on any surface, which provides 1 spore every x seconds for [weapon_sporelauncher](../weapon_sporelauncher) (Spore launcher). Maximum in supply: 30",
   "KeyDescriptions": [
     {
       "keyName": "movetype",

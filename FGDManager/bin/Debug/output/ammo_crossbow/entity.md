@@ -5,7 +5,7 @@ title: ammo_crossbow
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Provides 5 bolts for weapon_crossbow (Crossbow). Maximum in supply: 50</div>
+<div class="column entityentry" markdown="1">Provides 5 bolts for [weapon_crossbow](../weapon_crossbow) (Crossbow). Maximum in supply: 50</div>
 </div>
 </div>
 ###Keyvalues

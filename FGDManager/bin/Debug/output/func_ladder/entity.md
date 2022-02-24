@@ -5,7 +5,7 @@ title: func_ladder
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Invisible brush entity which allows players to climb on its surface on touch. Player won't stop using the ladder unless jumping off or moving away from the ladder's surface sideways. Ladders on ceilings works as well. Sloped ladders produce unsatisfactory results and should not be used. Touching a ladder while falling will nullify the player's velocity and safe him from falling damage. Usually used in combination with a [func_illusionary](../func_illusionary) with ladder-textures for the visual counterpart.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to enable or disable it. Depending on trigger use-type: 'On'- enable ladder, 'Toggle'- toggle ladder, 'Off'- disable ladder. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
@@ -97,10 +97,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>1</b> : Start Off : Choice_Description_here</li>
+<li><b>1</b> : Start Off : Ladder starts disabled, must be further triggered to be enabled.</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

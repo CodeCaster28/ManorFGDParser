@@ -20,11 +20,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to press/toggle it. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger when {{ entname }} gets pressed. Trigger use-type is defined in "Use Type" keyvalue.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -32,7 +32,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Entity to remove when {{ entname }} gets pressed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Inventory: Need item(s)</b></span> <kbd  class="tooltip" data-tooltip="string">item_name_required</kbd> :
@@ -491,19 +491,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : None : Choice_Description_here<div class="imagepadding" markdown="1">![None](../audio/button1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>1</b> : Big zap & Warmup : Choice_Description_here<div class="imagepadding" markdown="1">![Big zap & Warmup](../audio/button2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>2</b> : Access Denied : Choice_Description_here<div class="imagepadding" markdown="1">![Access Denied](../audio/button3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>3</b> : Access Granted : Choice_Description_here<div class="imagepadding" markdown="1">![Access Granted](../audio/button4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>4</b> : Quick Combolock : Choice_Description_here<div class="imagepadding" markdown="1">![Quick Combolock](../audio/button5.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>5</b> : Power Deadbolt 1 : Choice_Description_here<div class="imagepadding" markdown="1">![Power Deadbolt 1](../audio/button6.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>6</b> : Power Deadbolt 2 : Choice_Description_here<div class="imagepadding" markdown="1">![Power Deadbolt 2](../audio/button7.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>7</b> : Plunger : Choice_Description_here<div class="imagepadding" markdown="1">![Plunger](../audio/button8.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>8</b> : Small zap : Choice_Description_here<div class="imagepadding" markdown="1">![Small zap](../audio/button9.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>9</b> : Keycard Sound : Choice_Description_here<div class="imagepadding" markdown="1">![Keycard Sound](../audio/button10.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>10</b> : Buzz : Choice_Description_here<div class="imagepadding" markdown="1">![Buzz](../audio/button11.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>11</b> : Buzz Off : Choice_Description_here<div class="imagepadding" markdown="1">![Buzz Off](../audio/button1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>14</b> : Lightswitch : Choice_Description_here<div class="imagepadding" markdown="1">![Lightswitch](../audio/lightswitch2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>0</b> : None<div class="imagepadding" markdown="1">![None](../audio/button1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>1</b> : Big zap & Warmup<div class="imagepadding" markdown="1">![Big zap & Warmup](../audio/button2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>2</b> : Access Denied<div class="imagepadding" markdown="1">![Access Denied](../audio/button3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>3</b> : Access Granted<div class="imagepadding" markdown="1">![Access Granted](../audio/button4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>4</b> : Quick Combolock<div class="imagepadding" markdown="1">![Quick Combolock](../audio/button5.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>5</b> : Power Deadbolt 1<div class="imagepadding" markdown="1">![Power Deadbolt 1](../audio/button6.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>6</b> : Power Deadbolt 2<div class="imagepadding" markdown="1">![Power Deadbolt 2](../audio/button7.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>7</b> : Plunger<div class="imagepadding" markdown="1">![Plunger](../audio/button8.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>8</b> : Small zap<div class="imagepadding" markdown="1">![Small zap](../audio/button9.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>9</b> : Keycard Sound<div class="imagepadding" markdown="1">![Keycard Sound](../audio/button10.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>10</b> : Buzz<div class="imagepadding" markdown="1">![Buzz](../audio/button11.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>11</b> : Buzz Off<div class="imagepadding" markdown="1">![Buzz Off](../audio/button1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>14</b> : Lightswitch<div class="imagepadding" markdown="1">![Lightswitch](../audio/lightswitch2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
 </ul>
 </div>
 </div>
@@ -518,7 +518,7 @@ When the button is pressed, it will remain in its pressed state for this amount 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Use Type</b></span> <kbd  class="tooltip" data-tooltip="choices">use_type</kbd> :

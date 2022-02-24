@@ -231,7 +231,7 @@ Choices:
 <div class="accordion-body">
 <ul>
 <li><b>0 </b> : Default (0) : Keep game defaults.</li>
-<li><b>1 </b> : Opposite (1) : Invert relationship (e.g. monster_barney becomes enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c.</li>
+<li><b>1 </b> : Opposite (1) : Invert relationship, e.g. monster_barney becomes enemy because he is friendly by default; monster_zombie becomes friendly because he is an enemy by default e.t.c.</li>
 </ul>
 </div>
 </div>

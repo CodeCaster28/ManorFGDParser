@@ -5,7 +5,7 @@ title: ammo_spore
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">An organic mechanism to place on any surface, which provides 1 spore every x seconds for [weapon_sporelauncher](../weapon_sporelauncher) (Spore launcher). Maximum in supply: 30</div>
 </div>
 </div>
 ###Keyvalues

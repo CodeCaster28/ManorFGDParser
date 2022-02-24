@@ -5,7 +5,7 @@ title: func_friction
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The func_friction entity will modify the ground friction for all players moving inside of it. The func_friction itself is non-solid and invisible. This entity can for example be used to simulate slippy surfaces as well as hard to navigate mud. You can add targetname manually to this entity.</div>
 </div>
 </div>
 ###Keyvalues
@@ -169,7 +169,7 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Percentage of standard (0 - 100)</b></span> <kbd  class="tooltip" data-tooltip="integer">modifier</kbd> :
-Keyvalue_Description_here
+100 is default floor friction, less values for less slippery floor.
 </div>
 ###Flags
 <hr>
@@ -178,5 +178,4 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Func_friction supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. It can only be kill-targeted though.</div>

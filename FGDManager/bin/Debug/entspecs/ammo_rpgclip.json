@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_rpgclip",
-  "Description": "Provides 2 rockets for weapon_rpg (Rocket-propelled grenade launcher). Maximum in supply: 5",
+  "Description": "Provides 2 rockets for [weapon_rpg](../weapon_rpg) (Rocket-propelled grenade launcher). Maximum in supply: 5",
 	"KeyDescriptions": [
 	{
       "keyName": "target",

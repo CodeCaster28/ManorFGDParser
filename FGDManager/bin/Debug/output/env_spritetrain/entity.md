@@ -183,7 +183,7 @@ Movement-speed in units per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Obey Trigger Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iObeyTriggerMode</kbd> :
-Controls how to interpret use-types 'Off' and 'On' incoming from entity that triggers the {{ entname }}.
+Controls how {{ entname }} behave when triggered with different use-types.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -192,8 +192,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : 'Off' and 'On' works as 'Toggle' so it will start the {{ entname }} when it's stopped and stop it when it's moving.</li>
-<li><b>1 </b> : Yes : 'Off' only stops and 'On' only starts the {{ entname }}.</li>
+<li><b>0 </b> : No : 'Off', 'On' and 'Toggle'- toggle {{ entname }} movement.</li>
+<li><b>1 </b> : Yes : 'On'- start moving, 'Off'- stop moving, 'Toggle'- toggle moving.</li>
 </ul>
 </div>
 </div>

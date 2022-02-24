@@ -5,7 +5,7 @@ title: func_clip
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Allows you to set up a fake clipping object. It's fake in that sense, that it only operates server-side, thus might be laggy, and allows more object filtering than the default collision hulls. For clip brushes that block players, but not monsters, try making a func_wall with clip brushes and add a null-textured brush to it so the compile tools allow it.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to turn clip on and off. Depending on trigger use-type: 'On' or 'Toggle'- enable clipping, 'Off'- disable clipping. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -92,20 +92,18 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Direction Tolerance</b></span> <kbd  class="tooltip" data-tooltip="String">frags</kbd> :
-Keyvalue_Description_here
+If the "Directional (Angles)" flag is set, this value specifies the minimum required (smaller) angle between an entity's movement vector and the func_clip's negated blocking vector to still be allowed to pass. E.g., when the func_clip's yaw was 90 degrees (pointing north/up) and direction tolerance was set to 179, you'd only be able to pass the func_clip when walking towards it from south in a straight line pointing quite exactly towards north.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start Off</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Directional (Angles)</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">No Clients</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Monsters</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Pushables</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Everything else</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">item_inv (thrown)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start Off</span> : If set, the func_clip starts disabled and won't block anything. Turning it on while something is inside might stuck it, depending on whether it is affected by this func_clip and how the directional settings of the func_clip are setup.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Directional (Angles)</span> : If ticked, the func_clip will block only in the direction specified by the angles-keyvalue, using a tolerance of "Direction tolerance" keyvalue.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">No Clients</span> : If set, players can pass the func_clip seamlessly.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Monsters</span> : If set, monsters cannot pass.</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Pushables</span> : If set, pushables cannot pass.</li>
+<li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Everything else</span> : If set, all other entities not governed by the above three flags cannot pass.</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">item_inv (thrown)</span> : If set, all other entities not governed by the above three flags cannot pass.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

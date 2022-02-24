@@ -5,7 +5,7 @@ title: func_train
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The func_train can move along a path made from [path_corner](../path_corner) entities. It is a more feature-rich movable object as [func_door](../func_door) is. It can serves as [env_laser](../env_laser)/[env_beam](../env_beam) target, [trigger_camera](../trigger_camera) target and just as a elevator or... train!</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to start or stop it. Behaviour, when triggered, depends on "Obey Trigger Mode" value. See "Obey Trigger Mode" for more details on how {{ entname }} behaves depending on selected mode. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
@@ -183,7 +183,7 @@ Movement-speed in units per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Obey Trigger Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iObeyTriggerMode</kbd> :
-Controls how to interpret use-types 'Off' and 'On' incoming from entity that triggers the {{ entname }}.
+Controls how {{ entname }} behave when triggered with different use-types.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -192,8 +192,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : 'Off' and 'On' works as 'Toggle' so it will start the {{ entname }} when it's stopped and stop it when it's moving.</li>
-<li><b>1 </b> : Yes : 'Off' only stops and 'On' only starts the {{ entname }}.</li>
+<li><b>0 </b> : No : 'Off', 'On' and 'Toggle'- toggle {{ entname }} movement.</li>
+<li><b>1 </b> : Yes : 'On'- start moving, 'Off'- stop moving, 'Toggle'- toggle moving.</li>
 </ul>
 </div>
 </div>
@@ -328,27 +328,28 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Angular Velocity (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">avelocity</kbd> :
-Keyvalue_Description_here
+Axial rotation each second. Fist value rotates brush around Y axis, second around Z axis, and the last one rotates brush around X axis. E. g. '0 180 0' makes train rotates 180 degrees around Z (height) axis, counter clockwise each second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage on crush</b></span> <kbd  class="tooltip" data-tooltip="integer">dmg</kbd> :
-Keyvalue_Description_here
+Axial rotation each second. Fist value rotates brush around Y axis, second around Z axis, and the last one rotates brush around X axis. E. g. '0 180 0' makes train rotates 180 degrees around Z (height) axis, counter clockwise each second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Contents</b></span> <kbd  class="tooltip" data-tooltip="integer">skin</kbd> :
-Keyvalue_Description_here
+It's used to change the 'contents' of this brush (e.g. water makes it behave as water when entities going though it). You don't really need to use this.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Not solid</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Not solid</span> : Train have it's collision off.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Requirements for origin brush are questionable. Some entities like trigger_camera or trigger_setorigin may need it to work properly. Also train can't use "Angular Velocity" when no origin brush provided.</div>
+<div class="notices blue">You can make train invisible, by setting render mode, when the train is a laser target.</div>
+<div class="notices blue">If you name your train it will start stopped, waiting to be started by trigger (even if nothing is targeting this entity).</div>

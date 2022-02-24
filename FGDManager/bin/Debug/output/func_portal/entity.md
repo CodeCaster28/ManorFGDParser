@@ -5,7 +5,7 @@ title: func_portal
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Entity that creates one-way "portal" on surfaces, rendering the image "seen" from target entity ([info_target](../info_target) or another portal), optionally allowing to travel through to it's target. Image can be also scaled making possible to create 3D skybox or miniatures from parts of the map. Origin brush is required for this entity. This entity can be freely triggered to enable/disable rendering.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to enable or disable it. Depending on trigger use-type: 'On'- enable portal, 'Toggle'- toggle portal, 'Off'- disable portal. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Specify name of info_target or another func_portal that player will be teleported to when walking through surface of this func_portal.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -70,11 +70,12 @@ Name of the texture to apply display on. Works only when "Texture Mode" is set t
 <ul>
 <li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Solid</span> : Enables collision.</li>
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Disabled</span> : If selected, {{ entname }} need to be enabled.</li>
-<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Teleport</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No GL ClipPlanes</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Teleport</span> : Check this so portal will not only show destination image but also teleport to it.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No GL ClipPlanes</span> : Usually when a portal is renderer, everything between the player and the area that the portal shows is clipped away. Usually you want this enabled, but you might want to disable this feature when creating concave portals (e.g. for 3D skyboxes).</li>
 <li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Render only every 2nd frame</span> : Update display only every two frames instead of every frame, this improves performance.</li>
-<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Shoot through</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Shoot through</span> : Allow shooting bullets and transporting projectiles through portal.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Portals can be moved an rotated by trigger_setorigin.</div>
+<div class="notices blue">For two-way portals create two separate func_portals then let first portal target second one and vice versa.</div>
+<div class="notices blue">If target is a portal and 'Teleport' flag is checked, the player will be teleported to the center of target's origin brush.</div>

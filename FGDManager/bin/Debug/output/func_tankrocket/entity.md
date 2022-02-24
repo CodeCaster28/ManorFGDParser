@@ -5,7 +5,7 @@ title: func_tankrocket
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Same as [func_tank](../func_tank) but launches rockets. Func_tankrocket is used to represent a mounted cannon which can be controlled by players as well as monsters, if allowed. For either to be able to use this, it must be hooked up to a single func_tankcontrols entity. If you want func_tankrocket to be controllable by player, you need to specify a name of func_tankrocket and use func_tankcontrols entity in addition of this entity. Automatic turret needs "Active" flag enabled. Entity requires origin brush tied to barrel, so it can rotate around it.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to take control, preferably [func_tankcontrols](../func_tankcontrols). Some others entities like [func_button](../func_button) works as well. Does not accept 'Off' use-type. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger whenever a controlled {{ entname }} shot. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -193,7 +193,7 @@ Maximum view distance to shoot target, used for automatic turrets only. Values a
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>R Player</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_player</kbd> :
@@ -593,5 +593,6 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Turret can be both controllable and automatic- attacks player until he gets control over this func_tank.</div>
+<div class="notices blue">Entity must be facing east at x/y view of the editor, the angle of barrel must be customized with 'Yaw' compass in object properties.</div>
+<div class="notices red">Max range of all func_tank entities cannot be set to higher that 2048.</div>

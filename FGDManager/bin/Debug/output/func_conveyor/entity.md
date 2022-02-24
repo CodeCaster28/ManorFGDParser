@@ -5,7 +5,7 @@ title: func_conveyor
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The func_conveyor entity is a visible and by default also solid entity used to represent conveyor bands in appearance and function, but can also be used for different purposes, e.g. a water-stream/river. The yaw of the angles-keyvalue specifies the direction of texture moving. Any textures with names beginning with "SCROLL" (case-insensitive) will then scroll into that direction. However, notice that any texture rotation and mirroring will also affect its scroll-direction; not the push-direction, though. Scaling a texture on a face will also affect its scroll-speed - not the push-speed - in dependence on the scale-axis' relations to the relative scroll- direction.</div>
 </div>
 </div>
 ###Keyvalues
@@ -85,7 +85,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to revert conveyor direction. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -185,20 +185,18 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Conveyor Speed</b></span> <kbd  class="tooltip" data-tooltip="string">speed</kbd> :
-Keyvalue_Description_here
+Push-speed and base-texture-scroll-speed in units per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">No Push</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Not Solid</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">No Push</span> : If set, the func_conveyor won't push anything nor anyone standing on it.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Not Solid</span> : If set, the func_conveyor is entirely non-solid. It also won't push then.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_crossbow",
-  "Description": "Provides 5 bolts for weapon_crossbow (Crossbow). Maximum in supply: 50",
+  "Description": "Provides 5 bolts for [weapon_crossbow](../weapon_crossbow) (Crossbow). Maximum in supply: 50",
   "KeyDescriptions": [
 	{
       "keyName": "target",

@@ -5,7 +5,7 @@ title: func_door
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Simple entity for objects moving in a straight line. Mostly used for plain sliding doors. Func_doors are triggered on touch, unless they have a name, in which's case they require to be triggered manually. The movement-direction is set by the angles keyvalue. The distance traveled is computed by the extents of the door's hull into the set direction. If your door is 64 units in width (X-axis) and set to move east, it will move 64 units east when triggered. If your door is 96 units in length (Y-axis) and set to move north, it will move 96 units north. If your angle is not a multiple of 90, it gets weird and complicated; couldn't figure out what's the maths behind that. When the door is blocked while moving, it will apply its damage and, by default, move back into the position it came from and idle without further action. An exception is when the door has already been opened and its movement is a result of automatic delayed closing; it will then attempt to close every time the delay runs out, till it closes without getting blocked. The door can be blocked multiple times as it moves forth/back, changing its direction and goal-position every time - also applying damage every time - till it reaches the goal-position.</div>
 </div>
 </div>
 ###Keyvalues
@@ -20,11 +20,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to open or close it. Behaviour, when triggered, depends on "Obey Trigger Mode" value. See "Obey Trigger Mode" for more details on how door behaves depending on selected mode. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger whenever door completely opens or closes. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -32,7 +32,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Entity to remove when door opens.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">tinfilter</kbd> :
@@ -550,11 +550,11 @@ Sentence from "default_sentences.txt" or custom sentences file (which can be add
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
-Entity to trigger when {{ entname }} starts opening.
+Entity to trigger when {{ entname }} starts opening. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopening_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-20">
@@ -572,11 +572,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosing</kbd> :
-Entity to trigger when door starts closing.
+Entity to trigger when door starts closing. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosing_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-21">
@@ -594,11 +594,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopened</kbd> :
-Entity to trigger when door ends opening.
+Entity to trigger when door ends opening. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopened_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-22" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-22">
@@ -616,11 +616,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosed</kbd> :
-Entity to trigger when door end closing.
+Entity to trigger when door end closing. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosed_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-23" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-23">
@@ -733,7 +733,7 @@ Damage to apply to entity that attempts to blocks the {{ entname }}.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Message if triggered</b></span> <kbd  class="tooltip" data-tooltip="string">message</kbd> :
-Not functional.
+Non-functional in {{ entname }}.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Strength</b></span> <kbd  class="tooltip" data-tooltip="integer">health</kbd> :
@@ -741,7 +741,7 @@ Set how many hit points this entity has if "Breakable" is set to 'Yes'
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Sets the minimum light level. Useful for when textures should always appear brighter. Default is 0, max 1.
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
@@ -789,7 +789,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Obey Trigger Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iObeyTriggerMode</kbd> :
-Controls how to interpret use-types 'Off' and 'On' incoming from entity that triggers the {{ entname }}.
+Controls how {{ entname }} behave when triggered with different use-types.
 <div class="accordion">
 <input type="checkbox" id="accordion-29" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-29">
@@ -798,9 +798,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : 'Off' and 'On' works as 'Toggle' so it will open the {{ entname }} when it's closed and close it when it's open.</li>
-<li><b>1 </b> : Yes : 'Off' only closes and 'On' only opens the {{ entname }}.</li>
-<li><b>2 </b> : Yes, even when currently moving : Same as above but it will also work even when {{ ent_name }} is currently opening/closing.</li>
+<li><b>0 </b> : No : "Toggle" flag disabled- 'Off', 'On' and 'Toggle' all opens {{ entname }} if it's closed. "Toggle" flag enabled- 'On', 'Off' and 'Toggle' all opens {{ entname }} when it's closed and close it when it's open.</li>
+<li><b>1 </b> : Yes : "Toggle" flag disabled- only 'On' and 'Toggle' opens {{ entname }} if it's closed, 'Off' do nothing. "Toggle" flag enabled: 'On' only opens when it's closed, 'Off' only closes when it's open and 'Toggle' opens when it's closed and close it when it's open.</li>
+<li><b>2 </b> : Yes, even when currently moving : "Toggle" flag disabled- only 'On' and 'Toggle' opens {{ entname }} if it's closed, 'Off' do nothing. "Toggle" flag enabled: 'On' opens even when currently closing, 'Off' closes even when currently opening and 'Toggle' opens when it's closed and close it when it's open.</li>
 </ul>
 </div>
 </div>
@@ -824,7 +824,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire on break</b></span> <kbd  class="tooltip" data-tooltip="target_destination">fireonbreak</kbd> :
-If "Breakable" is set to 'Yes' then this is target entity to trigger when {{ entname }} breaks.
+If "Breakable" is set to 'Yes' then this is entity to trigger when {{ entname }} breaks. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Material type</b></span> <kbd  class="tooltip" data-tooltip="choices">material</kbd> :
@@ -1030,5 +1030,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">If the func_door kills something which blocked it, it will proceed instead of returning (behavior was changed to this in SC 4.5).</div>

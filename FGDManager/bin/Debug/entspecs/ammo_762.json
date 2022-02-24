@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_762",
-  "Description": "Provides 5 bullets for weapon_sniperrifle (Sniper rifle). Maximum in supply: 15",
+  "Description": "Provides 5 bullets for [weapon_sniperrifle](../weapon_sniperrifle) (Sniper rifle). Maximum in supply: 15",
 	"KeyDescriptions": [
 	{
       "keyName": "target",

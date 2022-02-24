@@ -12,7 +12,7 @@ title: trigger_auto
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entity to trigger on map start. Trigger use-type is defined at "Trigger State" keyvalue.
+Entity to trigger on map start. Trigger use-type is defined in "Trigger State" keyvalue.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :

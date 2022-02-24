@@ -5,14 +5,14 @@ title: func_op4mortarcontroller
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A button to control an op4mortar with the 'Can control'-flag set. Holding your 'Use'-key on this button makes the target op4mortar either rotate on its horizontal or vertical axis (depending on your setup) in a direction at 40 degrees per second and change the rotation direction when the rotation limit for that direction has been reached (pitch always ranges from 0 to 90 degrees). Using this controller consecutively gives more control over the op4mortar's angle as it will rotate slower. When not using the controller for a half second, the direction into which it will make the op4mortar turn the next time you use the func_op4mortarcontroller is reversed for convenience, so players don't have to turn the op4mortar all the way to its rotation limit in order to adjust into the other direction. You can add targetname manually to this entity.</div>
 </div>
 </div>
 ###Keyvalues
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Name of an op4mortar entity to control. If bad value specified, the game crashes.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
@@ -84,7 +84,7 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Axis</b></span> <kbd  class="tooltip" data-tooltip="Choices">mortar_axis</kbd> :
-Keyvalue_Description_here
+Set which axis of the targeted op4mortar to control.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">
@@ -93,11 +93,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : Vertical : Choice_Description_here</li>
-<li><b>1 </b> : Horizontal : Choice_Description_here</li>
+<li><b>0 </b> : Vertical : Yaw (left and right).</li>
+<li><b>1 </b> : Horizontal : Pitch (up and down).</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Func_op4mortarcontroller supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. It can only be kill-targeted though.</div>

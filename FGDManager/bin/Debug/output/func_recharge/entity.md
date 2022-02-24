@@ -5,9 +5,7 @@ title: func_recharge
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">The func_recharge is a visible, solid entity which can be used just as a func_button can and will refill 15 armor points per second while using it. Multiple players can use it at the same time, but the AP restored per second is distributed equally among them. Armorchargers refill themselves 15 seconds after being emptied.
-> sk_suitcharger # (Default: 100, 100, 100): Sets how many armor points suit chargers store.
-</div>
+<div class="column entityentry" markdown="1">The func_recharge is a visible, solid entity which can be used just as a [func_button](../func_button) can and will refill 15 armor points per second while using it. Multiple players can use it at the same time, but the AP restored per second is distributed equally among them. Armorchargers refill themselves 15 seconds after being emptied. You can add targetname manually to this entity. CVars:<ul><li>sk_suitcharger # (Default: 100, 100, 100): Sets how many armor points suit chargers store.</li></ul></div>
 </div>
 </div>
 ###Keyvalues
@@ -175,7 +173,7 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Sets the minimum light level. Useful for when textures should always appear bright e.g. computer screens or holograms. Default is 0, max 1.
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
@@ -191,11 +189,11 @@ Time, in seconds, for {{ entname }} to replenish it's charges. '0' for default.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger On Empty</b></span> <kbd  class="tooltip" data-tooltip="target_destination">TriggerOnEmpty</kbd> :
-Entity to trigger when charges are fully consumed.
+Entity to trigger when charges are fully consumed. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Trigger on Recharged</b></span> <kbd  class="tooltip" data-tooltip="target_destination">TriggerOnRecharged</kbd> :
-Entity to trigger when {{ entname }} recharge itself after depleting and waiting "Custom Recharge Time".
+Entity to trigger when {{ entname }} recharge itself after depleting and waiting "Custom Recharge Time". Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Denied Sound</b></span> <kbd  class="tooltip" data-tooltip="sound">CustomDeniedSound</kbd> :
@@ -216,3 +214,4 @@ Sound file to play (in a loop) when charging is in progress, just after "Custom 
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
+<div class="notices blue">Func_recharge supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. Now entity can be killed and triggered to charge a battery of activator by one point.</div>

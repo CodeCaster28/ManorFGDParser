@@ -5,7 +5,7 @@ title: func_rotating
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A brush entity, which rotates constantly. Can be disabled and enabled, at which it may accelerate/decelerate. Requires origin brush around which entity rotates.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to start or stop it. Behaviour, when triggered, depends on "Obey Trigger Mode" value. See "Obey Trigger Mode" for more details on how {{ entname }} behaves depending on selected mode. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
@@ -185,19 +185,19 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Rotation Speed</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+Rotation speed in degrees per second. E.g., '360' would make it do one whole turn per second, regardless of its size.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Volume (10 = loudest)</b></span> <kbd  class="tooltip" data-tooltip="integer">volume</kbd> :
-Keyvalue_Description_here
+Set the volume of the sound emitted by the func_rotating. Volume value ranges from 0 to 10.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Friction (0 - 100%)</b></span> <kbd  class="tooltip" data-tooltip="integer">fanfriction</kbd> :
-Keyvalue_Description_here
+Set the friction to be used when the "Acc/Dcc" flag is set. Ranges from 0 to 100. Avoid 0 and 100. Theoretically, greater friction means longer spin-up time and shorter spin-down time. However, in game, greater friction means faster spin-up time and faster spin-down time.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fan Sounds</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
-Keyvalue_Description_here
+Set the sound to be played while the func_rotating is activated.
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -206,23 +206,23 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No Sound : Choice_Description_here</li>
-<li><b>1 </b> : Fast Whine : Choice_Description_here</li>
-<li><b>2 </b> : Slow Rush : Choice_Description_here</li>
-<li><b>3 </b> : Medium Rickety : Choice_Description_here</li>
-<li><b>4 </b> : Fast Beating : Choice_Description_here</li>
-<li><b>5 </b> : Slow Smooth : Choice_Description_here</li>
+<li><b>0 </b> : No Sound</li>
+<li><b>1 </b> : Fast Whine<div class="imagepadding" markdown="1">![Fast Whine](../audio/fan1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>2 </b> : Slow Rush<div class="imagepadding" markdown="1">![Slow Rush](../audio/fan2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>3 </b> : Medium Rickety<div class="imagepadding" markdown="1">![Medium Rickety](../audio/fan3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>4 </b> : Fast Beating<div class="imagepadding" markdown="1">![Fast Beating](../audio/fan4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>5 </b> : Slow Smooth<div class="imagepadding" markdown="1">![Slow Smooth](../audio/fan5.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>WAV Name</b></span> <kbd  class="tooltip" data-tooltip="sound">message</kbd> :
-Keyvalue_Description_here
+Allows you to specify a custom rotation-sound.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Obey Trigger Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iObeyTriggerMode</kbd> :
-Keyvalue_Description_here
+Controls how {{ entname }} behave when triggered with different use-types.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -231,40 +231,40 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No : 'Off', 'On' and 'Toggle'- toggle rotating.</li>
+<li><b>1 </b> : Yes : 'On'- start rotating, 'Off'- stop rotating, 'Toggle'- toggle rotating.</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>_minlight</b></span> <kbd  class="tooltip" data-tooltip="integer">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>X Y Z - Move here after lighting</b></span> <kbd  class="tooltip" data-tooltip="string">spawnorigin</kbd> :
-Keyvalue_Description_here
+This will move {{ entname }} to specified position on map start, preserving the lightning from original position.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage inflicted when blocked</b></span> <kbd  class="tooltip" data-tooltip="integer">dmg</kbd> :
-Keyvalue_Description_here
+Set the amount of damage to inflict on the object blocking the func_rotation's rotation.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start ON</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Reverse Direction</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">X Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Y Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Acc/Dcc</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Fan Pain</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Not Solid</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Small Radius</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Medium Radius</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Large Radius</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start ON</span> : If set, this func_rotating starts enabled.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Reverse Direction</span> : If set, this inverts the rotation direction.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">X Axis</span> : If set, this will rotate around the x-axis.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Y Axis</span> : If set, this will rotate around the y-axis.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Acc/Dcc</span> : If set, the func_rotating will smoothly accelerate and decelerate when turned on/off, based on the friction value.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Fan Pain</span> : If set, the func_rotating will inflict damage when touched, instead of only when blocked by something.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Not Solid</span> : Removes solidity from this func_rotating, making it harmless.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Small Radius</span> : Small sound radius, about ~384 units. Can be combined with "Medium radius" and "Large radius".</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Medium Radius</span> : Medium sound radius, about ~768 units. Can be combined with "Small radius" and "Large radius".</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Large Radius</span> : Large sound radius, about ~1536 units. Can be combined with "Small radius" and "Medium radius".</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices red">Func_rotating won't react to frequent triggering properly. It might stay in whatever state it is when triggered consecutively.</div>
+<div class="notices red">The entity might start to behave unexpectedly after many rotations. You can fix this by performing a modulo 360.0 operation on it's angles using a trigger_copyvalue.</div>

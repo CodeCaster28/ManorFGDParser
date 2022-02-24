@@ -5,7 +5,7 @@ title: func_monitor
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Brush entity that displays view of target [trigger_camera](../trigger_camera) on selected surfaces, turning it into display screen. This entity can be freely triggered to enable/disable rendering.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to enable or disable it. Depending on trigger use-type: 'On'- enable monitor, 'Toggle'- toggle monitor, 'Off'- disable monitor. Disabled monitor still renders the brush. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Specify [trigger_camera](../trigger_camera) to display a view from.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -66,11 +66,11 @@ Name of the texture to apply display on. Works only when "Texture Mode" is set t
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Width (Resolution)</b></span> <kbd  class="tooltip" data-tooltip="integer">width</kbd> :
-Keyvalue_Description_here
+Resolution (width). Better keep it low.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Height (Resolution)</b></span> <kbd  class="tooltip" data-tooltip="integer">height</kbd> :
-Keyvalue_Description_here
+Resolution (height). Better keep it low.
 </div>
 ###Flags
 <hr>
@@ -81,5 +81,3 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Render only every 2nd frame</span> : Update display only every two frames instead of every frame, this improves performance.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

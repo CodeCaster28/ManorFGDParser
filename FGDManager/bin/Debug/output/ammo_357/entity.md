@@ -5,7 +5,7 @@ title: ammo_357
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Provides 6 bullets for weapon_357 (Revolver 357) and weapon_eagle (Desert eagle). Maximum in supply: 36</div>
+<div class="column entityentry" markdown="1">Provides 6 bullets for [weapon_357](../weapon_357) (Revolver 357) and [weapon_eagle](../weapon_eagle) (Desert eagle). Maximum in supply: 36</div>
 </div>
 </div>
 ###Keyvalues

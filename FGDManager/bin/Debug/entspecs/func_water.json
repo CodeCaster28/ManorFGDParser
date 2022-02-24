@@ -1,6 +1,6 @@
 {
   "Classname": "func_water",
-  "Description": "This entity is used to create water. In game, every flat surface of the brushes of this entity will be waving up and down a specified distance. The brushes which are part of this must be cuboids, ideally snapped to 64-units-grid. It requires liquid ('!') texture for waving. Func_water is also a door type, it can be triggered to be opened and closed. Func_water should be touching the floor whenever it's closed or open or it may produce strange errors or become invisible. Func_water have breakable functionality (if enabled) just like other door types, however it cannot be destroyed by direct attack (bullet/melee), you can still destroy func_water by explosions or area of effect attacks(e.g. weapon_egon).",
+  "Description": "This entity is used to create water. In game, every flat surface of the brushes of this entity will be waving up and down a specified distance. The brushes which are part of this must be cuboids, ideally snapped to 64-units-grid. It requires liquid ('!') texture for waving. Func_water is also a door type, it can be triggered to be opened and closed the same was as [func_door](../func_door)- useful for rising/ascending water. Func_water should be touching the floor whenever it's closed or open or it may produce strange errors or become invisible. Func_water have breakable functionality (if enabled) just like other door types, however it cannot be destroyed by direct attack (bullet/melee), you can still destroy func_water by explosions or area of effect attacks(e.g. weapon_egon).",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",
@@ -15,6 +15,21 @@
           "choiceDescription": "If set, this water can be triggered by using it but not by touching it anymore. It should be selected if you need your water to be opened or closed by using it by whatever reason."
         }
       ]
+    },
+    {
+      "keyName": "target",
+      "keyDescription": "Entity to trigger whenever water completely \"opens\" or \"closes\". Trigger use-type is 'Toggle'.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "targetname",
+      "keyDescription": "Set name of {{ entname }} so other entities can trigger it to move water. As water is a door type in GoldSrc, it can be moved just like [func_door](../func_door). Behaviour, when triggered, depends on \"Obey Trigger Mode\" value. See \"Obey Trigger Mode\" for more details on how water behaves depending on selected mode. Can be kill-targeted.",
+      "keyChoices": []
+    },
+    {
+      "keyName": "killtarget",
+      "keyDescription": "Entity to remove when water \"opens\".",
+      "keyChoices": []
     },
     {
       "keyName": "skin",

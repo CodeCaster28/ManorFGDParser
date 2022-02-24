@@ -5,7 +5,7 @@ title: ammo_gaussclip
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Provides 20 rounds of radioactive ammunition for weapon_gauss (Gauss cannon) and weapon_egon (Egon). Maximum in supply: 100</div>
+<div class="column entityentry" markdown="1">Provides 20 rounds of radioactive ammunition for [weapon_gauss](../weapon_gauss) (Gauss cannon), [weapon_egon](../weapon_egon) (Egon) and [weapon_displacer](../weapon_displacer) (Displacer). Maximum in supply: 100</div>
 </div>
 </div>
 ###Keyvalues

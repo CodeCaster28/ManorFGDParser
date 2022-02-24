@@ -5,7 +5,7 @@ title: ammo_9mmbox
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Provides 200 bullets for weapon_9mmhandgun (Glock), weapon_9mmAR (MP5), weapon_uzi (Uzi) and weapon_uziakimbo (Uzi akimbo). Maximum in supply: 250</div>
+<div class="column entityentry" markdown="1">Provides 200 bullets for [weapon_9mmhandgun](../weapon_9mmhandgun) (Glock), [weapon_9mmAR](../weapon_9mmAR) (MP5), [weapon_uzi](../weapon_uzi) (Uzi) and [weapon_uziakimbo](../weapon_uziakimbo) (Uzi akimbo). Maximum in supply: 250</div>
 </div>
 </div>
 ###Keyvalues

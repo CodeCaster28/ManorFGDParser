@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_357",
-  "Description": "Provides 6 bullets for weapon_357 (Revolver 357) and weapon_eagle (Desert eagle). Maximum in supply: 36",
+  "Description": "Provides 6 bullets for [weapon_357](../weapon_357) (Revolver 357) and [weapon_eagle](../weapon_eagle) (Desert eagle). Maximum in supply: 36",
 	"KeyDescriptions": [
 	{
       "keyName": "target",

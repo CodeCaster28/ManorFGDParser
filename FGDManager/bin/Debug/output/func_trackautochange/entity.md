@@ -5,7 +5,7 @@ title: func_trackautochange
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Brush entity that works as a rotating ascending/descending elevator for uncontrollable func_tracktrain. It connects two path_tracks- elevator takes the train from last path_track of the top path, rotating and descending, and then, after finishing, the train is assigned to path_track of the bottom path. This can be reverted for ascending platform. The func_trackautochange platform need origin brush (preferably located at the center of entity), and the top and the bottom path_corners should be centered to this entity for best results. See the picture on the left- the platform with origin brush tied to it (func_trackautochange), and orange cubes that represents the top and the bottom path_track. Similar variant to this entity is [func_trackchange](../func_trackchange) which reacts on all triggering inputs so you can move this platform by triggering it, instead of triggering connected train.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to control track train. Depending on trigger use-type: 'On'- stop train movement on path after track travel, 'Off'- start train movement on path after track travel, 'Toggle'- toggle train movement on path after track travel. Can be kill-targeted but track train won't travel any further if it's on {{ entname }}.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -175,11 +175,11 @@ Allows you to setup a sound replacement file for the {{ entname }} sounds. The p
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
-Entity to trigger when {{ entname }} starts opening.
+Entity to trigger when {{ entname }} starts opening. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopening_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -197,11 +197,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosing</kbd> :
-Entity to trigger when door starts closing.
+Entity to trigger when door starts closing. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosing_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -219,11 +219,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopened</kbd> :
-Entity to trigger when door ends opening.
+Entity to trigger when door ends opening. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopened_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -241,11 +241,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosed</kbd> :
-Entity to trigger when door end closing.
+Entity to trigger when door end closing. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosed_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-9">
@@ -387,7 +387,7 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 ###Flags
 <hr>
@@ -402,5 +402,4 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Remember to create origin brush for this entity around which func_trackautochange rotates.</div>

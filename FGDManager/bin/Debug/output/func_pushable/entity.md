@@ -5,7 +5,7 @@ title: func_pushable
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Similar to [func_breakable](../func_breakable), but this entity can also be pushed and carried by players.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it. By default pushables can be moved around when holding +use key and directional key. If button (like func_button) that can be pressed with +use input have pushable as it's target, the pushable can be moved in a same way as if player was using +use key on pushable itself. This allows to move pushables remotely by using +use and directional keys on button. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger when {{ entname }} breaks. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -28,7 +28,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Entity to remove when {{ entname }} breaks
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
@@ -359,41 +359,43 @@ Allows you to setup a sound replacement file for the {{ entname }} sounds. The p
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Min Hull Size (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">minhullsize</kbd> :
-Keyvalue_Description_here
+Obsolete.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Max Hull Size (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">maxhullsize</kbd> :
-Keyvalue_Description_here
+Obsolete.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Friction (0-400)</b></span> <kbd  class="tooltip" data-tooltip="integer">friction</kbd> :
-Keyvalue_Description_here
+Friction of func_pushable, higher values makes it harder to move. Set it to 400 or values near to 400 to make it unmovable by pushing it (still func_pushable can be easily moved by using it and pressing left/right).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Buoyancy</b></span> <kbd  class="tooltip" data-tooltip="integer">buoyancy</kbd> :
-Keyvalue_Description_here
+How well this entity will float in liquid.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>HUD Info name</b></span> <kbd  class="tooltip" data-tooltip="string">displayname</kbd> :
-Keyvalue_Description_here
+Name you will see on the in-game HUD when looking at this entity. Requires "Show HUD Info" flag.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Repairable</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Monsters Ignore?</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Show HUD Info</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Breakable</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">1-Hit Break</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Explosives Only</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Liftable</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Repairable</span> : Players can repair this entity with the wrench.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Monsters Ignore?</span> : Monsters will ignore this entity.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Show HUD Info</span> : Whether or not to show the name and health of this entity when looking at it in-game.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Breakable</span> : Can be broken.</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">1-Hit Break</span> : Can be broken in one hit by the weapon set in "Instant Break Weapon".</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Explosives Only</span> : Can only be broken with explosives.</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Liftable</span> : Players can lift this entity off of the ground. It's recommended to not using this feature, it's heavily bugged.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices red">Liftable pushables shake when being held (and fly away when let go of).</div>
+<div class="notices red">Stacking liftable pushables on each other breaks them, making them fly infinitely up when attempting to be lifted again.</div>
+<div class="notices red">Pushables tend to get stuck in or go through complex geometry. Try to keep the area around this entity as square as possible.</div>
+<div class="notices red">Hull Size key is obsolete.</div>

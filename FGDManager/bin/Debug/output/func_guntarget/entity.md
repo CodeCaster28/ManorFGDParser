@@ -5,7 +5,7 @@ title: func_guntarget
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Func_guntarget is a [func_train](../func_train) able to fire it's target once, on receiving specified amount of damage. It need to be turned on (to make it move) in order to take a damage. Once it's gets activated it won't stop it's movement unless "killed". This entity cannot be stopped by triggering it nor reactivated. It is used in the Half-Life training course as gun target, hence the name.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to start it's movement. Only 'On' and 'Toggle' trigger use-types are accepted. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -217,31 +217,30 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed (units per second)</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+Movement-speed in units per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>First stop target</b></span> <kbd  class="tooltip" data-tooltip="target_source">target</kbd> :
-Keyvalue_Description_here
+The name of the first [path_corner](../path_corner) (where the train starts). The {{ entname }} is teleported to this position on map start, no matter where it's placed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire on damage</b></span> <kbd  class="tooltip" data-tooltip="target_source">message</kbd> :
-Keyvalue_Description_here
+Entity to trigger when func_guntarget receive a specified in "Damage to Take" amount of damage. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage to Take</b></span> <kbd  class="tooltip" data-tooltip="integer">health</kbd> :
-Keyvalue_Description_here
+Point of damage to take before guntarget trigger an entity typed in "Fire on damage". Should be different than 0.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start On</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start On</span> : If set, this func_guntarget starts enabled.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">When moving, func_guntarget can receive the damage like regular breakable entity, but when it stops, it behaves like regular func_train- some projectiles would bounce off out of it's surface.</div>

@@ -19,7 +19,7 @@
     },
     {
       "keyName": "target",
-      "keyDescription": "Entity to trigger when func_button gets pressed. Trigger use-type is defined in \"Use Type\" keyvalue.",
+      "keyDescription": "Entity to trigger when {{ entname }} gets pressed. Trigger use-type is defined in \"Use Type\" keyvalue.",
       "keyChoices": []
     },
     {
@@ -43,67 +43,67 @@
       "keyChoices": [
         {
           "choiceValue": "0",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button1.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button2.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button3.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button4.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button5.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button6.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "6",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button7.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "7",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button8.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "8",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button9.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "9",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button10.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "10",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button11.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "11",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/button1.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "14",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/lightswitch2.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         }
       ]

@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_sporeclip",
-  "Description": "Provides 1 spore grenade for weapon_sporelauncher (Spore launcher). Maximum in supply: 30",
+  "Description": "Provides 1 spore grenade for [weapon_sporelauncher](../weapon_sporelauncher) (Spore launcher). Maximum in supply: 30",
 	"KeyDescriptions": [
 	{
       "keyName": "target",

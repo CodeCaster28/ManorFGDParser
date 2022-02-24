@@ -5,7 +5,7 @@ title: func_wall
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">The most basic brush entity. Used for grouping complex brushes to avoid them from affecting VIS compilation unnecessarily bad. If it has toggleable textures, they will toggle when the entity is triggered.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to toggle animated textures used on func_wall's brush. If func_wall have animated or toggleable textures, and gets triggered, animated texture changes depending on trigger use-type: 'On'- turn animated texture off (+'NUM' to +A state), 'Toggle'- toggle animated texture, 'Off'- turn animated texture on (+A to +'NUM' state). Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -185,11 +185,11 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Texlight style</b></span> <kbd  class="tooltip" data-tooltip="choices">style</kbd> :
-Keyvalue_Description_here
+Apply a style to texlights of this brush (texlights are textures specified in [info_texlights](../info_texlights). This is not required when using [light_surface](../light_surface).
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -198,20 +198,20 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : Normal : Choice_Description_here</li>
-<li><b>-3</b> : Grouped : Choice_Description_here</li>
-<li><b>10</b> : Fluorescent flicker : Choice_Description_here</li>
-<li><b>2 </b> : Slow, strong pulse : Choice_Description_here</li>
-<li><b>11</b> : Slow pulse, noblack : Choice_Description_here</li>
-<li><b>5 </b> : Gentle pulse : Choice_Description_here</li>
-<li><b>1 </b> : Flicker A : Choice_Description_here</li>
-<li><b>6 </b> : Flicker B : Choice_Description_here</li>
-<li><b>3 </b> : Candle A : Choice_Description_here</li>
-<li><b>7 </b> : Candle B : Choice_Description_here</li>
-<li><b>8 </b> : Candle C : Choice_Description_here</li>
-<li><b>4 </b> : Fast strobe : Choice_Description_here</li>
-<li><b>9 </b> : Slow strobe : Choice_Description_here</li>
-<li><b>12</b> : Underwater : Choice_Description_here</li>
+<li><b>0 </b> : Normal</li>
+<li><b>-3</b> : Grouped : Allow your texlights to be switchable. To use it, create a light entity with the same name as this brush entity. Turning the light on and off will now turn the texlights on and off, too.</li>
+<li><b>10</b> : Fluorescent flicker</li>
+<li><b>2 </b> : Slow, strong pulse</li>
+<li><b>11</b> : Slow pulse, noblack</li>
+<li><b>5 </b> : Gentle pulse</li>
+<li><b>1 </b> : Flicker A</li>
+<li><b>6 </b> : Flicker B</li>
+<li><b>3 </b> : Candle A</li>
+<li><b>7 </b> : Candle B</li>
+<li><b>8 </b> : Candle C</li>
+<li><b>4 </b> : Fast strobe</li>
+<li><b>9 </b> : Slow strobe</li>
+<li><b>12</b> : Underwater</li>
 </ul>
 </div>
 </div>
@@ -220,9 +220,7 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Use Angles</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Use Angles</span> : If set, the func_wall will use its angles (Pitch Yaw Roll). This requires origin brush tied to it, otherwise it will pick world origin.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

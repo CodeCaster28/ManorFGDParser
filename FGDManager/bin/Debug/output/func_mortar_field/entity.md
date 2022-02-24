@@ -5,7 +5,7 @@ title: func_mortar_field
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This entity serves as a spawnzone for mortars, which cause a sound effect, shortly followed by an explosion on the ground straight below where they were spawned. This entity can be hooked up to [momentary_rot_buttons](../momentary_rot_button) to do aimed mortar strikes.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to call a mortar strike. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
@@ -88,15 +88,15 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Spread Radius</b></span> <kbd  class="tooltip" data-tooltip="integer">m_flSpread</kbd> :
-Keyvalue_Description_here
+Mortars spreading radius, bombs will spawn randomly within specified radius.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Repeat Count</b></span> <kbd  class="tooltip" data-tooltip="integer">m_iCount</kbd> :
-Keyvalue_Description_here
+Amount of mortars to spawn each airstrike call.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Targeting</b></span> <kbd  class="tooltip" data-tooltip="Choices">m_fControl</kbd> :
-Keyvalue_Description_here
+Controls area of airstrike.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">
@@ -105,20 +105,18 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : Random : Choice_Description_here</li>
-<li><b>1 </b> : Activator : Choice_Description_here</li>
-<li><b>2 </b> : Table : Choice_Description_here</li>
+<li><b>0 </b> : Random : Makes mortars spawn randomly within volume of func_mortar_field.</li>
+<li><b>1 </b> : Activator : Option simply force mortars to strike at '!activator' (activator of the script) e.g. when player pushed a button which fires func_mortar_field, and the 'Activator' option is selected, the mortars spawns above the player. Note that bombs will be called at '!activator' location in a moment of firing func_mortar_field, what means the '!activator' have a time to escape from within airstrike area. Another think about 'Activator' option is that '!activator' location is not important- the bombs will strike '!activator' even if it's out of volume of the func_mortar_field- the location, placement and size of this entity does not matter.</li>
+<li><b>2 </b> : Table : This variant seen in Half Life single player campaign- Gordon controls the airstrike area by two momentary button, first button controls X position of mortarts, and the second button controls it's Y position. This option enables "X Controller" and "Y Controller" keyvalues. When func_mortar_field is triggered, the entity picks percentage of X and Y position (from left/top to right/bottom) of func_rot_buttons hooked to it, and converts those to X and Y sizes of this entity volume, e.g. when the left/right momentary button (X Controller) is in the far left side, and the top/bottom momentary button (Y Controlled) is in the center of the whole movement distance, the airstrike will be called at 0% X and 50% Y position of func_mortar_field.</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>X Controller</b></span> <kbd  class="tooltip" data-tooltip="target_destination">m_iszXController</kbd> :
-Keyvalue_Description_here
+The name of [momentary_rot_button](../momentary_rot_button) or [func_rot_button](../func_rot_button) to control X coordinates of mortar spawnpoint. Requires 'Table' value in "Targeting" key (see above).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Y Controller</b></span> <kbd  class="tooltip" data-tooltip="target_destination">m_iszYController</kbd> :
-Keyvalue_Description_here
+The name of [momentary_rot_button](../momentary_rot_button) or [func_rot_button](../func_rot_button) to control Y coordinates of mortar spawnpoint. Requires 'Table' value in "Targeting" key (see above).
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

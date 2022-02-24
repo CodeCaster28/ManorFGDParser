@@ -5,7 +5,7 @@ title: ammo_556clip
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Provides 100 bullets for weapon_minigun (Minigun), weapon_m16 (M16) and weapon_m249 (Squad Automatic Weapon). Maximum in supply: 30</div>
+<div class="column entityentry" markdown="1">Provides 100 bullets for [weapon_minigun](../weapon_minigun) (Minigun), [weapon_m16](../weapon_m16) (M16) and [weapon_m249](../weapon_m249) (Squad Automatic Weapon). Maximum in supply: 30</div>
 </div>
 </div>
 ###Keyvalues

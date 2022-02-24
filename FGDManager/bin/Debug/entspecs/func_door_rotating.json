@@ -1,6 +1,6 @@
 {
   "Classname": "func_door_rotating",
-  "Description": "Entity_Description_here",
+  "Description": "A func_door_rotating will rotate around a point determined by the center of an origin brush tied to it for a set amount of degrees and return after a specified amount of time. The logic behind its mechanics are identical to those of a [func_door](../func_door).",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",

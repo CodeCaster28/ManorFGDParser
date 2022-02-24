@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_556clip",
-  "Description": "Provides 100 bullets for weapon_minigun (Minigun), weapon_m16 (M16) and weapon_m249 (Squad Automatic Weapon). Maximum in supply: 30",
+  "Description": "Provides 100 bullets for [weapon_minigun](../weapon_minigun) (Minigun), [weapon_m16](../weapon_m16) (M16) and [weapon_m249](../weapon_m249) (Squad Automatic Weapon). Maximum in supply: 30",
 	"KeyDescriptions": [
 	{
       "keyName": "target",

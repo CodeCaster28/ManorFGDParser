@@ -5,7 +5,7 @@ title: func_tracktrain
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This is a [func_train](../func_train) with a greater set of features (like auto-rotation). Func_tracktrains are supposed to be controlled by players. Triggering them manually to get them moving works once. Any further triggering is ignored. Origin brush is required for this entity. To make it controllable you must use [func_traincontrols](../func_traincontrols) as well.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to start or stop it. Depending on trigger use-type: 'On'- start moving, 'Toggle'- start/stop moving, 'Off'- stop moving. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -221,11 +221,11 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>First stop target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Keyvalue_Description_here
+The name of the first [path_track](..path_track/) (where the train starts). Train is teleported to this position on map start, no matter where it's placed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
-Keyvalue_Description_here
+Sound group (move, break, start) to use on that train.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -234,76 +234,76 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : None : Choice_Description_here</li>
-<li><b>1</b> : Rail 1 : Choice_Description_here</li>
-<li><b>2</b> : Rail 2 : Choice_Description_here</li>
-<li><b>3</b> : Rail 3 : Choice_Description_here</li>
-<li><b>4</b> : Rail 4 : Choice_Description_here</li>
-<li><b>5</b> : Rail 6 : Choice_Description_here</li>
-<li><b>6</b> : Rail 7 : Choice_Description_here</li>
+<li><b>0</b> : None</li>
+<li><b>1</b> : Rail 1 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 1](../audio/ttrain1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>2</b> : Rail 2 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 2](../audio/ttrain2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>3</b> : Rail 3 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 3](../audio/ttrain3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>4</b> : Rail 4 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 4](../audio/ttrain4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>5</b> : Rail 6 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 6](../audio/ttrain6.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>6</b> : Rail 7 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 7](../audio/ttrain7.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Move Sound Override</b></span> <kbd  class="tooltip" data-tooltip="sound">noise</kbd> :
-Keyvalue_Description_here
+Custom sound file that is playing when track train is moving. Overrides default "Sound" sounds.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Brake Sound Override</b></span> <kbd  class="tooltip" data-tooltip="sound">noise1</kbd> :
-Keyvalue_Description_here
+Custom sound file to play when track train stops. Overrides default "Sound" sounds.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Start Sound Override</b></span> <kbd  class="tooltip" data-tooltip="sound">noise2</kbd> :
-Keyvalue_Description_here
+Custom sound file to play when track start it's movement. Overrides default "Sound" sounds.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Distance between the wheels</b></span> <kbd  class="tooltip" data-tooltip="integer">wheels</kbd> :
-Keyvalue_Description_here
+Distance between the virtual track train wheels. Set to higher value for smoother track train turning, but the best value is a func_tracktrain length.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Height above track</b></span> <kbd  class="tooltip" data-tooltip="integer">height</kbd> :
-Keyvalue_Description_here
+This is the height above the path_track that the train will ride, based on the location of the train's origin brush.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Initial speed</b></span> <kbd  class="tooltip" data-tooltip="integer">startspeed</kbd> :
-Keyvalue_Description_here
+It's a starting speed of func_tracktrain. Set it to '0' so the track train is not moving at map start. Path_track and player controls may override this.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed (units per second)</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+Maximum speed of the track train. If player controllable, this is a maximum speed level of the train.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage on crush</b></span> <kbd  class="tooltip" data-tooltip="integer">dmg</kbd> :
-Keyvalue_Description_here
+Damage to deal to entities that attempts to block it.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Volume (10 = loudest)</b></span> <kbd  class="tooltip" data-tooltip="integer">volume</kbd> :
-Keyvalue_Description_here
+Volume of sounds produced by this train selected in "Sound".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Bank angle on turns</b></span> <kbd  class="tooltip" data-tooltip="string">bank</kbd> :
-Keyvalue_Description_here
+When func_trackrain is turning left of right, this is an bank angle (in degrees), e.g. when turning, the train will also rotate itself around track axis (by this value) in a moment of turning. To explain this, image a roller coaster cart that banks itself whenever it's at turning point.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
-Keyvalue_Description_here
+Allows you to setup a sound replacement file for the func_tracktrain sounds. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a custom_precache point entity.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">No Pitch (X-rot)</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">No User Control</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Forward Only</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Passable</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">No YAW (Y-rot)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">No Pitch (X-rot)</span> : Prevents train from auto-rotating around X axis. If path_tracks are on the same level, this flag is obsolete.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">No User Control</span> : Func_tracktrain cannot be controlled by player.</li>
+<li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Forward Only</span> : Train can't travel backward.</li>
+<li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Passable</span> : Disable collision of train.</li>
+<li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">No YAW (Y-rot)</span> : Prevents train from auto-rotating around Y axis. If path_tracks are on the same level, this flag is obsolete.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Func_tracktrain must face west (90 degrees) at editor position. At map start the track train automatically rotates to face next path_track.</div>
+<div class="notices blue">Func_tracktrain supports clip brushes tied onto it.</div>

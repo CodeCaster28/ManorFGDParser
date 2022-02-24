@@ -116,7 +116,7 @@ Set name of {{ entname }} so other entities can trigger it to turn texture light
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Appearance (no name allowed)</b></span> <kbd  class="tooltip" data-tooltip="choices">style</kbd> :
-Allows you to select a light style. This will only work when a targetname is NOT set. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.
+Allows you to select a light style.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">

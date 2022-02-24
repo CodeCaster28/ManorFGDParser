@@ -5,14 +5,14 @@ title: button_target
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">A brush entity, which, in its essence, acts like a [func_button](../func_button), except that it has been designed specifically for triggering only when damaged unless set up otherwise. The damage it receives does not matter. You can add targetname manually to this entity. When triggered, it's behaviour depends on use-type: 'On'- press button on, 'Off'- press button off, 'Toggle'- toggle button. Can also be kill-targeted.</div>
+<div class="column entityentry" markdown="1">A brush entity, which, in its essence, acts like a [func_button](../func_button), except that it has been designed specifically for triggering only when damaged unless set up otherwise. The damage it receives does not matter.</div>
 </div>
 </div>
 ###Keyvalues
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Entity to trigger whenever a button is pressed. Trigger use-type is defined at "Use Type" keyvalue.
+Entity to trigger whenever a button is pressed. Trigger use-type is defined in "Use Type" keyvalue.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
@@ -198,3 +198,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start On</span> : Deprecated in Sven Co-op.</li>
 </ul>
 </div>
+<div class="notices blue">Button_target supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. Now entity can be killed and when triggered, it's behaviour depends on use-type: 'On'- press button on, 'Off'- press button off, 'Toggle'- toggle button.</div>

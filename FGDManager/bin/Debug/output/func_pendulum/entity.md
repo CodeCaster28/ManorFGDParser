@@ -5,7 +5,7 @@ title: func_pendulum
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Similar to [func_rotating](../func_rotating), this entity simulates a pendulum, using the center of an origin brush tied to it as rotation point.</div>
 </div>
 </div>
 ###Keyvalues
@@ -20,7 +20,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to toggle it's swinging. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
@@ -185,35 +185,36 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+Speed of rotation in a moment of full swing speed. Remember that pendulum smooth it's movement while changing direction. Also the speed is gradually decreased when "Damping" keyvalue is set.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Distance (deg)</b></span> <kbd  class="tooltip" data-tooltip="integer">distance</kbd> :
-Keyvalue_Description_here
+Distance in which pendulum is swinging (counter clockwise). It rotates around z axis by default (if either "X Axis" and "Y Axis" flags are not selected). Remember that starting position of func_pendulum is not it's rotation center. The pendulum will rotate the whole distance e.g. if it's positioned horizontally, and distance is set to 90, func_pendulum will rotate itself from starting horizontal position to ending vertical position.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damping (0-1000)</b></span> <kbd  class="tooltip" data-tooltip="integer">damp</kbd> :
-Keyvalue_Description_here
+If set, the pendulum will slows itself gradually when activated, until it completely stops. Higher values makes pendulum stops quicker. Values like 600, 700 gives only several seconds for pendulum to stop. I you need realistic pendulum deceleration, you should be satisfied with values like 10, 20 or 30. Precise mathematical mechanics behind "Damping" are unknown.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage inflicted when blocked</b></span> <kbd  class="tooltip" data-tooltip="integer">dmg</kbd> :
-Keyvalue_Description_here
+Amount of damage to deal to entities that are blocking it. Only makes sense when "Passable" flag is not selected.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>_minlight</b></span> <kbd  class="tooltip" data-tooltip="integer">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Start ON</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Passable</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Auto-return</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Start ON</span> : Entity is enabled on start. If "Damping" is specified, it will gradually decelerates at map start.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Passable</span> : Disables collision of func_pendulum.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Auto-return</span> : If selected, the pendulum returns to it's starting position when triggered. By default, it's stops at position where it has been triggered. Whenever this flag is selected or no, func_pendulum is toggleable entity.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : If selected, the pendulum will rotate around X axis. Can be combined with "Y Axis". If either this flag and "Y Axis" are not selected, the pendulum rotates around z axis.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : If selected, the pendulum will rotate around Y axis. Can be combined with "X Axis". If either this flag and "X Axis" are not selected, the pendulum rotates around z axis.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices red">Triggering func_pendulum without "Auto Return" flag may break it's rotation range.</div>
+<div class="notices red">Func_pendulum is a little glitchy. Move distance might be increased, decreased or relocated by unknown reasons.</div>
+<div class="notices red">Func_pendulum won't react to frequent triggering properly. It might stay in whatever state it is when triggered consecutively.</div>

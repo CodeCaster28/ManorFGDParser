@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_gaussclip",
-  "Description": "Provides 20 rounds of radioactive ammunition for weapon_gauss (Gauss cannon) and weapon_egon (Egon). Maximum in supply: 100",
+  "Description": "Provides 20 rounds of radioactive ammunition for [weapon_gauss](../weapon_gauss) (Gauss cannon), [weapon_egon](../weapon_egon) (Egon) and [weapon_displacer](../weapon_displacer) (Displacer). Maximum in supply: 100",
 	"KeyDescriptions": [
 	{
       "keyName": "target",

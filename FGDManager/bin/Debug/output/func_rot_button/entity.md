@@ -5,7 +5,7 @@ title: func_rot_button
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A brush entity, which can be triggered by the player by issuing his 'Use'-command on it while standing next to it and looking at it. This is a rotating variant of the [func_button](../func_button) which can be used to create rotating interactable objects like levers or valves. The origin brush is required for this entity, around which func_rot_button rotates.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to press/toggle it. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger when {{ entname }} gets pressed. Trigger use-type is defined in "Use Type" keyvalue.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
@@ -422,23 +422,23 @@ Sentence from "default_sentences.txt" or custom sentences file (which can be add
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ChangeTarget Name</b></span> <kbd  class="tooltip" data-tooltip="target_destination">changetarget</kbd> :
-Keyvalue_Description_here
+Non-functional keyvalue. If specified, it supposed to change this func_rot_button's target's "Target" field to the name specified in "ChangeTarget Name" of this func_rot_button.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Keyvalue_Description_here
+Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't work. When multisource entity is triggered/being triggering by all possible inputs, the {{ entname }} will be enabled and ready to be pressed. When multisource lost at least one input signal, the entities becomes disabled again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+Speed at which the button rotates (around z axis by default) when pressed.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Health (shootable if > 0)</b></span> <kbd  class="tooltip" data-tooltip="integer">health</kbd> :
-Keyvalue_Description_here
+If you enter here value higher than 0, the button becomes shootable only, and can be activated when it's out of health.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sounds</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
-Keyvalue_Description_here
+Set the sound to be played when the button is pressed. It will play when the button is locked, too.
 <div class="accordion">
 <input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-15">
@@ -447,22 +447,22 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>21</b> : Squeaky : Choice_Description_here</li>
-<li><b>22</b> : Squeaky Pneumatic : Choice_Description_here</li>
-<li><b>23</b> : Ratchet Groan : Choice_Description_here</li>
-<li><b>24</b> : Clean Ratchet : Choice_Description_here</li>
-<li><b>25</b> : Gas Clunk : Choice_Description_here</li>
+<li><b>21</b> : Squeaky<div class="imagepadding" markdown="1">![Squeaky](../audio/lever1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>22</b> : Squeaky Pneumatic<div class="imagepadding" markdown="1">![Squeaky Pneumatic](../audio/lever2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>23</b> : Ratchet Groan<div class="imagepadding" markdown="1">![Ratchet Groan](../audio/lever3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>24</b> : Clean Ratchet<div class="imagepadding" markdown="1">![Clean Ratchet](../audio/lever4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>25</b> : Gas Clunk<div class="imagepadding" markdown="1">![Gas Clunk](../audio/lever5.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Override</b></span> <kbd  class="tooltip" data-tooltip="sound">noise</kbd> :
-Keyvalue_Description_here
+Custom sound, that overrides default sound from "Sounds" list to play when the button is pressed. It will play when the button is locked, too.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay before reset</b></span> <kbd  class="tooltip" data-tooltip="choices">wait</kbd> :
-Keyvalue_Description_here
+When the button is pressed, it will remain in its pressed state for this amount of time. This also affects any toggleable textures on it. If set to '-1', the button can be pressed only once, and will then remain in its pressed state forever. If a multisource entity is among the func_rot_button's targets, that multisource entity will recognize the button's input to be active only for this amount of time.
 <div class="accordion">
 <input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-16">
@@ -471,26 +471,26 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>-1</b> : Stays pressed : Choice_Description_here</li>
+<li><b>-1</b> : Stays pressed</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay before trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
-Keyvalue_Description_here
+Delay before triggering entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Distance (deg)</b></span> <kbd  class="tooltip" data-tooltip="integer">distance</kbd> :
-Keyvalue_Description_here
+How many degrees the button rotates around it's origin axis (z axis by default). Can be negative.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>_minlight</b></span> <kbd  class="tooltip" data-tooltip="integer">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Use Type</b></span> <kbd  class="tooltip" data-tooltip="choices">use_type</kbd> :
-Keyvalue_Description_here
+Set the use-type with which the button will trigger its targets. Default is 'Toggle'.
 <div class="accordion">
 <input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-17">
@@ -499,10 +499,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : Off : Choice_Description_here</li>
-<li><b>1</b> : On : Choice_Description_here</li>
-<li><b>2</b> : Set : Choice_Description_here</li>
-<li><b>3</b> : Toggle : Choice_Description_here</li>
+<li><b>0</b> : Off</li>
+<li><b>1</b> : On</li>
+<li><b>2</b> : Set</li>
+<li><b>3</b> : Toggle</li>
 </ul>
 </div>
 </div>
@@ -511,14 +511,12 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Not solid</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Reverse Dir</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Toggle</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Touch Activates</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Not solid</span> : Turns solidity of this entity off.</li>
+<li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Reverse Dir</span> : Reverses the direction of rotation. The same effect is given by making "Distance" value negative.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Toggle</span> : If set, this func_rot_button will ignore its delay before reset and be toggleable instead, switching between the texture states whenever pressed, if such a texture is assigned on one of its faces. The delay before reset still needs to be greater than zero in order for this to work, though.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : If set, this will rotate around the x-axis.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : If set, this will rotate around the y-axis.</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Touch Activates</span> : If set, this func_rot_button can be activated by touching it. This disables activating per use-key.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

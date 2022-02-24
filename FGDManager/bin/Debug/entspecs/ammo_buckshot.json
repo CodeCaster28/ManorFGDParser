@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_buckshot",
-  "Description": "Provides 12 buckshots for weapon_shotgun (Shotgun). Maximum in supply: 125",
+  "Description": "Provides 12 buckshots for [weapon_shotgun](../weapon_shotgun) (Shotgun). Maximum in supply: 125",
 	"KeyDescriptions": [
 	{
       "keyName": "target",

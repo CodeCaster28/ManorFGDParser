@@ -5,7 +5,7 @@ title: info_target
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Similar to [info_null](../info_null) but serves as a target for [trigger_camera](../trigger_camera) or [env_laser](../env_laser).</div>
+<div class="column entityentry" markdown="1">Similar to [info_null](../info_null) but serves as a target for [trigger_camera](../trigger_camera), [env_laser](../env_laser) or [func_portal](../func_portal).</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,5 +16,5 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set the name so other entity can point to this entity as a target, like [trigger_camera](../trigger_camera) or [env_laser](../env_laser).
+Set the name so other entity can point to this entity as a target.
 </div>

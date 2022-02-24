@@ -5,7 +5,7 @@ title: func_platrot
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Same as [func_plat](../func_plat), but it also rotates with customizable rotation speed. Vertically moving elevator that moves up automatically when player step on it. It is also automatically called when player wait for it at the top of the whole travel altitude. This entity requires origin brush tied to it.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to enable it (or move it manually with "Toggle" flag checked). Func_platrot is automatically enabled if this key is empty. With "Toggle" flag enabled the behaviour is based on trigger use-type: 'On'- move forward, 'Off'- move backward, 'Toggle'- move. With "Toggle" flag disabled all trigger use-types are accepted to enable lift. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
@@ -175,11 +175,11 @@ Allows you to setup a sound replacement file for the {{ entname }} sounds. The p
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
-Entity to trigger when {{ entname }} starts opening.
+Entity to trigger when {{ entname }} starts opening. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopening_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -197,11 +197,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosing</kbd> :
-Entity to trigger when door starts closing.
+Entity to trigger when door starts closing. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosing_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -219,11 +219,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopened</kbd> :
-Entity to trigger when door ends opening.
+Entity to trigger when door ends opening. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopened_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -241,11 +241,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End</b></span> <kbd  class="tooltip" data-tooltip="string">fireonclosed</kbd> :
-Entity to trigger when door end closing.
+Entity to trigger when door end closing. Trigger use-type can be specified below.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Close End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosed_triggerstate</kbd> :
-Set the use-type with which the entity specified above will be fired.
+Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-9">
@@ -363,29 +363,28 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed of rotation</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+Movement-speed in units per second.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Travel altitude (can be negative)</b></span> <kbd  class="tooltip" data-tooltip="integer">height</kbd> :
-Keyvalue_Description_here
+How many units func_plat travels from it's starting position when someone step on it. Set to negative to make func_plat travels down.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Spin amount</b></span> <kbd  class="tooltip" data-tooltip="integer">rotation</kbd> :
-Keyvalue_Description_here
+Total amount of degrees this entity spins from it's starting to ending position.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Minimum light level</b></span> <kbd  class="tooltip" data-tooltip="string">_minlight</kbd> :
-Keyvalue_Description_here
+Sets the minimum light level. Set this value if entity is too dark on compiled map. Also useful for things like computer screens or holograms. Default is 0, max 1.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Toggle</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Toggle</span> : If selected, the lift is no more automatically called from top and activated by stepping on it. It required trigger to do so.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : Enable this to make platform rotate around x axis instead of z axis.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : Enable this to make platform rotate around y axis instead of z axis.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Just specifying a targetname makes func_plat not working until triggered.</div>

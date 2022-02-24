@@ -1,6 +1,6 @@
 {
   "Classname": "ammo_ARgrenades",
-  "Description": "Provides 2 AR grenades for weapon_m16 (M16). Maximum in supply: 10",
+  "Description": "Provides 2 AR grenades for [weapon_m16](../weapon_m16) (M16). Maximum in supply: 10",
 	"KeyDescriptions": [
 	{
       "keyName": "target",
