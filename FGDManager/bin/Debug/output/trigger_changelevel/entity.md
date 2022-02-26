@@ -5,7 +5,7 @@ title: trigger_changelevel
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Entity which causes a level-change when entered, without showing up a scoreboard. Scores are no transferred. Can be set to only react to triggering. You can add master keyvalue manually to this entity.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to change level. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Inventory: Need item(s)</b></span> <kbd  class="tooltip" data-tooltip="string">item_name_required</kbd> :
@@ -208,15 +208,15 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>New map name</b></span> <kbd  class="tooltip" data-tooltip="string">map</kbd> :
-Keyvalue_Description_here
+Name of the map to switch to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Landmark name</b></span> <kbd  class="tooltip" data-tooltip="string">landmark</kbd> :
-Keyvalue_Description_here
+Landmark used to work as an orientation point between two maps in a center of both trigger_changelevels of maps. It doesn't work in Sven Co-op, cause players starts at spawn points normally when new map loads.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Players take inventory to new map</b></span> <kbd  class="tooltip" data-tooltip="choices">keep_inventory</kbd> :
-Keyvalue_Description_here
+If set to "Yes", player's ammo, armor and weapons are carried to target map.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -225,32 +225,31 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Change Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">changetarget</kbd> :
-Keyvalue_Description_here
+Unknown purpose. Maybe it triggers a target in goal map.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay before change target</b></span> <kbd  class="tooltip" data-tooltip="string">changedelay</kbd> :
-Keyvalue_Description_here
+Delays "Change Target" action, whatever that action does.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Percentage of players needed</b></span> <kbd  class="tooltip" data-tooltip="string">percent_of_players</kbd> :
-Keyvalue_Description_here
+Percentage of total amount of players needed to reach this point in order for level change.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">No Intermission</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">USE Only</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">No CVAR override</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">No Intermission</span> : Unknown purpose.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">USE Only</span> : Cause trigger_changelevel to work like point entity, which means it need to be triggered to perform map change.</li>
+<li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">No CVAR override</span> : Do not override CVARs of destination map.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Trigger_changelevel supports to have a master (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled.</div>

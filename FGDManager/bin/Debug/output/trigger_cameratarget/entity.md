@@ -5,7 +5,7 @@ title: trigger_cameratarget
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A brush-based entity you can click on using the mouse cursor function of the [trigger_camera](../trigger_camera).</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to enable or disable camera target. Depending on trigger use-type: 'On'- enable camera target, 'Toggle'- toggle camera target, 'Off'- disable camera target. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
@@ -88,7 +88,7 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Left Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_0_0</kbd> :
-Keyvalue_Description_here
+Perform selected action when this entity is clicked with left mouse button.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">
@@ -97,24 +97,24 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No Action : Choice_Description_here</li>
-<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b> : Remove : Choice_Description_here</li>
-<li><b>5 </b> : Hurt : Choice_Description_here</li>
-<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>0 </b> : No Action : No action (disable this feature).</li>
+<li><b>1 </b> : Trigger Off : Triggers target specified in "Click Target" with 'Off' use-type.</li>
+<li><b>2 </b> : Trigger On : Triggers target specified in "Click Target" with 'On' use-type.</li>
+<li><b>3 </b> : Trigger Toggle : Triggers target specified in "Click Target" with 'Toggle' use-type.</li>
+<li><b>4 </b> : Remove : Remove target specified in "Click Target".</li>
+<li><b>5 </b> : Hurt : Deal a damage to target specified in "Click Target" by amount specified in "Click Param".</li>
+<li><b>6 </b> : Heal : Heal a target specified in "Click Target" by amount specified in "Click Param".</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Left Click Param</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_param_0_0</kbd> :
-Keyvalue_Description_here
+Some actions from keyvalue above can have parameter specified.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Left Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_0_0</kbd> :
-Keyvalue_Description_here
+Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">
@@ -123,19 +123,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Left Click Target</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_target_0_0</kbd> :
-Keyvalue_Description_here
+Entity to trigger with specified action and parameter.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Right Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_1_0</kbd> :
-Keyvalue_Description_here
+Perform selected action when this entity is clicked with right mouse button.
 <div class="accordion">
 <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-6">
@@ -144,24 +144,24 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No Action : Choice_Description_here</li>
-<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b> : Remove : Choice_Description_here</li>
-<li><b>5 </b> : Hurt : Choice_Description_here</li>
-<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>0 </b> : No Action : No action (disable this feature).</li>
+<li><b>1 </b> : Trigger Off : Triggers target specified in "Click Target" with 'Off' use-type.</li>
+<li><b>2 </b> : Trigger On : Triggers target specified in "Click Target" with 'On' use-type.</li>
+<li><b>3 </b> : Trigger Toggle : Triggers target specified in "Click Target" with 'Toggle' use-type.</li>
+<li><b>4 </b> : Remove : Remove target specified in "Click Target".</li>
+<li><b>5 </b> : Hurt : Deal a damage to target specified in "Click Target" by amount specified in "Click Param".</li>
+<li><b>6 </b> : Heal : Heal a target specified in "Click Target" by amount specified in "Click Param".</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Right Click Param</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_param_1_0</kbd> :
-Keyvalue_Description_here
+Some actions from keyvalue above can have parameter specified.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Right Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_1_0</kbd> :
-Keyvalue_Description_here
+Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -170,19 +170,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Right Click Target</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_target_1_0</kbd> :
-Keyvalue_Description_here
+Entity to trigger with specified action and parameter.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Third Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_2_0</kbd> :
-Keyvalue_Description_here
+Perform selected action when this entity is clicked with middle mouse button.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -191,24 +191,24 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No Action : Choice_Description_here</li>
-<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b> : Remove : Choice_Description_here</li>
-<li><b>5 </b> : Hurt : Choice_Description_here</li>
-<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>0 </b> : No Action : No action (disable this feature).</li>
+<li><b>1 </b> : Trigger Off : Triggers target specified in "Click Target" with 'Off' use-type.</li>
+<li><b>2 </b> : Trigger On : Triggers target specified in "Click Target" with 'On' use-type.</li>
+<li><b>3 </b> : Trigger Toggle : Triggers target specified in "Click Target" with 'Toggle' use-type.</li>
+<li><b>4 </b> : Remove : Remove target specified in "Click Target".</li>
+<li><b>5 </b> : Hurt : Deal a damage to target specified in "Click Target" by amount specified in "Click Param".</li>
+<li><b>6 </b> : Heal : Heal a target specified in "Click Target" by amount specified in "Click Param".</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Third Click Param</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_param_2_0</kbd> :
-Keyvalue_Description_here
+Some actions from keyvalue above can have parameter specified.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Third Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_2_0</kbd> :
-Keyvalue_Description_here
+Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
 <input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-9">
@@ -217,19 +217,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Third Click Target</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_target_2_0</kbd> :
-Keyvalue_Description_here
+Entity to trigger with specified action and parameter.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Left Double Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_0_1</kbd> :
-Keyvalue_Description_here
+Perform selected action when this entity is double-clicked with left mouse button.
 <div class="accordion">
 <input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-10">
@@ -238,24 +238,24 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No Action : Choice_Description_here</li>
-<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b> : Remove : Choice_Description_here</li>
-<li><b>5 </b> : Hurt : Choice_Description_here</li>
-<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>0 </b> : No Action : No action (disable this feature).</li>
+<li><b>1 </b> : Trigger Off : Triggers target specified in "Click Target" with 'Off' use-type.</li>
+<li><b>2 </b> : Trigger On : Triggers target specified in "Click Target" with 'On' use-type.</li>
+<li><b>3 </b> : Trigger Toggle : Triggers target specified in "Click Target" with 'Toggle' use-type.</li>
+<li><b>4 </b> : Remove : Remove target specified in "Click Target".</li>
+<li><b>5 </b> : Hurt : Deal a damage to target specified in "Click Target" by amount specified in "Click Param".</li>
+<li><b>6 </b> : Heal : Heal a target specified in "Click Target" by amount specified in "Click Param".</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Left Double Click Param</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_param_0_1</kbd> :
-Keyvalue_Description_here
+Some actions from keyvalue above can have parameter specified.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Left Double Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_0_1</kbd> :
-Keyvalue_Description_here
+Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
 <input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-11">
@@ -264,19 +264,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Left Double Click Target</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_target_0_1</kbd> :
-Keyvalue_Description_here
+Entity to trigger with specified action and parameter.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Right Double Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_1_1</kbd> :
-Keyvalue_Description_here
+Perform selected action when this entity is double-clicked with right mouse button.
 <div class="accordion">
 <input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-12">
@@ -285,24 +285,24 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No Action : Choice_Description_here</li>
-<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b> : Remove : Choice_Description_here</li>
-<li><b>5 </b> : Hurt : Choice_Description_here</li>
-<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>0 </b> : No Action : No action (disable this feature).</li>
+<li><b>1 </b> : Trigger Off : Triggers target specified in "Click Target" with 'Off' use-type.</li>
+<li><b>2 </b> : Trigger On : Triggers target specified in "Click Target" with 'On' use-type.</li>
+<li><b>3 </b> : Trigger Toggle : Triggers target specified in "Click Target" with 'Toggle' use-type.</li>
+<li><b>4 </b> : Remove : Remove target specified in "Click Target".</li>
+<li><b>5 </b> : Hurt : Deal a damage to target specified in "Click Target" by amount specified in "Click Param".</li>
+<li><b>6 </b> : Heal : Heal a target specified in "Click Target" by amount specified in "Click Param".</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Right Double Click Param</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_param_1_1</kbd> :
-Keyvalue_Description_here
+Some actions from keyvalue above can have parameter specified.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Right Double Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_1_1</kbd> :
-Keyvalue_Description_here
+Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
 <input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-13">
@@ -311,19 +311,19 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Right Double Click Target</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_target_1_1</kbd> :
-Keyvalue_Description_here
+Entity to trigger with specified action and parameter.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Third Double Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_2_1</kbd> :
-Keyvalue_Description_here
+Perform selected action when this entity is double-clicked with middle mouse button.
 <div class="accordion">
 <input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-14">
@@ -332,24 +332,24 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No Action : Choice_Description_here</li>
-<li><b>1 </b> : Trigger Off : Choice_Description_here</li>
-<li><b>2 </b> : Trigger On : Choice_Description_here</li>
-<li><b>3 </b> : Trigger Toggle : Choice_Description_here</li>
-<li><b>4 </b> : Remove : Choice_Description_here</li>
-<li><b>5 </b> : Hurt : Choice_Description_here</li>
-<li><b>6 </b> : Heal : Choice_Description_here</li>
+<li><b>0 </b> : No Action : No action (disable this feature).</li>
+<li><b>1 </b> : Trigger Off : Triggers target specified in "Click Target" with 'Off' use-type.</li>
+<li><b>2 </b> : Trigger On : Triggers target specified in "Click Target" with 'On' use-type.</li>
+<li><b>3 </b> : Trigger Toggle : Triggers target specified in "Click Target" with 'Toggle' use-type.</li>
+<li><b>4 </b> : Remove : Remove target specified in "Click Target".</li>
+<li><b>5 </b> : Hurt : Deal a damage to target specified in "Click Target" by amount specified in "Click Param".</li>
+<li><b>6 </b> : Heal : Heal a target specified in "Click Target" by amount specified in "Click Param".</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Third Double Click Param</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_param_2_1</kbd> :
-Keyvalue_Description_here
+Some actions from keyvalue above can have parameter specified.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Third Double Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_2_1</kbd> :
-Keyvalue_Description_here
+Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
 <input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-15">
@@ -358,27 +358,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Third Double Click Target</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_target_2_1</kbd> :
-Keyvalue_Description_here
+Entity to trigger with specified action and parameter.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Mouse Digital Action Reset Time</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_digital_action_reset</kbd> :
-Keyvalue_Description_here
+Change the wait/reset time between each digital mouse action, though there is still a minimum of 0.01 (10ms). Digital mouse action including clicking, double-clicking and wheel up/down. This doesn't apply to analogue actions, being moving or dragging.
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Invisible</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Off</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Invisible</span> : All brushes of this entity are invisible- can still be clicked, have collision, it's not visible, bullets can be shot through it (just like in the 'CLIP' brushes), but any other projectiles can't (like grenades, spore grenades, hornets e.t.c.).</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Off</span> : Disable entity at map start so {{ entname }}} need to be triggered in order to be usable.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">It's only trigger entity that can be visible in-game.</div>
+<div class="notices red">All double click actions doesn't work properly.</div>

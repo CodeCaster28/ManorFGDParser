@@ -5,7 +5,7 @@ title: trigger_hurt
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This brush entity applies damage to anything inside it. It will also fire it's target each time entities inside of it gets hurt (by this entity). You can also heal entities by setting negative damage value. You can add killtarget keyvalue manually to this entity.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it enable or disable it. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger whenever a damage is dealt. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Inventory: Need item(s)</b></span> <kbd  class="tooltip" data-tooltip="string">item_name_required</kbd> :
@@ -212,19 +212,19 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Keyvalue_Description_here
+Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} will be disabled and will not hurt anyone. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will work again. When [multisource](../multisource) lost at least one input signal, the entities becomes disabled again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage</b></span> <kbd  class="tooltip" data-tooltip="integer">dmg</kbd> :
-Keyvalue_Description_here
+Regularly applied damage. Can be negative for a healing-effect.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay before trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
-Keyvalue_Description_here
+Delay before the trigger_hurt triggers its target after being activated by an entering player or monster.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Damage Type</b></span> <kbd  class="tooltip" data-tooltip="choices">damagetype</kbd> :
-Keyvalue_Description_here
+Used for HUD info icon, determines which damage icon appears when player is taking damage from trigger.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -233,27 +233,27 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : GENERIC : Choice_Description_here</li>
-<li><b>1 </b> : CRUSH : Choice_Description_here</li>
-<li><b>2 </b> : BULLET : Choice_Description_here</li>
-<li><b>4 </b> : SLASH : Choice_Description_here</li>
-<li><b>8 </b> : BURN : Choice_Description_here</li>
-<li><b>16 </b> : FREEZE : Choice_Description_here</li>
-<li><b>32 </b> : FALL : Choice_Description_here</li>
-<li><b>64 </b> : BLAST : Choice_Description_here</li>
-<li><b>128 </b> : CLUB : Choice_Description_here</li>
-<li><b>256 </b> : SHOCK : Choice_Description_here</li>
-<li><b>512 </b> : SONIC : Choice_Description_here</li>
-<li><b>1024 </b> : ENERGYBEAM : Choice_Description_here</li>
-<li><b>16384 </b> : DROWN : Choice_Description_here</li>
-<li><b>32768 </b> : PARALYSE : Choice_Description_here</li>
-<li><b>65536 </b> : NERVEGAS : Choice_Description_here</li>
-<li><b>131072 </b> : POISON : Choice_Description_here</li>
-<li><b>262144 </b> : RADIATION : Choice_Description_here</li>
-<li><b>524288 </b> : DROWNRECOVER : Choice_Description_here</li>
-<li><b>1048576 </b> : CHEMICAL : Choice_Description_here</li>
-<li><b>2097152 </b> : SLOWBURN : Choice_Description_here</li>
-<li><b>4194304 </b> : SLOWFREEZE : Choice_Description_here</li>
+<li><b>0 </b> : GENERIC</li>
+<li><b>1 </b> : CRUSH</li>
+<li><b>2 </b> : BULLET</li>
+<li><b>4 </b> : SLASH</li>
+<li><b>8 </b> : BURN</li>
+<li><b>16 </b> : FREEZE</li>
+<li><b>32 </b> : FALL</li>
+<li><b>64 </b> : BLAST</li>
+<li><b>128 </b> : CLUB</li>
+<li><b>256 </b> : SHOCK</li>
+<li><b>512 </b> : SONIC</li>
+<li><b>1024 </b> : ENERGYBEAM</li>
+<li><b>16384 </b> : DROWN</li>
+<li><b>32768 </b> : PARALYSE</li>
+<li><b>65536 </b> : NERVEGAS</li>
+<li><b>131072 </b> : POISON</li>
+<li><b>262144 </b> : RADIATION</li>
+<li><b>524288 </b> : DROWNRECOVER</li>
+<li><b>1048576 </b> : CHEMICAL</li>
+<li><b>2097152 </b> : SLOWBURN</li>
+<li><b>4194304 </b> : SLOWFREEZE</li>
 </ul>
 </div>
 </div>
@@ -262,13 +262,13 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Target Once</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Off</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No clients</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">FireClientOnly</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">TouchClientOnly</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Affect non-moving NPC's</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Target Once</span> : If set, the damage will apply on one time for the first affected entity to enter the trigger_hurt.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Off</span> : If set, the trigger_hurt will start disabled.</li>
+<li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">No clients</span> : If set, players won't take damage.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">FireClientOnly</span> : If set, only players will cause this trigger to trigger its target.</li>
+<li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">TouchClientOnly</span> : If set, only players will take damage here.</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Affect non-moving NPC's</span> : If set, monster are properly affected by trigger_hurt. If this item is not selected, monsters are damaged only when moving inside brush of this entity.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">Monsters gets hurt only while moving inside of trigger_hurt- use "Affect non-moving NPC's" flag to fix it.</div>
+<div class="notices blue">Trigger_hurt supports to have a killtarget (even if it is not listed in object properties). You can set it by adding "killtarget" key with SmartEdit mode disabled. When damage is dealt to anyone the specified target is removed.</div>

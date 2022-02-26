@@ -99,4 +99,4 @@ Choices:
 </div>
 </div>
 </div>
-<div class="notices blue">Func_op4mortarcontroller supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. It can only be kill-targeted though.</div>
+<div class="notices blue">Func_op4mortarcontroller supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. It can be kill-targeted.</div>

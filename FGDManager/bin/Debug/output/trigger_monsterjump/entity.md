@@ -5,7 +5,7 @@ title: trigger_monsterjump
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Forces first monster that touches it to jump. This entity works only once, cannot be toggled off or on (except by using "master"), cannot be reset in any way. Monster type is not customizable. Usefulness of this entity is questionable.</div>
 </div>
 </div>
 ###Keyvalues
@@ -84,15 +84,13 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Keyvalue_Description_here
+Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} will be disabled and monster won't be able to jump. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Jump Speed</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+Speed in which jump is simulated.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Jump Height</b></span> <kbd  class="tooltip" data-tooltip="integer">height</kbd> :
-Keyvalue_Description_here
+Height of the jump. This must be significantly big value for results to be seen (e.g. 3000).
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

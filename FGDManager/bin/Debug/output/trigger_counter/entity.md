@@ -5,14 +5,14 @@ title: trigger_counter
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Obsolete counter entity. You might prefer to use [game_counter](../game_counter). Counts how many times trigger_counter is triggered and displays message how many inputs are to go "Only X more to go...". After being triggered "count" times, it triggers it's target. Placement/shape/texturing of this entity does not matter as it behaves like point entity.</div>
 </div>
 </div>
 ###Keyvalues
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger when the counter hits "count" value. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -20,7 +20,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Entity to remove when counter hits "count" value.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
@@ -308,7 +308,7 @@ Non functional.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Keyvalue_Description_here
+Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master is specified the {{ entname }} will be disabled and won't work. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will work again and can be triggered again to use counter. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound style</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
@@ -349,13 +349,13 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Count before activation</b></span> <kbd  class="tooltip" data-tooltip="integer">count</kbd> :
-Keyvalue_Description_here
+How many times this entity need to be triggered to trigger it's "Target".
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">No Message</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">No Message</span></li>
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No Clients</span> : If set, players won't be able to trigger this.</li>
 <li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Pushables</span> : If set, [func_pushable](../func_pushable) entities can trigger this.</li>
 <li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Everything else</span> :  If set, everything other than monsters, clients and pushables can trigger this. Does not exclude the above.</li>
@@ -364,5 +364,4 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices red">Most keyvalues won't work, those are inherited from volume triggers even if it's not behaving like brush entity. Don't ask me why, told you it's an obsolete entity.</div>

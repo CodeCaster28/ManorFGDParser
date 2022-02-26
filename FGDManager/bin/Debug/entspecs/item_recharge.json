@@ -1,22 +1,16 @@
 {
   "Classname": "item_recharge",
-  "Description": "Entity_Description_here",
+  "Description": "Non-functional.",
   "KeyDescriptions": [
     {
       "keyName": "capacity",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
       "keyName": "model_juice",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }

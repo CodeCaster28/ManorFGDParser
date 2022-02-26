@@ -5,7 +5,7 @@ title: trigger_autosave
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Used in half life to create auto-save. Unusable in Sven Co-op.</div>
+<div class="column entityentry" markdown="1">Used in Half-Life to create auto-save. Unusable in Sven Co-op.</div>
 </div>
 </div>
 ###Keyvalues

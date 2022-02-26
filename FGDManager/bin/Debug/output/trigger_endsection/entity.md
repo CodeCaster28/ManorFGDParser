@@ -5,7 +5,7 @@ title: trigger_endsection
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Used to end the game (not the map). Obsolete for Sven Co-op.</div>
 </div>
 </div>
 ###Keyvalues
@@ -88,14 +88,12 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Section</b></span> <kbd  class="tooltip" data-tooltip="string">section</kbd> :
-Keyvalue_Description_here
+
 </div>
 ###Flags
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">USE Only</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">USE Only</span></li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

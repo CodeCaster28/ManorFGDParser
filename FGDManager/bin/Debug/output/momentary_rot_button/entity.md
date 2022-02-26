@@ -5,7 +5,7 @@ title: momentary_rot_button
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Similar to [func_rot_button](../func_rot_button) except that this is a special button-type entity which will only turn while you use it. It is applicable on entities which change states gradually, as a [momentary_door](../momentary_door) does. The origin brush is required for this entity, around which this entity rotates.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,11 +16,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to press it. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Name of [momentary_door](../momentary_door) to bind to this button. It's not intended to use it for triggering, however, triggers target repeatedly on turning. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
@@ -185,15 +185,15 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Speed</b></span> <kbd  class="tooltip" data-tooltip="integer">speed</kbd> :
-Keyvalue_Description_here
+Speed at which the button rotates (around z axis by default) when pressed. The button rotates counter-clockwise.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Keyvalue_Description_here
+Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't work. When multisource entity is triggered/being triggering by all possible inputs, the {{ entname }} will be enabled and ready to be pressed. When multisource lost at least one input signal, the entities becomes disabled again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sounds</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
-Keyvalue_Description_here
+Set the sound to be played when the button is pressed. It will play when the button is locked, too.
 <div class="accordion">
 <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-7">
@@ -202,36 +202,36 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : None : Choice_Description_here</li>
-<li><b>1</b> : Big zap & Warmup : Choice_Description_here</li>
-<li><b>2</b> : Access Denied : Choice_Description_here</li>
-<li><b>3</b> : Access Granted : Choice_Description_here</li>
-<li><b>4</b> : Quick Combolock : Choice_Description_here</li>
-<li><b>5</b> : Power Deadbolt 1 : Choice_Description_here</li>
-<li><b>6</b> : Power Deadbolt 2 : Choice_Description_here</li>
-<li><b>7</b> : Plunger : Choice_Description_here</li>
-<li><b>8</b> : Small zap : Choice_Description_here</li>
-<li><b>9</b> : Keycard Sound : Choice_Description_here</li>
-<li><b>21</b> : Squeaky : Choice_Description_here</li>
-<li><b>22</b> : Squeaky Pneumatic : Choice_Description_here</li>
-<li><b>23</b> : Ratchet Groan : Choice_Description_here</li>
-<li><b>24</b> : Clean Ratchet : Choice_Description_here</li>
-<li><b>25</b> : Gas Clunk : Choice_Description_here</li>
+<li><b>0</b> : None</li>
+<li><b>1</b> : Big zap & Warmup<div class="imagepadding" markdown="1">![Big zap & Warmup](../audio/button1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>2</b> : Access Denied<div class="imagepadding" markdown="1">![Access Denied](../audio/button2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>3</b> : Access Granted<div class="imagepadding" markdown="1">![Access Granted](../audio/button3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>4</b> : Quick Combolock<div class="imagepadding" markdown="1">![Quick Combolock](../audio/button4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>5</b> : Power Deadbolt 1<div class="imagepadding" markdown="1">![Power Deadbolt 1](../audio/button5.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>6</b> : Power Deadbolt 2<div class="imagepadding" markdown="1">![Power Deadbolt 2](../audio/button6.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>7</b> : Plunger<div class="imagepadding" markdown="1">![Plunger](../audio/button7.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>8</b> : Small zap<div class="imagepadding" markdown="1">![Small zap](../audio/button8.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>9</b> : Keycard Sound<div class="imagepadding" markdown="1">![Keycard Sound](../audio/button9.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>21</b> : Squeaky<div class="imagepadding" markdown="1">![Squeaky](../audio/lever1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>22</b> : Squeaky Pneumatic<div class="imagepadding" markdown="1">![Squeaky Pneumatic](../audio/lever2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>23</b> : Ratchet Groan<div class="imagepadding" markdown="1">![Ratchet Groan](../audio/lever3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>24</b> : Clean Ratchet<div class="imagepadding" markdown="1">![Clean Ratchet](../audio/lever4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>25</b> : Gas Clunk<div class="imagepadding" markdown="1">![Gas Clunk](../audio/lever5.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Override</b></span> <kbd  class="tooltip" data-tooltip="sound">noise</kbd> :
-Keyvalue_Description_here
+Custom sound, that overrides default sound from "Sounds" list to play when the button is pressed. It will play when the button is locked, too.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Distance (deg)</b></span> <kbd  class="tooltip" data-tooltip="integer">distance</kbd> :
-Keyvalue_Description_here
+How many degrees the button rotates around it's origin axis (z axis by default). Can be negative.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Auto-return speed</b></span> <kbd  class="tooltip" data-tooltip="integer">returnspeed</kbd> :
-Keyvalue_Description_here
+If "Auto Return" flag is enabled, this is the speed in which button turns back into it's starting position. Can be set to 0, so the button won't close itself (it's equally to disabling "Auto Return" flag though).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>_minlight</b></span> <kbd  class="tooltip" data-tooltip="integer">_minlight</kbd> :
@@ -239,7 +239,7 @@ Sets the minimum light level. Set this value if entity is too dark on compiled m
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Use Type</b></span> <kbd  class="tooltip" data-tooltip="choices">use_type</kbd> :
-Keyvalue_Description_here
+Set the use-type with which the button will trigger its targets. Default is 'Toggle'.
 <div class="accordion">
 <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-8">
@@ -248,10 +248,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : Off : Choice_Description_here</li>
-<li><b>1</b> : On : Choice_Description_here</li>
-<li><b>2</b> : Set : Choice_Description_here</li>
-<li><b>3</b> : Toggle : Choice_Description_here</li>
+<li><b>0</b> : Off</li>
+<li><b>1</b> : On</li>
+<li><b>2</b> : Set</li>
+<li><b>3</b> : Toggle</li>
 </ul>
 </div>
 </div>
@@ -260,13 +260,11 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Door Hack</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Not useable</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Auto Return</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Door Hack</span> : If selected along other momentary_rot_buttons, this will move all buttons with the same target value synchronously- when one of the buttons with the same target as another button moves (is being used/auto returning), the another button moves as well.</li>
+<li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Not useable</span> : Button need to be triggered to move- it's unusable.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Auto Return</span> : Button turns back to it's starting position automatically after player stop using it. Enables "Auto-return speed".</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">X Axis</span> : If set, this will rotate around the x-axis.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Y Axis</span> : If set, this will rotate around the y-axis.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

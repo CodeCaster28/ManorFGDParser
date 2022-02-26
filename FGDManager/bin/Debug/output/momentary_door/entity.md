@@ -5,7 +5,7 @@ title: momentary_door
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This door gradually opens while using a [momentary_rot_button](../momentary_rot_button) and gradually closes while not using it, until it is either open or closed. It may or may not stay open after opened once, depending on the setup of the entities. Almost identical to [func_door](../func_door).</div>
 </div>
 </div>
 ###Keyvalues
@@ -20,11 +20,11 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to open or close it. Behaviour, when triggered, depends on "Obey Trigger Mode" value. See "Obey Trigger Mode" for more details on how door behaves depending on selected mode. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Entity to trigger whenever door completely opens or closes. Trigger use-type is 'Toggle'.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -32,7 +32,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Entity to remove when door opens.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">tinfilter</kbd> :
@@ -733,7 +733,7 @@ Damage to apply to entity that attempts to blocks the {{ entname }}.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Message if triggered</b></span> <kbd  class="tooltip" data-tooltip="string">message</kbd> :
-Not functional.
+Non-functional in {{ entname }}.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Strength</b></span> <kbd  class="tooltip" data-tooltip="integer">health</kbd> :
@@ -1020,7 +1020,7 @@ Choices:
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Starts Open</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Starts Open</span> : If set, the door will treat its predetermined open- and close-position as swapped, meaning it will start in its open position, but treat it as its closed position. This is useful when you want your door to start open and still receive proper lighting, or the node-graph to generate properly before closing the door manually (if it is a toggleable door).</li>
 <li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Don't link</span> : If set, this {{ entname }} won't synchronize its movement with identically named {{ entname }}. This is useful when triggering many {{ entname }} with different speeds or different movement-lengths by the same name. If not set, the {{ entname }} entities with the same name will adjust their individual speeds to open/close simultaneously, orienting at how the first related {{ entname }} the game engine finds would behave timing-wise.</li>
 <li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Passable</span> : If set, the {{ entname }} is entirely non-solid. It also cannot be triggered on-touch anymore then. Much more optimal way to do this is to set "ZHLT Disable Clipping" to 'Always non-solid' unless you don't want to have bullets blocked by {{ entname }}.</li>
 <li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Toggle</span> : If set, this {{ entname }} ignores its "delay before close" keyvalue; nonetheless, it must not be 0 then for some reason.</li>
@@ -1030,5 +1030,3 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

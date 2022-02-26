@@ -178,4 +178,4 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Func_friction supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. It can only be kill-targeted though.</div>
+<div class="notices blue">Func_friction supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. It can be kill-targeted.</div>

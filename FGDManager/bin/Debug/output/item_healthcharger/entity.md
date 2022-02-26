@@ -5,7 +5,7 @@ title: item_healthcharger
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">Non-functional.</div>
 </div>
 </div>
 ###Keyvalues
@@ -145,11 +145,11 @@ Set the path to a sound replacement file for the item. The path begins in 'svenc
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Charger Capacity</b></span> <kbd  class="tooltip" data-tooltip="integer">capacity</kbd> :
-Keyvalue_Description_here
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Model for Capacity Indicator</b></span> <kbd  class="tooltip" data-tooltip="string">model_juice</kbd> :
-Keyvalue_Description_here
+
 </div>
 ###Flags
 <hr>
@@ -162,5 +162,3 @@ Keyvalue_Description_here
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

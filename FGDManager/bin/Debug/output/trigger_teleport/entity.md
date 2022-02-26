@@ -5,14 +5,14 @@ title: trigger_teleport
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">A brush entity which teleports a player to a destination of your choice as he enters the trigger. Also fires it's target whenever something or someone teleports through it.</div>
 </div>
 </div>
 ###Keyvalues
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Name of entity to trigger (fire). Which function relates to it depends on the respective entity. Most will just trigger their target, while others will perform actions on their target or use it as a reference for other activities. Often, multiple entities by the same name may be targeted. Most entities need no target, but having one is essential for most logic entities and basic trigger-systems.
+Name of [info_teleport_destination(s)](../info_teleport_destination) where players will be teleported to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
@@ -20,7 +20,7 @@ Delay before trigger entity specified in "Target".
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
-Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
+Non-functional in {{ entname }}.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
@@ -28,7 +28,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to enable or disable. Depending on trigger use-type: 'On'- enable, 'Toggle'- toggle, 'Off'- disable. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">tinfilter</kbd> :
@@ -308,7 +308,7 @@ Non functional.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
-Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master is specified the {{ entname }} will be disabled and will play locked sounds and sentences. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will be unlocked. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
+Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} will be disabled and will not work. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will work again. When [multisource](../multisource) lost at least one input signal, the entities becomes disabled again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound style</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
@@ -349,11 +349,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Teleport Cooldown Delay</b></span> <kbd  class="tooltip" data-tooltip="string">teleport_cooldown</kbd> :
-Keyvalue_Description_here
+Time, in seconds, the trigger_teleport can be used (can teleport another entity/player) again.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Ignore Delays</b></span> <kbd  class="tooltip" data-tooltip="choices">teleport_ignore_delay</kbd> :
-Keyvalue_Description_here
+If set to 'Yes', "Teleport Cooldown Delay" will be ignored.
 <div class="accordion">
 <input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-14">
@@ -362,15 +362,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Start Inactive</b></span> <kbd  class="tooltip" data-tooltip="choices">teleport_start_inactive</kbd> :
-Keyvalue_Description_here
+If set to 'Yes', this Trigger starts disabled, which means it need to be triggered in order to work.
 <div class="accordion">
 <input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-15">
@@ -379,15 +379,15 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Teleport If Blocked</b></span> <kbd  class="tooltip" data-tooltip="choices">teleport_if_blocked</kbd> :
-Keyvalue_Description_here
+If set to 'Yes', players will be teleported to target even if this target is blocked.
 <div class="accordion">
 <input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-16">
@@ -396,8 +396,8 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>
@@ -412,13 +412,12 @@ Choices:
 <li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Everything else</span> :  If set, everything other than monsters, clients and pushables can trigger this. Does not exclude the above.</li>
 <li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Fire On Enter</span> : Not applicable on {{ entname }}- it's already get triggered on enter!</li>
 <li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Fire On Exit</span> :  If set, {{ entname }} will trigger as soon as something that entered it left it, instead of the instant something enters it.</li>
-<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Random Destination</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Relative Teleport</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Keep Angles</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Keep velocity</span> : Choice_Description_here</li>
-<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Rotate (Dest Angles)</span> : Choice_Description_here</li>
+<li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Random Destination</span> : If multiple targets are set, one will be chosen as the destination randomly for every single player as he enters the trigger.</li>
+<li class="imagepadding" markdown="1"><b>128</b> : <span style="color:#9fc5e8;">Relative Teleport</span> : The player's destination will be the location of the destination plus his offset from the trigger_teleport's origin in the moment of the player entering the trigger. If you decide to use this, you will probably want to add an origin brush to your trigger_teleport.</li>
+<li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Keep Angles</span> : Instead of copying the destination entity's angles onto the player as part of the teleportation, let the player keep his angles as they are.</li>
+<li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Keep velocity</span> : Do not set the players velocity to 0 as he enters the trigger_teleport and keep his current velocity instead.</li>
+<li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Rotate (Dest Angles)</span> : Add the angles of the trigger_teleport's destination onto the player's angles.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>
+<div class="notices blue">"Kill Target" and "Delay Before Trigger" keyvalues does not work on this entity. Also "Target" keyvalue can be used only to specify teleportation destination. That means this trigger can't act like touch detectors (to fire it's target when touched).</div>

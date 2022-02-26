@@ -5,7 +5,7 @@ title: player_respawn_zone
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity_Description_here</div>
+<div class="column entityentry" markdown="1">This brush entity functions the same as [trigger_respawn](../trigger_respawn) which respawns players to any active spawn point when triggered, but only filters for players in or outside the zone in the moment of triggering. Player's inventory is left unmodified.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of {{ entname }} so other entities can trigger it.
+Set name of {{ entname }} so other entities can trigger it to respawn players. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Template Model Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_usemodel</kbd> :
@@ -88,7 +88,7 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Zone Type</b></span> <kbd  class="tooltip" data-tooltip="choices">zonetype</kbd> :
-Keyvalue_Description_here
+Set whether to respawn all players that are inside or outside of this entity when it is triggered.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">
@@ -97,11 +97,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : Respawn all outside : Choice_Description_here</li>
-<li><b>1</b> : Respawn all inside : Choice_Description_here</li>
+<li><b>0</b> : Respawn all outside : Only players outside the player_respawn_zone brush are respawned at the time of trigger, players within the brush are ignored.</li>
+<li><b>1</b> : Respawn all inside : Only players outside the player_respawn_zone brush are respawned at the time of trigger, players within the brush are ignored.</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="notices blue">Insert additional notes here</div>
-<div class="notices red">Insert known issues here</div>

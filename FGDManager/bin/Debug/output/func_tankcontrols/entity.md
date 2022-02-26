@@ -5,7 +5,7 @@ title: func_tankcontrols
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This entity is used as a [func_tank](../func_tank) or [func_tanklaser](../func_tank) or [func_tankrocket](../func_tankrocket) or [func_tankmortar](../func_tankmortar) controlling area. It works like an invisible button, when pressed, player can control the tank. Usage of this entity is very simple- place it in front of func_tank and set "Tank entity name" to name of any type of tank. If func_tankcontrols is too far away from tank entity, the func_tankcontrols won't work. Keep in mind that all tanks entities need to have their "Controllable" flag checked.</div>
+<div class="column entityentry" markdown="1">This entity is used as a [func_tank](../func_tank) or [func_tanklaser](../func_tanklaser) or [func_tankrocket](../func_tankrocket) or [func_tankmortar](../func_tankmortar) controlling area. It works like an invisible button, when pressed, player can control the tank. Usage of this entity is very simple- place it in front of func_tank and set "Tank entity name" to name of any type of tank. If func_tankcontrols is too far away from tank entity, the func_tankcontrols won't work. Keep in mind that all tanks entities need to have their "Controllable" flag checked.</div>
 </div>
 </div>
 ###Keyvalues
