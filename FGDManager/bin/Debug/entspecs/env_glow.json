@@ -4,7 +4,7 @@
   "KeyDescriptions": [
     {
       "keyName": "targetname",
-      "keyDescription": "Can't be triggered, use [env_sprite](../env_sprite) for this. Can only be kill-targeted.",
+      "keyDescription": "Can't be triggered, use [env_sprite](../env_sprite) for this. Can be kill-targeted.",
       "keyChoices": []
     },
     {

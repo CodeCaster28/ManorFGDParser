@@ -1,6 +1,6 @@
 {
   "Classname": "trigger_autosave",
-  "Description": "Used in half life to create auto-save. Unusable in Sven Co-op.",
+  "Description": "Used in Half-Life to create auto-save. Unusable in Sven Co-op.",
   "KeyDescriptions": [
     {
       "keyName": "master",

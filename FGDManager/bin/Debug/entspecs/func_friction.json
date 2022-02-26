@@ -9,6 +9,6 @@
     }
   ],
   "Notes": [
-    "Func_friction supports to have a name (even if it is not listed in object properties). You can set it by adding \"targetname\" key with SmartEdit mode disabled. It can only be kill-targeted though."
+    "Func_friction supports to have a name (even if it is not listed in object properties). You can set it by adding \"targetname\" key with SmartEdit mode disabled. It can be kill-targeted."
   ]
 }

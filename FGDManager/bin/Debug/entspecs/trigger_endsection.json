@@ -1,10 +1,10 @@
 {
   "Classname": "trigger_endsection",
-  "Description": "Entity_Description_here",
+  "Description": "Used to end the game (not the map). Obsolete for Sven Co-op.",
   "KeyDescriptions": [
     {
       "keyName": "section",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "",
       "keyChoices": []
     },
     {
@@ -13,15 +13,9 @@
       "keyChoices": [
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here"
+          "choiceDescription": ""
         }
       ]
     }
-  ],
-  "Notes": [
-    "Insert additional notes here"
-  ],
-  "Issues": [
-    "Insert known issues here"
   ]
 }
