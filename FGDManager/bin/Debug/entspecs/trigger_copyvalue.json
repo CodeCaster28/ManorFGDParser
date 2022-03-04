@@ -1,6 +1,6 @@
 {
   "Classname": "trigger_copyvalue",
-  "Description": "Provides options for performing operations on an entity's keyvalue in relation to another keyvalue of another entity. This is a beefier version of [trigger_changevalue](../trigger_changevalue). Supports custom keyvalues.",
+  "Description": "Provides options for performing operations on an entity's keyvalue in relation to another keyvalue of another entity. This is a beefier version of [trigger_changevalue](../trigger_changevalue). Supports [custom keyvalues](../custom_keyvalues).",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",

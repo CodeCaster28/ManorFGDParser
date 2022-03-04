@@ -1,6 +1,6 @@
 {
   "Classname": "trigger_changevalue",
-  "Description": "Trigger_changevalue can perform arithmetic and logic operations on base-keyvalues of entities, as well as replace their private keyvalues. See [trigger_copyvalue](../trigger_copyvalue) for a variant of this with more options. Supports [custom keyvalues](../customkeyvalues).",
+  "Description": "Trigger_changevalue can perform arithmetic and logic operations on base-keyvalues of entities, as well as replace their private keyvalues. See [trigger_copyvalue](../trigger_copyvalue) for a variant of this with more options. Supports [custom keyvalues](../custom_keyvalues).",
   "KeyDescriptions": [
     {
       "keyName": "spawnflags",

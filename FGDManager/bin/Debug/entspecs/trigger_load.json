@@ -1,6 +1,6 @@
 {
   "Classname": "trigger_load",
-  "Description": "Trigger_load allows to read external map-data into an entity keyvalue from mapname.save in the \"maps\"-folder, which is stored on the server running the map. Its counterpart is [trigger_save](../trigger_save). Supports custom keyvalues.",
+  "Description": "Trigger_load allows to read external map-data into an entity keyvalue from mapname.save in the \"maps\"-folder, which is stored on the server running the map. Its counterpart is [trigger_save](../trigger_save). Supports [custom keyvalues](../custom_keyvalues)..",
   "KeyDescriptions": [
     {
       "keyName": "m_iszLevelName",

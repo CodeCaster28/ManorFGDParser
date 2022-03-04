@@ -1,6 +1,6 @@
 {
   "Classname": "trigger_save",
-  "Description": "Trigger_save allows to save an entity's keyvalue to external map-data stored in mapname.save in the \"maps\"-folder, which is stored on the server running the map. Its counterpart is [trigger_load](../trigger_load). Supports custom keyvalues.",
+  "Description": "Trigger_save allows to save an entity's keyvalue to external map-data stored in mapname.save in the \"maps\"-folder, which is stored on the server running the map. Its counterpart is [trigger_load](../trigger_load). Supports [custom keyvalues](../custom_keyvalues).",
   "KeyDescriptions": [
     {
       "keyName": "targetname",
