@@ -5,7 +5,7 @@ title: trigger_changevalue
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Trigger_changevalue can perform arithmetic and logic operations on base-keyvalues of entities, as well as replace their private keyvalues. See [trigger_copyvalue](../trigger_copyvalue) for a variant of this with more options. Supports [custom keyvalues](../customkeyvalues).</div>
+<div class="column entityentry" markdown="1">Trigger_changevalue can perform arithmetic and logic operations on base-keyvalues of entities, as well as replace their private keyvalues. See [trigger_copyvalue](../trigger_copyvalue) for a variant of this with more options. Supports [custom keyvalues](../custom_keyvalues).</div>
 </div>
 </div>
 ###Keyvalues

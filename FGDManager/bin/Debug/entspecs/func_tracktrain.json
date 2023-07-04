@@ -48,32 +48,32 @@
         },
         {
           "choiceValue": "1",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/ttrain1.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "2",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/ttrain2.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "3",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/ttrain3.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "4",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/ttrain4.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "5",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/ttrain6.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         },
         {
           "choiceValue": "6",
-          "choiceDescription": "Choice_Description_here",
+          "choiceDescription": "",
           "media": "../audio/ttrain7.wav?controlsList=nodownload-nofullscreen-noremoteplayback"
         }
       ]

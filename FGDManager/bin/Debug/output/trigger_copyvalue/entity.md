@@ -5,7 +5,7 @@ title: trigger_copyvalue
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Provides options for performing operations on an entity's keyvalue in relation to another keyvalue of another entity. This is a beefier version of [trigger_changevalue](../trigger_changevalue). Supports custom keyvalues.</div>
+<div class="column entityentry" markdown="1">Provides options for performing operations on an entity's keyvalue in relation to another keyvalue of another entity. This is a beefier version of [trigger_changevalue](../trigger_changevalue). Supports [custom keyvalues](../custom_keyvalues).</div>
 </div>
 </div>
 ###Keyvalues

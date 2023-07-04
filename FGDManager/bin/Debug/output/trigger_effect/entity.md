@@ -5,7 +5,7 @@ title: trigger_effect
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Apply chosen effects or modifiers to target players or monsters. This includes visual effects like glow shell but also modifiers to speed, friction, gravity and more. Multiple effects can be applied at once. Each effect can be either added or subtracted. Effect can be added and subtracted multiple times, even if an effect name suggests it can be either disabled or enabled, e.g. applying invisibility to player with 'Add' value three times (by triggering_trigger effect three times) makes player invisible at first 'Add' but the second and third trigger still counts. In that case another trigger_effect must apply invisibility with 'Subtract' value to make player visible again.</div>
+<div class="column entityentry" markdown="1">Apply chosen effects or modifiers to target players or monsters. This includes visual effects like glow shell but also modifiers to speed, friction, gravity and more. Multiple effects can be applied at once. Each effect can be either added or subtracted. Effect can be added and subtracted multiple times, even if an effect name suggests it can be either disabled or enabled, e.g. applying invisibility to player with 'Add' value three times (by triggering trigger_effect three times) makes player invisible at first 'Add' but the second and third trigger still counts. In that case another trigger_effect must apply invisibility with 'Subtract' value to make player visible again.</div>
 </div>
 </div>
 ###Keyvalues

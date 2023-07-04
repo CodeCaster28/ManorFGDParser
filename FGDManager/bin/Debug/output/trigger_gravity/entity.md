@@ -5,7 +5,7 @@ title: trigger_gravity
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">An entity which modifies the gravity within it using a factor multiplied by the value of CVar 'sv_gravity'. The gravity is applied globally (it won't switch gravity back to normal after leaving it).</div>
+<div class="column entityentry" markdown="1">An entity which modifies the gravity within it. The gravity is applied globally (it won't switch gravity back to normal after leaving it).</div>
 </div>
 </div>
 ###Keyvalues
@@ -349,7 +349,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Gravity (0-1)</b></span> <kbd  class="tooltip" data-tooltip="integer">gravity</kbd> :
-Keyvalue_Description_here
+Gravity factor, multiplied by the value of sv_gravity CVar.
 </div>
 ###Flags
 <hr>

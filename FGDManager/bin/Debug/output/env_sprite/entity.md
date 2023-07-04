@@ -89,7 +89,7 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Framerate</b></span> <kbd  class="tooltip" data-tooltip="string">framerate</kbd> :
-Keyvalue_Description_here
+Sprite framerate.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Name</b></span> <kbd  class="tooltip" data-tooltip="sprite">model</kbd> :

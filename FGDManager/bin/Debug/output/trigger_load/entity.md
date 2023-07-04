@@ -5,7 +5,7 @@ title: trigger_load
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Trigger_load allows to read external map-data into an entity keyvalue from mapname.save in the "maps"-folder, which is stored on the server running the map. Its counterpart is [trigger_save](../trigger_save). Supports custom keyvalues.</div>
+<div class="column entityentry" markdown="1">Trigger_load allows to read external map-data into an entity keyvalue from mapname.save in the "maps"-folder, which is stored on the server running the map. Its counterpart is [trigger_save](../trigger_save). Supports [custom keyvalues](../custom_keyvalues)..</div>
 </div>
 </div>
 ###Keyvalues

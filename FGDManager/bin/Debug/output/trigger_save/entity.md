@@ -5,7 +5,7 @@ title: trigger_save
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Trigger_save allows to save an entity's keyvalue to external map-data stored in mapname.save in the "maps"-folder, which is stored on the server running the map. Its counterpart is [trigger_load](../trigger_load). Supports custom keyvalues.</div>
+<div class="column entityentry" markdown="1">Trigger_save allows to save an entity's keyvalue to external map-data stored in mapname.save in the "maps"-folder, which is stored on the server running the map. Its counterpart is [trigger_load](../trigger_load). Supports [custom keyvalues](../custom_keyvalues).</div>
 </div>
 </div>
 ###Keyvalues

@@ -331,7 +331,7 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>50 </b> : repel_repel : Choice_Description_here</li>
+<li><b>50 </b> : repel_repel : Sequence for reppeling.</li>
 </ul>
 </div>
 </div>

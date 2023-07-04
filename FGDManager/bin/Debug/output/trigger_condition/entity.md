@@ -5,7 +5,7 @@ title: trigger_condition
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">A, by default, toggleable entity, which, while activated, will compare any value of any entity's key with either a specified value or the keyvalue of another entity, using a specified comparator and fire its target for the according result- true or false- whenever the result of the condition changes (by default) or at the instant the trigger_condition entity is activated manually. While activated, the trigger_condition checks its condition every 0.1 seconds, by default. Supports custom keyvalues.</div>
+<div class="column entityentry" markdown="1">A, by default, toggleable entity, which, while activated, will compare any value of any entity's key with either a specified value or the keyvalue of another entity, using a specified comparator and fire its target for the according result- true or false- whenever the result of the condition changes (by default) or at the instant the trigger_condition entity is activated manually. While activated, the trigger_condition checks its condition every 0.1 seconds, by default. Supports [custom keyvalues](../custom_keyvalues).</div>
 </div>
 </div>
 ###Keyvalues

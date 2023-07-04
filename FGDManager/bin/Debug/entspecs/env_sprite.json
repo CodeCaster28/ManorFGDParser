@@ -9,7 +9,7 @@
     },
     {
       "keyName": "framerate",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "Sprite framerate.",
       "keyChoices": []
     },
     {

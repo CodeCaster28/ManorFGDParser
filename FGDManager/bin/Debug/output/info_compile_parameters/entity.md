@@ -986,9 +986,9 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0 </b> : [ Unset ] : Choice_Description_here</li>
-<li><b>-1 </b> : No : Choice_Description_here</li>
-<li><b>1 </b> : Yes : Choice_Description_here</li>
+<li><b>0 </b> : [ Unset ]</li>
+<li><b>-1 </b> : No</li>
+<li><b>1 </b> : Yes</li>
 </ul>
 </div>
 </div>

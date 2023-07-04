@@ -235,12 +235,12 @@ Choices:
 <div class="accordion-body">
 <ul>
 <li><b>0</b> : None</li>
-<li><b>1</b> : Rail 1 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 1](../audio/ttrain1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>2</b> : Rail 2 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 2](../audio/ttrain2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>3</b> : Rail 3 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 3](../audio/ttrain3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>4</b> : Rail 4 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 4](../audio/ttrain4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>5</b> : Rail 6 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 6](../audio/ttrain6.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
-<li><b>6</b> : Rail 7 : Choice_Description_here<div class="imagepadding" markdown="1">![Rail 7](../audio/ttrain7.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>1</b> : Rail 1<div class="imagepadding" markdown="1">![Rail 1](../audio/ttrain1.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>2</b> : Rail 2<div class="imagepadding" markdown="1">![Rail 2](../audio/ttrain2.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>3</b> : Rail 3<div class="imagepadding" markdown="1">![Rail 3](../audio/ttrain3.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>4</b> : Rail 4<div class="imagepadding" markdown="1">![Rail 4](../audio/ttrain4.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>5</b> : Rail 6<div class="imagepadding" markdown="1">![Rail 6](../audio/ttrain6.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
+<li><b>6</b> : Rail 7<div class="imagepadding" markdown="1">![Rail 7](../audio/ttrain7.wav?controlsList=nodownload-nofullscreen-noremoteplayback)</div></li>
 </ul>
 </div>
 </div>
