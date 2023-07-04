@@ -120,7 +120,7 @@
     },
     {
       "keyName": "spawnflags",
-      "keyDescription": "Keyvalue_Description_here",
+      "keyDescription": "SpawnflagsEmpty",
       "keyChoices": [
         {
           "choiceValue": "1",
