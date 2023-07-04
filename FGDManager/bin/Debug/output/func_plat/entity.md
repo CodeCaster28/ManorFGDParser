@@ -174,6 +174,50 @@ Move and stop sound volume.
 Allows you to setup a sound replacement file for the {{ entname }} sounds. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a [custom_precache](../custom_precache) point entity.
 </div>
 <div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonstart</kbd> :
+Entity to trigger when {{ entname }} starts moving. Trigger use-type can be specified below.
+</div>
+<div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonstart_triggerstate</kbd> :
+Set the use-type with which the entity specified above will be triggered.
+<div class="accordion">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
+<ul>
+<li><b>0</b> : Off</li>
+<li><b>1</b> : On</li>
+<li><b>2</b> : Toggle</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Stop</b></span> <kbd  class="tooltip" data-tooltip="string">fireonstop</kbd> :
+Entity to trigger when {{ entname }} stops moving. Trigger use-type can be specified below.
+</div>
+<div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Stop Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonstop_triggerstate</kbd> :
+Set the use-type with which the entity specified above will be triggered.
+<div class="accordion">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
+<ul>
+<li><b>0</b> : Off</li>
+<li><b>1</b> : On</li>
+<li><b>2</b> : Toggle</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
 Entity to trigger when {{ entname }} starts opening. Trigger use-type can be specified below.
 </div>
@@ -181,8 +225,8 @@ Entity to trigger when {{ entname }} starts opening. Trigger use-type can be spe
 <span style="color:#9fc5e8;"><b>Fire On Open Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopening_triggerstate</kbd> :
 Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -203,8 +247,8 @@ Entity to trigger when door starts closing. Trigger use-type can be specified be
 <span style="color:#9fc5e8;"><b>Fire On Close Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosing_triggerstate</kbd> :
 Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-9">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -225,8 +269,8 @@ Entity to trigger when door ends opening. Trigger use-type can be specified belo
 <span style="color:#9fc5e8;"><b>Fire On Open End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopened_triggerstate</kbd> :
 Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-10">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -247,8 +291,8 @@ Entity to trigger when door end closing. Trigger use-type can be specified below
 <span style="color:#9fc5e8;"><b>Fire On Close End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosed_triggerstate</kbd> :
 Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-11">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -278,8 +322,8 @@ For model-based point entities: if model lightning does not satisfy you (e.g. it
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
 Enable or disable collision of entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-10">
+<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-12">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -295,8 +339,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>ZHLT Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_invisible</kbd> :
 Brush entities only. Determines if entity should be visible.
 <div class="accordion">
-<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-11">
+<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-13">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -316,8 +360,8 @@ Opaque brush entities only. If "ZHLT Ligth Flags" of this entity uses any of the
 <span style="color:#9fc5e8;"><b>ZHLT Embed Light Map (when translucent)</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_embedlightmap</kbd> :
 Transparent brush entities only. Set it to 'Yes' and this transparent entity will take a light from environment making it looks much more natural. Use it when entities (e.g. glass represented by func_wall) omits lightning from surrounding. Note that this is expensive so shouldn't be used too often, but resolution of those lightmaps can be controlled by keyvalue explained below.
 <div class="accordion">
-<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-12">
+<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-14">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -337,8 +381,8 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 <span style="color:#9fc5e8;"><b>ZHLT Light Flags</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_lightflags</kbd> :
 Brush entities only. Changes light casting or receiving setting.
 <div class="accordion">
-<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-13">
+<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-15">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>

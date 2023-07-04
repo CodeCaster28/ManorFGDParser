@@ -100,7 +100,7 @@ Choices:
 <ul>
 <li><b>0 </b> : [ Unset ]</li>
 <li><b>-1 </b> : No</li>
-<li><b>1 </b> : Yes</li>
+<li><b>0 </b> : Yes</li>
 </ul>
 </div>
 </div>

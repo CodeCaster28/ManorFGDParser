@@ -141,6 +141,10 @@
       "keyName": "scversion2",
       "keyDescription": "Game version required for this map to run. Leave that as it is.",
       "keyChoices": [
+	    {
+          "choiceValue": "525 ",
+          "choiceDescription": ""
+        },
         {
           "choiceValue": "524 ",
           "choiceDescription": ""

@@ -327,6 +327,50 @@ Choices:
 Set it to the name of [info_target](../info_target), this entity will receive lights from specified [info_taget](../info_taget) position instead of it's own position. As a lot of entites can moves and lightning is not updated dynamically you can choose how your entity will be lit in game (e.g. elevators, pushables e.t.c.). Now you don't need to put the whole entity in the well-lit room at map start to make them look desirable.
 </div>
 <div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonstart</kbd> :
+Entity to trigger when {{ entname }} starts moving. Trigger use-type can be specified below.
+</div>
+<div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonstart_triggerstate</kbd> :
+Set the use-type with which the entity specified above will be triggered.
+<div class="accordion">
+<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-12">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
+<ul>
+<li><b>0</b> : Off</li>
+<li><b>1</b> : On</li>
+<li><b>2</b> : Toggle</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Stop</b></span> <kbd  class="tooltip" data-tooltip="string">fireonstop</kbd> :
+Entity to trigger when {{ entname }} stops moving. Trigger use-type can be specified below.
+</div>
+<div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Stop Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonstop_triggerstate</kbd> :
+Set the use-type with which the entity specified above will be triggered.
+<div class="accordion">
+<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-13">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
+<ul>
+<li><b>0</b> : Off</li>
+<li><b>1</b> : On</li>
+<li><b>2</b> : Toggle</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Angular Velocity (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">avelocity</kbd> :
 Axial rotation each second. Fist value rotates brush around Y axis, second around Z axis, and the last one rotates brush around X axis. E. g. '0 180 0' makes train rotates 180 degrees around Z (height) axis, counter clockwise each second.
 </div>

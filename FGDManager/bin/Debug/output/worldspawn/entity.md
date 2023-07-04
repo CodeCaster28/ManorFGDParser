@@ -162,6 +162,7 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
+<li><b>525 </b> : 5.25 Patch</li>
 <li><b>524 </b> : 5.24 Patch</li>
 <li><b>523 </b> : 5.23 Patch</li>
 <li><b>522 </b> : 5.22 Patch</li>

@@ -112,8 +112,9 @@
 	//	1 : "Yes"
 	//]
 
-	scversion2(choices) : "Minimum game version" : 524 =
+	scversion2(choices) : "Minimum game version" : 525 =
 	[
+		525 : "5.25 Patch"
 		524 : "5.24 Patch"
 		523 : "5.23 Patch"
 		522 : "5.22 Patch"
@@ -805,6 +806,25 @@
 	unlocked_sentence_override(string) : "Unlocked Sentence Override"
 ]
 
+@BaseClass = StartStopable
+[
+	fireonstart(string) : "Fire On Start"
+	fireonstart_triggerstate(choices) : "Fire On Start Trigger State" : 2 =
+	[
+		0: "Off"
+		1: "On"
+		2: "Toggle"
+	]
+
+	fireonstop(string) : "Fire On Stop"
+	fireonstop_triggerstate(choices) : "Fire On Stop Trigger State" : 2 =
+	[
+		0: "Off"
+		1: "On"
+		2: "Toggle"
+	]
+]
+
 @BaseClass = OpenClosable
 [
 	fireonopening(string) : "Fire On Open Start"
@@ -842,7 +862,7 @@
 	]
 ]
 
-@BaseClass base(Appearflags, Global, Targetname, Targetx, FilterIn, FilterOut, InventoryRules, AttackObject, RenderFields, Angles, ZHLT, BaseLockable, OpenClosable) = Door
+@BaseClass base(Appearflags, Global, Targetname, Targetx, FilterIn, FilterOut, InventoryRules, AttackObject, RenderFields, Angles, ZHLT, BaseLockable, StartStopable, OpenClosable) = Door
 [
 	speed(integer) : "Speed" : 100
 	master(string) : "Master"
@@ -1207,7 +1227,7 @@
 	soundlist(string) : "Sound Replacement File"
 ]
 
-@BaseClass base(Appearflags, OpenClosable) = BasePlat
+@BaseClass base(Appearflags, StartStopable, OpenClosable) = BasePlat
 [
 	dmg(integer) : "Damage inflicted when blocked" : 0
 ]
@@ -2553,12 +2573,12 @@
 	soundlist(string) : "Sound Replacement File"
 ]
 
-@SolidClass base(ZHLTbmodel, InventoryRules)= func_traincontrols : "Train Controls"
+@SolidClass base(ZHLTbmodel, InventoryRules) = func_traincontrols : "Train Controls"
 [
 	target(target_destination) : "Train Name"
 ]
 
-@SolidClass base(BaseTrain, AttackObject, ZHLT) = func_train : "Moving platform"
+@SolidClass base(BaseTrain, AttackObject, ZHLT, StartStopable) = func_train : "Moving platform"
 [
 	avelocity(string) : "Angular Velocity (X Y Z)"
 	dmg(integer) : "Damage on crush" : 0
@@ -2883,7 +2903,7 @@
 	[
 		0 : "[ Unset ]"
 		-1 : "No"
-		1 : "Yes"
+		0 : "Yes"
 	]
 	chart(choices) : "Display statistics charts?" : 0 =
 	[

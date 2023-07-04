@@ -549,6 +549,50 @@ Sentence from "default_sentences.txt" or custom sentences file (which can be add
 Sentence from "default_sentences.txt" or custom sentences file (which can be added in map properties) to use when {{ entname }} opens. Useful when you want to override locked sentence with your own sentence.
 </div>
 <div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonstart</kbd> :
+Entity to trigger when {{ entname }} starts moving. Trigger use-type can be specified below.
+</div>
+<div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonstart_triggerstate</kbd> :
+Set the use-type with which the entity specified above will be triggered.
+<div class="accordion">
+<input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-20">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
+<ul>
+<li><b>0</b> : Off</li>
+<li><b>1</b> : On</li>
+<li><b>2</b> : Toggle</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Stop</b></span> <kbd  class="tooltip" data-tooltip="string">fireonstop</kbd> :
+Entity to trigger when {{ entname }} stops moving. Trigger use-type can be specified below.
+</div>
+<div class="entityentry" markdown="1">
+<span style="color:#9fc5e8;"><b>Fire On Stop Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonstop_triggerstate</kbd> :
+Set the use-type with which the entity specified above will be triggered.
+<div class="accordion">
+<input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-21">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
+<ul>
+<li><b>0</b> : Off</li>
+<li><b>1</b> : On</li>
+<li><b>2</b> : Toggle</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Fire On Open Start</b></span> <kbd  class="tooltip" data-tooltip="string">fireonopening</kbd> :
 Entity to trigger when {{ entname }} starts opening. Trigger use-type can be specified below.
 </div>
@@ -556,8 +600,8 @@ Entity to trigger when {{ entname }} starts opening. Trigger use-type can be spe
 <span style="color:#9fc5e8;"><b>Fire On Open Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopening_triggerstate</kbd> :
 Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-20">
+<input type="checkbox" id="accordion-22" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-22">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -578,8 +622,8 @@ Entity to trigger when door starts closing. Trigger use-type can be specified be
 <span style="color:#9fc5e8;"><b>Fire On Close Start Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosing_triggerstate</kbd> :
 Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-21">
+<input type="checkbox" id="accordion-23" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-23">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -600,8 +644,8 @@ Entity to trigger when door ends opening. Trigger use-type can be specified belo
 <span style="color:#9fc5e8;"><b>Fire On Open End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonopened_triggerstate</kbd> :
 Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-22" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-22">
+<input type="checkbox" id="accordion-24" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-24">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -622,8 +666,8 @@ Entity to trigger when door end closing. Trigger use-type can be specified below
 <span style="color:#9fc5e8;"><b>Fire On Close End Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">fireonclosed_triggerstate</kbd> :
 Set the use-type with which the entity specified above will be triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-23" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-23">
+<input type="checkbox" id="accordion-25" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-25">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -648,8 +692,8 @@ Name of the [multisource](../multisource) entity that (temporary) locks this {{ 
 <span style="color:#9fc5e8;"><b>Move Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">movesnd</kbd> :
 Sound that is played while the {{ entname }} is moving.
 <div class="accordion">
-<input type="checkbox" id="accordion-24" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-24">
+<input type="checkbox" id="accordion-26" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-26">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -674,8 +718,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Move Sound Loops?</b></span> <kbd  class="tooltip" data-tooltip="choices">movesnd_loop</kbd> :
 Sets if "Move Sound" should be looped during movement until it stops.
 <div class="accordion">
-<input type="checkbox" id="accordion-25" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-25">
+<input type="checkbox" id="accordion-27" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-27">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -691,8 +735,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Stop Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">stopsnd</kbd> :
 Sound which is played once as the {{ entname }} stops moving.
 <div class="accordion">
-<input type="checkbox" id="accordion-26" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-26">
+<input type="checkbox" id="accordion-28" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-28">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -751,8 +795,8 @@ Allows you to setup a sound replacement file for the {{ entname }} sounds. The p
 <span style="color:#9fc5e8;"><b>Who can open this</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iOpenFlags</kbd> :
 Specify who can open this {{ entname }} by touching/using it (if it has no targetname, or targetname is set to be ignored with "Ignore Targetname")). If set to something other than default, this will cause the old spawnflags which are usually used to keep track of this to be ignored and causes the {{ entname }} to only orient using this setting instead.
 <div class="accordion">
-<input type="checkbox" id="accordion-27" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-27">
+<input type="checkbox" id="accordion-29" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-29">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -774,8 +818,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Ignore Targetname</b></span> <kbd  class="tooltip" data-tooltip="choices">m_fIgnoreTargetname</kbd> :
 Set whether the {{ entname }} should ignore its targetname or not. This is useful when you need to reference the {{ entname }} in another entity but still want it to open on touch.
 <div class="accordion">
-<input type="checkbox" id="accordion-28" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-28">
+<input type="checkbox" id="accordion-30" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-30">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -791,8 +835,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Obey Trigger Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iObeyTriggerMode</kbd> :
 Controls how {{ entname }} behave when triggered with different use-types.
 <div class="accordion">
-<input type="checkbox" id="accordion-29" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-29">
+<input type="checkbox" id="accordion-31" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-31">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -809,8 +853,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Breakable</b></span> <kbd  class="tooltip" data-tooltip="choices">breakable</kbd> :
 If set to 'Yes', the {{ entname }} gets functionality of [func_breakable](../func_breakable) entity. All breakable keyvalues are functional when this key is set to 'Yes'.
 <div class="accordion">
-<input type="checkbox" id="accordion-30" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-30">
+<input type="checkbox" id="accordion-32" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-32">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -830,8 +874,8 @@ If "Breakable" is set to 'Yes' then this is entity to trigger when {{ entname }}
 <span style="color:#9fc5e8;"><b>Material type</b></span> <kbd  class="tooltip" data-tooltip="choices">material</kbd> :
 If "Breakable" is set to 'Yes' then this is material which matches what your {{ entname }} is supposed to be the most. The material type affects the {{ entname }}'s sounds emitted when it takes damage, as well as which gibs are created when it is destroyed. If the material is set to 'Unbreakable glass', the {{ entname }} is, regardless of how funny that is, in fact, unbreakable..
 <div class="accordion">
-<input type="checkbox" id="accordion-31" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-31">
+<input type="checkbox" id="accordion-33" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-33">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -854,8 +898,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Instant Break</b></span> <kbd  class="tooltip" data-tooltip="choices">instantbreak</kbd> :
 If "Breakable" is set to 'Yes' then this let you enable instant break of {{ entname }} if hit with a "Instant break weapon" specified below. Note that this still can be damaged by other sources normally.
 <div class="accordion">
-<input type="checkbox" id="accordion-32" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-32">
+<input type="checkbox" id="accordion-34" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-34">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -871,8 +915,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Instant Break Weapon</b></span> <kbd  class="tooltip" data-tooltip="choices">weapon</kbd> :
 If "Breakable" is set to 'Yes' this allows you to specify an instant-break weapon when "Instant break" is set to 'Yes'.
 <div class="accordion">
-<input type="checkbox" id="accordion-33" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-33">
+<input type="checkbox" id="accordion-35" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-35">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -889,8 +933,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Gibs' direction and velocity</b></span> <kbd  class="tooltip" data-tooltip="choices">explosion</kbd> :
 If "Breakable" is set to 'Yes' you can choose whether the gibs fly relative to where the attack came from, damage received and material (e.g. concrete gibs fly with less velocity) or randomly. This has no effect on the {{ entname }} destroyed via a trigger. Note: Blowing up stuff is much more fun when shit goes flying instead of just falling to the ground as if nothing happened.
 <div class="accordion">
-<input type="checkbox" id="accordion-34" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-34">
+<input type="checkbox" id="accordion-36" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-36">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -918,8 +962,8 @@ Requires "Breakable" set to 'Yes'. If "Show HUD Info" is set to 'Yes', this is a
 <span style="color:#9fc5e8;"><b>Only Trigger</b></span> <kbd  class="tooltip" data-tooltip="choices">onlytrigger</kbd> :
 Requires "Breakable" set to 'Yes'. Make the {{ entname}} breakable only via triggering it.
 <div class="accordion">
-<input type="checkbox" id="accordion-35" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-35">
+<input type="checkbox" id="accordion-37" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-37">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -935,8 +979,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Break On Trigger</b></span> <kbd  class="tooltip" data-tooltip="choices">breakontrigger</kbd> :
 Requires "Breakable" set to 'Yes'. You can allow the {{ entname }} to breakable via trigger. It is not a duplicate of keyvalue above.
 <div class="accordion">
-<input type="checkbox" id="accordion-36" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-36">
+<input type="checkbox" id="accordion-38" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-38">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -952,8 +996,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Repairable</b></span> <kbd  class="tooltip" data-tooltip="choices">repairable</kbd> :
 With "Breakable" set to 'Yes' this allows to specify if the {{ entname }} can be repaired by using weapon_pipewrench on it.
 <div class="accordion">
-<input type="checkbox" id="accordion-37" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-37">
+<input type="checkbox" id="accordion-39" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-39">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -969,8 +1013,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Show HUD Info</b></span> <kbd  class="tooltip" data-tooltip="choices">showhudinfo</kbd> :
 With "Breakable" set to 'Yes' you can also enable HUD info when looking at this {{ entname }} (name, health e.t.c.).
 <div class="accordion">
-<input type="checkbox" id="accordion-38" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-38">
+<input type="checkbox" id="accordion-40" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-40">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -986,8 +1030,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Immune To Clients</b></span> <kbd  class="tooltip" data-tooltip="choices">immunetoclients</kbd> :
 Requires "Breakable" set to 'Yes'. While breakable {{ entname }} can be damaged by anyone or everything, you can disable if player should belong to this privileged group.
 <div class="accordion">
-<input type="checkbox" id="accordion-39" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-39">
+<input type="checkbox" id="accordion-41" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-41">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -1003,8 +1047,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Explosives Only</b></span> <kbd  class="tooltip" data-tooltip="choices">explosivesonly</kbd> :
 Requires "Breakable" set to 'Yes'. With this setting you can set the {{ entname }} react only to explosion damage.
 <div class="accordion">
-<input type="checkbox" id="accordion-40" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-40">
+<input type="checkbox" id="accordion-42" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-42">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
