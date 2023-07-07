@@ -6,7 +6,7 @@
     public class KeyValue
     {
         public Entity ParentEntity { get; private set; }
-        public List<Choice> Choices { get; } = new List<Choice>();
+        public List<Choice> Choices { get; set; } = new List<Choice>();
         public string Name { get; set; }
         public string Type { get; set; }
         public string DocName { get; set; }

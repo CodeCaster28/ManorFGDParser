@@ -61,10 +61,43 @@
             document.KeyDescriptions = new List<SpecsData.KeyDescription>();
             document.KeyDescriptions.AddRange(original.KeyDescriptions);
 
+
+            // Trick for fixing spawnflag override part 1
+            var docSpawnFlags = original.KeyDescriptions.FirstOrDefault(a => a.keyName == "spawnflags");
+            KeyValue newKeyvalue = null;
+            if (docSpawnFlags != null)
+            {
+                var entitySpawnFlag = entity.KeyValues.FirstOrDefault(a => a.Name == "spawnflags");
+                if (entitySpawnFlag == null)
+                {
+                    // Doc have spawnflag but entity doesnt. Let's add it.
+                    newKeyvalue = new KeyValue(entity);
+                    newKeyvalue.Name = "spawnflags";
+                    newKeyvalue.Type = "Flags";
+                    newKeyvalue.Description = "SpawnflagsEmpty";
+
+                    var newChoices = new List<Choice>();
+
+                    foreach (var choice in docSpawnFlags.keyChoices)
+                    {
+                        var newChoice = new Choice();
+                        newChoice.Value = choice.choiceValue;
+                        newChoice.Description = choice.choiceDescription;
+                        newChoice.DocName = FindSpawnflagDocNameInBaseClasses(entity, newChoice.Value);
+                        newChoices.Add(newChoice);
+                        entity.RegisterSpawnFlag(newChoice);
+                    }
+
+                    newKeyvalue.Choices = newChoices;
+
+                    entity.KeyValues.Add(newKeyvalue);
+                }
+            }
+
             var spawnFlags = entity.KeyValues.Where(a => a.Name == "spawnflags").ToList();
             foreach (var spawnFlag in spawnFlags) {
                 foreach (var choice in spawnFlag.Choices) {
-                    choice.Description = original.GetChoiceDescription ("spawnflags", choice.Value);
+                    choice.Description = original.GetChoiceDescription("spawnflags", choice.Value);
                 }
             }
             
@@ -72,11 +105,11 @@
             return document;
         }
 
-        private void CollectKeyDescriptionsFromBaseClasses(Entity entity, SpecsData document) 
+        private void CollectKeyDescriptionsFromBaseClasses(Entity entity, SpecsData document)
         {
             if (entity.BaseClasses == null || entity.BaseClasses.Count <= 0)
                 return;
-            
+
             foreach (var baseClass in entity.BaseClasses)
             {
                 // Add missing entries
@@ -88,18 +121,40 @@
 
                 // Recursive check for base classes of base classes
                 var baseEntity = allEntities.FirstOrDefault(a => a.ClassName == baseClass);
-                if (baseEntity != null) 
+                if (baseEntity != null)
                 {
                     var spawnFlags = baseEntity.KeyValues.Where(a => a.Name == "spawnflags").ToList();
-                    foreach (var spawnFlag in spawnFlags) {
-                        foreach (var choice in spawnFlag.Choices) {
+                    foreach (var spawnFlag in spawnFlags)
+                    {
+                        foreach (var choice in spawnFlag.Choices)
+                        {
                             if (string.IsNullOrEmpty(choice.Description))
-                                choice.Description = specs.GetChoiceDescription ("spawnflags", choice.Value);
+                                choice.Description = specs.GetChoiceDescription("spawnflags", choice.Value);
                         }
                     }
-                    CollectKeyDescriptionsFromBaseClasses (baseEntity, document);
+                    CollectKeyDescriptionsFromBaseClasses(baseEntity, document);
                 }
             }
+        }
+
+        private string FindSpawnflagDocNameInBaseClasses(Entity entity, string spawnflagValue)
+        {
+            foreach (var baseClass in entity.BaseClasses)
+            {
+                var baseEntity = allEntities.FirstOrDefault(a => a.ClassName == baseClass);
+                var parentSpawnFlags = baseEntity.KeyValues.FirstOrDefault(a => a.Name == "spawnflags");
+                foreach (var parentSpawnFlag in parentSpawnFlags.Choices)
+                {
+                    if (parentSpawnFlag.DocName != null && parentSpawnFlag.Value == spawnflagValue)
+                    {
+                        return parentSpawnFlag.DocName;
+                    }
+                }
+
+                return FindSpawnflagDocNameInBaseClasses(baseEntity, spawnflagValue);
+            }
+
+            return "";
         }
 
         private void LoadSpecs(List<string> entNames)
