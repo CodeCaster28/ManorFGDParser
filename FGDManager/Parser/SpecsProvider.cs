@@ -119,7 +119,12 @@
         
         private static SpecsData LoadData(string entityName)
         {
-            var path = $"entspecs/{entityName}.json";
+            var path = $"C:/Users/spell/Documents/SvenCoopManor/SCManorDocs/BaseClasses/{entityName}.json";
+
+            if (!File.Exists(path))
+            {
+                path = $"C:/Users/spell/Documents/SvenCoopManor/SCManorDocs/Entities/{entityName}.json";
+            }
 
             if (File.Exists(path))
             {
