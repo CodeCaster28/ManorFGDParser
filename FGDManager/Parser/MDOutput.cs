@@ -112,12 +112,12 @@
 
                     foreach (var note in entity.Notes)
                     {
-                        writer.WriteLine($"<div class=\"notices blue\">{note}</div>");
+                        writer.WriteLine($"<div class=\"notices blue\" markdown=\"1\">{note}</div>");
                     }
                     
                     foreach (var issue in entity.Issues)
                     {
-                        writer.WriteLine($"<div class=\"notices red\">{issue}</div>");
+                        writer.WriteLine($"<div class=\"notices red\" markdown=\"1\">{issue}</div>");
                     }
                 }
             }

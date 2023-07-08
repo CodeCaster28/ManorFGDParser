@@ -5,7 +5,7 @@ title: trigger_script
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This powerful entity allows you to put scripts made with AngelScript language on your map. You can find more info about trigger_script and scripting [here](https://github.com/baso88/SC_AngelScript/wiki/trigger_script).</div>
+<div class="column entityentry" markdown="1">This powerful entity allows you to put scripts made with AngelScript language on your map. Before Sven Co-op 5.0 you already were able to create almost anything with existed entities- this entity pushes imagination barrier even further allowing you to open an existing script and use functions. For more information on how to build trigger_script functions, visit the [SC AngelScript documentation](https://github.com/baso88/SC_AngelScript/wiki/trigger_script).</div>
 </div>
 </div>
 ###Keyvalues
@@ -66,3 +66,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start on</span> : Script is activated on start.</li>
 </ul>
 </div>
+<div class="notices blue">A think mode trigger_script obeys usetype: triggering with "Off" will stop the trigger_script entity running, similarly "Toggle" will allow to switch between running and not running.</div>

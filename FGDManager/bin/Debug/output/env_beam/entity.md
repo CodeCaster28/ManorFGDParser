@@ -5,7 +5,7 @@ title: env_beam
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">The env_beam entity is used to create a bolt between two entities.</div>
+<div class="column entityentry" markdown="1">The env_beam entity is used to create a bolt between two entities. The actual beam has the classname "beam"</div>
 </div>
 </div>
 ###Keyvalues

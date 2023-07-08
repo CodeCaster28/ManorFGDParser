@@ -5,7 +5,7 @@ title: trigger_change_class
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Allows you to change the classification of an entity, e.g. a monster or a func_breakable. The classification of an entity is used by monsters to determine whether it shall be considered as an enemy, an ally, as neutral or as something to fear. Most classifications will consider themselves as allies.</div>
+<div class="column entityentry" markdown="1">Allows you to change the classification of an entity, e.g. a monster or a [func_breakable](../func_breakable). The classification of an entity is used by monsters to determine whether it shall be considered as an enemy, an ally, as neutral or as something to fear. Most classifications will consider themselves as allies.</div>
 </div>
 </div>
 ###Keyvalues
@@ -58,3 +58,4 @@ Choices:
 </div>
 </div>
 </div>
+<div class="notices red">Using !activator as the target to change the classification of the activating entity does not work. [trigger_changevalue](../trigger_changevalue) can be used instead to get around this.</div>

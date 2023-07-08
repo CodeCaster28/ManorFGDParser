@@ -359,7 +359,7 @@ Time, in seconds, the trigger_multiple can fire it's target again after touched.
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No Clients</span> : If set, players won't be able to trigger this.</li>
 <li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Pushables</span> : If set, [func_pushable](../func_pushable) entities can trigger this.</li>
 <li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Everything else</span> :  If set, everything other than monsters, clients and pushables can trigger this. Does not exclude the above.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Fire On Enter</span> : Not applicable on {{ entname }}- it's already get triggered on enter!</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;"></span> : If set, trigger_multiple will fire on initial entry and not continuously while touching the entity, requiring re-entry to trigger again.</li>
 <li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Fire On Exit</span> :  If set, {{ entname }} will trigger as soon as something that entered it left it, instead of the instant something enters it.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>

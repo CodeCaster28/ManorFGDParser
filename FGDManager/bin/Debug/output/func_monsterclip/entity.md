@@ -5,7 +5,7 @@ title: func_monsterclip
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This is an invisible entity which will block all monsters who have the "MonsterClip"-spawnflag enabled. Starts enabled.</div>
+<div class="column entityentry" markdown="1">This is an invisible entity which will block all monsters who have the "MonsterClip"-spawnflag enabled. Starts enabled, but can be toggled on and off by trigger. To make func_monsterclip disabled at start use [trigger_auto](../trigger_auto).</div>
 </div>
 </div>
 ###Keyvalues

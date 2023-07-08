@@ -444,3 +444,4 @@ Name of the function to use from already parsed .as script files. If the functio
 </ul>
 </div>
 <div class="notices red">You must specify monster type, otherwise it will crash the game with "Spawned a NULL entity!" error message.</div>
+<div class="notices red">Not Solid key does not work.</div>

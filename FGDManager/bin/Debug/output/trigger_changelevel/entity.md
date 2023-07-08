@@ -212,7 +212,7 @@ Name of the map to switch to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Landmark name</b></span> <kbd  class="tooltip" data-tooltip="string">landmark</kbd> :
-Landmark used to work as an orientation point between two maps in a center of both trigger_changelevels of maps. It doesn't work in Sven Co-op, cause players starts at spawn points normally when new map loads.
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Players take inventory to new map</b></span> <kbd  class="tooltip" data-tooltip="choices">keep_inventory</kbd> :
@@ -233,11 +233,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Change Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">changetarget</kbd> :
-Unknown purpose. Maybe it triggers a target in goal map.
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay before change target</b></span> <kbd  class="tooltip" data-tooltip="string">changedelay</kbd> :
-Delays "Change Target" action, whatever that action does.
+
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Percentage of players needed</b></span> <kbd  class="tooltip" data-tooltip="string">percent_of_players</kbd> :
@@ -253,3 +253,5 @@ Percentage of total amount of players needed to reach this point in order for le
 </ul>
 </div>
 <div class="notices blue">Trigger_changelevel supports to have a master (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled.</div>
+<div class="notices blue">Using the map cfg CVar nomaptrans followed by a map name will disable any trigger_changelevel entities with a matching map value, becoming solid walls that will block players.</div>
+<div class="notices red">Percentage of players needed feature only counts players currently touching the trigger_changelevel, i.e. players that have touched and no longer touching will not be counted.</div>
