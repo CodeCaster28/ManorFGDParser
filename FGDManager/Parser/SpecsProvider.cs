@@ -143,11 +143,15 @@
             {
                 var baseEntity = allEntities.FirstOrDefault(a => a.ClassName == baseClass);
                 var parentSpawnFlags = baseEntity.KeyValues.FirstOrDefault(a => a.Name == "spawnflags");
-                foreach (var parentSpawnFlag in parentSpawnFlags.Choices)
+
+                if (parentSpawnFlags != null)
                 {
-                    if (parentSpawnFlag.DocName != null && parentSpawnFlag.Value == spawnflagValue)
+                    foreach (var parentSpawnFlag in parentSpawnFlags.Choices)
                     {
-                        return parentSpawnFlag.DocName;
+                        if (parentSpawnFlag.DocName != null && parentSpawnFlag.Value == spawnflagValue)
+                        {
+                            return parentSpawnFlag.DocName;
+                        }
                     }
                 }
 
