@@ -224,8 +224,7 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>In-game Name</b></span> <kbd  class="tooltip" data-tooltip="string">displayname</kbd> :
-If set, this will overwrite the monster's default in-game name, which appears in the HUD monster info, which can be enabled/disabled using the CVar 'mp_allowmonsterinfo'. You can use '
-' here to perform a line-break.
+If set, this will overwrite the monster's default in-game name, which appears in the HUD monster info, which can be enabled/disabled using the CVar 'mp_allowmonsterinfo'. You can use '\n' here to perform a line-break.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Blood Color</b></span> <kbd  class="tooltip" data-tooltip="choices">bloodcolor</kbd> :

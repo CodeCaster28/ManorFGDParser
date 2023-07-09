@@ -145,7 +145,7 @@ For Brush entities: sets brush model template of this entity. Set it to the name
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Copy Lighting From Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_copylight</kbd> :
 For Brush entities: copies light info from specified entity. This can be useful when we want this entity to be light up in a similar way the other entity of the map is, e.g. we have few func_pushables on map, and they are lit differently, tough they can be moved (and lightning is not updated on dynamic entities), it may looks shabby. With this keyvalue we can prevent this making all func_pushables received light in a same way. Another example: we have few windows in corridor (e.g. func_breakables), all of them receive a light in acceptable way, but the last window receive part of the light from another room and breaking whole atmosphere. We can set this window "Copy Lightning From Target" to any other window to fix this. Note that this can be also used for completely different entities, so we copy lightning from func_door to func_breakable as well.
-For model-based point entities: if model lightning does not satisfy you (e.g. it's too dark) you can specify a name of entity here to copy it's lightning values- it can be other model-based entity or simply [info_target][../info_target).
+For model-based point entities: if model lightning does not satisfy you (e.g. it's too dark) you can specify a name of entity here to copy it's lightning values- it can be other model-based entity or simply [info_target](../info_target).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
@@ -212,7 +212,7 @@ Name of the map to switch to.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Landmark name</b></span> <kbd  class="tooltip" data-tooltip="string">landmark</kbd> :
-
+Landmark used to work as an orientation point between two maps in a center of both trigger_changelevels of maps. It doesn't work in Sven Co-op, cause players starts at spawn points normally when new map loads.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Players take inventory to new map</b></span> <kbd  class="tooltip" data-tooltip="choices">keep_inventory</kbd> :
@@ -233,11 +233,11 @@ Choices:
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Change Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">changetarget</kbd> :
-
+Unknown purpose. Maybe it triggers a target in goal map.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay before change target</b></span> <kbd  class="tooltip" data-tooltip="string">changedelay</kbd> :
-
+Delays "Change Target" action, whatever that action does.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Percentage of players needed</b></span> <kbd  class="tooltip" data-tooltip="string">percent_of_players</kbd> :
@@ -253,5 +253,3 @@ Percentage of total amount of players needed to reach this point in order for le
 </ul>
 </div>
 <div class="notices blue" markdown="1">Trigger_changelevel supports to have a master (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled.</div>
-<div class="notices blue" markdown="1">Using the map cfg CVar nomaptrans followed by a map name will disable any trigger_changelevel entities with a matching map value, becoming solid walls that will block players.</div>
-<div class="notices red" markdown="1">Percentage of players needed feature only counts players currently touching the trigger_changelevel, i.e. players that have touched and no longer touching will not be counted.</div>

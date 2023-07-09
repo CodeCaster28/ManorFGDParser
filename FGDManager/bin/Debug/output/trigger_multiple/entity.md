@@ -241,7 +241,7 @@ For Brush entities: sets brush model template of this entity. Set it to the name
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Copy Lighting From Target</b></span> <kbd  class="tooltip" data-tooltip="string">zhlt_copylight</kbd> :
 For Brush entities: copies light info from specified entity. This can be useful when we want this entity to be light up in a similar way the other entity of the map is, e.g. we have few func_pushables on map, and they are lit differently, tough they can be moved (and lightning is not updated on dynamic entities), it may looks shabby. With this keyvalue we can prevent this making all func_pushables received light in a same way. Another example: we have few windows in corridor (e.g. func_breakables), all of them receive a light in acceptable way, but the last window receive part of the light from another room and breaking whole atmosphere. We can set this window "Copy Lightning From Target" to any other window to fix this. Note that this can be also used for completely different entities, so we copy lightning from func_door to func_breakable as well.
-For model-based point entities: if model lightning does not satisfy you (e.g. it's too dark) you can specify a name of entity here to copy it's lightning values- it can be other model-based entity or simply [info_target][../info_target).
+For model-based point entities: if model lightning does not satisfy you (e.g. it's too dark) you can specify a name of entity here to copy it's lightning values- it can be other model-based entity or simply [info_target](../info_target).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
@@ -359,7 +359,7 @@ Time, in seconds, the trigger_multiple can fire it's target again after touched.
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No Clients</span> : If set, players won't be able to trigger this.</li>
 <li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Pushables</span> : If set, [func_pushable](../func_pushable) entities can trigger this.</li>
 <li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Everything else</span> :  If set, everything other than monsters, clients and pushables can trigger this. Does not exclude the above.</li>
-<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Fire On Enter</span> : If set, trigger_multiple will fire on initial entry and not continuously while touching the entity, requiring re-entry to trigger again.</li>
+<li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Fire On Enter</span> : Not applicable on {{ entname }}- it's already get triggered on enter!</li>
 <li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Fire On Exit</span> :  If set, {{ entname }} will trigger as soon as something that entered it left it, instead of the instant something enters it.</li>
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
