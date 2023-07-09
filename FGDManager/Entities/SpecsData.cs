@@ -50,7 +50,7 @@
         public string GetChoiceDescription(string keyName, string choiceValue)
         {
             var key = KeyDescriptions.FirstOrDefault(a => a.keyName == keyName);
-            var choice = key?.keyChoices.FirstOrDefault(a => a.choiceValue == choiceValue);
+            var choice = key?.keyChoices.FirstOrDefault(a => a.choiceValue.Trim() == choiceValue.Trim());
             return choice?.choiceDescription;
         }
         
