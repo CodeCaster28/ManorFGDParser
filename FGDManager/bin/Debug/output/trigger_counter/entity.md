@@ -5,7 +5,7 @@ title: trigger_counter
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Obsolete counter entity. You might prefer to use [game_counter](../game_counter). You might prefer to use [game_counter](../game_counter). Counts how many times trigger_counter is triggered and displays message how many inputs are to go "Only X more to go...". After being triggered "count" times, it triggers it's target. Placement/shape/texturing of this entity does not matter as it behaves like point entity.</div>
+<div class="column entityentry" markdown="1">You might prefer to use [game_counter](../game_counter). Counts how many times trigger_counter is triggered and displays message how many inputs are to go "Only X more to go...". After being triggered "count" times, it triggers it's target. Placement/shape/texturing of this entity does not matter as it behaves like point entity.</div>
 </div>
 </div>
 ###Keyvalues
