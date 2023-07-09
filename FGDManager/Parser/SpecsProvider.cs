@@ -148,7 +148,7 @@
                 {
                     foreach (var parentSpawnFlag in parentSpawnFlags.Choices)
                     {
-                        if (parentSpawnFlag.DocName != null && parentSpawnFlag.Value == spawnflagValue)
+                        if (parentSpawnFlag.DocName != null && parentSpawnFlag.Value.Trim() == spawnflagValue.Trim())
                         {
                             return parentSpawnFlag.DocName;
                         }
