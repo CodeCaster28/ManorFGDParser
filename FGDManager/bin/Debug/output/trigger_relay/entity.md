@@ -5,7 +5,7 @@ title: trigger_relay
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Point entity which relays a triggering action. You can choose trigger use-type. Can be useful when you do not want to trigger an entity directly for whatever reasons.</div>
+<div class="column entityentry" markdown="1">Point entity which relays a triggering action, and overrides the activator entity with itself to the target entity when triggered. It allows you to choose a specific use-type to trigger the target with, and a delay time value for when to trigger the target. These features make it useful for controlling specifically how and when an entity is triggered.</div>
 </div>
 </div>
 ###Keyvalues

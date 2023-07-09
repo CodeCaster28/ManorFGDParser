@@ -205,7 +205,7 @@ Overrides default portal Area of Effect radius.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Teleport destination</b></span> <kbd  class="tooltip" data-tooltip="target_destination">m_iszTeleportDestination</kbd> :
-Name of teleport destination of secondary fire mode ([info_teleport_destination](../info_teleport_destination)).
+Name of teleport destination of secondary fire mode ([info_teleport_destination](../info_teleport_destination)). If not specified, all teleport destinations with name "displacer_global_target" will be picked.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Ammo needed/used to fire primary</b></span> <kbd  class="tooltip" data-tooltip="string">m_flPrimaryAmmoNeeded</kbd> :

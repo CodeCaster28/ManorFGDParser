@@ -5,7 +5,7 @@ title: info_teleport_destination
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This is the correct entity to use as the teleport destination entity of a [trigger_teleport](../trigger_teleport). Although other entities such as [info_target](../info_target) can be used as a target as well, only info_teleport_destination allows features such as triggering something on teleport. Setting entity name to displacer_global_target allows for weapon_displacer secondary fire to have players teleport to this info_teleport_destination, if the displacer does not have "Teleport Destination" (m_iszTeleportDestination).</div>
+<div class="column entityentry" markdown="1">This is the correct entity to use as the teleport destination entity of a [trigger_teleport](../trigger_teleport) or [weapon_displacer](../weapon_displacer). Although other entities such as [info_target](../info_target) can be used as a target as well, only info_teleport_destination allows features such as triggering something on teleport.</div>
 </div>
 </div>
 ###Keyvalues
@@ -16,7 +16,7 @@ Name of the function to use from already parsed .as script files when entity is 
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
-Set name of info_teleport_destination so [trigger_teleport](../trigger_teleport) can set it as it's target.
+Set name of info_teleport_destination so [trigger_teleport](../trigger_teleport) or [weapon_displacer](../weapon_displacer) can set it as it's teleport target. Setting the targetname to "displacer_global_target" allows for [weapon_displacer](../weapon_displacer) secondary fire to have players teleport to this info_teleport_destination, if the displacer does not have "m_iszTeleportDestination" key set.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :

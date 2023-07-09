@@ -5,7 +5,7 @@ title: world_items
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">The world_items entity is the old way of adding items to your map. It's development has been discontinued. Please add items to your map directly. Also, this only supports the creation of only four different items.</div>
+<div class="column entityentry" markdown="1">Obsolete in Sven Co-op. The world_items entity is the old way of adding items to your map. It's development has been discontinued. Please add items to your map directly.</div>
 </div>
 </div>
 ###Keyvalues

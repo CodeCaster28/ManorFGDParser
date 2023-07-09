@@ -20,7 +20,7 @@ Set name of {{ entname }} so other entities can trigger it apply effect(s). Ever
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
-Target to apply effects on.
+Target to apply effects on. Supports use of !activator and !caller.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Glow shell mode</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_glow_mode</kbd> :

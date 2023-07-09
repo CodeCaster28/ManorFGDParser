@@ -5,7 +5,7 @@ title: trigger_transition
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This entity controls which entities move to the next map in a level transition. It is not required in Sven Co-op.</div>
+<div class="column entityentry" markdown="1">Obsolete in Sven Co-op. This entity controlled which entities move to the next map in a level transition in Half-Life.</div>
 </div>
 </div>
 ###Keyvalues

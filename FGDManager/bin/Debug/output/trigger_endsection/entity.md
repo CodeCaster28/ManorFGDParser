@@ -5,7 +5,7 @@ title: trigger_endsection
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Used to end the game (not the map). Obsolete for Sven Co-op.</div>
+<div class="column entityentry" markdown="1">Obsolete in Sven Co-op. Used to end the game (not the map) in Half-Life. Use [game_end](../game_end) instead.</div>
 </div>
 </div>
 ###Keyvalues
