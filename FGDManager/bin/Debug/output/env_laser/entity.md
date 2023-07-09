@@ -108,8 +108,8 @@ Average damage per second for the laser.
 <li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Decal End</span> : If set, a bullethole decal will be created whenever the beam hits a surface.</li>
 </ul>
 </div>
-<div class="notices blue">The only thing this entity has that the env_beam doesn't is "End Sprite". Unless you need this, it's probably best to use env_beam instead.</div>
-<div class="notices blue">In case multiple entities match the name specified under "Target of Laser", the env_laser entity will pick one randomly.</div>
-<div class="notices blue">Contrary to what you may have read elsewhere, it is not possible to alter how fine a laser will be, as in, of how many segments it will consist.</div>
-<div class="notices blue">The noise-value does not affect the area in which damage will be applied. The damage area only depends on starting point, ending point and the laser's width.</div>
-<div class="notices red">Setting a "Render FX" makes no change whatsoever.</div>
+<div class="notices blue" markdown="1">The only thing this entity has that the env_beam doesn't is "End Sprite". Unless you need this, it's probably best to use env_beam instead.</div>
+<div class="notices blue" markdown="1">In case multiple entities match the name specified under "Target of Laser", the env_laser entity will pick one randomly.</div>
+<div class="notices blue" markdown="1">Contrary to what you may have read elsewhere, it is not possible to alter how fine a laser will be, as in, of how many segments it will consist.</div>
+<div class="notices blue" markdown="1">The noise-value does not affect the area in which damage will be applied. The damage area only depends on starting point, ending point and the laser's width.</div>
+<div class="notices red" markdown="1">Setting a "Render FX" makes no change whatsoever.</div>

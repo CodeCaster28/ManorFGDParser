@@ -698,7 +698,7 @@ Player damage modifier in percent.
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Use semicolon ';' to separate multiple item/target/group names in filters and conditions.</div>
-<div class="notices blue">If both 'TOUCH only' and 'USE only' flags are selected, the item can only be collected by trigger, but only if player is the !activator.</div>
-<div class="notices blue">Item can be collected on trigger, touch and use when none of flags above are selected.</div>
-<div class="notices blue">You can specify a group of affected players in all trigger fields making it possible to have different action for different players.</div>
+<div class="notices blue" markdown="1">Use semicolon ';' to separate multiple item/target/group names in filters and conditions.</div>
+<div class="notices blue" markdown="1">If both 'TOUCH only' and 'USE only' flags are selected, the item can only be collected by trigger, but only if player is the !activator.</div>
+<div class="notices blue" markdown="1">Item can be collected on trigger, touch and use when none of flags above are selected.</div>
+<div class="notices blue" markdown="1">You can specify a group of affected players in all trigger fields making it possible to have different action for different players.</div>

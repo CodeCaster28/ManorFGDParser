@@ -174,5 +174,5 @@ Amount of armor points over the maximum armor limit this item can provide.
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>
-<div class="notices blue">If "Touch only" and "Use only" flags are selected, the item can only be collected by trigger. When those flags are not selected, item also can be collected by trigger, but only if player is the !activator.</div>
+<div class="notices blue" markdown="1">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>
+<div class="notices blue" markdown="1">If "Touch only" and "Use only" flags are selected, the item can only be collected by trigger. When those flags are not selected, item also can be collected by trigger, but only if player is the !activator.</div>

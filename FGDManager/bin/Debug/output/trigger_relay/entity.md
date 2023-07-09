@@ -60,5 +60,5 @@ Time, in seconds, the trigger_relay can fire it's target again after being trigg
 <li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">Keep '!activator'</span> : By default trigger_relay overrides activator with itself. With this flag selected trigger_relay will pass original activator to next entity in chain.</li>
 </ul>
 </div>
-<div class="notices blue">If you change a trigger_relay's target while its delay is counting down, the old target will be fired.</div>
-<div class="notices blue">If you killtarget a trigger_relay while its delay is counting down, it will still fire. Trigger_relay passes itself on as the activator when triggered unless 'Keep !activator' flag is selected.</div>
+<div class="notices blue" markdown="1">If you change a trigger_relay's target while its delay is counting down, the old target will be fired.</div>
+<div class="notices blue" markdown="1">If you killtarget a trigger_relay while its delay is counting down, it will still fire. Trigger_relay passes itself on as the activator when triggered unless 'Keep !activator' flag is selected.</div>

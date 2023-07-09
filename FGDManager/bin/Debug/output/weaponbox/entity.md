@@ -210,5 +210,5 @@ Amount of spores.
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">If either 'TOUCH only' and 'USE only' flags are selected, the item can only be collected via trigger, but only if player is the !activator.</div>
-<div class="notices blue">Item can be collected on trigger, touch and use when none of flags above are selected.</div>
+<div class="notices blue" markdown="1">If either 'TOUCH only' and 'USE only' flags are selected, the item can only be collected via trigger, but only if player is the !activator.</div>
+<div class="notices blue" markdown="1">Item can be collected on trigger, touch and use when none of flags above are selected.</div>

@@ -26,4 +26,4 @@ Tested, doesn't work.
 <span style="color:#9fc5e8;"><b>Value</b></span> <kbd  class="tooltip" data-tooltip="integer">frags</kbd> :
 Player slots required for this entity to trigger its target.
 </div>
-<div class="notices blue">Once a map is running, the maximum player count (stored in CVar "maxplayers") cannot be changed.</div>
+<div class="notices blue" markdown="1">Once a map is running, the maximum player count (stored in CVar "maxplayers") cannot be changed.</div>

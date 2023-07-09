@@ -33,6 +33,6 @@ Put a space-separated list of WAV-file names from the 'sounds/vox' -folder here,
 <li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Activator Only</span> : Announcement will be heard only by player who is an activator of script (e.g. he pressed a button that triggers this entity).</li>
 </ul>
 </div>
-<div class="notices blue">The announcer is audible over the whole map, in full volume, with no stereo or 3D-audio effect in relation to the env_sentence's position.</div>
-<div class="notices blue">This can be triggered repeatedly and cause the same sentence to be read out multiple times in one moment.</div>
-<div class="notices blue">Unlike other entities, env_sentence sends the same output type as received, instead of 'Toggle'.</div>
+<div class="notices blue" markdown="1">The announcer is audible over the whole map, in full volume, with no stereo or 3D-audio effect in relation to the env_sentence's position.</div>
+<div class="notices blue" markdown="1">This can be triggered repeatedly and cause the same sentence to be read out multiple times in one moment.</div>
+<div class="notices blue" markdown="1">Unlike other entities, env_sentence sends the same output type as received, instead of 'Toggle'.</div>

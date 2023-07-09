@@ -380,5 +380,5 @@ Change the wait/reset time between each digital mouse action, though there is st
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start Off</span> : Disable entity at map start so {{ entname }}} need to be triggered in order to be usable.</li>
 </ul>
 </div>
-<div class="notices blue">It's only trigger entity that can be visible in-game.</div>
-<div class="notices red">All double click actions doesn't work properly.</div>
+<div class="notices blue" markdown="1">It's only trigger entity that can be visible in-game.</div>
+<div class="notices red" markdown="1">All double click actions doesn't work properly.</div>

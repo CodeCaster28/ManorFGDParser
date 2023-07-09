@@ -99,4 +99,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Leave Corpse</span> : If the action animation is a death animation, causing the monster to die, the corpse will not fade out.</li>
 </ul>
 </div>
-<div class="notices red">If 'Move to position' is set to 'Instantaneous' and you have an action animation set, the monster may freeze up and no longer react.</div>
+<div class="notices red" markdown="1">If 'Move to position' is set to 'Instantaneous' and you have an action animation set, the monster may freeze up and no longer react.</div>

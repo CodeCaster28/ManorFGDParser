@@ -41,4 +41,4 @@ The frequency of the rumble. A value of 10 would mean that your screen will shak
 <li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Global Shake</span> : The env_shake will affect the whole map equally, instead of a radius around it.</li>
 </ul>
 </div>
-<div class="notices blue">Env_shakes can safely be triggered while a rumble is still in progress, causing the new rumble to overwrite the old one entirely.</div>
+<div class="notices blue" markdown="1">Env_shakes can safely be triggered while a rumble is still in progress, causing the new rumble to overwrite the old one entirely.</div>

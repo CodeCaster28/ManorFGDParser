@@ -87,4 +87,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Remove Entity</span></li>
 </ul>
 </div>
-<div class="notices blue">The use of texlights is always more encouraged, as they usually produce more realistic lighting.</div>
+<div class="notices blue" markdown="1">The use of texlights is always more encouraged, as they usually produce more realistic lighting.</div>

@@ -53,4 +53,4 @@ Greater amount causes the decal to be more likely to appear, more blood to appea
 <li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Spray decals</span> : If set, blood will appear on a nearby wall, ceiling or floor.</li>
 </ul>
 </div>
-<div class="notices blue">If 'Move to position' is set to 'Instantaneous' and you have an action animation set, the monster may freeze up and no longer react.</div>
+<div class="notices blue" markdown="1">If 'Move to position' is set to 'Instantaneous' and you have an action animation set, the monster may freeze up and no longer react.</div>

@@ -35,4 +35,4 @@ Set how loud the sound shall be in a range from 0 (not audible) to 10 (normal).
 <li class="imagepadding" markdown="1"><b>4 </b> : <span style="color:#9fc5e8;">Activator Only</span> : Music will be heard only by player who is an activator of script (e.g. he pressed a button that triggers this entity).</li>
 </ul>
 </div>
-<div class="notices blue">Music will be playing even for players who just connected to the server, it will start playing on appropriate offset.</div>
+<div class="notices blue" markdown="1">Music will be playing even for players who just connected to the server, it will start playing on appropriate offset.</div>

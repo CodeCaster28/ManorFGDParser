@@ -38,5 +38,5 @@ Name of the keyvalue of the destination entity to write loaded value to.
 <span style="color:#9fc5e8;"><b>Trigger after loading</b></span> <kbd  class="tooltip" data-tooltip="String">m_iszTrigger</kbd> :
 Entity to trigger after the load-operation, even if nothing was loaded.
 </div>
-<div class="notices blue">If the requested data was not found or no save-file for the map has been created, yet, the target keyvalue won't be touched.</div>
-<div class="notices red">This will only set the keyvalue of the first destination entity found.</div>
+<div class="notices blue" markdown="1">If the requested data was not found or no save-file for the map has been created, yet, the target keyvalue won't be touched.</div>
+<div class="notices red" markdown="1">This will only set the keyvalue of the first destination entity found.</div>

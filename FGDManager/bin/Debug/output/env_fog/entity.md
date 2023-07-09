@@ -37,5 +37,5 @@ Distance, in units, at which the fog appears opaque. This needs to be greater th
 <li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Start Off</span> : The env_fog entity will start disabled and needs to be triggered in order for fog to show.</li>
 </ul>
 </div>
-<div class="notices red">Fog works only for OpenGL graphics mode.</div>
-<div class="notices red">Entities with 'Render mode' set to other than 'Normal' (including sprites) are not affected by env_fog.</div>
+<div class="notices red" markdown="1">Fog works only for OpenGL graphics mode.</div>
+<div class="notices red" markdown="1">Entities with 'Render mode' set to other than 'Normal' (including sprites) are not affected by env_fog.</div>

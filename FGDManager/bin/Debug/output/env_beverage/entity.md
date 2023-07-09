@@ -56,5 +56,5 @@ Allows you to provide your own beverage model, though, technically you may provi
 <span style="color:#9fc5e8;"><b>Health for Pickup</b></span> <kbd  class="tooltip" data-tooltip="integer">weapons</kbd> :
 Set how many health points will be recovered when using the beverage.
 </div>
-<div class="notices blue">This entity was used to create the usable vending machines in the Half-Life single player.</div>
-<div class="notices blue">Triggering this while a beverage is still in the env_beverage's location causes nothing to happen. Spawn must be clear of beverages.</div>
+<div class="notices blue" markdown="1">This entity was used to create the usable vending machines in the Half-Life single player.</div>
+<div class="notices blue" markdown="1">Triggering this while a beverage is still in the env_beverage's location causes nothing to happen. Spawn must be clear of beverages.</div>

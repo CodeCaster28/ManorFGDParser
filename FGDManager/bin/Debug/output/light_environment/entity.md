@@ -61,4 +61,4 @@ Color and intensity of sky ambient color - light from sky itself, not directly f
 You can control shadows of light_environment. It's useful when you want to add more realistic shadows depends on light type-for sunny day shadows will be sharper, when for cloudy or rainy weather more blurred:
 ![](light_environment.jpg)
 </div>
-<div class="notices red">Light and light_spot are ignored by models when light_environment is used, they will use lightning from sky only. Use light_spot with "Is sky" keyvalue set to "Yes" to fix this, but only if you need this (e.g. your map is dark and models not getting light from point lights).</div>
+<div class="notices red" markdown="1">Light and light_spot are ignored by models when light_environment is used, they will use lightning from sky only. Use light_spot with "Is sky" keyvalue set to "Yes" to fix this, but only if you need this (e.g. your map is dark and models not getting light from point lights).</div>

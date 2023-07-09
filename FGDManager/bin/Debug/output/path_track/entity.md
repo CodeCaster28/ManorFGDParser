@@ -60,5 +60,5 @@ Overrides train speed after reaching this point. Legacy, works only for non-cont
 <li class="imagepadding" markdown="1"><b>8</b> : <span style="color:#9fc5e8;">Disable train</span> : When selected, disables func_tracktrain controlling when reaching this point.</li>
 </ul>
 </div>
-<div class="notices blue">If branch path is not defined, and the track was triggered (with Disabled flag not selected) the train won't reach this point- it will stop at the last enabled path_track.</div>
-<div class="notices blue">When deactivating path (by killing it, disabling or branch switching with missing Branch Path) the train won't travel to that point, so it will end it's route at previous path_track (which is now considered dead end)</div>
+<div class="notices blue" markdown="1">If branch path is not defined, and the track was triggered (with Disabled flag not selected) the train won't reach this point- it will stop at the last enabled path_track.</div>
+<div class="notices blue" markdown="1">When deactivating path (by killing it, disabling or branch switching with missing Branch Path) the train won't travel to that point, so it will end it's route at previous path_track (which is now considered dead end)</div>

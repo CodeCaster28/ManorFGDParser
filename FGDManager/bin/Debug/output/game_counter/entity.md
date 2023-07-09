@@ -51,4 +51,4 @@ Required value to trigger target.
 <li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Fire if over limit</span> : Trigger a target when initial value is higher than limit value.</li>
 </ul>
 </div>
-<div class="notices red">When target is set to ambient_generic, the game_counter need to receive twice more inputs than normal, unless "Fire if over limit" spawnflag is selected.</div>
+<div class="notices red" markdown="1">When target is set to ambient_generic, the game_counter need to receive twice more inputs than normal, unless "Fire if over limit" spawnflag is selected.</div>

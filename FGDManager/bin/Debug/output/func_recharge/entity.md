@@ -214,4 +214,4 @@ Sound file to play (in a loop) when charging is in progress, just after "Custom 
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Func_recharge supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. Now entity can be killed and triggered to charge a battery of activator by one point.</div>
+<div class="notices blue" markdown="1">Func_recharge supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. Now entity can be killed and triggered to charge a battery of activator by one point.</div>

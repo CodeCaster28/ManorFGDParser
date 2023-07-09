@@ -172,7 +172,7 @@ If this path_waypoint releases monster because of a stop condition, (e.g. a new 
 <span style="color:#9fc5e8;"><b>Delay before Return</b></span> <kbd  class="tooltip" data-tooltip="integer">restart_delay</kbd> :
 If monster has stopped moving because of a stop condition (E.g. hearing a gunshot), the NPC will wait this long before continuing back to this path_waypoint.
 </div>
-<div class="notices red">When 'Wait Animation' is not specified, and wait activity is set to 'Play Wait Animation', monster will be playing it's last movement animation during wait time.</div>
-<div class="notices red">Monsters can be easily interrupted by blocking their way, interacting with them e.t.c. they will finish their route after dealing with interruptions, but there is also possibility that they will start whole path from beginning instead of continuing from last node.</div>
-<div class="notices red">When next waypoint is overflowed by 'Maximum # Occupant' monster that are waiting for free slot have problems with their animations.</div>
-<div class="notices red">Multiple monsters proceeding nodes with 'Maximum # Occupant' and animation set (e.g. 'Departure Animation') may cause issues with monster walking animation.</div>
+<div class="notices red" markdown="1">When 'Wait Animation' is not specified, and wait activity is set to 'Play Wait Animation', monster will be playing it's last movement animation during wait time.</div>
+<div class="notices red" markdown="1">Monsters can be easily interrupted by blocking their way, interacting with them e.t.c. they will finish their route after dealing with interruptions, but there is also possibility that they will start whole path from beginning instead of continuing from last node.</div>
+<div class="notices red" markdown="1">When next waypoint is overflowed by 'Maximum # Occupant' monster that are waiting for free slot have problems with their animations.</div>
+<div class="notices red" markdown="1">Multiple monsters proceeding nodes with 'Maximum # Occupant' and animation set (e.g. 'Departure Animation') may cause issues with monster walking animation.</div>

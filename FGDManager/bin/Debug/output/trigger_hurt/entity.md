@@ -270,5 +270,5 @@ Choices:
 <li class="imagepadding" markdown="1"><b>64</b> : <span style="color:#9fc5e8;">Affect non-moving NPC's</span> : If set, monster are properly affected by trigger_hurt. If this item is not selected, monsters are damaged only when moving inside brush of this entity.</li>
 </ul>
 </div>
-<div class="notices blue">Monsters gets hurt only while moving inside of trigger_hurt- use "Affect non-moving NPC's" flag to fix it.</div>
-<div class="notices blue">Trigger_hurt supports to have a killtarget (even if it is not listed in object properties). You can set it by adding "killtarget" key with SmartEdit mode disabled. When damage is dealt to anyone the specified target is removed.</div>
+<div class="notices blue" markdown="1">Monsters gets hurt only while moving inside of trigger_hurt- use "Affect non-moving NPC's" flag to fix it.</div>
+<div class="notices blue" markdown="1">Trigger_hurt supports to have a killtarget (even if it is not listed in object properties). You can set it by adding "killtarget" key with SmartEdit mode disabled. When damage is dealt to anyone the specified target is removed.</div>

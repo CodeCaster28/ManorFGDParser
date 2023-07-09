@@ -25,4 +25,4 @@ Set name of {{ entname }} so other entities can trigger it to fire targets. Can 
 <li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">multithreaded</span> : If set, a single multi_manager can have multiple instances. That means, it can be activated while already running, causing a temporary copy of it to be created and run on its own. It is worth remembering that if you have problems when attempting to trigger multi_manager again (in case all events were supposed to be completed before retriggering, but somehow multi_manager is still blocked), this key may help you fix an issue.</li>
 </ul>
 </div>
-<div class="notices blue">Removing a multi_manager from the game while it is running results in it properly ceasing all of its triggering-actions. A running multi_manager entity cannot be stopped through other means than removing it.</div>
+<div class="notices blue" markdown="1">Removing a multi_manager from the game while it is running results in it properly ceasing all of its triggering-actions. A running multi_manager entity cannot be stopped through other means than removing it.</div>

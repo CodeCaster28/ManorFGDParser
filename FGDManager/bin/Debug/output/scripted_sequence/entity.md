@@ -90,7 +90,7 @@ When the monster hits the supplied radius around the script, it'll stop moving a
 <li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">No Reset Entity</span> : y default, the monster is 'reset' after the sequence ends. This means, that its recent activity will be stopped and no animation interpolation will be done. The monster will appear to suddenly start its next action/animation of its own common AI behaviour, depending on the circumstances. Activity means the very action the monster is doing in a moment. These can be different attacks, movements into different directions, the monster flinching from the impact of an attack, dying or doing anything it can do. (E.g.: Barney has two activity states for drawing/holstering his gun.) Checking this flag disables this behaviour, causing a smoother transition from the end of the sequence to the monster picking up its AI again, in the sense of visual appearance and monster action. This comes at the risk of unwanted effects. You may experiment with this.</li>
 </ul>
 </div>
-<div class="notices red">If 'Move to position' is set to 'Instantaneous' and you have an action animation set, the monster may freeze up and no longer react.</div>
-<div class="notices red">If 'Move to position' is set to 'No- Turn To Face' the idle animation won't stop playing when this entity is triggered.</div>
-<div class="notices red">If 'Move to position' is set to 'Run' or 'Walk' the idle animation won't play, and the whole animation is not played smoothly.</div>
-<div class="notices red">Kill-targeting this entity crashes the game when action animation ends or idle animation is being played.</div>
+<div class="notices red" markdown="1">If 'Move to position' is set to 'Instantaneous' and you have an action animation set, the monster may freeze up and no longer react.</div>
+<div class="notices red" markdown="1">If 'Move to position' is set to 'No- Turn To Face' the idle animation won't stop playing when this entity is triggered.</div>
+<div class="notices red" markdown="1">If 'Move to position' is set to 'Run' or 'Walk' the idle animation won't play, and the whole animation is not played smoothly.</div>
+<div class="notices red" markdown="1">Kill-targeting this entity crashes the game when action animation ends or idle animation is being played.</div>

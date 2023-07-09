@@ -215,6 +215,6 @@ Sets the minimum light level. Set this value if entity is too dark on compiled m
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices red">Triggering func_pendulum without "Auto Return" flag may break it's rotation range.</div>
-<div class="notices red">Func_pendulum is a little glitchy. Move distance might be increased, decreased or relocated by unknown reasons.</div>
-<div class="notices red">Func_pendulum won't react to frequent triggering properly. It might stay in whatever state it is when triggered consecutively.</div>
+<div class="notices red" markdown="1">Triggering func_pendulum without "Auto Return" flag may break it's rotation range.</div>
+<div class="notices red" markdown="1">Func_pendulum is a little glitchy. Move distance might be increased, decreased or relocated by unknown reasons.</div>
+<div class="notices red" markdown="1">Func_pendulum won't react to frequent triggering properly. It might stay in whatever state it is when triggered consecutively.</div>

@@ -446,4 +446,4 @@ Sets the minimum light level. Set this value if entity is too dark on compiled m
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Remember to create origin brush for this entity around which func_trackautochange rotates.</div>
+<div class="notices blue" markdown="1">Remember to create origin brush for this entity around which func_trackautochange rotates.</div>

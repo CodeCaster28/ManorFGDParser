@@ -394,6 +394,6 @@ Sets the minimum light level. Set this value if entity is too dark on compiled m
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Requirements for origin brush are questionable. Some entities like trigger_camera or trigger_setorigin may need it to work properly. Also train can't use "Angular Velocity" when no origin brush provided.</div>
-<div class="notices blue">You can make train invisible, by setting render mode, when the train is a laser target.</div>
-<div class="notices blue">If you name your train it will start stopped, waiting to be started by trigger (even if nothing is targeting this entity).</div>
+<div class="notices blue" markdown="1">Requirements for origin brush are questionable. Some entities like trigger_camera or trigger_setorigin may need it to work properly. Also train can't use "Angular Velocity" when no origin brush provided.</div>
+<div class="notices blue" markdown="1">You can make train invisible, by setting render mode, when the train is a laser target.</div>
+<div class="notices blue" markdown="1">If you name your train it will start stopped, waiting to be started by trigger (even if nothing is targeting this entity).</div>

@@ -213,4 +213,4 @@ Scaling factor for the sprite. Defaults to 0.25 if not set.
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Spritetrains are not efficient on the network-code. You should use them as little as possible and only temporarily.</div>
+<div class="notices blue" markdown="1">Spritetrains are not efficient on the network-code. You should use them as little as possible and only temporarily.</div>

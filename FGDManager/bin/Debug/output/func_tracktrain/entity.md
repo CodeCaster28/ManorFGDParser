@@ -305,5 +305,5 @@ Allows you to setup a sound replacement file for the func_tracktrain sounds. The
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Func_tracktrain must face west (90 degrees) at editor position. At map start the track train automatically rotates to face next path_track.</div>
-<div class="notices blue">Func_tracktrain supports clip brushes tied onto it.</div>
+<div class="notices blue" markdown="1">Func_tracktrain must face west (90 degrees) at editor position. At map start the track train automatically rotates to face next path_track.</div>
+<div class="notices blue" markdown="1">Func_tracktrain supports clip brushes tied onto it.</div>

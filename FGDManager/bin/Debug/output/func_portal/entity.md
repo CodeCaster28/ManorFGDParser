@@ -76,6 +76,6 @@ Name of the texture to apply display on. Works only when "Texture Mode" is set t
 <li class="imagepadding" markdown="1"><b>32</b> : <span style="color:#9fc5e8;">Shoot through</span> : Allow shooting bullets and transporting projectiles through portal.</li>
 </ul>
 </div>
-<div class="notices blue">Portals can be moved an rotated by trigger_setorigin.</div>
-<div class="notices blue">For two-way portals create two separate func_portals then let first portal target second one and vice versa.</div>
-<div class="notices blue">If target is a portal and 'Teleport' flag is checked, the player will be teleported to the center of target's origin brush.</div>
+<div class="notices blue" markdown="1">Portals can be moved an rotated by trigger_setorigin.</div>
+<div class="notices blue" markdown="1">For two-way portals create two separate func_portals then let first portal target second one and vice versa.</div>
+<div class="notices blue" markdown="1">If target is a portal and 'Teleport' flag is checked, the player will be teleported to the center of target's origin brush.</div>

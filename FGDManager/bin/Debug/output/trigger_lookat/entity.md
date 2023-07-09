@@ -38,4 +38,4 @@ Name of the entity which's angles shall be adjusted.
 <li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Set Once</span> : Trigger_lookat will only set the angles once instead of constantly.</li>
 </ul>
 </div>
-<div class="notices red">Entity has problems to work in general. High update delays and non-functional once targetting makes this entity unusable.</div>
+<div class="notices red" markdown="1">Entity has problems to work in general. High update delays and non-functional once targetting makes this entity unusable.</div>

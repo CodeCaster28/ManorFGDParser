@@ -34,5 +34,5 @@ Name of the keyvalue of the source entity to read value from.
 <span style="color:#9fc5e8;"><b>Trigger after saving</b></span> <kbd  class="tooltip" data-tooltip="String">m_iszTrigger</kbd> :
 Entity to trigger after the save-operation, even if nothing was loaded.
 </div>
-<div class="notices blue">If the entity to read from is not found, the save-file won't be touched.</div>
-<div class="notices red">Trying to write strings containing line breaks (this does e.g. apply to game_text message-keyvalues containing the "\n"-character sequence) or colons will corrupt the save-file. This is because of how the feature was implemented and is simply not supported.</div>
+<div class="notices blue" markdown="1">If the entity to read from is not found, the save-file won't be touched.</div>
+<div class="notices red" markdown="1">Trying to write strings containing line breaks (this does e.g. apply to game_text message-keyvalues containing the "\n"-character sequence) or colons will corrupt the save-file. This is because of how the feature was implemented and is simply not supported.</div>

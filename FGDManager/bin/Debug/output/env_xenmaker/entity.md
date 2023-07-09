@@ -94,7 +94,7 @@ Second sprite Color override.
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">No Spawn</span> : If set, nothing will spawn at this env_xenmaker. Use this when you only want the visual and audible effect. You still must specify monster to spawn in 'Monster Type' keyvalue, otherwise it will crash the game.</li>
 </ul>
 </div>
-<div class="notices red">If no monstertype type is set, the game will crash with a ''Spawned a NULL entity!'' error, even if the ''No Spawn'' flag was set.</div>
-<div class="notices red">Using multiple env_xenmaker at one time sums up emitted sounds, what makes them very loud. It's not really a bug but it's very unpleasant effect.</div>
-<div class="notices red">When using an env_xenmaker as an effect-template for squadmakers, you may have to ensure its position in the entity list to be after its according squadmaker(s) in order to avoid a crash on map-load. To achieve that, follow these steps: Select all env_xenmakers in your map and group them. Perform a copy-paste-special or clone-drag (hold shift), leaving the copy in the exact same position as its original. Hide the copy. Delete the original group. Unhide the copy and ungroup it. Save your map.</div>
-<div class="notices red">Sprites doesn't work.</div>
+<div class="notices red" markdown="1">If no monstertype type is set, the game will crash with a ''Spawned a NULL entity!'' error, even if the ''No Spawn'' flag was set.</div>
+<div class="notices red" markdown="1">Using multiple env_xenmaker at one time sums up emitted sounds, what makes them very loud. It's not really a bug but it's very unpleasant effect.</div>
+<div class="notices red" markdown="1">When using an env_xenmaker as an effect-template for squadmakers, you may have to ensure its position in the entity list to be after its according squadmaker(s) in order to avoid a crash on map-load. To achieve that, follow these steps: Select all env_xenmakers in your map and group them. Perform a copy-paste-special or clone-drag (hold shift), leaving the copy in the exact same position as its original. Hide the copy. Delete the original group. Unhide the copy and ungroup it. Save your map.</div>
+<div class="notices red" markdown="1">Sprites doesn't work.</div>

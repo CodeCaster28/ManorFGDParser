@@ -154,5 +154,5 @@ Allows you to set up a custom appearance of light. To do this, you will have to 
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">The brightness does not work in the same way as in the "info_texlight" (it does not scale with texture size) so you don't need to multiply "Texture brightness" value to achieve sufficient brightness.</div>
-<div class="notices blue">When you want to set some of the values to '0', you'll need to set them to '0.0' instead. Editor ignores raw '0' value.</div>
+<div class="notices blue" markdown="1">The brightness does not work in the same way as in the "info_texlight" (it does not scale with texture size) so you don't need to multiply "Texture brightness" value to achieve sufficient brightness.</div>
+<div class="notices blue" markdown="1">When you want to set some of the values to '0', you'll need to set them to '0.0' instead. Editor ignores raw '0' value.</div>

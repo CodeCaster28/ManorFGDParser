@@ -47,4 +47,4 @@ Choices:
 </div>
 </div>
 </div>
-<div class="notices blue">Detail layers uses an advanced method to decide leafnode content, so they won't cause "Ambiguous leafnode contents" compile warning.</div>
+<div class="notices blue" markdown="1">Detail layers uses an advanced method to decide leafnode content, so they won't cause "Ambiguous leafnode contents" compile warning.</div>

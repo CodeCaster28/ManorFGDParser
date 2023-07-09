@@ -87,4 +87,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Concurrent</span> : This sentence cannot be played among other sentences (pick random sentence from those which are called at the moment). Also override any other sentences (like interrupt speech but works globally) except default sentences of other monsters.</li>
 </ul>
 </div>
-<div class="notices blue">Sound files are precached automatically (unlike sentences in monster classes).</div>
+<div class="notices blue" markdown="1">Sound files are precached automatically (unlike sentences in monster classes).</div>

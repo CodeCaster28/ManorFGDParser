@@ -134,7 +134,7 @@ Non-functional in {{ entname }}.
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Use 'ammo_9mm' name instead when dealing with .cfg files.</div>
-<div class="notices blue">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>
-<div class="notices blue">Ammo already loaded into weapon doesn't count to maximum ammo in supply (e.g. 6 in Revolver and 36 in supply gives total amount of 42 ammo).</div>
-<div class="notices blue">If '"Touch only" and "Use only" flags are selected, the ammo can only be collected by trigger. When those flags are not selected, the ammo also can be collected by trigger, but only if player is the !activator.</div>
+<div class="notices blue" markdown="1">Use 'ammo_9mm' name instead when dealing with .cfg files.</div>
+<div class="notices blue" markdown="1">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>
+<div class="notices blue" markdown="1">Ammo already loaded into weapon doesn't count to maximum ammo in supply (e.g. 6 in Revolver and 36 in supply gives total amount of 42 ammo).</div>
+<div class="notices blue" markdown="1">If '"Touch only" and "Use only" flags are selected, the ammo can only be collected by trigger. When those flags are not selected, the ammo also can be collected by trigger, but only if player is the !activator.</div>

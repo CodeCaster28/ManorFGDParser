@@ -395,7 +395,7 @@ Sets the minimum light level. Set this value if entity is too dark on compiled m
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices red">Liftable pushables shake when being held (and fly away when let go of).</div>
-<div class="notices red">Stacking liftable pushables on each other breaks them, making them fly infinitely up when attempting to be lifted again.</div>
-<div class="notices red">Pushables tend to get stuck in or go through complex geometry. Try to keep the area around this entity as square as possible.</div>
-<div class="notices red">Hull Size key is obsolete.</div>
+<div class="notices red" markdown="1">Liftable pushables shake when being held (and fly away when let go of).</div>
+<div class="notices red" markdown="1">Stacking liftable pushables on each other breaks them, making them fly infinitely up when attempting to be lifted again.</div>
+<div class="notices red" markdown="1">Pushables tend to get stuck in or go through complex geometry. Try to keep the area around this entity as square as possible.</div>
+<div class="notices red" markdown="1">Hull Size key is obsolete.</div>

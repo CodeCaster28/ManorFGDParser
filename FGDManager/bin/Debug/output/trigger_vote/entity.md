@@ -50,4 +50,4 @@ If specified, overrides default 'Yes' button text to the one typed here.
 <span style="color:#9fc5e8;"><b>No string (optional)</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszNoString</kbd> :
 If specified, overrides default 'No' button text to the one typed here.
 </div>
-<div class="notices blue">Unlike other entities, trigger_vote sends 'On' output instead of 'Toggle'.</div>
+<div class="notices blue" markdown="1">Unlike other entities, trigger_vote sends 'On' output instead of 'Toggle'.</div>

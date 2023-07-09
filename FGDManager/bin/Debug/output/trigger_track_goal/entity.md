@@ -38,4 +38,4 @@ If there is no another path_track this train can be direct to, this is the sound
 <li class="imagepadding" markdown="1"><b>2 </b> : <span style="color:#9fc5e8;">Don't move if no path available</span> : Prevents the train from moving backward if it can't find another path for func_tracktrain.</li>
 </ul>
 </div>
-<div class="notices red">Causing the train to move backwards on its path only works in looped tracks.</div>
+<div class="notices red" markdown="1">Causing the train to move backwards on its path only works in looped tracks.</div>

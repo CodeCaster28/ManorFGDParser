@@ -148,9 +148,9 @@ Model sub-skin to be used. Leave at 0 if there are none.
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">If your delay between shots is 0, the game will increase it notably; 0.01 works, though.</div>
-<div class="notices blue">The gibs also bounce off players.</div>
-<div class="notices blue">Gibs do not get stuck in each other.</div>
-<div class="notices blue">Render-modes and -amount can be used to be applied to the gibs.</div>
-<div class="notices red">When shooting sprites, they often appear at the origin of the world.</div>
-<div class="notices red">Animated sprites won't animate. Model animations don't play, either.</div>
+<div class="notices blue" markdown="1">If your delay between shots is 0, the game will increase it notably; 0.01 works, though.</div>
+<div class="notices blue" markdown="1">The gibs also bounce off players.</div>
+<div class="notices blue" markdown="1">Gibs do not get stuck in each other.</div>
+<div class="notices blue" markdown="1">Render-modes and -amount can be used to be applied to the gibs.</div>
+<div class="notices red" markdown="1">When shooting sprites, they often appear at the origin of the world.</div>
+<div class="notices red" markdown="1">Animated sprites won't animate. Model animations don't play, either.</div>

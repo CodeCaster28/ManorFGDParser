@@ -95,4 +95,4 @@ Choices:
 </div>
 </div>
 </div>
-<div class="notices blue">Players and the server console will receive a console message reading which CVar has changed and to what value. If you set a skill-CVar, only the server console will get information about the change printed.</div>
+<div class="notices blue" markdown="1">Players and the server console will receive a console message reading which CVar has changed and to what value. If you set a skill-CVar, only the server console will get information about the change printed.</div>

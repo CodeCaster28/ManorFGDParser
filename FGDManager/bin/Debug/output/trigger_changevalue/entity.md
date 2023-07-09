@@ -103,5 +103,5 @@ Entity to trigger after the trigger_changevalue has set the new keyvalue, by tar
 <li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">Invert source value</span> : The source-value will be multiplied with minus one before proceeding; this change is only temporary and this keyvalue is rather useless, as you can always prepend a minus-sign to the static source-value.</li>
 </ul>
 </div>
-<div class="notices blue">Trigger_changevalue supports the use of "!activator" and "!caller" in the "Destination Entity"-field.</div>
-<div class="notices blue">Trying to write a vector to a float or integer will cause the vector's length to be written. This is in respect to any ignored dimensions as per spawnflags.</div>
+<div class="notices blue" markdown="1">Trigger_changevalue supports the use of "!activator" and "!caller" in the "Destination Entity"-field.</div>
+<div class="notices blue" markdown="1">Trying to write a vector to a float or integer will cause the vector's length to be written. This is in respect to any ignored dimensions as per spawnflags.</div>

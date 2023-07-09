@@ -125,17 +125,17 @@ Average damage per second for beams with infinite lifetime. Damage in the moment
 <li class="imagepadding" markdown="1"><b>256</b> : <span style="color:#9fc5e8;">Shade End</span> : If set, the beam will fade invisible towards the end point.</li>
 </ul>
 </div>
-<div class="notices blue">In case multiple entities match the name specified under start- and/or end-entity, the env_beam entity will pick one randomly each for every beam created.</div>
-<div class="notices blue">Of the 'Shade start'- and 'Shade end'-flag, you may select one or neither. Using both makes only one function.</div>
-<div class="notices blue">Ring-beams cannot have 'Shade start' nor 'Shade end' by design.</div>
-<div class="notices blue">Contrary to what you may have read elsewhere, it is not possible to alter how fine a beam will be, as in, of how many segments it will consist.</div>
-<div class="notices blue">The noise-value does not affect the area in which damage will be applied. The damage area only depends on startpoint, endpoint and beam-width.</div>
-<div class="notices blue">When turning off a toggleable env_beam entity, its bolts will remain active until they run out of the specified lifetime, unless they are infinite. When reactivated, the next new beam will be created immediately, regardless of when the last one was created.</div>
-<div class="notices blue">Setting "Sprite name" to 'sprite_01.spr' with moderate "Amount of Noise" makes it look like magical (but not too pretty) fairy.</div>
-<div class="notices red">Ring-beams with infinite lifetime do not react to getting triggered off.</div>
-<div class="notices red">If the 'Ring'-flag is set, damage will be applied as if the beam still was linear. (Only on a line between start and end point)</div>
-<div class="notices red">Non-moving ring-beams with infinite lifetime occasionally disappear for specific clients completely. Set a lifetime of e.g. one second and a 'Strike again time'-value of '0' to encounter this issue.</div>
-<div class="notices red">Ring-beams always apply damage as if they were temporary beams. (In moment of creation)</div>
-<div class="notices red">Beams with limited lifetime cannot have 'Shade start' nor 'Shade end'.</div>
-<div class="notices red">Non-toggleable env_beams act as toggleable env_beams do, except that they can never be turned off again.</div>
-<div class="notices red">Setting a Render FX makes no change whatsoever.</div>
+<div class="notices blue" markdown="1">In case multiple entities match the name specified under start- and/or end-entity, the env_beam entity will pick one randomly each for every beam created.</div>
+<div class="notices blue" markdown="1">Of the 'Shade start'- and 'Shade end'-flag, you may select one or neither. Using both makes only one function.</div>
+<div class="notices blue" markdown="1">Ring-beams cannot have 'Shade start' nor 'Shade end' by design.</div>
+<div class="notices blue" markdown="1">Contrary to what you may have read elsewhere, it is not possible to alter how fine a beam will be, as in, of how many segments it will consist.</div>
+<div class="notices blue" markdown="1">The noise-value does not affect the area in which damage will be applied. The damage area only depends on startpoint, endpoint and beam-width.</div>
+<div class="notices blue" markdown="1">When turning off a toggleable env_beam entity, its bolts will remain active until they run out of the specified lifetime, unless they are infinite. When reactivated, the next new beam will be created immediately, regardless of when the last one was created.</div>
+<div class="notices blue" markdown="1">Setting "Sprite name" to 'sprite_01.spr' with moderate "Amount of Noise" makes it look like magical (but not too pretty) fairy.</div>
+<div class="notices red" markdown="1">Ring-beams with infinite lifetime do not react to getting triggered off.</div>
+<div class="notices red" markdown="1">If the 'Ring'-flag is set, damage will be applied as if the beam still was linear. (Only on a line between start and end point)</div>
+<div class="notices red" markdown="1">Non-moving ring-beams with infinite lifetime occasionally disappear for specific clients completely. Set a lifetime of e.g. one second and a 'Strike again time'-value of '0' to encounter this issue.</div>
+<div class="notices red" markdown="1">Ring-beams always apply damage as if they were temporary beams. (In moment of creation)</div>
+<div class="notices red" markdown="1">Beams with limited lifetime cannot have 'Shade start' nor 'Shade end'.</div>
+<div class="notices red" markdown="1">Non-toggleable env_beams act as toggleable env_beams do, except that they can never be turned off again.</div>
+<div class="notices red" markdown="1">Setting a Render FX makes no change whatsoever.</div>

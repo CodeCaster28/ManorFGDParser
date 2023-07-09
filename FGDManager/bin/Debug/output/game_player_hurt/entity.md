@@ -45,4 +45,4 @@ Name of the [multisource](../multisource) entity that (temporary) locks this {{ 
 <li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">Remove On fire</span> : The game_player_hurt is removed from the game after being used once.</li>
 </ul>
 </div>
-<div class="notices blue">Unlike other entities, game_player_hurt sends the same output type as received, instead of 'Toggle'.</div>
+<div class="notices blue" markdown="1">Unlike other entities, game_player_hurt sends the same output type as received, instead of 'Toggle'.</div>

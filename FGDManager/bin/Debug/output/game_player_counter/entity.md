@@ -30,5 +30,5 @@ Target to trigger when "Max Value" is reached. Trigger use-type is 'On'.
 <span style="color:#9fc5e8;"><b>Filter Player Targetname</b></span> <kbd  class="tooltip" data-tooltip="String">message</kbd> :
 If set, only players by that targetname will cause the game_player_counter to count up/down. It's not possible to set a targetname on a player before he connects, so don't ask me how to make use of this.
 </div>
-<div class="notices blue">Unlike other entities, game_player_counter sends 'On' output instead of 'Toggle'.</div>
-<div class="notices red">You can access current player value of this entity by refering to "dmg" keyvalue.</div>
+<div class="notices blue" markdown="1">Unlike other entities, game_player_counter sends 'On' output instead of 'Toggle'.</div>
+<div class="notices red" markdown="1">You can access current player value of this entity by refering to "dmg" keyvalue.</div>

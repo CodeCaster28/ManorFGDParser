@@ -1074,4 +1074,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">If the func_door kills something which blocked it, it will proceed instead of returning (behavior was changed to this in SC 4.5).</div>
+<div class="notices blue" markdown="1">If the func_door kills something which blocked it, it will proceed instead of returning (behavior was changed to this in SC 4.5).</div>

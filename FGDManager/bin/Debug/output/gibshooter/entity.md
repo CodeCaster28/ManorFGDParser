@@ -49,6 +49,6 @@ Time, in seconds, the gib will be visible till fading out of world and getting r
 <li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Repeatable</span> : If set, the {{ entname }} can be used more than once.</li>
 </ul>
 </div>
-<div class="notices blue">If your delay between shots is 0, the game may increase it notably; 0.01 works, though.</div>
-<div class="notices blue">The gibs also bounce off players.</div>
-<div class="notices blue">Gibs do not get stuck in each other.</div>
+<div class="notices blue" markdown="1">If your delay between shots is 0, the game may increase it notably; 0.01 works, though.</div>
+<div class="notices blue" markdown="1">The gibs also bounce off players.</div>
+<div class="notices blue" markdown="1">Gibs do not get stuck in each other.</div>

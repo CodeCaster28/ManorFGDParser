@@ -26,7 +26,7 @@ Entity to trigger in every instant after multisource has changed its state to be
 <span style="color:#9fc5e8;"><b>Global State Master</b></span> <kbd  class="tooltip" data-tooltip="string">globalstate</kbd> :
 If set, the multisource entity will read its initial state from the global state variable specified here on map load. See [env_global](../env_global) for more information about this. You should not have any entities targeting this multisource entity when using this.
 </div>
-<div class="notices blue">If a valid entity does not target a multisource that is being used as a master, or the targetting entity no longer exists, the multisource will not lock entities until something is able to target it.</div>
-<div class="notices blue">If you change the target of an entity targeting a multisource entity, the multisource entity will automatically no longer expect input from it.</div>
-<div class="notices blue">Note that entity takes only "targets" and "killtargets" keys into account, so other triggering inputs like "TriggerTarget" won't work. In that case use [trigger_relay](../trigger_relay) like a bridge between entity with atypical-triggering output and multisource.</div>
-<div class="notices red">Kill Target is count as a normal targetting in multisource, do not "kill target" this entity or it won't work expecting a kill input.</div>
+<div class="notices blue" markdown="1">If a valid entity does not target a multisource that is being used as a master, or the targetting entity no longer exists, the multisource will not lock entities until something is able to target it.</div>
+<div class="notices blue" markdown="1">If you change the target of an entity targeting a multisource entity, the multisource entity will automatically no longer expect input from it.</div>
+<div class="notices blue" markdown="1">Note that entity takes only "targets" and "killtargets" keys into account, so other triggering inputs like "TriggerTarget" won't work. In that case use [trigger_relay](../trigger_relay) like a bridge between entity with atypical-triggering output and multisource.</div>
+<div class="notices red" markdown="1">Kill Target is count as a normal targetting in multisource, do not "kill target" this entity or it won't work expecting a kill input.</div>

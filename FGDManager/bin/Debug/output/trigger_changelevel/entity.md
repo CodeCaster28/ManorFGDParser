@@ -252,6 +252,6 @@ Percentage of total amount of players needed to reach this point in order for le
 <li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">No CVAR override</span> : Do not override CVARs of destination map.</li>
 </ul>
 </div>
-<div class="notices blue">Trigger_changelevel supports to have a master (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled.</div>
-<div class="notices blue">Using the map cfg CVar nomaptrans followed by a map name will disable any trigger_changelevel entities with a matching map value, becoming solid walls that will block players.</div>
-<div class="notices red">Percentage of players needed feature only counts players currently touching the trigger_changelevel, i.e. players that have touched and no longer touching will not be counted.</div>
+<div class="notices blue" markdown="1">Trigger_changelevel supports to have a master (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled.</div>
+<div class="notices blue" markdown="1">Using the map cfg CVar nomaptrans followed by a map name will disable any trigger_changelevel entities with a matching map value, becoming solid walls that will block players.</div>
+<div class="notices red" markdown="1">Percentage of players needed feature only counts players currently touching the trigger_changelevel, i.e. players that have touched and no longer touching will not be counted.</div>

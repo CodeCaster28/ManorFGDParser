@@ -81,4 +81,4 @@ Name of first [path_waypoint](../path_waypoint) to go to.
 <li class="imagepadding" markdown="1"><b>1024 </b> : <span style="color:#9fc5e8;">No Respawn (Collectible)</span> : If the spawned entity is a weapon, an item or ammunition, it won't respawn after being collected when this flag is set.</li>
 </ul>
 </div>
-<div class="notices red">You must specify monster type, otherwise it will crash the game with "Spawned a NULL entity!" error message.</div>
+<div class="notices red" markdown="1">You must specify monster type, otherwise it will crash the game with "Spawned a NULL entity!" error message.</div>

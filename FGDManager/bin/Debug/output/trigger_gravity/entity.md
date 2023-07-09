@@ -364,4 +364,4 @@ Gravity factor, multiplied by the value of sv_gravity CVar.
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">"Target", "Kill Target" and "Delay Before Trigger" keyvalues does not work on this entity. That means this trigger can't act like touch detectors (to fire it's target when touched).</div>
+<div class="notices blue" markdown="1">"Target", "Kill Target" and "Delay Before Trigger" keyvalues does not work on this entity. That means this trigger can't act like touch detectors (to fire it's target when touched).</div>

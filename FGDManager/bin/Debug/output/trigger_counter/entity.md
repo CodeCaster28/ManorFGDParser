@@ -364,4 +364,4 @@ How many times this entity need to be triggered to trigger it's "Target".
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices red">Most keyvalues won't work, those are inherited from volume triggers even if it's not behaving like brush entity. Don't ask me why, told you it's an obsolete entity.</div>
+<div class="notices red" markdown="1">Most keyvalues won't work, those are inherited from volume triggers even if it's not behaving like brush entity. Don't ask me why, told you it's an obsolete entity.</div>

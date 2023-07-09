@@ -593,6 +593,6 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">Turret can be both controllable and automatic- attacks player until he gets control over this func_tank.</div>
-<div class="notices blue">Entity must be facing east at x/y view of the editor, the angle of barrel must be customized with 'Yaw' compass in object properties.</div>
-<div class="notices red">Max range of all func_tank entities cannot be set to higher that 2048.</div>
+<div class="notices blue" markdown="1">Turret can be both controllable and automatic- attacks player until he gets control over this func_tank.</div>
+<div class="notices blue" markdown="1">Entity must be facing east at x/y view of the editor, the angle of barrel must be customized with 'Yaw' compass in object properties.</div>
+<div class="notices red" markdown="1">Max range of all func_tank entities cannot be set to higher that 2048.</div>

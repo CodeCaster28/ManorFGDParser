@@ -66,4 +66,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Start on</span> : Script is activated on start.</li>
 </ul>
 </div>
-<div class="notices blue">A think mode trigger_script obeys usetype: triggering with "Off" will stop the trigger_script entity running, similarly "Toggle" will allow to switch between running and not running.</div>
+<div class="notices blue" markdown="1">A think mode trigger_script obeys usetype: triggering with "Off" will stop the trigger_script entity running, similarly "Toggle" will allow to switch between running and not running.</div>

@@ -232,5 +232,5 @@ Ammo cost of tertiary fire.
 <li class="imagepadding" markdown="1"><b>4096 </b> : <span style="color:#9fc5e8;">Ignore delay</span> : If selected, all teleport delays will be removed.</li>
 </ul>
 </div>
-<div class="notices blue">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>
-<div class="notices blue">If "TOUCH only" and "USE only" flags are selected, the weapon can only be collected by trigger. When those flags are not selected, the weapon also can be collected by trigger, but only if player is the !activator.</div>
+<div class="notices blue" markdown="1">As all weapon-, ammo- and item- entities, this respawns after 15 seconds.</div>
+<div class="notices blue" markdown="1">If "TOUCH only" and "USE only" flags are selected, the weapon can only be collected by trigger. When those flags are not selected, the weapon also can be collected by trigger, but only if player is the !activator.</div>

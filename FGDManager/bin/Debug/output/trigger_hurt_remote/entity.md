@@ -84,4 +84,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Do Armor</span> : Allows to use "Armor Damage" keyvalue.</li>
 </ul>
 </div>
-<div class="notices red">Constant feature is unstable for server, it's recommended to trigger this entity with looped [multi_manager](../multi_manager) to achieve similar effect.</div>
+<div class="notices red" markdown="1">Constant feature is unstable for server, it's recommended to trigger this entity with looped [multi_manager](../multi_manager) to achieve similar effect.</div>

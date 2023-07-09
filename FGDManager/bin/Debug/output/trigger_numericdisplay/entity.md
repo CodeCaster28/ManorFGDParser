@@ -44,5 +44,5 @@ Time interval between value updates. The smaller the value is, the more frequent
 <li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Zero as leading</span> : Zero number is treated as a leading zero.</li>
 </ul>
 </div>
-<div class="notices blue">If other texture in '~texturename' sequence is used, (e.g. '+3~HEX_00' instead of '+0~HEX_00'), then displayed digit value is increased by three, for '+7~HEX_00' value is increased by seven e.t.c.</div>
-<div class="notices blue">Entity supports any texture that is animated, even if there are missing animation frames. If no '+a' texture provided, the texture will animate itself normally.</div>
+<div class="notices blue" markdown="1">If other texture in '~texturename' sequence is used, (e.g. '+3~HEX_00' instead of '+0~HEX_00'), then displayed digit value is increased by three, for '+7~HEX_00' value is increased by seven e.t.c.</div>
+<div class="notices blue" markdown="1">Entity supports any texture that is animated, even if there are missing animation frames. If no '+a' texture provided, the texture will animate itself normally.</div>

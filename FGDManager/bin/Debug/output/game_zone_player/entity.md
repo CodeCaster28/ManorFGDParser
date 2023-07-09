@@ -109,4 +109,4 @@ Name of one or more [game_counter](../game_counter) entities whose count values 
 <li class="imagepadding" markdown="1"><b>1 </b> : <span style="color:#9fc5e8;">Ignore Dead Players</span> : If set, dead players are skipped entirely, as if they weren't on the server in the first place.</li>
 </ul>
 </div>
-<div class="notices red">Gibbed players are always being ignored.</div>
+<div class="notices red" markdown="1">Gibbed players are always being ignored.</div>

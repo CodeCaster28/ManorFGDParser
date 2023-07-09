@@ -73,4 +73,4 @@ Name of the texture to apply display on. Works only when "Texture Mode" is set t
 <li class="imagepadding" markdown="1"><b>16</b> : <span style="color:#9fc5e8;">Render only every 2nd frame</span> : Update display only every two frames instead of every frame, this improves performance.</li>
 </ul>
 </div>
-<div class="notices blue">Mirrors can be moved an rotated by [trigger_setorigin](../trigger_setorigin). In that case remember to tie origin brush to func_mirror.</div>
+<div class="notices blue" markdown="1">Mirrors can be moved an rotated by [trigger_setorigin](../trigger_setorigin). In that case remember to tie origin brush to func_mirror.</div>

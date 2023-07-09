@@ -459,5 +459,5 @@ Name of custom sprite that will be used as the mouse cursor during camera view.
 <li class="imagepadding" markdown="1"><b>512</b> : <span style="color:#9fc5e8;">Ignore Hold Time</span> : Camera ignores hold time and will be turned off when re-triggered.</li>
 </ul>
 </div>
-<div class="notices blue">The best way to make camera rotate is to "Target" the entity. The camera will face entity specified in "Target" field, it could be [info_target](../info_target), monster or even another train. If you make a train that moves in a same path as trigger_camera, but it's a little further in a path, the camera will face always the direction that it moves.</div>
-<div class="notices blue">When targeting func_train or other brush-based entity, the ORIGIN brush tied to those entities is required.</div>
+<div class="notices blue" markdown="1">The best way to make camera rotate is to "Target" the entity. The camera will face entity specified in "Target" field, it could be [info_target](../info_target), monster or even another train. If you make a train that moves in a same path as trigger_camera, but it's a little further in a path, the camera will face always the direction that it moves.</div>
+<div class="notices blue" markdown="1">When targeting func_train or other brush-based entity, the ORIGIN brush tied to those entities is required.</div>

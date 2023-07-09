@@ -101,4 +101,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>1024</b> : <span style="color:#9fc5e8;">Skip Initial Set</span> : If set, the target entity will not be moved to the copypointer's origin before doing the offset difference calculation (set this unless you want the target entity stuck to the center of the copypointer).</li>
 </ul>
 </div>
-<div class="notices blue">If you are copying the origin/angles from or to a brush based entity, then that entity must have an origin brush attached to it. The center of that origin brush will be used as the origin of the entire brush entity.</div>
+<div class="notices blue" markdown="1">If you are copying the origin/angles from or to a brush based entity, then that entity must have an origin brush attached to it. The center of that origin brush will be used as the origin of the entire brush entity.</div>

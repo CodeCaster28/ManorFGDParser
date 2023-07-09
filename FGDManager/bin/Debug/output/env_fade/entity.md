@@ -43,4 +43,4 @@ The color to use.
 <li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">Activator Only</span> : If set, only the player who activated this entity will be affected by it.</li>
 </ul>
 </div>
-<div class="notices red">Sum of "Duration" and "Hold Fade" time can be maximum ~18 seconds long, then env_fade ends. Trigger it multiple times to keep it for longer time, use more than one env_fade if you need first one for color transition, and second one for still target color.</div>
+<div class="notices red" markdown="1">Sum of "Duration" and "Hold Fade" time can be maximum ~18 seconds long, then env_fade ends. Trigger it multiple times to keep it for longer time, use more than one env_fade if you need first one for color transition, and second one for still target color.</div>

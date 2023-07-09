@@ -420,4 +420,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">"Kill Target" and "Delay Before Trigger" keyvalues does not work on this entity. Also "Target" keyvalue can be used only to specify teleportation destination. That means this trigger can't act like touch detectors (to fire it's target when touched).</div>
+<div class="notices blue" markdown="1">"Kill Target" and "Delay Before Trigger" keyvalues does not work on this entity. Also "Target" keyvalue can be used only to specify teleportation destination. That means this trigger can't act like touch detectors (to fire it's target when touched).</div>

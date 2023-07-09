@@ -198,4 +198,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">Start On</span> : Deprecated in Sven Co-op.</li>
 </ul>
 </div>
-<div class="notices blue">Button_target supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. Now entity can be killed and when triggered, it's behaviour depends on use-type: 'On'- press button on, 'Off'- press button off, 'Toggle'- toggle button.</div>
+<div class="notices blue" markdown="1">Button_target supports to have a name (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled. Now entity can be killed and when triggered, it's behaviour depends on use-type: 'On'- press button on, 'Off'- press button off, 'Toggle'- toggle button.</div>

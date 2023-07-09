@@ -266,5 +266,5 @@ Set the amount of damage to inflict on the object blocking the func_rotation's r
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices red">Func_rotating won't react to frequent triggering properly. It might stay in whatever state it is when triggered consecutively.</div>
-<div class="notices red">The entity might start to behave unexpectedly after many rotations. You can fix this by performing a modulo 360.0 operation on it's angles using a trigger_copyvalue.</div>
+<div class="notices red" markdown="1">Func_rotating won't react to frequent triggering properly. It might stay in whatever state it is when triggered consecutively.</div>
+<div class="notices red" markdown="1">The entity might start to behave unexpectedly after many rotations. You can fix this by performing a modulo 360.0 operation on it's angles using a trigger_copyvalue.</div>

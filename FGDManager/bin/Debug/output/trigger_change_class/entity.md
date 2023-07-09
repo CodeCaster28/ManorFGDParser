@@ -58,4 +58,4 @@ Choices:
 </div>
 </div>
 </div>
-<div class="notices red">Using !activator as the target to change the classification of the activating entity does not work. [trigger_changevalue](../trigger_changevalue) can be used instead to get around this.</div>
+<div class="notices red" markdown="1">Using !activator as the target to change the classification of the activating entity does not work. [trigger_changevalue](../trigger_changevalue) can be used instead to get around this.</div>

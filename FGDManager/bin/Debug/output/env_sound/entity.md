@@ -73,6 +73,6 @@ Choices:
 <li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">USE Only</span> : If selected, the env_sound apply sound effect directly (if radius is 0), or will check for players inside that radius single time whenever it is triggered.</li>
 </ul>
 </div>
-<div class="notices red">When a player spawns within the radius of an env_sound, he won't be affected.</div>
-<div class="notices red">Being in an env_sound for too short of a time won't cause its effects to be applied on the player.</div>
-<div class="notices red">An env_sound effect is not reset to normal after a map change. If you do not want to use env_sounds in your map, you should at least add a few around its start locations to properly reset the effect.</div>
+<div class="notices red" markdown="1">When a player spawns within the radius of an env_sound, he won't be affected.</div>
+<div class="notices red" markdown="1">Being in an env_sound for too short of a time won't cause its effects to be applied on the player.</div>
+<div class="notices red" markdown="1">An env_sound effect is not reset to normal after a map change. If you do not want to use env_sounds in your map, you should at least add a few around its start locations to properly reset the effect.</div>

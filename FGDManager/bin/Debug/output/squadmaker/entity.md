@@ -443,5 +443,5 @@ Name of the function to use from already parsed .as script files. If the functio
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices red">You must specify monster type, otherwise it will crash the game with "Spawned a NULL entity!" error message.</div>
-<div class="notices red">Not Solid key does not work.</div>
+<div class="notices red" markdown="1">You must specify monster type, otherwise it will crash the game with "Spawned a NULL entity!" error message.</div>
+<div class="notices red" markdown="1">Not Solid key does not work.</div>

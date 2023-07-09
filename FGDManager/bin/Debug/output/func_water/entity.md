@@ -1103,6 +1103,6 @@ Height of the waves. Larger values for higher waves.
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">It is advised to experiment with large texture scale values on the water surface, as the game engine will first fit the texture to be 64 units wide and high. Doing so can greatly improve performance and looks.</div>
-<div class="notices red">Rotating the surface texture by non-by-90-divisible values causes shred water surface.</div>
-<div class="notices red">Multiple func_water entities touching on edge will not correctly blend into each other unless both are snapped to 64-units-grid on the touching corners..</div>
+<div class="notices blue" markdown="1">It is advised to experiment with large texture scale values on the water surface, as the game engine will first fit the texture to be 64 units wide and high. Doing so can greatly improve performance and looks.</div>
+<div class="notices red" markdown="1">Rotating the surface texture by non-by-90-divisible values causes shred water surface.</div>
+<div class="notices red" markdown="1">Multiple func_water entities touching on edge will not correctly blend into each other unless both are snapped to 64-units-grid on the touching corners..</div>

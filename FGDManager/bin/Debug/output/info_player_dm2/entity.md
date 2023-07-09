@@ -72,5 +72,5 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue">When there is no active or not obstructed spawnpoints, the players are forced to wait until at least one of the spawnpoints become available again- the message will be displayed: "No respawn points available. Please wait...".</div>
-<div class="notices blue">Remember that even when you disabled all {{ entname }} entities, the info_player_coop and info_player_start entities (that you might put in your map accidentally) will be used instead..</div>
+<div class="notices blue" markdown="1">When there is no active or not obstructed spawnpoints, the players are forced to wait until at least one of the spawnpoints become available again- the message will be displayed: "No respawn points available. Please wait...".</div>
+<div class="notices blue" markdown="1">Remember that even when you disabled all {{ entname }} entities, the info_player_coop and info_player_start entities (that you might put in your map accidentally) will be used instead..</div>
