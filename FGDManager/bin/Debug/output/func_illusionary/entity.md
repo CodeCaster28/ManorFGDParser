@@ -5,7 +5,7 @@ title: func_illusionary
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Essentially an entirely non-solid func_wall.</div>
+<div class="column entityentry" markdown="1">Essentially an entirely non-solid func_wall. If it has toggleable textures, they will toggle when the entity is triggered.</div>
 </div>
 </div>
 ###Keyvalues
@@ -233,4 +233,4 @@ Sets the minimum light level. Set this value if entity is too dark on compiled m
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
-<div class="notices blue" markdown="1">Even if non-solid, this entity still adds clipnodes. Set "ZHLT Disable Clipping" to 'Always non-solid' to prevent that or add zhlt_noclip key with value of 1.</div>
+<div class="notices blue" markdown="1">Even if non-solid, this entity still adds clipnodes. Set "ZHLT Disable Clipping" to 'Always non-solid' to prevent that or add zhlt_noclip key with value of 1. Alternatively, use SKIP texture instead of NULL on faces that have the texture on the entity.</div>

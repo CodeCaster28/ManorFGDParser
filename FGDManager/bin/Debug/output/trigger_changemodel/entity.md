@@ -24,9 +24,10 @@ Entity to change model.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>New Model Name</b></span> <kbd  class="tooltip" data-tooltip="studio">model</kbd> :
-Path to the new model. Is precached automatically. Path starts in "svencoop" directory.
+Path to the new model. It is precached automatically. Path starts in "svencoop" directory.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Skin</b></span> <kbd  class="tooltip" data-tooltip="integer">skin</kbd> :
 Skin to use on target model.
 </div>
+<div class="notices blue" markdown="1">Trigger_changemodel supports "bodygroup" key (even if it is not listed in object properties). The key allows for changing of the model's bodygroup. You can set it by adding "bodygroup" key with SmartEdit mode disabled.</div>

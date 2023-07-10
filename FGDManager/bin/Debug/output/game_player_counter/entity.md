@@ -31,4 +31,5 @@ Target to trigger when "Max Value" is reached. Trigger use-type is 'On'.
 If set, only players by that targetname will cause the game_player_counter to count up/down. It's not possible to set a targetname on a player before he connects, so don't ask me how to make use of this.
 </div>
 <div class="notices blue" markdown="1">Unlike other entities, game_player_counter sends 'On' output instead of 'Toggle'.</div>
-<div class="notices red" markdown="1">You can access current player value of this entity by refering to "dmg" keyvalue.</div>
+<div class="notices blue" markdown="1">You can access current player value of this entity by refering to "dmg" keyvalue.</div>
+<div class="notices red" markdown="1">This entity is partially broken, it doesn’t work correctly after a level change for instance, and you cannot access the current number of connected players with it. You can instead replace this entity’s behaviour with a trigger_entity_iterator and a game_counter.</div>

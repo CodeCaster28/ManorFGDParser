@@ -25,10 +25,10 @@ Choices:
 </label>
 <div class="accordion-body">
 <ul>
-<li><b>0</b> : No</li>
-<li><b>2</b> : Hull 1 : Set this brush as a player standing hull shape.</li>
-<li><b>4</b> : Hull 2 : Set this brush as big monster's hull but ask yourself- do you really need to change this?.</li>
-<li><b>8</b> : Hull 3 : Set this brush as a player crouching hull shape.</li>
+<li><b>0</b> : No : No</li>
+<li><b>2</b> : Hull 1 : Set this brush as a player standing player hull (hull 1).</li>
+<li><b>4</b> : Hull 2 : Set this brush as big monster's hull (hull 2) but ask yourself- do you really need to change this?.</li>
+<li><b>8</b> : Hull 3 : Set this brush as a player crouching hull shape (hull 3).</li>
 </ul>
 </div>
 </div>

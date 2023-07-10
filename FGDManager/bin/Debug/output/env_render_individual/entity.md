@@ -110,3 +110,5 @@ Entity to copy render values which will be applied to target entity. 'Use Entity
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
+<div class="notices blue" markdown="1">Once applied, entity appearance for affected players won't change even if players gets respawned with new targetname.</div>
+<div class="notices blue" markdown="1">Entities that have their appearance changed will revert back to the original render settings if the env_render_individual that applied the rendering is removed from the game, e.g. via killtarget.</div>

@@ -5,7 +5,7 @@ title: func_wall_toggle
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This is a [func_wall](../func_wall) which can be toggled between visible and invisible. In invisible state, it will also be non-solid. Be careful not to unintentionally stuck players when making a func_wall_toggle visible. While invisible, it does not affect the game's graphics performance.</div>
+<div class="column entityentry" markdown="1">This is a [func_wall](../func_wall) which can be toggled between visible and invisible. In invisible state, it will also be non-solid. Be careful not to unintentionally trap players when making a func_wall_toggle visible. While invisible, it does not affect the game's graphics performance.</div>
 </div>
 </div>
 ###Keyvalues

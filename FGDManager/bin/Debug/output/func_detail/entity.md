@@ -12,7 +12,7 @@ title: func_detail
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Detail level</b></span> <kbd  class="tooltip" data-tooltip="integer">zhlt_detaillevel</kbd> :
-Detailed brushes with different detail level won't chop each other. Use higher amount for smaller details. Try to avoid too many detail levels in the map (it's increasing .bsp file size). E.g. func_detail table made of brushes have detail level of 1. On the table there are another func_details that represents computer screen, keyboard and mug. Those should have detail level value of 2 so they won't chop the faces of the table.
+The brush's detail level. Each level will be chopped by brushes of equal or lower detail level, and always be chopped by world brushes, and only chop brushes of equal or greater level. Use higher amount for smaller details. Try to avoid too many detail levels in the map (it increases .bsp file size). Example: func_detail table made of brushes have detail level of 1. On the table there are another func_details that represents computer screen, keyboard and mug. Those should have detail level value of 2 so they won't chop the faces of the table.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Lower its level to chop others</b></span> <kbd  class="tooltip" data-tooltip="integer">zhlt_chopdown</kbd> :
@@ -24,7 +24,7 @@ Specify to chop brushes from higher detail levels than this func_detail.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Priority when faces overlap</b></span> <kbd  class="tooltip" data-tooltip="integer">zhlt_coplanarpriority</kbd> :
-Prevents z-fighting. When two brushes have overlapping faces, this value controls which of those brushes faces have rendering priority. Note that both of those brushes must have same "Detail Level".
+Helps prevent z-fighting between two or more overlapping detail brush faces by giving each detail its own priority. Note that both of those brushes must have the same detail level to make use of this priority (use detail level 0 to work with world brushes).
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Detail level of clip hulls</b></span> <kbd  class="tooltip" data-tooltip="integer">zhlt_clipnodedetaillevel</kbd> :
@@ -48,3 +48,5 @@ Choices:
 </div>
 </div>
 <div class="notices blue" markdown="1">Detail layers uses an advanced method to decide leafnode content, so they won't cause "Ambiguous leafnode contents" compile warning.</div>
+<div class="notices blue" markdown="1">Despite becoming an ordinary world brush during compilation, it cannot be used to seal the map. It is kept separate from ordinary world brushes during processing of Hull 0 and as such cannot be used to prevent leaks. Only ordinary world brushes should be used to close up a map.</div>
+<div class="notices blue" markdown="1">Even if Passable is set to Yes (zhlt_noclip 1) it will still be affected by decals such as sprays and bullet holes.</div>

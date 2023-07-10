@@ -34,3 +34,4 @@ Non-functional in {{ entname }}.
 <span style="color:#9fc5e8;"><b>New Target</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszNewTarget</kbd> :
 New "Target" value for targeted entity.
 </div>
+<div class="notices red" markdown="1">This entity only changes one entity’s target, likely the first entity that it can find, instead of applying the change to all entity instances whose name matches the target. [trigger_changevalue](../trigger_changevalue) can be used to get around this.</div>

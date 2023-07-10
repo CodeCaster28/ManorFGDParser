@@ -520,3 +520,4 @@ Choices:
 <li class="imagepadding" markdown="1"><b>2048 </b> : <span style="color:#9fc5e8;">Not in Deathmatch</span> : Obsolete in Sven Co-op. Makes the entity don't appear in Multiplayer Games.</li>
 </ul>
 </div>
+<div class="notices red" markdown="1">Using "X-axis" flag causes sparks at world origin due to conflict with flag 64 of func_button.</div>

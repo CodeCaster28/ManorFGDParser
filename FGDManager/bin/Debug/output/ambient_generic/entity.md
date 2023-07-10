@@ -20,7 +20,7 @@ Set name of {{ entname }} so other entities can trigger it to play sound. Depend
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound File</b></span> <kbd  class="tooltip" data-tooltip="sound">message</kbd> :
-Name of the sound file to play. Supported formats are: AIFF, ASF, DLS, FLAC, IT, M3U, MID, MOD, MP2, MP3, OGG, S3M, VAG, WAV, WMA, XM. Hammer will only let you select WAV-files, but other formats do work as they are fully supported by the game's sound engine. Type the path in manually in that case. File Path starts in the 'sound'-folder, example: 'mymap/soundfile.ogg'.
+Name of the sound file to play. Supported formats are: AIFF, ASF, DLS, FLAC, IT, M3U, MID, MOD, MP2, MP3, OGG, S3M, VAG, WAV, WMA, XM. Hammer will only let you select WAV-files, but other formats do work as they are fully supported by the game's sound engine. Type the path in manually in that case. File Path starts in the 'sound'-folder, example: 'mymap/soundfile.ogg'. Alternatively, a sentence can be played using the ! prefix followed by a sentence name for the keyvalue, e.g. "!C1A2_0". Check the default_sentences.txt file for options.
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Volume (10 = loudest)</b></span> <kbd  class="tooltip" data-tooltip="integer">health</kbd> :
@@ -227,9 +227,8 @@ Choices:
 <li class="imagepadding" markdown="1"><b>8 </b> : <span style="color:#9fc5e8;">Large Radius (~1536)</span> : Non-linear extra-huge sound radius.</li>
 <li class="imagepadding" markdown="1"><b>16 </b> : <span style="color:#9fc5e8;">Start Silent</span> : If set, this sound will start off. Only makes sense for looped sounds. This is usually left unchecked for ambient looping sounds, however only with other than default play mode. See notes for more info.</li>
 <li class="imagepadding" markdown="1"><b>32 </b> : <span style="color:#9fc5e8;">Un-looped|Cyclic</span> : The sound will play once when triggered. If triggered while playing, the sound will stop and restart immediately.</li>
-<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">User Only (+origin)</span> : The sound will be ADDITIONALLY played for activator (only for him and at specified volume regardless of player and entity position). See notes.</li>
+<li class="imagepadding" markdown="1"><b>64 </b> : <span style="color:#9fc5e8;">User Only (+origin)</span> : The sound will only be audible to the activator of this entity when triggered. If "Play everywhere" flag is set, the sound will be audible to everyone at their own position.</li>
 </ul>
 </div>
 <div class="notices blue" markdown="1">Looped sounds that starts enabled ("Start silent" flag unchecked) should use other than default play mode (preferably Linear/Looped) or they need to be triggered by trigger_auto after short delay (e.g. one second) with "Start silent" flag selected. This is because ambient_generics with default play mode are not correctly processed at map start, and works only after triggered.</div>
 <div class="notices blue" markdown="1">If no sound radius is set, 'Medium radius' is used as a default. You should set only one sound radius, or 'Play everywhere'.</div>
-<div class="notices blue" markdown="1">'User Only' allows to play a sound in "activator's head", but entity will still attempt to play audio on it's position, in that case it's good to move entity away from map and set it's radius to minimum, so activator won't hear both sounds: one made by default ambient_generic behaviour AND other made from this flag.</div>

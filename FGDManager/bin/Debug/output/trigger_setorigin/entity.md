@@ -102,3 +102,4 @@ Choices:
 </ul>
 </div>
 <div class="notices blue" markdown="1">If you are copying the origin/angles from or to a brush based entity, then that entity must have an origin brush attached to it. The center of that origin brush will be used as the origin of the entire brush entity.</div>
+<div class="notices red" markdown="1">When using "Constant" flag and the entity does not have a targetname, the entity will not automatically turn itself on. Use a [trigger_auto](../trigger_auto).</div>

@@ -5,7 +5,7 @@ title: trigger_entity_iterator
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">This entity allows you to simulate one or multiple entities triggering a specific other entity. For example, you can have all entities of classname "player" trigger a trigger_condition, or all entities with targetname "zombie" trigger a trigger_copyvalue. The triggered entity will receive every iterated entity as activator.</div>
+<div class="column entityentry" markdown="1">This entity allows you to simulate one or multiple entities triggering a specific other entity. For example, you can have all entities of classname "player" trigger a [trigger_condition](../trigger_condition), or all entities with targetname "zombie" trigger a [trigger_copyvalue](../trigger_copyvalue). The triggered entity will receive every iterated entity as activator.</div>
 </div>
 </div>
 ###Keyvalues

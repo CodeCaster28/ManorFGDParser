@@ -5,7 +5,7 @@ title: trigger_changelevel
 <div class="container previewimg">
 <div class="columns">
 <div class="imagepadding column col-auto" markdown="1">![](preview.png)</div>
-<div class="column entityentry" markdown="1">Entity which causes a level-change when entered, without showing up a scoreboard. Scores are no transferred. Can be set to only react to triggering. You can add master keyvalue manually to this entity.</div>
+<div class="column entityentry" markdown="1">Entity which causes a level-change when entered, without showing up a scoreboard. Scores are no transferred. Can be set to only react to triggering. You can add "master" keyvalue manually to this entity.</div>
 </div>
 </div>
 ###Keyvalues
@@ -247,11 +247,11 @@ Percentage of total amount of players needed to reach this point in order for le
 <hr>
 <div class="entityflags">
 <ul>
-<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">No Intermission</span> : Unknown purpose.</li>
+<li class="imagepadding" markdown="1"><b>1</b> : <span style="color:#9fc5e8;">No Intermission</span> : Obsolete leftover from Quake.</li>
 <li class="imagepadding" markdown="1"><b>2</b> : <span style="color:#9fc5e8;">USE Only</span> : Cause trigger_changelevel to work like point entity, which means it need to be triggered to perform map change.</li>
 <li class="imagepadding" markdown="1"><b>4</b> : <span style="color:#9fc5e8;">No CVAR override</span> : Do not override CVARs of destination map.</li>
 </ul>
 </div>
-<div class="notices blue" markdown="1">Trigger_changelevel supports to have a master (even if it is not listed in object properties). You can set it by adding "targetname" key with SmartEdit mode disabled.</div>
-<div class="notices blue" markdown="1">Using the map cfg CVar nomaptrans followed by a map name will disable any trigger_changelevel entities with a matching map value, becoming solid walls that will block players.</div>
+<div class="notices blue" markdown="1">Trigger_changelevel supports "master" key (even if it is not listed in object properties). You can set it by adding "master" key with SmartEdit mode disabled, using the targetname of a given [multisource](../multisource) entity as the key's value.</div>
+<div class="notices blue" markdown="1">Using the map cfg CVar "nomaptrans" followed by a map name will disable any trigger_changelevel entities with a matching map value, becoming solid walls that will block players.</div>
 <div class="notices red" markdown="1">Percentage of players needed feature only counts players currently touching the trigger_changelevel, i.e. players that have touched and no longer touching will not be counted.</div>
