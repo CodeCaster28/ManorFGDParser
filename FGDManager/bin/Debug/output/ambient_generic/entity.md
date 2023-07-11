@@ -10,9 +10,18 @@ title: ambient_generic
 </div>
 ###Keyvalues
 <hr>
+<div class="accordion entityentry">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
+<i class="icon icon-arrow-right mr-1"></i>
+</label>
+<div class="accordion-body entgroup">
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
+</div>
+</div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
@@ -30,8 +39,8 @@ Set how loud the sound shall be in a range from 0 (not audible) to 10 (normal). 
 <span style="color:#9fc5e8;"><b>Play Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">playmode</kbd> :
 This is the new way of setting whether a sound will loop or not. If a value other than 'Default' is selected, the 'Unlooped/Cyclic'-flag will be ignored and this option will be referenced to instead. You can also enable linear rolloff with this option, to allow you to setup your own radius. Note that linear rolloff isn't true to how sound works in real life, so it might sound/feel odd.
 <div class="accordion">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -50,8 +59,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Dynamic Presets</b></span> <kbd  class="tooltip" data-tooltip="choices">preset</kbd> :
 Allows you to specify a dynamic preset to enhance the sound. Used for sounds like machines warmup as it will repeatedly play a sound changing it's pitch and other parameters. You should probably experiment with these to find something that sounds good, if you don't want to stick with the default.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -121,8 +130,8 @@ Time, in seconds, over which a spindown sound-effect (consecutive fade-outs) sha
 <span style="color:#9fc5e8;"><b>LFO type</b></span> <kbd  class="tooltip" data-tooltip="choices">lfotype</kbd> :
 Allows you to set up a low frequency oscillator to modify volume and/or pitch over time, as the sound plays.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -158,8 +167,8 @@ Set how many consecutive fade-ins/fade-outs shall be applied to spin-up and spin
 <span style="color:#9fc5e8;"><b>Linear Min Radius</b></span> <kbd  class="tooltip" data-tooltip="choices">linearmin</kbd> :
 When you set the play mode to use linear rolloff, the value set here will be used as the minimum sound radius, meaning the sound will be heard at full volume within this radius around the ambient_generic. You may only choose one of these preset values, as the volume curves need to be precalculated for performance reasons.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -190,8 +199,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Linear End Radius</b></span> <kbd  class="tooltip" data-tooltip="choices">linearmax</kbd> :
 When you set the play mode to use linear rolloff, the value set here will be used as the maximum sound radius, meaning the sound cannot be heard outside of this radius around the ambient_generic. You may only choose one of these preset values, as the volume curves need to be precalculated for performance reasons.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>

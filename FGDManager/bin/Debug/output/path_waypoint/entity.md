@@ -10,9 +10,18 @@ title: path_waypoint
 </div>
 ###Keyvalues
 <hr>
+<div class="accordion entityentry">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
+<i class="icon icon-arrow-right mr-1"></i>
+</label>
+<div class="accordion-body entgroup">
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
+</div>
+</div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
@@ -30,8 +39,8 @@ Alternate Waypoint to use.
 <span style="color:#9fc5e8;"><b>Move to Position</b></span> <kbd  class="tooltip" data-tooltip="Choices">movementtype</kbd> :
 How monster will move to this waypoint.
 <div class="accordion">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -54,8 +63,8 @@ When in radius, monster has finished moving to the waypoint. Only works for Walk
 <span style="color:#9fc5e8;"><b>Face Waypoint Direction</b></span> <kbd  class="tooltip" data-tooltip="choices">useangles</kbd> :
 If set to yes, monster's YAW will change gradually to match the path_waypoint's YAW
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -83,8 +92,8 @@ Entity to trigger upon completing the arrival animation. If no arrival animation
 <span style="color:#9fc5e8;"><b>Wait Activity</b></span> <kbd  class="tooltip" data-tooltip="Choices">wait_activity</kbd> :
 Controls monster behaviour when waiting at this path_waypoint.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -114,8 +123,8 @@ Name of the [Multisource](../multisource) entity. Monsters will wait here until 
 <span style="color:#9fc5e8;"><b>Wait Here Until Full</b></span> <kbd  class="tooltip" data-tooltip="choices">waituntilfull</kbd> :
 Force monsters to wait until this waypoint is full before proceeding to the next waypoint. If Maximum Occupants is 0, a level error message will occur.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -151,8 +160,8 @@ If this waypoint is full, monsters will go to the specified waypoint instead. If
 <span style="color:#9fc5e8;"><b>Force Waypoint Completion</b></span> <kbd  class="tooltip" data-tooltip="Choices">force_complete</kbd> :
 Forces monster to finish this particular path_waypoint even if a higher priority path is found, provided that the stop conditions are not met. This disables path_condition / path_condition_controller evaluation during the extent of the trip and departure.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>

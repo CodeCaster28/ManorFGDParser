@@ -10,9 +10,18 @@ title: trigger_effect
 </div>
 ###Keyvalues
 <hr>
+<div class="accordion entityentry">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
+<i class="icon icon-arrow-right mr-1"></i>
+</label>
+<div class="accordion-body entgroup">
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
+</div>
+</div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
@@ -26,8 +35,8 @@ Target to apply effects on. Supports use of !activator and !caller.
 <span style="color:#9fc5e8;"><b>Glow shell mode</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_glow_mode</kbd> :
 Specify if glow shell effect should be added or subtracted from player. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -48,8 +57,8 @@ Color to add or subtract if 'Glow Shell Mode' is other than 'No Change'. This al
 <span style="color:#9fc5e8;"><b>Block weapons</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_block_weapons_mode</kbd> :
 Add 1 or subtract 1 from effect that prevent usage of weapons. Note that this value can drop below 0 go above 1 because trigger_effect can add or subtract value infinitely every time it's triggered, yet it's always blocks target weapon the same way if total value is more than 0. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -66,8 +75,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Invulnerable</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_invulnerable_mode</kbd> :
 Add 1 or subtract 1 from effect that makes target invulnerable. Note that this value can drop below 0 go above 1 because trigger_effect can add or subtract value infinitely every time it's triggered, yet it's always makes target invulnerable the same way if total value is more than 0. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -84,8 +93,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_invisible_mode</kbd> :
 Add 1 or subtract 1 from effect that makes target invisible. Note that this value can drop below 0 go above 1 because trigger_effect can add or subtract value infinitely every time it's triggered, yet it's always makes target invisible the same way if total value is more than 0. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -102,8 +111,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Non-solid</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_nonsolid_mode</kbd> :
 Add 1 or subtract 1 from effect that makes target non solid to certain objects. Note that this value can drop below 0 go above 1 because trigger_effect can add or subtract value infinitely every time it's triggered, yet it's always makes target non-solid the same way if total value is more than 0. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -120,8 +129,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Time before drown mode</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_respiration_mode</kbd> :
 Specify if time before drown modifier effect should be added or subtracted from target. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -142,8 +151,8 @@ Seconds of time before drown to add or subtract if 'Time Before Drown Mode' is o
 <span style="color:#9fc5e8;"><b>Friction modifier mode</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_friction_mode</kbd> :
 Specify if friction modifier effect should be added or subtracted from target. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -164,8 +173,8 @@ Friction percentage to add or subtract if 'Friction Modifier Mode' is other than
 <span style="color:#9fc5e8;"><b>Gravity modifier mode</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_gravity_mode</kbd> :
 Specify if gravity modifier effect should be added or subtracted from target. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-9">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -186,8 +195,8 @@ Gravity percentage to add or subtract if 'Gravity Modifier Mode' is other than '
 <span style="color:#9fc5e8;"><b>Speed modifier mode</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_speed_mode</kbd> :
 Specify if speed modifier effect should be added or subtracted from target. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-10">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -208,8 +217,8 @@ Speed percentage to add or subtract if 'Speed Modifier Mode' is other than 'No C
 <span style="color:#9fc5e8;"><b>Damage modifier mode</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_damage_mode</kbd> :
 Specify if damage modifier effect should be added or subtracted from target. Leave 'No change' to disable effect change.
 <div class="accordion">
-<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-10">
+<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-11">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>

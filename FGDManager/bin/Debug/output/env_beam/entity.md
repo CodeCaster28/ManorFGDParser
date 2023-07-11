@@ -10,9 +10,18 @@ title: env_beam
 </div>
 ###Keyvalues
 <hr>
+<div class="accordion entityentry">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
+<i class="icon icon-arrow-right mr-1"></i>
+</label>
+<div class="accordion-body entgroup">
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
+</div>
+</div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
@@ -26,12 +35,19 @@ Entity at which the beam starts. If this and the "End Entity" are not set, the e
 <span style="color:#9fc5e8;"><b>Ending Entity</b></span> <kbd  class="tooltip" data-tooltip="target_destination">LightningEnd</kbd> :
 Entity at which the beam ends. If this is not set, the env_beam entity will cast a random bolt hitting a solid surface in the specified radius the start entity. This is not guaranteed to work unless there are solid faces in every direction from the start entity within the specified radius.
 </div>
+<div class="accordion entityentry">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
+<span style="color:#cae4fc;"><b>Render Keyvalues</b></span>
+<i class="icon icon-arrow-right mr-1"></i>
+</label>
+<div class="accordion-body entgroup">
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
 Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -59,6 +75,8 @@ Choices:
 <li><b>19</b> : Glow Shell : Applies nice animated glowing shell on model. Color can be applied. "FX Amount" manipulates glow shell size.</li>
 <li><b>20</b> : ClampMinScale (Sprites)</li>
 </ul>
+</div>
+</div>
 </div>
 </div>
 </div>

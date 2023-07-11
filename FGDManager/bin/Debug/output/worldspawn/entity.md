@@ -10,9 +10,18 @@ title: worldspawn
 </div>
 ###Keyvalues
 <hr>
+<div class="accordion entityentry">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
+<i class="icon icon-arrow-right mr-1"></i>
+</label>
+<div class="accordion-body entgroup">
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
+</div>
+</div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Map description / title</b></span> <kbd  class="tooltip" data-tooltip="string">message</kbd> :
@@ -46,8 +55,8 @@ Simple method to show a text message on screen- it's a chapter-type string that 
 <span style="color:#9fc5e8;"><b>Level fade in</b></span> <kbd  class="tooltip" data-tooltip="choices">startdark</kbd> :
 If set to 'Yes', the fade in effect (from completely dark to fully transparent) will be applied as soon as map starts.
 <div class="accordion">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -63,8 +72,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Display game title</b></span> <kbd  class="tooltip" data-tooltip="choices">gametitle</kbd> :
 If set to 'Yes', the Half Life logo title (as seen in the beginning of Half-Life campaign) will be displayed.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -80,8 +89,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>New level unit</b></span> <kbd  class="tooltip" data-tooltip="choices">newunit</kbd> :
 Removes data and global triggers from previous levels. Not applicable for Sven Co-op.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -101,8 +110,8 @@ Not supported.
 <span style="color:#9fc5e8;"><b>Default team</b></span> <kbd  class="tooltip" data-tooltip="choices">defaultteam</kbd> :
 Not supported.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -118,8 +127,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Roaming monsters (node graph)</b></span> <kbd  class="tooltip" data-tooltip="choices">freeroam</kbd> :
 If set to 'Yes', monsters will use nodes (info_node entities) to roam (walk from one point to another freely) at map start. Note that each monster can override this behaviour by "Monster Roaming (nodes)" keyvalue.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -155,8 +164,8 @@ List of models that can be used for this map, separated by comma "," symbol. Mod
 <span style="color:#9fc5e8;"><b>Minimum game version</b></span> <kbd  class="tooltip" data-tooltip="choices">scversion2</kbd> :
 Game version required for this map to run. Leave that as it is.
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>

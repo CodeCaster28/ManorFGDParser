@@ -10,9 +10,18 @@ title: env_global
 </div>
 ###Keyvalues
 <hr>
+<div class="accordion entityentry">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
+<i class="icon icon-arrow-right mr-1"></i>
+</label>
+<div class="accordion-body entgroup">
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
+</div>
+</div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
@@ -26,8 +35,8 @@ Name of the global state to set. If it does not exist, it will be created.
 <span style="color:#9fc5e8;"><b>Trigger Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">triggermode</kbd> :
 How to set the global state. Shall it be set to 'On', 'Off', or shall its current state be toggled? If you specify 'Dead', that will delete the global state if it exists.
 <div class="accordion">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -45,8 +54,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Initial State</b></span> <kbd  class="tooltip" data-tooltip="choices">initialstate</kbd> :
 If the 'Set initial state'-flag is set, the given global state will be set to the state specified here. 'Dead' removes the global state in case it exists and should act before any entities can read its global state and won't read anything at all, resulting in default behaviour. For some reason, 'Toggle' is not an option here, possibly because of the undefined case of a non-existing/'uninitialized' global state being told to toggle.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>

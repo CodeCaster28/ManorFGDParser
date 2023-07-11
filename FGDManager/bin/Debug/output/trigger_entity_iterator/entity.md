@@ -10,9 +10,18 @@ title: trigger_entity_iterator
 </div>
 ###Keyvalues
 <hr>
+<div class="accordion entityentry">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
+<i class="icon icon-arrow-right mr-1"></i>
+</label>
+<div class="accordion-body entgroup">
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
+</div>
+</div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
@@ -30,8 +39,8 @@ Any entity/entities by the given classname will be iterated, given they also mat
 <span style="color:#9fc5e8;"><b>Filter Entities by Status</b></span> <kbd  class="tooltip" data-tooltip="choices">status_filter</kbd> :
 Depending on what other option than "No Filter (default)" you set, additionally to the filtering by name and classname through the two above keyvalues, either only dead or only alive entities will be iterated over. (An entity is considered alive while the PEV "deadflag" is 0)
 <div class="accordion">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -56,8 +65,8 @@ Name of the entity to be triggered by the individual iteration/activator-entitie
 <span style="color:#9fc5e8;"><b>Entity's Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">triggerstate</kbd> :
 Set the use-type with which the iterated/activating entities will fire the iteration carrier-entity set by "Trigger Target".
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -74,8 +83,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Run Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">run_mode</kbd> :
 Set the mode of which targets are triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
