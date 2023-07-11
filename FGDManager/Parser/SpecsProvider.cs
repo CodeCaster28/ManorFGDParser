@@ -21,15 +21,17 @@
             foreach (var entity in entities) 
             {
                 if (entity.Type == EntityType.Base)
-                    continue;
+                continue;
                 
                 entity.CreateFinalKeyValues();
                 
                 var doc = GetDocumentation(entity);
                 entity.Description = doc.Description;
-                
+                //entity.Group = doc.Group;
+
                 foreach (var key in entity.FinalKeyValues)
                 {
+                    key.Group = doc.GetGroup(key.Name);
                     key.Description = doc.GetKeyDescription(key.Name);
                     key.Media = doc.GetKeyMedia(key.Name);
                     foreach (var choice in key.Choices)
@@ -56,11 +58,11 @@
             // Get from original
             document.Classname = original.Classname;
             document.Description = original.Description;
+            document.Group = original.Group;
             document.Issues = original.Issues;
             document.Notes = original.Notes;
             document.KeyDescriptions = new List<SpecsData.KeyDescription>();
             document.KeyDescriptions.AddRange(original.KeyDescriptions);
-
 
             // Trick for fixing spawnflag override part 1
             var docSpawnFlags = original.KeyDescriptions.FirstOrDefault(a => a.keyName == "spawnflags");
@@ -172,6 +174,12 @@
                     continue;
                 }
                 data.Classname = entity;
+
+                foreach (var keyValue in data.KeyDescriptions)
+                {
+                    keyValue.group = data.Group;
+                }
+
                 Specs.Add(data);
             }
         }

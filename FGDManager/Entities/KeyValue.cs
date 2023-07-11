@@ -11,7 +11,7 @@
         public string Type { get; set; }
         public string DocName { get; set; }
         public string Description { get; set; }
-        
+        public string Group { get; set; }
         public string Media { get; set; }
         public KeyValue(Entity parentEntity)
         {

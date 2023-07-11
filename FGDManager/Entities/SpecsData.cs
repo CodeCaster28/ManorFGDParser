@@ -18,11 +18,14 @@
             public string keyDescription { get; set; }
             public List<ChoiceDescription> keyChoices { get; set; }
             public string media { get; set; }
+            public string group { get; set; }
         }
         
         public string Classname  { get; set; }
         
         public string Description { get; set; }
+
+        public string Group { get; set; }
 
         public List<KeyDescription> KeyDescriptions { get; set; } = new List<KeyDescription>();
 
@@ -46,7 +49,13 @@
             var key = KeyDescriptions.FirstOrDefault(a => a.keyName == keyName);
             return key?.keyDescription;
         }
-        
+
+        public string GetGroup(string keyName)
+        {
+            var key = KeyDescriptions.FirstOrDefault(a => a.keyName == keyName);
+            return key?.group;
+        }
+
         public string GetChoiceDescription(string keyName, string choiceValue)
         {
             var key = KeyDescriptions.FirstOrDefault(a => a.keyName == keyName);

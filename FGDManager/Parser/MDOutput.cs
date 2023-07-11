@@ -55,9 +55,36 @@
                         writer.WriteLine("###Keyvalues");
                         writer.WriteLine("<hr>");
                         var accordionIndex = 1;
-                        
+                        var currentGroup = string.Empty;
+                        var groupOpened = false;
+
                         foreach (var key in allKeyValues)
                         {
+                            if (key.Group != currentGroup)
+                            {
+                                if (groupOpened)
+                                {
+                                    currentGroup = string.Empty; // It may be null
+                                    groupOpened = false;
+                                    writer.WriteLine("</div>");
+                                    writer.WriteLine("</div>");
+                                }
+
+                                if (!string.IsNullOrEmpty(key.Group))
+                                {
+                                    groupOpened = true;
+                                    currentGroup = key.Group;
+                                    writer.WriteLine("<div class=\"accordion entityentry\">");
+                                    writer.WriteLine($"<input type=\"checkbox\" id=\"accordion-{accordionIndex}\" name=\"accordion-checkbox\" hidden>");
+                                    writer.WriteLine($"<label class=\"accordion-header\" for=\"accordion-{accordionIndex}\">");
+                                    writer.WriteLine($"<span style=\"color:#cae4fc;\"><b>{key.Group}</b></span>");
+                                    writer.WriteLine("<i class=\"icon icon-arrow-right mr-1\"></i>");
+                                    writer.WriteLine("</label>");
+                                    writer.WriteLine("<div class=\"accordion-body entgroup\">");
+                                    accordionIndex++;
+                                }
+                            }
+
                             writer.WriteLine("<div class=\"entityentry\" markdown=\"1\">");
                             writer.WriteLine($"<span style=\"color:#9fc5e8;\"><b>{key.DocName}</b></span> <kbd  class=\"tooltip\" data-tooltip=\"{key.Type}\">{key.Name}</kbd> :");
                             
