@@ -8,7 +8,15 @@ title: func_traincontrols
 <div class="column entityentry" markdown="1">This entity represents an invisible, non-solid button which gives a player control over a [func_tracktrain](../func_tracktrain) when used. This entity automatically moves and rotates with its associated func_tracktrain. When uses it, the player can choose between speed levels.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <div class="accordion entityentry">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
@@ -216,7 +224,8 @@ Entity to trigger whenever test result is negative.
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Train Name</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Name of assigned func_tracktrain.
+</div>
 </div>

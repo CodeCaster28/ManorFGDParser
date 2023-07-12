@@ -8,22 +8,21 @@ title: env_fog
 <div class="column entityentry" markdown="1">Entity which creates a fog effect within a specific area around it. Fog, unfortunately, will only show to players who have it enabled in their options.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to control fog. Depending on trigger use-type: 'On'- enable fog, 'Off'- disable fog, 'Toggle'- toggle fog. Can be kill-targeted which removes fog effect as well.
 </div>
@@ -38,6 +37,7 @@ Distance, in units, at which the fog starts to be visible. This needs to be grea
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>End Distance</b></span> <kbd  class="tooltip" data-tooltip="integer">iuser3</kbd> :
 Distance, in units, at which the fog appears opaque. This needs to be greater than the start distance.
+</div>
 </div>
 ###Flags
 <hr>

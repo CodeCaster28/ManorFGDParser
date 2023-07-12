@@ -8,7 +8,15 @@ title: func_friction
 <div class="column entityentry" markdown="1">The func_friction entity will modify the ground friction for all players moving inside of it. The func_friction itself is non-solid and invisible. This entity can for example be used to simulate slippy surfaces as well as hard to navigate mud. You can add targetname manually to this entity.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <div class="accordion entityentry">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
@@ -188,6 +196,7 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Percentage of standard (0 - 100)</b></span> <kbd  class="tooltip" data-tooltip="integer">modifier</kbd> :
 100 is default floor friction, less values for less slippery floor.
+</div>
 </div>
 ###Flags
 <hr>

@@ -8,28 +8,27 @@ title: game_zone_player
 <div class="column entityentry" markdown="1">This brush entity, when triggered, allows to trigger different entities for players, depending on whether they are inside or outside of this entity and to set the value of two different [game_counter](../game_counter) entities to the amount of players within this zone and to the amount of players outside of this zone. All targets receive same trigger state as game_zone_player received, and passes players as an '!activator'.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to check players presence and trigger the targets. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <span style="color:#cae4fc;"><b>ZHLT Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -47,8 +46,8 @@ For model-based point entities: if model lightning does not satisfy you (e.g. it
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
 Enable or disable collision of entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -64,8 +63,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>ZHLT Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_invisible</kbd> :
 Brush entities only. Determines if entity should be visible.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -85,8 +84,8 @@ Opaque brush entities only. If "ZHLT Ligth Flags" of this entity uses any of the
 <span style="color:#9fc5e8;"><b>ZHLT Embed Light Map (when translucent)</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_embedlightmap</kbd> :
 Transparent brush entities only. Set it to 'Yes' and this transparent entity will take a light from environment making it looks much more natural. Use it when entities (e.g. glass represented by func_wall) omits lightning from surrounding. Note that this is expensive so shouldn't be used too often, but resolution of those lightmaps can be controlled by keyvalue explained below.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -119,6 +118,7 @@ Name of one or more [game_counter](../game_counter) entities whose count values 
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Counter for OUT players</b></span> <kbd  class="tooltip" data-tooltip="target_destination">outcount</kbd> :
 Name of one or more [game_counter](../game_counter) entities whose count values are to be set to the amount of players outside of the zone.
+</div>
 </div>
 ###Flags
 <hr>

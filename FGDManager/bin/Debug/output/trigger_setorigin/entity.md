@@ -8,26 +8,25 @@ title: trigger_setorigin
 <div class="column entityentry" markdown="1">Copies the position and orientation of one entity to another, providing several additional options for angles and relative rotation. Entities moved with this won't shove away any objects blocking them, but pass through them, blocking said objects instead. (This entity does set the origin, it does not perform movement of an entity) This entity has several inconsistencies in its design. Most of the time you are better off assembling the operation you require using a few [trigger_copyvalue](../trigger_copyvalue).</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to set origin (or start constant origin copier with "Constant" flag checked). With "Constant" flag enabled the behaviour is based on trigger use-type: 'On','Toggle'- start constant origin set, 'Off'- stop constant origin set. With "Constant" flag disabled only 'On' and 'Toggle' use-types are accepted which sets origin once. Can be kill-targeted and constantly positioned entities are dropped.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Name of the entity to attach to or move to the copy-pointer entity.
 </div>
@@ -47,8 +46,8 @@ Offsets the target entity's angles by this value when trigger_setorigin is first
 <span style="color:#9fc5e8;"><b>Invert X Angle</b></span> <kbd  class="tooltip" data-tooltip="choices">invert_x</kbd> :
 Use inverted pitch for the target entity's orientation.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -64,8 +63,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Invert Y Angle</b></span> <kbd  class="tooltip" data-tooltip="choices">invert_y</kbd> :
 Use inverted yaw for the target entity's orientation.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -81,8 +80,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Invert Z Angle</b></span> <kbd  class="tooltip" data-tooltip="choices">invert_z</kbd> :
 Use inverted roll for the target entity's orientation.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -91,6 +90,7 @@ Choices:
 <li><b>0 </b> : No</li>
 <li><b>1 </b> : Yes</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

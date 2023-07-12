@@ -8,26 +8,25 @@ title: path_waypoint
 <div class="column entityentry" markdown="1">Path_waypoint is a waypointing entity, mostly works correctly but suffers from few minor bugs. Need to be tested, keep in mind that some keyvalues might not work properly. The most important feature of this entity is that monster following it would always finish his route, even when blocked, attacked, disturbed, after overriding his AI or revived. Use entity by specifying name of first path_waypoint in the monster/squadmaker/monstermaker "Path Name" keyvalue.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Next Path_waypoint</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Name of the next path_waypoint to go after entity reach this path_waypoint.
 </div>
@@ -39,8 +38,8 @@ Alternate Waypoint to use.
 <span style="color:#9fc5e8;"><b>Move to Position</b></span> <kbd  class="tooltip" data-tooltip="Choices">movementtype</kbd> :
 How monster will move to this waypoint.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -63,8 +62,8 @@ When in radius, monster has finished moving to the waypoint. Only works for Walk
 <span style="color:#9fc5e8;"><b>Face Waypoint Direction</b></span> <kbd  class="tooltip" data-tooltip="choices">useangles</kbd> :
 If set to yes, monster's YAW will change gradually to match the path_waypoint's YAW
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -92,8 +91,8 @@ Entity to trigger upon completing the arrival animation. If no arrival animation
 <span style="color:#9fc5e8;"><b>Wait Activity</b></span> <kbd  class="tooltip" data-tooltip="Choices">wait_activity</kbd> :
 Controls monster behaviour when waiting at this path_waypoint.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -123,8 +122,8 @@ Name of the [Multisource](../multisource) entity. Monsters will wait here until 
 <span style="color:#9fc5e8;"><b>Wait Here Until Full</b></span> <kbd  class="tooltip" data-tooltip="choices">waituntilfull</kbd> :
 Force monsters to wait until this waypoint is full before proceeding to the next waypoint. If Maximum Occupants is 0, a level error message will occur.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -160,8 +159,8 @@ If this waypoint is full, monsters will go to the specified waypoint instead. If
 <span style="color:#9fc5e8;"><b>Force Waypoint Completion</b></span> <kbd  class="tooltip" data-tooltip="Choices">force_complete</kbd> :
 Forces monster to finish this particular path_waypoint even if a higher priority path is found, provided that the stop conditions are not met. This disables path_condition / path_condition_controller evaluation during the extent of the trip and departure.
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -180,6 +179,7 @@ If this path_waypoint releases monster because of a stop condition, (e.g. a new 
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay before Return</b></span> <kbd  class="tooltip" data-tooltip="integer">restart_delay</kbd> :
 If monster has stopped moving because of a stop condition (E.g. hearing a gunshot), the NPC will wait this long before continuing back to this path_waypoint.
+</div>
 </div>
 <div class="notices red" markdown="1">When 'Wait Animation' is not specified, and wait activity is set to 'Play Wait Animation', monster will be playing it's last movement animation during wait time.</div>
 <div class="notices red" markdown="1">Monsters can be easily interrupted by blocking their way, interacting with them e.t.c. they will finish their route after dealing with interruptions, but there is also possibility that they will start whole path from beginning instead of continuing from last node.</div>

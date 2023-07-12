@@ -8,9 +8,17 @@ title: func_op4mortarcontroller
 <div class="column entityentry" markdown="1">A button to control an op4mortar with the 'Can control'-flag set. Holding your 'Use'-key on this button makes the target op4mortar either rotate on its horizontal or vertical axis (depending on your setup) in a direction at 40 degrees per second and change the rotation direction when the rotation limit for that direction has been reached (pitch always ranges from 0 to 90 degrees). Using this controller consecutively gives more control over the op4mortar's angle as it will rotate slower. When not using the controller for a half second, the direction into which it will make the op4mortar turn the next time you use the func_op4mortarcontroller is reversed for convenience, so players don't have to turn the op4mortar all the way to its rotation limit in order to adjust into the other direction. You can add targetname manually to this entity.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Name of an op4mortar entity to control. If bad value specified, the game crashes.
 </div>
@@ -105,6 +113,7 @@ Choices:
 <li><b>0 </b> : Vertical : Yaw (left and right).</li>
 <li><b>1 </b> : Horizontal : Pitch (up and down).</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

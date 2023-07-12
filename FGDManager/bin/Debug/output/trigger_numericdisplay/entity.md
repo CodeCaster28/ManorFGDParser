@@ -8,26 +8,25 @@ title: trigger_numericdisplay
 <div class="column entityentry" markdown="1">Display a number on set of brush entities covered, for best results, with '+0~HEX_00' texture. The number is picked from keyvalue of chosen entity e.g. "health" from "monster_scientist". You can pick any accessible value from any entity, supports [Private Entity Variables](../entitykeyvalues). The number is displayed on brushes specified in "Base digit name" keyvalue of this entity. Each brush covered with '+0~HEX_00' (or any other animated texture) represent single digit. Example: if you want to display three digit number, and "Base digit name" is set to "num_brush", the brush entities must be named "num_brush1", "num_brush2" and "num_brush3". Those brushes should be placed in reversed order, from right to left ("num_brush1" represents far right digit, "num_brush2" represents center digit, and "num_brush3" represents far left digit).</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to start updating displayed value (or update value once when "Cyclic" flag is checked). With "Cyclic" flag disabled the behaviour is based on trigger use-type: 'On'- turn displayed value update on, 'Off'- turn displayed value update off, 'Toggle'- toggle displayed value update. With "Cyclic" flag enabled all trigger use-types are accepted to update displayed number once. Can be kill-targeted.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Entity to track</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 The entity from which the value is picked. This value will be displayed.
 </div>
@@ -42,6 +41,7 @@ Name of brush entities on which the number will be displayed. Animated texture o
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Update delay</b></span> <kbd  class="tooltip" data-tooltip="string">frags</kbd> :
 Time interval between value updates. The smaller the value is, the more frequently number is updated.
+</div>
 </div>
 ###Flags
 <hr>

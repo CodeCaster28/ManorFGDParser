@@ -8,32 +8,31 @@ title: env_spritetrain
 <div class="column entityentry" markdown="1">The env_spritetrain entity resembles an [env_sprite](../env_sprite) which can move along [path_corner](../path_corner) entities as a [func_train](../func_train) can. Ever wanted to make a flame travel along a fuse to a bomb? This entity is for you.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to start or stop sprite movement. Depending on trigger use-type: 'On'- start movement, 'Off'- stop movement, 'Toggle'- toggle movement. Can be kill-targeted but sprite is not removed, only the 'train' part.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
 Global name of entity, allows to have one entity in the multiple maps (e.g. elevator in map1 and map2 have the same "Global Entity Name" which tells the engine to treat those entities as a one single entity, so all elevator settings, positions, actions e.t.c. are copied to another map in a moment of map transitions.
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <span style="color:#cae4fc;"><b>Render Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -42,8 +41,8 @@ Global name of entity, allows to have one entity in the multiple maps (e.g. elev
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
 Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -78,8 +77,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Render Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">rendermode</kbd> :
 Render mode determines how this entity is rendered.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -106,8 +105,8 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <span style="color:#cae4fc;"><b>Move and Stop Sounds</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -116,8 +115,8 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 <span style="color:#9fc5e8;"><b>Move Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">movesnd</kbd> :
 Sound that is played while the {{ entname }} is moving.
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -145,8 +144,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Move Sound Loops?</b></span> <kbd  class="tooltip" data-tooltip="choices">movesnd_loop</kbd> :
 Sets if "Move Sound" should be looped during movement until it stops.
 <div class="accordion">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -162,8 +161,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Stop Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">stopsnd</kbd> :
 Sound which is played once as the {{ entname }} stops moving.
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -200,7 +199,7 @@ Allows you to setup a sound replacement file for the {{ entname }} sounds. The p
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>First stop target</b></span> <kbd  class="tooltip" data-tooltip="target_source">target</kbd> :
 The name of the first [path_corner](../path_corner) (where the train starts). The {{ entname }} is teleported to this position on map start, no matter where it's placed.
 </div>
@@ -212,8 +211,8 @@ Movement-speed in units per second.
 <span style="color:#9fc5e8;"><b>Obey Trigger Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iObeyTriggerMode</kbd> :
 Controls how {{ entname }} behave when triggered with different use-types.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -232,6 +231,7 @@ Set a sprite here. Path starts in modification's folder.
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sprite Scale</b></span> <kbd  class="tooltip" data-tooltip="string">scale</kbd> :
 Scaling factor for the sprite. Defaults to 0.25 if not set.
+</div>
 </div>
 ###Flags
 <hr>

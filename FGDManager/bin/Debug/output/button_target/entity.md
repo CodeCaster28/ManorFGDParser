@@ -8,9 +8,17 @@ title: button_target
 <div class="column entityentry" markdown="1">A brush entity, which, in its essence, acts like a [func_button](../func_button), except that it has been designed specifically for triggering only when damaged unless set up otherwise. The damage it receives does not matter.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Entity to trigger whenever a button is pressed. Trigger use-type is defined in "Use Type" keyvalue.
 </div>
@@ -115,7 +123,7 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
 Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't work. When multisource entity is triggered/being triggering by all possible inputs, the {{ entname }} will be enabled and ready to be pressed. When multisource lost at least one input signal, the entities becomes disabled again.
 </div>
@@ -196,6 +204,7 @@ Choices:
 <li><b>2</b> : Set</li>
 <li><b>3</b> : Toggle</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

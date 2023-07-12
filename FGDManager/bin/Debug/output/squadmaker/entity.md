@@ -8,41 +8,31 @@ title: squadmaker
 <div class="column entityentry" markdown="1">A point entity which allows you to spawn any amount of a specific monster type. This can also be used to spawn other entities as well, though only partially supported. It can be toggled on and off or spawn one monster every time it is triggered and allows many options to be set for the spawned monster(s). You must specify monster type, otherwise it will crash the game with "Spawned a NULL entity!" error message.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to spawn monsters. With 'Cyclic' flag disabled the behaviour is based on trigger use-type: 'On'- turn spawner on, 'Off'- turn spawner off, 'Toggle'- toggle spawner. With 'Cyclic' flag enabled every trigger use-type works uniformly to spawn a single monster. Can be kill-targeted but monsters already spawned are not removed.
 </div>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
-<span style="color:#cae4fc;"><b>Pitch Yaw Roll</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
 Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hammer uses Z for height and Y for depth, while every other sane 3D-application does this the other way round; nonetheless this keyvalue description has the letters in the conventional order) This, technically, is a 3D-vector containing Euler-angles to describe either the entity's rotation or direction of effect. E.g. a func_door_rotating will use this as its initial rotation, while a trigger_push will keep its original alignment and use this for the direction of its push-effect instead. Euler-angles are a hierarchical system to determine an object's orientation in 3D-space. A yaw-value of 0 would mean the entity would face east. (right in top-down view) 90 would mean it would face north. (up in top-down-view) After yaw, pitch is applied. Think aiming up/down with your character in first person. At last, the roll-value is applied. Think your character falling over sideways in first person. Some entities, mostly point entities, do not use the angles keyvalue for any purpose.
 </div>
-</div>
-</div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <span style="color:#cae4fc;"><b>Render Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -51,8 +41,8 @@ Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hamme
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
 Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -87,8 +77,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Render Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">rendermode</kbd> :
 Render mode determines how this entity is rendered.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -118,8 +108,8 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 <span style="color:#9fc5e8;"><b>Classification</b></span> <kbd  class="tooltip" data-tooltip="choices">classify</kbd> :
 Set the class of the spawned {{ entname }}. Think of how even though zombies and human grunts, by default, both are the players' enemies, yet have a dislike for and attack each other as well. This relation is created through the respective classes of the two entity types. For a complete table of how different classes react to each other, see [monster class relation table](https://wiki.svencoop.com/Class_Relationship_Table).
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -154,8 +144,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Is not revivable</b></span> <kbd  class="tooltip" data-tooltip="choices">is_not_revivable</kbd> :
 If set to 'Yes', the monster cannot be revived by player's weapon_medkit or other allied monsters.
 <div class="accordion">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -167,7 +157,7 @@ Choices:
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target On Release</b></span> <kbd  class="tooltip" data-tooltip="string">target</kbd> :
 Entity to trigger whenever a monster is spawned. Trigger use-type is 'Toggle'.
 </div>
@@ -183,7 +173,7 @@ If set, everything that is spawned by this {{ entname }} will receive this as it
 <span style="color:#9fc5e8;"><b>Monster count </b></span> <kbd  class="tooltip" data-tooltip="integer">monstercount</kbd> :
 Total amount of monsters which can be spawned by this {{ entname }}. If this value runs, the {{ entname }} won't spawn anything anymore. Setting this to '-1' means an endless supply.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay between spawns</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
 Delay, in seconds, between spawns.
 </div>
@@ -195,8 +185,8 @@ Maximum amount of spawns by this {{ entname }} which may exist at a time. Note t
 <span style="color:#9fc5e8;"><b>Blocked Spawn Handling</b></span> <kbd  class="tooltip" data-tooltip="Choices">spawn_mode</kbd> :
 Determines how monster spawn is handled when there is no room for monster to spawn.
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -221,8 +211,8 @@ Entity to trigger when condition in "Trigger Condition" is met. Trigger use-type
 <span style="color:#9fc5e8;"><b>Trigger Condition</b></span> <kbd  class="tooltip" data-tooltip="Choices">trigger_condition</kbd> :
 Choose trigger condition for spawned monster. When condition is met, the entity specified in "TriggerTarget" is triggered.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -250,8 +240,8 @@ This will set which body to use. Body's are different submodels/appearances in m
 <span style="color:#9fc5e8;"><b>Is Player Ally</b></span> <kbd  class="tooltip" data-tooltip="choices">respawn_as_playerally</kbd> :
 Set whether the spawned monster is an ally or a foe of the players. Note that keyvalue name is misleading.
 <div class="accordion">
-<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-10">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -267,8 +257,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Override Render Mode</b></span> <kbd  class="tooltip" data-tooltip="Choices">change_rendermode</kbd> :
 If set to 'Yes', the rendermode of the spawned entity will be changed to the one set in this squadmaker.
 <div class="accordion">
-<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-11">
+<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-9">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -288,8 +278,8 @@ If you set the name of an [env_xenmaker](../env_xenmaker) here, its effects will
 <span style="color:#9fc5e8;"><b>Not Solid</b></span> <kbd  class="tooltip" data-tooltip="Choices">notsolid</kbd> :
 Set whether the spawned monsters will appear solid to each other and the players or not.
 <div class="accordion">
-<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-12">
+<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-10">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -306,8 +296,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Gag</b></span> <kbd  class="tooltip" data-tooltip="Choices">gag</kbd> :
 Allows you to mute the spawned monsters.
 <div class="accordion">
-<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-13">
+<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-11">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -324,8 +314,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Weapons (Grunt/Massn/etc)</b></span> <kbd  class="tooltip" data-tooltip="Choices">weapons</kbd> :
 You can choose which weapon the monster uses (HG = Hand Grenade, GL= M16 Grenade Launcher e.t.c.). Remember that monster must support chosen weapon.
 <div class="accordion">
-<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-14">
+<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-12">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -356,8 +346,8 @@ Name of a squad for this monster to be part of. Monsters which share the same sq
 <span style="color:#9fc5e8;"><b>Squad Leader</b></span> <kbd  class="tooltip" data-tooltip="Choices">is_squad_leader</kbd> :
 Set whether the spawned monsters will be leaders of their squad or not.
 <div class="accordion">
-<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-15">
+<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-13">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -378,8 +368,8 @@ If set, this will overwrite the monster's default in-game name, which appears in
 <span style="color:#9fc5e8;"><b>Blood Color</b></span> <kbd  class="tooltip" data-tooltip="choices">bloodcolor</kbd> :
 Allows you to customize the monster's blood color (or disable it).
 <div class="accordion">
-<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-16">
+<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-14">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -417,8 +407,8 @@ Allows you to setup a sound replacement file for the {{ entname }} sounds. The p
 <span style="color:#9fc5e8;"><b>Monster Roaming (nodes)</b></span> <kbd  class="tooltip" data-tooltip="Choices">freeroam</kbd> :
 Set whether monsters spawned by this squadmaker use nodes to free roam and find their way or don't use nodes at all.
 <div class="accordion">
-<input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-17">
+<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-15">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -454,6 +444,7 @@ If spawning a weapon, this will replace its player model (the model as seen held
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Angelscript function name</b></span> <kbd  class="tooltip" data-tooltip="string">function_name</kbd> :
 Name of the function to use from already parsed .as script files. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
+</div>
 </div>
 ###Flags
 <hr>

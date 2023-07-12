@@ -8,7 +8,15 @@ title: info_node_air
 <div class="column entityentry" markdown="1">Equivalent of [info_node](../info_node) for flying monsters like [monster_alien_controller](../monster_alien_controller) and [monster_stukabat](../monster_stukabat).</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Hint type</b></span> <kbd  class="tooltip" data-tooltip="Choices">hinttype</kbd> :
@@ -120,6 +128,7 @@ Choices:
 <li><b>75 </b> : Flinch left leg</li>
 <li><b>76 </b> : Flinch right leg</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

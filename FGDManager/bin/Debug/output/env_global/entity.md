@@ -8,22 +8,21 @@ title: env_global
 <div class="column entityentry" markdown="1">The env_global entity provides the decisive functionality for allowing entity-interaction between maps. More accurately, it allows you to create/set a global variable by a name of your choice. Global variables are set to a use-type of 'On' or 'Off', which can then be used by some entities as their state. E.g. the [multisource](../multisource) entity can be set to read its state from a global variable at map load, unless you are having triggers targeting it. This could, for example, be used to make a key for some door collected in one map allow a specific door to be opened in another map.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to set global state. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
@@ -35,8 +34,8 @@ Name of the global state to set. If it does not exist, it will be created.
 <span style="color:#9fc5e8;"><b>Trigger Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">triggermode</kbd> :
 How to set the global state. Shall it be set to 'On', 'Off', or shall its current state be toggled? If you specify 'Dead', that will delete the global state if it exists.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -54,8 +53,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Initial State</b></span> <kbd  class="tooltip" data-tooltip="choices">initialstate</kbd> :
 If the 'Set initial state'-flag is set, the given global state will be set to the state specified here. 'Dead' removes the global state in case it exists and should act before any entities can read its global state and won't read anything at all, resulting in default behaviour. For some reason, 'Toggle' is not an option here, possibly because of the undefined case of a non-existing/'uninitialized' global state being told to toggle.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -65,6 +64,7 @@ Choices:
 <li><b>1 </b> : On</li>
 <li><b>2 </b> : Dead</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

@@ -8,45 +8,35 @@ title: func_tracktrain
 <div class="column entityentry" markdown="1">This is a [func_train](../func_train) with a greater set of features (like auto-rotation). Func_tracktrains are supposed to be controlled by players. Triggering them manually to get them moving works once. Any further triggering is ignored. Origin brush is required for this entity. To make it controllable you must use [func_traincontrols](../func_traincontrols) as well.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to start or stop it. Depending on trigger use-type: 'On'- start moving, 'Toggle'- start/stop moving, 'Off'- stop moving. Can be kill-targeted.
 </div>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
-<span style="color:#cae4fc;"><b>Pitch Yaw Roll</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
 Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hammer uses Z for height and Y for depth, while every other sane 3D-application does this the other way round; nonetheless this keyvalue description has the letters in the conventional order) This, technically, is a 3D-vector containing Euler-angles to describe either the entity's rotation or direction of effect. E.g. a func_door_rotating will use this as its initial rotation, while a trigger_push will keep its original alignment and use this for the direction of its push-effect instead. Euler-angles are a hierarchical system to determine an object's orientation in 3D-space. A yaw-value of 0 would mean the entity would face east. (right in top-down view) 90 would mean it would face north. (up in top-down-view) After yaw, pitch is applied. Think aiming up/down with your character in first person. At last, the roll-value is applied. Think your character falling over sideways in first person. Some entities, mostly point entities, do not use the angles keyvalue for any purpose.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
 Global name of entity, allows to have one entity in the multiple maps (e.g. elevator in map1 and map2 have the same "Global Entity Name" which tells the engine to treat those entities as a one single entity, so all elevator settings, positions, actions e.t.c. are copied to another map in a moment of map transitions.
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <span style="color:#cae4fc;"><b>Render Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -55,8 +45,8 @@ Global name of entity, allows to have one entity in the multiple maps (e.g. elev
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
 Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -91,8 +81,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Render Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">rendermode</kbd> :
 Render mode determines how this entity is rendered.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -122,8 +112,8 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 <span style="color:#9fc5e8;"><b>Classification</b></span> <kbd  class="tooltip" data-tooltip="choices">classify</kbd> :
 Set the class of the spawned {{ entname }}. Think of how even though zombies and human grunts, by default, both are the players' enemies, yet have a dislike for and attack each other as well. This relation is created through the respective classes of the two entity types. For a complete table of how different classes react to each other, see [monster class relation table](https://wiki.svencoop.com/Class_Relationship_Table).
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -155,8 +145,8 @@ Choices:
 </div>
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <span style="color:#cae4fc;"><b>ZHLT Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -174,8 +164,8 @@ For model-based point entities: if model lightning does not satisfy you (e.g. it
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
 Enable or disable collision of entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -191,8 +181,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>ZHLT Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_invisible</kbd> :
 Brush entities only. Determines if entity should be visible.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -212,8 +202,8 @@ Opaque brush entities only. If "ZHLT Ligth Flags" of this entity uses any of the
 <span style="color:#9fc5e8;"><b>ZHLT Embed Light Map (when translucent)</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_embedlightmap</kbd> :
 Transparent brush entities only. Set it to 'Yes' and this transparent entity will take a light from environment making it looks much more natural. Use it when entities (e.g. glass represented by func_wall) omits lightning from surrounding. Note that this is expensive so shouldn't be used too often, but resolution of those lightmaps can be controlled by keyvalue explained below.
 <div class="accordion">
-<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-10">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -233,8 +223,8 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 <span style="color:#9fc5e8;"><b>ZHLT Light Flags</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_lightflags</kbd> :
 Brush entities only. Changes light casting or receiving setting.
 <div class="accordion">
-<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-11">
+<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-9">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -255,7 +245,7 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>First stop target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 The name of the first [path_track](..path_track/) (where the train starts). Train is teleported to this position on map start, no matter where it's placed.
 </div>
@@ -263,8 +253,8 @@ The name of the first [path_track](..path_track/) (where the train starts). Trai
 <span style="color:#9fc5e8;"><b>Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
 Sound group (move, break, start) to use on that train.
 <div class="accordion">
-<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-12">
+<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-10">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -328,6 +318,7 @@ Sets the minimum light level. Set this value if entity is too dark on compiled m
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
 Allows you to setup a sound replacement file for the func_tracktrain sounds. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are separated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a custom_precache point entity.
+</div>
 </div>
 ###Flags
 <hr>

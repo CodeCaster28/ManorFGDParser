@@ -8,13 +8,21 @@ title: light_shadow
 <div class="column entityentry" markdown="1">Allows mapper to toggle shadows among all toggleable/killable entities that cast shadows. Best effect when using among light_bounce. To use this entity place it anywhere on the map and set it's target to entity that will appear/disappear dynamically in-game. Targeting light_shadow will toggle the shadows. Note that entity need to have 'Opaque' selected in "ZHLT Lightflags" to cast a shadow. Does not support multiple or switchable light_environments.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target solid entity</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Target solid entity that casted shadows will be toggled.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to toggle shadows on "Target solid entity".
 </div>
@@ -64,6 +72,7 @@ Choices:
 <li><b>"light" </b> : light</li>
 <li><b>"light_spot" </b> : light_spot</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

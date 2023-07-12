@@ -8,44 +8,64 @@ title: trigger_counter
 <div class="column entityentry" markdown="1">You might prefer to use [game_counter](../game_counter). Counts how many times trigger_counter is triggered and displays message how many inputs are to go "Only X more to go...". After being triggered "count" times, it triggers it's target. Placement/shape/texturing of this entity does not matter as it behaves like point entity.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Entity to trigger when the counter hits "count" value. Trigger use-type is 'Toggle'.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
 Delay before trigger entity specified in "Target".
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
 Entity to remove when counter hits "count" value.
 </div>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">tinfilter</kbd> :
 Semicolon-separated list of targetnames to either be forbidden or required (specified in "Name In Filter Type") on the caller-entity. Can also specify only one.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name In Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">tinfiltertype</kbd> :
 Set whether to forbid or require certain targetname(s) (specified in "Name In Filter") on the entity which tries to trigger me in order to accept triggering.
+<div class="accordion">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
+<i class="icon icon-arrow-right mr-1"></i>
+Choices:
+</label>
+<div class="accordion-body">
+<ul>
+<li><b>0</b> : Exclude</li>
+<li><b>1</b> : Include</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="entityentry commonkeys-checkbox" markdown="1">
+<span style="color:#9fc5e8;"><b>Class In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">cinfilter</kbd> :
+Semicolon-separated list of classnames to either be forbidden or required (specified in "Class In Filter Type") on the caller-entity. Can also specify only one.
+</div>
+<div class="entityentry commonkeys-checkbox" markdown="1">
+<span style="color:#9fc5e8;"><b>Class In Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">cinfiltertype</kbd> :
+Set whether to forbid or require certain classname(s) (specified in "Class In Filter") on the entity which tries to trigger me in order to accept triggering.
 <div class="accordion">
 <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-2">
@@ -60,13 +80,13 @@ Choices:
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Class In Filter</b></span> <kbd  class="tooltip" data-tooltip="string">cinfilter</kbd> :
-Semicolon-separated list of classnames to either be forbidden or required (specified in "Class In Filter Type") on the caller-entity. Can also specify only one.
+<div class="entityentry commonkeys-checkbox" markdown="1">
+<span style="color:#9fc5e8;"><b>Name Out Filter</b></span> <kbd  class="tooltip" data-tooltip="string">toutfilter</kbd> :
+Semicolon-separated list of targetnames to either be forbidden or required (specified in "Name Out Filter Type") on targeted entities. Can also specify only one.
 </div>
-<div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Class In Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">cinfiltertype</kbd> :
-Set whether to forbid or require certain classname(s) (specified in "Class In Filter") on the entity which tries to trigger me in order to accept triggering.
+<div class="entityentry commonkeys-checkbox" markdown="1">
+<span style="color:#9fc5e8;"><b>Name Out Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">toutfiltertype</kbd> :
+Set whether to forbid or require certain targetname(s) (specified in "Name Out Filter") on the target entities.
 <div class="accordion">
 <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-3">
@@ -81,13 +101,13 @@ Choices:
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Name Out Filter</b></span> <kbd  class="tooltip" data-tooltip="string">toutfilter</kbd> :
-Semicolon-separated list of targetnames to either be forbidden or required (specified in "Name Out Filter Type") on targeted entities. Can also specify only one.
+<div class="entityentry commonkeys-checkbox" markdown="1">
+<span style="color:#9fc5e8;"><b>Class Out Filter</b></span> <kbd  class="tooltip" data-tooltip="string">coutfilter</kbd> :
+Semicolon-seperated list of classnames to either be forbidden or required (specified in "Class Out Filter Type") on targeted entities. Can also specify only one.
 </div>
-<div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Name Out Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">toutfiltertype</kbd> :
-Set whether to forbid or require certain targetname(s) (specified in "Name Out Filter") on the target entities.
+<div class="entityentry commonkeys-checkbox" markdown="1">
+<span style="color:#9fc5e8;"><b>Class Out Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">coutfiltertype</kbd> :
+Set whether to forbid or require certain classname(s) (specified in "Class Out Filter") on the target entities.
 <div class="accordion">
 <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-4">
@@ -102,30 +122,9 @@ Choices:
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Class Out Filter</b></span> <kbd  class="tooltip" data-tooltip="string">coutfilter</kbd> :
-Semicolon-seperated list of classnames to either be forbidden or required (specified in "Class Out Filter Type") on targeted entities. Can also specify only one.
-</div>
-<div class="entityentry" markdown="1">
-<span style="color:#9fc5e8;"><b>Class Out Filter Type</b></span> <kbd  class="tooltip" data-tooltip="choices">coutfiltertype</kbd> :
-Set whether to forbid or require certain classname(s) (specified in "Class Out Filter") on the target entities.
-<div class="accordion">
+<div class="accordion entityentry">
 <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-5">
-<i class="icon icon-arrow-right mr-1"></i>
-Choices:
-</label>
-<div class="accordion-body">
-<ul>
-<li><b>0</b> : Exclude</li>
-<li><b>1</b> : Include</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
 <span style="color:#cae4fc;"><b>Inventory Rules</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -158,8 +157,8 @@ Minimal number of items in player inventory, which belong to specified group, th
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on use triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_use_triggers</kbd> :
 If set to 'Yes' item's trigger targets from 'Target: On use (by trigger)' will not be triggered when item is used by this entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -183,8 +182,8 @@ Items to force-drop, that belong to specified group, when the test result is pos
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on drop triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_drop_triggers</kbd> :
 If set to 'Yes' item's trigger targets from "Target: On drop" will not be triggered when item is dropped by this entity with "Drop items(s)" events above.
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -208,8 +207,8 @@ Items, that belong to specified group, to return to their starting positions whe
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on return triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_return_triggers</kbd> :
 If set to 'Yes' item's trigger targets from "Target: On return" will not be triggered when item is returned by this entity with "Return items(s)" events above.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -233,8 +232,8 @@ Items, that belong to specified group, to remove when test result is positive. A
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on destroy triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_destroy_triggers</kbd> :
 If set to 'Yes' item's trigger targets from "Target: On Destroy" will not be triggered when item is destroyed by this entity with "Destroy items(s)" events above.
 <div class="accordion">
-<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-10">
+<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-9">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -253,8 +252,8 @@ Entity to trigger whenever test result is negative.
 </div>
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-11">
+<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-10">
 <span style="color:#cae4fc;"><b>ZHLT Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -272,8 +271,8 @@ For model-based point entities: if model lightning does not satisfy you (e.g. it
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
 Enable or disable collision of entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-12">
+<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-11">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -289,8 +288,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>ZHLT Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_invisible</kbd> :
 Brush entities only. Determines if entity should be visible.
 <div class="accordion">
-<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-13">
+<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-12">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -310,8 +309,8 @@ Opaque brush entities only. If "ZHLT Ligth Flags" of this entity uses any of the
 <span style="color:#9fc5e8;"><b>ZHLT Embed Light Map (when translucent)</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_embedlightmap</kbd> :
 Transparent brush entities only. Set it to 'Yes' and this transparent entity will take a light from environment making it looks much more natural. Use it when entities (e.g. glass represented by func_wall) omits lightning from surrounding. Note that this is expensive so shouldn't be used too often, but resolution of those lightmaps can be controlled by keyvalue explained below.
 <div class="accordion">
-<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-14">
+<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-13">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -333,7 +332,7 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 <span style="color:#9fc5e8;"><b>Target Path</b></span> <kbd  class="tooltip" data-tooltip="target_destination">netname</kbd> :
 Non functional.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
 Name of the [multisource](../multisource) entity that (temporary) locks this {{ entname }}. If master is specified the {{ entname }} will be disabled and won't work. When [multisource](../multisource) entity is triggered/being triggering by all possible inputs, the {{ entname }} will work again and can be triggered again to use counter. When [multisource](../multisource) lost at least one input signal, the entities becomes locked again.
 </div>
@@ -341,8 +340,8 @@ Name of the [multisource](../multisource) entity that (temporary) locks this {{ 
 <span style="color:#9fc5e8;"><b>Sound style</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
 Non functional.
 <div class="accordion">
-<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-15">
+<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-14">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -361,8 +360,8 @@ Non functional.
 <span style="color:#9fc5e8;"><b>Allow tiny monsters (insects/hornets)</b></span> <kbd  class="tooltip" data-tooltip="Choices">tiny_monsters</kbd> :
 If set to 'Yes', monsters like cockroaches can trigger this entity as well as other monsters.
 <div class="accordion">
-<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-16">
+<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-15">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -377,6 +376,7 @@ Choices:
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Count before activation</b></span> <kbd  class="tooltip" data-tooltip="integer">count</kbd> :
 How many times this entity need to be triggered to trigger it's "Target".
+</div>
 </div>
 ###Flags
 <hr>

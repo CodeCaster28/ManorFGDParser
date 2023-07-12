@@ -8,9 +8,17 @@ title: func_recharge
 <div class="column entityentry" markdown="1">The func_recharge is a visible, solid entity which can be used just as a [func_button](../func_button) can and will refill 15 armor points per second while using it. Multiple players can use it at the same time, but the AP restored per second is distributed equally among them. Armorchargers refill themselves 15 seconds after being emptied. You can add targetname manually to this entity. CVars:<ul><li>sk_suitcharger # (Default: 100, 100, 100): Sets how many armor points suit chargers store.</li></ul></div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
 Global name of entity, allows to have one entity in the multiple maps (e.g. elevator in map1 and map2 have the same "Global Entity Name" which tells the engine to treat those entities as a one single entity, so all elevator settings, positions, actions e.t.c. are copied to another map in a moment of map transitions.
 </div>
@@ -224,6 +232,7 @@ Custom sound file override to play when player starts using the {{ entname }}.
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Loop Sound</b></span> <kbd  class="tooltip" data-tooltip="sound">CustomLoopSound</kbd> :
 Sound file to play (in a loop) when charging is in progress, just after "Custom Start Sound".
+</div>
 </div>
 ###Flags
 <hr>

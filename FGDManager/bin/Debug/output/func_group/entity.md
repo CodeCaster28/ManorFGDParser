@@ -8,7 +8,15 @@ title: func_group
 <div class="column entityentry" markdown="1">A func_group is made into solid world brushes upon map compilation. It only exists to be able to group objects in old versions of the Hammer editor, when it was still called Worldcraft. Still, you can use func_group for Vluzacn's compile operations like editing cliphull but it's highly recommended to use [func_detail](../func_detail) for this.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Priority when faces overlap</b></span> <kbd  class="tooltip" data-tooltip="integer">zhlt_coplanarpriority</kbd> :
@@ -28,6 +36,7 @@ Choices:
 <li><b>0 </b> : Default : Keep default collision.</li>
 <li><b>1 </b> : Always non-solid : This makes entity non-solid- all collision info from this entity will be ignored.</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

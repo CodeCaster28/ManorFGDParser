@@ -8,13 +8,21 @@ title: light_bounce
 <div class="column entityentry" markdown="1">Used as compliment for [light_shadow](../light_shadow). Light_bounce can dynamically toggle light bouncing from targeted entity. Works in the same way as light_shadow- triggering this entity will toggle lights that are bouncing from targeted entity. Note that target entity need to have 'Opaque' selected in "ZHLT Lightflags". Does not support multiple or switchable light_environments.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target solid entity</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Target solid entity that bounced light will be toggled.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to toggle light bouncing on "Target solid entity".
 </div>
@@ -64,6 +72,7 @@ Choices:
 <li><b>"light" </b> : light</li>
 <li><b>"light_spot" </b> : light_spot</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

@@ -8,38 +8,37 @@ title: game_player_equip
 <div class="column entityentry" markdown="1">The game_player_equip entity is a powerful entity for managing player weapons/items/ammo loadout. You can gradually enable more and more game_player_equip entities to increase the players' arsenal as your map progresses, or allow players to trigger it directly. This entity exhibits strange behaviour when used incorrectly, so set it up carefully: Basically, you disable smart edit mode when viewing its properties in Valve Hammer Editor, then add new keyvalues, whereas the key's name be the name of the weapon-/item-/ammo-entity to supply, and value the quantity in which it shall be provided, per player. When providing an uzi, provide either weapon_uzi or weapon_uziakimbo, never both. For weapon quantity, always set 1. Never supply more than the player can pick up/carry. If at least one game_player_equip entity is enabled, the default weapon and ammo loadout from your map's config file will be ignored entirely. So if your map is using game_player_equip entities, you will probably want to have one game_player_equip entity that is always enabled to provide a default loadout. Whether a game_player_equip entity is enabled or not depends on the state of its master. If no master is set, it's always enabled. When the game_player_equip is triggered normally, it will equip the activating player. Be careful with that, as giving a player things he cannot pick up/carry will spawn and lie around till collected, possibly flooding the server.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to apply inventory changes. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Set the targetname of a player to be the only one to ever receive equipment from this game_player_equip, if the 'Filter playername'-flag is set. This can be used for creating maps with roleplaying (when paired with the CVar mp_dropweapons set to '0'), or preventing a player from using the same triggerable game_player_equip entity multiple times per life.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
 Delay before trigger entity specified in "Target".
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
 Entity to remove when equipment is applied.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Team Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
 Currently unusable.
 </div>
@@ -47,8 +46,8 @@ Currently unusable.
 <span style="color:#9fc5e8;"><b>Equip mode</b></span> <kbd  class="tooltip" data-tooltip="choices">equipmode</kbd> :
 Set equipping mode.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -64,8 +63,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Inventory mode</b></span> <kbd  class="tooltip" data-tooltip="choices">inventorymode</kbd> :
 Allows advanced inventory manipulation, changes player's equip on respawn.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -78,6 +77,7 @@ Choices:
 <li><b>4</b> : Restock items : Set items if given value is greater than current value.</li>
 <li><b>5</b> : Limit items : Set items if given value is lesser than current value.</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

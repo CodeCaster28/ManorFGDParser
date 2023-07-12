@@ -21,44 +21,34 @@ title: item_inventory
 13. [func_water](../func_water)</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it. Only 'On' and 'Toggle' trigger use-types are accepted which makes item be picked up by player '!activator'. Kill-targeting this entity will remove {{ entname }} and stop it from respawning, also removing from inventory.
 </div>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
-<span style="color:#cae4fc;"><b>Pitch Yaw Roll</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
 Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hammer uses Z for height and Y for depth, while every other sane 3D-application does this the other way round; nonetheless this keyvalue description has the letters in the conventional order) This, technically, is a 3D-vector containing Euler-angles to describe either the entity's rotation or direction of effect. E.g. a func_door_rotating will use this as its initial rotation, while a trigger_push will keep its original alignment and use this for the direction of its push-effect instead. Euler-angles are a hierarchical system to determine an object's orientation in 3D-space. A yaw-value of 0 would mean the entity would face east. (right in top-down view) 90 would mean it would face north. (up in top-down-view) After yaw, pitch is applied. Think aiming up/down with your character in first person. At last, the roll-value is applied. Think your character falling over sideways in first person. Some entities, mostly point entities, do not use the angles keyvalue for any purpose.
-</div>
-</div>
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
 Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -90,8 +80,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Render Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">rendermode</kbd> :
 Render mode determines how this entity is rendered.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -119,8 +109,8 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 <span style="color:#9fc5e8;"><b>Gravity Setting</b></span> <kbd  class="tooltip" data-tooltip="choices">movetype</kbd> :
 Determines how items behave after spawn.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -138,8 +128,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Solid Setting</b></span> <kbd  class="tooltip" data-tooltip="choices">solid</kbd> :
 Determines item solidity.
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -188,15 +178,15 @@ If set, this will overwrite the monster's default maximum hullsize. Minimum and 
 <span style="color:#9fc5e8;"><b>Sound Replacement File</b></span> <kbd  class="tooltip" data-tooltip="string">soundlist</kbd> :
 Set the path to a sound replacement file for the item. The path begins in 'svencoop/sound/mapname', whereas 'mapname' would be your map's name. You can go to the parent directory using '../'. A valid sound replacement file contains one or more lines with two sound-paths, which are seperated by a space and wrapped into quotes. The first sound is the sound to be replaced. The second sound is the new sound. Sound-paths start in the sound directory. You cannot go to the parent directory using '../' in that case. These sounds do not need to be precached using a [custom_precache](../custom_precache) point entity.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Entity to trigger when item is picked up. Trigger use-type is 'Toggle'.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
 Delay before trigger entity specified in "Target".
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
 Same as target, except that this supposedly causes the specified entity/entities to be removed from the game. Not all entities which have a target to trigger will also handle killtarget. You may want to use a [trigger_relay](../trigger_relay) to make sure it is working.
 </div>
@@ -248,8 +238,8 @@ Optional filter. Only players that are part of given team(s) name can pick up th
 <span style="color:#9fc5e8;"><b>Collect: NPC classifications</b></span> <kbd  class="tooltip" data-tooltip="choices">filter_npc_classifications</kbd> :
 Optional filter. Only Monsters with given class(es) are able to pick up this item.
 <div class="accordion">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -316,8 +306,8 @@ Allow to pick up this item only when specified entities (of item_inventory class
 <span style="color:#9fc5e8;"><b>Carried: Hide item (3rd person)</b></span> <kbd  class="tooltip" data-tooltip="choices">carried_hidden</kbd> :
 Hide item from 3rd person view. When 'No' is selected, the item model is floating above player head when equipped.
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -353,8 +343,8 @@ After this amount of time the item returns to it's starting position (when dropp
 <span style="color:#9fc5e8;"><b>Return: Delay respawn (materialisation)</b></span> <kbd  class="tooltip" data-tooltip="choices">return_delay_respawn</kbd> :
 Allows to specify if item_inventory will wait for respawn after returning to it's default position.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -382,8 +372,8 @@ Time before "Holder: Hold time limit" reach it's limit to trigger target specifi
 <span style="color:#9fc5e8;"><b>Holder: Allowed to self-activate</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_can_activate</kbd> :
 Set it to 'Yes' allows players to activate this item by themselves from inventory menu.
 <div class="accordion">
-<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-10">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -399,8 +389,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Holder: Hold time limit doesn't start until item activated</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_timelimit_wait_until_activated</kbd> :
 If set to 'Yes', hold time limit doesn't start until item is activated by player through inventory menu.
 <div class="accordion">
-<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-11">
+<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-9">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -416,8 +406,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Holder: Allowed to drop</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_can_drop</kbd> :
 Determines whenever item can be dropped manually by player from within inventory menu.
 <div class="accordion">
-<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-12">
+<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-10">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -433,8 +423,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Holder: Keep item on death</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_keep_on_death</kbd> :
 Self-explanatory. Note that player will lost this item after respawn if keyvalue below isn't set to 'Yes'.
 <div class="accordion">
-<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-13">
+<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-11">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -450,8 +440,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Holder: Keep item on respawn</b></span> <kbd  class="tooltip" data-tooltip="choices">holder_keep_on_respawn</kbd> :
 Self-explanatory. Remember that player can also lose his item on death, if "Keep item on death" is set to 'No', the player won't keep this item.
 <div class="accordion">
-<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-14">
+<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-12">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -583,8 +573,8 @@ Trigger specified target when item gets destroyed by environment (uses 'Toggle' 
 <span style="color:#9fc5e8;"><b>Effects: Wait until item is self-activated?</b></span> <kbd  class="tooltip" data-tooltip="choices">effects_wait_until_activated</kbd> :
 If "Allowed to self-activate" is set to 'Yes', this will determine if effects should be applied only when player activate an item from inventory menu.
 <div class="accordion">
-<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-15">
+<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-13">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -600,8 +590,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Effects: Permanent? (Until respawn)</b></span> <kbd  class="tooltip" data-tooltip="choices">effects_permanent</kbd> :
 Specify if effects below effect applied on player are permanent ('Yes') or temporary ('No'). If option 'No' is chosen, the effects ends after "Holder: Hold Time Limit" is hit, and if 'Yes' is selected, effect ends after respawn.
 <div class="accordion">
-<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-16">
+<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-14">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -621,8 +611,8 @@ Color of glow shell effect to apply. '0 0 0' for none.
 <span style="color:#9fc5e8;"><b>Effects: Block weapons</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_block_weapons</kbd> :
 Prevent player from using weapons ('Yes'/'No').
 <div class="accordion">
-<input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-17">
+<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-15">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -638,8 +628,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Effects: Invulnerable</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_invulnerable</kbd> :
 Makes player invulnerable ('Yes'/'No').
 <div class="accordion">
-<input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-18">
+<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-16">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -655,8 +645,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Effects: Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_invisible</kbd> :
 Makes player invisible (for enemies) ('Yes'/'No').
 <div class="accordion">
-<input type="checkbox" id="accordion-19" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-19">
+<input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-17">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -672,8 +662,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Effects: Non-solid</b></span> <kbd  class="tooltip" data-tooltip="choices">effect_nonsolid</kbd> :
 Makes player not-solid for different dynamic objects ('Yes'/'No').
 <div class="accordion">
-<input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-20">
+<input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-18">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -704,6 +694,7 @@ Percent of speed to change on player. Weapon_minigun does not affect this value.
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Effects: Damage modifier (%)</b></span> <kbd  class="tooltip" data-tooltip="string">effect_damage</kbd> :
 Player damage modifier in percent.
+</div>
 </div>
 ###Flags
 <hr>

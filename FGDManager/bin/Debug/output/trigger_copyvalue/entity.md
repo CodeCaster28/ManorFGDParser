@@ -8,22 +8,21 @@ title: trigger_copyvalue
 <div class="column entityentry" markdown="1">Provides options for performing operations on an entity's keyvalue in relation to another keyvalue of another entity. This is a beefier version of [trigger_changevalue](../trigger_changevalue). Supports [custom keyvalues](../custom_keyvalues).</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to apply value change (or enable constant copier when "Constant" flag is checked). With "Constant" flag enabled the behaviour is based on trigger use-type: 'On'- turn constant copier on, 'Off'- turn constant copier off, 'Toggle'- toggle constant copier. With "Constant" flag disabled all use-types are accepted to copy once. Can be kill-targeted.
 </div>
@@ -35,7 +34,7 @@ Name of an entity to provide a source keyvalue for the operation.
 <span style="color:#9fc5e8;"><b>Source key</b></span> <kbd  class="tooltip" data-tooltip="string">m_iszSrcValueName</kbd> :
 Name of the source entity's keyvalue - the keyvalue which shall play the later part in the operation.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Destination entity</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Name of the one entity to have a keyvalue altered.
 </div>
@@ -47,8 +46,8 @@ Name of the keyvalue to be written on the destination entity.
 <span style="color:#9fc5e8;"><b>Action</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iszValueType</kbd> :
 This specifies how destination keyvalue and static source-value correlate. What exactly happens also depends on the types of the two.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -86,8 +85,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Float-to-string/-int conversion</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iFloatConversion</kbd> :
 Specify how floats should be written to strings or converted into integers.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -110,8 +109,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Trigonometric funcs. I/O</b></span> <kbd  class="tooltip" data-tooltip="choices">m_trigonometricBehaviour</kbd> :
 When using trigonometric or arc-functions, use this to specify what measure you are using as input, or which measure you expect as output (when using arc-functions).
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -134,6 +133,7 @@ Entity to trigger after the operation. This is very useful when you require a lo
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Copy-interval (seconds)</b></span> <kbd  class="tooltip" data-tooltip="string">dmg</kbd> :
 When using constant mode, use this to specify the delay between intervals where the trigger_copyvalue performs its operation, in seconds. This defaults to 0.0 seconds, meaning once every server frame.
+</div>
 </div>
 ###Flags
 <hr>

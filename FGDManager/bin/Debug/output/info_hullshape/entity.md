@@ -8,9 +8,17 @@ title: info_hullshape
 <div class="column entityentry" markdown="1">Allows to modify player behavior when standing on spiked ramps by replacing the default cuboid shape of the player when generating collision hulls for certain brushes. You can use brush shape of this info_hullshape as player hull. This is used mostly for "surf" maps to prevent player standing on top of curved brushes. You can set this shape globally or use it only on certain brushes. For global hull shape use "Set as default shape" keyvalue. To apply hull shapes into desired brushes do the following: firstly, there have to be two 'info_hullshape' entities, one with the shape of a standing player and the other with the shape of a crouching player. Secondly, the ramp should be tied to a brush entity or func_detail or func_group, and then you set the 'zhlt_hull1' and 'zhlt_hull3' keys in that entity to specify the player's shape for the entity's standing hull and crouching hull. Note that the crouching player must not be bigger than the standing player, otherwise the player will get stuck when he presses the crouch key. If the shape is too complex, the brushes that use this shape will consume much more clipnodes than normal brushes.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Name of this info_hullshape. This name need to be specified in [func_detail](../func_detail) or [func_group](../func_group).
 </div>
@@ -47,6 +55,7 @@ Choices:
 <li><b>0</b> : No</li>
 <li><b>1</b> : Yes</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

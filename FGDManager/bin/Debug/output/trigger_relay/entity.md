@@ -8,34 +8,33 @@ title: trigger_relay
 <div class="column entityentry" markdown="1">Point entity which relays a triggering action, and overrides the activator entity with itself to the target entity when triggered. It allows you to choose a specific use-type to trigger the target with, and a delay time value for when to trigger the target. These features make it useful for controlling specifically how and when an entity is triggered.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it so trigger_relay fire it's target. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Entity to trigger whenever {{ entname }} is triggered. Trigger use-type is defined in "Trigger State" keyvalue.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
 Delay before trigger entity specified in "Target".
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
 Entity to remove when {{ entname }} is triggered.
 </div>
@@ -43,8 +42,8 @@ Entity to remove when {{ entname }} is triggered.
 <span style="color:#9fc5e8;"><b>Trigger State</b></span> <kbd  class="tooltip" data-tooltip="choices">triggerstate</kbd> :
 Set the use-type with which the trigger_relay will trigger its targets. This is set to 'Off' by default, make sure to change this if you want it to be anything else.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -60,6 +59,7 @@ Choices:
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Reset</b></span> <kbd  class="tooltip" data-tooltip="string">m_flDelayBeforeReset</kbd> :
 Time, in seconds, the trigger_relay can fire it's target again after being triggered. Flag "Remove on fire" must be disabled for this to work.
+</div>
 </div>
 ###Flags
 <hr>

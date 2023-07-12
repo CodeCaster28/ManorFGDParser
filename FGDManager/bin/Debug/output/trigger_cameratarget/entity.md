@@ -8,28 +8,27 @@ title: trigger_cameratarget
 <div class="column entityentry" markdown="1">A brush-based entity you can click on using the mouse cursor function of the [trigger_camera](../trigger_camera).</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to enable or disable camera target. Depending on trigger use-type: 'On'- enable camera target, 'Toggle'- toggle camera target, 'Off'- disable camera target. Can be kill-targeted.
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <span style="color:#cae4fc;"><b>ZHLT Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -47,8 +46,8 @@ For model-based point entities: if model lightning does not satisfy you (e.g. it
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
 Enable or disable collision of entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -64,8 +63,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>ZHLT Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_invisible</kbd> :
 Brush entities only. Determines if entity should be visible.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -85,8 +84,8 @@ Opaque brush entities only. If "ZHLT Ligth Flags" of this entity uses any of the
 <span style="color:#9fc5e8;"><b>ZHLT Embed Light Map (when translucent)</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_embedlightmap</kbd> :
 Transparent brush entities only. Set it to 'Yes' and this transparent entity will take a light from environment making it looks much more natural. Use it when entities (e.g. glass represented by func_wall) omits lightning from surrounding. Note that this is expensive so shouldn't be used too often, but resolution of those lightmaps can be controlled by keyvalue explained below.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -108,8 +107,8 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 <span style="color:#9fc5e8;"><b>Left Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_0_0</kbd> :
 Perform selected action when this entity is clicked with left mouse button.
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -134,8 +133,8 @@ Some actions from keyvalue above can have parameter specified.
 <span style="color:#9fc5e8;"><b>Left Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_0_0</kbd> :
 Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -155,8 +154,8 @@ Entity to trigger with specified action and parameter.
 <span style="color:#9fc5e8;"><b>Right Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_1_0</kbd> :
 Perform selected action when this entity is clicked with right mouse button.
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -181,8 +180,8 @@ Some actions from keyvalue above can have parameter specified.
 <span style="color:#9fc5e8;"><b>Right Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_1_0</kbd> :
 Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -202,8 +201,8 @@ Entity to trigger with specified action and parameter.
 <span style="color:#9fc5e8;"><b>Third Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_2_0</kbd> :
 Perform selected action when this entity is clicked with middle mouse button.
 <div class="accordion">
-<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-10">
+<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-9">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -228,8 +227,8 @@ Some actions from keyvalue above can have parameter specified.
 <span style="color:#9fc5e8;"><b>Third Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_2_0</kbd> :
 Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
-<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-11">
+<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-10">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -249,8 +248,8 @@ Entity to trigger with specified action and parameter.
 <span style="color:#9fc5e8;"><b>Left Double Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_0_1</kbd> :
 Perform selected action when this entity is double-clicked with left mouse button.
 <div class="accordion">
-<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-12">
+<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-11">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -275,8 +274,8 @@ Some actions from keyvalue above can have parameter specified.
 <span style="color:#9fc5e8;"><b>Left Double Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_0_1</kbd> :
 Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
-<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-13">
+<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-12">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -296,8 +295,8 @@ Entity to trigger with specified action and parameter.
 <span style="color:#9fc5e8;"><b>Right Double Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_1_1</kbd> :
 Perform selected action when this entity is double-clicked with right mouse button.
 <div class="accordion">
-<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-14">
+<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-13">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -322,8 +321,8 @@ Some actions from keyvalue above can have parameter specified.
 <span style="color:#9fc5e8;"><b>Right Double Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_1_1</kbd> :
 Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
-<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-15">
+<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-14">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -343,8 +342,8 @@ Entity to trigger with specified action and parameter.
 <span style="color:#9fc5e8;"><b>Third Double Click Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_action_2_1</kbd> :
 Perform selected action when this entity is double-clicked with middle mouse button.
 <div class="accordion">
-<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-16">
+<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-15">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -369,8 +368,8 @@ Some actions from keyvalue above can have parameter specified.
 <span style="color:#9fc5e8;"><b>Third Double Click Block Drag Repeating Action</b></span> <kbd  class="tooltip" data-tooltip="choices">mouse_block_drag_2_1</kbd> :
 Block a repeating action from firing when a mouse button is held down then moved about whilst held, e.g. constantly triggering a door open/close just by holding a mouse button and jittering movement a bit.
 <div class="accordion">
-<input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-17">
+<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-16">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -389,6 +388,7 @@ Entity to trigger with specified action and parameter.
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Mouse Digital Action Reset Time</b></span> <kbd  class="tooltip" data-tooltip="string">mouse_digital_action_reset</kbd> :
 Change the wait/reset time between each digital mouse action, though there is still a minimum of 0.01 (10ms). Digital mouse action including clicking, double-clicking and wheel up/down. This doesn't apply to analogue actions, being moving or dragging.
+</div>
 </div>
 ###Flags
 <hr>

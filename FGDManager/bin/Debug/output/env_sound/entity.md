@@ -8,22 +8,21 @@ title: env_sound
 <div class="column entityentry" markdown="1">Allows you to set up specific ambient effects for increasing the sound experience and making it consistent with the visuals of your map.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to apply sound effect to entities in radius- only when 'Use only' and 'Radius' are used. Every trigger use-type works uniformly. Can be kill-targeted but already applied effects persist.
 </div>
@@ -35,8 +34,8 @@ Radius, in units, in which a player has to be for the ambient effect to change f
 <span style="color:#9fc5e8;"><b>Room Type</b></span> <kbd  class="tooltip" data-tooltip="Choices">roomtype</kbd> :
 Pick the ambient effect here. There are 29 options.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -72,6 +71,7 @@ Choices:
 <li><b>27</b> : Weirdo - Dizzy</li>
 <li><b>28</b> : Weirdo - Psychotic</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

@@ -8,36 +8,35 @@ title: func_rot_button
 <div class="column entityentry" markdown="1">A brush entity, which can be triggered by the player by issuing his 'Use'-command on it while standing next to it and looking at it. This is a rotating variant of the [func_button](../func_button) which can be used to create rotating interactable objects like levers or valves. The origin brush is required for this entity, around which func_rot_button rotates.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to press/toggle it. Every trigger use-type works uniformly. Can be kill-targeted.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Entity to trigger when {{ entname }} gets pressed. Trigger use-type is defined in "Use Type" keyvalue.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
 Global name of entity, allows to have one entity in the multiple maps (e.g. elevator in map1 and map2 have the same "Global Entity Name" which tells the engine to treat those entities as a one single entity, so all elevator settings, positions, actions e.t.c. are copied to another map in a moment of map transitions.
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <span style="color:#cae4fc;"><b>Inventory Rules</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -70,8 +69,8 @@ Minimal number of items in player inventory, which belong to specified group, th
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on use triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_use_triggers</kbd> :
 If set to 'Yes' item's trigger targets from 'Target: On use (by trigger)' will not be triggered when item is used by this entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -95,8 +94,8 @@ Items to force-drop, that belong to specified group, when the test result is pos
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on drop triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_drop_triggers</kbd> :
 If set to 'Yes' item's trigger targets from "Target: On drop" will not be triggered when item is dropped by this entity with "Drop items(s)" events above.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -120,8 +119,8 @@ Items, that belong to specified group, to return to their starting positions whe
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on return triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_return_triggers</kbd> :
 If set to 'Yes' item's trigger targets from "Target: On return" will not be triggered when item is returned by this entity with "Return items(s)" events above.
 <div class="accordion">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -145,8 +144,8 @@ Items, that belong to specified group, to remove when test result is positive. A
 <span style="color:#9fc5e8;"><b>On pass: Ignore item's on destroy triggers?</b></span> <kbd  class="tooltip" data-tooltip="choices">pass_ignore_destroy_triggers</kbd> :
 If set to 'Yes' item's trigger targets from "Target: On Destroy" will not be triggered when item is destroyed by this entity with "Destroy items(s)" events above.
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -165,8 +164,8 @@ Entity to trigger whenever test result is negative.
 </div>
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <span style="color:#cae4fc;"><b>Render Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -175,8 +174,8 @@ Entity to trigger whenever test result is negative.
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
 Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -211,8 +210,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Render Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">rendermode</kbd> :
 Render mode determines how this entity is rendered.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -238,22 +237,13 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 </div>
 </div>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-10">
-<span style="color:#cae4fc;"><b>Pitch Yaw Roll</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
 Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hammer uses Z for height and Y for depth, while every other sane 3D-application does this the other way round; nonetheless this keyvalue description has the letters in the conventional order) This, technically, is a 3D-vector containing Euler-angles to describe either the entity's rotation or direction of effect. E.g. a func_door_rotating will use this as its initial rotation, while a trigger_push will keep its original alignment and use this for the direction of its push-effect instead. Euler-angles are a hierarchical system to determine an object's orientation in 3D-space. A yaw-value of 0 would mean the entity would face east. (right in top-down view) 90 would mean it would face north. (up in top-down-view) After yaw, pitch is applied. Think aiming up/down with your character in first person. At last, the roll-value is applied. Think your character falling over sideways in first person. Some entities, mostly point entities, do not use the angles keyvalue for any purpose.
 </div>
-</div>
-</div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-11">
+<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-9">
 <span style="color:#cae4fc;"><b>ZHLT Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -271,8 +261,8 @@ For model-based point entities: if model lightning does not satisfy you (e.g. it
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
 Enable or disable collision of entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-12">
+<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-10">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -288,8 +278,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>ZHLT Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_invisible</kbd> :
 Brush entities only. Determines if entity should be visible.
 <div class="accordion">
-<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-13">
+<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-11">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -309,8 +299,8 @@ Opaque brush entities only. If "ZHLT Ligth Flags" of this entity uses any of the
 <span style="color:#9fc5e8;"><b>ZHLT Embed Light Map (when translucent)</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_embedlightmap</kbd> :
 Transparent brush entities only. Set it to 'Yes' and this transparent entity will take a light from environment making it looks much more natural. Use it when entities (e.g. glass represented by func_wall) omits lightning from surrounding. Note that this is expensive so shouldn't be used too often, but resolution of those lightmaps can be controlled by keyvalue explained below.
 <div class="accordion">
-<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-14">
+<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-12">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -330,8 +320,8 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 <span style="color:#9fc5e8;"><b>ZHLT Light Flags</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_lightflags</kbd> :
 Brush entities only. Changes light casting or receiving setting.
 <div class="accordion">
-<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-15">
+<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-13">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -353,8 +343,8 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 </div>
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-16">
+<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-14">
 <span style="color:#cae4fc;"><b>Sounds and Sentences</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -363,8 +353,8 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 <span style="color:#9fc5e8;"><b>Locked Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">locked_sound</kbd> :
 Sound to play when a player tries to use the {{ entname }} but it's locked because it has a targetname or uses a [multisource](../multisource) entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-17">
+<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-15">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -384,8 +374,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Unlocked Sound</b></span> <kbd  class="tooltip" data-tooltip="choices">unlocked_sound</kbd> :
 Sound to play if {{ entname }} is pressed/touched while not locked.
 <div class="accordion">
-<input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-18">
+<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-16">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -411,8 +401,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Locked Sentence</b></span> <kbd  class="tooltip" data-tooltip="choices">locked_sentence</kbd> :
 Sentence to play when a player tries to use {{ entname }} but it's locked because it has a targetname or uses a [multisource](../multisource) entity. Sentences are picked from sound/default_sentences.txt file.
 <div class="accordion">
-<input type="checkbox" id="accordion-19" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-19">
+<input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-17">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -436,8 +426,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Unlocked Sentence</b></span> <kbd  class="tooltip" data-tooltip="choices">unlocked_sentence</kbd> :
 Sentence to play when the door is opened. Plays only few times.
 <div class="accordion">
-<input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-20">
+<input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-18">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -478,7 +468,7 @@ Sentence from "default_sentences.txt" or custom sentences file (which can be add
 <span style="color:#9fc5e8;"><b>ChangeTarget Name</b></span> <kbd  class="tooltip" data-tooltip="target_destination">changetarget</kbd> :
 Non-functional keyvalue. If specified, it supposed to change this func_rot_button's target's "Target" field to the name specified in "ChangeTarget Name" of this func_rot_button.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
 Name of the [multisource](../multisource) entity that (temporary) disables this {{ entname }}. If master is specified the {{ entname }} won't work. When multisource entity is triggered/being triggering by all possible inputs, the {{ entname }} will be enabled and ready to be pressed. When multisource lost at least one input signal, the entities becomes disabled again.
 </div>
@@ -494,8 +484,8 @@ If you enter here value higher than 0, the button becomes shootable only, and ca
 <span style="color:#9fc5e8;"><b>Sounds</b></span> <kbd  class="tooltip" data-tooltip="choices">sounds</kbd> :
 Set the sound to be played when the button is pressed. It will play when the button is locked, too.
 <div class="accordion">
-<input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-21">
+<input type="checkbox" id="accordion-19" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-19">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -518,8 +508,8 @@ Custom sound, that overrides default sound from "Sounds" list to play when the b
 <span style="color:#9fc5e8;"><b>Delay before reset</b></span> <kbd  class="tooltip" data-tooltip="choices">wait</kbd> :
 When the button is pressed, it will remain in its pressed state for this amount of time. This also affects any toggleable textures on it. If set to '-1', the button can be pressed only once, and will then remain in its pressed state forever. If a multisource entity is among the func_rot_button's targets, that multisource entity will recognize the button's input to be active only for this amount of time.
 <div class="accordion">
-<input type="checkbox" id="accordion-22" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-22">
+<input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-20">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -530,7 +520,7 @@ Choices:
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay before trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
 Delay before triggering entity specified in "Target".
 </div>
@@ -546,8 +536,8 @@ Sets the minimum light level. Set this value if entity is too dark on compiled m
 <span style="color:#9fc5e8;"><b>Use Type</b></span> <kbd  class="tooltip" data-tooltip="choices">use_type</kbd> :
 Set the use-type with which the button will trigger its targets. Default is 'Toggle'.
 <div class="accordion">
-<input type="checkbox" id="accordion-23" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-23">
+<input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-21">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -558,6 +548,7 @@ Choices:
 <li><b>2</b> : Set</li>
 <li><b>3</b> : Toggle</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

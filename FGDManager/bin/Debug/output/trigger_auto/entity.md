@@ -8,17 +8,25 @@ title: trigger_auto
 <div class="column entityentry" markdown="1">Trigger_auto is a simple point entity which will trigger in the first server frame, right after the map has loaded. Because some entities still set themselves up properly in the first server frame, it is advised to set a little delay of about 0.5 seconds, so trigger_auto does fire in a later frame and no unwanted behaviour is exhibited.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Entity to trigger on map start. Trigger use-type is defined in "Trigger State" keyvalue.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Delay Before Trigger</b></span> <kbd  class="tooltip" data-tooltip="string">delay</kbd> :
 Delay before trigger entity specified in "Target".
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Kill Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">killtarget</kbd> :
 Entity to remove on map start.
 </div>
@@ -41,6 +49,7 @@ Choices:
 <li><b>1 </b> : On : Trigger use-type 'On'.</li>
 <li><b>2 </b> : Toggle : Trigger use-type 'Toggle'.</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

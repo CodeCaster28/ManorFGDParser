@@ -8,7 +8,15 @@ title: light_surface
 <div class="column entityentry" markdown="1">Allows you to create texture lights (textures that emits lights) in more advanced way than [info_texlights](../info_texlights) does. All keyvalues set to default, change "Texture Name" keyvalue and it will emit light of this texture color and power of 80. All other keyvalues and flag are optional.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Texture name</b></span> <kbd  class="tooltip" data-tooltip="string">_tex</kbd> :
@@ -110,7 +118,7 @@ Choices:
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to turn texture lights on and off. Depending on trigger use-type: 'On'- turn light on, 'Off'- turn light off, 'Toggle'- toggle light. Kill-targeting this entity will remove {{ entname }} but won't remove lightstyles (you might want to just turn it off instead).
 </div>
@@ -145,6 +153,7 @@ Choices:
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Custom Appearance</b></span> <kbd  class="tooltip" data-tooltip="string">pattern</kbd> :
 Allows you to set up a custom appearance of light. To do this, you will have to enter 1 to 64 chars from the alphabet ('a' to 'z'), whereas 'a' stands for being dark and 'z' for very bright. Normal lights' appearances uses 'm'. The program [Custom Lightstyle Generator](https://twhl.info/wiki/page/VERC%3A_Custom_Lightstyle_Generator_v1.0) by Craig "CRAZG" McLaren might help you here. Whatever sequence you enter is stepped through at about 8 Hertz. This will only work when a targetname is set. Note that there can be at most 4 different light styles affecting a face in your map. Otherwise, light styles will be discarded from it, causing unrealistic lighting in extreme cases.
+</div>
 </div>
 ###Flags
 <hr>

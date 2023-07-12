@@ -8,7 +8,15 @@ title: func_tankcontrols
 <div class="column entityentry" markdown="1">This entity is used as a [func_tank](../func_tank) or [func_tanklaser](../func_tanklaser) or [func_tankrocket](../func_tankrocket) or [func_tankmortar](../func_tankmortar) controlling area. It works like an invisible button, when pressed, player can control the tank. Usage of this entity is very simple- place it in front of func_tank and set "Tank entity name" to name of any type of tank. If func_tankcontrols is too far away from tank entity, the func_tankcontrols won't work. Keep in mind that all tanks entities need to have their "Controllable" flag checked.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <div class="accordion entityentry">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
@@ -216,7 +224,8 @@ Entity to trigger whenever test result is negative.
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Tank entity name</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Name of [func_tank](../func_tank) or [func_tanklaser](../func_tank) or [func_tankrocket](../func_tankrocket) or [func_tankmortar](../func_tankmortar) entity to control.
+</div>
 </div>

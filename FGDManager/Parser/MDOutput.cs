@@ -1,13 +1,32 @@
 ﻿namespace FGDManager
 {
-    using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    using System.Text;
 
     public class MDOutput
     {
+        private List<string> commonKeyvalues = new List<string>()
+        {
+            "target",
+            "targetname",
+            "name",
+            "angles",
+            "ondestroyfn",
+            "killtarget",
+            "delay",
+            "master",
+            "tinfilter",
+            "tinfiltertype",
+            "cinfilter",
+            "cinfiltertype",
+            "toutfilter",
+            "toutfiltertype",
+            "coutfilter",
+            "coutfiltertype",
+            "globalname",
+        };
+
         public void GenerateOutput(List<Entity> entities)
         {
             var dir = "output";
@@ -52,7 +71,15 @@
                     
                     if (allKeyValues.Count > 0)
                     {
-                        writer.WriteLine("###Keyvalues");
+                        writer.WriteLine("<div>");
+                        writer.WriteLine("<table class=\"titletable\">");
+                        writer.WriteLine("<tbody>");
+                        writer.WriteLine("<tr>");
+                        writer.WriteLine("<td markdown=\"1\">###Keyvalues</td>");
+                        writer.WriteLine("<td class=\"titletablecheck\" id=\"checkboxandlabel\"><input type=\"checkbox\" id=\"displaycommon\"><label for=\"displaycommon\"> Display Common Keyvalues</label></input></td>");
+                        writer.WriteLine("</tr>");
+                        writer.WriteLine("</tbody>");
+                        writer.WriteLine("</table>");
                         writer.WriteLine("<hr>");
                         var accordionIndex = 1;
                         var currentGroup = string.Empty;
@@ -85,7 +112,14 @@
                                 }
                             }
 
-                            writer.WriteLine("<div class=\"entityentry\" markdown=\"1\">");
+                            var entityEntryClasses = "entityentry";
+
+                            if (commonKeyvalues.Any(a => a == key.Name))
+                            {
+                                entityEntryClasses = "entityentry commonkeys-checkbox";
+                            }
+
+                            writer.WriteLine($"<div class=\"{entityEntryClasses}\" markdown=\"1\">");
                             writer.WriteLine($"<span style=\"color:#9fc5e8;\"><b>{key.DocName}</b></span> <kbd  class=\"tooltip\" data-tooltip=\"{key.Type}\">{key.Name}</kbd> :");
                             
                             var keyMedia = string.IsNullOrEmpty(key.Media) ? "" : $"<div class=\"imagepadding\" markdown=\"1\">![{key.DocName}]({key.Media})</div>";
@@ -121,6 +155,8 @@
                             writer.WriteLine("</div>");
                         }
                     }
+
+                    writer.WriteLine("</div>");
 
                     if (entity.SpawnFlags.Count > 0)
                     {

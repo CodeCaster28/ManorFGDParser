@@ -9,3 +9,4 @@ title: info_smoothvalue
 ![](smoothvalue.jpg)</div>
 </div>
 </div>
+</div>

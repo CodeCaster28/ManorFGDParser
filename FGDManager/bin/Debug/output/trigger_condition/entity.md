@@ -8,26 +8,25 @@ title: trigger_condition
 <div class="column entityentry" markdown="1">A, by default, toggleable entity, which, while activated, will compare any value of any entity's key with either a specified value or the keyvalue of another entity, using a specified comparator and fire its target for the according result- true or false- whenever the result of the condition changes (by default) or at the instant the trigger_condition entity is activated manually. While activated, the trigger_condition checks its condition every 0.1 seconds, by default. Supports [custom keyvalues](../custom_keyvalues).</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to start monitoring keyvalue (or compare once when "Cyclic" flag is checked). With "Cyclic" flag disabled the behaviour is based on trigger use-type: 'On'- turn comparator on, 'Off'- turn comparator off, 'Toggle'- toggle comparator. With "Cyclic" flag enabled only "On" and "Toggle" trigger use-types are accepted to compare once. Can be kill-targeted.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Monitored entity</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Name of the entity of which a keyvalue is to be monitored. The target entity may be removed in the process. Only one entity by this name should exist.
 </div>
@@ -51,8 +50,8 @@ If you do not want to compare the monitored keyvalue to the keyvalue of another 
 <span style="color:#9fc5e8;"><b>Comparator; mon. val. -> comp.-val.</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iCheckType</kbd> :
 Set the comparison type between monitored keyvalue and the other compare value.
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -81,8 +80,8 @@ Target to trigger in case the condition is false. Trigger use-type is 'Toggle'.
 <span style="color:#9fc5e8;"><b>Constant mode trigger behaviour</b></span> <kbd  class="tooltip" data-tooltip="choices">m_iCheckBehaviour</kbd> :
 If the trigger_condition uses constant/non-cyclic/toggle-mode, this specifies how it will fire its true- and false- target.
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -99,6 +98,7 @@ Choices:
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Check-interval (seconds)</b></span> <kbd  class="tooltip" data-tooltip="string">m_fCheckInterval</kbd> :
 If the trigger_condition is toggleable/constant, this specifies the delay between check-intervals, in seconds. Set to 0.0 to check every server-frame. Default is 0.1 seconds.
+</div>
 </div>
 ###Flags
 <hr>

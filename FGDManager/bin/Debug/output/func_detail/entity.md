@@ -8,7 +8,15 @@ title: func_detail
 <div class="column entityentry" markdown="1">Func_detail is useful brush entity, similar to [func_wall](../func_wall) except it doesn't support Render Modes. Detailed brushes like tables, signs, computers, pipes, cars e.t.c. should be turned into func_detail instead of func_wall. Brushes tied into func_detail are Detail Brushes. Detail brushes don't block vis, nor slowing vis processing down. It won't chop other brushes- it helps to avoid many compiling warnings. The one of most important feature of func_detail is that detail brushes won't count into models limit (just like func_walls) which is very easy to exceed in Sven Co-op. You can customize detail level (description below), and collision of func_brush (it's better than func_illusionary because of better lightning receiving and in-game decals support). Using this brush in replace of func_wall is highly recommended. Every keyvalue are optional, it's recommended to leave them as they are (with an except of "Passable" key) for beginner mappers.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Detail level</b></span> <kbd  class="tooltip" data-tooltip="integer">zhlt_detaillevel</kbd> :
@@ -44,6 +52,7 @@ Choices:
 <li><b>0 </b> : Default</li>
 <li><b>1 </b> : Always non-solid</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

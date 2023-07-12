@@ -8,22 +8,21 @@ title: path_condition
 <div class="column entityentry" markdown="1">Path_condition is non-functional entity that awaits future implementation.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it.
 </div>
@@ -55,8 +54,8 @@ Keyvalue_Description_here
 <span style="color:#9fc5e8;"><b>Waypoint Selection</b></span> <kbd  class="tooltip" data-tooltip="Choices">selecttype</kbd> :
 Keyvalue_Description_here
 <div class="accordion">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -73,8 +72,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Pre-Waypoint Destination</b></span> <kbd  class="tooltip" data-tooltip="Choices">pre_location</kbd> :
 Keyvalue_Description_here
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -121,6 +120,7 @@ Keyvalue_Description_here
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Angelscript condition name</b></span> <kbd  class="tooltip" data-tooltip="string">m_szASConditionsName</kbd> :
 Keyvalue_Description_here
+</div>
 </div>
 ###Flags
 <hr>

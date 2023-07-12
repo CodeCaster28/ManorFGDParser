@@ -8,7 +8,15 @@ title: info_compile_parameters
 <div class="column entityentry" markdown="1">Set various map compile parameters without need of using batch file for advanced compilation settings. Makes compile settings inseparable from map, very useful when multiple mappers are involved in creation process. No extra actions are needed- place entity anywhere, tweak desired keyvalues and during compile process all parameters will be applied automatically. Each keyvalue sets parameter for compilers, in spawnflags all parameters for each compilers (CSG, BSP, VIS, RAD) can be disabled- with separated option for parameters shared bewteen compilers. See official ZHLT parameters documentation: [ZHLT Command Reference](http://zhlt.info/command-reference.html). You can also check my advanced lightning tutorial that covers basics of compile process and explains most important parameters: Advanced Compilation.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Verbose messages?</b></span> <kbd  class="tooltip" data-tooltip="choices">verbose</kbd> :
@@ -1078,6 +1086,7 @@ Choices:
 <li><b>-1 </b> : No</li>
 <li><b>1 </b> : Yes</li>
 </ul>
+</div>
 </div>
 </div>
 </div>

@@ -8,32 +8,31 @@ title: func_tankmortar
 <div class="column entityentry" markdown="1">Same as [func_tank](../func_tank) but produces instant explosions. Func_tankmortar is used to represent a mounted cannon which can be controlled by players as well as monsters, if allowed. For either to be able to use this, it must be hooked up to a single func_tankcontrols entity. If you want func_tankmortar to be controllable by player, you need to specify a name of func_tankmortar and use func_tankcontrols entity in addition of this entity. Automatic turret needs "Active" flag enabled. Entity requires origin brush tied to barrel, so it can rotate around it.</div>
 </div>
 </div>
-###Keyvalues
+<div>
+<table class="titletable">
+<tbody>
+<tr>
+<td markdown="1">###Keyvalues</td>
+<td class="titletablecheck" id="checkboxandlabel"><input type="checkbox" id="displaycommon"><label for="displaycommon"> Display Common Keyvalues</label></input></td>
+</tr>
+</tbody>
+</table>
 <hr>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-1">
-<span style="color:#cae4fc;"><b>OnDestroy Function</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>OnDestroy Function</b></span> <kbd  class="tooltip" data-tooltip="string">ondestroyfn</kbd> :
 Name of the function to use from already parsed .as script files when entity is destroyed (killed) in any way. If the function belongs to namespace, you must use prefix with the namespace name (e.g. mynamespace::MyFunction) for the keyvalue.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Name</b></span> <kbd  class="tooltip" data-tooltip="target_source">targetname</kbd> :
 Set name of {{ entname }} so other entities can trigger it to take control, preferably [func_tankcontrols](../func_tankcontrols). Some others entities like [func_button](../func_button) works as well. Does not accept 'Off' use-type. Can be kill-targeted.
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Target</b></span> <kbd  class="tooltip" data-tooltip="target_destination">target</kbd> :
 Entity to trigger whenever a controlled {{ entname }} shot. Trigger use-type is 'Toggle'.
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-2">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1">
 <span style="color:#cae4fc;"><b>Render Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -42,8 +41,8 @@ Entity to trigger whenever a controlled {{ entname }} shot. Trigger use-type is 
 <span style="color:#9fc5e8;"><b>Render FX</b></span> <kbd  class="tooltip" data-tooltip="choices">renderfx</kbd> :
 Set custom render FX effect. Only works when "Render Mode" is set to different than 'Normal'
 <div class="accordion">
-<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-3">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -78,8 +77,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>Render Mode</b></span> <kbd  class="tooltip" data-tooltip="choices">rendermode</kbd> :
 Render mode determines how this entity is rendered.
 <div class="accordion">
-<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-4">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -105,24 +104,15 @@ Used with "Render Mode" 'Color' and 'Glow' to set color. Also sets color of 'Glo
 </div>
 </div>
 </div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Global Entity Name</b></span> <kbd  class="tooltip" data-tooltip="string">globalname</kbd> :
 Global name of entity, allows to have one entity in the multiple maps (e.g. elevator in map1 and map2 have the same "Global Entity Name" which tells the engine to treat those entities as a one single entity, so all elevator settings, positions, actions e.t.c. are copied to another map in a moment of map transitions.
 </div>
-<div class="accordion entityentry">
-<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-5">
-<span style="color:#cae4fc;"><b>Pitch Yaw Roll</b></span>
-<i class="icon icon-arrow-right mr-1"></i>
-</label>
-<div class="accordion-body entgroup">
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>Pitch Yaw Roll (X Y Z)</b></span> <kbd  class="tooltip" data-tooltip="string">angles</kbd> :
 Where Z means Y and Y means Z, that is, when you're thinking Hammer-grid. (Hammer uses Z for height and Y for depth, while every other sane 3D-application does this the other way round; nonetheless this keyvalue description has the letters in the conventional order) This, technically, is a 3D-vector containing Euler-angles to describe either the entity's rotation or direction of effect. E.g. a func_door_rotating will use this as its initial rotation, while a trigger_push will keep its original alignment and use this for the direction of its push-effect instead. Euler-angles are a hierarchical system to determine an object's orientation in 3D-space. A yaw-value of 0 would mean the entity would face east. (right in top-down view) 90 would mean it would face north. (up in top-down-view) After yaw, pitch is applied. Think aiming up/down with your character in first person. At last, the roll-value is applied. Think your character falling over sideways in first person. Some entities, mostly point entities, do not use the angles keyvalue for any purpose.
 </div>
-</div>
-</div>
-<div class="entityentry" markdown="1">
+<div class="entityentry commonkeys-checkbox" markdown="1">
 <span style="color:#9fc5e8;"><b>(Team) Master</b></span> <kbd  class="tooltip" data-tooltip="string">master</kbd> :
 Currently unsupported.
 </div>
@@ -194,8 +184,8 @@ How many seconds this entity will continue shooting after losing player from fie
 <span style="color:#9fc5e8;"><b>Bullet Accuracy</b></span> <kbd  class="tooltip" data-tooltip="choices">firespread</kbd> :
 Allows to customize bullet spreading, from perfect shot to Star Wars Stormtrooper accuracy.
 <div class="accordion">
-<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-6">
+<input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-4">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -226,8 +216,8 @@ Sets the minimum light level. Set this value if entity is too dark on compiled m
 <span style="color:#9fc5e8;"><b>R Player</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_player</kbd> :
 Set relationship towards player.
 <div class="accordion">
-<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-7">
+<input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-5">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -247,8 +237,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Unknown</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_none</kbd> :
 Set relationship towards entities classified as "unknown".
 <div class="accordion">
-<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-8">
+<input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-6">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -268,8 +258,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Machine</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_machine</kbd> :
 Set relationship towards machines.
 <div class="accordion">
-<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-9">
+<input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-7">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -289,8 +279,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Human Passive</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_human_passive</kbd> :
 Set relationship towards humans (passive).
 <div class="accordion">
-<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-10">
+<input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-8">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -310,8 +300,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Human Military</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_human_militar</kbd> :
 Set relationship towards military humans.
 <div class="accordion">
-<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-11">
+<input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-9">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -331,8 +321,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Alien Military</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_militar</kbd> :
 Set relationship towards military aliens.
 <div class="accordion">
-<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-12">
+<input type="checkbox" id="accordion-10" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-10">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -352,8 +342,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Alien Passive</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_passive</kbd> :
 Set relationship towards passive aliens.
 <div class="accordion">
-<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-13">
+<input type="checkbox" id="accordion-11" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-11">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -373,8 +363,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Alien Monster</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_monster</kbd> :
 Set relationship towards alien monsters.
 <div class="accordion">
-<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-14">
+<input type="checkbox" id="accordion-12" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-12">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -394,8 +384,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Alien Prey</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_prey</kbd> :
 Set relationship towards alien preys.
 <div class="accordion">
-<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-15">
+<input type="checkbox" id="accordion-13" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-13">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -415,8 +405,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Alien Predator</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_alien_predator</kbd> :
 Set relationship towards alien predators.
 <div class="accordion">
-<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-16">
+<input type="checkbox" id="accordion-14" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-14">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -436,8 +426,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Insect</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_insect</kbd> :
 Set relationship towards insect.
 <div class="accordion">
-<input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-17">
+<input type="checkbox" id="accordion-15" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-15">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -457,8 +447,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Player Ally</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_player_ally</kbd> :
 Set relationship towards player allies.
 <div class="accordion">
-<input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-18">
+<input type="checkbox" id="accordion-16" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-16">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -478,8 +468,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Player BioWeapon</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_player_bioweapon</kbd> :
 Set relationship towards player's bioweapon (e.g. snarks thrown by player).
 <div class="accordion">
-<input type="checkbox" id="accordion-19" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-19">
+<input type="checkbox" id="accordion-17" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-17">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -499,8 +489,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>R Monster BioWeapon</b></span> <kbd  class="tooltip" data-tooltip="choices">relation_monster_bioweapon</kbd> :
 Set relationship towards monster's bioweapons (e.g. shockroach dropped by shocktroopers).
 <div class="accordion">
-<input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-20">
+<input type="checkbox" id="accordion-18" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-18">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -517,8 +507,8 @@ Choices:
 </div>
 </div>
 <div class="accordion entityentry">
-<input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-21">
+<input type="checkbox" id="accordion-19" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-19">
 <span style="color:#cae4fc;"><b>ZHLT Keyvalues</b></span>
 <i class="icon icon-arrow-right mr-1"></i>
 </label>
@@ -536,8 +526,8 @@ For model-based point entities: if model lightning does not satisfy you (e.g. it
 <span style="color:#9fc5e8;"><b>ZHLT Disable Clipping</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_noclip</kbd> :
 Enable or disable collision of entity.
 <div class="accordion">
-<input type="checkbox" id="accordion-22" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-22">
+<input type="checkbox" id="accordion-20" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-20">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -553,8 +543,8 @@ Choices:
 <span style="color:#9fc5e8;"><b>ZHLT Invisible</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_invisible</kbd> :
 Brush entities only. Determines if entity should be visible.
 <div class="accordion">
-<input type="checkbox" id="accordion-23" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-23">
+<input type="checkbox" id="accordion-21" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-21">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -574,8 +564,8 @@ Opaque brush entities only. If "ZHLT Ligth Flags" of this entity uses any of the
 <span style="color:#9fc5e8;"><b>ZHLT Embed Light Map (when translucent)</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_embedlightmap</kbd> :
 Transparent brush entities only. Set it to 'Yes' and this transparent entity will take a light from environment making it looks much more natural. Use it when entities (e.g. glass represented by func_wall) omits lightning from surrounding. Note that this is expensive so shouldn't be used too often, but resolution of those lightmaps can be controlled by keyvalue explained below.
 <div class="accordion">
-<input type="checkbox" id="accordion-24" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-24">
+<input type="checkbox" id="accordion-22" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-22">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -595,8 +585,8 @@ Value of power of two that controls the resolution of embedded lightmaps of tran
 <span style="color:#9fc5e8;"><b>ZHLT Light Flags</b></span> <kbd  class="tooltip" data-tooltip="choices">zhlt_lightflags</kbd> :
 Brush entities only. Changes light casting or receiving setting.
 <div class="accordion">
-<input type="checkbox" id="accordion-25" name="accordion-checkbox" hidden>
-<label class="accordion-header" for="accordion-25">
+<input type="checkbox" id="accordion-23" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-23">
 <i class="icon icon-arrow-right mr-1"></i>
 Choices:
 </label>
@@ -620,6 +610,7 @@ Set it to the name of [info_target](../info_target), this entity will receive li
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Explosion Magnitude</b></span> <kbd  class="tooltip" data-tooltip="Integer">iMagnitude</kbd> :
 The greater the magnitude, the more damage the explosion will cause. Note that explosion damage values above 200 are know to cause explosion damage to even go through walls.
+</div>
 </div>
 ###Flags
 <hr>
