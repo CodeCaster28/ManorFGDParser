@@ -62,10 +62,11 @@ Vertical positioning. 0.0 to 1.0. 0.0 means top. 1.0 means bottom. '-1' centers 
 1280 x 720: 0.027800
 1280 x 800: 0.025000
 1600 x 900: 0.022222
+![](positionhelper.png)
 </div>
 <div class="entityentry" markdown="1">
 <span style="color:#9fc5e8;"><b>Text Effect</b></span> <kbd  class="tooltip" data-tooltip="Choices">effect</kbd> :
-Specify a text effect..
+Specify a text effect.
 <div class="accordion">
 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
 <label class="accordion-header" for="accordion-1">
